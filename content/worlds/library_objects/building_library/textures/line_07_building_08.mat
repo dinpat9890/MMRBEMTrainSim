@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="line_07_building_08" guid="09accf011e9134ace547a651bb363e0f85ff115b" parent="74de717c488e1384c0a179ba0f7519c6733d1fe5" base_material="mesh_base">
+	<options two_sided="0"/>
+	<texture name="albedo">../worlds/library_objects/building_library/textures/line_7_building_08.dds</texture>
+	<texture name="emission">../worlds/library_objects/building_library/textures/line_07_building_08_e.dds</texture>
+	<parameter name="albedo_color">0.698039234 0.698039234 0.698039234 1</parameter>
+	<parameter name="emission_color">1 1 1 1</parameter>
+	<parameter name="emission_scale">0.200000003</parameter>
+</material>

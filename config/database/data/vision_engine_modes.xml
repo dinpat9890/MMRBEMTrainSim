@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <vision_engine_modes>
+    <vision_engine_mode name="Normal" properties="
+      [Vision Engine Mode]
+      Type=Fixed
+      View Rows=1
+      View Count=2
+
+    [Vision Engine Mode Camera 1]
+      View Index=0
+      Type=Car Camera
+      Name=Driver's Side View
+
+    [Vision Engine Mode Camera 2]
+      View Index=1
+      Type=Car Camera
+      Name=Driver's Forward View     
+    "/>
+	<vision_engine_mode name="VisionPC1" properties="
+      [Vision Engine Mode]
+      Type=Fixed
+	  View Rows=1
+      View Count=2
+      
+    [Vision Engine Mode Camera 1]
+      View Index=0
+      Type=Car Camera
+      Name=Driver's Forward Screen1 View        
+    
+	[Vision Engine Mode Camera 2]
+      View Index=1
+      Type=Car Camera
+      Name=Driver's Forward Screen2 View        
+    "/>
+	
+	<vision_engine_mode name="VisionPC2" properties="
+      [Vision Engine Mode]
+      Type=Fixed
+	  View Rows=1
+      View Count=2
+      
+    [Vision Engine Mode Camera 1]
+      View Index=0
+      Type=Car Camera
+      Name=Driver's Forward Screen3 View        
+    
+	[Vision Engine Mode Camera 2]
+      View Index=1
+      Type=Car Camera
+      Name=Driver's Forward Screen4 View         
+    "/>	
+	
+	<vision_engine_mode name="Side" properties="
+      [Vision Engine Mode]
+      Type=Fixed
+      View Rows=1
+      View Count=2
+
+    [Vision Engine Mode Camera 1]
+      View Index=0
+      Type=Car Camera
+      Name=Driver's Left Side View
+
+    [Vision Engine Mode Camera 2]
+      View Index=1
+      Type=Car Camera
+      Name=Driver's Right Side View
+    "/>
+	
+    <vision_engine_mode name="Forward" properties="
+      [Vision Engine Mode]
+      Type=Fixed
+      View Count=1
+
+      [Vision Engine Mode Camera 1]
+      View Index=0
+      Type=Car Camera
+      Name=Instructor's Forward View
+    "/>
+	<vision_engine_mode name="SingleView" properties="
+      [Vision Engine Mode]
+      Type=Saloon_CCTV
+      View Count=1
+
+      [Vision Engine Mode Camera 1]
+      View Index=0
+      Type=Car Camera
+      Name=Saloon CCTV Camera 1
+    "/>
+    <vision_engine_mode name="FourView" properties="
+      [Vision Engine Mode]
+      Type=Saloon_CCTV
+      View Count=4
+
+      [Vision Engine Mode Camera 1]
+      View Index=0
+      Type=Car Camera
+      Name=Saloon CCTV Camera 1
+
+      [Vision Engine Mode Camera 2]
+      View Index=1
+      Type=Car Camera
+      Name=Saloon CCTV Camera 2
+
+      [Vision Engine Mode Camera 3]
+      View Index=2
+      Type=Car Camera
+      Name=Saloon CCTV Camera 3
+
+      [Vision Engine Mode Camera 4]
+      View Index=3
+      Type=Car Camera
+      Name=Saloon CCTV Camera 4
+    "/>
+    </vision_engine_modes>
+</config>

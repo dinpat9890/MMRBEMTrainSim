@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1703961453" name="neutral_section01_single">
+		<mesh_name>../worlds/library_objects/features/neutral_section01_single.mesh</mesh_name>
+		<surface name="neutral_section01_single" max_visible_distance="800" max_fade_distance="50" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+		<transform>0.999999880791 -1.58063124221e-016 6.93889390391e-018 0.0 6.98903825438e-017 0.999999880791 0 0.0 -1.73472347598e-018 0 0.999999940395 0.0 0 -1.81898940355e-012 2.84217094304e-013 1.0</transform>
+	</node>
+</nodes>

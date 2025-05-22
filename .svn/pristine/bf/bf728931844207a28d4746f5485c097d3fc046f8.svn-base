@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="566594136" name="OLE1_broken">
+		<mesh_name>../features/obstruction_features/graphics/OLE1_broken.mesh</mesh_name>
+		<surface name="OLE1_broken" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

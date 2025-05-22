@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+	<layer name="Project">
+        <number_type name="ActiveInactive">
+            <number_type_value name="Inactive" constant_name="INACTIVE" value="0"/>
+            <number_type_value name="Active"  constant_name="ACTIVE" value="1"/>
+        </number_type>
+        <number_type name="StationAnnouncementMode">
+            <number_type_value name="Auto" constant_name="AUTO" value="1"/>
+            <number_type_value name="SemiAuto"  constant_name="SEMIAUTO" value="2"/>
+            <number_type_value name="Manual"  constant_name="MANUAL" value="3"/>
+        </number_type>
+
+        <number_type name="DoorsState">
+            <number_type_value name="Closed" constant_name="CLOSED" value="0"/>
+            <number_type_value name="Opened"  constant_name="OPENED" value="1"/>
+        </number_type>
+
+        <number_type name="PISPowerState">
+            <number_type_value name="Power off" constant_name="POWER_OFF" value="0"/>
+            <number_type_value name="Booting"  constant_name="BOOTING" value="2"/>
+            <number_type_value name="Power on"  constant_name="POWER_ON" value="1"/>
+        </number_type>
+
+	<object_class class="PIS BE" constant_name="PIS_BE" />
+
+		<object_class class="PIS BE Inputs" constant_name="PIS_BE_INPUTS">
+
+            <!-- Train Id Change Request -->
+            <object_number name="Train Id Change Request"                           constant_name="TRAIN_ID_CHANGE_REQUEST"                              default="0.0" delta="0.5" />
+
+			<!-- Mode Selection Request -->
+			<object_number name="Station Announcement Mode" 						constant_name="STATION_ANNOUNCEMENT_MODE" 							 default="1.0" delta="0.5" />
+			
+			<!-- Route Selection Request -->
+			<object_number name="Route Selection ID" 								constant_name="ROUTE_SELECTION_ID" 									 default="-1"  delta="0.5" />
+			
+			<!-- Id of announcement to play initiated by Driver (manual station, special, etc) -->
+			<object_number name="Driver Announcement ID" 							constant_name="DRIVER_ANNOUNCEMENT_ID" 								 default="-1"  delta="0.5" />
+			
+			<!-- Id of announcement to play initiated by Instructor (OCC/dispatcher, etc) -->
+			<object_number name="Instructor Announcement ID" 						constant_name="INSTRUCTOR_ANNOUNCEMENT_ID" 							 default="-1"  delta="0.5" />
+			
+			<!-- Special Announcement Requests -->
+			<object_number name="Special Announcement ID" 							constant_name="SPECIAL_ANNOUNCEMNT_ID" 							 	 default="-1"  delta="0.5" />
+			<object_number name="Stop Special Announcement" 						constant_name="STOP_SPECIAL_ANNOUNCEMNT" 							 default="0.0" delta="0.5" />
+			<object_number name="Special Announcement Count" 						constant_name="SPECIAL_ANNONCMNT_COUNT" 							 default="1.0" delta="0.5" />
+			
+			<!-- Emergency Announcement Requests -->
+			<object_number name="Emergency Announcement ID" 						constant_name="EMERGENCY_ANNOUNCEMNT_ID" 							 default="-1"  delta="0.5" />
+			<object_number name="Stop Emergency Announcement" 						constant_name="STOP_EMERGENCY_ANNOUNCEMNT" 							 default="0.0" delta="0.5" />
+			<object_number name="Emergency Announcement Count" 						constant_name="EMERGENCY_ANNONCMNT_COUNT" 							 default="1.0" delta="0.5" />
+			
+			<!-- Start/Terminal/Next Station Request -->
+			<object_number name="Start Station ID" 									constant_name="START_STATION_ID" 								 	 default="-1"  delta="0.5" />
+			<object_number name="Terminal Station ID" 								constant_name="TERMINAL_STATION_ID" 							 	 default="-1"  delta="0.5" />
+			<object_number name="Next Station ID" 									constant_name="NEXT_STATION_ID" 							 		 default="-1"  delta="0.5" />
+			
+			<!-- Intercom status set by intercom module, 0 indicates no intercom connection and 1 indicates intercom connection need to establish -->
+			<object_number name="Intercom status" 									constant_name="INTERCOM_STATUS" 							 		 default="0.0"  delta="0.5" />
+            <object_number name="PABR status" 									constant_name="PABR_STATUS" 							 		 default="-1"  delta="0.5" />
+			<!-- Skip Station Request List -->
+			<object_raw name="Skip Station List"               						constant_name="SKIP_STATION_LIST" />
+			
+			<!-- Arival / Departure Message Request -->
+			<object_raw name="Arrival or Departure Msg Request"               		constant_name="ARRIVE_DEPART_MSG" />
+			
+			
+		
+		</object_class>
+
+		<object_class class="PIS BE InputsValues" constant_name="PIS_BE_INPUTS_VALUES">
+
+            <!-- Train Id Change Request -->
+            <object_number name="Train Id Change Request"                           constant_name="TRAIN_ID_CHANGE_REQUEST"                              default="0.0" delta="0.5" />
+
+			<!-- Mode Selection Request -->
+			<object_number name="Station Announcement Mode" 						constant_name="STATION_ANNOUNCEMENT_MODE" 							 default="1.0" delta="0.5" />
+			
+			<!-- Route Selection Request -->
+			<object_number name="Route Selection ID" 								constant_name="ROUTE_SELECTION_ID" 									 default="-1"  delta="0.5" />
+			
+			<!-- Id of announcement to play initiated by Driver (manual station, special, etc) -->
+			<object_number name="Driver Announcement ID" 							constant_name="DRIVER_ANNOUNCEMENT_ID" 								 default="-1"  delta="0.5" />
+			
+			<!-- Id of announcement to play initiated by Instructor (OCC/dispatcher, etc) -->
+			<object_number name="Instructor Announcement ID" 						constant_name="INSTRUCTOR_ANNOUNCEMENT_ID" 							 default="-1"  delta="0.5" />
+			
+			<!-- Special Announcement Requests -->
+			<object_number name="Special Announcement ID" 							constant_name="SPECIAL_ANNOUNCEMNT_ID" 							 	 default="-1"  delta="0.5" />
+			<object_number name="Stop Special Announcement" 						constant_name="STOP_SPECIAL_ANNOUNCEMNT" 							 default="0.0" delta="0.5" />
+			<object_number name="Special Announcement Count" 						constant_name="SPECIAL_ANNONCMNT_COUNT" 							 default="1.0" delta="0.5" />
+			
+			<!-- Emergency Announcement Requests -->
+			<object_number name="Emergency Announcement ID" 						constant_name="EMERGENCY_ANNOUNCEMNT_ID" 							 default="-1"  delta="0.5" />
+			<object_number name="Stop Emergency Announcement" 						constant_name="STOP_EMERGENCY_ANNOUNCEMNT" 							 default="0.0" delta="0.5" />
+			<object_number name="Emergency Announcement Count" 						constant_name="EMERGENCY_ANNONCMNT_COUNT" 							 default="1.0" delta="0.5" />
+			
+			<!-- Start/Terminal/Next Station Request -->
+			<object_number name="Start Station ID" 									constant_name="START_STATION_ID" 								 	 default="-1"  delta="0.5" />
+			<object_number name="Terminal Station ID" 								constant_name="TERMINAL_STATION_ID" 							 	 default="-1"  delta="0.5" />
+			<object_number name="Next Station ID" 									constant_name="NEXT_STATION_ID" 							 		 default="-1"  delta="0.5" />
+			
+			<object_number name="Announcement Mode Changed Button" 					constant_name="ANNOUNCEMENT_MODE_CHANGED_BTN" 						 default="-1"  delta="0.5" />
+			
+			
+			<!-- Intercom status set by intercom module, 0 indicates no intercom connection and 1 indicates intercom connection need to establish -->
+			<object_number name="Intercom status" 									constant_name="INTERCOM_STATUS" 							 		 default="0.0"  delta="0.5" />
+			
+			<object_number name="PABR status" 									    constant_name="PABR_STATUS" 							 		     default="-1"  delta="0.5" />
+
+			<!-- Skip Station Request List -->
+			<object_raw name="Skip Station List"               						constant_name="SKIP_STATION_LIST" />
+			
+			<!-- Arival / Departure Message Request -->
+			<object_raw name="Arrival or Departure Msg Request"               		constant_name="ARRIVE_DEPART_MSG" />
+		
+		     
+		</object_class>
+
+		<object_class class="PIS BE InputsModes" constant_name="PIS_BE_INPUTS_MODES">
+
+            <!-- Train Id Change Request -->
+            <object_number name="Train Id Change Request"                           constant_name="TRAIN_ID_CHANGE_REQUEST"                              default="0.0" delta="0.5" />
+
+			<!-- Mode Selection Request -->
+			<object_number name="Station Announcement Mode" 						constant_name="STATION_ANNOUNCEMENT_MODE" 							 default="1.0" delta="0.5" />
+			
+			<!-- Route Selection Request -->
+			<object_number name="Route Selection ID" 								constant_name="ROUTE_SELECTION_ID" 									 default="-1"  delta="0.5" />
+			
+			<!-- Id of announcement to play initiated by Instructor (OCC/dispatcher, etc) -->
+			<object_number name="Instructor Announcement ID" 						constant_name="INSTRUCTOR_ANNOUNCEMENT_ID" 							 default="-1"  delta="0.5" />
+			
+			<!-- Special Announcement Requests -->
+			<object_number name="Special Announcement ID" 							constant_name="SPECIAL_ANNOUNCEMNT_ID" 							 	 default="-1"  delta="0.5" />
+			<object_number name="Stop Special Announcement" 						constant_name="STOP_SPECIAL_ANNOUNCEMNT" 							 default="0.0" delta="0.5" />
+			<object_number name="Special Announcement Count" 						constant_name="SPECIAL_ANNONCMNT_COUNT" 							 default="1.0" delta="0.5" />
+			
+			<!-- Emergency Announcement Requests -->
+			<object_number name="Emergency Announcement ID" 						constant_name="EMERGENCY_ANNOUNCEMNT_ID" 							 default="-1"  delta="0.5" />
+			<object_number name="Stop Emergency Announcement" 						constant_name="STOP_EMERGENCY_ANNOUNCEMNT" 							 default="0.0" delta="0.5" />
+			<object_number name="Emergency Announcement Count" 						constant_name="EMERGENCY_ANNONCMNT_COUNT" 							 default="1.0" delta="0.5" />
+			
+			<!-- Start/Terminal/Next Station Request -->
+			<object_number name="Start Station ID" 									constant_name="START_STATION_ID" 								 	 default="-1"  delta="0.5" />
+			<object_number name="Terminal Station ID" 								constant_name="TERMINAL_STATION_ID" 							 	 default="-1"  delta="0.5" />
+			<object_number name="Next Station ID" 									constant_name="NEXT_STATION_ID" 							 		 default="-1"  delta="0.5" />
+			
+			<!-- Intercom status set by intercom module, 0 indicates no intercom connection and 1 indicates intercom connection need to establish -->
+			<object_number name="Intercom status" 									constant_name="INTERCOM_STATUS" 							 		 default="0.0"  delta="0.5" />
+
+             <object_number name="PABR status" 									    constant_name="PABR_STATUS" 							 		     default="-1"  delta="0.5" />
+			<!-- Skip Station Request List -->
+			<object_raw name="Skip Station List"               						constant_name="SKIP_STATION_LIST" />
+			
+			<!-- Arival / Departure Message Request -->
+			<object_raw name="Arrival or Departure Msg Request"               		constant_name="ARRIVE_DEPART_MSG" />
+			
+			
+		</object_class>
+
+		<object_class class="PIS BE Outputs" constant_name="PIS_BE_OUTPUTS">
+			
+			<!-- Required by the IO Controller -->
+            <object_number name="Class Outputs"                           			constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"           	default="0.0" delta="0.5" />
+            <object_number name="Class Outputs"                           			constant_name="CLASS_OUTPUTS"                             	default="0.0" delta="0.5" />
+
+            <object_number name="Selected Train Id"                       	        constant_name="SELECTED_TRAIN_ID"                 	        default="-1" delta="0.5" />			
+			<object_number name="Selected Start station Id"                       	constant_name="SELECTED_START_STATION_ID"                 	default="-1" delta="0.5" />
+			<object_number name="Selected Terminal station Id"                      constant_name="SELECTED_TERMINAL_STATION_ID"                default="-1" delta="0.5" />
+			<object_number name="Selected Current station Id"                       constant_name="SELECTED_CURRENT_STATION_ID"                 default="-1" delta="0.5" />
+			<object_number name="Selected Next station Id"                       	constant_name="SELECTED_NEXT_STATION_ID"                    default="-1" delta="0.5" />
+			<object_number name="Selected Route Id"                       			constant_name="SELECTED_ROUTE_ID"							default="-1" delta="0.5" />
+			<object_number name="Selected MODE"                       				constant_name="SELECTED_MODE"								default="-1" delta="0.5" />
+			<object_number name="Power State" 										constant_name="POWER_STATE" 							 	default="-1" delta="0.5" />
+			<object_number name="Door Opening Side" 							    constant_name="DOOR_OPENING_SIDE" 						    default="-1" delta="0.5" />
+            <!-- Data required by PSD -->
+            <object_number name="Selected Route Id PSD"                       		constant_name="SELECTED_ROUTE_ID_PSD"						default="-1" delta="0.5" />
+            <object_number name="Platform Side PSD"                       			constant_name="PLATFORM_SIDE_PSD"							default="-1" delta="0.5" />
+            <!-- Data required by TCMS hybrid panel -->
+            <object_number name="TCSM Train Near Station"                           constant_name="TCMS_TRAIN_NEAR_STATION"						default="0" delta="0.5" />
+			
+			<!-- Skip Station Request List -->
+			<object_raw name="Skip Station List"                                    constant_name="SKIP_STATION_LIST" />
+			
+		</object_class>
+	  
+		<object_class class="PIS" constant_name="PIS" />
+		
+		<object_class class="PIS Outputs" constant_name="PIS_OUTPUTS">
+		
+			<object_number name="Direction"       constant_name="DIRECTION"       default="0.0" delta="0.5" />
+			<object_number name="Next Station ID" constant_name="NEXT_STATION_ID" default="0.0" delta="0.5" />
+			<object_number name="DVA Status"      constant_name="DVA_STATUS"      default="0.0" delta="0.5" />
+			<object_number name="DVA Test"        constant_name="DVA_TEST"        default="0.0" delta="0.5" />
+			<object_number name="DVA Mute"        constant_name="DVA_MUTE"        default="0.0" delta="0.5" />
+			<object_number name="DVA Stop"        constant_name="DVA_STOP"        default="0.0" delta="0.5" />
+			<!-- Temp Trays -->
+			<object_tray name="DVA Command Queue" constant_name="DVA_COMMAND_QUEUE" />
+          
+		</object_class>
+		
+		<object_class class="DVA" constant_name="DVA" />
+		
+		<object_class class="DVA Outputs" constant_name="DVA_OUTPUTS">
+		
+          <object_number name="DVA Audio ID" constant_name="DVA_AUDIO_ID" default="0.0" delta="0.5" />
+          <object_number name="DVA Started" constant_name="DVA_STARTED" default="0.0" delta="0.5" />
+          <object_number name="DVA Stopped" constant_name="DVA_STOPPED" default="0.0" delta="0.5" />
+		
+		</object_class>
+	</layer>
+  
+
+  <!-- Parent-child relationship mapping -->
+  <relationship parent="Vehicle" child="PIS BE"/>
+  <relationship parent="PIS BE" child="PIS BE Inputs"/>
+  <relationship parent="PIS BE" child="PIS BE Outputs"/>
+  <relationship parent="PIS BE Inputs" child="PIS BE InputsValues"/>
+  <relationship parent="PIS BE Inputs" child="PIS BE InputsModes"/>
+  <relationship parent="Vehicle" child="PIS"/>
+  <relationship parent="Train" child="DVA"/>
+  <relationship parent="PIS" child="PIS Outputs"/>
+  <relationship parent="DVA" child="DVA Outputs"/>
+
+  <!-- Class ID declarations -->
+  <class_ids>
+    <class_id class_name="PIS BE" class_id="9001" />
+    <class_id class_name="PIS BE Inputs" class_id="9002" />
+    <class_id class_name="PIS BE Outputs" class_id="9003" />
+    <class_id class_name="PIS BE InputsValues" class_id="9004" />
+    <class_id class_name="PIS BE InputsModes" class_id="9005" />
+	<class_id class_name="PIS" class_id="9006" />
+	<class_id class_name="DVA" class_id="9007" />
+	<class_id class_name="DVA Outputs" class_id="9008" />
+	<class_id class_name="PIS Outputs" class_id="9009" />
+  </class_ids>
+</comms_config>

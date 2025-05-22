@@ -1,0 +1,135 @@
+(! *** Other Trains Passing ********************************************************************)
+(! Because of the usage of define primitives within here this primitive should only be used
+   once by the sound script that is including this file.)
+
+(! COMMON MATHEMATICAL FUNCTIONS -----------------------------------------------------------------)
+(! For two real ranges A = [min_a, max_a] and B = [min_b, max_b],
+   and a given real value a, provides a linear transform s.t.
+   
+   if a = min_a, range-lt returns min_b
+   if a = max_a, range-lt returns max_b
+   
+   For each value it calculates the delta between a and min_a,
+   converts that to a percentage along A, then uses that
+   to interpolate over B.
+   )
+(define range-lt $min_b $max_b $min_a $max_a $a
+  (+ $min_b (* (/ (- $a $min_a) (- $max_a $min_a)) (- $max_b $min_b)))
+)
+(define range-lt-clamped $min_b $max_b $min_a $max_a $a
+  (limit $min_b $max_b (range-lt $min_b $max_b $min_a $max_a $a))
+)
+
+(! min will soon be in the scripting engine ------------------------------------------------------)
+(define min $a $b
+  (if (<= $a $b) $a $b)
+)
+
+(! TRAIN PASSING SOUND ---------------------------------------------------------------------------)
+(define define-other-trains-passing-sound $WAVE_NAME $START_LOOP $END_LOOP
+                                          $CULL_VEHICLES $CULL_SOUNDS $MAX_DISTANCE $MIN_SPEED
+                                          $MAX_SOUND_DISTANCE
+                                          $MIN_SOUND_VOLUME $MAX_SOUND_VOLUME $SOFTEST_DISTANCE $LOUDEST_DISTANCE
+                                          $BASE_FREQUENCY_FACTOR $FREQUENCY_SPEED_GAIN
+  (
+    (! The two-stage symbol definition is so that this can be easily ripped out and included
+       directly in the script, by a project, rather than having to be included.)
+
+    (! Before we start defining the sounds, define a few functions that can make the script simpler)
+    (define clip-passing-position $pos
+      (adjust-position-magnitude $pos (min (get-position-magnitude $pos) $MAX_SOUND_DISTANCE))
+    )
+    (define scale-passing-volume $distance
+      (range-lt-clamped $MIN_SOUND_VOLUME $MAX_SOUND_VOLUME $SOFTEST_DISTANCE $LOUDEST_DISTANCE $distance)
+    )
+    (define scale-passing-frequency $speed
+      (+ $BASE_FREQUENCY_FACTOR (* $FREQUENCY_SPEED_GAIN $speed))
+    )
+
+    (! Firstly, with the potential for so many other trains, all possibly moving, we can't calculate
+     intersection tests between our observer and all of their vehicles on every update (20 Hz), so
+     we need to cull these down to the set of the closest X and then perform intersection tests on
+     these.)
+    (! Not all of these will produce sounds - they could be stationary or still too far away. However
+     they could all produce sounds, and this would result in too many sounds being played. To
+     handle this we need another culling step to limit the number of waves we play to the vehicles
+     that are closest to us. This may not technically be correct because there could be a vehicle a
+     bit farther away that is moving faster and so makes a louder noise, etc. but it works)
+    (! There is a possibility that the X+1 vehicle, which we have latched and are not evaluating,
+     is still audible, but we won't use it for a sound. In practice this shouldn't be a problem.)
+    (! Note that we only reevaluate the set of interesting trains every second, not every time that
+     they move, because even this could be too expensive. Because the number of simultaneous
+     sounds is low, though, we need to reevaluate the set on any change.)
+    (nest
+      (
+        (symbol $MAX_INTERESTING_OTHER_VEHICLES $CULL_VEHICLES)
+        (symbol $MAX_OTHER_TRAINS_SOUNDS        $CULL_SOUNDS)
+        (symbol $DISTANCE_THRESHOLD             $MAX_DISTANCE)
+        (symbol $SPEED_THRESHOLD                $MIN_SPEED)
+        (with $closest_vehicles_cull (latched-closest-position-n (pulse (real-time 1.0)) (observer-vehicle-position) $MAX_INTERESTING_OTHER_VEHICLES))
+        (with $closest_sounds_cull   (closest-position-n (observer-vehicle-position) $MAX_OTHER_TRAINS_SOUNDS))
+      )
+
+      (! Next, we need to consider every vehicle on every train other than our own, to see if they
+         should be the cause of a train passing sound.)
+      (for-all-trains $train
+        (enable-if-other-train $train
+          (for-all-vehicles $train $vehicle
+
+            (! The sound is pretty-much driven off of the intersection test. However, we firstly
+               need to consider if this vehicle is within the closest X from us. If not then we can
+               latch the positions entering into the intersection test, thus avoiding a recalcuation
+               because they will no longer change. We can also use this determination of whether to
+               cull this vehicle from our analysis to also ensure that the sound state is correct.
+               Obviously we should not be updating or playing a sound that is not within our current
+               analysis set! Regardless of what the last latched intersection test said ...)
+            (with $cull_this (not (inside-closest-position-n $closest_vehicles_cull
+                                                             (observed-vehicle-position $train $vehicle)
+                                                             (and (get-track-position-is-valid (observer-vehicle-position))
+                                                                  (get-track-position-is-valid (observed-vehicle-position $train $vehicle)))))
+
+              (! Calculate the intersection and turn this into a relative position. Note that
+                 cull_this is high if we should NOT consider this vehicle. Thus it is used directly
+                 as the gate to the latches here because this will cause them to be latched, thus
+                 holding their value and not triggering a recalculation.)
+              (for-intersection (latch-position $cull_this (observer-vehicle-position))
+                                (latch-region   $cull_this (observed-vehicle-region $train $vehicle))
+                                $intersection
+
+                (! Relative position, and also calculate the sound position, which is clipped. Note
+                   the extra latching that is used here to stop recalculation just because the
+                   observer moves.)
+                (! Putting the sound position into a variable stops duplication of the nodes that
+                   calculate it when set-sound-position expands into set-sound-x-position etc.)
+                (nest
+                  (
+                    (with $relative_pos (relative-position (latch-position $cull_this (observer-vehicle-position)) (get-intersection-position-2 $intersection)))
+                    (with $sound_pos    (clip-passing-position $relative_pos))
+                    (with $freq         (latch $cull_this (scale-passing-frequency (abs (get-vehicle-speed $train $vehicle)))))
+                  )
+
+                  (! Now we are finally read to create our sound for this vehicle, which we will
+                     always do, and to set the properties of this sound, which we will do only
+                     sometimes.)
+                  (! Note, very importantly, that the sound state can now not be on if we are not
+                     considering this train as close enough to calculate an intersection with.)
+                  (define-observer-sound $sound $WAVE_NAME
+                                                (inactivation) (loop) $START_LOOP $END_LOOP
+                    (set-sound-position  $sound $sound_pos)
+                    (set-sound-volume    $sound (if $cull_this 0 (scale-passing-volume (get-intersection-distance $intersection))))
+                    (set-sound-frequency $sound (if (< $freq 0.1) 1 $freq))
+                    (set-sound-state     $sound (inside-closest-position-n $closest_sounds_cull
+                                                                           (get-intersection-position-2 $intersection)
+                                                                           (and (not $cull_this)
+                                                                                (< (get-intersection-distance $intersection) $DISTANCE_THRESHOLD)
+                                                                                (> (abs (get-vehicle-speed $train $vehicle)) $SPEED_THRESHOLD))))
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)

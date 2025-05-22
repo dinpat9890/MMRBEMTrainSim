@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="559350221" name="line_2a_build_5">
+		<mesh_name>../worlds/library_objects/building_library/line_2a_build_05.mesh</mesh_name>
+		<surface name="line_2a_build_05_line_2a_building_02_03" max_visible_distance="2000" max_fade_distance="10" material="33bd91a34020d3ca5813d58e5ccc88e89e4dba69" property="surface_base"/>
+		<transform>0.999999940395 2.77555756181e-017 2.52435489671e-029 0.0 -2.77555756173e-017 0.999999940395 3.15544362088e-029 0.0 1.26217744835e-029 2.52435489671e-029 0.999999940395 0.0 1.09139364213e-011 -7.27595761418e-012 7.1054273576e-015 1.0</transform>
+	</node>
+</nodes>

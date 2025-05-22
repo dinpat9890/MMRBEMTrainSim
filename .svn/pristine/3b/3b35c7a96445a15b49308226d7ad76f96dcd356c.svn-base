@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<project name="Serial Devices" default="build.all" >
+  <property name="path.root" value="../../.." />
+  <import file="${path.root}/ant.common_properties.xml" />
+
+  <!-- This module is not built against the static CRT. -->
+  <property name="no.build.win32.release.static" value="true" />
+  <property name="no.build.win32.debug.static" value="true" />
+  <property name="no.build.x64.release.static" value="true" />
+  <property name="no.build.x64.debug.static" value="true" />
+  
+  <!-- This module has no x64 build targets. -->
+  <property name="no.build.x64.release.dll" value="true" />
+  <property name="no.build.x64.debug.dll" value="true" />
+
+  <!-- We have to override the default value for this property, as the default
+       is the folder name and our solution name doesn't match that. -->
+  <property name="solution.name" value="SerialDevices" />
+  <import file="${dir.deps.processes}/builder/builder.software.cpp.xml" as="builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+</project>

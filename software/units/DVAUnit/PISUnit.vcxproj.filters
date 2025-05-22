@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Project\Include\Serialisation\StationList.pb.cc" />
+    <ClCompile Include="..\..\Project\Include\Serialisation\PisCommands.pb.cc" />
+    <ClCompile Include="Source\TrainInterface.cpp" />
+    <ClCompile Include="Source\PISUnitProperties.cpp" />
+    <ClCompile Include="Source\UnitDLL.cpp" />
+    <ClCompile Include="Source\DVAAudioConfigHandler.cpp" />
+    <ClCompile Include="Source\DVASoundManager.cpp" />
+    <ClCompile Include="Source\DVAUnit.cpp" />
+    <ClCompile Include="Source\CommsInterface .cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\DVAAudioConfigHandler.h" />
+    <ClInclude Include="Source\PISInterfaceProperties.h" />
+    <ClInclude Include="Source\PISXMLHandler.h" />
+    <ClInclude Include="Source\Properties.h" />
+    <ClInclude Include="Source\XMLHandler.h" />
+    <ClInclude Include="Source\TrainInterface.h" />
+    <ClInclude Include="Source\DVASoundManager.h" />
+    <ClInclude Include="Source\DVAUnit.h" />
+    <ClInclude Include="Source\CommsInterface.h" />
+  </ItemGroup>
+</Project>

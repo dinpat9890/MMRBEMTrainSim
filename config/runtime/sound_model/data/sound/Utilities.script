@@ -1,0 +1,83 @@
+(! Here's a whole bunch of Steve's old stuff )
+(define linear-slope $y2 $y1 $x2 $x1
+  (/ (- $y2 $y1) (- $x2 $x1))
+) 
+
+(define linear-constant $x $y $slope
+  (- $y (* $slope $x))
+)
+
+(define kmh-to-ms $kmh
+  (/ $kmh 3.6)
+)
+
+(define script-vol-from-gain $gain
+  (+ $gain 100.0)
+) 
+
+(! specify the $max_gain and $min_gain between -100dB and 0dB and the $max_speed and $min_speed between 0km/h and 140km/h)
+(define vol_for_speed_1 $max_gain $max_speed $min_gain $min_speed $speed
+  (limit 0 100 (+ (* $speed (linear-slope (script-vol-from-gain $max_gain) (script-vol-from-gain $min_gain) (kmh-to-ms $max_speed) (kmh-to-ms $min_speed))) 
+                  (linear-constant (kmh-to-ms $max_speed) (script-vol-from-gain $max_gain) (linear-slope (script-vol-from-gain $max_gain) (script-vol-from-gain $min_gain) (kmh-to-ms $max_speed) (kmh-to-ms $min_speed)))
+               ))
+)
+
+(! specify the $max_gain and $min_gain between -100dB and 0dB for the $control_vol range of 0..100)
+(define vol_for_control_vol $max_gain $min_gain $control_vol
+  (limit 0 100 (+ (* (kmh-to-ms $control_vol) (linear-slope (script-vol-from-gain $max_gain) (script-vol-from-gain $min_gain) 27.777778 0.0)) 
+                  (linear-constant 27.777778 (script-vol-from-gain $max_gain) (linear-slope (script-vol-from-gain $max_gain) (script-vol-from-gain $min_gain) 27.777778 0.0))
+               ))
+)
+
+(define linear-transform $input $in_minimum $in_maximum $out_minimum $out_maximum
+  (+ (* (/ (- $out_maximum $out_minimum) (- $in_maximum $in_minimum)) (- $input $in_maximum)) $out_maximum)
+)
+
+(define dir-vec-clip-distance 4.0)
+
+(define dir-vec $distance
+  (limit (* -1.0 (dir-vec-clip-distance)) (dir-vec-clip-distance) $distance)
+)
+
+(define get-observer-speed
+  (get-track-position-speed (observer-vehicle-position))
+)
+
+(define get-abs-observer-speed
+  (abs (get-track-position-speed (observer-vehicle-position)))
+)
+
+(define trigger-held-high $input $hold_time
+  (and $input (delay $input $hold_time))
+)
+
+(define observer-at-medium-curve (or
+  (for-all-trains $train (enable-if-simulated-train $train (for-all-vehicles $train $vehicle
+    (and
+      (== (get-track-position-train (observer-vehicle-position)) $train)
+      (== (get-track-position-vehicle (observer-vehicle-position)) $vehicle)
+      (get-track-position-is-valid (observer-vehicle-position))
+      (>< 500.0 (abs (get-vehicle-number $train $vehicle "Vehicle Radius")) 900.0)
+    )
+  )))
+))
+(define observer-at-tight-curve (or
+  (for-all-trains $train (enable-if-simulated-train $train (for-all-vehicles $train $vehicle
+    (and
+      (== (get-track-position-train (observer-vehicle-position)) $train)
+      (== (get-track-position-vehicle (observer-vehicle-position)) $vehicle)
+      (get-track-position-is-valid (observer-vehicle-position))
+      (>< 1.5 (abs (get-vehicle-number $train $vehicle "Vehicle Radius")) 500.0)
+    )
+  )))
+))
+(define observer-at-low-curve (or
+  (for-all-trains $train (enable-if-simulated-train $train (for-all-vehicles $train $vehicle
+    (and
+      (== (get-track-position-train (observer-vehicle-position)) $train)
+      (== (get-track-position-vehicle (observer-vehicle-position)) $vehicle)
+      (get-track-position-is-valid (observer-vehicle-position))
+      (>< 900 (abs (get-vehicle-number $train $vehicle "Vehicle Radius")) 3000.0)
+    )
+  )))
+))

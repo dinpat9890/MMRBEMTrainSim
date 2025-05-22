@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="road_plain" guid="0e2c8c65ee8aec6d129442e421a38ce109af688c" base_material="mesh_base">
+	<state name="workflow">0</state>
+	<texture name="diffuse">../worlds/library_objects/shared_elements/textures/2_lane_stripes_road.dds</texture>
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/road_plain_alb.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="diffuse_color">0.858823597 0.858823597 0.858823597 1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

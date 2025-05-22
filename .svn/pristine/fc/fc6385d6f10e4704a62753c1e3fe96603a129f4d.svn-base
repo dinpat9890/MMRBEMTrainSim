@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1251248448" name="buckbrush">
+		<mesh_name>../worlds/shared/graphics/vegetation/buckbrush.mesh</mesh_name>
+		<surface name="bush__leaves_lod2" material="88b4b3b062d8bdc9cc5544ef853c95661e1eaa0b" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

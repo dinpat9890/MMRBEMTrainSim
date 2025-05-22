@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<feature_type xmlns="http://www.sydac.com.au/WorldTypes/1.0/" name="Route Control" group="Route" constant_name="FETY_ROUTE" modifiable="0" available="1" user_feature="0">
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Automated" user_selectable="1" />
+        <feature_type_state state_id="2" name="Clear" user_selectable="1" />
+        <feature_type_state state_id="3" name="Set" user_selectable="1" />
+    </feature_type_state_type>
+    <object_parameters>
+        <key name="Initial State" type="State" default="Clear" description="Initial State" />
+        <key name="User State" type="State" default="Automated" description="User State" />
+    </object_parameters>
+    <feature_type_icon icon_code="ROUTE" small_icon="Icons/ROUTE.zip#ROUTE-Clear-SMALL.png" big_icon="Icons/ROUTE.zip#ROUTE-Clear-BIG.png" >
+        <feature_type_state_icon state_id="1" icon_code="Automated" small_icon="Icons/ROUTE.zip#ROUTE-Clear-SMALL.png" big_icon="Icons/ROUTE.zip#ROUTE-Clear-BIG.png" />
+        <feature_type_state_icon state_id="2" icon_code="Clear" small_icon="Icons/ROUTE.zip#ROUTE-Clear-SMALL.png" big_icon="Icons/ROUTE.zip#ROUTE-Clear-BIG.png" />
+        <feature_type_state_icon state_id="3" icon_code="Set" small_icon="Icons/ROUTE.zip#ROUTE-Set-SMALL.png" big_icon="Icons/ROUTE.zip#ROUTE-Set-BIG.png" />
+    </feature_type_icon>
+    <feature_type_vision />
+</feature_type>

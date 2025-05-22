@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+	</properties>
+	<node type="NodeDummy" id="2057301664" name="buffer">
+		<transform>0.999999940395 1.11022302463e-016 0 0.0 -1.11022302463e-016 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -2.27373675443e-012 -7.27595761418e-012 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1407303352" name="base">
+			<mesh_name>../worlds/library_objects/features/buffer_body.mesh</mesh_name>
+			<surface name="body" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="pole_id_plate" max_visible_distance="1000" max_fade_distance="10" material="29ad5435d971b6cd6a9d8b29cb2842f812d2f480" property="surface_base"/>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="702959737" name="head">
+			<mesh_name>../worlds/library_objects/features/buffer_head.mesh</mesh_name>
+			<surface name="head" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="red" cast_shadow="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1646850297" name="ID_Plate">
+			<mesh_name>../worlds/library_objects/features/buffer_label.mesh</mesh_name>
+			<surface name="label1" enabled="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="dcedb85797b786f21d123bc7dd461feb11a9b16f" property="Label">
+				<property>
+					<parameter name="parameter">label1</parameter>
+					<parameter name="font size">0.90000000000000002</parameter>
+					<parameter name="text align">1</parameter>
+					<parameter name="vertical align">1</parameter>
+				</property>
+			</surface>
+			<surface name="label2" enabled="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="dcedb85797b786f21d123bc7dd461feb11a9b16f" property="Label">
+				<property>
+					<parameter name="parameter">label2</parameter>
+					<parameter name="font size">0.90000000000000002</parameter>
+					<parameter name="text align">1</parameter>
+					<parameter name="vertical align">1</parameter>
+				</property>
+			</surface>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

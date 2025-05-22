@@ -1,0 +1,5 @@
+﻿(! This is just a sample script to give an idea of how to use the feature config primitives)
+(! for-all-features-of-type "Track Stop" $id
+  (set-feature-visible-state $id (feature-type-state-id "Track Stop" "Lever Arm Up"))
+  (set-feature-visibility $id (% (time 1) 2)) 
+)

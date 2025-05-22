@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="birch_leaves_summer_0" guid="e0ae2e32da45d9456fff4fa82a187038097aa5f7" parent="d75373b59f10568fc084e9895709d8590aaecf9f" base_material="mesh_base">
+	<state name="material_ssao">0</state>
+	<texture name="albedo">birch/textures/birch_leaves_alb.dds</texture>
+	<texture name="normal">birch/textures/birch_leaves_n.dds</texture>
+	<parameter name="albedo_color">0.349019617 0.349019617 0.349019617 1</parameter>
+</material>

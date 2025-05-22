@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="354365060" name="metal_beam">
+		<mesh_name>../worlds/library_objects/shared_elements/metal_beam.mesh</mesh_name>
+		<surface name="metal_beam_metal_beam" max_visible_distance="200" max_fade_distance="5" material="9fe6ea58998e8cbe6a0b15d0590a22af6288dd16" property="surface_base"/>
+		<transform>0.999999940395 2.77671505419e-017 -3.5562274e-019 0.0 -5.55209580668e-017 0.999999940395 0 0.0 1.10921134331e-022 0 0.999999940395 0.0 -7.27595761418e-012 -2.29647412198e-011 -7.1054273576e-015 1.0</transform>
+	</node>
+</nodes>

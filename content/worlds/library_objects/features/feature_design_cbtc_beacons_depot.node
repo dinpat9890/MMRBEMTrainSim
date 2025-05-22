@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1211433603" name="feature_design_cbtc_beacons_depot">
+		<mesh_name>../worlds/library_objects/features/feature_design_cbtc_beacons_depot.mesh</mesh_name>
+		<surface name="feature_design_cbtc_beacons_feature_design_cbtc_beacons" max_visible_distance="1000" max_fade_distance="5" material="52c0af055b0ca948078fef730a28246b7fb7aa3a" property="surface_base"/>
+		<surface name="feature_design_cbtc_beacons_metal_beam" material="9fe6ea58998e8cbe6a0b15d0590a22af6288dd16" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

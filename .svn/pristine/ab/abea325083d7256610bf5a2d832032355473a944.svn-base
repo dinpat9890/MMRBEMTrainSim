@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+	</properties>
+	<node type="NodeDummy" id="2029717988" name="virtual_signal_marker_board">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="980996352" name="board">
+			<mesh_name>../worlds/library_objects/features/virtual_signal_marker_board.mesh</mesh_name>
+			<surface name="board" max_visible_distance="1000" max_fade_distance="10" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="547628743" name="ID_Plate">
+			<mesh_name>../worlds/library_objects/features/virtual_signal_marker_board_label.mesh</mesh_name>
+			<surface name="label" enabled="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="dcedb85797b786f21d123bc7dd461feb11a9b16f" property="Label">
+				<property>
+					<parameter name="text align">1</parameter>
+					<parameter name="vertical align">1</parameter>
+				</property>
+			</surface>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

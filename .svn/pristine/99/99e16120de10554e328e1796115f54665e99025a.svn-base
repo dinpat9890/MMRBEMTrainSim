@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Obstruction - Kite" group="Obstruction" constant_name="FETY_OBSTRUCTION_KITE" modifiable="1" available="1" user_feature="0">
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Not Visible" user_selectable="1" />
+        <feature_type_state state_id="2" name="Visible" user_selectable="1" />
+    </feature_type_state_type>
+    <object_parameters>
+        <key name="Initial State" type="State" default="Visible" description="Initial State" />
+        <!-- 0 = Disabled, 1 = Geometry Collide, 2 = Adjacency Collide -->
+        <key name="Collider" type="double" default="2" description="Adjacency Collidable Object" />
+    </object_parameters>
+    <feature_type_icon icon_code="Obstruction_Kite" small_icon="Icons/Obstruction_Kite.zip#Obstruction_Kite-SMALL.png" big_icon="Icons/Obstruction_Kite.zip#Obstruction_Kite-BIG.png">
+        <feature_type_state_icon state_id="1" icon_code="Not_Visible" small_icon="Icons/Obstruction_Kite.zip#Obstruction_Kite-Not_Visible-SMALL.png" big_icon="Icons/Obstruction_Kite.zip#Obstruction_Kite-Not_Visible-BIG.png" />
+        <feature_type_state_icon state_id="2" icon_code="Visible" small_icon="Icons/Obstruction_Kite.zip#Obstruction_Kite-Visible-SMALL.png" big_icon="Icons/Obstruction_Kite.zip#Obstruction_Kite-Visible-BIG.png" />
+    </feature_type_icon>
+    <feature_type_vision class="VisibleFeature" raycast_type="NoRaycast" node_file="kite.node" />
+</feature_type>

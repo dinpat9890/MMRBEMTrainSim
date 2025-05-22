@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30D24322-DF8B-4F61-BD70-507E86CA1694}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CBTCOnBoardUnits</RootNamespace>
+    <ProjectName>cbtc_on_board_units</ProjectName>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="../project.cpp.props" />
+  <PropertyGroup>
+    <CoreTrainSimIncludeRoot>../$(CoreTrainSimIncludeRoot)</CoreTrainSimIncludeRoot>
+    <CommonIncludeRoot>../$(CommonIncludeRoot)</CommonIncludeRoot>
+    <CoreTrainSimRoot>../$(CoreTrainSimRoot)</CoreTrainSimRoot>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>Source;$(commonlibrariesroot)common/Include;$(commonlibrariesroot)comms/Include;$(commonlibrariesroot)network_definition/Include;$(commonlibrariesroot)oracle_access/Include;$(commonlibrariesroot)sim_common/Include;$(commonlibrariesroot)sim_comms/Include;$(simcoreconfigroot)core_comms_structure/Include;$(simcorelibrariesroot)config_file_access/Include;$(simcorelibrariesroot)core_data_access/Include;$(simcorelibrariesroot)core_properties/Include;$(simcorelibrariesroot)core_types/Include;$(simcorelibrariesroot)file_access/Include;$(simcorelibrariesroot)utility/Include;$(simtrainconfigroot)etcs_comms_structure/Include;$(simtrainconfigroot)train_comms_structure/Include;$(cotsroot)oci/$(Platform)/include;$(cotsroot)oci/x64/include;$(cotsroot)protobuf/include;$(cotsroot)python/include;$(cotsroot)xerces/Include;$(cotsroot)xerces/Include/xercesc/xinclude;$(cotsroot)zlib/Include;$(simcoreconfigroot)core_comms_structure/include;$(simcorelibrariesroot)/core_data_access/include;$(simcorelibrariesroot)core_properties/include;$(simcorelibrariesroot)core_types/include;$(simcorelibrariesroot)file_access/include;$(simtrainconfigroot)etcs_comms_structure/include;$(simtrainconfigroot)train_comms_structure/include;$(simtrainlibrariesroot)etcs_serialisation/include;$(simtrainlibrariesroot)train_types/include;$(ProjectConfigRoot)project_comms_structure/include;$(ProjectLibrariesRoot)Serialisation/Source/Cpp/Source;$(ProjectLibrariesRoot)Serialisation/Source/Cpp;Source/ModeModelTransitionSource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(ClPreprocessorDefinitions);_WINDOWS;STRICT;WIN32;_USRDLL;UNIT_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0c09</Culture>
+      <PreprocessorDefinitions>$(ResourcePreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Dependencies/oksygen/common/libraries/common/Include;Dependencies/oksygen/common/libraries/comms/Include;Dependencies/oksygen/common/libraries/network_definition/Include;Dependencies/oksygen/common/libraries/oracle_access/Include;Dependencies/oksygen/common/libraries/sim_common/Include;Dependencies/oksygen/common/libraries/sim_comms/Include;Dependencies/oksygen/sim/core/config/core_comms_structure/Include;Dependencies/oksygen/sim/core/libraries/config_file_access/Include;Dependencies/oksygen/sim/core/libraries/core_data_access/Include;Dependencies/oksygen/sim/core/libraries/core_properties/Include;Dependencies/oksygen/sim/core/libraries/core_types/Include;Dependencies/oksygen/sim/core/libraries/file_access/Include;Dependencies/oksygen/sim/core/libraries/utility/Include;Dependencies/oksygen/sim/train/config/etcs_comms_structure/Include;Dependencies/oksygen/sim/train/config/train_comms_structure/Include;Dependencies/oksygen/sim/train/libraries/etcs_serialisation/Include;Dependencies/oksygen/sim/train/libraries/train_types/Include;Dependencies/oksygen/common/libraries/common/include;Dependencies/oksygen/common/libraries/comms/include;Dependencies/oksygen/common/libraries/network_definition/include;Dependencies/oksygen/common/libraries/oracle_access/include;Dependencies/oksygen/common/libraries/sim_common/include;Dependencies/oksygen/common/libraries/sim_comms/include;Dependencies/oksygen/cots/oci/$(Platform)/include;Dependencies/oksygen/cots/oci/x64/include;Dependencies/oksygen/cots/protobuf/include;Dependencies/oksygen/cots/python/include;Dependencies/oksygen/cots/xerces/Include;Dependencies/oksygen/cots/xerces/Include/xercesc/xinclude;Dependencies/oksygen/cots/zlib/Include;Dependencies/oksygen/sim/core/config/core_comms_structure/include;Dependencies/oksygen/sim/core/libraries/config_file_access/include;Dependencies/oksygen/sim/core/libraries/core_data_access/include;Dependencies/oksygen/sim/core/libraries/core_properties/include;Dependencies/oksygen/sim/core/libraries/core_types/include;Dependencies/oksygen/sim/core/libraries/file_access/include;Dependencies/oksygen/sim/core/libraries/utility/include;Dependencies/oksygen/sim/train/config/etcs_comms_structure/include;Dependencies/oksygen/sim/train/config/train_comms_structure/include;Dependencies/oksygen/sim/train/libraries/etcs_serialisation/include;Dependencies/oksygen/sim/train/libraries/train_types/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(commonlibrariesroot)common/lib;$(commonlibrariesroot)comms/lib;$(commonlibrariesroot)network_definition/lib;$(commonlibrariesroot)oracle_access/lib;$(commonlibrariesroot)sim_comms/lib;$(cotsroot)oci/$(Platform)/lib;$(cotsroot)oci/x64/lib;$(cotsroot)protobuf/lib;$(cotsroot)python/lib;$(cotsroot)xerces/Lib;$(cotsroot)xerces/Lib/$(Platform);$(cotsroot)cots/zlib;$(cotsroot)zlib/Lib;$(simcoreconfigroot)core_comms_structure/lib;$(simcorelibrariesroot)config_file_access/lib;$(simcorelibrariesroot)core_data_access/lib;$(simcorelibrariesroot)core_properties/lib;$(simcorelibrariesroot)core_types/lib;$(simcorelibrariesroot)file_access/lib;$(simcorelibrariesroot)utility/lib;$(ProjectConfigRoot)project_comms_structure/lib;$(simtrainconfigroot)train_comms_structure/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>common$(LibType);comms$(LibType);network_definition$(LibType);oracle_access$(LibType);sim_comms$(LibType);core_comms_structure$(LibType);config_file_access$(LibType);core_data_access$(LibType);core_properties$(LibType);core_types$(LibType);file_access$(LibType);utility$(LibType);train_comms_structure$(LibType);libprotobuf$(LibType);project_comms_structure$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug' or $(BaseConfiguration)=='Debug DLL'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release' or $(BaseConfiguration)=='Release DLL' or $(BaseConfiguration)=='Develop' or $(BaseConfiguration)=='Develop DLL'">
+    <ClCompile>
+      <BasicRuntimeChecks />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug' or $(BaseConfiguration)=='Debug DLL' or $(BaseConfiguration)=='Develop' or $(BaseConfiguration)=='Develop DLL'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release' or $(BaseConfiguration)=='Release DLL'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Debug DLL'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Release DLL' or $(BaseConfiguration)=='Develop DLL'">MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+      </Message>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+      </Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.cc" />
+    <ClCompile Include="source\AutomaticTrainOperationModule.cpp" />
+    <ClCompile Include="source\AutomaticTrainProtectionModule.cpp" />
+    <ClCompile Include="source\BeaconManagementModule.cpp" />
+    <ClCompile Include="source\CBTCOnBoardProperties.cpp" />
+    <ClCompile Include="source\CBTCOnBoardUnit.cpp" />
+    <ClCompile Include="source\CommsInterface.cpp" />
+    <ClCompile Include="source\ModeModelTransitionSource\IMode.cpp" />
+    <ClCompile Include="source\ModeModelTransitionSource\ModeConditions.cpp" />
+    <ClCompile Include="source\ModeModelTransitionSource\ModeTransitionMachine.cpp" />
+    <ClCompile Include="source\ModeModelTransitionSource\ModeTransitionModule.cpp" />
+    <ClCompile Include="source\OnBoardController.cpp" />
+    <ClCompile Include="source\SpeedAndDistanceMonitoringModule.cpp" />
+    <ClCompile Include="source\TextManagementModule.cpp" />
+    <ClCompile Include="source\TrackSideDataModule.cpp" />
+    <ClCompile Include="Source\UnitDLL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.h" />
+    <ClInclude Include="source\AutomaticTrainOperationModule.h" />
+    <ClInclude Include="source\AutomaticTrainProtectionModule.h" />
+    <ClInclude Include="source\BeaconManagementModule.h" />
+    <ClInclude Include="source\CBTCOnBoardProperties.h" />
+    <ClInclude Include="source\CBTCOnBoardUnit.h" />
+    <ClInclude Include="source\CommsInterface.h" />
+    <ClInclude Include="source\CBTCConstants.h" />
+    <ClInclude Include="source\CBTCModule.h" />
+    <ClInclude Include="source\ModeModelTransitionSource\IMode.h" />
+    <ClInclude Include="source\ModeModelTransitionSource\ModeConditions.h" />
+    <ClInclude Include="source\ModeModelTransitionSource\ModeTransitionMachine.h" />
+    <ClInclude Include="source\ModeModelTransitionSource\ModeTransitionModule.h" />
+    <ClInclude Include="source\OnBoardController.h" />
+    <ClInclude Include="source\SpeedAndDistanceMonitoringModule.h" />
+    <ClInclude Include="source\TextManagementModule.h" />
+    <ClInclude Include="source\TrackSideDataModule.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

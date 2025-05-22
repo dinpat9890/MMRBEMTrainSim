@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="ResourcesSoftwarePaths" >
+  <!-- If you're adding a module, just append its path to one of the following: -->
+  
+  <path id="cpp.libs">
+  </path>
+
+  <path id="cpp.apps">
+  </path>
+  
+  <path id="java.libs">
+  </path>
+
+  <path id="java.apps">
+  </path>
+
+  <path id="web.apps">
+  </path>
+
+  <path id="project.cots">
+  </path>
+
+  <path id="all_software">
+    <path refid="cpp.libs"/>
+    <path refid="cpp.apps"/>
+    <path refid="java.libs"/>
+    <path refid="java.apps"/>
+    <path refid="web.apps"/>
+    <path refid="project.cots"/>
+  </path>
+</project>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\CBTCOnBoardUnit.cpp" />
+    <ClCompile Include="Source\UnitDLL.cpp" />
+    <ClCompile Include="source\AutomaticTrainOperationModule.cpp">
+      <Filter>Source\Modules\Automatic Train Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AutomaticTrainProtectionModule.cpp">
+      <Filter>Source\Modules\Automatic Train Protection</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BeaconManagementModule.cpp">
+      <Filter>Source\Modules\Beacon Management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.cc">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TextManagementModule.cpp">
+      <Filter>Source\Modules\Text Management</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SpeedAndDistanceMonitoringModule.cpp">
+      <Filter>Source\Modules\Speed and Distance Monitoring</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CBTCOnBoardProperties.cpp">
+      <Filter>Source\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="source\OnBoardController.cpp">
+      <Filter>Source\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CommsInterface.cpp">
+      <Filter>Source\Comms I/O</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ModeModelTransitionSource\IMode.cpp">
+      <Filter>Source\Modules\Mode Transition\Mode State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ModeModelTransitionSource\ModeConditions.cpp">
+      <Filter>Source\Modules\Mode Transition\Mode State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ModeModelTransitionSource\ModeTransitionMachine.cpp">
+      <Filter>Source\Modules\Mode Transition\Mode State Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ModeModelTransitionSource\ModeTransitionModule.cpp">
+      <Filter>Source\Modules\Mode Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrackSideDataModule.cpp">
+      <Filter>Source\Modules\Trackside Data Management</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\CBTCOnBoardUnit.h" />
+    <ClInclude Include="source\CBTCConstants.h" />
+    <ClInclude Include="source\AutomaticTrainOperationModule.h">
+      <Filter>Source\Modules\Automatic Train Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AutomaticTrainProtectionModule.h">
+      <Filter>Source\Modules\Automatic Train Protection</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BeaconManagementModule.h">
+      <Filter>Source\Modules\Beacon Management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TextManagementModule.h">
+      <Filter>Source\Modules\Text Management</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SpeedAndDistanceMonitoringModule.h">
+      <Filter>Source\Modules\Speed and Distance Monitoring</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CBTCOnBoardProperties.h">
+      <Filter>Source\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="source\OnBoardController.h">
+      <Filter>Source\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CBTCModule.h">
+      <Filter>Source\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CommsInterface.h">
+      <Filter>Source\Comms I/O</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ModeModelTransitionSource\IMode.h">
+      <Filter>Source\Modules\Mode Transition\Mode State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ModeModelTransitionSource\ModeConditions.h">
+      <Filter>Source\Modules\Mode Transition\Mode State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ModeModelTransitionSource\ModeTransitionMachine.h">
+      <Filter>Source\Modules\Mode Transition\Mode State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ModeModelTransitionSource\ModeTransitionModule.h">
+      <Filter>Source\Modules\Mode Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TrackSideDataModule.h">
+      <Filter>Source\Modules\Trackside Data Management</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ad78ce32-7cb4-45ee-8d9a-b31c90b37f86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Configuration">
+      <UniqueIdentifier>{8a307079-3713-4ff6-99db-5e30e3fbf9b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Controller">
+      <UniqueIdentifier>{fd7f514e-f6dd-4504-8303-45e18fe1789b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules">
+      <UniqueIdentifier>{4eb93a09-ce44-4c8e-a80b-c98407ebaca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Beacon Management">
+      <UniqueIdentifier>{b04b9676-b13b-48d7-8c5d-51a1354934cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Mode Transition">
+      <UniqueIdentifier>{63694da3-3998-47d2-9417-302c080a2ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Mode Transition\Mode State Machine">
+      <UniqueIdentifier>{2f0677a8-9eea-4e93-96a9-22b6ec2e68de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Speed and Distance Monitoring">
+      <UniqueIdentifier>{fc4988ba-376b-459e-9414-6fa368658bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Text Management">
+      <UniqueIdentifier>{e9ddd45a-3c6c-4585-9724-ad643680c005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Automatic Train Operation">
+      <UniqueIdentifier>{57cdb6e0-7271-4f32-881b-02c3deb465db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Automatic Train Protection">
+      <UniqueIdentifier>{bb28a723-039f-4cc5-8ad0-8acd02c2ce6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{cf1574c1-c46a-4f2a-8344-8012aa130ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Comms I/O">
+      <UniqueIdentifier>{208d9848-fcc4-405b-bbab-477620c6e35d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Modules\Trackside Data Management">
+      <UniqueIdentifier>{e4a06dcd-8ef1-4537-95ad-4f04be734957}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

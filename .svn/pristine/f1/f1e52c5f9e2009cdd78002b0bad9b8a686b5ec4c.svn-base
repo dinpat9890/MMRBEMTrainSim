@@ -1,0 +1,300 @@
+<?xml version="1.0" ?>
+<xs:schema targetNamespace="http://www.sydac.com.au/WorldDefinition/1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	   xmlns="http://www.sydac.com.au/WorldDefinition/1.0/" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+      WorldDefinition 1.0 XML Schema
+      XML Schema for http://www.sydac.com.au/WorldDefinition/1.0/ namespace
+
+      Created 2004-11-24
+
+      Created by 
+
+      James Errington (james.errington@sydac.com.au)
+
+      This schema declares XML elements for the TrackDefinition elements from the
+      http://www.sydac.com.au/TrackDefinition/1.0/ namespace.
+    </xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="segment_id">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="object_id">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="connection_id">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="script_id">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="direction">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="angle_degrees">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="-180.0" />
+			<xs:maxInclusive value="180.0" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TrackOrientation">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="fromalpha" />
+			<xs:enumeration value="frombeta" />
+			<xs:enumeration value="both" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="SimpleLiteral">
+		<xs:complexContent mixed="true">
+			<xs:restriction base="xs:anyType">
+				<xs:sequence>
+					<xs:any processContents="lax" minOccurs="0" maxOccurs="0" />
+				</xs:sequence>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="world_definition">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="description" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">
+							<xs:element name="title" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="creator" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="subject" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="description" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="publisher" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="contributor" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="date" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="type" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="format" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="identifier" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="source" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="language" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="relation" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="coverage" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+							<xs:element name="rights" type="SimpleLiteral" minOccurs="0" maxOccurs="unbounded" />
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="track_segments" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="track_segment" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:choice maxOccurs="unbounded" >
+											<xs:element name="nondriveable" minOccurs="0" maxOccurs="1" />
+											<xs:element name="rail" minOccurs="0" maxOccurs="unbounded" >
+												<xs:complexType>
+													<xs:attribute name="offset" form="unqualified" type="xs:double" use="required" />
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:sequence>
+									<xs:attribute name="segment_id" form="unqualified" type="segment_id" use="required" />
+									<xs:attribute name="name" form="unqualified" type="xs:string" use="optional" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="track_connectivity" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="connection" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="connection_id" form="unqualified" type="connection_id" use="required" />
+									<xs:attribute name="from" form="unqualified" type="xs:positiveInteger" use="required" />
+									<xs:attribute name="from_alpha" form="unqualified" type="xs:boolean" use="required" />
+									<xs:attribute name="to" form="unqualified" type="xs:positiveInteger" use="required" />
+									<xs:attribute name="to_alpha" form="unqualified" type="xs:boolean" use="required" />
+									<xs:attribute name="always_active" form="unqualified" type="xs:boolean" use="optional" />
+									<xs:attribute name="name" form="unqualified" type="xs:string" use="optional" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="track_geometry" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="segment_geometry" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="widths" minOccurs="0" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="width" minOccurs="1" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="value" form="unqualified" type="xs:double" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="point" minOccurs="2" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="transition" minOccurs="0" maxOccurs="1">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="arg" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+																		<xs:attribute name="value" form="unqualified" type="xs:string" use="required" />
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="type" form="unqualified" type="xs:string" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="x" form="unqualified" type="xs:double" use="required" />
+												<xs:attribute name="y" form="unqualified" type="xs:double" use="required" />
+												<xs:attribute name="z" form="unqualified" type="xs:double" use="required" />
+												<xs:attribute name="e" form="unqualified" type="xs:double" use="optional" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="segment_id" form="unqualified" type="xs:positiveInteger" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="objects" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="object" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+												<xs:attribute name="value" form="unqualified" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="object_id" form="unqualified" type="xs:positiveInteger" use="required" />
+									<xs:attribute name="type" form="unqualified" type="xs:string" use="required" />
+									<xs:attribute name="name" form="unqualified" type="xs:string" use="optional" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="track_objects" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="placement" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="object_id" form="unqualified" type="object_id" />
+									<xs:attribute name="segment_id" form="unqualified" type="segment_id" />
+									<xs:attribute name="offset" form="unqualified" type="xs:double" />
+									<xs:attribute name="orientation" form="unqualified" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="object_geometries" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="object_geometry" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="object_boundary" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="arg" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+															<xs:attribute name="value" form="unqualified" type="xs:string" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="type" form="unqualified" type="xs:string" use="required" />
+												<xs:attribute name="x" form="unqualified" type="xs:double" use="optional" />
+												<xs:attribute name="y" form="unqualified" type="xs:double" use="optional" />
+												<xs:attribute name="z" form="unqualified" type="xs:double" use="optional" />
+												<xs:attribute name="heading" form="unqualified" type="angle_degrees" use="optional" />
+												<xs:attribute name="pitch" form="unqualified" type="angle_degrees" use="optional" />
+												<xs:attribute name="roll" form="unqualified" type="angle_degrees" use="optional" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="object_id" form="unqualified" type="object_id" use="required" />
+									<xs:attribute name="x" form="unqualified" type="xs:double" use="required" />
+									<xs:attribute name="y" form="unqualified" type="xs:double" use="required" />
+									<xs:attribute name="z" form="unqualified" type="xs:double" use="required" />
+									<xs:attribute name="heading" form="unqualified" type="angle_degrees" use="optional" />
+									<xs:attribute name="pitch" form="unqualified" type="angle_degrees" use="optional" />
+									<xs:attribute name="roll" form="unqualified" type="angle_degrees" use="optional" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="points_behaviour" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="point_behaviour" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="state" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="active_connection" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="connection_id" form="unqualified" type="connection_id" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="state_id" form="unqualified" type="xs:string" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="object_id" form="unqualified" type="object_id" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="scripting" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">
+							<xs:element name="script" minOccurs="0" maxOccurs="unbounded" >
+								<xs:complexType mixed="true" >
+									<xs:attribute name="script_id" form="unqualified" type="script_id" use="required" />
+									<xs:attribute name="description" form="unqualified" type="xs:string" use="optional" />
+									<xs:attribute name="type" form="unqualified" type="xs:string" use="optional" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="object_script" minOccurs="0" maxOccurs="unbounded" >
+								<xs:complexType mixed="true" >
+									<xs:attribute name="script_id" form="unqualified" type="script_id" use="required" />
+									<xs:attribute name="description" form="unqualified" type="xs:string" use="optional" />
+									<xs:attribute name="type" form="unqualified" type="xs:string" use="optional" />
+									<xs:attribute name="object_id" form="unqualified" type="object_id" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="version" form="unqualified" type="xs:double" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

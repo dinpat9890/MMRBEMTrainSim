@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <audio_routing>
+        <roles>
+            <role name="Driver" />
+            <role name="Instructor" />
+            <role name="Observer" />
+        </roles>
+        <!-- Refered from Development design MMRBEM : audio Routing with Digiface
+             https://adl-atlassian.simu.lan/confluence/display/MMRBEM/DSW+Audio+Routing+with+Digiface -->
+        <audio_terminals>
+            <!-- DSW Audio IO terminals -->
+            <audio_terminal name="Instructor Mic" />
+            <audio_terminal name="Instructor Speaker" />
+            <audio_terminal name="Cab Amb Mic" />
+            <audio_terminal name="Cab Speaker" />            
+            <audio_terminal name="PAPIS Mic" />            
+            <audio_terminal name="Train Radio Mic" />            
+            <audio_terminal name="Observer Speaker" />            
+            <audio_terminal name="Instructor Recording" />
+            <audio_terminal name="Instructor Replay" />
+        </audio_terminals>
+        <audio_ports>
+            <!-- DSW Outputs -->
+            <audio_port is_input="0" socket="1">
+            <audio_terminal_map physical_hub_id="2" terminal="Instructor Speaker" />
+            </audio_port>
+            <audio_port is_input="0" socket="3">
+            <audio_terminal_map physical_hub_id="1" terminal="Cab Speaker" />
+            </audio_port>
+            <audio_port is_input="0" socket="7">
+            <audio_terminal_map physical_hub_id="3" terminal="Observer Speaker" />
+            </audio_port>
+            <audio_port is_input="0" socket="9">
+            <audio_terminal_map physical_hub_id="2" terminal="Instructor Recording" />
+            </audio_port>
+            
+            <!-- DSW Inputs -->
+            <audio_port is_input="1" socket="1">
+            <audio_terminal_map physical_hub_id="2" terminal="Instructor Mic" />
+            </audio_port>
+            <audio_port is_input="1" socket="3">
+            <audio_terminal_map physical_hub_id="1" terminal="Cab Amb Mic" />
+            </audio_port>            
+            <audio_port is_input="1" socket="5">
+            <audio_terminal_map physical_hub_id="1" terminal="PAPIS Mic" />
+            </audio_port>  
+            <audio_port is_input="1" socket="6">
+            <audio_terminal_map physical_hub_id="1" terminal="Train Radio Mic" />
+            </audio_port> 
+            <audio_port is_input="1" socket="9">
+            <audio_terminal_map physical_hub_id="2" terminal="Instructor Replay" />
+            </audio_port>
+            
+        </audio_ports>
+    </audio_routing>
+</config>

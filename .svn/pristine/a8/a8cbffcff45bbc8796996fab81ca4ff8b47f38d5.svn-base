@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="bldg_res_02_grill_d" guid="06271682fb702f63a825be4f6483e19449af937e" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1"/>
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/library_objects/gen_building/textures/bldg_res_02_grill_d.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

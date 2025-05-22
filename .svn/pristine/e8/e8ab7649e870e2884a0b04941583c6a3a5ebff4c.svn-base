@@ -1,0 +1,349 @@
+<?xml version="1.0" ?>
+<xs:schema targetNamespace="http://www.sydac.com.au/FeatureControl/1.0/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  attributeFormDefault="qualified" elementFormDefault="qualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Feature Control Schema
+      XML Schema for http://www.sydac.com.au/FeatureControl/1.0/ namespace
+
+      Created 2018-02-12
+
+      Created by 
+
+      James Errington (james.errington@sydac.com.au)
+    </xs:documentation>
+
+  </xs:annotation>
+
+  <xs:element name="control_table">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="world_description">
+          <xs:complexType>
+            <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+            <xs:attribute name="value" form="unqualified" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="script">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="value" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="route">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="point_requirement" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded">
+                    <xs:element name="normal" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="reverse" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="unless_normal" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="unless_reverse" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="feature_control" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="features" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="feature" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded">
+                          <xs:element name="mapped_state" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="default" form="unqualified" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="state" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="default" form="unqualified" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                              <xs:attribute name="default" form="unqualified" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:choice>
+                        <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="route_case" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="case" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded">
+                          <xs:element name="actions" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:choice maxOccurs="unbounded">
+                                <xs:element name="mapped_state" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="feature" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="state" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="state" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="feature" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="state" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="feature" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="property" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="value" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="feature_requirement" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:choice maxOccurs="unbounded">
+                                <xs:element name="mapped_state" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="feature" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="state" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="state" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="feature" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="state" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="feature" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="property" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="value" form="unqualified" type="xs:string" use="required" />
+                                    <xs:attribute name="op" form="unqualified" type="xs:string" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="route_requirement" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="route" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="route" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                          </xs:complexType>
+                          </xs:element>
+                          <xs:element name="approach_requirement" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="approach_route" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="approach_circuit" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                          <xs:attribute name="time" form="unqualified" type="xs:string" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" form="unqualified" type="xs:string" use="optional" />
+                                    <xs:attribute name="time" form="unqualified" type="xs:string" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="point_requirement" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:choice maxOccurs="unbounded">
+                                <xs:element name="normal" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="reverse" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="unless_normal" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="unless_reverse" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="track_circuit_requirement" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:choice maxOccurs="unbounded">
+                                <xs:element name="track_circuit_clear" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="point_requirement" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:choice maxOccurs="unbounded">
+                                      <xs:element name="normal" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="reverse" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="unless_normal" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="unless_reverse" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:choice>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" form="unqualified" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="feature_group">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+              <xs:element name="script">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="value" type="xs:string" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="includes" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded">
+                    <xs:element name="has_state" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="state" form="unqualified" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="property" form="unqualified" type="xs:string" use="required" />
+                        <xs:attribute name="value" form="unqualified" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                  <xs:attribute name="feature" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="feature_type" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="feature_type_group" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="list" form="unqualified" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="excludes" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded">
+                    <xs:element name="has_state" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="state" form="unqualified" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="property" form="unqualified" type="xs:string" use="required" />
+                        <xs:attribute name="value" form="unqualified" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                  <xs:attribute name="feature" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="feature_type" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="feature_type_group" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="list" form="unqualified" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="feature_insertion" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="feature_type" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="placement_group" form="unqualified" type="xs:string" use="optional" />
+                  <xs:attribute name="proxy" form="unqualified" type="xs:boolean" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="mapped_feature_state" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="mapped_state" form="unqualified" type="xs:string" use="required" />
+                  <xs:attribute name="state" form="unqualified" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute name="name" form="unqualified" type="xs:string" use="optional" />
+            <xs:attribute name="controlled" form="unqualified" type="xs:boolean" use="optional" />
+            <xs:attribute name="exclude" form="unqualified" type="xs:boolean" use="optional" />
+            <xs:attribute name="type" form="unqualified" type="xs:string" use="optional" />
+            <xs:attribute name="error" form="unqualified" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="feature_insertion" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="feature_type" form="unqualified" type="xs:string" use="optional" />
+            <xs:attribute name="placement_group" form="unqualified" type="xs:string" use="optional" />
+            <xs:attribute name="proxy" form="unqualified" type="xs:boolean" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

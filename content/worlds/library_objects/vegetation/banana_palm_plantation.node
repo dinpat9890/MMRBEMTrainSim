@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshClutter" id="813605308" name="banana_palm_plantation_1">
+		<mesh_name>../worlds/shared/graphics/vegetation/banana_palm.mesh</mesh_name>
+		<intersection>1</intersection>
+		<visible_distance>500</visible_distance>
+		<fade_distance>80</fade_distance>
+		<size_x>100</size_x>
+		<size_y>300</size_y>
+		<step>25</step>
+		<density>0.00999999978</density>
+		<threshold>0.307999998</threshold>
+		<angle>0</angle>
+		<min_scale_mean>0.5</min_scale_mean>
+		<min_scale_spread>0</min_scale_spread>
+		<max_scale_mean>0.800000012</max_scale_mean>
+		<max_scale_spread>0</max_scale_spread>
+		<offset_mean>0</offset_mean>
+		<offset_spread>0</offset_spread>
+		<rotation_mean>0 0 180</rotation_mean>
+		<rotation_spread>0 0 90</rotation_spread>
+		<surface name="banana_palm_a_leaves" max_visible_distance="800" material="5cfd5c3711c512fbfe2339ac7915a170a7ccf68c" property="surface_base"/>
+		<surface name="banana_palm_a_trunk" max_visible_distance="800" material="3160447dac52f43b0447450255b00c3231eb710c" property="surface_base"/>
+		<transform>0.817079820285 -0.576524147573 0 0.0 0.576524207177 0.817079939494 0 0.0 0 0 0.999999880791 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

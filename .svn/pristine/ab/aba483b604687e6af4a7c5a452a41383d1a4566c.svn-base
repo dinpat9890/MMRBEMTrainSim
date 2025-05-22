@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="1616029183" name="rail_worker_03">
+		<mesh_name>../features/obstruction_features/graphics/rail_worker_03.mesh</mesh_name>
+		<surface name="MA_indian_rail_worker_03_LP" min_visible_distance="20" max_visible_distance="800" min_fade_distance="1" material="14e920f22cfcb60d9b527489fdceb9efd26058f3" property="surface_base"/>
+		<surface name="MA_indian_rail_worker_03_MP" min_visible_distance="0" max_visible_distance="20" max_fade_distance="1" material="14e920f22cfcb60d9b527489fdceb9efd26058f3" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.26325641456e-014 0 0 1.0</transform>
+	</node>
+</nodes>

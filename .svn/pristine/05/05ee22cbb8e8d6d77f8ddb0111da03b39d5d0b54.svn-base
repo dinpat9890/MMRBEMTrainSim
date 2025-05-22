@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="603876209" name="oregonash_middle">
+		<mesh_name>../worlds/shared/graphics/vegetation/oregonash_middle.mesh</mesh_name>
+		<surface name="tree_branches_lod2" material="1a7e1d3820a7ca0e0d567260717bdb125f5376af" property="surface_base"/>
+		<surface name="tree_trunk_lod2" material="df9abb5481db44f12d04e0c3016e733973c851ad" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

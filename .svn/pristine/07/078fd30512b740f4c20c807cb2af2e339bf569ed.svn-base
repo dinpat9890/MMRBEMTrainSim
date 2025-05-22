@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Features Library                                                        -->
+<!-- ======================================================================= -->
+<project name="ProjectFeatures" default="build.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" >
+  <import file="../../../ant.common_properties.xml" />
+  <import file="${dir.software}/ant.paths.xml" />
+  
+  <property name="jar.base.name" value="projectfeatures" />
+
+  <!-- As much as possible, this should be standard -->
+  <import file="${dir.deps.processes}/builder/builder.config.features.xml" as="builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+</project>

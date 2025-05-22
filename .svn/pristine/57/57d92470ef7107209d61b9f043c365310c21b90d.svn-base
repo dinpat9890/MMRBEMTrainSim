@@ -1,0 +1,237 @@
+<?xml version="1.0" ?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e6155a57-87a8-4e1a-a6e3-0ee4aefa9fdc}</ProjectGuid>
+    <RootNamespace>BEML_EMU</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>BEML_EMU</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props"/>
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)\bin\</OutDir>
+    <IntDir>$(SolutionDir)\build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <COTSIncludeRoot>$(CoreTrainSimRoot)/Software/COTS/</COTSIncludeRoot>
+    <TargetName>$(ProjectName)_model</TargetName>
+    <MatlabDefines>MODEL=BEML_EMU;NUMST=5;NCSTATES=0;HAVESTDIO;RT;USE_RTMODEL;CLASSIC_INTERFACE=0;ALLOCATIONFCN=0;TID01EQ=0;MAT_FILE=0;ONESTEPFCN=1;TERMFCN=1;MULTI_INSTANCE_CODE=1;INTEGER_CODE=0;MT=0;</MatlabDefines>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(CommonIncludeRoot)sim_common/include;$(CommonIncludeRoot)common/include;$(CoreSimConfigRoot)core_comms_structure/include;$(CoreSimIncludeRoot)model_dll/include;$(CoreSimIncludeRoot)core_types/include;$(ProjectConfigRoot)project_comms_structure/include;$(CoreTrainSimConfigRoot)train_comms_structure/include;$(CoreTrainSimIncludeRoot)train_types/include;../../project/include;../common;%(AdditionalIncludeDirectories);source;../../common/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(MatlabDefines)$(ClPreprocessorDefinitions);_WINDOWS;STRICT;WIN32;_USRDLL;MX_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0c09</Culture>
+      <PreprocessorDefinitions>$(ResourcePreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);$(COTSIncludeRoot)WTL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectConfigRoot)project_comms_structure/lib;$(CommonIncludeRoot)common/lib;$(CoreSimIncludeRoot)model_dll/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>common$(LibType);model_dll$(LibType);project_comms_structure$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug DLL'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release DLL'">
+    <ClCompile>
+      <BasicRuntimeChecks/>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug DLL'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release DLL'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DebugInformationFormat/>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Debug DLL'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Release DLL'">MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\dll.cpp"/>
+    <ClCompile Include="source\RegisterMemoryMap.cpp"/>
+    <ClCompile Include="source\RegisterModel.cpp"/>
+    <ClCompile Include="source\ModelSpecific.cpp"/>
+    <ClCompile Include="source\MATLAB\BEML_EMU.cpp"/>
+    <ClCompile Include="source\MATLAB\BEML_EMU_capi.cpp"/>
+    <ClCompile Include="source\MATLAB\BEML_EMU_data.cpp"/>
+    <ClCompile Include="source\MATLAB\IOControls.cpp"/>
+    <ClCompile Include="source\MATLAB\IOControls_IncrementControl.cpp"/>
+    <ClCompile Include="source\MATLAB\IOControls_IncrementControl_h.cpp"/>
+    
+    <ClCompile Include="source\MATLAB\IOControls_capi.cpp"/>
+    <ClCompile Include="source\MATLAB\IncrementControl.cpp"/>
+    <ClCompile Include="source\MATLAB\MCBControl.cpp"/>
+    <ClCompile Include="source\MATLAB\MomentaryControl.cpp"/>
+    <ClCompile Include="source\MATLAB\ToggleControl.cpp"/>
+    <ClCompile Include="source\MATLAB\TrainDynamics.cpp"/>
+    <ClCompile Include="source\MATLAB\TrainDynamics_capi.cpp"/>
+    <ClCompile Include="source\MATLAB\look1_ts8Dd_binlcapw.cpp"/>
+    <ClCompile Include="source\MATLAB\rtGetInf.cpp"/>
+    <ClCompile Include="source\MATLAB\rtGetNaN.cpp"/>
+    <ClCompile Include="source\MATLAB\rt_nonfinite.cpp"/>
+    <ClCompile Include="source\MATLAB\rt_zcfcn.cpp"/>
+    <ClInclude Include="source\MATLAB\BEML_EMU.h"/>
+    <ClInclude Include="source\MATLAB\BEML_EMU_capi.h"/>
+    <ClInclude Include="source\MATLAB\BEML_EMU_capi_host.h"/>
+    <ClInclude Include="source\MATLAB\BEML_EMU_private.h"/>
+    <ClInclude Include="source\MATLAB\BEML_EMU_types.h"/>
+    <ClInclude Include="source\MATLAB\IOControls.h"/>
+    <ClInclude Include="source\MATLAB\IOControls_IncrementControl.h"/>
+    <ClInclude Include="source\MATLAB\IOControls_IncrementControl_h.h"/>
+    
+    <ClInclude Include="source\MATLAB\IOControls_capi.h"/>
+    <ClInclude Include="source\MATLAB\IOControls_capi_host.h"/>
+    <ClInclude Include="source\MATLAB\IOControls_private.h"/>
+    <ClInclude Include="source\MATLAB\IOControls_types.h"/>
+    <ClInclude Include="source\MATLAB\IncrementControl.h"/>
+    <ClInclude Include="source\MATLAB\MCBControl.h"/>
+    <ClInclude Include="source\MATLAB\MomentaryControl.h"/>
+    <ClInclude Include="source\MATLAB\ToggleControl.h"/>
+    <ClInclude Include="source\MATLAB\TrainDynamics.h"/>
+    <ClInclude Include="source\MATLAB\TrainDynamics_capi.h"/>
+    <ClInclude Include="source\MATLAB\TrainDynamics_capi_host.h"/>
+    <ClInclude Include="source\MATLAB\TrainDynamics_private.h"/>
+    <ClInclude Include="source\MATLAB\TrainDynamics_types.h"/>
+    <ClInclude Include="source\MATLAB\builtin_typeid_types.h"/>
+    <ClInclude Include="source\MATLAB\ext_work.h"/>
+    <ClInclude Include="source\MATLAB\look1_ts8Dd_binlcapw.h"/>
+    <ClInclude Include="source\MATLAB\model_reference_types.h"/>
+    <ClInclude Include="source\MATLAB\multiword_types.h"/>
+    <ClInclude Include="source\MATLAB\rtGetInf.h"/>
+    <ClInclude Include="source\MATLAB\rtGetNaN.h"/>
+    <ClInclude Include="source\MATLAB\rt_assert.h"/>
+    <ClInclude Include="source\MATLAB\rt_logging.h"/>
+    <ClInclude Include="source\MATLAB\rt_nonfinite.h"/>
+    <ClInclude Include="source\MATLAB\rt_zcfcn.h"/>
+    <ClInclude Include="source\MATLAB\rtmodel.h"/>
+    <ClInclude Include="source\MATLAB\rtw_capi.h"/>
+    <ClInclude Include="source\MATLAB\rtw_continuous.h"/>
+    <ClInclude Include="source\MATLAB\rtw_extmode.h"/>
+    <ClInclude Include="source\MATLAB\rtw_matlogging.h"/>
+    <ClInclude Include="source\MATLAB\rtw_modelmap.h"/>
+    <ClInclude Include="source\MATLAB\rtw_modelmap_logging.h"/>
+    <ClInclude Include="source\MATLAB\rtw_solver.h"/>
+    <ClInclude Include="source\MATLAB\rtwtypes.h"/>
+    <ClInclude Include="source\MATLAB\simstruc_types.h"/>
+    <ClInclude Include="source\MATLAB\sl_sample_time_defs.h"/>
+    <ClInclude Include="source\MATLAB\sl_types_def.h"/>
+    <ClInclude Include="source\MATLAB\solver_zc.h"/>
+    <ClInclude Include="source\MATLAB\sysran_types.h"/>
+    <ClInclude Include="source\MATLAB\tmwtypes.h"/>
+  
+<ClCompile Include="source\MATLAB\BINARYSEARCH_real_T.cpp"/>
+<ClCompile Include="source\MATLAB\DoorSystem.cpp"/>
+<ClCompile Include="source\MATLAB\DoorSystem_capi.cpp"/>
+<ClCompile Include="source\MATLAB\ElectricalSystem.cpp"/>
+<ClCompile Include="source\MATLAB\ElectricalSystem_capi.cpp"/>
+<ClCompile Include="source\MATLAB\LookUp_real_T_real_T.cpp"/>
+<ClCompile Include="source\MATLAB\PantographSystem.cpp"/>
+<ClCompile Include="source\MATLAB\PantographSystem_capi.cpp"/>
+<ClCompile Include="source\MATLAB\PneumaticsSystem.cpp"/>
+<ClCompile Include="source\MATLAB\PneumaticsSystem_capi.cpp"/>
+<ClCompile Include="source\MATLAB\PneumaticsSystem_data.cpp"/>
+<ClCompile Include="source\MATLAB\TractionSystem.cpp"/>
+<ClCompile Include="source\MATLAB\TractionSystem_capi.cpp"/>
+<ClCompile Include="source\MATLAB\TrainBrakes.cpp"/>
+<ClCompile Include="source\MATLAB\TrainBrakes_capi.cpp"/>
+<ClCompile Include="source\MATLAB\rt_nrand_Upu32_Yd_f_pw_snf.cpp"/>
+<ClCompile Include="source\MATLAB\rt_powd_snf.cpp"/>
+<ClCompile Include="source\MATLAB\rt_urand_Upu32_Yd_f_pw_snf.cpp"/>
+<ClInclude Include="source\MATLAB\BINARYSEARCH_real_T.h"/>
+<ClInclude Include="source\MATLAB\DoorSystem.h"/>
+<ClInclude Include="source\MATLAB\DoorSystem_capi.h"/>
+<ClInclude Include="source\MATLAB\DoorSystem_capi_host.h"/>
+<ClInclude Include="source\MATLAB\DoorSystem_private.h"/>
+<ClInclude Include="source\MATLAB\DoorSystem_types.h"/>
+<ClInclude Include="source\MATLAB\ElectricalSystem.h"/>
+<ClInclude Include="source\MATLAB\ElectricalSystem_capi.h"/>
+<ClInclude Include="source\MATLAB\ElectricalSystem_capi_host.h"/>
+<ClInclude Include="source\MATLAB\ElectricalSystem_private.h"/>
+<ClInclude Include="source\MATLAB\ElectricalSystem_types.h"/>
+<ClInclude Include="source\MATLAB\LookUp_real_T_real_T.h"/>
+<ClInclude Include="source\MATLAB\PantographSystem.h"/>
+<ClInclude Include="source\MATLAB\PantographSystem_capi.h"/>
+<ClInclude Include="source\MATLAB\PantographSystem_capi_host.h"/>
+<ClInclude Include="source\MATLAB\PantographSystem_private.h"/>
+<ClInclude Include="source\MATLAB\PantographSystem_types.h"/>
+<ClInclude Include="source\MATLAB\PneumaticsSystem.h"/>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_capi.h"/>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_capi_host.h"/>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_private.h"/>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_types.h"/>
+<ClInclude Include="source\MATLAB\TractionSystem.h"/>
+<ClInclude Include="source\MATLAB\TractionSystem_capi.h"/>
+<ClInclude Include="source\MATLAB\TractionSystem_capi_host.h"/>
+<ClInclude Include="source\MATLAB\TractionSystem_private.h"/>
+<ClInclude Include="source\MATLAB\TractionSystem_types.h"/>
+<ClInclude Include="source\MATLAB\TrainBrakes.h"/>
+<ClInclude Include="source\MATLAB\TrainBrakes_capi.h"/>
+<ClInclude Include="source\MATLAB\TrainBrakes_capi_host.h"/>
+<ClInclude Include="source\MATLAB\TrainBrakes_private.h"/>
+<ClInclude Include="source\MATLAB\TrainBrakes_types.h"/>
+<ClInclude Include="source\MATLAB\rt_nrand_Upu32_Yd_f_pw_snf.h"/>
+<ClInclude Include="source\MATLAB\rt_powd_snf.h"/>
+<ClInclude Include="source\MATLAB\rt_urand_Upu32_Yd_f_pw_snf.h"/>
+<ClCompile Include="source\MATLAB\TCMSSystem.cpp"/>
+<ClCompile Include="source\MATLAB\TCMSSystem_capi.cpp"/>
+<ClInclude Include="source\MATLAB\TCMSSystem.h"/>
+<ClInclude Include="source\MATLAB\TCMSSystem_capi.h"/>
+<ClInclude Include="source\MATLAB\TCMSSystem_capi_host.h"/>
+<ClInclude Include="source\MATLAB\TCMSSystem_private.h"/>
+<ClInclude Include="source\MATLAB\TCMSSystem_types.h"/>
+<ClCompile Include="source\MATLAB\IOControls_IncrementControl_a.cpp"/>
+<ClInclude Include="source\MATLAB\IOControls_IncrementControl_a.h"/>
+<ClCompile Include="source\MATLAB\look1_pbinlcapw.cpp"/>
+<ClInclude Include="source\MATLAB\look1_pbinlcapw.h"/>
+<ClCompile Include="source\MATLAB\CouplingSystem.cpp"/>
+<ClCompile Include="source\MATLAB\CouplingSystem_capi.cpp"/>
+<ClInclude Include="source\MATLAB\CouplingSystem.h"/>
+<ClInclude Include="source\MATLAB\CouplingSystem_capi.h"/>
+<ClInclude Include="source\MATLAB\CouplingSystem_capi_host.h"/>
+<ClInclude Include="source\MATLAB\CouplingSystem_private.h"/>
+<ClInclude Include="source\MATLAB\CouplingSystem_types.h"/>
+<ClCompile Include="source\MATLAB\look1_binlcapw.cpp"/>
+<ClCompile Include="source\MATLAB\look1_binlcpw.cpp"/>
+<ClInclude Include="source\MATLAB\look1_binlcapw.h"/>
+<ClInclude Include="source\MATLAB\look1_binlcpw.h"/>
+<ClCompile Include="source\MATLAB\RotaryControl.cpp"/>
+<ClCompile Include="source\MATLAB\rt_modd_snf.cpp"/>
+<ClInclude Include="source\MATLAB\RotaryControl.h"/>
+<ClInclude Include="source\MATLAB\rt_modd_snf.h"/></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

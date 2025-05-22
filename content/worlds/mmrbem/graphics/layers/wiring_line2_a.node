@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="41667260" folded="1" name="wiring_line2_a_collapsed">
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2491.23467069 -25567.3154573 -0.64243003667 1.0</transform>
+		<node type="ObjectMeshStatic" id="1443581599" name="Wires">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3467.70755006 32621.490251 -5.06510070031 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1145376343" name="Wires_2">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_2.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3328.27779466 31995.951334 -4.76197430845 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1895334845" name="Wires_3">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_3.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3323.32894563 31996.6425161 -4.78332011134 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1526758260" name="Wires_4">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_4.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3320.35593524 31969.953588 -4.78777802891 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1817304310" name="Wires_5">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_5.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3288.78841429 31880.178753 -4.77864056404 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="687670983" name="Wires_6">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_6.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3340.43945804 32114.9024623 -4.77789015485 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="498268844" name="Wires_7">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_7.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3389.9477041 32318.2129409 -4.77998469177 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1006392069" name="Wires_8">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_8.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3259.78207472 31604.8206934 -4.75103517469 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1787647875" name="Wires_9">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_9.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3254.90434472 31605.080602 -4.77102730548 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="247815568" name="Wires_10">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_10.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3251.02006499 31605.3442579 -4.76289134202 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1019395471" name="Wires_11">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_11.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3253.29322583 31652.7350571 -4.75747927827 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1848746564" name="Wires_12">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_12.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3245.06347584 31605.3938549 -4.7600512497 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1613096610" name="Wires_13">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_13.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2967.29374413 31301.9344261 -10.969398837 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1697728569" name="Wires_14">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_14.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2938.26381336 31282.6968274 -11.5749650727 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1946562189" name="Wires_15">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_15.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2720.5127921 24969.4258986 -9.09501753851 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1304048749" name="Wires_17">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_17.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2573.68732249 23709.0769729 -2.99725007257 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1431998507" name="Wires_18">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_18.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2566.64248284 23701.6287596 -3.16172150213 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1612809456" name="Wires_19">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_19.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2387.57289785 31354.9962635 -20.9828716158 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="807876248" name="Wires_20">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_20.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2287.3114694 31375.7697878 -22.2560582732 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="657473953" name="Wires_21">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_21.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2275.81638924 31365.585139 -22.3466843417 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="937333686" name="Wires_22">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_22.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2274.30166694 31371.4383966 -22.3971920082 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="242797097" name="Wires_23">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_23.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2253.46324927 31412.9061249 -22.9016078728 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="862090634" name="Wires_24">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_24.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2162.26270456 31441.0908295 -24.0092387147 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1471046560" name="Wires_25">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_25.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2186.94960604 31440.5353876 -23.7249401861 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="433996299" name="Wires_26">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_26.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2208.85816452 31439.2728728 -23.4752650703 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="37084620" name="Wires_27">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_27.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2193.61965569 31447.3273131 -23.6834288309 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1892360677" name="Wires_28">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_28.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2234.17884362 31438.3435457 -23.176230846 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="950157423" name="Wires_29">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_29.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2216.15412682 31449.1105632 -23.4329977868 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1023287875" name="Wires_30">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_30.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2198.91913123 31459.5740493 -23.6789171484 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="843542671" name="Wires_31">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_31.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2330.46606386 31407.8823994 -21.911261319 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1672046739" name="Wires_32">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_32.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2239.97807176 31451.1938187 -23.1593902233 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="498849209" name="Wires_33">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_33.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2222.52707108 31463.3484593 -23.4320177192 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="392711510" name="Wires_34">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_34.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2309.86306062 31428.0619242 -22.3323782522 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="157288526" name="Wires_35">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_35.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2245.33480838 31463.1564766 -23.1600251393 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1011257056" name="Wires_36">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_36.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2402.43807746 31391.9986084 -21.0852367346 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1257010378" name="Wires_37">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_37.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2365.31173693 31418.8559488 -21.7160364611 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1405644836" name="Wires_38">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_38.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2327.9353282 31442.1843044 -22.1144342446 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1727332618" name="Wires_39">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_39.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2382.12578016 31413.7660311 -21.5140341839 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1609755260" name="Wires_40">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_40.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2332.34858623 31447.5210602 -22.092709646 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2020589461" name="Wires_41">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_41.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2369.86924452 31429.1208225 -21.7052914716 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1313983599" name="Wires_42">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_42.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2405.42658036 31408.1932057 -21.0768802854 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="457279973" name="Wires_43">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_43.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2285.04264292 31516.81165 -23.0385936138 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1661003899" name="Wires_44">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_44.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2278.26977714 31530.1628831 -23.201089645 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1405137070" name="Wires_45">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_45.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2297.03022194 31526.9736096 -22.8808932617 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="448149470" name="Wires_46">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_46.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2285.071768 31528.8527523 -23.0240935308 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1883349543" name="Wires_47">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_47.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4961.00134317 37223.0245075 -8.95030301121 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="348587608" name="Wires_48">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_48.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4984.53346811 37245.6943824 -8.73486143194 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2090701648" name="Wires_49">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_49.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4671.27122704 36381.8289936 -8.96299230327 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2100370171" name="Wires_50">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_50.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4682.75165178 36407.4144117 -8.94328146088 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="532226619" name="Wires_51">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_51.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4251.32799515 35478.6061354 -8.06427780238 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1940052206" name="Wires_52">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_52.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4236.30555789 35455.0645693 -8.05845771947 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="151783255" name="Wires_53">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_53.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4120.39616596 34393.9775583 -5.99567146735 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1887400245" name="Wires_54">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_54.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4115.50924877 34393.5866307 -6.03074139356 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1479390386" name="Wires_55">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_55.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3867.79775932 33262.6045206 -6.83503036177 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="854591101" name="Wires_56">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_56.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3876.98714455 33290.1011883 -6.87646468096 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="39060038" name="Wires_57">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_57.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3370.28539121 32155.0195685 -4.76047798501 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="568512735" name="Wires_58">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_58.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3372.24945604 32187.0271183 -4.77508764056 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1021892158" name="Wires_59">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_59.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2703.61730697 31213.3913909 -14.4235232595 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="974408362" name="Wires_60">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_60.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2670.54786054 31228.1199984 -14.5876770448 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1661127490" name="Wires_61">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_61.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2683.93851168 31222.5158406 -14.3975753657 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1931303470" name="Wires_62">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_62.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2682.59978299 31220.9570427 -14.3942918368 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1677318840" name="Wires_63">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_63.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3332.07255562 30076.8567951 -10.2807553011 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="662008959" name="Wires_64">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_64.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3338.28793083 30048.303097 -10.2908116008 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="518389780" name="Wires_65">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_65.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3237.70280721 28086.4528529 -11.0645591188 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2071710014" name="Wires_66">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_66.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3225.86651497 28055.4304428 -11.0736413566 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1479599899" name="Wires_67">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_67.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3157.94216243 26658.9255648 -9.93611609887 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1216243814" name="Wires_68">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_68.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3163.13611425 26645.0550371 -9.93365446909 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="403935019" name="Wires_69">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_69.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2548.26879164 23487.1160739 -3.45365565611 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="46689038" name="Wires_70">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_70.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2543.64343722 23511.4649881 -3.0454590232 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="405075846" name="Wires_71">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_71.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2543.99146231 23545.3649006 -2.4057221532 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="564075570" name="Wires_72">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_72.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2606.31003216 23859.9056742 -0.577306252231 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="702660503" name="Wires_73">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_73.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3424.55307356 32450.4983342 -4.7534032791 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="123019391" name="Wires_74">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_74.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3422.32730297 32437.4356865 -4.73786448472 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="405854013" name="Wires_75">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_75.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3410.66204942 32398.9662601 -4.57904934423 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1783274518" name="Wires_76">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_76.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2638.24958133 24174.6870399 -5.28831967299 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="518923791" name="Wires_77">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_77.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2651.82634298 24210.2497133 -6.01653637341 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1022844760" name="Wires_78">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_78.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2654.91754726 24223.0399263 -6.27588515654 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1047604391" name="Wires_79">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_79.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2715.4306389 25554.0610791 -8.10530252203 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="267782059" name="Wires_80">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_80.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2721.0235766 25571.1080067 -7.79126654584 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="924365291" name="Wires_81">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_81.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3160.10637425 25685.654312 -8.48241979061 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="84422468" name="Wires_82">
+			<mesh_name>../worlds/mmrbem/graphics/wire//wiring_line2_a_collapsed/Wires_82.mesh</mesh_name>
+			<surface name="dynamic" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3124.86718331 25652.7127563 -7.30007091484 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="65117326" name="Wires_16_split">
+			<mesh_name>../worlds/mmrbem/graphics/wire/wiring_line2_a_collapsed/Wires_16_split.mesh</mesh_name>
+			<surface name="Wires_16" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 2670.88231839 25385.3380262 -11.258000671 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2034844161" name="Wires_1_split">
+			<mesh_name>../worlds/mmrbem/graphics/wire/wiring_line2_a_collapsed/Wires_1_split.mesh</mesh_name>
+			<surface name="Wires_1" collision="0" max_visible_distance="800" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3492.48924152 32676.3561258 -6.12828934973 1.0</transform>
+		</node>
+	</node>
+</nodes>

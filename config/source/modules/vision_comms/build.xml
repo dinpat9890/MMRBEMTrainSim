@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<project name="VisionComms Runtime Configuration" xmlns:ac="antlib:net.sf.antcontrib" basedir=".">
+  <property file="build.properties"/>
+  <import file="../../../../ant.common_properties.xml"/>
+  <import file="${dir.deps.processes}/builder/builder.config.macros.xml"/>
+
+  <!-- Contractual targets. -->
+  <target name="clean.all" description="Cleans all build artefacts.">
+    <delete dir="${build.config.dir}"/>
+    <delete dir="${build.output.dir}"/>
+    <delete file="CommsDataGenerator.log"/>
+  </target>
+
+  <target name="build.all" depends="generate.config, install.config" description="Builds artefacts for release.">
+  </target>
+
+  <target name="deploy.all" description="Deploys the runtime configuration.">
+    <copy todir="${deploy.dir}/Environment" overwrite="true" includeEmptyDirs="true">
+      <fileset dir="${runtime.config.dir}"/>
+    </copy>
+  </target>
+
+  <!-- Public targets. -->
+  <target name="generate.config" depends="prepare" description="Generates runtime configuration from source.">
+    <comms_data_generator
+      config="${build.config.dir}"
+      output="${build.output.dir}"
+      command="e"
+      args="/r &quot;${build.config.dir}/commsdatagenerator.rules.xml&quot; /x &quot;${commsdatagenerator.input}&quot;"
+      dir.tools="${dir.tools.comms_data_generator}"/>
+  </target>
+
+  <target name="install.config" description="Installs any configuration created by generate.config.">
+    <copy todir="${runtime.config.dir}" overwrite="true">
+      <fileset dir="${build.output.dir}" includes="*.ini"/>
+    </copy>
+  </target>
+
+  <!-- Internal targets. -->
+  <target name="prepare">
+    <mkdir dir="${build.config.dir}"/>
+    <mkdir dir="${build.output.dir}"/>
+  </target>
+</project>

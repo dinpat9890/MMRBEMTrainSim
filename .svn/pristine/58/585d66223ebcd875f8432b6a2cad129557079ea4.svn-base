@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<project name="Content" default="build.all">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../ant.common_properties.xml" />
+
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+  <import file="${dir.root}/ant.paths.xml" as="root_paths" />
+
+  <!-- Import paths to modules -->
+  <import file="${dir.deps.processes}/builder/builder.content.features.xml" as="features_builder" />  
+  
+    <!-- Overriding this ant task as the imported one does not place the generated files in the correct location. -->
+  <target name="generate.world_types" description="Generates a world_types.xml file for the current feature set" depends="combine_features">
+    <mkdir dir="${build.config.dir}/world_types"/>
+
+    <!-- Generate a world_types.xml file using the import_export_features tool -->
+    <!-- This should probably be a common macro -->
+    <exec executable="${dir.tools.import_export_features}/import_export_features.exe" resolveexecutable="true" failonerror="true">
+      <arg line="-w ${build.config.dir}/features ${build.config.dir}/world_types" />
+      <env key="PATH" path="${env.Path};${dir.content.deps.cots}/xerces/Bin/Win32;${dir.content.deps.cots}/oci/Win32/bin"/>
+    </exec>
+	 <!-- Copy the world_types.xml into the root of the features, for tools to reference -->
+    <copy tofile="${dir.content.project.features}/world_types.xml" file="${build.config.dir}/world_types/world_types.xml" overwrite="true" />
+    <copy tofile="${dir.content.project.features}/track_icons.xml" file="${build.config.dir}/world_types/track_icons.xml" overwrite="true" />
+   </target>
+</project>

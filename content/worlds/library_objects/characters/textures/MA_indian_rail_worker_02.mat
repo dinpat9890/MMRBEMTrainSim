@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="MA_indian_rail_worker_02" guid="fbcbef03a98c8fc2f138afdcb73ca9234343a083" parent="f4a968fecc6da61f97606239b14677d71f6a13cc" base_material="mesh_base">
+	<options two_sided="1"/>
+	<texture name="albedo">../worlds/library_objects/characters/textures/MA_Indian_Rail_Worker_02.dds</texture>
+	<parameter name="specular">0.5</parameter>
+	<parameter name="microfiber">0</parameter>
+</material>

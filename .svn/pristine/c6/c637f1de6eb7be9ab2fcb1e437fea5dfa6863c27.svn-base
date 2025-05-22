@@ -1,0 +1,117 @@
+(!
+  @file auto_train_control.script
+  @author Brett Stawinski
+
+  Controls the auto train in areas such as lights, coupling, and traction and brake control.
+  Note that auto train comms object definition should be done
+  in the auto_trains_object_definitions.script.
+
+  @copyright Copyright: SYDAC Pty Ltd, 2018
+)
+
+(include "auto_train_lookups.script")
+
+
+(for-all-trains $scenario_train_id
+  (enable-if-auto-train $scenario_train_id
+    
+    (! Default TrainLevel AutoTrain Control)
+    (symbol $automated_target_velocity 999
+		(with $target_velocity_request (get-number (number-id (train-object $scenario_train_id) "Target Velocity Request") 0.0)
+		  (with $automated_driver (== $target_velocity_request $automated_target_velocity)
+			(! Unfortunately we cannot get the value of the constant we defined earlier. see CORETRAIN-3224)
+			(with $max_speed (get-max-speed-for-train-type-name (train-type-name (get-train-type $scenario_train_id)))
+			  ( set-number-if
+				(not $automated_driver)
+				(number-id (train-object $scenario_train_id) "Target Velocity")
+				(min $target_velocity_request $max_speed)
+			  )
+			  
+			  (! Set Target Velocity to the tracks current speed limit if Automated Driver)
+			  ( set-number-if
+				$automated_driver
+				(number-id (train-object $scenario_train_id) "Target Velocity")
+				(get-number (number-id (child-object-id (train-object $scenario_train_id) (class-speed-limit)) "Max Allowable Speed") 0.0)
+			  )
+			  
+			  (set-number
+				(number-id (train-object $scenario_train_id) "Auto Driver Observe Speed Limits")
+				$automated_driver
+			  )
+			  
+			  (set-number
+				(number-id (train-object $scenario_train_id) "Auto Driver Observe Other Vehicles")
+				$automated_driver
+			  )
+			)          	  
+		  )	  
+		)
+	)
+(! AUTO TRAIN LIGHTING CONTROL)
+	(for-all-vehicles $scenario_train_id $vehicle_index
+(! HEADLIGHTS - OFF/HIGH/LOW)
+	(! Turn ON first car's Headlight)
+		(set-number
+				(number-id (train-object $scenario_train_id) "Auto Train Headlights")             (! BN: 25/11/2024: deliberately forcing this to ON as Auto Train Head light is not required as per Bhushan)
+				1.0
+		)
+		(set-number-if
+			(is-front-vehicle $scenario_train_id $vehicle_index)
+			(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Headlights")
+			(get-number (number-id (train-object $scenario_train_id) "Auto Train Headlights"))     
+		)		
+(! MARKER/TAIL LIGHTS OFF/WHITE/RED)
+	(! If Headlights on first car is turned ON, then Taillights on last car is turned ON RED)		
+		(set-number-if
+			(and (is-rear-vehicle $scenario_train_id $vehicle_index) (> (get-number (number-id (train-object $scenario_train_id) "Auto Train Headlights") 0.0) 0.0))
+			(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Marker Lights")
+			2.0
+		)
+		(set-number-if
+			(and (is-rear-vehicle $scenario_train_id $vehicle_index) (== 0.0 (get-number (number-id (train-object $scenario_train_id) "Auto Train Headlights") 0.0)))
+			(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Marker Lights")
+			0.0
+		)
+	(! Turn ON first car's Markerlight)
+		(set-number-if
+			(is-front-vehicle $scenario_train_id $vehicle_index)
+			(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Marker Lights")
+			(get-number (number-id (train-object $scenario_train_id) "Auto Train Marker Lights"))
+		)
+	(! Flash Markerlight based on Call-on PB pressed and not coupled with other train)
+		(set-number-if
+			(and 	(get-number (number-id (train-object $scenario_train_id) "Auto Train COLPB") 0.0)
+					(not (get-number (number-id (child-object-id (vehicle-object $scenario_train_id $vehicle_index) (class-coupling)) "Coupled") 0.0))
+			)
+			(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Marker Lights")
+			(* 2.0 (sustain  (periodic (get-number (number-id (train-object $scenario_train_id) "Auto Train COLPB") 0.0) 2.0) 1.0))
+		)		
+(! FLOOD LIGHT OFF/ON)
+	(! Turn ON first car's Floodlight)
+		(set-number-if
+			(is-front-vehicle $scenario_train_id $vehicle_index)
+			(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Flood Light")
+			(get-number (number-id (train-object $scenario_train_id) "Auto Train Flood Light"))
+		)
+(! FLASHER LIGHT OFF/FLASHING)
+	(! Turn ON first car's Flasherlight)
+		(set-number-if
+			(is-front-vehicle $scenario_train_id $vehicle_index)
+			(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Flasher Light")
+			(sustain (periodic (get-number (number-id (train-object $scenario_train_id) "Auto Train Flasher Light") 0.0) 2.0) 1.0)
+		)
+(! UTO RM LIGHTS OFF/ON/FLASHING)
+		(if  (== 1.0 (get-number (number-id (train-object $scenario_train_id) "Auto Train UTO RM Lights") 0.0))
+			(set-number 
+				(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car UTO RM Lights") 
+				(== 1.0 (get-number (number-id (train-object $scenario_train_id) "Auto Train UTO RM Lights") 0.0))
+			)
+			(set-number
+				(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car UTO RM Lights")
+				(sustain (periodic (== 2.0 (get-number (number-id (train-object $scenario_train_id) "Auto Train UTO RM Lights") 0.0)) 2.0) 1.0)
+			)
+		)
+		
+	)	
+  )
+)

@@ -1,0 +1,113 @@
+syntax = "proto2";
+
+package com.sydac.mmrbem.common.protos;
+
+option java_package = "com.sydac.mmrbem.papis.common.protos";
+option java_outer_classname = "PAPISProtos";
+
+message SkipIDList
+{
+	message SkipId
+	{
+		required int32 stationId = 1;
+	}
+	repeated SkipId idList= 1;
+}
+
+message VehiclePecuList
+{
+	message VehiclePecu
+	{
+	    required int32 pecu1 = 1;
+        required int32 pecu2 = 2;
+        required int32 pecu3 = 3;
+        required int32 pecu4 = 4;
+        required int32 vehInd = 5;
+    }
+	repeated VehiclePecu PecuList = 1;
+}
+
+message ManualAnnouncement
+{
+	enum MessageType
+	{
+		ARRIVAL_TYP = 0;
+		DEPARTURE_TYP= 1;
+	}
+
+	enum Door
+	{
+		LEFT_DOOR = 0;
+		RIGHT_DOOR= 1;
+	}
+
+	required int32 startStationId = 1;
+	required int32 nextStationId = 2;
+	required Door doorSideOpen = 3;
+	required MessageType arrivalDepartureType = 4;
+}
+
+/**
+*   PAPIS Line List - For Jave BE to FE communication
+**/
+  message LineList
+  {
+  	message LineDetail
+  	{
+  		required int32 lineId = 1;
+  		required string lineName = 2;
+  		required string lineCode = 3;
+  	}
+  	repeated LineDetail lineDetail = 1;
+  }
+  
+  /**
+*   PAPIS Station List - For Jave BE to FE communication
+**/
+  message StationList
+  {
+  	message StationDetail
+  	{
+  		required int32 stationId = 1;
+  		required string stationName = 2;
+  		required string stationCode = 3;
+  	}
+  	repeated StationDetail stationDetail = 1;
+  }
+  
+    /**
+*   PAPIS Spc Info List - For Jave BE to FE communication
+**/
+  message SpcInfoList
+  {
+  	message SpcInfoDetail
+  	{
+  		required int32 spcInfoId = 1;
+  		required string spcInfoCode = 2;
+  	}
+  	repeated SpcInfoDetail spcInfoDetail = 1;
+  }
+  
+  /**
+*   PAPIS Emg Info List - For Jave BE to FE communication
+**/
+  message EmgInfoList
+  {
+  	message EmgInfoDetail
+  	{
+  		required int32 emgInfoId = 1;
+  		required string emgInfoCode = 2;
+  	}
+  	repeated EmgInfoDetail emgInfoDetail = 1;
+  }
+  
+   message MultiplePecuCallList
+  {
+  	message MultiplePecuCall
+  	{
+  		required int32 pecuId = 1;
+  		required string pecuName = 2;
+  		
+  	}
+  	repeated MultiplePecuCall multiplePecuCall = 1;
+  }

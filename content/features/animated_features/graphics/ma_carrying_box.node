@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="103193041" name="ma_carrying_box">
+		<mesh_name>animated_features/graphics/ma_carrying_box.mesh</mesh_name>
+		<anim_name>animated_features/graphics/animations/ma_carrying_box_idle.anim</anim_name>
+		<loop>1</loop>
+		<speed>30</speed>
+		<surface name="MA_Carrying_Box" material="cc749c60a409c6667e9d34b1d07320f8cfa28e80" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

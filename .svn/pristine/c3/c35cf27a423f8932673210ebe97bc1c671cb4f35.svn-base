@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties version="1.00">
+	<property name="FlashingLight">
+		<state name="On">0</state>
+		<parameter name="TimeOn" type="float" max="30">0.5</parameter>
+		<parameter name="TimeOff" type="float" max="30">0.5</parameter>
+		<parameter name="StartTime" type="float" max="1e+008">0</parameter>
+	</property>
+</properties>

@@ -1,0 +1,415 @@
+package Mumbai_Metro_SMC;
+
+import java.io.File;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
+import org.sikuli.script.Screen;
+
+public class smc {
+
+	private static final String PATH_CONSTANT = PATH_CONSTANT";
+
+	public static void main(String[] args) throws FindFailed {
+
+		Screen screen = new Screen(1);
+		Screen screen1 = new Screen();
+
+		screen.find(PATH_CONSTANT+"smc_1.PNG");
+		screen.doubleClick(PATH_CONSTANTsmc_1.PNG");
+		screen.wait(2.0);
+
+		screen.find(PATH_CONSTANTDefaultManager.PNG");
+		screen.click(PATH_CONSTANTDefaultManager.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTSuperUser.PNG");
+		screen.click(PATH_CONSTANTSuperUser.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTpassword.PNG");
+		screen.click(PATH_CONSTANTpassword.PNG");
+		screen.type("password");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTokbutton.PNG");
+		screen.click(PATH_CONSTANTokbutton.PNG");
+		screen.wait(2.0);
+
+		screen.find(PATH_CONSTANTNewScenerio.PNG");
+		screen.click(PATH_CONSTANTNewScenerio.PNG");
+
+		screen.find(PATH_CONSTANTScenerioName.PNG");
+		screen.click(PATH_CONSTANTScenerioName.PNG");
+		screen.type("MumbaiMetroTrain");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTup1.PNG");
+		screen.click(PATH_CONSTANTup1.PNG");
+
+		screen.find(PATH_CONSTANTdown1.PNG");
+		screen.click(PATH_CONSTANTdown1.PNG");
+
+		screen.find(PATH_CONSTANTselectTrack.PNG");
+		screen.click(PATH_CONSTANTselectTrack.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTFeature_track.PNG");
+		screen.click(PATH_CONSTANTFeature_track.PNG");
+
+		screen.find(PATH_CONSTANTtrackOkButton.PNG");
+		screen.click(PATH_CONSTANTtrackOkButton.PNG");
+
+		screen.find(PATH_CONSTANTTrains.PNG");
+		screen.click(PATH_CONSTANTTrains.PNG");
+
+		screen.find(PATH_CONSTANTAddSimulated.PNG");
+		screen.click(PATH_CONSTANTAddSimulated.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTtrainName.PNG");
+		screen.click(PATH_CONSTANTtrainName.PNG");
+		screen.type("SimTrain");
+
+		screen.find(PATH_CONSTANTTripNumber.PNG");
+		screen.click(PATH_CONSTANTTripNumber.PNG");
+
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type("1234");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTselectType.PNG");
+		screen.click(PATH_CONSTANTselectType.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTEMU_6_car.PNG");
+		screen.click(PATH_CONSTANTEMU_6_car.PNG");
+
+		screen.find(PATH_CONSTANTtrainConsistOkButton.PNG");
+		screen.click(PATH_CONSTANTtrainConsistOkButton.PNG");
+
+		screen.find(PATH_CONSTANTselectPosition.PNG");
+		screen.click(PATH_CONSTANTselectPosition.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTmap_click.PNG");
+		screen.click(PATH_CONSTANTmap_click.PNG");
+
+		screen.mouseMove(PATH_CONSTANTmap_drop.PNG");
+
+		screen.find(PATH_CONSTANTtrackOk.PNG");
+		screen.click(PATH_CONSTANTtrackOk.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTTrainOk1.PNG");
+		screen.click(PATH_CONSTANTTrainOk1.PNG");
+
+		screen.find(PATH_CONSTANTsaveAsNew.PNG");
+		screen.click(PATH_CONSTANTsaveAsNew.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.click(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.wait(2.0);
+
+		// Copy Scenario
+
+		screen.find(PATH_CONSTANTCopyScenario.PNG");
+		screen.click(PATH_CONSTANTCopyScenario.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTEMU_6_car_feature_track.PNG");
+		screen.click(PATH_CONSTANTEMU_6_car_feature_track.PNG");
+
+		screen.find(PATH_CONSTANTcopy_ok_button.PNG");
+		screen.click(PATH_CONSTANTcopy_ok_button.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTCopy_Scenerio_save_as_new.PNG");
+		screen.click(PATH_CONSTANTCopy_Scenerio_save_as_new.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.click(PATH_CONSTANTdoneScenerioOkButton.PNG");
+
+		// Edit Scenario
+
+		screen.find(PATH_CONSTANTEdit_Scenario.PNG");
+		screen.click(PATH_CONSTANTEdit_Scenario.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTMumbai.PNG");
+		screen.click(PATH_CONSTANTMumbai.PNG");
+
+		screen.find(PATH_CONSTANTedit_ok.PNG");
+		screen.click(PATH_CONSTANTedit_ok.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTScriptedEvent.PNG");
+		screen.click(PATH_CONSTANTScriptedEvent.PNG");
+
+		screen.find(PATH_CONSTANTAddInitialCondition.PNG");
+		screen.click(PATH_CONSTANTAddInitialCondition.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTbutton_click.PNG");
+		screen.click(PATH_CONSTANTbutton_click.PNG");
+
+		screen.find(PATH_CONSTANTSelectEvent.PNG");
+		screen.click(PATH_CONSTANTSelectEvent.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTlight.PNG");
+		screen.click(PATH_CONSTANTlight.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTtrainConsistOkButton.PNG");
+		screen.click(PATH_CONSTANTtrainConsistOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTselectAnEvent.PNG");
+		screen.click(PATH_CONSTANTselectAnEvent.PNG");
+
+		screen.find(PATH_CONSTANTon.PNG");
+		screen.click(PATH_CONSTANTon.PNG");
+
+		screen.find(PATH_CONSTANTtrackOkButton.PNG");
+		screen.click(PATH_CONSTANTtrackOkButton.PNG");
+
+		screen.find(PATH_CONSTANTsave.PNG");
+		screen.click(PATH_CONSTANTsave.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.click(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.wait(2.0);
+
+		// Delete Scenario
+
+		screen.find(PATH_CONSTANTDeleteScenerio.PNG");
+		screen.click(PATH_CONSTANTDeleteScenerio.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTCopyOfMumbai_Metro.PNG");
+		screen.click(PATH_CONSTANTCopyOfMumbai_Metro.PNG");
+
+		screen.find(PATH_CONSTANTdeleteOkButton.PNG");
+		screen.click(PATH_CONSTANTdeleteOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTDeleteButton.PNG");
+		screen.click(PATH_CONSTANTDeleteButton.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTyes_buton.PNG");
+		screen.click(PATH_CONSTANTyes_buton.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTSceneraioDeletedPopup.PNG");
+		screen.click(PATH_CONSTANTSceneraioDeletedPopup.PNG");
+
+		screen.wait(2.0);
+
+		screen.find(PATH_CONSTANTscenarioGroups.PNG");
+		screen.click(PATH_CONSTANTscenarioGroups.PNG");
+
+		screen.find(PATH_CONSTANTnewScenarioGroup.PNG");
+		screen.click(PATH_CONSTANTnewScenarioGroup.PNG");
+
+		screen.find(PATH_CONSTANTgroupName.PNG");
+		screen.click(PATH_CONSTANTgroupName.PNG");
+		screen.type("Group1");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTaddAll.PNG");
+		screen.click(PATH_CONSTANTaddAll.PNG");
+
+		screen.find(PATH_CONSTANTsaveAsNew.PNG");
+		screen.click(PATH_CONSTANTsaveAsNew.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.click(PATH_CONSTANTdoneScenerioOkButton.PNG");
+
+		screen.find(PATH_CONSTANTeditScenarioGroup.PNG");
+		screen.click(PATH_CONSTANTeditScenarioGroup.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTGroup1.PNG");
+		screen.click(PATH_CONSTANTGroup1.PNG");
+
+		screen.find(PATH_CONSTANTtrackOkButton.PNG");
+		screen.click(PATH_CONSTANTtrackOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTEMU_6.PNG");
+		screen.click(PATH_CONSTANTEMU_6.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTremove.PNG");
+		screen.click(PATH_CONSTANTremove.PNG");
+
+		screen.find(PATH_CONSTANTsave.PNG");
+		screen.click(PATH_CONSTANTsave.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTscenerioGroupOkButton.PNG");
+		screen.click(PATH_CONSTANTscenerioGroupOkButton.PNG");
+
+		screen.find(PATH_CONSTANTDeleteScenarioGroup.PNG");
+		screen.click(PATH_CONSTANTDeleteScenarioGroup.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTGroup1.PNG");
+		screen.click(PATH_CONSTANTGroup1.PNG");
+
+		screen.find(PATH_CONSTANTtrainConsistOkButton.PNG");
+		screen.click(PATH_CONSTANTtrainConsistOkButton.PNG");
+
+		screen.find(PATH_CONSTANTDelete1.PNG");
+		screen.click(PATH_CONSTANTDelete1.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTSceneraioDeletedPopup.PNG");
+		screen.click(PATH_CONSTANTSceneraioDeletedPopup.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTtrain.PNG");
+		screen.click(PATH_CONSTANTtrain.PNG");
+
+		screen.find(PATH_CONSTANTdriving_motor_car_1_2.PNG");
+		screen.doubleClick(PATH_CONSTANTdriving_motor_car_1_2.PNG");
+
+		screen.find(PATH_CONSTANTrear_button.PNG");
+		screen.click(PATH_CONSTANTrear_button.PNG");
+
+		screen.find(PATH_CONSTANTmotor_car_1_2.PNG");
+		screen.doubleClick(PATH_CONSTANTmotor_car_1_2.PNG");
+
+		screen.find(PATH_CONSTANTmotor_car_1_2.PNG");
+		screen.doubleClick(PATH_CONSTANTmotor_car_1_2.PNG");
+
+		screen.find(PATH_CONSTANTtrailer_car_1_2.PNG");
+		screen.doubleClick(PATH_CONSTANTtrailer_car_1_2.PNG");
+
+		screen.find(PATH_CONSTANTdriving_motor_car_2_1.PNG");
+		screen.doubleClick(PATH_CONSTANTdriving_motor_car_2_1.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTsaveAsTrainBuilder.PNG");
+		screen.doubleClick(PATH_CONSTANTsaveAsTrainBuilder.PNG");
+
+		screen.find(PATH_CONSTANTtrainBuildername.PNG");
+		screen.click(PATH_CONSTANTtrainBuildername.PNG");
+		screen.type("simTrain2");
+		screen.wait(1.0);
+
+		screen1.find(PATH_CONSTANTokButton1.PNG");
+		screen1.click(PATH_CONSTANTokButton1.PNG");
+		screen.wait(1.0);
+		
+		screen.find(PATH_CONSTANTUsers.PNG");
+		screen.click(PATH_CONSTANTUsers.PNG");
+
+		screen.find(PATH_CONSTANTnewTrainee.PNG");
+		screen.click(PATH_CONSTANTnewTrainee.PNG");
+
+		screen.find(PATH_CONSTANTUserLastName.PNG");
+		screen.click(PATH_CONSTANTUserLastName.PNG");
+		screen.type("Asati");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTUserFirstName.PNG");
+		screen.click(PATH_CONSTANTUserFirstName.PNG");
+		screen.type("Sejal");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTEmployeeNumber.PNG");
+		screen.click(PATH_CONSTANTEmployeeNumber.PNG");
+		screen.type("2022");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTuserClassification.PNG");
+		screen.click(PATH_CONSTANTuserClassification.PNG");
+		screen.type("Developer");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTWorkLocation.PNG");
+		screen.click(PATH_CONSTANTWorkLocation.PNG");
+		screen.type("Pune");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTCopy_Scenerio_save_as_new.PNG");
+		screen.click(PATH_CONSTANTCopy_Scenerio_save_as_new.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTscenerioGroupOkButton.PNG");
+		screen.click(PATH_CONSTANTscenerioGroupOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTeditTrainee.PNG");
+		screen.click(PATH_CONSTANTeditTrainee.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTeditimage.PNG");
+		screen.click(PATH_CONSTANTeditimage.PNG");
+
+		screen.find(PATH_CONSTANTokbutton.PNG");
+		screen.click(PATH_CONSTANTokbutton.PNG");
+
+		// Edit Scenario
+
+		screen.find(PATH_CONSTANTeditPune.PNG");
+		screen.click(PATH_CONSTANTeditPune.PNG");
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type("Nagpur");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTsave.PNG");
+		screen.click(PATH_CONSTANTsave.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.click(PATH_CONSTANTdoneScenerioOkButton.PNG");
+		screen.wait(1.0);
+
+		// Delete Scenario
+
+		screen.find(PATH_CONSTANTDeleteTrainee.PNG");
+		screen.click(PATH_CONSTANTDeleteTrainee.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTeditimage.PNG");
+		screen.click(PATH_CONSTANTeditimage.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTokbutton.PNG");
+		screen.click(PATH_CONSTANTokbutton.PNG");
+
+		screen.find(PATH_CONSTANTDeleteButton.PNG");
+		screen.click(PATH_CONSTANTDeleteButton.PNG");
+		screen.wait(1.0);
+
+		screen.find(PATH_CONSTANTyes_buton.PNG");
+		screen.click(PATH_CONSTANTyes_buton.PNG");
+		screen.wait(2.0);
+
+		screen.find(PATH_CONSTANTscenerioGroupOkButton.PNG");
+		screen.click(PATH_CONSTANTscenerioGroupOkButton.PNG");
+
+		screen.find(PATH_CONSTANTLogOff.PNG");
+		screen.click(PATH_CONSTANTLogOff.PNG");
+		screen.wait(2.0);
+
+		screen.find(PATH_CONSTANTyes_buton.PNG");
+		screen.click(PATH_CONSTANTyes_buton.PNG");
+
+	}
+
+}

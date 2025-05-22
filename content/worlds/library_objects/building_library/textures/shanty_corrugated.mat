@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shanty_corrugated" guid="89292c8c80d9ebc275ed8102be45fa2f100b212d" base_material="mesh_base">
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/library_objects/building_library/textures/shanty_corrugated.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

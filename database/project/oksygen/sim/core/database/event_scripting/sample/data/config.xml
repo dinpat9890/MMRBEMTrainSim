@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <scripts>
+    <script_action_types>
+      <script_action_type name="Set Channel Viewpoint" />
+      <script_action_type name="Set Feature State" />
+      <script_action_type name="Set SimProperty" />
+      <script_action_type name="Play Multimedia" />
+      <script_action_type name="Prompt User" />      
+    </script_action_types>
+    <script_condition_types>
+      <script_condition_type name="SimProperty Value Condition" />
+      <script_condition_type name="Elapsed Time Condition" />
+      <script_condition_type name="Simulated Time Condition" />
+      <script_condition_type name="SimProperty State Condition" />
+      <script_condition_type name="Feature State Condition" />            
+    </script_condition_types>
+    <script_logicgate_types>
+      <script_logicgate_type name="AND" />
+    </script_logicgate_types>
+    <script_output_types>
+      <script_output_type name="Direct" />
+      <script_output_type name="Pulsed" />
+      <script_output_type name="Timed" />
+      <script_output_type name="Latched" />
+    </script_output_types>
+    <script_signal_types>
+      <script_signal_type name="Condition Signal" />
+      <script_signal_type name="Logic Gate" />
+    </script_signal_types>
+  </scripts>
+</config>

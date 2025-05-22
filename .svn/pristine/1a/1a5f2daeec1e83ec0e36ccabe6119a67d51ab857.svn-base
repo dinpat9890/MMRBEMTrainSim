@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+	</properties>
+	<node type="ObjectMeshStatic" id="2133120114" name="gantry_type02_pull_depot">
+		<mesh_name>../worlds/library_objects/gantry/gantry_type02_pull_depot.mesh</mesh_name>
+		<surface name="gantry_type02_pull_depot" max_visible_distance="1000" max_fade_distance="10" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<surface name="label" enabled="0" max_visible_distance="1000" material="4512e4a99a4af35837f509d78f9bb7609875b907" property="Label">
+			<property>
+				<parameter name="text align">1</parameter>
+				<parameter name="vertical align">1</parameter>
+			</property>
+		</surface>
+		<surface name="label_body" max_visible_distance="1000" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+		<transform>0.999999940395 -1.3330103341e-016 -8.4820875703e-019 0.0 5.09033563288e-017 0.999999940395 1.59919820442e-018 0.0 4.64979052889e-018 -1.81603863891e-018 0.999999940395 0.0 5.45696821064e-012 -1.09139364213e-011 4.92939022934e-014 1.0</transform>
+		<node type="NodeDummy" id="542333144" name="Connection_conductor">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 5.4 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="274109023" name="Connection_catenary">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.02 0 6.75 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1408498057" name="caution_25000_volts_board">
+			<reference>../worlds/library_objects/features/caution_25000_volts_board.node</reference>
+			<transform>-1.40000010928 -1.64017653263e-007 2.22618516487e-011 0.0 1.11209443381e-007 -0.999999986146 -1.27913683064e-012 0.0 1.89055941551e-011 1.34207331663e-011 1.39999978542 0.0 -2.26022293472 0.0900000045513 3.12610099385 1.0</transform>
+		</node>
+	</node>
+</nodes>

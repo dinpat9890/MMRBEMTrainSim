@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeLayer" id="604908726" folded="1" name="stations">
+		<layer>../worlds/mmrbem/graphics/layers/stations.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="342242349" folded="1" name="line_7_set_dressing">
+		<layer>../worlds/mmrbem/graphics/layers/line_7_set_dressing.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeDummy" id="509244985" folded="1" name="line_7_wall_pillar">
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="276892220" name="pillar_7_1">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_1.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6546 35459 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2068790316" name="pillar_7_2">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_2.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6581 33915 -10 1.0</transform>
+		</node>
+		<node type="NodeReference" id="96884156" name="pillar_7_3">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_3.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6618 32465 -9 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1027848868" name="pillar_7_4">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_4.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6028 31109 -1 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2123399396" name="pillar_7_5">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_5.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5681 29663 2 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1841263096" name="pillar_7_6">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_6.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5635 28161 1 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1796306684" name="pillar_7_7">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_7.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5415 26688 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1387931270" name="pillar_7_8">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_8.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5174 25206 -11 1.0</transform>
+		</node>
+		<node type="NodeReference" id="993278452" name="pillar_7_9">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_9.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5124 23703 -4 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2128847086" name="pillar_7_10">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_7_10.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5002 22287 -8 1.0</transform>
+		</node>
+	</node>
+	<node type="NodeLayer" id="1599256357" folded="1" name="trackside_objects_line_7">
+		<layer>../worlds/mmrbem/graphics/layers/trackside_objects_line_7.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1972813143" folded="1" name="wiring_line_7">
+		<layer>../worlds/mmrbem/graphics/layers/wiring_line_7.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeDummy" id="1338036198" folded="1" name="line_7_track">
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="1191602217" name="track_7_1">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_1.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6546 35459 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="821046327" name="track_7_2">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_2.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6581 33915 -10 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1042531145" name="track_7_3">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_3.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6618 32465 -9 1.0</transform>
+		</node>
+		<node type="NodeReference" id="38690554" name="track_7_4">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_4.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 6028 31109 -1 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1485473295" name="track_7_5">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_5.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5681 29663 2 1.0</transform>
+		</node>
+		<node type="NodeReference" id="604537547" name="track_7_6">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_6.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5635 28161 1 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1362747402" name="track_7_7">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_7.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5415 26688 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2066358032" name="track_7_8">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_8.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5174 25206 -11 1.0</transform>
+		</node>
+		<node type="NodeReference" id="439759807" name="track_7_9">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_9.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5124 23703 -4 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1383269153" name="track_7_10">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_7_10.node</reference>
+			<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 5002 22287 -8 1.0</transform>
+		</node>
+	</node>
+	<node type="NodeDummy" id="1904383349" folded="1" name="gantry_poles_no_line7">
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="702075755" enabled="0" name="gundavli_to_mogra">
+			<reference>../worlds/mmrbem/graphics/set_dressing/gundavli_to_mogra.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5086.72530319 22832.0813609 5.86100034934 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1624399390" name="mogra_to_jogeshwari_east">
+			<reference>../worlds/mmrbem/graphics/set_dressing/mogra_to_jogeshwari_east.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5073.85030243 24386.1264535 5.42300032324 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2073273357" name="jogeshwari_east_to_goregaon_east">
+			<reference>../worlds/mmrbem/graphics/set_dressing/jogeshwari_east_to_goregaon_east.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5234.450312 25675.2615304 -2.9830001778 1.0</transform>
+		</node>
+		<node type="NodeReference" id="870642193" name="goregaon_east_to_aarey">
+			<reference>../worlds/mmrbem/graphics/set_dressing/goregaon_east_to_aarey.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5480.71132668 27104.9036156 0.685000040829 1.0</transform>
+		</node>
+		<node type="NodeReference" id="899564011" enabled="0" name="aarey_to_dindoshi">
+			<reference>../worlds/mmrbem/graphics/set_dressing/aarey_to_dindoshi.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5685.18933886 28593.4587043 13.9370008307 1.0</transform>
+		</node>
+		<node type="NodeReference" id="252299439" name="dindoshi_to_kurar">
+			<reference>../worlds/mmrbem/graphics/set_dressing/dindoshi_to_kurar.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5681.50833864 29559.1517619 16.1930009652 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1171537520" name="kurar_to_akurli">
+			<reference>../worlds/mmrbem/graphics/set_dressing/kurar_to_akurli.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5837.83834796 30549.1348209 10.973000654 1.0</transform>
+		</node>
+		<node type="NodeReference" id="697925956" name="akurli_to_poisar">
+			<reference>../worlds/mmrbem/graphics/set_dressing/akurli_to_poisar.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6128.54336529 31463.2598754 8.03400047886 1.0</transform>
+		</node>
+		<node type="NodeReference" id="120718282" name="poisar_to_magathane">
+			<reference>../worlds/mmrbem/graphics/set_dressing/poisar_to_magathane.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6633.13739537 32441.4219337 1.42400008488 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1591975339" name="magathane_to_devipada">
+			<reference>../worlds/mmrbem/graphics/set_dressing/magathane_to_devipada.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6624.28239484 33563.4400005 5.13800030625 1.0</transform>
+		</node>
+		<node type="NodeReference" id="880950062" name="devipada_to_rashtriya_udyan">
+			<reference>../worlds/mmrbem/graphics/set_dressing/devipada_to_rashtriya_udyan.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6456.07638481 34544.119059 5.08400030303 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1142456690" name="rashtriya_udyan_to_ovaripada">
+			<reference>../worlds/mmrbem/graphics/set_dressing/rashtriya_udyan_to_ovaripada.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6529.93138921 35586.2831211 -1.47100008768 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1461612273" name="ovaripada_to_dahisar_east">
+			<reference>../worlds/mmrbem/graphics/set_dressing/ovaripada_to_dahisar_east.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6753.10640252 36456.897173 -3.58800021386 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1793716652" name="gundavli_station_end">
+			<reference>../worlds/mmrbem/graphics/set_dressing/gundavli_station_end.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4952.90029524 21988.4283107 -0.130000007749 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1318363092" name="gundavali_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/gundavali_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4957.40829551 22013.7833122 -0.242000014424 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1000560873" name="mogra_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/mogra_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5068.47430213 23503.311401 7.16900042731 1.0</transform>
+		</node>
+		<node type="NodeReference" id="517710022" name="jogeshwari_east_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/jogeshwari_east_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5093.43130361 25083.7954952 -2.85300017005 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1822680426" name="goregaon_east_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/goregaon_east_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5308.07831641 26102.0015559 -2.57300015336 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1591331370" name="aarey_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/aarey_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5630.29733562 27943.3226657 4.99800029791 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1389077663" name="dindoshi_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/dindoshi_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5646.49433658 29083.8557337 17.0420010158 1.0</transform>
+		</node>
+		<node type="NodeReference" id="514681070" name="kurar_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/kurar_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5707.2473402 29864.2737802 8.56700051064 1.0</transform>
+		</node>
+		<node type="NodeReference" id="338864846" name="akurli_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/akurli_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5976.20435624 31061.3848515 8.75400052178 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1876548367" name="poisar_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/poisar_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6257.24337299 31696.6868894 0.740000044108 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1924266567" name="magathane_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/magathane_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6757.92340283 33083.7089721 1.63400009739 1.0</transform>
+		</node>
+		<node type="NodeReference" id="987304345" name="devipada_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/devipada_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6530.71538929 33893.1660203 4.08200024331 1.0</transform>
+		</node>
+		<node type="NodeReference" id="578346072" name="rashtriya_udyan_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/rashtriya_udyan_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6455.12338478 35049.4700893 -2.3170001381 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1436006373" name="ovaripada_station">
+			<reference>../worlds/mmrbem/graphics/set_dressing/ovaripada_station.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6599.27939338 35955.7991433 -4.23500025243 1.0</transform>
+		</node>
+		<node type="NodeReference" id="155399714" name="gundavli_to_mogra_0">
+			<reference>../worlds/mmrbem/graphics/set_dressing/gundavli_to_mogra_0.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4991.93129756 22191.9603228 -0.543000032366 1.0</transform>
+		</node>
+		<node type="NodeReference" id="356961866" name="aarey_to_dindoshi_0">
+			<reference>../worlds/mmrbem/graphics/set_dressing/aarey_to_dindoshi_0.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5660.35533741 28127.6176767 4.99900029797 1.0</transform>
+		</node>
+	</node>
+</nodes>

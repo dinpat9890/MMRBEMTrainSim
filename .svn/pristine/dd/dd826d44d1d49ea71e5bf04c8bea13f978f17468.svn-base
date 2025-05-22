@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="filbert_leaves_summer_01" guid="7076228d3d276fa7dffd50138432b72e17297323" parent="e612a83b26518cc91e2d9813cfa2144910674640" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1" two_sided="0"/>
+	<state name="vegetation">1</state>
+	<state name="animation">1</state>
+	<state name="leafs">0</state>
+	<state name="angle_fade">0</state>
+	<state name="shadow_offset_state">0</state>
+	<state name="noise_2d">1</state>
+	<texture name="albedo">../worlds/library_objects/vegetation/filbert/textures/filbert_leaves_alb.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/filbert/textures/filbert_n.dds</texture>
+	<texture name="noise_2d">../worlds/library_objects/vegetation/shared_textures/forest irregularity_d.dds</texture>
+	<parameter name="albedo_color">0.82745105 0.82745105 0.82745105 1</parameter>
+	<parameter name="metalness">0</parameter>
+	<parameter name="specular">0.5</parameter>
+	<parameter name="color"/>
+	<parameter name="shading"/>
+	<parameter name="normal_scale">1</parameter>
+	<parameter name="translucent">0</parameter>
+	<parameter name="transparent">1</parameter>
+	<parameter name="shadow_offset">0</parameter>
+	<parameter name="animation_stem_noise">1</parameter>
+	<parameter name="animation_stem_offset">0.5</parameter>
+	<parameter name="animation_stem_radius">0.5</parameter>
+	<parameter name="animation_stem_scale">1</parameter>
+	<parameter name="animation_leaf_noise">1</parameter>
+	<parameter name="animation_leaf_offset">0.5</parameter>
+	<parameter name="animation_leaf_scale">1</parameter>
+</material>

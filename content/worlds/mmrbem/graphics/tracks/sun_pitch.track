@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<track version="2.4" min_time="0" max_time="1" unit_time="0.100000001">
+	<parameter type="material.parameterColor" name="stars" string="diffuse_color">
+		<key time="0.400000006">1 1 1 1</key>
+		<key time="0.5">1 1 1 0</key>
+	</parameter>
+	<parameter type="material.stateToggle" name="nightlights_parent" string="emission">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1957936007" name="EKS_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="495580235" name="DAE_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1229143756" name="PAE_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1021287518" name="VAL_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1556862582" name="MAW_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="486161230" name="LOM_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1491470107" name="GOW_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="540397114" name="LOO_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="802909425" name="ANW_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="931730837" name="PAG_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="638801330" name="DAH_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="979715416" name="UPD_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="252204469" name="BOW_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1198654297" name="KAN_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="2077648857" name="OSH_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1736358356" name="KAW_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="800184734" name="MAN_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1622211716" name="OVA_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="340429002" name="RAU_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="787756009" name="DEV_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1044026794" name="MAG_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1577649478" name="AKU_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1955945562" name="KUR_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="302066176" name="DIN_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1226065584" name="AAR_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="2017479561" name="GOE_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="372021379" name="JOE_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="769443985" name="MOG_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1700872451" name="POI_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1863230079" name="GUN_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1207800763" name="track_side_light_daynamic_line_2b">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1083480167" name="track_side_light_daynamic_line_7">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1774549779" name="track_side_light_daynamic_line_2a">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1550137600" name="esic_nagar_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="429746631" name="prem_nagar_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1159627146" name="indira_nagar_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="41264072" name="nanawati_hospital_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="419834564" name="khira_nagar_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="260030866" name="saraswat_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="914501786" name="national_college_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="204446351" name="mmrda_office_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1781358997" name="bandra_lights">
+		<key time="0">1</key>
+		<key time="0.602620065">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1087307700" name="it_office_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="674794302" name="ilfs_metro_lights">
+		<key time="0">1</key>
+		<key time="0.602620065">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="540748847" name="mtnl_metro_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1229256926" name="sg_barve_marg_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="839225881" name="kurla_terminal_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1113272705" name="kurla_east_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1929367249" name="chembur_lights">
+		<key time="0">1</key>
+		<key time="0.599708855">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="214589911" name="diamond_garden_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="2078651581" name="shivaji_chowk_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1119701425" name="bsnl_lights">
+		<key time="0">1</key>
+		<key time="0.599708855">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="1347548549" name="mankhurd_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+	<parameter type="node.enabled" id="497382491" name="mandale_metro_lights">
+		<key time="0">1</key>
+		<key time="0.600000024">0</key>
+	</parameter>
+</track>

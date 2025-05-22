@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="horse_brown" guid="54bbadaf0ae979eb16b48fb140d3a665a26349cf" parent="30ac7634815508730994eb284f09c1ded1ed095b" base_material="mesh_base">
+	<texture name="albedo">../features/obstruction_features/graphics/textures/horse_brown_d.dds</texture>
+</material>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_birch_0_0" guid="5c47536a271581cc03026ea6d094d296d856bcea" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<blend src="none" dest="none"/>
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/birch_imposter.dds</texture>
+	<texture name="normal">birch/textures/birch_0_imposter_n.dds</texture>
+	<parameter name="diffuse_color">0.717647076 0.713725507 0.623529434 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+	<parameter name="occlusion_visibility">1</parameter>
+</material>

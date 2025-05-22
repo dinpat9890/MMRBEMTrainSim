@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="neutral_section_warning_board_yellow" guid="0916e07a5bc85163a56c44020af566094ac1c82e" base_material="mesh_base">
+	<state name="workflow">0</state>
+	<state name="emission">0</state>
+	<texture name="diffuse">../worlds/library_objects/features/textures/mumbai_track_signs.dds</texture>
+	<texture name="albedo">../worlds/library_objects/features/textures/neutral_section_warning_board_yellow.dds</texture>
+	<texture name="emission">../worlds/library_objects/features/textures/mumbai_track_signs_e.dds</texture>
+	<parameter name="albedo_color">0.937254965 0.937254965 0.937254965 1</parameter>
+	<parameter name="metalness">0.342000008</parameter>
+	<parameter name="roughness">0.691999972</parameter>
+	<parameter name="specular">0.907000005</parameter>
+	<parameter name="diffuse_color">0.917647123 0.917647123 0.917647123 1</parameter>
+	<parameter name="specular_color">0.31764707 0.31764707 0.31764707 1</parameter>
+	<parameter name="gloss">0.800000012</parameter>
+	<parameter name="microfiber">0.349999994</parameter>
+	<parameter name="emission_color">0.643137276 0.647058845 0.576470613 1</parameter>
+	<parameter name="emission_scale">2</parameter>
+</material>

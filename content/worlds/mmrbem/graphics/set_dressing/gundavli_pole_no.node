@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1185315800" name="gundavli_pole_no">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/gundavli_pole_no.mesh</mesh_name>
+		<surface name="gundavli_pole_no_gantry_poles_numbers_06" material="3793f6ce704c0a08492e26be2f36e5e28900ef96" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

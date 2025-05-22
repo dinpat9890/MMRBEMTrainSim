@@ -1,0 +1,2193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectTerrain" id="711145810" name="terrain_01">
+		<terrain_name>../worlds/test_track/graphics/terrain/terrain_01.ter</terrain_name>
+		<lod_distance>150</lod_distance>
+		<lod_progression>2</lod_progression>
+		<lod_threshold>0</lod_threshold>
+		<material>
+			<layer>
+				<name>grass</name>
+				<material>
+					<name>grass</name>
+					<transform>80 80 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.5</mask_value>
+					<mask_width>0.300000012</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.717647076 0.847058892 0.643137276 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>0.550000012</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>dirt</name>
+				<material>
+					<name>dirt</name>
+					<transform>100 100 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.899999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.5</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>gravel</name>
+				<material>
+					<name>gravel</name>
+					<transform>240 240 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.649999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<surface x="0" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x00_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x00_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x00_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x00_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x00_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x00_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x00_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x00_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x01_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x01_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x01_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x01_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x01_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x01_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x01_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x01_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x02_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x02_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x02_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x02_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x02_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x02_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x02_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x02_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x03_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x03_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x03_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x03_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x03_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x03_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x03_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x03_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x04_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x04_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x04_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x04_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x04_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x04_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x04_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x04_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x05_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x05_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x05_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x05_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x05_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x05_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x05_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x05_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x06_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x06_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x06_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x06_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x06_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x06_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x06_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x06_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/00x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/00x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/00x07_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/01x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/01x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/01x07_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/02x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/02x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/02x07_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/03x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/03x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/03x07_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/04x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/04x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/04x07_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/05x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/05x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/05x07_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/06x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/06x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/06x07_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01/07x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_01/07x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_01/07x07_m.dds</mask_texture>
+			</surface>
+			<albedo_texture>../worlds/test_track/graphics/terrain/terrain_01_d.dds</albedo_texture>
+			<normal_texture>../worlds/test_track/graphics/terrain/terrain_01_n.dds</normal_texture>
+			<mask_texture>../worlds/test_track/graphics/terrain/terrain_01_m.dds</mask_texture>
+			<albedo_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_d.dds</albedo_texture_array>
+			<normal_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_n.dds</normal_texture_array>
+			<height_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_s.dds</height_texture_array>
+		</material>
+		<surface name="terrain" material="2a7a521dca116ab8df3c2471a4cfc454872917dc" property="surface_base"/>
+		<data>
+			<objects_terrain>
+				<import>
+					<height_name>../../../height_map_generic.tif</height_name>
+					<albedo_name>../../../graphics/terrain/north1/terrain_x003y001DiffuseMap.tga</albedo_name>
+					<normal_name/>
+					<holes_name/>
+					<height_checked>0</height_checked>
+					<albedo_checked>0</albedo_checked>
+					<normal_checked>0</normal_checked>
+					<holes_checked>0</holes_checked>
+					<masks_checked>1</masks_checked>
+					<coarse_checked>1</coarse_checked>
+					<refined_checked>1</refined_checked>
+					<height_scale>200</height_scale>
+					<mask_file_0>../../../graphics/test_track/terrain_01.tga</mask_file_0>
+					<mask_channel_0>0</mask_channel_0>
+					<mask_depth_0>0</mask_depth_0>
+					<mask_checked_0>1</mask_checked_0>
+					<mask_file_1>../../../graphics/test_track/terrain_01.tga</mask_file_1>
+					<mask_channel_1>1</mask_channel_1>
+					<mask_depth_1>0</mask_depth_1>
+					<mask_checked_1>1</mask_checked_1>
+					<mask_file_2>../../../graphics/test_track/terrain_01.tga</mask_file_2>
+					<mask_channel_2>2</mask_channel_2>
+					<mask_depth_2>0</mask_depth_2>
+					<mask_checked_2>1</mask_checked_2>
+				</import>
+				<parameters>
+					<resolution_refined_albedo>1</resolution_refined_albedo>
+					<resolution_refined_normal>0</resolution_refined_normal>
+					<resolution_refined_mask>1</resolution_refined_mask>
+					<resolution_coarse_albedo>1</resolution_coarse_albedo>
+					<resolution_coarse_normal>0</resolution_coarse_normal>
+					<resolution_coarse_mask>0</resolution_coarse_mask>
+				</parameters>
+				<height_scale>1</height_scale>
+			</objects_terrain>
+		</data>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1000 -1500 0 1.0</transform>
+	</node>
+	<node type="ObjectTerrain" id="1276196931" name="terrain_02">
+		<terrain_name>../worlds/test_track/graphics/terrain/terrain_02.ter</terrain_name>
+		<lod_distance>150</lod_distance>
+		<lod_progression>2</lod_progression>
+		<lod_threshold>0</lod_threshold>
+		<material>
+			<layer>
+				<name>grass</name>
+				<material>
+					<name>grass</name>
+					<transform>80 80 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.5</mask_value>
+					<mask_width>0.300000012</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.717647076 0.847058892 0.643137276 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>0.550000012</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>dirt</name>
+				<material>
+					<name>dirt</name>
+					<transform>100 100 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.899999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.5</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>gravel</name>
+				<material>
+					<name>gravel</name>
+					<transform>240 240 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.649999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<surface x="0" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x00_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x00_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x00_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x00_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x00_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x00_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x00_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x00_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x01_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x01_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x01_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x01_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x01_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x01_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x01_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x01_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x02_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x02_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x02_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x02_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x02_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x02_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x02_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x02_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x03_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x03_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x03_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x03_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x03_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x03_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x03_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x03_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x04_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x04_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x04_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x04_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x04_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x04_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x04_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x04_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x05_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x05_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x05_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x05_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x05_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x05_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x05_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x05_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x06_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x06_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x06_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x06_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x06_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x06_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x06_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x06_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/00x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/00x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/00x07_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/01x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/01x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/01x07_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/02x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/02x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/02x07_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/03x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/03x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/03x07_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/04x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/04x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/04x07_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/05x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/05x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/05x07_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/06x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/06x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/06x07_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02/07x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_02/07x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_02/07x07_m.dds</mask_texture>
+			</surface>
+			<albedo_texture>../worlds/test_track/graphics/terrain/terrain_02_d.dds</albedo_texture>
+			<normal_texture>../worlds/test_track/graphics/terrain/terrain_02_n.dds</normal_texture>
+			<mask_texture>../worlds/test_track/graphics/terrain/terrain_02_m.dds</mask_texture>
+			<albedo_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_d.dds</albedo_texture_array>
+			<normal_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_n.dds</normal_texture_array>
+			<height_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_s.dds</height_texture_array>
+		</material>
+		<surface name="terrain" material="2a7a521dca116ab8df3c2471a4cfc454872917dc" property="surface_base"/>
+		<data>
+			<objects_terrain>
+				<import>
+					<height_name>../../../height_map_generic.tif</height_name>
+					<albedo_name>../../../graphics/terrain/north1/terrain_x003y001DiffuseMap.tga</albedo_name>
+					<normal_name/>
+					<holes_name/>
+					<height_checked>0</height_checked>
+					<albedo_checked>0</albedo_checked>
+					<normal_checked>0</normal_checked>
+					<holes_checked>0</holes_checked>
+					<masks_checked>1</masks_checked>
+					<coarse_checked>1</coarse_checked>
+					<refined_checked>1</refined_checked>
+					<height_scale>200</height_scale>
+					<mask_file_0>../../../graphics/test_track/terrain_02.tga</mask_file_0>
+					<mask_channel_0>0</mask_channel_0>
+					<mask_depth_0>0</mask_depth_0>
+					<mask_checked_0>1</mask_checked_0>
+					<mask_file_1>../../../graphics/test_track/terrain_02.tga</mask_file_1>
+					<mask_channel_1>1</mask_channel_1>
+					<mask_depth_1>0</mask_depth_1>
+					<mask_checked_1>1</mask_checked_1>
+					<mask_file_2>../../../graphics/test_track/terrain_02.tga</mask_file_2>
+					<mask_channel_2>2</mask_channel_2>
+					<mask_depth_2>0</mask_depth_2>
+					<mask_checked_2>1</mask_checked_2>
+				</import>
+				<parameters>
+					<resolution_refined_albedo>1</resolution_refined_albedo>
+					<resolution_refined_normal>0</resolution_refined_normal>
+					<resolution_refined_mask>1</resolution_refined_mask>
+					<resolution_coarse_albedo>2</resolution_coarse_albedo>
+					<resolution_coarse_normal>0</resolution_coarse_normal>
+					<resolution_coarse_mask>0</resolution_coarse_mask>
+				</parameters>
+				<height_scale>1</height_scale>
+			</objects_terrain>
+		</data>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3096.00012493 -1500.00017881 0 1.0</transform>
+	</node>
+	<node type="ObjectTerrain" id="1096514871" name="terrain_03">
+		<terrain_name>../worlds/test_track/graphics/terrain/terrain_03.ter</terrain_name>
+		<lod_distance>150</lod_distance>
+		<lod_progression>2</lod_progression>
+		<lod_threshold>0</lod_threshold>
+		<material>
+			<layer>
+				<name>grass</name>
+				<material>
+					<name>grass</name>
+					<transform>80 80 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.5</mask_value>
+					<mask_width>0.300000012</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.717647076 0.847058892 0.643137276 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>0.550000012</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>dirt</name>
+				<material>
+					<name>dirt</name>
+					<transform>100 100 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.899999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.5</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>gravel</name>
+				<material>
+					<name>gravel</name>
+					<transform>240 240 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.649999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<surface x="0" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x00_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x00_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x00_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x00_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x00_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x00_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x00_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x00_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x01_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x01_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x01_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x01_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x01_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x01_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x01_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x01_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x02_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x02_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x02_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x02_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x02_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x02_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x02_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x02_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x03_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x03_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x03_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x03_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x03_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x03_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x03_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x03_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x04_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x04_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x04_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x04_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x04_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x04_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x04_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x04_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x05_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x05_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x05_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x05_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x05_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x05_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x05_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x05_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x06_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x06_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x06_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x06_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x06_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x06_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x06_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x06_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/00x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/00x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/00x07_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/01x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/01x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/01x07_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/02x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/02x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/02x07_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/03x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/03x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/03x07_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/04x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/04x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/04x07_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/05x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/05x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/05x07_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/06x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/06x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/06x07_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03/07x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_03/07x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_03/07x07_m.dds</mask_texture>
+			</surface>
+			<albedo_texture>../worlds/test_track/graphics/terrain/terrain_03_d.dds</albedo_texture>
+			<normal_texture>../worlds/test_track/graphics/terrain/terrain_03_n.dds</normal_texture>
+			<mask_texture>../worlds/test_track/graphics/terrain/terrain_03_m.dds</mask_texture>
+			<albedo_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_d.dds</albedo_texture_array>
+			<normal_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_n.dds</normal_texture_array>
+			<height_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_s.dds</height_texture_array>
+		</material>
+		<surface name="terrain" material="2a7a521dca116ab8df3c2471a4cfc454872917dc" property="surface_base"/>
+		<data>
+			<objects_terrain>
+				<import>
+					<height_name>../../../height_map_generic.tif</height_name>
+					<albedo_name>../../../graphics/terrain/north1/terrain_x003y001DiffuseMap.tga</albedo_name>
+					<normal_name/>
+					<holes_name/>
+					<height_checked>0</height_checked>
+					<albedo_checked>0</albedo_checked>
+					<normal_checked>0</normal_checked>
+					<holes_checked>0</holes_checked>
+					<masks_checked>1</masks_checked>
+					<coarse_checked>1</coarse_checked>
+					<refined_checked>1</refined_checked>
+					<height_scale>200</height_scale>
+					<mask_file_0>../../../graphics/test_track/terrain_03.tga</mask_file_0>
+					<mask_channel_0>0</mask_channel_0>
+					<mask_depth_0>0</mask_depth_0>
+					<mask_checked_0>1</mask_checked_0>
+					<mask_file_1>../../../graphics/test_track/terrain_03.tga</mask_file_1>
+					<mask_channel_1>1</mask_channel_1>
+					<mask_depth_1>0</mask_depth_1>
+					<mask_checked_1>1</mask_checked_1>
+					<mask_file_2>../../../graphics/test_track/terrain_03.tga</mask_file_2>
+					<mask_channel_2>2</mask_channel_2>
+					<mask_depth_2>0</mask_depth_2>
+					<mask_checked_2>1</mask_checked_2>
+				</import>
+				<parameters>
+					<resolution_refined_albedo>1</resolution_refined_albedo>
+					<resolution_refined_normal>0</resolution_refined_normal>
+					<resolution_refined_mask>1</resolution_refined_mask>
+					<resolution_coarse_albedo>2</resolution_coarse_albedo>
+					<resolution_coarse_normal>0</resolution_coarse_normal>
+					<resolution_coarse_mask>0</resolution_coarse_mask>
+				</parameters>
+				<height_scale>1</height_scale>
+			</objects_terrain>
+		</data>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 7192.00012493 -1500.00017881 0 1.0</transform>
+	</node>
+	<node type="ObjectTerrain" id="1552995459" name="terrain_04">
+		<terrain_name>../worlds/test_track/graphics/terrain/terrain_04.ter</terrain_name>
+		<lod_distance>150</lod_distance>
+		<lod_progression>2</lod_progression>
+		<lod_threshold>0</lod_threshold>
+		<material>
+			<layer>
+				<name>grass</name>
+				<material>
+					<name>grass</name>
+					<transform>80 80 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.5</mask_value>
+					<mask_width>0.300000012</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.717647076 0.847058892 0.643137276 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>0.550000012</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>dirt</name>
+				<material>
+					<name>dirt</name>
+					<transform>100 100 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.899999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.5</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>gravel</name>
+				<material>
+					<name>gravel</name>
+					<transform>240 240 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.649999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<surface x="0" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x00_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x00_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x00_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x00_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x00_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x00_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x00_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x00_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x01_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x01_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x01_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x01_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x01_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x01_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x01_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x01_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x02_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x02_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x02_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x02_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x02_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x02_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x02_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x02_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x03_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x03_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x03_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x03_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x03_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x03_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x03_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x03_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x04_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x04_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x04_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x04_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x04_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x04_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x04_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x04_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x05_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x05_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x05_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x05_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x05_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x05_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x05_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x05_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x06_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x06_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x06_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x06_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x06_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x06_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x06_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x06_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/00x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/00x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/00x07_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/01x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/01x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/01x07_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/02x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/02x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/02x07_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/03x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/03x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/03x07_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/04x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/04x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/04x07_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/05x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/05x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/05x07_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/06x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/06x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/06x07_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04/07x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_04/07x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_04/07x07_m.dds</mask_texture>
+			</surface>
+			<albedo_texture>../worlds/test_track/graphics/terrain/terrain_04_d.dds</albedo_texture>
+			<normal_texture>../worlds/test_track/graphics/terrain/terrain_04_n.dds</normal_texture>
+			<mask_texture>../worlds/test_track/graphics/terrain/terrain_04_m.dds</mask_texture>
+			<albedo_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_d.dds</albedo_texture_array>
+			<normal_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_n.dds</normal_texture_array>
+			<height_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_s.dds</height_texture_array>
+		</material>
+		<surface name="terrain" material="2a7a521dca116ab8df3c2471a4cfc454872917dc" property="surface_base"/>
+		<data>
+			<objects_terrain>
+				<import>
+					<height_name>../../../height_map_generic.tif</height_name>
+					<albedo_name>../../../graphics/terrain/north1/terrain_x003y001DiffuseMap.tga</albedo_name>
+					<normal_name/>
+					<holes_name/>
+					<height_checked>0</height_checked>
+					<albedo_checked>0</albedo_checked>
+					<normal_checked>0</normal_checked>
+					<holes_checked>0</holes_checked>
+					<masks_checked>1</masks_checked>
+					<coarse_checked>1</coarse_checked>
+					<refined_checked>1</refined_checked>
+					<height_scale>200</height_scale>
+					<mask_file_0>../../../graphics/test_track/terrain_04.tga</mask_file_0>
+					<mask_channel_0>0</mask_channel_0>
+					<mask_depth_0>0</mask_depth_0>
+					<mask_checked_0>1</mask_checked_0>
+					<mask_file_1>../../../graphics/test_track/terrain_04.tga</mask_file_1>
+					<mask_channel_1>1</mask_channel_1>
+					<mask_depth_1>0</mask_depth_1>
+					<mask_checked_1>1</mask_checked_1>
+					<mask_file_2>../../../graphics/test_track/terrain_04.tga</mask_file_2>
+					<mask_channel_2>2</mask_channel_2>
+					<mask_depth_2>0</mask_depth_2>
+					<mask_checked_2>1</mask_checked_2>
+				</import>
+				<parameters>
+					<resolution_refined_albedo>1</resolution_refined_albedo>
+					<resolution_refined_normal>0</resolution_refined_normal>
+					<resolution_refined_mask>1</resolution_refined_mask>
+					<resolution_coarse_albedo>2</resolution_coarse_albedo>
+					<resolution_coarse_normal>0</resolution_coarse_normal>
+					<resolution_coarse_mask>0</resolution_coarse_mask>
+				</parameters>
+				<height_scale>1</height_scale>
+			</objects_terrain>
+		</data>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 11288.0001249 -1500.00017881 0 1.0</transform>
+	</node>
+	<node type="ObjectTerrain" id="564721497" name="terrain_05">
+		<terrain_name>../worlds/test_track/graphics/terrain/terrain_05.ter</terrain_name>
+		<lod_distance>150</lod_distance>
+		<lod_progression>2</lod_progression>
+		<lod_threshold>0</lod_threshold>
+		<material>
+			<layer>
+				<name>grass</name>
+				<material>
+					<name>grass</name>
+					<transform>80 80 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.5</mask_value>
+					<mask_width>0.300000012</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.717647076 0.847058892 0.643137276 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>0.550000012</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>dirt</name>
+				<material>
+					<name>dirt</name>
+					<transform>100 100 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.899999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.5</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<layer>
+				<name>gravel</name>
+				<material>
+					<name>gravel</name>
+					<transform>240 240 0 0</transform>
+					<overlap>1</overlap>
+					<detail>0</detail>
+					<mask_value>0.649999976</mask_value>
+					<mask_width>0.100000001</mask_width>
+					<mask_threshold>0.300000012</mask_threshold>
+					<albedo_texture>core/textures/common/white.dds</albedo_texture>
+					<roughness_texture>core/textures/common/white.dds</roughness_texture>
+					<normal_texture>core/textures/common/normal.dds</normal_texture>
+					<height_texture>core/textures/common/black.dds</height_texture>
+					<albedo_color>0.752941251 0.752941251 0.752941251 1</albedo_color>
+					<roughness>1</roughness>
+					<albedo_scale>1</albedo_scale>
+					<roughness_scale>1</roughness_scale>
+					<normal_scale>1</normal_scale>
+				</material>
+			</layer>
+			<surface x="0" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x00_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x00_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x00_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x00_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x00_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x00_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x00_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="0">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x00_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x00_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x00_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x01_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x01_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x01_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x01_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x01_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x01_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x01_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="1">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x01_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x01_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x01_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x02_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x02_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x02_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x02_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x02_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x02_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x02_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="2">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x02_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x02_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x02_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x03_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x03_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x03_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x03_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x03_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x03_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x03_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="3">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x03_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x03_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x03_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x04_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x04_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x04_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x04_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x04_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x04_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x04_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="4">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x04_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x04_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x04_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x05_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x05_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x05_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x05_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x05_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x05_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x05_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="5">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x05_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x05_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x05_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x06_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x06_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x06_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x06_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x06_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x06_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x06_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="6">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x06_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x06_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x06_m.dds</mask_texture>
+			</surface>
+			<surface x="0" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/00x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/00x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/00x07_m.dds</mask_texture>
+			</surface>
+			<surface x="1" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/01x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/01x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/01x07_m.dds</mask_texture>
+			</surface>
+			<surface x="2" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/02x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/02x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/02x07_m.dds</mask_texture>
+			</surface>
+			<surface x="3" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/03x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/03x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/03x07_m.dds</mask_texture>
+			</surface>
+			<surface x="4" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/04x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/04x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/04x07_m.dds</mask_texture>
+			</surface>
+			<surface x="5" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/05x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/05x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/05x07_m.dds</mask_texture>
+			</surface>
+			<surface x="6" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/06x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/06x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/06x07_m.dds</mask_texture>
+			</surface>
+			<surface x="7" y="7">
+				<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05/07x07_d.dds</albedo_texture>
+				<normal_texture>../worlds/test_track/graphics/terrain/terrain_05/07x07_n.dds</normal_texture>
+				<mask_texture>../worlds/test_track/graphics/terrain/terrain_05/07x07_m.dds</mask_texture>
+			</surface>
+			<albedo_texture>../worlds/test_track/graphics/terrain/terrain_05_d.dds</albedo_texture>
+			<normal_texture>../worlds/test_track/graphics/terrain/terrain_05_n.dds</normal_texture>
+			<mask_texture>../worlds/test_track/graphics/terrain/terrain_05_m.dds</mask_texture>
+			<albedo_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_d.dds</albedo_texture_array>
+			<normal_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_n.dds</normal_texture_array>
+			<height_texture_array>../worlds/test_track/graphics/terrain/test_track_terrain_array_s.dds</height_texture_array>
+		</material>
+		<surface name="terrain" material="2a7a521dca116ab8df3c2471a4cfc454872917dc" property="surface_base"/>
+		<data>
+			<objects_terrain>
+				<import>
+					<height_name>../../../height_map_generic.tif</height_name>
+					<albedo_name>../../../graphics/terrain/north1/terrain_x003y001DiffuseMap.tga</albedo_name>
+					<normal_name/>
+					<holes_name/>
+					<height_checked>0</height_checked>
+					<albedo_checked>0</albedo_checked>
+					<normal_checked>0</normal_checked>
+					<holes_checked>0</holes_checked>
+					<masks_checked>1</masks_checked>
+					<coarse_checked>1</coarse_checked>
+					<refined_checked>1</refined_checked>
+					<height_scale>200</height_scale>
+					<mask_file_0>../../../graphics/test_track/terrain_05.tga</mask_file_0>
+					<mask_channel_0>0</mask_channel_0>
+					<mask_depth_0>0</mask_depth_0>
+					<mask_checked_0>1</mask_checked_0>
+					<mask_file_1>../../../graphics/test_track/terrain_05.tga</mask_file_1>
+					<mask_channel_1>1</mask_channel_1>
+					<mask_depth_1>0</mask_depth_1>
+					<mask_checked_1>1</mask_checked_1>
+					<mask_file_2>../../../graphics/test_track/terrain_05.tga</mask_file_2>
+					<mask_channel_2>2</mask_channel_2>
+					<mask_depth_2>0</mask_depth_2>
+					<mask_checked_2>1</mask_checked_2>
+				</import>
+				<parameters>
+					<resolution_refined_albedo>1</resolution_refined_albedo>
+					<resolution_refined_normal>0</resolution_refined_normal>
+					<resolution_refined_mask>1</resolution_refined_mask>
+					<resolution_coarse_albedo>2</resolution_coarse_albedo>
+					<resolution_coarse_normal>0</resolution_coarse_normal>
+					<resolution_coarse_mask>0</resolution_coarse_mask>
+				</parameters>
+				<height_scale>1</height_scale>
+			</objects_terrain>
+		</data>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 15384.0001249 -1500.00017881 0 1.0</transform>
+	</node>
+</nodes>

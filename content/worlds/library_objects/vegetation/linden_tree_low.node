@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1312357807" name="linden_tree">
+		<mesh_name>linden/linden_tree_0.mesh</mesh_name>
+		<surface name="linden_trunk_lod_0_linden_trunk" enabled="0" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<surface name="linden_leaves_lod_0_linden_leaves" enabled="0" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="linden_leaves_lod_1_linden_leaves" enabled="0" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="linden_leaves_lod_2_linden_leaves" max_visible_distance="350" max_fade_distance="15" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="linden_trunk_lod_1_linden_trunk" enabled="0" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<surface name="linden_trunk_lod_2_linden_trunk" max_visible_distance="350" max_fade_distance="15" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<surface name="linden_twigs_linden_trunk" enabled="0" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -7.27595761418e-012 7.27595761418e-012 -1.42108547152e-014 1.0</transform>
+		<node type="ObjectMeshStatic" id="1089694385" name="linden_tree_crossplane">
+			<mesh_name>../worlds/library_objects/vegetation/linden_tree_crossplane.mesh</mesh_name>
+			<surface name="linden_tree_crossplane" min_visible_distance="350" max_visible_distance="1500" max_fade_distance="15" material="6dfd41d2004fe99ab4528e32b33554eb72dc0288" property="surface_base"/>
+			<transform>1.7881391301e-007 0.999999761582 0 0.0 -0.999999761582 1.7881391301e-007 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

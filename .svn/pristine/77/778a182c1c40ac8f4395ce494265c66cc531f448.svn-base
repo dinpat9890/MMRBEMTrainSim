@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>properties/Passengers.prop</library>
+	</properties>
+	<node type="ObjectMeshStatic" id="1234500959" name="pahadi_goregaon_station">
+		<mesh_name>../worlds/mmrbem/graphics/stations/pahadi_goregaon_station.mesh</mesh_name>
+		<surface name="metro_station_black_tiles" material="2759619d4923e74156f3e09eba41f1b3535e31e8" property="surface_base"/>
+		<surface name="metro_station_concrete_wall_stained" material="7f94074832a6498d78ca0ba0255283c8cb1b8fec" property="surface_base"/>
+		<surface name="metro_station_elevator" material="14c6c2b2ad2cd3f623a7af25e8c38fbc84dcc81c" property="surface_base"/>
+		<surface name="metro_station_fence_metal" material="3f48a345e2dca41e5b439e1e6ed1097172546039" property="surface_base"/>
+		<surface name="metro_station_generic_metal" material="1592e9b50d50ce280b2b5aaa0851fb05fa36a9dd" property="surface_base"/>
+		<surface name="metro_station_metal_mesh_01" material="fba5fbe54908f892f5ffb6b25c6222793c6d4063" property="surface_base"/>
+		<surface name="metro_station_platform_01" material="b9f8304a228e95d01f03cacbd9878b76170a8589" property="surface_base"/>
+		<surface name="metro_station_platform_lights" material="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" property="surface_base"/>
+		<surface name="metro_station_platform_sliding_gates" material="c43da3344d78ea13e72578582891ddf84f0d5c0d" property="surface_base"/>
+		<surface name="metro_station_platform_sliding_glass" material="fe20a7a25648550c0837d966a900cc3d67e20958" property="surface_base"/>
+		<surface name="metro_station_shed_02" material="6422e69141e36464ba6f23b6eb14132507495717" property="surface_base"/>
+		<surface name="metro_station_station_escalotor" material="6a39e91f5bf60f152ed09c0ed8c149bab2ea99fd" property="surface_base"/>
+		<surface name="metro_station_station_names" material="40e63899c21ea87770c69cd8ea47be16544c1135" property="surface_base"/>
+		<surface name="metro_station_station_objects" material="f7739603de5fd29cda84f78b4ee874a910b55bb4" property="surface_base"/>
+		<surface name="metro_station_tileable_stairs" material="a88e0509d8fc3abcb8303f81b49be63a46a6d68f" property="surface_base"/>
+		<surface name="metro_station_yellow_panel_01" material="e88c6cf4185d028bd7573c761e557ef658180f99" property="surface_base"/>
+		<transform>0.999999880791 -5.55111512313e-017 0 0.0 -6.93889390391e-018 0.999999880791 0 0.0 0 0 0.999999940395 0.0 7.27595761418e-012 0 1.42108547152e-014 1.0</transform>
+		<node type="ObjectMeshStatic" id="539995777" name="Nav_PAG_PAS1">
+			<mesh_name>../worlds/mmrbem/graphics/stations/Nav_PAG_PAS1.mesh</mesh_name>
+			<surface name="PAS1_placement" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="passenger_placement_surface"/>
+			<surface name="PAS1_walkable" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<transform>1.00000011921 3.46944695195e-017 0 0.0 2.77555756156e-017 1.00000011921 0 0.0 0 0 1.00000005961 0.0 -3.63797880709e-012 -6.8212102633e-013 0 1.0</transform>
+			<node type="NavigationMesh" id="2069788338" folded="1" name="Nav_PAG_PAS1">
+				<mesh_name>../worlds/mmrbem/graphics/stations/Nav_PAG_PAS1.mesh</mesh_name>
+				<height>3</height>
+				<transform>1 0 0 0.0 6.93889390391e-018 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObstacleBox" id="1155596574" name="ObstacleBox_0">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -9.44709686088 17.0885691958 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1178515743" name="ObstacleBox_1">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -8.91363977745 34.12229226 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="275509440" name="ObstacleBox_2">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -8.3807496941 51.1429701223 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="2065928912" name="ObstacleBox_3">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -7.80239580364 68.191973989 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="439718613" name="ObstacleBox_4">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -7.15606190254 85.2317996543 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1174692611" name="ObstacleBox_5">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -6.34633477589 102.256207117 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="394310549" name="ObstacleBox_6">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -5.39515402712 119.305550584 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="2060036274" name="ObstacleBox_7">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -4.18394403767 136.363353452 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="752017960" name="ObstacleBox_8">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -2.67984580241 153.429964321 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1513128766" name="ObstacleBox_9">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 -0.868107719025 170.506643792 3.13520806328 1.0</transform>
+				</node>
+			</node>
+			<node type="WorldExpression" id="710703057" folded="1" name="passenger_helpers">
+				<size>200 200 200</size>
+				<expression>{
+#include &lt;train_expressions/PassengerHelpers.h&gt;
+}
+</expression>
+				<transform>0.999999999999 8.59118829592e-029 0 0.0 1.48893014083e-023 0.999999999999 0 0.0 0 0 0.999999999995 0.0 4.54747350886e-013 3.63797880709e-012 -1.7763568394e-015 1.0</transform>
+				<node type="NodeDummy" id="1572160020" folded="1" name="Entrances">
+					<transform>0.999999881226 1.01824311205e-008 0 0.0 -1.01824320087e-008 0.999999881226 0 0.0 0 0 0.999999940395 0.0 1.81898940355e-012 3.63797880709e-012 -7.1054273576e-015 1.0</transform>
+					<node type="NodeDummy" id="1617073683" folded="1" name="Entrances_1">
+						<transform>0.999999999565 1.28864406296e-016 0 0.0 7.59335697117e-016 0.999999999565 0 0.0 0 0 1 0.0 -1.36424205266e-012 -3.63797880709e-012 0 1.0</transform>
+						<node type="NodeReference" id="2038294104" name="Entrance_1">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.18491257176 0.982753926481 1.24999475206e-018 0.0 -0.982753449644 0.184912482353 -1.36792751905e-017 0.0 -1.36744758505e-017 1.30103023511e-018 0.999995350838 0.0 -9.78976855213 57.6522749859 -0.285878117256 1.0</transform>
+						</node>
+						<node type="NodeReference" id="1799138954" name="Entrance_2">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184896299688 0.982752197946 1.24984513575e-018 0.0 -0.982751065457 0.184896091072 -1.36789716152e-017 0.0 -1.36743757616e-017 1.30092818168e-018 1.00000500679 0.0 -9.83978409288 53.302726813 -0.271536043486 1.0</transform>
+						</node>
+						<node type="NodeReference" id="2099092526" name="Entrance_3">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184896299688 0.982752197946 1.24984554934e-018 0.0 -0.982750767434 0.184896046368 -1.36789674793e-017 0.0 -1.36743832063e-017 1.30092818168e-018 1.00000560284 0.0 -9.99932826053 50.5797841644 1.19010613524 1.0</transform>
+						</node>
+						<node type="NodeReference" id="1370095225" name="Entrance_4">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184899101107 0.982752615178 1.24994605179e-018 0.0 -0.982751065457 0.184898803084 -1.36791031369e-017 0.0 -1.36745676676e-017 1.30089499105e-018 1.00000905991 0.0 -10.0723443443 46.6270786924 1.18963993901 1.0</transform>
+						</node>
+						<node type="NodeReference" id="649394417" name="Entrance_5">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184899101107 0.982752615178 1.2499543236e-018 0.0 -0.982751065457 0.184898803084 -1.36790923836e-017 0.0 -1.36745527783e-017 1.30088361731e-018 1.00000858307 0.0 -7.28862672785 44.5980910489 1.18941695947 1.0</transform>
+						</node>
+					</node>
+				</node>
+				<node type="NodeDummy" id="557582364" folded="1" name="Targets">
+					<transform>0.999999881226 1.01824311205e-008 0 0.0 -1.01824320087e-008 0.999999881226 0 0.0 0 0 0.999999940395 0.0 -1.81898940355e-012 0 -7.1054273576e-015 1.0</transform>
+					<node type="NodeDummy" id="1532338016" folded="1" name="Targets_1">
+						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+						<node type="NodeReference" id="358322980" folded="1" name="Target_1">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.99998676733 1.47312705874e-005 -1.31750199842e-022 0.0 -1.47311142614e-005 0.999976157701 -5.53771523129e-023 0.0 1.31751402501e-022 5.53805275633e-023 1.00000178814 0.0 -7.75473879487 28.6157214371 1.19422105545 1.0</transform>
+						</node>
+						<node type="NodeReference" id="1311205249" folded="1" name="Target_2">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999982237376 1.58282351918e-005 -1.31749467779e-022 0.0 -1.58284478767e-005 0.99999558882 -5.53756440107e-023 0.0 1.31750531598e-022 5.53778075702e-023 0.99999678135 0.0 -10.596508765 33.2910611939 1.18807015495 1.0</transform>
+						</node>
+						<node type="NodeReference" id="1386236064" folded="1" name="Target_3">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999988078633 1.50324498162e-005 -1.31750035759e-022 0.0 -1.50325570629e-005 0.999995231192 -5.53761930579e-023 0.0 1.31750733547e-022 5.53784197264e-023 0.999999403954 0.0 -10.3981301451 36.0848122329 1.18840706106 1.0</transform>
+						</node>
+						<node type="NodeReference" id="831682699" folded="1" name="Target_4">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999987840214 1.50509125655e-005 -1.31750023137e-022 0.0 -1.50510198122e-005 0.999994992773 -5.53762183015e-023 0.0 1.31750746169e-022 5.53784575918e-023 0.999999403954 0.0 -10.3594864762 38.2079506837 -0.2733121259 1.0</transform>
+						</node>
+						<node type="NodeReference" id="1199716753" folded="1" name="Target_5">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999986648121 1.47293924816e-005 -1.31750035759e-022 0.0 -1.47295624385e-005 0.999998211425 -5.53754925494e-023 0.0 1.31750670438e-022 5.53773973625e-023 0.999997317791 0.0 -10.0720507744 41.9286272614 -0.287103117399 1.0</transform>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="110452208" name="Nav_PAG_PAS2">
+			<mesh_name>../worlds/mmrbem/graphics/stations/Nav_PAG_PAS2.mesh</mesh_name>
+			<surface name="PAS2_placement" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="passenger_placement_surface"/>
+			<surface name="PAS2_walkable" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<transform>1.00000011921 3.46944695195e-017 0 0.0 2.77555756156e-017 1.00000011921 0 0.0 0 0 1.00000005961 0.0 -3.63797880709e-012 -6.8212102633e-013 0 1.0</transform>
+			<node type="NavigationMesh" id="1373737688" folded="1" name="Nav_PAG_PAS2">
+				<mesh_name>../worlds/mmrbem/graphics/stations/Nav_PAG_PAS2.mesh</mesh_name>
+				<height>3</height>
+				<transform>1 0 0 0.0 6.93889390391e-018 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObstacleBox" id="1098369144" name="ObstacleBox_10">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 4.21211047565 16.4800329005 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1205965026" name="ObstacleBox_11">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 9.40892428848 135.58365993 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1866660922" name="ObstacleBox_12">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 12.7169312059 169.565350445 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1601643253" name="ObstacleBox_13">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 8.22823570381 118.596916873 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1969790505" name="ObstacleBox_14">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 10.9006103218 152.576096388 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1338597929" name="ObstacleBox_15">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 4.74556755909 33.5137559647 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1889140935" name="ObstacleBox_16">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 6.50314543399 84.5755603515 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1267645781" name="ObstacleBox_17">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 7.26569815326 101.583769612 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="2041685963" name="ObstacleBox_18">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 5.27845764244 50.534433827 3.13520806328 1.0</transform>
+				</node>
+				<node type="ObstacleBox" id="1182397241" name="ObstacleBox_19">
+					<size>1 1 1</size>
+					<transform>0.600000095367 1.24900174643e-017 0 0.0 -1.66533455348e-017 0.600000095367 0 0.0 0 0 4.0000002384 0.0 5.8568115329 67.5512638886 3.13520806328 1.0</transform>
+				</node>
+			</node>
+			<node type="WorldExpression" id="1905579722" folded="1" name="passenger_helpers">
+				<size>200 200 200</size>
+				<expression>{
+#include &lt;train_expressions/PassengerHelpers.h&gt;
+}
+</expression>
+				<transform>0.999999999999 8.59118829592e-029 0 0.0 1.48893014083e-023 0.999999999999 0 0.0 0 0 0.999999999995 0.0 4.54747350886e-013 3.63797880709e-012 -1.7763568394e-015 1.0</transform>
+				<node type="NodeDummy" id="1084304038" folded="1" name="Entrances">
+					<transform>0.999999881226 1.01824311205e-008 0 0.0 -1.01824320087e-008 0.999999881226 0 0.0 0 0 0.999999940395 0.0 1.81898940355e-012 3.63797880709e-012 -7.1054273576e-015 1.0</transform>
+					<node type="NodeDummy" id="1176703964" folded="1" name="Entrances_1">
+						<transform>0.999999999565 1.28864406296e-016 0 0.0 7.59335697117e-016 0.999999999565 0 0.0 0 0 1 0.0 -1.36424205266e-012 -3.63797880709e-012 0 1.0</transform>
+						<node type="NodeReference" id="149351592" name="Entrance_1">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184912959191 0.982754939761 1.24999816418e-018 0.0 -0.982754701342 0.184912914487 -1.36792925613e-017 0.0 -1.36745023203e-017 1.30103240646e-018 0.999997317791 0.0 7.18102044937 57.4753717714 -0.289019117623 1.0</transform>
+						</node>
+						<node type="NodeReference" id="174011820" name="Entrance_2">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184896433799 0.982752913202 1.24984896146e-018 0.0 -0.982751244271 0.184896120874 -1.36789757511e-017 0.0 -1.36743914781e-017 1.30092652732e-018 1.00000596047 0.0 6.89451940389 52.6478953437 -0.290408122475 1.0</transform>
+						</node>
+						<node type="NodeReference" id="331053734" name="Entrance_3">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184896329491 0.982752257551 1.24984575613e-018 0.0 -0.982750946248 0.184896091072 -1.3678970788e-017 0.0 -1.3674386515e-017 1.30092849187e-018 1.00000584126 0.0 6.89763550941 49.7829972254 1.19788705059 1.0</transform>
+						</node>
+						<node type="NodeReference" id="464366910" name="Entrance_4">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184899101107 0.982752615178 1.24994605179e-018 0.0 -0.982751065457 0.184898803084 -1.36791031369e-017 0.0 -1.36745676676e-017 1.30089499105e-018 1.00000905991 0.0 6.70647114444 45.8214532607 1.19729179475 1.0</transform>
+						</node>
+						<node type="NodeReference" id="190139891" name="Entrance_5">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_purple.node</reference>
+							<transform>0.184899101107 0.982752615178 1.2499543236e-018 0.0 -0.982751065457 0.184898803084 -1.36790923836e-017 0.0 -1.36745527783e-017 1.3008840309e-018 1.00000858307 0.0 4.24343257954 44.3972398304 1.20562889619 1.0</transform>
+						</node>
+					</node>
+				</node>
+				<node type="NodeDummy" id="161703239" folded="1" name="Targets">
+					<transform>0.999999881226 1.01824311205e-008 0 0.0 -1.01824320087e-008 0.999999881226 0 0.0 0 0 0.999999940395 0.0 -1.81898940355e-012 0 -7.1054273576e-015 1.0</transform>
+					<node type="NodeDummy" id="291735405" folded="1" name="Targets_1">
+						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+						<node type="NodeReference" id="969251813" folded="1" name="Target_1">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.99998676733 1.47312705874e-005 -1.31750199842e-022 0.0 -1.47311142614e-005 0.999976157701 -5.53768493903e-023 0.0 1.31751402501e-022 5.53802246406e-023 1.00000178814 0.0 3.69305055556 27.9033468157 1.20511203666 1.0</transform>
+						</node>
+						<node type="NodeReference" id="227292359" folded="1" name="Target_2">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999982237376 1.58282351918e-005 -1.31749467779e-022 0.0 -1.58284478767e-005 0.99999558882 -5.53756440107e-023 0.0 1.31750531598e-022 5.53778075702e-023 0.99999678135 0.0 6.19590650206 31.5131631967 1.21809505823 1.0</transform>
+						</node>
+						<node type="NodeReference" id="131276132" folded="1" name="Target_3">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999988078633 1.50324498162e-005 -1.31750035759e-022 0.0 -1.50325570629e-005 0.999995231192 -5.53761930579e-023 0.0 1.31750733547e-022 5.53784197264e-023 0.999999403954 0.0 6.2246531278 35.313215252 1.1971910558 1.0</transform>
+						</node>
+						<node type="NodeReference" id="99153361" folded="1" name="Target_4">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999987840214 1.50509125655e-005 -1.31750023137e-022 0.0 -1.50510198122e-005 0.999994992773 -5.53762183015e-023 0.0 1.31750746169e-022 5.53784575918e-023 0.999999403954 0.0 6.23635602787 37.4627646086 -0.283202116944 1.0</transform>
+						</node>
+						<node type="NodeReference" id="116855279" folded="1" name="Target_5">
+							<reference>oksygen/content/core/graphics/general/graphics/nodes/markers/marker_blue.node</reference>
+							<transform>0.999986648121 1.47293924816e-005 -1.31750035759e-022 0.0 -1.47295624385e-005 0.999998211425 -5.53754925494e-023 0.0 1.31750670438e-022 5.53773973625e-023 0.999997317791 0.0 6.4100151041 41.7016450401 -0.290740117823 1.0</transform>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="751206109" name="CBTC_Balise">
+		<mesh_name>cbtc_beacon/graphics/comp_balise.mesh</mesh_name>
+		<surface name="balise" max_visible_distance="1000" material="a5fd3d27176a6771c3e946c4c56aa422d3896a49" property="surface_base"/>
+		<surface name="balise_tunnel" enabled="0" max_visible_distance="1000" material="c7ce73e56b7df373d336d860eb216a3b352ffd85" property="surface_base"/>
+		<surface name="grpbox" enabled="0" max_visible_distance="1000" material="0b49b6a06b1d6a72495fa063aba633be061ce309" property="surface_base"/>
+		<surface name="grpbox_tunnel" enabled="0" max_visible_distance="1000" material="3674e42eab9e75450100545a0858960df3029f04" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

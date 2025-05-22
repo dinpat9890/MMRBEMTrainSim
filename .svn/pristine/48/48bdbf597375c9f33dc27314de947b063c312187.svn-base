@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="701509445" name="GRP_box">
+		<mesh_name>cbtc_beacon/graphics/GRP_box.mesh</mesh_name>
+		<surface name="Body" max_visible_distance="1000" material="0b49b6a06b1d6a72495fa063aba633be061ce309" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

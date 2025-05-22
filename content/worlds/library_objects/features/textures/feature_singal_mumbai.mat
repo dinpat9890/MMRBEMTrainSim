@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="feature_singal_mumbai" guid="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" parent="9dc65861ffb7db411020b9d352e4961592d81314" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<state name="workflow">0</state>
+	<state name="emission">1</state>
+	<state name="geometry_inflation">0</state>
+	<texture name="diffuse">../worlds/library_objects/features/textures/feature_signal.dds</texture>
+	<texture name="albedo">../worlds/library_objects/features/textures/feature_signal.dds</texture>
+	<texture name="microfiber">../worlds/library_objects/features/textures/feature_signal_e.dds</texture>
+	<texture name="emission">../worlds/library_objects/features/textures/feature_signal_e.dds</texture>
+	<parameter name="material_mask">0xff000001</parameter>
+	<parameter name="albedo_color">0.898039281 0.898039281 0.898039281 1</parameter>
+	<parameter name="metalness">0.5</parameter>
+	<parameter name="gloss">0.800000012</parameter>
+	<parameter name="microfiber">0.194000006</parameter>
+	<parameter name="emission_scale">2</parameter>
+	<parameter name="vertex_balloon">1</parameter>
+</material>

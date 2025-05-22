@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties version="1.00">
+	<property name="features">
+		<parameter name="raycast_height" type="double">2.0</parameter>
+		<parameter name="raycast_length" type="double">100.0</parameter>
+	</property>
+	<property name="broken_points">
+		<parameter name="z_offset" type="double" min="0.0" max="1.0">0.033</parameter>
+	</property>
+</properties>

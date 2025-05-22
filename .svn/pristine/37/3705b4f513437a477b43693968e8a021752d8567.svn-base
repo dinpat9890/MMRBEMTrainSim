@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2089513724" name="station_name_akurli">
+		<mesh_name>../worlds/mmrbem/graphics/stations/station_name_akurli.mesh</mesh_name>
+		<surface name="station_name_board_station_names" material="40e63899c21ea87770c69cd8ea47be16544c1135" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 -5.3290705182e-015 1.0</transform>
+	</node>
+</nodes>

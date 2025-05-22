@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="94504506" name="sheep">
+		<mesh_name>obstruction_features/graphics/sheep.mesh</mesh_name>
+		<surface name="MESH_sheep_white_2186" max_visible_distance="800" material="867f614c9f867d61d3a4575664a91d56260a386f" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

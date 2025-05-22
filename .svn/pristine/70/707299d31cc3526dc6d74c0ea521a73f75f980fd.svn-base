@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="2126250810" name="trackworker_cman0323">
+		<mesh_name>../features/animated_features/graphics/trackworker_a.mesh</mesh_name>
+		<speed>30</speed>
+		<surface name="MA_cman0323_LOD0_body" max_visible_distance="1000" material="dde25f012c3c9ef6b20bb1b8441952bacead5db8" property="surface_base"/>
+		<surface name="MA_cman0323_LOD0_head" max_visible_distance="1000" material="e20c355c37fa1bb196c685954ae37fedd91ca27d" property="surface_base"/>
+		<surface name="shovel_shovel" max_visible_distance="1000" material="5d163c69bd3d9dfb8bb212a5672574628f63413a" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="ModelDLLSoftwarePaths" >
+  <!-- If you're adding a model, just append its path to the following. We could use a subant
+       across all folders but this provides more flexibility. -->
+  <path id="all_software">
+	<pathelement path="BEML_EMU"/>
+    <!-- pathelement path="Bombardier701"/ -->
+    <!-- pathelement path="Goanna"/ -->
+  </path>
+</project>

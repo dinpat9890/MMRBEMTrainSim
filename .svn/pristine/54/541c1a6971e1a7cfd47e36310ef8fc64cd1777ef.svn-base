@@ -1,0 +1,146 @@
+[Defaults]
+System=System.ini
+Database=Database.ini
+
+[Simulator]
+Hub Name=Driver's Cab
+
+[Logging]
+Level=VERBOSE
+Log Directory=..\Logs
+
+[System.1]
+Module Name=Student Monitoring (Debug)
+
+[Windowing]
+Width=1920
+Height=1280
+Full-screen=0
+X Position=0
+Y Position=0
+Frameless=0
+
+
+# This section contains generic configuration for recording and previewing
+# media.
+[Media Recorder]
+# Unique Name is an optional string, used to identify the recordings from this
+# module. It is only necessary when there is more than one instance of this
+# module in a system, and those modules are associated with the same hub;
+# otherwise it may be safely omitted. If unspecified, the default is an empty
+# string.
+Unique Name=dsw_cctv
+
+# !! THE CURRENT IMPLEMENTATION ONLY SUPPORTS ONE *OR* FOUR SOURCES !!
+# Default Sources is an optional comma-delimited string, containing the
+# unique names of the media sources that this module will display. These must
+# match the Unique Name property for the media sources, specified elsewhere
+# in this file.
+#
+# An empty string may be used to indicate a blank source (e.g. feed0, ,feed1
+# would display the feed0 source, a blank source, then feed1). If unspecified,
+# the default is an empty string (no sources are displayed).
+Default Sources=dsw_cctv
+
+# Output Path is a required string, specifying the location at which recordings
+# will be stored.
+# For VADAAR-based systems this must match the path used by the DVR.
+Output Path=//172.16.102.3/SessionData/VADAAR/
+
+# !! THE FOLLOWING OPTION IS CURRENTLY UNSUPPORTED !!
+# Enabled Recording is an optional boolean value (0 or 1), offering global
+# control over recording. If unspecified, the default is 1 (recording is
+# enabled).
+Enable Recording=1
+
+# Delete Old Media on Start is an optional boolean value (0 or 1). A value of
+# 1 indicates that when the module starts, it will delete any previously
+# recorded media that doesn't relate to a saved session. If unspecified, the
+# default is 0 (old media is retained).
+#
+# The module will do its best to only remove media it was responsible for
+# creating, but has some difficulty when the module is hub associated. This
+# can be avoided by specifying a value for the Unique Name property (defined
+# above).
+Delete Old Media on Start=1
+
+# Media Sync Time is an optional floating point number, defining how many
+# seconds the playback of media can "drift" before a synchronisation command
+# is issued. If unspecified, the default is one second.
+Media Sync Time=2.0
+
+# Wait for Session Start is an optional boolean value (0 or 1) to tell the
+# module if it should wait until a session starts before recording. A value of
+# 0 matches the behaviour of the Video Camera module; recording starts
+# as soon as a session begins to load. A value of 1 instead waits until the first
+# transition from "paused" to "running". If unspecified, the default is 0.
+Wait for Session Start=0
+
+
+# This section defines the Replay Overlay, which is used to indicate that the
+# media is part of a replay session (i.e. it's not live).
+[Replay Overlay]
+# !! ONLY PNG IMAGES ARE CURRENTLY SUPPORTED !!
+# Specifies the file used for the replay overlay. Both absolute paths, and paths
+# relative to the current working directory, are supported.
+# If unspecified, the default is Images/Replay.png.
+File Name=Images/Replay_64x64.png
+
+# Set to non-zero to enable the replay overlay.
+# If unspecified, the default is 1.
+Enabled=1
+
+# An optional parameter for controlling the flashing period. Defines how long,
+# in seconds, the overlay will be visible for.
+# Optional. If unspecified, the default is 1.0.
+On Period=1.0
+
+# An optional parameter for controlling the flashing period. Defines how long,
+# in seconds, the overlay will be hidden for.
+# Optional. If unspecified, the default is 1.0.
+Off Period=1.0
+
+
+# As above, except for the recording overlay.
+[Recording Overlay]
+File Name=Images/Recording_64x64.png
+
+
+# This section specifies how the module will interact with VADAAR.
+[VADAAR]
+# Central Control URL is an optional string, specifying the URL of the
+# VADAAR Central Control component. It is the same URL that would be used in
+# an internet browser to inspect and control the system. If unspecified, the
+# default is http://localhost:80
+Central Control URL=http://172.16.102.1:80
+
+
+# The module will search for all sections beginning with VADAARSource; as
+# long as the sections are named uniquely, they will form the configuration
+# for each VADAAR video source the module knows about.
+[VADAARSource 1]
+# Unique Name is a required string, defining the unique value that the module
+# uses to identify a media source. If two sources share the same Unique Name,
+# behaviour is undefined. If unspecified, this source will be ignored.
+Unique Name=dsw_cctv
+
+# Recorded is an optional boolean value (0 or 1). A value of 1 indicates that
+# this source should be recorded, otherwise the source is only available for
+# viewing during a live session. If unspecified, the default is 1 (the source
+# is recorded).
+Recorded=1
+
+# Sender Name is a required string, specifying the VADAAR sender this source
+# comes from. The list of senders can be found by navigating to the Central
+# Control URL/settings (e.g http://localhost:80/settings) and inspecting the
+# known capture services. Typically, it is the name of the PC the Sender is
+# running on. If unspecified, this source will be ignored.
+Sender Name=MMRBEM-DB-PROXY
+
+# Session Name is a required string, specifying the stream to use from the
+# VADAAR sender (a sender may output more than one stream). These are specified
+# in the JSON configuration for the Sender itself; for example, the default
+# VADAAR configuration includes a video-full session, which captures the desktop
+# of the PC the sender is running on. If unspecified, this source will be
+# ignored.
+Session Name=dsw_cctv

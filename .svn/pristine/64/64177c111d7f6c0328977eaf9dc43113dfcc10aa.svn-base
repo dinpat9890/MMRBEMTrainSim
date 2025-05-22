@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Route_Indicator" group="Signal" constant_name="FETY_ROUTE_INDICATOR" modifiable="0" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Automated"   user_selectable="1" />
+        <feature_type_state state_id="2" name="Off"         user_selectable="1" />
+        <feature_type_state state_id="3" name="M"           user_selectable="1" />
+        <feature_type_state state_id="4" name="D"           user_selectable="1" />
+        <feature_type_state state_id="5" name="S"           user_selectable="1" />
+        <feature_type_state state_id="6" name="T"           user_selectable="1" />
+    </feature_type_state_type>
+
+    <object_parameters>
+        <key name="Initial State"  type="State"  description="Initial State"   default="M" />
+    </object_parameters>
+
+    <feature_type_icon icon_code="Route_Indicator" small_icon="icons/route_indicator.zip#off-SMALL.png" big_icon="icons/route_indicator.zip#off-BIG.png">
+        <feature_type_state_icon state_id="1" icon_code="Automated" small_icon="icons/route_indicator.zip#off-SMALL.png" big_icon="icons/route_indicator.zip#off-BIG.png" />
+        <feature_type_state_icon state_id="2" icon_code="Off"       small_icon="icons/route_indicator.zip#off-SMALL.png" big_icon="icons/route_indicator.zip#off-BIG.png" />
+        <feature_type_state_icon state_id="3" icon_code="M"         small_icon="icons/route_indicator.zip#m-SMALL.png" big_icon="icons/route_indicator.zip#m-BIG.png" />
+        <feature_type_state_icon state_id="4" icon_code="D"         small_icon="icons/route_indicator.zip#d-SMALL.png" big_icon="icons/route_indicator.zip#d-BIG.png" />
+        <feature_type_state_icon state_id="5" icon_code="S"         small_icon="icons/route_indicator.zip#s-SMALL.png" big_icon="icons/route_indicator.zip#s-BIG.png" />
+        <feature_type_state_icon state_id="6" icon_code="T"         small_icon="icons/route_indicator.zip#t-SMALL.png" big_icon="icons/route_indicator.zip#t-BIG.png" />
+    </feature_type_icon>
+
+   <feature_type_vision class="SignalFeature" raycast_type="NoRaycast" node_file="route_indicator.node">
+       <scripting>
+           <script script_path="scripts/SignalFeature.us.cpp" />
+       </scripting>
+       <model_parts>
+            <model_part model_part_id="3" name="head/m" />
+            <model_part model_part_id="4" name="head/d" />
+            <model_part model_part_id="5" name="head/s" />
+            <model_part model_part_id="6" name="head/t" />
+        </model_parts>
+        <model_state_parts>
+            <model_state_part state_id="3" part_id="3" />
+            <model_state_part state_id="4" part_id="4" />
+            <model_state_part state_id="5" part_id="5" />
+            <model_state_part state_id="6" part_id="6" />
+        </model_state_parts>
+  </feature_type_vision>
+
+</feature_type>

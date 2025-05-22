@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1834839560" name="arrow_right">
+		<mesh_name>../worlds/library_objects/features/arrow_right.mesh</mesh_name>
+		<surface name="arrow_right" max_visible_distance="800" max_fade_distance="10" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+		<transform>1.0000001 -1.93431838892e-008 -1.38114161854e-014 0.0 1.93431838868e-008 1.0000001 9.00688021658e-015 0.0 -7.38559626334e-015 1.88665746979e-015 0.999999904632 0.0 9.09494701773e-013 7.27595761418e-012 2.20656826144e-015 1.0</transform>
+	</node>
+</nodes>

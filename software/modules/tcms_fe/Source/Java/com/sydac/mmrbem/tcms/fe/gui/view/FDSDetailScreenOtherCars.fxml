@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.tcms.fe.gui.presenter.FDSDetailsOtherCarsController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="3.0" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="90.0" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="300.0" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="241.0" minHeight="-Infinity" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <GridPane alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="1024.0" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <fx:include maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1024.0" source="TrainSideViewPanel.fxml" />
+               </children>
+            </GridPane>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="1024.0" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                <ColumnConstraints />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="320.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="320.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints percentHeight="12.19" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="225.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="saloonR1Label" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - Saloon-R1" />
+                              <Button fx:id="saloonR1Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdSaloonR1Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="saloonR2Label" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - Saloon-R2" />
+                              <Button fx:id="saloonR2Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdSaloonR2Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="50.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="saloonR3Label" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - Saloon-R3" />
+                              <Button fx:id="saloonR3Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdSaloonR3Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="90.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="hdHvacLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="HD - HVAC-2" />
+                              <Button fx:id="hdHvacButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onHdHvac2Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="130.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="shdAuxiliaryDeskLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - Auxiliary Desk" />
+                              <Button fx:id="shdAuxiliaryDeskBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdAuxiliaryDeskAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="saloonL1Label" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - Saloon-L1" />
+                              <Button fx:id="saloonL1Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdSaloonL1Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="saloonL2Label" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - Saloon-L2" />
+                              <Button fx:id="saloonL2Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdSaloonL2Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="50.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="saloonL3Label" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - Saloon-L3" />
+                              <Button fx:id="saloonL3Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdSaloonL3Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="90.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="hvac1Label" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" stylesheets="@tcms-application.css" text="HD - HVAC-1" />
+                              <Button fx:id="hvac1Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onHdHvac1Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="cabAreaGrid" layoutX="10.0" layoutY="130.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="shdCabAreaLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - CAB Area" />
+                              <Button fx:id="shdCabAreaBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdCabAreaAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="366.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="12" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="shdEndCubicle1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - End Cubicle (Rear Right - 1)" />
+                              <Button fx:id="endCub1Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdEndCubicle1Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="shdEndCubicle2Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - End Cubicle (Rear Right - 2)" />
+                              <Button fx:id="endCub2Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdEndCubicle2Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="50.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="shdEndCubicle3Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - End Cubicle (Rear Left- 1)" />
+                              <Button fx:id="endCub3Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdEndCubicle3Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="90.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="shdEndCubicle4Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - End Cubicle (Rear Left - 2)" />
+                              <Button fx:id="shdEndCubicle4Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdEndCubicle4Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-route" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="130.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="shdEDBSpareBoxLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="SHD - EDB Spare Box" />
+                              <Button fx:id="shdEDBSpareBoxBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onShdEdbSpareBoxAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <GridPane GridPane.columnIndex="7" GridPane.columnSpan="7">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="1040.0" styleClass="status-table-label" text="SHD - HD" textFill="WHITE" GridPane.columnSpan="7" />
+                        <Line endX="923.2929077148438" endY="-1.121320366859436" startX="-100.0" stroke="WHITE" GridPane.rowIndex="1" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" />
+                     </GridPane.margin>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="318.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="318.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="318.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="18.0" prefWidth="18.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="175.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.columnSpan="7">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Line endX="922.5857543945312" endY="1.2071387767791748" startX="-100.0" stroke="WHITE" GridPane.rowIndex="1" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="1040.0" styleClass="status-table-label" text="LHD" textFill="WHITE" />
+                     </children>
+                  </GridPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdLTJB1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - LTJB1" />
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdLtjb1Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdLTJB2Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - LTJB2" />
+                              <Button fx:id="lhdLTJB2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdLtjb2Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="50.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdEndCubicleLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - End Cubicle (Rear Right)" />
+                              <Button fx:id="lhdEndCubicleBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdEndCubicleAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="28.0" layoutY="44.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdMTRLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - MTR" />
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdMtrAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdVCBCBLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - VCB-CB" />
+                              <Button fx:id="lhdVCBCBBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdVcbCbAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="50.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdAPSLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - APS" />
+                              <Button fx:id="lhdAPSBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdApsAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="363.0" layoutY="44.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdSSU1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - SSU1" />
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdSsu1Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdSSU2Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - SSU2" />
+                              <Button fx:id="lhdSSU2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdSsu2Action" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="10.0" layoutY="50.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="100.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="lhdPEBLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="fire-dectection-screen-boxed-label" text="LHD - PEB" />
+                              <Button fx:id="lhdPEBBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLhdPebAction" prefHeight="36.0" prefWidth="100.0" styleClass="button-fire-details" text="DISABLE" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

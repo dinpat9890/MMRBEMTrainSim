@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- =================================================================== -->
+<!-- Builds Java modules                                                 -->
+<!-- =================================================================== -->
+<!--
+  To use this in your build.xml, you need to:
+  * Place your source in <ModuleDirectory>/Source/Java
+
+  * Place your custom manifest settings (if any) in
+      <ModuleDirectory>/Source/Resources/META-INF/Manifest.txt
+
+  * Define the following properties
+    (you may want to define these somewhere common e.g. info.xml)
+    * path.root, the path from your module to this file (usually something like ../../../).
+
+    * module.name, the name of your module, e.g.:
+        <property name="module.name" value="ModuleName"/>
+      Usually the name is the same as the directory the module is in.
+
+    * jar.base.name, the name of the jar file(s) to be created (without the extension), e.g.:
+        <property name="jar.base.name" value="modulename"/>
+      This text can be used by this script to generate the various other files you need, such as
+      modulename.jar, modulename-sources.jar, etc.
+
+  * Include this file by adding
+      <import file="${path.root}/target.build.jar.xml" as="build" />
+    somewhere after defining jar.base.name.
+
+  * Describe your dependencies in ivy.xml.
+
+  * If this module uses gettext for internationalisation:
+    * Include the following in your ivy.xml:
+        <dependency org="sydac.cots" name="gettext" rev="0.18.1.1-2" conf="*" />
+    * Include the following in your build.xml
+        <property name="i18n.template.creator" value="${gettext.create.pot.script}"/>
+    * Note that module.name will be used as the name of the generated pot file, e.g. ModuleName.pot.
+
+    Note that you can define your own i18n script (though that would be a very rare use case).
+    When defining your own script, it needs to contain the following targets:
+      create.i18n.template.java
+      clean.i18n.output
+
+  * If you have automated tests to run:
+    * Set run.tests to true
+    * Set test.runner to the ant file defining your test script.
+      You can define your own test runner script and use that, but usually you would use the TestNG runner.
+
+      To use the TestNG runner, include the following in your ivy.xml:
+        <dependency org="sydac.cots" name="testng" rev="6.8" conf="test->*" />
+      and the following in your build.xml after importing this file:
+        <property name="run.tests" value="true"/>
+        <property name="test.runner" value="${testng.script}"/>
+      Note that testng.script is a helper defined in this file.
+      Note that by using this build script the properties required by the TestNG script will already be set up.
+
+    Note that you can define your own unit test runner script (though that would be a very rare use case).
+    When defining your own script, it needs to contain the following targets:
+      run.unit.tests
+      clean.test.output
+-->
+<project name="Common Java targets" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+
+  <!-- Load all of the properties to specify the paths of the COTS and build directories -->
+  <property file="${path.root}/build.properties"/>
+
+  <!-- Properties for the various jar files that we may generate -->
+  <property name="jar.file" value="${jar.base.name}.jar"/>
+  <property name="version.number" value="${version.major}.${version.minor}.${version.tag}"/>
+
+  <!-- Helper property for locating the commonly used TestNG ant script. -->
+  <property name="testng.script" value="Dependencies/sydac/cots/testng/run.unit.tests.xml"/>
+
+  <!-- Helper property for locating the commonly used gettext ant script. -->
+  <property name="gettext.create.pot.script" value="dependencies/cots/oksygen/cots/gettext/create.pot.xml"/>
+  <!-- Used for generated i18n files. -->
+  <property name="module.pot" value="${module.name}.pot"/>
+
+  <!-- Global setting for "includeantruntime" -->
+  <property name="build.sysclasspath" value="ignore"/>
+
+
+  <!-- =================================================================== -->
+  <!-- Building targets                                                    -->
+  <!-- =================================================================== -->
+
+  <!-- Path for source files -->
+  <property name="src.dir" value="Source/Java"/>
+  <!-- Path for manifest file -->
+  <property name="mf.dir" value="Source/Resources/META-INF"/>
+  <property name="mf.file" value="Manifest.txt"/>
+  <!-- Path for class files to be compiled into -->
+  <property name="bld.dir" value="Build"/>
+  
+  <property name="lib.dir" value="Lib"/>
+  <!-- Output path -->
+  <property name="jar.dir" value="Jar"/>
+
+  <!-- may not need this if we are doing pathed dependencies per module-->
+  <path id="project.classpath">
+    <fileset dir="${lib.dir}">
+      <include name="**/*.jar" />
+    </fileset>
+  </path>
+
+  <!-- Tests that the calling build.xml has all the right properties defined -->
+  <target name="check.build.jar.props">
+    <fail unless="module.name"    message="module.name is not set!"/>
+    <!-- fail unless="jar.base.name"  message="jar.base.name is not set!"/ -->
+  </target>
+
+  <!-- Prepares the build directories -->
+  <target name="prepare" >
+    <!-- Make the build dirs -->
+    <mkdir dir="${bld.dir}"/>
+    <mkdir dir="${lib.dir}"/>
+    <mkdir dir="${jar.dir}"/>
+  </target>
+
+  <!-- Copies non-source files to the build directory -->
+  <target name="copy.extra.files" depends="prepare">
+    <echo message="Copying extra files"/>
+    <!-- Copy any additional files -->
+    <copy todir="${bld.dir}">
+      <fileset dir="${src.dir}">
+        <!-- Skip Java source -->
+        <exclude name="**/*.java"/>
+        <!-- Skip Photoshop documents -->
+        <exclude name="**/*.psd"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="write.manifest">
+    <ac:if>
+      <available file="${mf.dir}/${mf.file}" />
+      <ac:then>
+        <copy file="${mf.dir}/${mf.file}" todir="${basedir}" />
+      </ac:then>
+    </ac:if>
+
+    <manifest file="${mf.file}" mode="update">
+      <!-- See http://docs.oracle.com/javase/tutorial/deployment/jar/packageman.html -->
+      <attribute name="Implementation-Version" value="${version.number}"/>
+      <attribute name="Implementation-Vendor" value="SYDAC Pty Ltd"/>
+    </manifest>
+  </target>
+
+  <!-- Compiles the source code for this module -->
+  <target name="compile.source">
+    <echo message="Compiling the source for ${ant.file}"/>
+    <!-- Run javac on all java files -->
+    <javac srcdir="${src.dir}" destdir="${bld.dir}"
+           encoding="${source.encoding}"
+           debug="${java.compile.debug}"
+           optimize="${java.compile.optimize}"
+           deprecation="${java.compile.deprecation}"
+           nowarn="${java.compile.nowarn}">
+      <compilerarg value="-Xlint:all,-serial"/>
+      <classpath refid="project.classpath"/>
+    </javac>
+  </target>
+
+  <!-- Builds the Jar file -->
+  <target name="build.jar" depends="prepare, check.build.jar.props, compile.source, copy.extra.files, write.manifest"
+          description="Build the Jar file">
+    <echo message="Building a jar for ${ant.file}"/>
+    <!-- Add all class files into the jar -->
+    <jar destfile="${jar.dir}/${jar.file}" manifest="${mf.file}" basedir="${bld.dir}" />
+
+    <delete file="${mf.file}" />
+  </target>
+
+  <target name="build.jar.bundle" depends="prepare, check.build.jar.props, compile.source, copy.extra.files, write.manifest"
+          description="Build the Jar file, with all dependencies bundled.">
+    <echo message="Building a jar for ${ant.file}"/>
+    <!-- Add all class files into the jar -->
+    <jar destfile="${jar.dir}/${jar.file}" manifest="${mf.file}" basedir="${bld.dir}">
+      <!-- Include all dependencies -->
+      <zipgroupfileset dir="${lib.dir}" includes="*.jar"/>
+    </jar>
+
+    <delete file="${mf.file}" />
+  </target>
+
+  <!-- Create localisation files if needed. -->
+  <target name="create.i18n.template" if="i18n.template.creator">
+    <ant antfile="${i18n.template.creator}" target="create.i18n.template.java" />
+  </target>
+
+  <!-- Runs tests if this module has any. -->
+  <target name="run.tests" depends="build.jar" if="test.runner">
+    <path id="test.classpath">
+      <fileset dir="${jar.dir}">
+        <include name="**/*.jar" />
+      </fileset>
+    </path>
+    <ant antfile="${test.runner}" target="run.unit.tests" inheritRefs="true" />
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Code Analysis                                                       -->
+  <!-- =================================================================== -->
+
+  <!-- Writes the sonar properties for this module. These are written to the directory where the
+       script is called from (user.dir), and are added as a part of the build of the properties -->
+  <property name="sonar.properties" location="${user.dir}/sonar-project.properties"/>
+
+  <target name="prepare.sonar.jar">
+    <basename property="sonar.name" file="${basedir}" />
+    <property name="sonar.basedir" location="${basedir}" relative="true" basedir="${user.dir}" />
+    <!-- *.jar can be used, but if there are no jar files there SONAR complains -->
+    <pathconvert property="sonar.jar" pathsep="," setonempty="true">
+      <fileset dir="${lib.dir}"/>
+      <map from="${basedir}\${lib.dir}\" to="${lib.subdir}/"/>
+    </pathconvert>
+    <property file="${sonar.properties}"/>
+    <property name="sonar.modules" value=""/>
+    <propertyfile file="${sonar.properties}">
+      <entry key="sonar.modules" value="${sonar.modules},${sonar.name}"/>
+      <entry key="${sonar.name}.sonar.projectBaseDir" value="${sonar.basedir}"/>
+      <entry key="${sonar.name}.sonar.sources" value="${src.subdir}"/>
+      <entry key="${sonar.name}.sonar.libraries" value="${sonar.jar}"/>
+      <entry key="${sonar.name}.sonar.binaries" value="${bld.subdir}"/>
+      <entry key="${sonar.name}.sonar.language" value="java"/>
+    </propertyfile>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Creates the Javadoc for the project                                 -->
+  <!-- =================================================================== -->
+
+  <!-- Packages to include in javadoc -->
+  <property name="javadoc.packages" value="com.sydac.*"/>
+
+  <target name="make.doc" depends="prepare" description="Creates JavaDoc for the Project">
+    <tstamp>
+      <format property="copyright.year" pattern="yyyy" />
+    </tstamp>
+    <!-- Run javadoc on the project -->
+    <javadoc packagenames="${javadoc.packages}" maxmemory="128M" destdir="${doc.dir}"
+             author="true" version="true" windowtitle="${ant.project.name}"
+             doctitle="${ant.project.name}" bottom="Copyright &#169; ${copyright.year} Sydac Pty Ltd.">
+      <sourcepath>
+        <!-- Use the standard project source -->
+        <pathelement path="${src.dir}/" />
+      </sourcepath>
+        <!-- Use the standard project classpath -->
+      <classpath>
+        <path refid="project.classpath"/>
+      </classpath>
+    </javadoc>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Cleanup                                                             -->
+  <!-- =================================================================== -->
+
+  <target name="clean.all" depends="clean.jar,clean.i18n.output,clean.test.output" description="Cleans the build files">
+  </target>
+
+  <target name="clean.jar" description="Cleans the output files">
+    <!-- Remove all build dirs and generated files -->
+    <delete dir="${bld.dir}"/>
+    <delete dir="${doc.dir}"/>
+    <delete dir="${jar.dir}"/>
+    <delete dir="${lib.dir}"/>
+  </target>
+
+  <!-- Clean i18n output if this module is internationalised. -->
+  <target name="clean.i18n.output" if="i18n.template.creator">
+    <ac:if>
+      <available file="${i18n.template.creator}" />
+      <ac:then>
+        <ant antfile="${i18n.template.creator}" target="clean.i18n.output" />
+      </ac:then>
+    </ac:if>
+  </target>
+
+  <!-- Clean test output if this module has tests. -->
+  <target name="clean.test.output" if="test.runner">
+    <ac:if>
+      <available file="${test.runner}" />
+      <ac:then>
+        <ant antfile="${test.runner}" target="clean.test.output" inheritRefs="true" />
+      </ac:then>
+    </ac:if>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Release                                                             -->
+  <!-- =================================================================== -->
+
+  <target name="build.release.artifacts"
+          depends="build.jar, create.i18n.template, run.tests, make.doc"
+          description="Builds the release configurations" >
+  </target>
+
+  <target name="build.release"
+          depends="clean.all, build.release.artifacts"
+          description="Runs the full build step for a release, including cleaning beforehand" >
+  </target>
+
+  <target name="build.all" depends="build.release" description="Alias for the build.release target." />
+  <target name="prepare.all" description="Prepares all content for the project, ready for a build" />
+  <target name="clear.all" description="Clear all dependencies" />
+
+  <target name="deploy.all" description="Deploys build artefacts." >
+    <copy todir="${deploy.dir}/Jar" flatten="true" >
+      <fileset dir="${basedir}/${jar.dir}" />
+    </copy>
+  </target>
+</project>

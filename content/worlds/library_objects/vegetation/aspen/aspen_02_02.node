@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="597433547" name="aspen_02_02">
+		<mesh_name>aspen/aspen_02_02.mesh</mesh_name>
+		<surface name="aspen_02_02_trunk_lod_0_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<surface name="aspen_02_02_trunk_lod_1_trunk_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<surface name="aspen_02_02_trunk_lod_2_trunk_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<surface name="aspen_02_02_leaf_lod_2_leaves_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="6bc1b6c6c03ce27931cf7d2817946eec2dfc1f63" property="surface_base"/>
+		<surface name="aspen_02_02_twigs_lod_0_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<surface name="aspen_02_02_leaf_lod_0_leaves_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="6bc1b6c6c03ce27931cf7d2817946eec2dfc1f63" property="surface_base"/>
+		<surface name="aspen_02_02_leaf_lod_1_leaves_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="6bc1b6c6c03ce27931cf7d2817946eec2dfc1f63" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

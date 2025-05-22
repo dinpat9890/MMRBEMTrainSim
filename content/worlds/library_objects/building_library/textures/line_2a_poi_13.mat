@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="line_2a_poi_13" guid="6c83f817ec4cfd77e9a1d52a62743e2b9a0e0a43" parent="74de717c488e1384c0a179ba0f7519c6733d1fe5" base_material="mesh_base">
+	<options two_sided="0"/>
+	<texture name="albedo">../worlds/library_objects/building_library/textures/line_2a_poi_13.dds</texture>
+	<texture name="emission">../worlds/library_objects/building_library/textures/line_2a_poi_13_e.dds</texture>
+	<parameter name="albedo_color">0.698039234 0.698039234 0.698039234 1</parameter>
+	<parameter name="emission_color">1 1 1 1</parameter>
+	<parameter name="emission_scale">0.200000003</parameter>
+</material>

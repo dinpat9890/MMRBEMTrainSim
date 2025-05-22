@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="594.0" stylesheets="@radio-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.radio.fe.gui.presenter.HeaderPanelController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="5.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="32.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="8.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="5.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="6.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="5.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="15.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="lineNameLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="Mumbai Metro Line" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="timeLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="HH:MM     " GridPane.columnIndex="21" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="58.0" styleClass="train-status" stylesheets="@radio-application.css" GridPane.rowIndex="1" />
+      <Label fx:id="msgCountLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="message-count" stylesheets="@radio-application.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="i-panel" stylesheets="@radio-application.css" text="    " GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="t-panel" stylesheets="@radio-application.css" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+      <Label fx:id="radioSignal1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="radio-signal-1" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+      <Label fx:id="radioSignal2Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="radio-signal-2" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+      <Label fx:id="radioSignal3Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="radio-signal-3" GridPane.columnIndex="18" GridPane.rowIndex="1" />
+      <Label fx:id="radioSignal2Lbl1" layoutX="406.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+      <Label fx:id="radioSignal2Lbl11" layoutX="10.0" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border-label" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border-label" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border-label" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border-label" text="Label" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border-label" text="Label" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border-label" GridPane.columnIndex="20" GridPane.rowIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="border-label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

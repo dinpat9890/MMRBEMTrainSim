@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2063013331" name="oak_sml_platform">
+		<mesh_name>../worlds/library_objects/vegetation/meshes/linden_tree_low.mesh</mesh_name>
+		<surface name="linden_leaves_lod_2_linden_leaves" max_visible_distance="1000" max_fade_distance="10" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="linden_trunk_lod_2_linden_trunk" max_visible_distance="1000" max_fade_distance="10" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<surface name="shadow" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="2e9b42c127c771145f10892cdfe47ea81ba303f5" property="surface_base"/>
+		<transform>0.999999790608 -8.1747806191e-008 0 0.0 4.98369203683e-008 0.999999717824 0 0.0 0 0 0.999999841054 0.0 1.99996793526e-006 -2.91038304567e-011 -2.6645352591e-015 1.0</transform>
+	</node>
+</nodes>

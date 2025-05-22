@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{56549d85-5ab6-4c6b-8044-8c5f508f8bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{db960bb5-0526-4022-b6c9-1849f190c952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protos">
+      <UniqueIdentifier>{00dee11b-6022-4260-9b0b-e9b899820e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AudioController">
+      <UniqueIdentifier>{edfaad9a-e3a7-47af-8605-50a64396b4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Clock">
+      <UniqueIdentifier>{fb7e5f85-f584-4976-aafa-16f328184d22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\UnitDLL.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PISIntercomUnit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MessageController.cpp">
+      <Filter>AudioController</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EventHandler.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Intercom.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Cancel.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EmergencyBreak.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InPA.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OHP.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OutPA.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SCC.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISAudioProtos.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProjectAnnouncementProtos.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputCommsInterface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OutputCommsInterface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Clock.cpp">
+      <Filter>Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SCCCancel.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PublicAnnouncement.cpp">
+      <Filter>AudioController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\PISIntercomUnit.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MessageController.h">
+      <Filter>AudioController</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ConstantDefined.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EventHandler.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ICommand.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Intercom.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Cancel.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EmergencyBreak.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InPA.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OHP.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OutPA.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SCC.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISAudioProtos.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProjectAnnouncementProtos.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputCommsInterface.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OutputCommsInterface.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IClock.h">
+      <Filter>Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Clock.h">
+      <Filter>Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SCCCancel.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Announcement.h">
+      <Filter>AudioController</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PublicAnnouncement.h">
+      <Filter>AudioController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PISIntercom.ini" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

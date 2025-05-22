@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="666993430" name="MA_ir_station_master">
+		<mesh_name>../worlds/library_objects/characters/MA_ir_station_master.mesh</mesh_name>
+		<surface name="MA_ir_station_master_LP" min_visible_distance="20" max_visible_distance="800" min_fade_distance="1" material="90b75c461368528d3734708cc1fd7ccd19a971cf" property="surface_base"/>
+		<surface name="MA_ir_station_master_MP" max_visible_distance="20" max_fade_distance="1" material="90b75c461368528d3734708cc1fd7ccd19a971cf" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.26325641456e-014 0 0 1.0</transform>
+	</node>
+</nodes>

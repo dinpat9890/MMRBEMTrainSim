@@ -1,0 +1,466 @@
+/*
+ * ==================================================================
+ *
+ * (C) Copyright 2022 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *
+ * ==================================================================
+ */
+.root {
+	-fx-background-color: transparent;
+}
+
+.footer-panel-bg1 {
+	-fx-background-color: rgb(131.0, 93.0, 91.0);
+}
+
+.footer-panel-bg2 {
+	-fx-background-color: rgb(68.0, 50.0, 48.0);
+}
+
+.footer-panel-bg3 {
+	-fx-background-color: rgb(68.0, 50.0, 48.0);
+	-fx-background-image: url('../images/cab_tracing.png');
+	-fx-background-position: center;
+	-fx-background-insets: 0.0 0.0 0.0 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.footer-panel-play-pause, .footer-panel-play-pause:pause {
+	-fx-background-image: url('../images/play.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.footer-panel-play-pause:play {
+	-fx-background-image: url('../images/pause.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.footer-panel-settings {
+	-fx-background-image: url('../images/setting.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.transparent-grid {
+	-fx-background-color: transparent;
+}
+
+.singleFeedGrid, .singleFeedGrid:transparent_grid {
+	-fx-background-color: transparent;
+}
+
+ .singleFeedGrid:detrainment_door_open {
+    -fx-background-image: url('../images/ramp.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0%;
+}
+
+.button {
+	-fx-font-family: "Tahoma Small Caps";
+	-fx-font-weight: 500;
+	-fx-text-fill: white;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 0.0;
+	-fx-border-color: transparent;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+}
+
+.button.internal-camera-buttons, .button.internal-camera-buttons:unselected
+	{
+	-fx-background-radius: 10.0px;
+	-fx-background-insets: 6.0px, 0.0px, 4.0px, 0.0px;
+	-fx-font-size: 38.0px;
+	-fx-text-fill: rgb(95.0, 190.0, 174.0);
+}
+
+.button.external-camera-buttons, .button.external-camera-buttons:unselected
+	{
+	-fx-background-radius: 8.0px;
+	-fx-font-size: 26.0px;
+}
+
+.button.internal-camera-buttons:inactive {
+	-fx-text-fill: white;
+}
+
+.button.internal-camera-buttons:selected, .button.external-camera-buttons:selected
+	{
+	-fx-background-color: rgb(186.0, 47.0, 42.0);
+}
+
+.internal-external-switch-label, .internal-external-switch-label:internal
+	{
+	-fx-background-image: url('../images/internal.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.internal-external-switch-label:external {
+	-fx-background-image: url('../images/external.png');
+}
+
+.normal-alarm-switch-label, .normal-alarm-switch-label:normal {
+	-fx-background-image: url('../images/normal.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.normal-alarm-switch-label:event {
+	-fx-background-image: url('../images/event.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.feed-area {
+	-fx-background-color: white;
+	-fx-opacity:0.03;
+}
+
+.four-feed-screen-grid1 {
+	-fx-border-width: 0.0 1.0 1.0 0.0;
+	-fx-border-color: white;
+}
+
+.four-feed-screen-grid2 {
+	-fx-border-width: 0.0 0.0 1.0 1.0;
+	-fx-border-color: white;
+}
+
+.four-feed-screen-grid3 {
+	-fx-border-width: 1.0 1.0 0.0 0.0;
+	-fx-border-color: white;
+}
+
+.four-feed-screen-grid4 {
+	-fx-border-width: 1.0 0.0 0.0 1.0;
+	-fx-border-color: white;
+}
+
+.single-feed-labels {
+	-fx-font-family: "Consolas";
+	-fx-font-weight: 500;
+	-fx-text-fill: white;
+	-fx-font-size: 32.0;
+	-fx-wrap-text: true;
+	-fx-padding: 0.0;
+	-fx-border-color: transparent;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+}
+
+.single-feed-screen-next-icon {
+	-fx-background-image: url('../images/arrow_right.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.single-feed-screen-previous-icon {
+	-fx-background-image: url('../images/arrow_left.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.four-feed-labels {
+	-fx-font-family: "Consolas";
+	-fx-font-weight: 500;
+	-fx-text-fill: white;
+	-fx-font-size: 18.0;
+	-fx-wrap-text: true;
+	-fx-padding: 0.0;
+	-fx-border-color: transparent;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+}
+
+.fire-smoke-alarm, .fire-smoke-alarm:not_active {
+	-fx-background-image: url('../images/fire_smoke_alarm_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.obstacle-saloon-door-alarm, .obstacle-saloon-door-alarm:not_active {
+	-fx-background-image:
+		url('../images/obstacle_detected__saloon_door_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.pecu-alarm, .pecu-alarm:not_active {
+	-fx-background-image: url('../images/pecu_alarm_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.door-unlocked-alarm, .door-unlocked-alarm:not_active {
+	-fx-background-image: url('../images/door_unlocked_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.opening-of-emergency-door-alarm, .opening-of-emergency-door-alarm:not_active
+	{
+	-fx-background-image:
+		url('../images/opening_of_emergency_door_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.opening-of-driver-console-deck-alarm,
+	.opening-of-driver-console-deck-alarm:not_active {
+	-fx-background-image:
+		url('../images/opening_of_driver_console_desk_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.obstruction-deflection-device-alarm,
+	.obstruction-deflection-device-alarm:not_active {
+	-fx-background-image:
+		url('../images/obstruction_deflection_device_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.track-related-events-alarm, .track-related-events-alarm:not_active {
+	-fx-background-image:
+		url('../images/track_related_events_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.cctv-emergency-button-alarm, .cctv-emergency-button-alarm:not_active {
+	-fx-background-image:
+		url('../images/cctv_emergency_button_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ohe-event-alarm, .ohe-event-alarm:not_active {
+	-fx-background-image: url('../images/ohe_event_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.pantograph-event-alarm, .pantograph-event-alarm:not_active {
+	-fx-background-image: url('../images/pantograph_event_not_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.event-active-cam-label {
+	-fx-background-color: rgb(95.0, 190.0, 174.0);
+	-fx-text-fill: black;
+	-fx-font-size: 14.0px;
+	-fx-alignment: center;
+	-fx-background-radius: 0.0 0.0 8.0 8.0;
+}
+
+.no-active-alarm-text-label {
+	-fx-background-color: rgb(255.0, 255.0, 255.0);
+}
+
+.no-active-alarm-icon-label {
+	-fx-background-color: rgb(255.0, 255.0, 255.0);
+	-fx-background-image: url('../images/warning_icon.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 60.0%;
+}
+
+.fire-smoke-alarm:active, .fire-smoke-alarm-new{
+	-fx-background-image: url('../images/fire_smoke_alarm_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+.obstacle-saloon-door-alarm:active,.obstacle-saloon-door-alarm-new {
+	-fx-background-image:
+		url('../images/obstacle_detected__saloon_door_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.pecu-alarm:active,.pecu-alarm-new {
+	-fx-background-image: url('../images/pecu_alarm_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.door-unlocked-alarm:active,.door-unlocked-alarm-new {
+	-fx-background-image: url('../images/door_unlocked_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.opening-of-emergency-door-alarm:active,.opening-of-emergency-door-alarm-new
+	{
+	-fx-background-image:
+		url('../images/opening_of_emergency_door_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.opening-of-driver-console-deck-alarm:active,.opening-of-driver-console-deck-alarm-new {
+	-fx-background-image:
+		url('../images/opening_of_driver_console_desk_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.obstruction-deflection-device-alarm:active,.obstruction-deflection-device-alarm-new {
+	-fx-background-image:
+		url('../images/obstruction_deflection_device_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.track-related-events-alarm:active,.track-related-events-alarm-new {
+	-fx-background-image:
+		url('../images/track_related_events_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.cctv-emergency-button-alarm:active,.cctv-emergency-button-alarm-new {
+	-fx-background-image:
+		url('../images/cctv_emergency_button_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ohe-event-alarm:active,.ohe-event-alarm-new {
+	-fx-background-image: url('../images/ohe_event_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.pantograph-event-alarm:active,.pantograph-event-alarm-new {
+	-fx-background-image: url('../images/pantograph_event_active.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+.hybrid-four-feed-labels {
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 11.0;
+    -fx-wrap-text: true;
+    -fx-padding: 0.0;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100.0%;
+    -fx-text-alignment: center;
+}
+.hybrid-common-grid {
+    -fx-background-color: transparent;
+}
+.hybrid-mode-screen-move-forward-icon {
+    -fx-background-image: url('../images/move_forward.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0%;
+}
+.hybrid-mode-screen-move-backward-icon {
+    -fx-background-image: url('../images/move_backward.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0%;
+}
+.hybrid-mode-screen-cancel-icon {
+    -fx-background-image: url('../images/cancel.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0%;
+}
+
+.hybrid-panel-grid-transparent {
+	-fx-background-color: transparent;
+}
+
+.hybrid-panel-grid-default {
+	-fx-background-color: white;
+}
+
+.hybrid-panel-image {
+	-fx-background-color: black;
+}
+
+.hybrid-panel-image:external_cam_1 {
+    -fx-background-image: url('../images/platform_lhs.jpg');
+}
+
+.hybrid-panel-image:external_cam_2 {
+    -fx-background-image: url('../images/platform_rhs.jpg');
+}
+
+.hybrid-panel-image:internal_cam_1 {
+    -fx-background-image: url('../images/cab_int_01.jpg');
+}
+
+.hybrid-panel-image:internal_cam_2 {
+    -fx-background-image: url('../images/cab_int_02.jpg');
+}
+
+.hybrid-panel-image:internal_cam_3 {
+    -fx-background-image: url('../images/cab_int_03.jpg');
+}
+
+.setting-screen-bg {
+	-fx-background-color: rgb(191.0, 191.0, 193.0);
+}
+
+.settings-options-label {
+	-fx-background-color: white;
+	-fx-alignment: center;
+	-fx-text-fill: black;
+    -fx-font-size: 14.0px;
+    -fx-border-color: black;
+    -fx-border-width: 0.5;
+}

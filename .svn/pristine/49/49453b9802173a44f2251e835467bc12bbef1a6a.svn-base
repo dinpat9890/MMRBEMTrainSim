@@ -1,0 +1,37 @@
+syntax = "proto2";
+
+package salooncctv.protos;
+
+option java_package = "com.sydac.mmrbem.salooncctv.common.protos";
+option java_outer_classname = "SaloonCCTVProtos";
+
+message CameraViewButtons
+{
+    enum State
+    {
+        DISABLED = 0;
+        ACTIVE = 1;
+        INACTIVE = 2;
+    }
+    
+    enum AssociatedView
+    {
+        NO_VIEW = 0;
+        FIRST_VIEW = 1;
+        SECOND_VIEW = 2;
+        THIRD_VIEW = 3;
+        FOURTH_VIEW = 4;
+        SINGLE_FEED_VIEW = 5;
+    }
+
+    message Button
+    {
+        required int32 id = 1;
+        required string name = 2;
+        required State state = 3;
+        required AssociatedView associatedView = 4;
+		optional int32 alarmType = 5;
+    }
+
+    repeated Button button = 1;
+}

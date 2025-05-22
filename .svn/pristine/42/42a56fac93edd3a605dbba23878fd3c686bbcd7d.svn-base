@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="sheep_white" guid="867f614c9f867d61d3a4575664a91d56260a386f" parent="30ac7634815508730994eb284f09c1ded1ed095b" base_material="mesh_base">
+	<texture name="albedo">../features/obstruction_features/graphics/textures/sheep_white_d.dds</texture>
+</material>

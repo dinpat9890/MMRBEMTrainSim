@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="mainGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="90.0" prefWidth="100.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="35.55" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="53.34" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="10.0" translateY="-4.0" GridPane.rowIndex="2">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="6.0" />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" percentWidth="28.0" />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="6.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="bogie1Lbl" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-sideview-wheel" GridPane.columnIndex="1" />
+                  <Label fx:id="bogie2Lbl" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-sideview-wheel" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <Label fx:id="cabFaultStatusLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-side-view-car-fault-label" GridPane.rowIndex="1" />
+            <Label fx:id="carCaptionLbl" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-side-view-car-caption-label" textAlignment="CENTER" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

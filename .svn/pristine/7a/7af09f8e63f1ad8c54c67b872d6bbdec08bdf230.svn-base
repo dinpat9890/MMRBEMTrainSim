@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="banana_palm_trunk" guid="3160447dac52f43b0447450255b00c3231eb710c" parent="beeebffcbf5325b7972091b203a7bc3de2f4042d" base_material="mesh_base">
+	<options transparent="1" two_sided="1"/>
+	<state name="noise_2d">0</state>
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/banana_palm_trunk.dds</texture>
+	<texture name="noise_2d">shared_textures/forest irregularity_d.dds</texture>
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="color"/>
+	<parameter name="shading"/>
+</material>

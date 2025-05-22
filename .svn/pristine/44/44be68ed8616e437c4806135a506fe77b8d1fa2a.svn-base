@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SpeedLimitTrackerResources</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props" />
+  <PropertyGroup>
+    <CoreTrainSimIncludeRoot>../$(CoreTrainSimIncludeRoot)</CoreTrainSimIncludeRoot>
+    <CommonIncludeRoot>../$(CommonIncludeRoot)</CommonIncludeRoot>
+    <CoreTrainSimRoot>../$(CoreTrainSimRoot)</CoreTrainSimRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(commonlibrariesroot)comms/Include;$(commonlibrariesroot)network_definition/Include;$(commonlibrariesroot)oracle_access/Include;$(commonlibrariesroot)sim_common/Include;$(commonlibrariesroot)sim_comms/Include;$(commonlibrariesroot)common/Include;$(simcoreconfigroot)core_comms_structure/Include;$(simcorelibrariesroot)config_file_access/Include;$(simcorelibrariesroot)core_data_access/Include;$(simcorelibrariesroot)core_properties/Include;$(simcorelibrariesroot)core_types/Include;$(simcorelibrariesroot)file_access/Include;$(simcorelibrariesroot)utility/Include;$(simtrainconfigroot)train_comms_structure/Include;$(simtrainconfigroot)train_features/Include;$(simtrainlibrariesroot)train_data_access/Include;$(simtrainlibrariesroot)train_types/Include;$(simtrainlibrariesroot)world_api/Include;$(COTSRoot)/googletest/include;$(COTSRoot)/jdk/include;$(COTSRoot)/jdk/include/win32;$(COTSRoot)/oci/$(Platform)/include;$(COTSRoot)/xerces/Include;$(COTSRoot)/zlib/Include;$(ProjectConfigRoot)/project_features/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(ClPreprocessorDefinitions);_WINDOWS;STRICT;WIN32;_USRDLL;RESOURCE_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0c09</Culture>
+      <PreprocessorDefinitions>$(ResourcePreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(commonlibrariesroot)comms/Include;$(commonlibrariesroot)network_definition/Include;$(commonlibrariesroot)oracle_access/Include;$(commonlibrariesroot)sim_common/Include;$(commonlibrariesroot)sim_comms/Include;$(commonlibrariesroot)common/Include;$(simcoreconfigroot)core_comms_structure/Include;$(simcorelibrariesroot)config_file_access/Include;$(simcorelibrariesroot)core_data_access/Include;$(simcorelibrariesroot)core_properties/Include;$(simcorelibrariesroot)core_types/Include;$(simcorelibrariesroot)file_access/Include;$(simcorelibrariesroot)utility/Include;$(simtrainconfigroot)train_comms_structure/Include;$(simtrainconfigroot)train_features/Include;$(simtrainlibrariesroot)train_data_access/Include;$(simtrainlibrariesroot)train_types/Include;$(simtrainlibrariesroot)world_api/Include;$(COTSRoot)/googletest/include;$(COTSRoot)/jdk/include;$(COTSRoot)/jdk/include/win32;$(COTSRoot)/oci/$(Platform)/include;$(COTSRoot)/xerces/Include;$(COTSRoot)/zlib/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(commonlibrariesroot)comms/$(LibOutDir);$(commonlibrariesroot)network_definition/$(LibOutDir);$(commonlibrariesroot)oracle_access/$(LibOutDir);$(commonlibrariesroot)sim_comms/$(LibOutDir);$(commonlibrariesroot)common/$(LibOutDir);$(simcoreconfigroot)core_comms_structure/$(LibOutDir);$(simcorelibrariesroot)config_file_access/$(LibOutDir);$(simcorelibrariesroot)core_data_access/$(LibOutDir);$(simcorelibrariesroot)core_properties/$(LibOutDir);$(simcorelibrariesroot)core_types/$(LibOutDir);$(simcorelibrariesroot)file_access/$(LibOutDir);$(simcorelibrariesroot)utility/$(LibOutDir);$(simtrainconfigroot)train_comms_structure/$(LibOutDir);$(simtrainlibrariesroot)train_data_access/$(LibOutDir);$(simtrainlibrariesroot)world_api/$(LibOutDir);$(COTSRoot)/asm/lib;$(COTSRoot)/jdk/lib;$(COTSRoot)/oci/$(Platform)/lib;$(COTSRoot)/xerces/Lib;$(COTSRoot)/xerces/Lib/$(Platform);$(COTSRoot)/zlib/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>comms$(LibType);network_definition$(LibType);oracle_access$(LibType);sim_comms$(LibType);common$(LibType);core_comms_structure$(LibType);config_file_access$(LibType);core_data_access$(LibType);core_properties$(LibType);core_types$(LibType);file_access$(LibType);utility$(LibType);train_comms_structure$(LibType);train_data_access$(LibType);world_api$(LibType);oci.lib;xerces-c_3$(LibTypeD).lib;zlib$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug' or $(BaseConfiguration)=='Debug DLL'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release' or $(BaseConfiguration)=='Release DLL' or $(BaseConfiguration)=='Develop' or $(BaseConfiguration)=='Develop DLL'">
+    <ClCompile>
+      <BasicRuntimeChecks />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug' or $(BaseConfiguration)=='Debug DLL' or $(BaseConfiguration)=='Develop' or $(BaseConfiguration)=='Develop DLL'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release' or $(BaseConfiguration)=='Release DLL'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Debug DLL'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Release DLL' or $(BaseConfiguration)=='Develop DLL'">MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ResourceDLL.cpp" />
+    <ClCompile Include="Source\SpeedLimitTracker.cpp" />
+    <ClCompile Include="Source\SpeedLimitTrackerProperties.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\FeatureHelpers.h" />
+    <ClInclude Include="Source\SpeedLimitTracker.h" />
+    <ClInclude Include="Source\SpeedLimitTrackerProperties.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\res\Plugin.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

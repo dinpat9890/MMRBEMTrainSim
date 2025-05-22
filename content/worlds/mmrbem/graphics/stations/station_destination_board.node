@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1064232092" name="station_destination_board">
+		<mesh_name>../worlds/mmrbem/graphics/stations/station_destination_board.mesh</mesh_name>
+		<surface name="station_destination_board_platform_lights" material="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" property="surface_base"/>
+		<surface name="station_destination_board_shed_01" material="e6218c0d435caa2880e8260437cc08266ed20c23" property="surface_base"/>
+		<surface name="station_destination_board_station_objects" material="f7739603de5fd29cda84f78b4ee874a910b55bb4" property="surface_base"/>
+		<transform>0.999999940395 2.03287907341e-020 0 0.0 4.06575814682e-020 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -7.1054273576e-015 1.42108547152e-014 -3.5527136788e-015 1.0</transform>
+	</node>
+</nodes>

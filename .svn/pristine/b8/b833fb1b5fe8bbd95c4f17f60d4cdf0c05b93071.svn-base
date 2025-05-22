@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Platform" group="Platform" constant_name="PLATFORM" modifiable="0" available="1" user_feature="0">
+    <feature_type_state_type name="State" />
+    <object_parameters>
+        <key name="Length" type="double" />
+        <key name="Platform Name" type="string" />
+        <key name="Station Name" type="string" />
+    </object_parameters>
+    <feature_type_icon icon_code="PLATFORMLHS" small_icon="icons/PLATFORMLHS.zip#PLATFORMLHS-SMALL.gif" big_icon="icons/PLATFORMLHS.zip#PLATFORMLHS-BIG.jpg" />
+    <feature_type_vision />
+</feature_type>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="594.0" styleClass="border-radio" stylesheets="@radio-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="69.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane styleClass="comen-border" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="25.0" percentHeight="11.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="13.0" percentHeight="11.0" prefHeight="13.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Alarm">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="RM Mode" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Door Loop Cut-out Switch Station" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Dead man's Status" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="EB Applied" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Safety cut-out switch" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="EB loop cut-out" GridPane.rowIndex="7">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Rake validity" GridPane.rowIndex="8">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-right-side-border" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Status" GridPane.columnIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="rmModeLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="doorLoopStationLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="deadManStatusLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="appliedEbLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="safetyCutOutSwitchLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="peaCutOutLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="ebLoopCutOutLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-border" />
+               </styleClass></Label>
+            <Label fx:id="rakeValidityLbl" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="-" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-right-side-border" />
+               </styleClass></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="PEA  loop cut-out" GridPane.rowIndex="6">
+               <styleClass>
+                  <String fx:value="alarm-text-label" />
+                  <String fx:value="alarm-text-left-border" />
+               </styleClass>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="comen-border" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="20.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="25.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="     UTC Time" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label fx:id="utcTimeLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2022 02 04 16:57:44 " GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="     Active Cab" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label fx:id="activeCabLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="No-active cab" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="     Train Speed" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label fx:id="trainSpeedLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" 0kmph" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="alarm-text-label" text="Tr. operated mod " textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="operatedModLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="alarm-text-label" text="        undefined" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </GridPane>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="comen-border" GridPane.rowIndex="3">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="20.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="20.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="20.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="      Car 1 info">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label fx:id="carOneInfoLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="  [0-0-0]" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="       Car 2 info" GridPane.columnIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label fx:id="carTowInfoLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="  [0-0-0]" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="      Car 3 info" GridPane.columnIndex="2">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label fx:id="carThreeInfoLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="  [0-0-0]" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="       Absolute Mil" GridPane.columnIndex="3">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label fx:id="absoluteMilLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="  om/bit" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="alarm-rake-validity-border" />
+                  <String fx:value="alarm-text-label" />
+               </styleClass></Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="alarm-text-label" text="  Running" GridPane.columnIndex="4" />
+            <Label fx:id="runningLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="alarm-text-label" text="  om/bit" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <fx:include source="HeaderPanel.fxml" />
+   </children>
+</GridPane>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\CommsOutputInterface.cpp" />
+    <ClCompile Include="Source\DVAAudioConfigHandler.cpp" />
+    <ClCompile Include="Source\PISImpl.cpp" />
+    <ClCompile Include="Source\PISInterfaceProperties.cpp" />
+    <ClCompile Include="Source\PISUnitProperties.cpp" />
+    <ClCompile Include="Source\PISXMLHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\CommsInterface.h" />
+    <ClInclude Include="Source\CommsOutputInterface.h" />
+    <ClInclude Include="Source\DVAAudioConfigHandler.h" />
+    <ClInclude Include="Source\ICommsOutputInterface.h" />
+    <ClInclude Include="Source\IPlatformCCTVInterface.h" />
+    <ClInclude Include="Source\ITrainInterface.h" />
+    <ClInclude Include="Source\IVisionInterface.h" />
+    <ClInclude Include="Source\PISImpl.h" />
+    <ClInclude Include="Source\PISInterfaceConstants.h" />
+    <ClInclude Include="Source\PISInterfaceProperties.h" />
+    <ClInclude Include="Source\PISUnitProperties.h" />
+    <ClInclude Include="Source\PISXMLHandler.h" />
+    <ClInclude Include="Source\Properties.h" />
+    <ClInclude Include="Source\XMLHandler.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD717F11-F72C-40F9-9684-D12E9CA3729F}</ProjectGuid>
+    <RootNamespace>PlatformCCTVUnit</RootNamespace>
+    <ProjectName>DVALib</ProjectName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+      $(ProjectIncludeRoot)Include;
+      $(CoreTrainSimConfigRoot)TrainCommsStructure/include;
+      $(CoreSimConfigRoot)CoreCommsStructure/include;
+      $(CoreSimIncludeRoot)Channels/include;
+      $(CoreSimIncludeRoot)CoreDataAccess/include;
+      $(CoreSimIncludeRoot)CoreTypes/include;
+      $(CoreSimIncludeRoot)CoreVisionMessages/include;
+      $(CoreSimIncludeRoot)Utility/include;
+      $(CommonIncludeRoot)Comms/include;
+      $(CommonIncludeRoot)SimCommon/include;
+      $(CommonIncludeRoot)SimComms/include;
+      $(CommonIncludeRoot)SydacCommon/include;
+      $(CoreTrainSimIncludeRoot)TrainDataAccess/include;
+      $(CoreTrainSimIncludeRoot)WorldAPI/include;
+      $(CoreSimIncludeRoot)CoreServices/include;
+      $(CommonIncludeRoot)NetworkDefinition/include;
+      $(CoreSimIncludeRoot)CoreProperties/include;Source;
+      $(CoreSimIncludeRoot)CoreDataAccess/Include;
+      $(CoreSimIncludeRoot)FileAccess/Include;
+      $(COTSIncludeRoot)protobuf/Include;
+      $(CommonIncludeRoot)sim_common/Include;
+      $(CommonIncludeRoot)sim_comms/Include;
+      $(CommonIncludeRoot)sydac_common/Include;      
+      $(CoreSimIncludeRoot)core_types/Include;
+      $(CoreTrainSimConfigRoot)train_comms_structure/Include;
+      $(CoreSimConfigRoot)core_comms_structure/Include;
+      $(ProjectIncludeRoot)Include
+      %(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNIT_DLL_EXPORTS;WIN32;_LIB;_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(CommonIncludeRoot)Comms/lib;$(CommonIncludeRoot)SimComms/lib;$(CommonIncludeRoot)SydacCommon/lib;$(CoreSimIncludeRoot)CoreServices/lib;$(CoreSimIncludeRoot)CoreDataAccess/lib;$(CoreTrainSimIncludeRoot)WorldAPI/lib;$(CommonIncludeRoot)NetworkDefinition/lib;$(CoreSimIncludeRoot)Channels/lib;$(CoreSimIncludeRoot)ConfigFileAccess/lib;$(CoreSimIncludeRoot)CoreProperties/lib;$(CoreSimIncludeRoot)CoreSerialisation/lib;$(CoreSimIncludeRoot)CoreTypes/lib;$(CoreTrainSimIncludeRoot)TrainDataAccess/lib;$(CoreSimConfigRoot)CoreCommsStructure/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Comms$(LibType);SimComms$(LibType);SydacCommon$(LibType);CoreServices$(LibType);CoreDataAccess$(LibType);WorldAPI$(LibType);NetworkDefinition$(LibType);Channels$(LibType);CoreTypes$(LibType);TrainDataAccess$(LibType);CoreCommsStructure$(LibType);CoreProperties$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

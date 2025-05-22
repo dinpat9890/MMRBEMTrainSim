@@ -1,0 +1,22 @@
+[TrackMap]
+ShowRails=1
+ShowSegmentNames=1
+ShowFeatureNames=1
+ShowPlacements=1
+ShowZ=0
+HardBoundaries=1
+FeatureFilter=*
+
+RailWidth=1.60
+
+SchemaDirectory=..\..\..\features
+WorldTypes=..\..\..\features\world_types.xml
+NetworkFile=Test_Features_Track.xml
+
+NetworkOrigin=30 U 0 m E 0 m S
+#NetworkOrigin=55 H 316846.813 m E 5814232.5 m S
+KMLFile=Test_Features_Track.xml.kml
+Validate=1
+
+[Vision Comms]
+Port=5050

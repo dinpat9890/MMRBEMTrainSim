@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shovel" guid="5d163c69bd3d9dfb8bb212a5672574628f63413a" base_material="mesh_base">
+	<texture name="albedo">../features/animated_features/graphics/textures/shovel.dds</texture>
+	<parameter name="microfiber">0.787999988</parameter>
+	<parameter name="normal_scale">0</parameter>
+</material>

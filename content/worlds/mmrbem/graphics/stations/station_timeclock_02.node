@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="679621754" name="station_timeclock_2">
+		<mesh_name>../worlds/mmrbem/graphics/stations/station_timeclock_02.mesh</mesh_name>
+		<surface name="station_timeclock_02_platform_lights" material="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" property="surface_base"/>
+		<surface name="station_timeclock_02_shed_01" material="e6218c0d435caa2880e8260437cc08266ed20c23" property="surface_base"/>
+		<surface name="station_timeclock_02_station_objects" material="f7739603de5fd29cda84f78b4ee874a910b55bb4" property="surface_base"/>
+		<transform>0.999999940395 -1.78813895246e-007 0 0.0 1.78813895246e-007 0.999999940395 0 0.0 0 0 1 0.0 1.42108547152e-014 4.26325641456e-014 8.881784197e-015 1.0</transform>
+	</node>
+</nodes>

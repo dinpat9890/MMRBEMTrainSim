@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gmi_screens xmlns="http://www.sydac.com.au/GMI/1.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sydac.com.au/GMI/1.0/ ../screen.xsd">
+	<!-- Common Internal Screens Here. Internal IDS go from 100 to 199 -->
+	<!-- ==================== Driver's Desk Panel 1 ==================== -->
+
+	<screen xsi:type="main_screen" name="Driver Desk" id="100"
+		background_image="driver_desk/driver_desk_full.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+	</screen>
+	<screen xsi:type="main_screen" name="Back Wall Panel" id="101"
+		background_image="driver_desk/back_wall.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+			
+		<screen_object type="back_wall_panel_door">
+			<position x="659" y="98" />
+			<number name="DRIVERS_BACK_DOOR" variable="button_control" />
+			<number name="DRIVERS_BACK_DOOR" variable="button_state" />
+		</screen_object>			
+			
+	</screen>
+
+	<screen xsi:type="main_screen" name="driver desk panel" id="102"
+		background_image="driver_desk/driver_desk.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+	</screen>
+
+	<screen xsi:type="main_screen" name="operating panel 2 controls"
+		id="103" background_image="driver_desk/operating_panel2_controls.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+	</screen>
+
+	<screen xsi:type="main_screen" name="operating panel 5 controls"
+		id="104" background_image="driver_desk/operating_panel5_controls.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+	</screen>
+	<!-- ==================== car 1 dm panel 1 ==================== -->
+	<screen xsi:type="main_screen" name="Operating Panel 1" id="105"
+		background_image="car_operating_panel_1/bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="emergency_brake_pb">
+			<position x="1041" y="786" />
+			<number name="EMERGENCY_BRAKE_PB" variable="button_state" />
+			<number name="EMERGENCY_BRAKE_PB" variable="button_control" />
+		</screen_object>
+
+		<screen_object type="horn_pb">
+			<position x="1097" y="493" />
+			<number name="HORN_PB" variable="button_state" />
+			<number name="HORN_PB" variable="button_control" />
+			<number name="HORN_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="cab_console_light_pb">
+			<position x="903" y="852" />
+			<number name="CAB_CONSOLE_LIGHT_PB" variable="button_state" />
+			<number name="CAB_CONSOLE_LIGHT_PB" variable="button_control" />
+			<number name="CAB_CONSOLE_LIGHT" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="door_proven_loop_cutout_pb">
+			<position x="1097" y="128" />
+			<number name="DOOR_PROVEN_LOOP_CUTOUT_PB"
+				variable="button_state" />
+			<number name="DOOR_PROVEN_LOOP_CUTOUT_PB"
+				variable="button_control" />
+		</screen_object>
+
+		<screen_object type="left_door_close_pb_1">
+			<position x="903" y="671" />
+			<number name="LEFT_DOOR_CLOSE_PB_OPERATING_PANEL_1"
+				variable="button_state" />
+			<number name="LEFT_DOOR_CLOSE_PB_OPERATING_PANEL_1"
+				variable="button_control" />
+			<number name="LEFT_DOOR_CLOSE_PB_OPERATING_PANEL_1_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="right_door_close_pb_1">
+			<position x="1097" y="671" />
+			<number name="RIGHT_DOOR_CLOSE_PB_OPERATING_PANEL_1"
+				variable="button_state" />
+			<number name="RIGHT_DOOR_CLOSE_PB_OPERATING_PANEL_1"
+				variable="button_control" />
+			<number name="RIGHT_DOOR_CLOSE_PB_OPERATING_PANEL_1_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="left_door_open_pb_1">
+			<position x="708" y="306" />
+			<number name="LEFT_DOOR_OPEN_PB_OPERATING_PANEL_1"
+				variable="button_state" />
+			<number name="LEFT_DOOR_OPEN_PB_OPERATING_PANEL_1"
+				variable="button_control" />
+			<number name="LEFT_DOOR_OPEN_PB_OPERATING_PANEL_1_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="right_door_open_pb_1">
+			<position x="1097" y="306" />
+			<number name="RIGHT_DOOR_OPEN_PB_OPERATING_PANEL_1"
+				variable="button_state" />
+			<number name="RIGHT_DOOR_OPEN_PB_OPERATING_PANEL_1"
+				variable="button_control" />
+			<number name="RIGHT_DOOR_OPEN_PB_OPERATING_PANEL_1_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="cab_main_light_pb">
+			<position x="708" y="671" />
+			<number name="CAB_MAIN_LIGHT_PB" variable="button_state" />
+			<number name="CAB_MAIN_LIGHT_PB" variable="button_control" />
+			<number name="CAB_MAIN_LIGHT" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="parking_brake_on">
+			<position x="708" y="493" />
+			<number name="PARKING_BRAKE_ON_SWITCH" variable="button_state" />
+			<number name="PARKING_BRAKE_ON_SWITCH"
+				variable="button_control" />
+			<number name="PARKING_BRAKE_ON_SWITCH_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="parking_brake_off">
+			<position x="903" y="493" />
+			<number name="PARKING_BRAKE_OFF_SWITCH"
+				variable="button_state" />
+			<number name="PARKING_BRAKE_OFF_SWITCH"
+				variable="button_control" />
+			<number name="PARKING_BRAKE_OFF_SWITCH_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="door_closed_announcement_nt_pb">
+			<position x="707" y="852" />
+			<number name="DOOR_CLOSE_ANNOUNCEMENT_PB"
+				variable="button_state" />
+			<number name="DOOR_CLOSE_ANNOUNCEMENT_PB"
+				variable="button_control" />
+			<number name="DOOR_CLOSE_ANNOUNCEMENT_PB_LAMP"
+				variable="light_state" />
+		</screen_object>
+	</screen>
+
+	<!-- ========================== car 1 dm panel 1 end ============================= -->
+
+	<!-- ========================== car 1 dm panel 2 start ============================= -->
+	<screen xsi:type="main_screen" name="Operating Panel 2" id="106"
+		background_image="car_operating_panel_2/bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="call_on_light_pb">
+			<position x="1044" y="848" />
+			<number name="CALL_ON_LIGHT_PB" variable="button_state" />
+			<number name="CALL_ON_LIGHT_PB" variable="button_control" />
+			<number name="CALL_ON_LIGHT_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="vcb_open_pb">
+			<position x="1100" y="634" />
+			<number name="VCB_OPEN_PB" variable="button_state" />
+			<number name="VCB_OPEN_PB" variable="button_control" />
+			<number name="VCB_OPEN_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="wiper_selection_switch">
+			<position x="937" y="395" />
+			<number name="WIPER_SELECTION_SWITCH" variable="switch_state" />
+			<number name="WIPER_SELECTION_SWITCH"
+				variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="wiper_control_switch">
+			<position x="798" y="495" />
+			<number name="WIPER_CONTROL_SWITCH" variable="switch_state" />
+			<number name="WIPER_CONTROL_SWITCH" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="limp_home_pb">
+			<position x="909" y="848" />
+			<number name="LIMP_HOME_PB" variable="button_state" />
+			<number name="LIMP_HOME_PB" variable="button_control" />
+			<number name="LIMP_HOME_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="power_off_pb">
+			<position x="963" y="634" />
+			<number name="POWER_OFF_PB" variable="button_state" />
+			<number name="POWER_OFF_PB" variable="button_control" />
+			<number name="POWER_OFF_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="panto_down_pb">
+			<position x="1211" y="959" />
+			<number name="PANTO_DOWN_PB" variable="button_state" />
+			<number name="PANTO_DOWN_PB" variable="button_control" />
+			<number name="PANTO_DOWN_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="vcb_close_pb">
+			<position x="1139" y="737" />
+			<number name="VCB_CLOSE_PB" variable="button_state" />
+			<number name="VCB_CLOSE_PB" variable="button_control" />
+			<number name="VCB_CLOSE_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="left_door_open_pb">
+			<position x="878" y="737" />
+			<number name="LEFT_DOOR_OPEN_PB_OPERATING_PANEL_2"
+				variable="button_state" />
+			<number name="LEFT_DOOR_OPEN_PB_OPERATING_PANEL_2"
+				variable="button_control" />
+			<number name="LEFT_DOOR_OPEN_PB_OPERATING_PANEL_2_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="left_door_close_pb">
+			<position x="1004" y="737" />
+			<number name="LEFT_DOOR_CLOSE_PB_OPERATING_PANEL_2"
+				variable="button_state" />
+			<number name="LEFT_DOOR_CLOSE_PB_OPERATING_PANEL_2"
+				variable="button_control" />
+			<number name="LEFT_DOOR_CLOSE_PB_OPERATING_PANEL_2_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="left_door_open_pb">
+			<position x="943" y="957" />
+			<number name="LEFT_DOOR_OPEN_PB_1_OPERATING_PANEL_2"
+				variable="button_state" />
+			<number name="LEFT_DOOR_OPEN_PB_1_OPERATING_PANEL_2"
+				variable="button_control" />
+			<number name="LEFT_DOOR_OPEN_PB_1_OPERATING_PANEL_2_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="power_on_panto_up">
+			<position x="1079" y="959" />
+			<number name="PANTO_UP_PB" variable="button_state" />
+			<number name="PANTO_UP_PB" variable="button_control" />
+			<number name="PANTO_UP_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		
+
+		<screen_object type="brake_loop_cutout_ss">
+			<position x="683" y="229" />
+			<number name="BRAKE_LOOP_CUTOUT_SS" variable="switch_state" />
+			<number name="BRAKE_LOOP_CUTOUT_SS" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="panto_selector">
+			<position x="826" y="62" />
+			<number name="PANTO_SELECTOR" variable="switch_state" />
+			<number name="PANTO_SELECTOR" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="deadman_bypass">
+			<position x="629" y="62" />
+			<number name="DEADMAN_BYPASS_SWITCH" variable="switch_state" />
+			<number name="DEADMAN_BYPASS_SWITCH" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="headlight_switch">
+			<position x="880" y="229" />
+			<number name="HEAD_LIGHT_SWITCH" variable="switch_state" />
+			<number name="HEAD_LIGHT_SWITCH" variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="wiper_pump_pb">
+			<position x="1177" y="848" />
+			<number name="WIPER_PUMP" variable="button_control" />
+			<number name="WIPER_PUMP" variable="button_state" />
+		</screen_object>
+		
+	</screen>
+	<!-- ========================== car 1 dm panel 2 end ============================= -->
+	<!-- ====================== car 1 dm panel 3 start ============================= -->
+
+
+	<screen xsi:type="main_screen" name="Operating Panel 3" id="107"
+		background_image="car_operating_panel_3/bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="ros_pb">
+			<position x="895" y="378" />
+			<number name="ROS_PB" variable="button_state" />
+			<number name="ROS_PB" variable="button_control" />
+			<number name="ROS_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="uto_pb">
+			<position x="895" y="207" />
+			<number name="UTO_PB" variable="button_state" />
+			<number name="UTO_PB" variable="button_control" />
+			<number name="UTO_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="ato_start_pb">
+			<position x="895" y="891" />
+			<number name="ATO_START_PB" variable="button_state" />
+			<number name="ATO_START_PB" variable="button_control" />
+			<number name="ATO_START_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="eb_reset_pb">
+			<position x="895" y="549" />
+			<number name="EMERGENCY_BRAKE_RESET_PB"
+				variable="button_state" />
+			<number name="EMERGENCY_BRAKE_RESET_PB"
+				variable="button_control" />
+			<number name="EMERGENCY_BRAKE_RESET_PB_LAMP"
+				variable="light_state" />
+		</screen_object>
+	</screen>
+	<!-- ===================car 1 dm panel 3 end ============================= -->
+	<!-- ====================== car 1 dm panel 4 start ============================= -->
+
+	<screen xsi:type="main_screen" name="Operating Panel 4" id="108"
+		background_image="car_operating_panel_4/bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="aps_fault_indicator">
+			<position x="931" y="37" />
+			<number name="APS_FAULT_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="power_fault_indicator">
+			<position x="931" y="130" />
+			<number name="POWER_FAULT_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="emergency_brake_indicator">
+			<position x="931" y="223" />
+			<number name="EMERGENCY_BRAKE_INDICATOR"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="vcb_trip_indicator">
+			<position x="931" y="316" />
+			<number name="VCB_TRIP_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="line_voltage_indicator">
+			<position x="931" y="409" />
+			<number name="LINE_VOLTAGE_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="other_cab_occupied_indicator">
+			<position x="931" y="503" />
+			<number name="OTHER_CAB_OCCUPIED_INDICATOR"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="parking_brake_indicator">
+			<position x="931" y="596" />
+			<number name="PARKING_BRAKE_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="all_door_closed_indicator">
+			<position x="931" y="689" />
+			<number name="ALL_DOOR_CLOSE_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="hvac_fault_indicator">
+			<position x="931" y="782" />
+			<number name="HVAC_FAULT_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="saloon_door_close_indicator">
+			<position x="931" y="875" />
+			<number name="SALOON_DOOR_CLOSE_INDICATOR"
+				variable="light_state" />
+		</screen_object>
+	</screen>
+
+	<!-- ====================== car 1 dm panel 4 end ============================= -->
+	<!-- ====================== car 1 dm panel 5 start ============================= -->
+	<screen xsi:type="main_screen" name="Operating Panel 5" id="109"
+		background_image="car_operating_panel_5/bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="uncouple_pb">
+			<position x="1127" y="318" />
+			<number name="UNCOUPLE_PB" variable="button_state" />
+			<number name="UNCOUPLE_PB" variable="button_control" />
+			<number name="UNCOUPLE_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="flasher_light_pb">
+			<position x="1203" y="88" />
+			<number name="FLASHER_LIGHT_PB" variable="button_state" />
+			<number name="FLASHER_LIGHT_PB" variable="button_control" />
+			<number name="FLASHER_LIGHT_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="flood_light_pb">
+			<position x="1016" y="200" />
+			<number name="FLOOD_LIGHT_PB" variable="button_state" />
+			<number name="FLOOD_LIGHT_PB" variable="button_control" />
+			<number name="FLOOD_LIGHT_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="battery_reset_pb">
+			<position x="866" y="200" />
+			<number name="BATTERY_RESET_PB" variable="button_state" />
+			<number name="BATTERY_RESET_PB" variable="button_control" />
+			<number name="BATTERY_RESET_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="right_door_open_pb">
+			<position x="1168" y="200" />
+			<number name="RIGHT_DOOR_OPEN_PB_OPERATING_PANEL_5"
+				variable="button_state" />
+			<number name="RIGHT_DOOR_OPEN_PB_OPERATING_PANEL_5"
+				variable="button_control" />
+			<number name="RIGHT_DOOR_OPEN_PB_OPERATING_PANEL_5_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="right_door_close_pb">
+			<position x="785" y="437" />
+			<number name="RIGHT_DOOR_CLOSE_PB_OPERATING_PANEL_5"
+				variable="button_state" />
+			<number name="RIGHT_DOOR_CLOSE_PB_OPERATING_PANEL_5"
+				variable="button_control" />
+			<number name="RIGHT_DOOR_CLOSE_PB_OPERATING_PANEL_5_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="right_door_open_pb">
+			<position x="941" y="437" />
+			<number name="RIGHT_DOOR_OPEN_PB_1_OPERATING_PANEL_5"
+				variable="button_state" />
+			<number name="RIGHT_DOOR_OPEN_PB_1_OPERATING_PANEL_5"
+				variable="button_control" />
+			<number name="RIGHT_DOOR_OPEN_PB_1_OPERATING_PANEL_5_LAMP"
+				variable="light_state" />
+		</screen_object>
+
+		<screen_object type="lamp_test_pb">
+			<position x="1083" y="437" />
+			<number name="LAMP_TEST_PB" variable="button_state" />
+			<number name="LAMP_TEST_PB" variable="button_control" />
+			<number name="LAMP_TEST_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="wfl_test_pb">
+			<position x="900" y="88" />
+			<number name="WFL_TEST_PB" variable="button_state" />
+			<number name="WFL_TEST_PB" variable="button_control" />
+			<number name="WFL_TEST_PB_LAMP" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="emergency_stop_pb">
+			<position x="945" y="292" />
+			<number name="EMERGENCY_STOP_PB" variable="button_state" />
+			<number name="EMERGENCY_STOP_PB" variable="button_control" />
+		</screen_object>
+
+		<screen_object type="hold_door_close_bypass_ss">
+			<position x="696" y="783" />
+			<number name="HOLD_DOOR_CLOSE_BYPASS_SS"
+				variable="switch_state" />
+			<number name="HOLD_DOOR_CLOSE_BYPASS_SS"
+				variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="cab_booster_fan_ss">
+			<position x="640" y="952" />
+			<number name="CAB_BOOSTER_FAN_SS" variable="switch_state" />
+			<number name="CAB_BOOSTER_FAN_SS" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="emergency_brake_pb_bypass_ss">
+			<position x="826" y="950" />
+			<number name="EMERGENCY_BRAKE_PB_BYPASS_SS"
+				variable="switch_state" />
+			<number name="EMERGENCY_BRAKE_PB_BYPASS_SS"
+				variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="door_proven_loop_outputs">
+			<position x="934" y="617" />
+			<number name="DOOR_PROVEN_LOOP_OUTPUT_SWITCH"
+				variable="switch_state" />
+			<number name="DOOR_PROVEN_LOOP_OUTPUT_SWITCH"
+				variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="safety_cutout_ss">
+			<position x="888" y="783" />
+			<number name="SAFETY_CUTOUT_SS" variable="switch_state" />
+			<number name="SAFETY_CUTOUT_SS" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+	<!-- ====================== car 1 dm panel 5 end ============================= -->
+	<!-- ====================== master controller start ============================= -->
+
+	<screen xsi:type="main_screen" name="Master Controller" id="110"
+		background_image="master_controller/bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="control_key">
+			<position x="369" y="255" />
+			<number name="CONTROL_KEY" variable="switch_state" />
+			<number name="CONTROL_KEY" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="mode_selector">
+			<position x="844" y="27" />
+			<number name="MODE_SELECTOR" variable="switch_state" />
+			<number name="MODE_SELECTOR" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="master_controller">
+			<position x="1213" y="275" />
+			<number name="MASTER_CONTROLLER_HANDLE" variable="brake_state" />
+			<number name="MASTER_CONTROLLER_HANDLE" variable="brake_control" />
+			<number name="DEADMAN_SAFETY_DEVICE" variable="deadman_control" />
+			<number name="DEADMAN_SAFETY_DEVICE" variable="deadman_state" />						
+		</screen_object>
+
+<!-- 		<screen_object type="deadman_safety_device">
+			<position x="933" y="703" />
+			<number name="DEADMAN_SAFETY_DEVICE" variable="switch_state" />
+			<number name="DEADMAN_SAFETY_DEVICE" variable="switch_control" />
+		</screen_object> -->
+
+	</screen>
+	<!-- ====================== master controller end ============================= -->
+	<!-- ====================== pressure guages start ============================= -->
+
+	<screen xsi:type="main_screen" name="Pressure Guages" id="111"
+		background_image="pressure_guages/pressure-gauges.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="main_air_guage_mr_pressure">
+			<position x="936" y="117" />
+			<number name="MR_AIR_GAUGE_MR_PRESSURE" />
+		</screen_object>
+
+		<screen_object type="bc_sr_air_gauges_bc_pressure">
+			<position x="936" y="627" />
+			<number name="BC_SR_DUAL_PRESSURE_GAUGE_BC_PRESSURE" />
+		</screen_object>
+
+		<screen_object type="bc_sr_air_gauges_sr_pressure">
+			<position x="936" y="627" />
+			<number name="BC_SR_DUAL_PRESSURE_GAUGE_SR_PRESSURE" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ====================== pressure guages end ============================= -->
+	<!-- ==================== circuit breaker dm panel 1 row 1 start==================== -->
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel"
+		id="112" background_image="dm_car_edb/dm_car_edb_panel_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 1 Row"
+		id="113"
+		background_image="dm_car_edb/dm_car_edb_panel1_Row1_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="eblr2cb">
+			<position x="32" y="489" />
+			<number name="EBLR2CB" variable="switch_state" />
+			<number name="EBLR2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="179" y="489" />
+			<number name="EBMVCB" variable="switch_state" />
+			<number name="EBMVCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="325" y="489" />
+			<number name="EDCB" variable="switch_state" />
+			<number name="EDCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="471" y="489" />
+			<number name="ELCB1" variable="switch_state" />
+			<number name="ELCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="617" y="489" />
+			<number name="ELCB2" variable="switch_state" />
+			<number name="ELCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="761" y="489" />
+			<number name="ERCB" variable="switch_state" />
+			<number name="ERCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="908" y="489" />
+			<number name="HCB" variable="switch_state" />
+			<number name="HCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1053" y="489" />
+			<number name="HLLCB" variable="switch_state" />
+			<number name="HLLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1200" y="489" />
+			<number name="HLRCB" variable="switch_state" />
+			<number name="HLRCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1346" y="489" />
+			<number name="ILCB1" variable="switch_state" />
+			<number name="ILCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1492" y="489" />
+			<number name="ILCB2" variable="switch_state" />
+			<number name="ILCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1637" y="489" />
+			<number name="LDICB" variable="switch_state" />
+			<number name="LDICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1783" y="489" />
+			<number name="LDLCB" variable="switch_state" />
+			<number name="LDLCB" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<!-- ==================== circuit breaker dm panel 1 row 1 end==================== -->
+	<!-- ==================== circuit breaker dm panel 1 row 2 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row"
+		id="114"
+		background_image="dm_car_edb/dm_car_edb_panel1_Row2_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="eblr2cb">
+			<position x="32" y="489" />
+			<number name="LDRCB" variable="switch_state" />
+			<number name="LDRCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="179" y="489" />
+			<number name="MLCB" variable="switch_state" />
+			<number name="MLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="325" y="489" />
+			<number name="MMCB" variable="switch_state" />
+			<number name="MMCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="471" y="489" />
+			<number name="NBCB" variable="switch_state" />
+			<number name="NBCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="617" y="489" />
+			<number name="NVICB" variable="switch_state" />
+			<number name="NVICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="761" y="489" />
+			<number name="OCCB1" variable="switch_state" />
+			<number name="OCCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="908" y="489" />
+			<number name="OCCB2" variable="switch_state" />
+			<number name="OCCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1053" y="489" />
+			<number name="ODDCB" variable="switch_state" />
+			<number name="ODDCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1200" y="489" />
+			<number name="PBCB" variable="switch_state" />
+			<number name="PBCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1346" y="489" />
+			<number name="PISCB1" variable="switch_state" />
+			<number name="PISCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1492" y="489" />
+			<number name="PISCB2" variable="switch_state" />
+			<number name="PISCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1637" y="489" />
+			<number name="POCB" variable="switch_state" />
+			<number name="POCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1783" y="489" />
+			<number name="PPU1CB" variable="switch_state" />
+			<number name="PPU1CB" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<!-- ==================== circuit breaker dm panel 1 row 2 end==================== -->
+	<!-- ==================== circuit breaker dm panel 1 row 3 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 3 Row"
+		id="115"
+		background_image="dm_car_edb/dm_car_edb_panel1_Row3_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="eblr2cb">
+			<position x="32" y="489" />
+			<number name="PPU2CB" variable="switch_state" />
+			<number name="PPU2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="179" y="489" />
+			<number name="PPU3CB" variable="switch_state" />
+			<number name="PPU3CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="325" y="489" />
+			<number name="RIO1CB" variable="switch_state" />
+			<number name="RIO1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="471" y="489" />
+			<number name="RIO2CB" variable="switch_state" />
+			<number name="RIO2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="617" y="489" />
+			<number name="SIOCB1" variable="switch_state" />
+			<number name="SIOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="761" y="489" />
+			<number name="SIOCB2" variable="switch_state" />
+			<number name="SIOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="908" y="489" />
+			<number name="SSICB" variable="switch_state" />
+			<number name="SSICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1053" y="489" />
+			<number name="TBCCB1" variable="switch_state" />
+			<number name="TBCCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1200" y="489" />
+			<number name="TBCCB2" variable="switch_state" />
+			<number name="TBCCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1346" y="489" />
+			<number name="TBNCB" variable="switch_state" />
+			<number name="TBNCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1492" y="489" />
+			<number name="TDICB" variable="switch_state" />
+			<number name="TDICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1637" y="489" />
+			<number name="TLLCB" variable="switch_state" />
+			<number name="TLLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1783" y="489" />
+			<number name="TLRCB" variable="switch_state" />
+			<number name="TLRCB" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ==================== circuit breaker dm panel 1 row 3 end==================== -->
+	<!-- ==================== circuit breaker dm panel 1 row 4 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 4 Row"
+		id="116"
+		background_image="dm_car_edb/dm_car_edb_panel1_Row4_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="eblr2cb">
+			<position x="32" y="489" />
+			<number name="TRIVCB" variable="switch_state" />
+			<number name="TRIVCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="179" y="489" />
+			<number name="TVDUCB" variable="switch_state" />
+			<number name="TVDUCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="325" y="489" />
+			<number name="TWVCB" variable="switch_state" />
+			<number name="TWVCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="471" y="489" />
+			<number name="VCCB_OR_UCCB" variable="switch_state" />
+			<number name="VCCB_OR_UCCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="617" y="489" />
+			<number name="VCBCCB" variable="switch_state" />
+			<number name="VCBCCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="761" y="489" />
+			<number name="VIO1CB" variable="switch_state" />
+			<number name="VIO1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="908" y="489" />
+			<number name="VIO2CB" variable="switch_state" />
+			<number name="VIO2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1053" y="489" />
+			<number name="WFLCB" variable="switch_state" />
+			<number name="WFLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1200" y="489" />
+			<number name="WIFICB" variable="switch_state" />
+			<number name="WIFICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1346" y="489" />
+			<number name="WWCB" variable="switch_state" />
+			<number name="WWCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1492" y="489" />
+			<number name="BECUCB1" variable="switch_state" />
+			<number name="BECUCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1637" y="489" />
+			<number name="BECUCB2" variable="switch_state" />
+			<number name="BECUCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1783" y="489" />
+			<number name="BECUCB3" variable="switch_state" />
+			<number name="BECUCB3" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<!-- ==================== circuit breaker dm panel 1 row 4 end==================== -->
+	<!-- ==================== circuit breaker dm panel 2 row 1 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 1"
+		id="117"
+		background_image="dm_car_edb/dm_car_edb_panel2_Row1_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="eblr2cb">
+			<position x="24" y="489" />
+			<number name="RSACB" variable="switch_state" />
+			<number name="RSACB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="160" y="489" />
+			<number name="CMCCB" variable="switch_state" />
+			<number name="CMCCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="296" y="489" />
+			<number name="CILCB" variable="switch_state" />
+			<number name="CILCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="432" y="489" />
+			<number name="CICB" variable="switch_state" />
+			<number name="CICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="568" y="489" />
+			<number name="CELCB" variable="switch_state" />
+			<number name="CELCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="704" y="489" />
+			<number name="CECB" variable="switch_state" />
+			<number name="CECB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="839" y="489" />
+			<number name="CDUCB" variable="switch_state" />
+			<number name="CDUCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="976" y="489" />
+			<number name="CCNVIO1CB" variable="switch_state" />
+			<number name="CCNVIO1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1112" y="489" />
+			<number name="CBTCCB1" variable="switch_state" />
+			<number name="CBTCCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1248" y="489" />
+			<number name="CBFCCB" variable="switch_state" />
+			<number name="CBFCCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="cbfcb">
+			<position x="1372" y="474" />
+			<number name="CBFCB" variable="switch_state" />
+			<number name="CBFCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1604" y="489" />
+			<number name="C1CB" variable="switch_state" />
+			<number name="C1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="eblr2cb">
+			<position x="1740" y="489" />
+			<number name="BLCB" variable="switch_state" />
+			<number name="BLCB" variable="switch_control" />
+		</screen_object>
+	</screen>
+	<!-- ==================== circuit breaker dm panel 2 row 1 end==================== -->
+	<!-- ==================== circuit breaker dm panel 2 row 2 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 2"
+		id="119"
+		background_image="dm_car_edb_panel_2_row_2/dm_car_edb_panel2_Row2_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="zvbacb">
+			<position x="32" y="491" />
+			<number name="ZVBACB" variable="switch_state" />
+			<number name="ZVBACB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="186" y="491" />
+			<number name="EBLR1CB" variable="switch_state" />
+			<number name="EBLR1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="339" y="491" />
+			<number name="DRCB" variable="switch_state" />
+			<number name="DRCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="493" y="491" />
+			<number name="DPLCB" variable="switch_state" />
+			<number name="DPLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="648" y="491" />
+			<number name="DMICB" variable="switch_state" />
+			<number name="DMICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="802" y="491" />
+			<number name="DLCB" variable="switch_state" />
+			<number name="DLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="956" y="491" />
+			<number name="DIOCB2" variable="switch_state" />
+			<number name="DIOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="1109" y="491" />
+			<number name="DIOCB1" variable="switch_state" />
+			<number name="DIOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="1263" y="491" />
+			<number name="CSCCB" variable="switch_state" />
+			<number name="CSCCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="1418" y="491" />
+			<number name="CSBCB" variable="switch_state" />
+			<number name="CSBCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="1571" y="491" />
+			<number name="CSACB" variable="switch_state" />
+			<number name="CSACB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="zvbacb">
+			<position x="1728" y="491" />
+			<number name="CRSBCB" variable="switch_state" />
+			<number name="CRSBCB" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<!-- ==================== circuit breaker dm panel 2 row 2 end==================== -->
+	<!-- ==================== circuit breaker dm panel 2 row 3 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 3"
+		id="120"
+		background_image="dm_car_edb_panel_2_row_3/dm_car_edb_panel2_Row3_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="socb2">
+			<position x="1" y="415" />
+			<number name="SOCB2" variable="switch_state" />
+			<number name="SOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="socb2">
+			<position x="286" y="415" />
+			<number name="SOCB1" variable="switch_state" />
+			<number name="SOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_big">
+			<position x="591" y="513" />
+			<number name="MSOCB5" variable="switch_state" />
+			<number name="MSOCB5" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_small">
+			<position x="771" y="555" />
+			<number name="MSOCB5" variable="switch_state" />
+			<number name="MSOCB5" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_big">
+			<position x="855" y="513" />
+			<number name="MSOCB4" variable="switch_state" />
+			<number name="MSOCB4" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_small">
+			<position x="1035" y="555" />
+			<number name="MSOCB4" variable="switch_state" />
+			<number name="MSOCB4" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_big">
+			<position x="1119" y="513" />
+			<number name="MSOCB3" variable="switch_state" />
+			<number name="MSOCB3" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_small">
+			<position x="1299" y="555" />
+			<number name="MSOCB3" variable="switch_state" />
+			<number name="MSOCB3" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_big">
+			<position x="1382" y="513" />
+			<number name="MSOCB2" variable="switch_state" />
+			<number name="MSOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_small">
+			<position x="1562" y="555" />
+			<number name="MSOCB2" variable="switch_state" />
+			<number name="MSOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_big">
+			<position x="1648" y="513" />
+			<number name="MSOCB1" variable="switch_state" />
+			<number name="MSOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb5_small">
+			<position x="1828" y="555" />
+			<number name="MSOCB1" variable="switch_state" />
+			<number name="MSOCB1" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<!-- ==================== circuit breaker dm panel 2 row 3 end==================== -->
+	<!-- ==================== circuit breaker dm panel 2 row 4 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 4"
+		id="121"
+		background_image="dm_car_edb_panel_2_row_4/dm_car_edb_panel2_Row4_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="hvac1">
+			<position x="70" y="438" />
+			<number name="SAC1CCB" variable="switch_state" />
+			<number name="SAC1CCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="sca2ccb">
+			<position x="200" y="562" />
+			<number name="SAC2CCB" variable="switch_state" />
+			<number name="SAC2CCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="hvac1">
+			<position x="384" y="438" />
+			<number name="SAC2CCB" variable="switch_state" />
+			<number name="SAC2CCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="sca2ccb">
+			<position x="513" y="562" />
+			<number name="SAC1CCB" variable="switch_state" />
+			<number name="SAC1CCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="cmcb">
+			<position x="662" y="490" />
+			<number name="CMCB" variable="switch_state" />
+			<number name="CMCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="ac2cb">
+			<position x="1045" y="447" />
+			<number name="AC2CB" variable="switch_state" />
+			<number name="AC2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="ac2cb">
+			<position x="1449" y="447" />
+			<number name="AC1CB" variable="switch_state" />
+			<number name="AC1CB" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<!-- ==================== circuit breaker dm panel 2 row 4 end==================== -->
+	<!-- ==================== circuit breaker dm panel 2 row 5 start==================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 5"
+		id="122"
+		background_image="dm_car_edb_panel_2_row_5/dm_car_edb_panel2_Row5_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="fdscb">
+			<position x="601" y="422" />
+			<number name="FDSCB" variable="switch_state" />
+			<number name="FDSCB" variable="switch_control" />
+		</screen_object>
+	</screen>
+	<!-- ==================== circuit breaker dm panel 2 row 5 end==================== -->
+	<!-- ==================== driver side covering panel start==================== -->
+
+
+	<screen xsi:type="main_screen" name="Driver Side Coving panel"
+		id="123"
+		background_image="driver_side_covering_panel/drivers_side_coving_panel_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="cab_eed_left">
+			<position x="867" y="612" />
+			<number name="CAB_EED_LEFT" variable="button_state" />
+			<number name="CAB_EED_LEFT" variable="button_control" />
+		</screen_object>
+
+	</screen>
+	<!-- ==================== driver side covering panel end==================== -->
+	<!-- ==================== non-driver side covering panel start==================== -->
+
+	<screen xsi:type="main_screen"
+		name="Non-Driver Side Coving panel" id="124"
+		background_image="driver_side_covering_panel/drivers_side_coving_panel_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="cab_eed_left">
+			<position x="867" y="612" />
+			<number name="CAB_EED_RIGHT" variable="button_state" />
+			<number name="CAB_EED_RIGHT" variable="button_control" />
+		</screen_object>
+	</screen>
+	<!-- ==================== non-driver side covering panel end==================== -->	
+	<!-- ==================== emergency doors start==================== -->
+
+	<screen xsi:type="main_screen" name="Emergency Door" id="128"
+		background_image="emergency_doors/bg_new.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="ramp_open">
+			<position x="646" y="442" />
+			<number name="RAMP_HANDLE" variable="handle_state" />
+			<number name="RAMP_HANDLE" variable="handle_control" />
+			<number name="RAMP" variable="cover_state" />
+		</screen_object>
+
+		<screen_object type="emergency_door_open">
+			<position x="597" y="0" />
+			<number name="RAMP_COVER" variable="handle_state" />
+			<number name="RAMP_COVER" variable="handle_control" />
+			<number name="EMERGENCY_DOOR" variable="cover_state" />
+		</screen_object>
+
+		<screen_object type="static_image">
+			<position x="0" y="0" />
+			<property name="file" value="emergency_doors/bg_new.png" />
+		</screen_object>
+
+		<screen_object type="ramp_covering_locking_lever_mimic">
+			<position x="1440" y="12" />
+			<number name="RAMP_COVER_LOCKING_LEVER"
+				variable="switch_state" />
+			<number name="RAMP_COVER_LOCKING_LEVER"
+				variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="safety_cover">
+			<position x="1440" y="12" />
+			<number name="SAFETY_COVER" variable="switch_state" />
+			<number name="SAFETY_COVER" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="ramp_covering_locking_lever">
+			<position x="31" y="12" />
+			<number name="RAMP_COVER_LOCKING_LEVER"
+				variable="switch_state" />
+			<number name="RAMP_COVER_LOCKING_LEVER"
+				variable="switch_control" />
+		</screen_object>
+		
+		
+
+		<screen_object type="ramp_winder">
+			<position x="22" y="750" />
+			<number name="RAMP_WINDER" variable="switch_state" />
+			<number name="RAMP_WINDER" variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="ramp_winding_notification">
+			<position x="112" y="730" />
+			<number name="RAMP_WINDER" variable="winding_state" />
+		</screen_object>
+
+		<screen_object type="door_winder">
+			<position x="1428" y="750" />
+			<number name="DOOR_WINDER" variable="switch_state" />
+			<number name="DOOR_WINDER" variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="door_winding_notification">
+			<position x="1528" y="730" />
+			<number name="DOOR_WINDER" variable="winding_state" />
+		</screen_object>
+
+		<screen_object type="emergency_door_indicator">
+			<position x="1079" y="33" />
+			<number name="DOOR_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="dummy_cover">
+			<position x="650" y="436" />
+			<number name="DUMMY_COVER" variable="switch_state" />
+			<number name="DUMMY_COVER" variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="gas_spring">
+			<position x="1428" y="376" />
+			<number name="EMERGENCY_DOOR_GAS_SPRING" variable="gasspring_state" />
+			<number name="EMERGENCY_DOOR_GAS_SPRING" variable="gasspring_control" />
+			<number name="GAS_SPRING_LOCKED" variable="locked_state" />
+		</screen_object>
+		
+		<screen_object type="ramp_support">
+			<position x="31" y="376" />
+			<number name="RAMP_MIDDLE_SUPPORT" variable="ramp_state" />
+			<number name="RAMP_MIDDLE_SUPPORT" variable="ramp_control" />
+			<number name="RAMP_SUPPORT_DOWN" variable="support_state" />
+		</screen_object>
+		
+	</screen>
+
+	<!-- ==================== Parking Brake Release start==================== -->
+
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 01 Handle 01"
+		id="129"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_1" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_1" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 01 Handle 02"
+		id="131"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_2" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_2" variable="switch_control" />
+		</screen_object>
+	</screen>
+	
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 02 Handle 01"
+		id="130"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_1" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_1" variable="switch_control" />
+		</screen_object>
+	</screen>	
+
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 02 Handle 02"
+		id="132"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_2" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_2" variable="switch_control" />
+		</screen_object>
+	</screen>		
+	<!-- ==================== Parking Brake Release end==================== -->			
+	
+	<!-- ==================== Ramp Winding Notification start==================== -->	
+			
+	<screen_object_type xsi:type="state_object"
+		name="ramp_winding_notification" extends="winding_notification">
+		<image file="emergency_doors/ramp_winder_initial.png">
+			<state_group_ref name="initial" />
+		</image>
+		<image file="emergency_doors/winder_text_blank.png">
+			<state_group_ref name="middle" />
+		</image>
+		<image file="emergency_doors/ramp_winder_complete.png">
+			<state_group_ref name="complete" />
+		</image>
+	</screen_object_type>
+	
+	<!-- ==================== Ramp Winding Notification end==================== -->		
+	
+	
+		<!-- ==================== Door Winding Notification start==================== -->	
+			
+	<screen_object_type xsi:type="state_object"
+		name="door_winding_notification" extends="winding_notification">
+		<image file="emergency_doors/door_winder_initial.png">
+			<state_group_ref name="initial" />
+		</image>
+		<image file="emergency_doors/winder_text_blank.png">
+			<state_group_ref name="middle" />
+		</image>
+		<image file="emergency_doors/door_winder_complete.png">
+			<state_group_ref name="complete" />
+		</image>
+	</screen_object_type>
+	
+	<!-- ==================== Door Winding Notification end==================== -->				
+	
+</gmi_screens>

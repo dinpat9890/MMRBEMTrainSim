@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1406970179" name="station_exit_sign">
+		<mesh_name>../worlds/mmrbem/graphics/stations/station_exit_sign.mesh</mesh_name>
+		<surface name="station_exit_sign_shed_01" material="e6218c0d435caa2880e8260437cc08266ed20c23" property="surface_base"/>
+		<surface name="station_exit_sign_station_objects" material="f7739603de5fd29cda84f78b4ee874a910b55bb4" property="surface_base"/>
+		<transform>0.999999940395 -2.64697796017e-022 0 0.0 2.64697796017e-022 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -1.06581410364e-014 -1.42108547152e-014 0 1.0</transform>
+	</node>
+</nodes>

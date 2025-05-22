@@ -1,0 +1,56 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+Simulator=Simulator.ini
+Logging=Logging.ini
+Hub=Hub.ini
+
+[System.1]
+Module Name=FC-06-Serial Devices
+
+[Flight Sim Gauges]
+Active=1
+Port=COM3
+Baud Rate=38400
+Data Bits=8
+Parity=0
+Stop Bits=0
+
+[Gauge 1]
+Property=MR Air Gauge MR Pressure
+Gauge Address=254
+First Needle=1
+#Backlight Property=Speedometer Backlight
+Minimum Position=0
+Centre Position=394
+Maximum Position=799
+Minimum Value=0
+Maximum Value=1200000
+Centre Value=600000
+Default Value=0
+
+[Gauge 2]
+Property=BC SR Dual Pressure Gauge SR Pressure
+Gauge Address=255
+First Needle=0
+#Backlight Property=BP ER Pressure Gauge BL
+Minimum Position=0
+Maximum Position=816
+Centre Position=414
+Minimum Value=0
+Maximum Value=1000000
+Centre Value=500000
+Default Value=0
+
+[Gauge 3]
+Property=BC SR Dual Pressure Gauge BC Pressure
+Gauge Address=255
+First Needle=1
+#Backlight Property Range=Speedometer Backlight
+Minimum Position=0
+Maximum Position=812
+Centre Position=413
+Minimum Value=0
+Maximum Value=1000000
+Centre Value=500000
+Default Value=0

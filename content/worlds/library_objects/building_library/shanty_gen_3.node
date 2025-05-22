@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="394348668" name="shanty_gen_3">
+		<mesh_name>../worlds/library_objects/building_library/shanty_gen_03.mesh</mesh_name>
+		<surface name="shanty_gen_03_shanty_corrugated" max_visible_distance="500" max_fade_distance="10" material="89292c8c80d9ebc275ed8102be45fa2f100b212d" property="surface_base"/>
+		<surface name="shanty_gen_03_shanty_mixed" max_visible_distance="500" max_fade_distance="10" material="3590236f11d87755cc392eac93b3145e67ba61c9" property="surface_base"/>
+		<surface name="shanty_gen_03_shanty_wall_corrugated" max_visible_distance="500" max_fade_distance="10" material="9405932188d9cd81166fcf93d48fa5a44fe3f295" property="surface_base"/>
+		<surface name="shanty_gen_03_shanty_wall_mixed" max_visible_distance="500" max_fade_distance="10" material="262905aa975a30a2dc31ddedbc3d0a1eea625cf4" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

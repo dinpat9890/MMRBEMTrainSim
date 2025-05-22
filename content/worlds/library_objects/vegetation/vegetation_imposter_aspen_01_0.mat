@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_aspen_01_0" guid="0fb3cd78b805a471837fd959b3c57959b61f1cf3" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<options cast_world_shadow="0"/>
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/aspen_imposter.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/aspen/textures/aspen_01_imposter_n.dds</texture>
+</material>

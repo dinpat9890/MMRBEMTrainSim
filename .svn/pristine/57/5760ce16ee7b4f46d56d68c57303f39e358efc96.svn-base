@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="buckbrush_leaves" guid="88b4b3b062d8bdc9cc5544ef853c95661e1eaa0b" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1" two_sided="1"/>
+	<state name="noise_2d">0</state>
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/buckbrush_leaves_d.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/textures/buckbrush_leaves_n.dds</texture>
+	<texture name="noise_2d">core/textures/leaf/noise_2d.dds</texture>
+</material>

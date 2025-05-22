@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Build file for Database Config                                          -->
+<!-- ======================================================================= -->
+<project name="Database" xmlns:ac="antlib:net.sf.antcontrib" basedir="." default="build.all" >
+    <property file="build.properties"/>
+
+    <import file="../../ant.common_properties.xml"/>
+    <import file="${dir.deps.processes}/builder/builder.config.macros.xml" as="builder" />
+
+    <!-- ======================================================================= -->
+    <!-- Helpers                                                                 -->
+    <!-- ======================================================================= -->
+    <target name="prepare" description="Creates build directories">
+        <mkdir dir="${dir.build.work}" />
+        <mkdir dir="${dir.build.output}" />
+    </target>
+
+    <target name="recreate.build.dirs">
+        <antcall target="clean.all"/>
+        <antcall target="prepare"/>
+    </target>
+
+    <!-- ======================================================================= -->
+    <!-- Clean                                                                   -->
+    <!-- ======================================================================= -->
+    <target name="clean.all" description="Cleans the build directories">
+        <delete dir="${dir.build.work}"/>
+        <delete dir="${dir.build.output}"/>
+        <delete file="CommsDataGenerator.log"/>
+    </target>
+
+    <!-- ======================================================================= -->
+    <!-- Build                                                                   -->
+    <!-- ======================================================================= -->
+    <target name="build.all" description="Builds this folder." depends="generate.database.config">
+    </target>
+
+    <!-- ======================================================================= -->
+    <!-- Deployment                                                              -->
+    <!-- ======================================================================= -->
+    <target name="deploy.all" description="Deploys this folder.">
+    </target>
+
+    <!-- ======================================================================= -->
+    <!-- Generate Database xml Config                                            -->
+    <!-- ======================================================================= -->
+    <target name="generate.database.config" depends="recreate.build.dirs" description="Generates Sim Properties and Train Type Configurations from Excel Spreadsheet">
+        <!-- Sim Properties and Car Classes -->
+        <ac:for list="${database.config.source.names}" param="source.name" trim="true">
+            <sequential>
+                <echo message="Generating Config for @{source.name}"/>
+                <comms_data_generator config="${dir.build.work}" output="${dir.build.output}" command="e" args="/r &quot;${dir.build.work}/@{source.name}.rules.xml&quot; /x &quot;${dir.database.config.source}/@{source.name}&quot;" dir.tools="${dir.tools.comms_data_generator}"/>
+            </sequential>
+        </ac:for>
+        <copy todir="${dir.config.database}/trains">
+          <fileset dir="${dir.build.output}" >
+            <include name="TrainType*.xml"/>
+            <include name="trains.xml"/>
+          </fileset>
+        </copy>
+        <copy todir="${dir.config.database}/data">
+          <fileset dir="${dir.build.output}" >
+            <include name="sim_properties.xml"/>
+            <include name="logging_data.xml"/>
+          </fileset>
+        </copy>
+    </target>
+
+</project>

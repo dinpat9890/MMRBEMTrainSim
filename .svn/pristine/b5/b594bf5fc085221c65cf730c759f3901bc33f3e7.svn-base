@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1980953690" name="_track">
+		<transform>1.00000011921 0 0 0.0 0 1.00000011921 0 0.0 0 0 1.0000000596 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="1672372849" name="_segments">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="930223018" name="_segment_2">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_2.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 9999.995 500 10.999995 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1851558252" name="_segment_3">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_3.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 7838.08404507 1254.7563297 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="574152265" name="_segment_5">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_5.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1050.00000447 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="101972942" name="_segment_7">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_7.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2599.9933202 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1986420462" name="_segment_9">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_9.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2599.99357811 11.7005619171 0.999781721376 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2033422907" name="_segment_11">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_11.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3649.99999522 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1616298038" name="_segment_13">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_13.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4700.00217241 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1212838130" name="_segment_14">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_14.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12600.0000027 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1168301386" name="_segment_15">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_segments/_segment_15.mesh</mesh_name>
+				<surface name="collapsed_0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="collapsed_1" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="collapsed_2" material="5d77b500676cfe6aa26f06b09a99d9f83f3bef00" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4697.72245203 6.9639633174 1.0000969772 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1836517361" name="_switches">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="118146442" name="Point_S1">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_switches/Point_S1.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Main Line" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Broken" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2100.00000894 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="584459297" name="Point_S2">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_switches/Point_S2.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Main Line" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Broken" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3099.99999578 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1314734385" name="Point_LEV2_South">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_switches/Point_LEV2_South.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Main Line" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Broken" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4199.99999465 10 1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="837087357" name="Point_LEV2_North">
+				<mesh_name>../worlds/test_track/graphics/track//_track/_switches/Point_LEV2_North.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Main Line" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<surface name="Broken" enabled="0" material="289e4109c41c412e4546a3e8ad9125cefd731dce" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5200.00000542 10 1 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1243566497" name="2AP9928">
+		<mesh_name>../worlds/library_objects/shared_elements/2AP9928.mesh</mesh_name>
+		<surface name="2AP9928" material="73e88fa5ef62b94432dfda27ea7f5a866414a87c" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

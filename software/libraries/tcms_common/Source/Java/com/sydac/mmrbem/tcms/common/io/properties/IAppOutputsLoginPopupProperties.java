@@ -1,0 +1,24 @@
+/*******************************************************************************
+ * (C) Copyright 2022 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *******************************************************************************/
+package com.sydac.mmrbem.tcms.common.io.properties;
+
+import static com.sydac.foundation.PropertyKey.create;
+
+import com.sydac.common.febe.binding.CommsBinding;
+import com.sydac.foundation.PropertyKey;
+import com.sydac.project.runtimedata.ProjectObjectConstants.VDUOutputs;
+
+public interface IAppOutputsLoginPopupProperties
+{
+  @CommsBinding(property = VDUOutputs.OPERATOR_BUTTON_SELECTED)
+  PropertyKey<Integer> OPERATOR_BUTTON_SELECTED = create();
+  
+  @CommsBinding(property = VDUOutputs.USER_ID)
+  PropertyKey<byte[]> USER_ID = create();
+  
+  @CommsBinding(property = VDUOutputs.USER_LOGGED_IN)
+  PropertyKey<Integer> USER_LOGGED_IN = create();
+}

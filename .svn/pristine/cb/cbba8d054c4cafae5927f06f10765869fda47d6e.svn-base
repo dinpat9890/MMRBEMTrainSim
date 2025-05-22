@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="444059352" name="banana_palm">
+		<mesh_name>../worlds/shared/graphics/vegetation/banana_palm.mesh</mesh_name>
+		<surface name="banana_palm_a_leaves" material="5cfd5c3711c512fbfe2339ac7915a170a7ccf68c" property="surface_base"/>
+		<surface name="banana_palm_a_trunk" material="3160447dac52f43b0447450255b00c3231eb710c" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

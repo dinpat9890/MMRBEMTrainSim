@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package train;
+
+import "Source/Protobuf/track_position.proto";
+
+message train_definition
+{
+    message object_initial_values
+    {
+        message number_value
+        {
+            string name  = 1;
+            double value = 2;
+        }
+ 
+        message object_identifier
+        {
+            int32                 class_id           = 1;
+            repeated number_value number_name_values = 2;
+        }
+ 
+        repeated object_identifier identifiers = 1;
+        repeated number_value      values      = 2;
+    }
+
+    int32                          id             = 1;
+    int32                          type           = 2;
+    bool                           simulated      = 3;
+    core.track_position            start_position = 4;
+    repeated object_initial_values initial_values = 5;
+}

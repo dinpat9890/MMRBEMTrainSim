@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_blue_oak" guid="b38f30d1596e277960cfd1e387ea11cdc00ed1a3" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<texture name="diffuse">../worlds/shared/graphics/vegetation/textures/blue_oak_imposter.dds</texture>
+	<texture name="normal">../worlds/shared/graphics/vegetation/textures/blue_oak_imposter_n.dds</texture>
+</material>

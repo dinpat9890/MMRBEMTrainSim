@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<project name="COTS" default="build.all">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../../ant.common_properties.xml" />
+
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+
+  <!-- Import the sub-building functionality -->
+  <import file="${dir.deps.processes}/preparer/preparer.software.subbuild.xml" as="preparer" />
+  <import file="${dir.deps.processes}/builder/builder.software.subbuild.xml" as="unit_builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.subbuild.xml" as="unit_packager" />
+  
+  <target name="deploy.all">  
+	<copy todir="${dir.deploy.jar}">
+		<fileset dir="commons-logging/jars">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="commons-logging-api/jars">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="spring-aop/jars">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="spring-asm/jars">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="spring-beans/jars">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="spring-context/jars">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="spring-core/jars">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="spring-expression/jars">
+			<include name="*.jar"/>
+		</fileset>
+	</copy>
+	<copy todir="${dir.deploy.cots}" overwrite="true">
+      <fileset dir="${dir.software}/cots"> 
+		<include name="IntelRealSenseSDK2.0/**"/>
+		<include name="opencv/**"/>
+		<include name="DirectX9/**"/>
+	  </fileset>
+    </copy>
+    <copy todir="${dir.deploy.bin}" overwrite="true">
+      <fileset dir="${dir.software}/cots/Live3DServer"> 
+		<include name="Live3DServer.exe"/>
+		<include name="Realsense2CameraPlugin64D.dll"/>
+	  </fileset>
+    </copy>
+	<mkdir dir="${dir.deploy.data}/Live3D/Data"/>
+    <copy todir="${dir.deploy.data}/Live3D/Data" overwrite="true">
+      <fileset dir="${dir.software}/cots/Live3DServer/data">
+		<include name="haarcascade_frontalface_default.xml"/>
+		<include name="haarcascade_profileface.xml"/>
+	  </fileset>
+    </copy>
+    <copy todir="${dir.deploy.bin}" overwrite="true">
+      <fileset dir="${dir.software}/cots/Live3DClient"> 
+		<include name="Live3DClient_x64.dll"/>
+	  </fileset>
+    </copy>
+  </target>
+</project>

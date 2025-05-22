@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="1374834911" name="mc_s_rockthrower">
+		<mesh_name>animated_features/graphics/mc_s_rockthrower.mesh</mesh_name>
+		<anim_name>animated_features/graphics/animations/mc_s_pickuprock.anim</anim_name>
+		<loop>1</loop>
+		<speed>30</speed>
+		<surface name="Little_Punk_1" material="df73ef506bd224ca61c6d39e782a331cbabad5a6" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectConstants.h" />
+    <ClCompile Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectDefinition.h" />
+    <ClCompile Include="Source\PlatformPassengersProperties.cpp" />
+    <ClCompile Include="Source\PlatformPassengersUnit.cpp" />
+    <ClCompile Include="Source\UnitDLL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\PlatformPassengersProperties.h" />
+    <ClInclude Include="Source\PlatformPassengersUnit.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D11E9DF-3ACD-4E3D-BF75-18C484BC1F81}</ProjectGuid>
+    <RootNamespace>PDCUnit</RootNamespace>
+    <ProjectName>PlatformPassengersUnit</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <TargetName>platform_passengers_units$(OutputType)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <TargetName>platform_passengers_units$(OutputType)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <TargetName>platform_passengers_units$(OutputType)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
+    <TargetName>platform_passengers_units$(OutputType)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(COTSIncludeRoot)/protobuf/include;$(ProjectLibrariesRoot)/Serialisation/Source/Cpp;$(ProjectIncludeRoot)Include;$(ProjectConfigRoot)project_features/include/;$(ProjectConfigRoot)project_comms_structure/Include;$(CoreTrainSimConfigRoot)train_comms_structure/include;$(CoreSimConfigRoot)core_comms_structure/include;$(CoreSimIncludeRoot)Channels/include;$(CoreSimIncludeRoot)core_data_access/include;$(CoreSimIncludeRoot)core_types/include;$(CoreSimIncludeRoot)core_vision_messages/include;$(CoreSimIncludeRoot)utility/include;$(CommonIncludeRoot)comms/include;$(CommonIncludeRoot)sim_common/include;$(CommonIncludeRoot)sim_comms/include;$(CommonIncludeRoot)common/include;$(CoreTrainSimIncludeRoot)train_data_access/include;$(CoreTrainSimIncludeRoot)world_api/include;$(CoreSimIncludeRoot)core_services/include;$(CommonIncludeRoot)network_definition/include;$(CoreSimIncludeRoot)core_properties/include;Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNIT_DLL_EXPORTS;WIN32;_LIB;_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectConfigRoot)project_comms_structure/lib;$(COTSIncludeRoot)/protobuf/lib;$(CommonIncludeRoot)comms/lib;$(CommonIncludeRoot)sim_comms/lib;$(CommonIncludeRoot)common/lib;$(CoreSimIncludeRoot)core_services/lib;$(CoreSimIncludeRoot)core_data_access/lib;$(CoreTrainSimIncludeRoot)world_api/lib;$(CommonIncludeRoot)network_definition/lib;$(CoreSimIncludeRoot)channels/lib;$(CoreSimIncludeRoot)config_file_access/lib;$(CoreSimIncludeRoot)core_properties/lib;$(CoreSimIncludeRoot)core_serialisation/lib;$(CoreSimIncludeRoot)core_types/lib;$(CoreTrainSimIncludeRoot)train_data_access/lib;$(CoreSimConfigRoot)core_comms_structure/lib;.\Build\Win32\DebugDLL;.\Build\x64\DebugDLL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>comms$(LibType);sim_comms$(LibType);common$(LibType);core_services$(LibType);core_data_access$(LibType);world_api$(LibType);network_definition$(LibType);channels$(LibType);core_types$(LibType);train_data_access$(LibType);core_comms_structure$(LibType);libprotobuf$(LibType);core_properties$(LibType);project_comms_structure$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

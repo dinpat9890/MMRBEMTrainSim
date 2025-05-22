@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="token_hook" guid="804bb51fe715d5dcb170b7a9ec90dd7b3b58cd3a" base_material="mesh_base">
+	<options two_sided="1"/>
+	<texture name="albedo">../features/animated_features/graphics/textures/lamp_flag_texture.dds</texture>
+	<parameter name="translucent">1</parameter>
+</material>

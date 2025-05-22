@@ -1,0 +1,3609 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<world_definition xmlns="http://www.sydac.com.au/WorldDefinition/1.0/" version="1.0">
+	<description>
+		<date>19-05-2023 11:46:12</date>
+		<description>Test_Features_Track</description>
+		<title>Test_Features_Track</title>
+	</description>
+	<track_segments>
+		<track_segment segment_id="14" name="LEV" />
+		<track_segment segment_id="2" name="CLM_1" />
+		<track_segment segment_id="3" name="CRV_1" />
+		<track_segment segment_id="7" name="LEV1_main" />
+		<track_segment segment_id="5" name="START_to_LEV1" />
+		<track_segment segment_id="9" name="LEV1_LOOP" />
+		<track_segment segment_id="13" name="LEV2_main" />
+		<track_segment segment_id="11" name="LEV1_to_LEV2" />
+		<track_segment segment_id="15" name="LEV2_loop" />
+	</track_segments>
+	<track_connectivity>
+		<connection connection_id="1" from="5" from_alpha="0" to="7" to_alpha="1" />
+		<connection connection_id="2" from="7" from_alpha="1" to="5" to_alpha="0" />
+		<connection connection_id="3" from="5" from_alpha="0" to="9" to_alpha="1" />
+		<connection connection_id="4" from="9" from_alpha="1" to="5" to_alpha="0" />
+		<connection connection_id="5" from="11" from_alpha="1" to="7" to_alpha="0" />
+		<connection connection_id="6" from="7" from_alpha="0" to="11" to_alpha="1" />
+		<connection connection_id="7" from="11" from_alpha="1" to="9" to_alpha="0" />
+		<connection connection_id="8" from="9" from_alpha="0" to="11" to_alpha="1" />
+		<connection connection_id="9" from="14" from_alpha="1" to="13" to_alpha="0" />
+		<connection connection_id="10" from="13" from_alpha="0" to="14" to_alpha="1" />
+		<connection connection_id="11" from="14" from_alpha="1" to="15" to_alpha="0" />
+		<connection connection_id="12" from="15" from_alpha="0" to="14" to_alpha="1" />
+		<connection connection_id="13" from="11" from_alpha="0" to="13" to_alpha="1" />
+		<connection connection_id="14" from="13" from_alpha="1" to="11" to_alpha="0" />
+		<connection connection_id="15" from="11" from_alpha="0" to="15" to_alpha="1" />
+		<connection connection_id="16" from="15" from_alpha="1" to="11" to_alpha="0" />
+	</track_connectivity>
+	<objects>
+		<object object_id="1" type="Point" name="Point_S1">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="1" />
+			<property name="Facing Segment ID" value="5" />
+			<property name="Facing Segment At Alpha" value="0" />
+			<property name="Trailing Segment ID" value="7" />
+			<property name="Trailing Segment At Alpha" value="1" />
+			<property name="Branch Segment ID" value="9" />
+			<property name="Branch Segment At Alpha" value="1" />
+		</object>
+		<object object_id="2" type="Point" name="Point_S2">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="0" />
+			<property name="Facing Segment ID" value="11" />
+			<property name="Facing Segment At Alpha" value="1" />
+			<property name="Trailing Segment ID" value="7" />
+			<property name="Trailing Segment At Alpha" value="0" />
+			<property name="Branch Segment ID" value="9" />
+			<property name="Branch Segment At Alpha" value="0" />
+		</object>
+		<object object_id="3" type="Point" name="Point_LEV2_North">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="1" />
+			<property name="Facing Segment ID" value="14" />
+			<property name="Facing Segment At Alpha" value="1" />
+			<property name="Trailing Segment ID" value="13" />
+			<property name="Trailing Segment At Alpha" value="0" />
+			<property name="Branch Segment ID" value="15" />
+			<property name="Branch Segment At Alpha" value="0" />
+		</object>
+		<object object_id="4" type="Point" name="Point_LEV2_South">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="0" />
+			<property name="Facing Segment ID" value="11" />
+			<property name="Facing Segment At Alpha" value="0" />
+			<property name="Trailing Segment ID" value="13" />
+			<property name="Trailing Segment At Alpha" value="1" />
+			<property name="Branch Segment ID" value="15" />
+			<property name="Branch Segment At Alpha" value="1" />
+		</object>
+		<object object_id="10000" type="Buffer_Stop" name="Buffer_Stop">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="2.0" />
+			<property name="label1" value="ABCDE" />
+			<property name="label2" value="12345" />
+		</object>
+		<object object_id="10001" type="CBTC Beacon" name="CBTC Beacon">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="10002" type="Main_Line_Signal_Long" name="Main_Line_Signal_Long">
+			<property name="Initial State" value="Violet" />
+			<property name="User State" value="Automated" />
+			<property name="label1" value="ABCDE" />
+			<property name="label2" value="12345" />
+		</object>
+		<object object_id="10003" type="Route_Indicator" name="Route_Indicator">
+			<property name="Initial State" value="M" />
+		</object>
+		<object object_id="10004" type="Main_Line_Signal_Short" name="Main_Line_Signal_Short">
+			<property name="Initial State" value="Violet" />
+			<property name="User State" value="Automated" />
+			<property name="label1" value="xxx" />
+			<property name="label2" value="12345" />
+		</object>
+		<object object_id="10005" type="Shunt_Signal" name="Shunt_Signal">
+			<property name="Initial State" value="Off" />
+			<property name="User State" value="Automated" />
+			<property name="label1" value="ABCDE" />
+			<property name="label2" value="xxx" />
+		</object>
+		<object object_id="10006" type="Shunt_Signal_Attach" name="Shunt_Signal_Attach">
+			<property name="Initial State" value="Off" />
+			<property name="label1" value="xxx" />
+			<property name="label2" value="xxx" />
+		</object>
+		<object object_id="10007" type="2A_Board" name="2A_Board_Start">
+			<property name="Initial State" value="Start" />
+		</object>
+		<object object_id="10008" type="2A_Board" name="2A_Board_End">
+			<property name="Initial State" value="End" />
+		</object>
+		<object object_id="10009" type="2B_Board" name="2B_Board_Start">
+			<property name="Initial State" value="Start" />
+		</object>
+		<object object_id="10010" type="2B_Board" name="2B_Board_End">
+			<property name="Initial State" value="End" />
+		</object>
+		<object object_id="10011" type="ATC_Begins_Marker_Board" name="ATC_Begins_Marker_Board">
+			<property name="Initial State" value="Visible" />
+		</object>
+		<object object_id="10012" type="Depot_Exit_Board" name="Depot_Exit_Board">
+			<property name="Initial State" value="Visible" />
+		</object>
+		<object object_id="10013" type="Fouling_Mark" name="Fouling_Mark">
+			<property name="Initial State" value="Visible" />
+		</object>
+		<object object_id="10014" type="Fouling_Mark_FM" name="Fouling_Mark_FM">
+			<property name="Initial State" value="Visible" />
+		</object>
+		<object object_id="10015" type="L7_Board" name="L7_Board">
+			<property name="Initial State" value="Start" />
+		</object>
+		<object object_id="10016" type="LT_Board" name="LT_Board">
+			<property name="Initial State" value="Start" />
+		</object>
+		<object object_id="10017" type="Neutral_Section_Warning_Board_Blue" name="Neutral_Section_Warning_Board_Blue_500m">
+			<property name="Initial State" value="500m" />
+		</object>
+		<object object_id="10018" type="Neutral_Section_Warning_Board_Blue" name="Neutral_Section_Warning_Board_Blue_250m">
+			<property name="Initial State" value="250m" />
+		</object>
+		<object object_id="10019" type="Neutral_Section_Warning_Board_White" name="Neutral_Section_Warning_Board_White_500m">
+			<property name="Initial State" value="500m" />
+		</object>
+		<object object_id="10020" type="Neutral_Section_Warning_Board_White" name="Neutral_Section_Warning_Board_White_250m">
+			<property name="Initial State" value="250m" />
+		</object>
+		<object object_id="10021" type="Normal_Stopping_Marker_Board" name="Normal_Stopping_Marker_Board">
+			<property name="Initial State" value="6C" />
+		</object>
+		<object object_id="10022" type="Restricted_Manual_Mode_Marker_Board" name="Restricted_Manual_Mode_Marker_Board">
+			<property name="Initial State" value="Visible" />
+		</object>
+		<object object_id="10023" type="Speed_Restriction_Marker_Board" name="Speed_Restriction_Marker_Board">
+			<property name="Initial State" value="45 km/h" />
+		</object>
+		<object object_id="10024" type="Stopping_Reverse_Marker_Board" name="Stopping_Reverse_Marker_Board">
+			<property name="Initial State" value="6C" />
+		</object>
+		<object object_id="10025" type="Virtual_Signal_Marker_Board" name="Virtual_Signal_Marker_Board">
+			<property name="Initial State" value="Visible" />
+			<property name="label" value="xxx" />
+		</object>
+		<object object_id="10026" type="Neutral Section" name="Neutral Section">
+			<property name="Length" value="4.8" />
+		</object>
+		<object object_id="10027" type="NS_Start_Sign" name="NS_Start_Sign">
+			<property name="Initial State" value="Visible" />
+		</object>
+		<object object_id="10028" type="NS_End_Sign" name="NS_End_Sign">
+			<property name="Initial State" value="Visible" />
+		</object>
+		<object object_id="10029" type="Marker Pin" name="Track Obstructions">
+			<property name="Initial State" value="Red" />
+			<property name="User State" value="Red" />
+			<property name="HeightAdjust" value="0" />
+			<property name="HorizontalAdjust" value="0" />
+			<property name="LateralAdjust" value="0" />
+			<property name="PoleEnable" value="1" />
+			<property name="BallEnable" value="1" />
+			<property name="MarkerLabel" value="XXXXXX" />
+		</object>
+		<object object_id="10030" type="Obstruction - Car" name="Obstruction - Car">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="1.0" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10031" type="Obstruction - Cow" name="Obstruction - Cow">
+			<property name="Initial State" value="Off Track" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10032" type="Obstruction - Horse" name="Obstruction - Horse">
+			<property name="Initial State" value="Off Track" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10033" type="Obstruction - Sheep" name="Obstruction - Sheep">
+			<property name="Initial State" value="Off Track" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10034" type="Obstruction - Sleeper" name="Obstruction - Sleeper">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10035" type="Obstruction - Tree" name="Obstruction - Tree">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10036" type="Unauthorised Personnel on the Track" name="Unauthorised Personnel on the Track">
+			<property name="Initial State" value="Idle" />
+		</object>
+		<object object_id="10037" type="Broken Rail" name="Broken Rail - Severe Break">
+			<property name="Initial State" value="Severe Break" />
+			<property name="Derailer" value="0.0" />
+		</object>
+		<object object_id="10038" type="Obstruction - Kite" name="Obstruction - Kite">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="2" />
+		</object>
+		<object object_id="10039" type="Obstruction - Rope" name="Obstruction - Rope">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10040" type="Obstruction - Shirt" name="Obstruction - Shirt">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10043" type="Track Workers" name="Track Workers">
+			<property name="Initial State" value="Idle" />
+			<property name="Collider" value="1" />
+		</object>
+		<object object_id="10045" type="Fire" name="Fire">
+			<property name="Initial State" value="Visible" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10046" type="Broken Rail" name="Broken Rail - Small Break">
+			<property name="Initial State" value="Small Break" />
+			<property name="Derailer" value="0.0" />
+		</object>
+		<object object_id="10047" type="Obstruction - Banner_Flag" name="Obstruction - Banner_Flag">
+			<property name="Initial State" value="Visible" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10048" type="Obstruction - Dog" name="Obstruction - Dog">
+			<property name="Initial State" value="Off Track" />
+			<property name="Collider" value="2" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="10049" type="Smoke" name="Smoke">
+			<property name="Initial State" value="Visible" />
+			<property name="Length" value="400" />
+		</object>
+		<object object_id="11000" type="Speed_Restriction_Marker_Board" name="PSR_50_DN_95 km/h">
+			<property name="Initial State" value="95 km/h" />
+		</object>
+		<object object_id="11001" type="Speed_Restriction_Marker_Board" name="PSR_19900_UP_95 km/h">
+			<property name="Initial State" value="95 km/h" />
+		</object>
+		<object object_id="11002" type="CBTC Beacon" name="BC_4019">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11003" type="CBTC Beacon" name="BC_2073">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11004" type="CBTC Beacon" name="BC_4027">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11005" type="CBTC Beacon" name="BC_2083">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11006" type="CBTC Beacon" name="BC_2084">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11007" type="CBTC Beacon" name="BC_4032">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11008" type="CBTC Beacon" name="BC_4036">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11009" type="CBTC Beacon" name="BC_4508">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11010" type="CBTC Beacon" name="BC_5005">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11011" type="CBTC Beacon" name="BC_1040">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11012" type="CBTC Beacon" name="BC_1051">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11013" type="CBTC Beacon" name="BC_4053">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11014" type="CBTC Beacon" name="BC_2093">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11015" type="CBTC Beacon" name="BC_2094">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11016" type="CBTC Beacon" name="BC_2097">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11017" type="CBTC Beacon" name="BC_2098">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11018" type="CBTC Beacon" name="BC_4055">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11019" type="CBTC Beacon" name="BC_2102">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11020" type="CBTC Beacon" name="BC_2103">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11021" type="CBTC Beacon" name="BC_2106">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11022" type="CBTC Beacon" name="BC_2107">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11023" type="CBTC Beacon" name="BC_4067">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11024" type="CBTC Beacon" name="BC_1068">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11025" type="CBTC Beacon" name="BC_1073">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11026" type="CBTC Beacon" name="BC_5023">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11027" type="CBTC Beacon" name="BC_5027">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11028" type="CBTC Beacon" name="BC_5030">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11029" type="CBTC Beacon" name="BC_5032">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11030" type="CBTC Beacon" name="BC_5034">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11031" type="CBTC Beacon" name="BC_5037">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11032" type="CBTC Beacon" name="BC_5040">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11033" type="CBTC Beacon" name="BC_1096">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11034" type="CBTC Beacon" name="BC_1098">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11035" type="CBTC Beacon" name="BC_4139">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11036" type="CBTC Beacon" name="BC_2134">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11037" type="CBTC Beacon" name="BC_2135">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11038" type="CBTC Beacon" name="BC_2139">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11039" type="CBTC Beacon" name="BC_2140">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11040" type="CBTC Beacon" name="BC_4141">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11041" type="CBTC Beacon" name="BC_2143">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11042" type="CBTC Beacon" name="BC_2144">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11043" type="CBTC Beacon" name="BC_2150">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11044" type="CBTC Beacon" name="BC_2151">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11045" type="CBTC Beacon" name="BC_4143">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11046" type="CBTC Beacon" name="BC_1101">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11047" type="CBTC Beacon" name="BC_1103">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11048" type="CBTC Beacon" name="BC_5050">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11049" type="CBTC Beacon" name="BC_5054">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11050" type="CBTC Beacon" name="BC_5056">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11051" type="CBTC Beacon" name="BC_1109">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11052" type="CBTC Beacon" name="BC_1112">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11053" type="CBTC Beacon" name="BC_4152">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11054" type="CBTC Beacon" name="BC_2173">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11055" type="CBTC Beacon" name="BC_2174">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11056" type="CBTC Beacon" name="BC_2177">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11057" type="CBTC Beacon" name="BC_2178">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11058" type="CBTC Beacon" name="BC_4154">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11059" type="CBTC Beacon" name="BC_2183">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11060" type="CBTC Beacon" name="BC_2184">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11061" type="CBTC Beacon" name="BC_2188">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11062" type="CBTC Beacon" name="BC_2189">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11063" type="CBTC Beacon" name="BC_4157">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11064" type="CBTC Beacon" name="BC_1118">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11065" type="CBTC Beacon" name="BC_1120">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11066" type="CBTC Beacon" name="BC_5063">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11067" type="CBTC Beacon" name="BC_5068">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11068" type="CBTC Beacon" name="BC_5070">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11069" type="CBTC Beacon" name="BC_1127">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11070" type="CBTC Beacon" name="BC_1130">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11071" type="CBTC Beacon" name="BC_4167">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11072" type="CBTC Beacon" name="BC_2209">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11073" type="CBTC Beacon" name="BC_2210">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11074" type="CBTC Beacon" name="BC_2214">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11075" type="CBTC Beacon" name="BC_2215">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11076" type="CBTC Beacon" name="BC_4170">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11077" type="CBTC Beacon" name="BC_2220">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11078" type="CBTC Beacon" name="BC_2223">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11079" type="CBTC Beacon" name="BC_2226">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11080" type="CBTC Beacon" name="BC_2227">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11081" type="CBTC Beacon" name="BC_4172">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11082" type="CBTC Beacon" name="BC_1137">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11083" type="CBTC Beacon" name="BC_1139">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11084" type="CBTC Beacon" name="BC_5076">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11085" type="CBTC Beacon" name="BC_5079">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11086" type="CBTC Beacon" name="BC_5085">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11087" type="CBTC Beacon" name="BC_5087">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11088" type="CBTC Beacon" name="BC_1142">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11089" type="CBTC Beacon" name="BC_1143">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11090" type="CBTC Beacon" name="BC_4174">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11091" type="CBTC Beacon" name="BC_2230">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11092" type="CBTC Beacon" name="BC_2231">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11093" type="CBTC Beacon" name="BC_2234">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11094" type="CBTC Beacon" name="BC_2235">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11095" type="CBTC Beacon" name="BC_4176">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11096" type="CBTC Beacon" name="BC_2238">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11097" type="CBTC Beacon" name="BC_2239">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11098" type="CBTC Beacon" name="BC_2243">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11099" type="CBTC Beacon" name="BC_2244">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11100" type="CBTC Beacon" name="BC_4182">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11101" type="CBTC Beacon" name="BC_1145">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11102" type="CBTC Beacon" name="BC_1147">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11103" type="CBTC Beacon" name="BC_5092">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11104" type="CBTC Beacon" name="BC_5094">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11105" type="CBTC Beacon" name="BC_5096">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11106" type="CBTC Beacon" name="BC_1156">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11107" type="CBTC Beacon" name="BC_1157">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11108" type="CBTC Beacon" name="BC_4195">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11109" type="CBTC Beacon" name="BC_2269">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11110" type="CBTC Beacon" name="BC_2270">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11111" type="CBTC Beacon" name="BC_2274">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11112" type="CBTC Beacon" name="BC_2275">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11113" type="CBTC Beacon" name="BC_4199">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11114" type="CBTC Beacon" name="BC_2281">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11115" type="CBTC Beacon" name="BC_2282">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11116" type="CBTC Beacon" name="BC_2285">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11117" type="CBTC Beacon" name="BC_2286">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11118" type="CBTC Beacon" name="BC_4204">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11119" type="CBTC Beacon" name="BC_1164">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11120" type="CBTC Beacon" name="BC_5101">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11121" type="CBTC Beacon" name="BC_5107">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11122" type="CBTC Beacon" name="BC_5110">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11123" type="CBTC Beacon" name="BC_5113">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11124" type="CBTC Beacon" name="BC_1170">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11125" type="CBTC Beacon" name="BC_1172">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11126" type="CBTC Beacon" name="BC_4218">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11127" type="CBTC Beacon" name="BC_2312">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11128" type="CBTC Beacon" name="BC_2313">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11129" type="CBTC Beacon" name="BC_2316">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11130" type="CBTC Beacon" name="BC_2317">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11131" type="CBTC Beacon" name="BC_4220">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11132" type="CBTC Beacon" name="BC_2320">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11133" type="CBTC Beacon" name="BC_2322">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11134" type="CBTC Beacon" name="BC_2325">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11135" type="CBTC Beacon" name="BC_2326">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11136" type="CBTC Beacon" name="BC_4221">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11137" type="CBTC Beacon" name="BC_1180">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11138" type="CBTC Beacon" name="BC_1182">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11139" type="CBTC Beacon" name="BC_4520">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11140" type="CBTC Beacon" name="BC_4225">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11141" type="CBTC Beacon" name="BC_4226">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11142" type="CBTC Beacon" name="BC_4230">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11143" type="CBTC Beacon" name="BC_1187">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11144" type="CBTC Beacon" name="BC_1188">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11145" type="CBTC Beacon" name="BC_4522">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11146" type="CBTC Beacon" name="BC_4238">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11147" type="CBTC Beacon" name="BC_2351">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11148" type="CBTC Beacon" name="BC_2352">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11149" type="CBTC Beacon" name="BC_2355">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11150" type="CBTC Beacon" name="BC_2356">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11151" type="CBTC Beacon" name="BC_4240">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11152" type="CBTC Beacon" name="BC_2359">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11153" type="CBTC Beacon" name="BC_2360">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11154" type="CBTC Beacon" name="BC_2363">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11155" type="CBTC Beacon" name="BC_2365">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11156" type="CBTC Beacon" name="BC_1197">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11157" type="CBTC Beacon" name="BC_1198">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11158" type="CBTC Beacon" name="BC_1199">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11159" type="CBTC Beacon" name="BC_4242">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11160" type="CBTC Beacon" name="BC_2367">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11161" type="CBTC Beacon" name="BC_2368">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11162" type="CBTC Beacon" name="BC_2370">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11163" type="CBTC Beacon" name="BC_2372">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11164" type="CBTC Beacon" name="BC_2374">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11165" type="CBTC Beacon" name="BC_4245">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11166" type="CBTC Beacon" name="BC_4523">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11167" type="CBTC Beacon" name="BC_4247">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11168" type="CBTC Beacon" name="BC_4250">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11169" type="CBTC Beacon" name="BC_1209">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11170" type="CBTC Beacon" name="BC_1210">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11171" type="CBTC Beacon" name="BC_2398">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11172" type="CBTC Beacon" name="BC_2399">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11173" type="CBTC Beacon" name="BC_2402">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11174" type="CBTC Beacon" name="BC_2403">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11175" type="CBTC Beacon" name="BC_4259">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11176" type="CBTC Beacon" name="BC_2408">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11177" type="CBTC Beacon" name="BC_2410">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11178" type="CBTC Beacon" name="BC_2413">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11179" type="CBTC Beacon" name="BC_2414">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11180" type="CBTC Beacon" name="BC_4261">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11181" type="CBTC Beacon" name="BC_1218">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11182" type="CBTC Beacon" name="BC_1220">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11183" type="CBTC Beacon" name="BC_5159">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11184" type="CBTC Beacon" name="BC_5172">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11185" type="CBTC Beacon" name="BC_5179">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11186" type="CBTC Beacon" name="BC_5184">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11187" type="CBTC Beacon" name="BC_5189">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11188" type="CBTC Beacon" name="BC_1233">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11189" type="CBTC Beacon" name="BC_1235">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11190" type="CBTC Beacon" name="BC_4271">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11191" type="CBTC Beacon" name="BC_2437">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11192" type="CBTC Beacon" name="BC_2438">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11193" type="CBTC Beacon" name="BC_2443">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11194" type="CBTC Beacon" name="BC_2444">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11195" type="CBTC Beacon" name="BC_4273">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11196" type="CBTC Beacon" name="BC_2447">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11197" type="CBTC Beacon" name="BC_2448">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11198" type="CBTC Beacon" name="BC_2451">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11199" type="CBTC Beacon" name="BC_2452">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11200" type="CBTC Beacon" name="BC_4276">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11201" type="CBTC Beacon" name="BC_1237">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11202" type="CBTC Beacon" name="BC_1239">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11203" type="CBTC Beacon" name="BC_5198">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11204" type="CBTC Beacon" name="BC_5202">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11205" type="CBTC Beacon" name="BC_5206">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11206" type="CBTC Beacon" name="BC_5209">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11207" type="CBTC Beacon" name="BC_5211">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11208" type="CBTC Beacon" name="BC_1254">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11209" type="CBTC Beacon" name="BC_1256">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11210" type="CBTC Beacon" name="BC_4284">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11211" type="CBTC Beacon" name="BC_2473">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11212" type="CBTC Beacon" name="BC_2474">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11213" type="CBTC Beacon" name="BC_2478">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11214" type="CBTC Beacon" name="BC_2479">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11215" type="CBTC Beacon" name="BC_4286">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11216" type="CBTC Beacon" name="BC_2483">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11217" type="CBTC Beacon" name="BC_2484">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11218" type="CBTC Beacon" name="BC_2487">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11219" type="CBTC Beacon" name="BC_2488">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11220" type="CBTC Beacon" name="BC_4288">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11221" type="CBTC Beacon" name="BC_1262">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11222" type="CBTC Beacon" name="BC_1265">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11223" type="CBTC Beacon" name="BC_5217">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11224" type="CBTC Beacon" name="BC_5219">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11225" type="CBTC Beacon" name="BC_5220">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11226" type="CBTC Beacon" name="BC_5230">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11227" type="CBTC Beacon" name="BC_1272">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11228" type="CBTC Beacon" name="BC_1275">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11229" type="CBTC Beacon" name="BC_4296">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11230" type="CBTC Beacon" name="BC_2510">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11231" type="CBTC Beacon" name="BC_2511">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11232" type="CBTC Beacon" name="BC_2514">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11233" type="CBTC Beacon" name="BC_2515">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11234" type="CBTC Beacon" name="BC_4298">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11235" type="CBTC Beacon" name="BC_2518">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11236" type="CBTC Beacon" name="BC_2520">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11237" type="CBTC Beacon" name="BC_2523">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11238" type="CBTC Beacon" name="BC_2524">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11239" type="CBTC Beacon" name="BC_4300">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11240" type="CBTC Beacon" name="BC_1281">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11241" type="CBTC Beacon" name="BC_1284">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11242" type="CBTC Beacon" name="BC_5237">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11243" type="CBTC Beacon" name="BC_5238">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11244" type="CBTC Beacon" name="BC_5244">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11245" type="CBTC Beacon" name="BC_1292">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11246" type="CBTC Beacon" name="BC_1294">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11247" type="CBTC Beacon" name="BC_4309">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11248" type="CBTC Beacon" name="BC_2545">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11249" type="CBTC Beacon" name="BC_2546">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11250" type="CBTC Beacon" name="BC_2549">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11251" type="CBTC Beacon" name="BC_2551">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11252" type="CBTC Beacon" name="BC_4311">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11253" type="CBTC Beacon" name="BC_2554">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11254" type="CBTC Beacon" name="BC_2555">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11255" type="CBTC Beacon" name="BC_2558">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11256" type="CBTC Beacon" name="BC_2559">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11257" type="CBTC Beacon" name="BC_4316">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11258" type="CBTC Beacon" name="BC_1300">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11259" type="CBTC Beacon" name="BC_1303">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11260" type="CBTC Beacon" name="BC_5250">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11261" type="CBTC Beacon" name="BC_5252">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11262" type="CBTC Beacon" name="BC_1311">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11263" type="CBTC Beacon" name="BC_1314">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11264" type="CBTC Beacon" name="BC_5254">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11265" type="CBTC Beacon" name="BC_4529">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11266" type="CBTC Beacon" name="BC_4341">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11267" type="CBTC Beacon" name="BC_2592">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11268" type="CBTC Beacon" name="BC_2593">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11269" type="CBTC Beacon" name="BC_2597">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11270" type="CBTC Beacon" name="BC_2598">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11271" type="CBTC Beacon" name="BC_4343">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11272" type="CBTC Beacon" name="BC_2601">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11273" type="CBTC Beacon" name="BC_2602">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11274" type="CBTC Beacon" name="BC_2607">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11275" type="CBTC Beacon" name="BC_2608">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11276" type="CBTC Beacon" name="BC_4345">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11277" type="CBTC Beacon" name="BC_4535">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11278" type="CBTC Beacon" name="BC_5256">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11279" type="CBTC Beacon" name="BC_1316">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11280" type="CBTC Beacon" name="BC_1318">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11281" type="CBTC Beacon" name="BC_5258">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11282" type="CBTC Beacon" name="BC_1321">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11283" type="CBTC Beacon" name="BC_1323">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11284" type="CBTC Beacon" name="BC_4348">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11285" type="CBTC Beacon" name="BC_2611">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11286" type="CBTC Beacon" name="BC_2612">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11287" type="CBTC Beacon" name="BC_2615">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11288" type="CBTC Beacon" name="BC_2616">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11289" type="CBTC Beacon" name="BC_4350">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11290" type="CBTC Beacon" name="BC_2619">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11291" type="CBTC Beacon" name="BC_2620">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11292" type="CBTC Beacon" name="BC_2623">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11293" type="CBTC Beacon" name="BC_2624">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11294" type="CBTC Beacon" name="BC_4352">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11295" type="CBTC Beacon" name="BC_1325">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11296" type="CBTC Beacon" name="BC_1328">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11297" type="CBTC Beacon" name="BC_5260">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11298" type="CBTC Beacon" name="BC_4537">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11299" type="CBTC Beacon" name="BC_4354">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11300" type="CBTC Beacon" name="BC_4358">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11301" type="CBTC Beacon" name="BC_4360">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11302" type="CBTC Beacon" name="BC_5262">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11303" type="CBTC Beacon" name="BC_1330">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11304" type="CBTC Beacon" name="BC_1332">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11305" type="CBTC Beacon" name="BC_4540">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11306" type="CBTC Beacon" name="BC_4364">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11307" type="CBTC Beacon" name="BC_2627">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11308" type="CBTC Beacon" name="BC_2628">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11309" type="CBTC Beacon" name="BC_2632">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11310" type="CBTC Beacon" name="BC_2634">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11311" type="CBTC Beacon" name="BC_4366">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11312" type="CBTC Beacon" name="BC_2638">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11313" type="CBTC Beacon" name="BC_2639">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11314" type="CBTC Beacon" name="BC_2642">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11315" type="CBTC Beacon" name="BC_2643">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11316" type="CBTC Beacon" name="BC_4369">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11317" type="CBTC Beacon" name="BC_4542">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11318" type="CBTC Beacon" name="BC_1337">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11319" type="CBTC Beacon" name="BC_1338">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11320" type="CBTC Beacon" name="BC_1339">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11321" type="CBTC Beacon" name="BC_4373">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11322" type="CBTC Beacon" name="BC_4374">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11323" type="CBTC Beacon" name="BC_4376">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11324" type="CBTC Beacon" name="BC_4378">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+		<object object_id="11325" type="CBTC Beacon Depot" name="BC_4379">
+			<property name="Initial State" value="Normal" />
+			<property name="MountType" value="Track" />
+			<property name="BeaconType" value="1000" />
+		</object>
+	</objects>
+	<track_objects>
+		<placement object_id="10000" segment_id="5" offset="500" orientation="From Alpha" />
+		<placement object_id="10001" segment_id="5" offset="505" orientation="From Alpha" />
+		<placement object_id="10002" segment_id="5" offset="510" orientation="From Alpha" />
+		<placement object_id="10003" segment_id="5" offset="510" orientation="From Alpha" />
+		<placement object_id="10004" segment_id="5" offset="515" orientation="From Alpha" />
+		<placement object_id="10005" segment_id="5" offset="520" orientation="From Alpha" />
+		<placement object_id="10006" segment_id="5" offset="510" orientation="From Alpha" />
+		<placement object_id="10007" segment_id="5" offset="525" orientation="From Alpha" />
+		<placement object_id="10008" segment_id="5" offset="525" orientation="From Alpha" />
+		<placement object_id="10009" segment_id="5" offset="530" orientation="From Alpha" />
+		<placement object_id="10010" segment_id="5" offset="530" orientation="From Alpha" />
+		<placement object_id="10011" segment_id="5" offset="535" orientation="From Alpha" />
+		<placement object_id="10012" segment_id="5" offset="540" orientation="From Alpha" />
+		<placement object_id="10013" segment_id="5" offset="545" orientation="From Alpha" />
+		<placement object_id="10014" segment_id="5" offset="550" orientation="From Alpha" />
+		<placement object_id="10015" segment_id="5" offset="555" orientation="From Alpha" />
+		<placement object_id="10016" segment_id="5" offset="560" orientation="From Alpha" />
+		<placement object_id="10017" segment_id="5" offset="565" orientation="From Alpha" />
+		<placement object_id="10018" segment_id="5" offset="565" orientation="From Alpha" />
+		<placement object_id="10019" segment_id="5" offset="570" orientation="From Alpha" />
+		<placement object_id="10020" segment_id="5" offset="570" orientation="From Alpha" />
+		<placement object_id="10021" segment_id="5" offset="575" orientation="From Alpha" />
+		<placement object_id="10022" segment_id="5" offset="580" orientation="From Alpha" />
+		<placement object_id="10023" segment_id="5" offset="585" orientation="From Alpha" />
+		<placement object_id="10024" segment_id="5" offset="590" orientation="From Alpha" />
+		<placement object_id="10025" segment_id="5" offset="595" orientation="From Alpha" />
+		<placement object_id="10026" segment_id="5" offset="600" orientation="From Alpha" />
+		<placement object_id="10027" segment_id="5" offset="605" orientation="From Alpha" />
+		<placement object_id="10028" segment_id="5" offset="610" orientation="From Alpha" />
+		<placement object_id="10029" segment_id="5" offset="810" orientation="From Alpha" />
+		<placement object_id="10030" segment_id="5" offset="820" orientation="Both" />
+		<placement object_id="10031" segment_id="5" offset="830" orientation="Both" />
+		<placement object_id="10032" segment_id="5" offset="840" orientation="Both" />
+		<placement object_id="10033" segment_id="5" offset="850" orientation="Both" />
+		<placement object_id="10034" segment_id="5" offset="860" orientation="Both" />
+		<placement object_id="10035" segment_id="5" offset="870" orientation="Both" />
+		<placement object_id="10036" segment_id="5" offset="880" orientation="Both" />
+		<placement object_id="10037" segment_id="5" offset="890" orientation="Both" />
+		<placement object_id="10038" segment_id="5" offset="900" orientation="Both" />
+		<placement object_id="10039" segment_id="5" offset="910" orientation="Both" />
+		<placement object_id="10040" segment_id="5" offset="920" orientation="Both" />
+		<placement object_id="10043" segment_id="5" offset="930" orientation="Both" />
+		<placement object_id="10045" segment_id="5" offset="940" orientation="Both" />
+		<placement object_id="10046" segment_id="5" offset="900" orientation="Both" />
+		<placement object_id="10047" segment_id="5" offset="950" orientation="Both" />
+		<placement object_id="10048" segment_id="5" offset="960" orientation="Both" />
+		<placement object_id="10049" segment_id="5" offset="970" orientation="Both" />
+		<placement object_id="11000" segment_id="2" offset="50" orientation="Both" />
+		<placement object_id="11001" segment_id="2" offset="19900" orientation="Both" />
+		<placement object_id="11002" segment_id="2" offset="55.53" orientation="Both" />
+		<placement object_id="11003" segment_id="2" offset="81.85" orientation="Both" />
+		<placement object_id="11004" segment_id="2" offset="149.56" orientation="Both" />
+		<placement object_id="11005" segment_id="2" offset="177.97" orientation="Both" />
+		<placement object_id="11006" segment_id="2" offset="223.81" orientation="Both" />
+		<placement object_id="11007" segment_id="2" offset="263.3" orientation="Both" />
+		<placement object_id="11008" segment_id="2" offset="314.22" orientation="Both" />
+		<placement object_id="11009" segment_id="2" offset="375.64" orientation="Both" />
+		<placement object_id="11010" segment_id="2" offset="401" orientation="Both" />
+		<placement object_id="11011" segment_id="2" offset="521" orientation="Both" />
+		<placement object_id="11012" segment_id="2" offset="542" orientation="Both" />
+		<placement object_id="11013" segment_id="2" offset="637.68" orientation="Both" />
+		<placement object_id="11014" segment_id="2" offset="652.54" orientation="Both" />
+		<placement object_id="11015" segment_id="2" offset="655.54" orientation="Both" />
+		<placement object_id="11016" segment_id="2" offset="675.46" orientation="Both" />
+		<placement object_id="11017" segment_id="2" offset="678.46" orientation="Both" />
+		<placement object_id="11018" segment_id="2" offset="736.48" orientation="Both" />
+		<placement object_id="11019" segment_id="2" offset="771.58" orientation="Both" />
+		<placement object_id="11020" segment_id="2" offset="774.58" orientation="Both" />
+		<placement object_id="11021" segment_id="2" offset="794.5" orientation="Both" />
+		<placement object_id="11022" segment_id="2" offset="797.5" orientation="Both" />
+		<placement object_id="11023" segment_id="2" offset="849.92" orientation="Both" />
+		<placement object_id="11024" segment_id="2" offset="929" orientation="Both" />
+		<placement object_id="11025" segment_id="2" offset="950" orientation="Both" />
+		<placement object_id="11026" segment_id="2" offset="1070" orientation="Both" />
+		<placement object_id="11027" segment_id="2" offset="1250" orientation="Both" />
+		<placement object_id="11028" segment_id="2" offset="1430" orientation="Both" />
+		<placement object_id="11029" segment_id="2" offset="1580" orientation="Both" />
+		<placement object_id="11030" segment_id="2" offset="1730" orientation="Both" />
+		<placement object_id="11031" segment_id="2" offset="1915" orientation="Both" />
+		<placement object_id="11032" segment_id="2" offset="2095" orientation="Both" />
+		<placement object_id="11033" segment_id="2" offset="2215" orientation="Both" />
+		<placement object_id="11034" segment_id="2" offset="2236" orientation="Both" />
+		<placement object_id="11035" segment_id="2" offset="2332.46" orientation="Both" />
+		<placement object_id="11036" segment_id="2" offset="2347.32" orientation="Both" />
+		<placement object_id="11037" segment_id="2" offset="2350.32" orientation="Both" />
+		<placement object_id="11038" segment_id="2" offset="2370.24" orientation="Both" />
+		<placement object_id="11039" segment_id="2" offset="2373.24" orientation="Both" />
+		<placement object_id="11040" segment_id="2" offset="2431.26" orientation="Both" />
+		<placement object_id="11041" segment_id="2" offset="2466.36" orientation="Both" />
+		<placement object_id="11042" segment_id="2" offset="2469.36" orientation="Both" />
+		<placement object_id="11043" segment_id="2" offset="2489.28" orientation="Both" />
+		<placement object_id="11044" segment_id="2" offset="2492.28" orientation="Both" />
+		<placement object_id="11045" segment_id="2" offset="2544.7" orientation="Both" />
+		<placement object_id="11046" segment_id="2" offset="2625" orientation="Both" />
+		<placement object_id="11047" segment_id="2" offset="2646" orientation="Both" />
+		<placement object_id="11048" segment_id="2" offset="2826" orientation="Both" />
+		<placement object_id="11049" segment_id="2" offset="3006" orientation="Both" />
+		<placement object_id="11050" segment_id="2" offset="3062" orientation="Both" />
+		<placement object_id="11051" segment_id="2" offset="3182" orientation="Both" />
+		<placement object_id="11052" segment_id="2" offset="3203" orientation="Both" />
+		<placement object_id="11053" segment_id="2" offset="3299.22" orientation="Both" />
+		<placement object_id="11054" segment_id="2" offset="3314.08" orientation="Both" />
+		<placement object_id="11055" segment_id="2" offset="3317.08" orientation="Both" />
+		<placement object_id="11056" segment_id="2" offset="3337" orientation="Both" />
+		<placement object_id="11057" segment_id="2" offset="3340" orientation="Both" />
+		<placement object_id="11058" segment_id="2" offset="3398.02" orientation="Both" />
+		<placement object_id="11059" segment_id="2" offset="3433.12" orientation="Both" />
+		<placement object_id="11060" segment_id="2" offset="3436.12" orientation="Both" />
+		<placement object_id="11061" segment_id="2" offset="3456.04" orientation="Both" />
+		<placement object_id="11062" segment_id="2" offset="3459.04" orientation="Both" />
+		<placement object_id="11063" segment_id="2" offset="3511.46" orientation="Both" />
+		<placement object_id="11064" segment_id="2" offset="3593" orientation="Both" />
+		<placement object_id="11065" segment_id="2" offset="3614" orientation="Both" />
+		<placement object_id="11066" segment_id="2" offset="3739" orientation="Both" />
+		<placement object_id="11067" segment_id="2" offset="3939" orientation="Both" />
+		<placement object_id="11068" segment_id="2" offset="4135" orientation="Both" />
+		<placement object_id="11069" segment_id="2" offset="4255" orientation="Both" />
+		<placement object_id="11070" segment_id="2" offset="4276" orientation="Both" />
+		<placement object_id="11071" segment_id="2" offset="4371.92" orientation="Both" />
+		<placement object_id="11072" segment_id="2" offset="4386.78" orientation="Both" />
+		<placement object_id="11073" segment_id="2" offset="4389.78" orientation="Both" />
+		<placement object_id="11074" segment_id="2" offset="4409.7" orientation="Both" />
+		<placement object_id="11075" segment_id="2" offset="4412.7" orientation="Both" />
+		<placement object_id="11076" segment_id="2" offset="4470.72" orientation="Both" />
+		<placement object_id="11077" segment_id="2" offset="4505.82" orientation="Both" />
+		<placement object_id="11078" segment_id="2" offset="4508.82" orientation="Both" />
+		<placement object_id="11079" segment_id="2" offset="4528.74" orientation="Both" />
+		<placement object_id="11080" segment_id="2" offset="4531.74" orientation="Both" />
+		<placement object_id="11081" segment_id="2" offset="4584.16" orientation="Both" />
+		<placement object_id="11082" segment_id="2" offset="4667" orientation="Both" />
+		<placement object_id="11083" segment_id="2" offset="4688" orientation="Both" />
+		<placement object_id="11084" segment_id="2" offset="4808" orientation="Both" />
+		<placement object_id="11085" segment_id="2" offset="4988" orientation="Both" />
+		<placement object_id="11086" segment_id="2" offset="5168" orientation="Both" />
+		<placement object_id="11087" segment_id="2" offset="5238" orientation="Both" />
+		<placement object_id="11088" segment_id="2" offset="5358" orientation="Both" />
+		<placement object_id="11089" segment_id="2" offset="5379" orientation="Both" />
+		<placement object_id="11090" segment_id="2" offset="5453.53" orientation="Both" />
+		<placement object_id="11091" segment_id="2" offset="5468.39" orientation="Both" />
+		<placement object_id="11092" segment_id="2" offset="5471.39" orientation="Both" />
+		<placement object_id="11093" segment_id="2" offset="5491.31" orientation="Both" />
+		<placement object_id="11094" segment_id="2" offset="5494.31" orientation="Both" />
+		<placement object_id="11095" segment_id="2" offset="5552.33" orientation="Both" />
+		<placement object_id="11096" segment_id="2" offset="5587.43" orientation="Both" />
+		<placement object_id="11097" segment_id="2" offset="5590.43" orientation="Both" />
+		<placement object_id="11098" segment_id="2" offset="5610.35" orientation="Both" />
+		<placement object_id="11099" segment_id="2" offset="5613.35" orientation="Both" />
+		<placement object_id="11100" segment_id="2" offset="5665.77" orientation="Both" />
+		<placement object_id="11101" segment_id="2" offset="5745" orientation="Both" />
+		<placement object_id="11102" segment_id="2" offset="5766" orientation="Both" />
+		<placement object_id="11103" segment_id="2" offset="5886" orientation="Both" />
+		<placement object_id="11104" segment_id="2" offset="6086" orientation="Both" />
+		<placement object_id="11105" segment_id="2" offset="6176.97" orientation="Both" />
+		<placement object_id="11106" segment_id="2" offset="6296.97" orientation="Both" />
+		<placement object_id="11107" segment_id="2" offset="6317.97" orientation="Both" />
+		<placement object_id="11108" segment_id="2" offset="6394.03" orientation="Both" />
+		<placement object_id="11109" segment_id="2" offset="6408.89" orientation="Both" />
+		<placement object_id="11110" segment_id="2" offset="6411.89" orientation="Both" />
+		<placement object_id="11111" segment_id="2" offset="6431.81" orientation="Both" />
+		<placement object_id="11112" segment_id="2" offset="6434.81" orientation="Both" />
+		<placement object_id="11113" segment_id="2" offset="6492.83" orientation="Both" />
+		<placement object_id="11114" segment_id="2" offset="6527.93" orientation="Both" />
+		<placement object_id="11115" segment_id="2" offset="6530.93" orientation="Both" />
+		<placement object_id="11116" segment_id="2" offset="6550.85" orientation="Both" />
+		<placement object_id="11117" segment_id="2" offset="6553.85" orientation="Both" />
+		<placement object_id="11118" segment_id="2" offset="6606.27" orientation="Both" />
+		<placement object_id="11119" segment_id="2" offset="6708" orientation="Both" />
+		<placement object_id="11120" segment_id="2" offset="6828" orientation="Both" />
+		<placement object_id="11121" segment_id="2" offset="6978" orientation="Both" />
+		<placement object_id="11122" segment_id="2" offset="7128" orientation="Both" />
+		<placement object_id="11123" segment_id="2" offset="7253" orientation="Both" />
+		<placement object_id="11124" segment_id="2" offset="7373" orientation="Both" />
+		<placement object_id="11125" segment_id="2" offset="7394" orientation="Both" />
+		<placement object_id="11126" segment_id="2" offset="7490.3" orientation="Both" />
+		<placement object_id="11127" segment_id="2" offset="7505.16" orientation="Both" />
+		<placement object_id="11128" segment_id="2" offset="7508.16" orientation="Both" />
+		<placement object_id="11129" segment_id="2" offset="7528.08" orientation="Both" />
+		<placement object_id="11130" segment_id="2" offset="7531.08" orientation="Both" />
+		<placement object_id="11131" segment_id="2" offset="7589.1" orientation="Both" />
+		<placement object_id="11132" segment_id="2" offset="7624.2" orientation="Both" />
+		<placement object_id="11133" segment_id="2" offset="7627.2" orientation="Both" />
+		<placement object_id="11134" segment_id="2" offset="7647.12" orientation="Both" />
+		<placement object_id="11135" segment_id="2" offset="7650.12" orientation="Both" />
+		<placement object_id="11136" segment_id="2" offset="7702.54" orientation="Both" />
+		<placement object_id="11137" segment_id="2" offset="7783" orientation="Both" />
+		<placement object_id="11138" segment_id="2" offset="7804" orientation="Both" />
+		<placement object_id="11139" segment_id="2" offset="7864.65" orientation="Both" />
+		<placement object_id="11140" segment_id="2" offset="7908.23" orientation="Both" />
+		<placement object_id="11141" segment_id="2" offset="7963.63" orientation="Both" />
+		<placement object_id="11142" segment_id="2" offset="8066" orientation="Both" />
+		<placement object_id="11143" segment_id="2" offset="8186" orientation="Both" />
+		<placement object_id="11144" segment_id="2" offset="8207" orientation="Both" />
+		<placement object_id="11145" segment_id="2" offset="8339.96" orientation="Both" />
+		<placement object_id="11146" segment_id="2" offset="8416.02" orientation="Both" />
+		<placement object_id="11147" segment_id="2" offset="8430.88" orientation="Both" />
+		<placement object_id="11148" segment_id="2" offset="8433.88" orientation="Both" />
+		<placement object_id="11149" segment_id="2" offset="8453.8" orientation="Both" />
+		<placement object_id="11150" segment_id="2" offset="8456.8" orientation="Both" />
+		<placement object_id="11151" segment_id="2" offset="8514.82" orientation="Both" />
+		<placement object_id="11152" segment_id="2" offset="8549.92" orientation="Both" />
+		<placement object_id="11153" segment_id="2" offset="8552.92" orientation="Both" />
+		<placement object_id="11154" segment_id="2" offset="8572.84" orientation="Both" />
+		<placement object_id="11155" segment_id="2" offset="8575.84" orientation="Both" />
+		<placement object_id="11156" segment_id="2" offset="8648" orientation="Both" />
+		<placement object_id="11157" segment_id="2" offset="8669" orientation="Both" />
+		<placement object_id="11158" segment_id="2" offset="8690" orientation="Both" />
+		<placement object_id="11159" segment_id="2" offset="8751.84" orientation="Both" />
+		<placement object_id="11160" segment_id="2" offset="8778.16" orientation="Both" />
+		<placement object_id="11161" segment_id="2" offset="8828.19" orientation="Both" />
+		<placement object_id="11162" segment_id="2" offset="8874.16" orientation="Both" />
+		<placement object_id="11163" segment_id="2" offset="8970.15" orientation="Both" />
+		<placement object_id="11164" segment_id="2" offset="8970.15" orientation="Both" />
+		<placement object_id="11165" segment_id="2" offset="9006.03" orientation="Both" />
+		<placement object_id="11166" segment_id="2" offset="9072.53" orientation="Both" />
+		<placement object_id="11167" segment_id="2" offset="9249.73" orientation="Both" />
+		<placement object_id="11168" segment_id="2" offset="9338.88" orientation="Both" />
+		<placement object_id="11169" segment_id="2" offset="9388.86" orientation="Both" />
+		<placement object_id="11170" segment_id="2" offset="9409.86" orientation="Both" />
+		<placement object_id="11171" segment_id="2" offset="9463.91" orientation="Both" />
+		<placement object_id="11172" segment_id="2" offset="9466.91" orientation="Both" />
+		<placement object_id="11173" segment_id="2" offset="9486.83" orientation="Both" />
+		<placement object_id="11174" segment_id="2" offset="9489.83" orientation="Both" />
+		<placement object_id="11175" segment_id="2" offset="9547.85" orientation="Both" />
+		<placement object_id="11176" segment_id="2" offset="9582.95" orientation="Both" />
+		<placement object_id="11177" segment_id="2" offset="9585.95" orientation="Both" />
+		<placement object_id="11178" segment_id="2" offset="9605.87" orientation="Both" />
+		<placement object_id="11179" segment_id="2" offset="9608.87" orientation="Both" />
+		<placement object_id="11180" segment_id="2" offset="9661.29" orientation="Both" />
+		<placement object_id="11181" segment_id="2" offset="9742" orientation="Both" />
+		<placement object_id="11182" segment_id="2" offset="9763" orientation="Both" />
+		<placement object_id="11183" segment_id="2" offset="9883" orientation="Both" />
+		<placement object_id="11184" segment_id="2" offset="10083" orientation="Both" />
+		<placement object_id="11185" segment_id="2" offset="10233" orientation="Both" />
+		<placement object_id="11186" segment_id="2" offset="10383" orientation="Both" />
+		<placement object_id="11187" segment_id="2" offset="10527" orientation="Both" />
+		<placement object_id="11188" segment_id="2" offset="10647" orientation="Both" />
+		<placement object_id="11189" segment_id="2" offset="10668" orientation="Both" />
+		<placement object_id="11190" segment_id="2" offset="10762.97" orientation="Both" />
+		<placement object_id="11191" segment_id="2" offset="10777.83" orientation="Both" />
+		<placement object_id="11192" segment_id="2" offset="10780.83" orientation="Both" />
+		<placement object_id="11193" segment_id="2" offset="10800.74" orientation="Both" />
+		<placement object_id="11194" segment_id="2" offset="10803.74" orientation="Both" />
+		<placement object_id="11195" segment_id="2" offset="10861.77" orientation="Both" />
+		<placement object_id="11196" segment_id="2" offset="10896.86" orientation="Both" />
+		<placement object_id="11197" segment_id="2" offset="10899.86" orientation="Both" />
+		<placement object_id="11198" segment_id="2" offset="10919.79" orientation="Both" />
+		<placement object_id="11199" segment_id="2" offset="10922.79" orientation="Both" />
+		<placement object_id="11200" segment_id="2" offset="10975.21" orientation="Both" />
+		<placement object_id="11201" segment_id="2" offset="11056" orientation="Both" />
+		<placement object_id="11202" segment_id="2" offset="11077" orientation="Both" />
+		<placement object_id="11203" segment_id="2" offset="11197" orientation="Both" />
+		<placement object_id="11204" segment_id="2" offset="11397" orientation="Both" />
+		<placement object_id="11205" segment_id="2" offset="11597" orientation="Both" />
+		<placement object_id="11206" segment_id="2" offset="11797" orientation="Both" />
+		<placement object_id="11207" segment_id="2" offset="11918" orientation="Both" />
+		<placement object_id="11208" segment_id="2" offset="12038" orientation="Both" />
+		<placement object_id="11209" segment_id="2" offset="12059" orientation="Both" />
+		<placement object_id="11210" segment_id="2" offset="12155.34" orientation="Both" />
+		<placement object_id="11211" segment_id="2" offset="12170.2" orientation="Both" />
+		<placement object_id="11212" segment_id="2" offset="12173.2" orientation="Both" />
+		<placement object_id="11213" segment_id="2" offset="12193.12" orientation="Both" />
+		<placement object_id="11214" segment_id="2" offset="12196.12" orientation="Both" />
+		<placement object_id="11215" segment_id="2" offset="12254.14" orientation="Both" />
+		<placement object_id="11216" segment_id="2" offset="12289.24" orientation="Both" />
+		<placement object_id="11217" segment_id="2" offset="12292.24" orientation="Both" />
+		<placement object_id="11218" segment_id="2" offset="12312.16" orientation="Both" />
+		<placement object_id="11219" segment_id="2" offset="12315.16" orientation="Both" />
+		<placement object_id="11220" segment_id="2" offset="12367.58" orientation="Both" />
+		<placement object_id="11221" segment_id="2" offset="12447" orientation="Both" />
+		<placement object_id="11222" segment_id="2" offset="12468" orientation="Both" />
+		<placement object_id="11223" segment_id="2" offset="12588" orientation="Both" />
+		<placement object_id="11224" segment_id="2" offset="12788" orientation="Both" />
+		<placement object_id="11225" segment_id="2" offset="12923" orientation="Both" />
+		<placement object_id="11226" segment_id="2" offset="13116" orientation="Both" />
+		<placement object_id="11227" segment_id="2" offset="13236" orientation="Both" />
+		<placement object_id="11228" segment_id="2" offset="13257" orientation="Both" />
+		<placement object_id="11229" segment_id="2" offset="13353.28" orientation="Both" />
+		<placement object_id="11230" segment_id="2" offset="13368.14" orientation="Both" />
+		<placement object_id="11231" segment_id="2" offset="13371.14" orientation="Both" />
+		<placement object_id="11232" segment_id="2" offset="13391.06" orientation="Both" />
+		<placement object_id="11233" segment_id="2" offset="13394.06" orientation="Both" />
+		<placement object_id="11234" segment_id="2" offset="13452.08" orientation="Both" />
+		<placement object_id="11235" segment_id="2" offset="13487.18" orientation="Both" />
+		<placement object_id="11236" segment_id="2" offset="13490.18" orientation="Both" />
+		<placement object_id="11237" segment_id="2" offset="13510.1" orientation="Both" />
+		<placement object_id="11238" segment_id="2" offset="13513.1" orientation="Both" />
+		<placement object_id="11239" segment_id="2" offset="13565.52" orientation="Both" />
+		<placement object_id="11240" segment_id="2" offset="13645" orientation="Both" />
+		<placement object_id="11241" segment_id="2" offset="13666" orientation="Both" />
+		<placement object_id="11242" segment_id="2" offset="13786" orientation="Both" />
+		<placement object_id="11243" segment_id="2" offset="13946" orientation="Both" />
+		<placement object_id="11244" segment_id="2" offset="14138" orientation="Both" />
+		<placement object_id="11245" segment_id="2" offset="14258" orientation="Both" />
+		<placement object_id="11246" segment_id="2" offset="14279" orientation="Both" />
+		<placement object_id="11247" segment_id="2" offset="14375.37" orientation="Both" />
+		<placement object_id="11248" segment_id="2" offset="14390.23" orientation="Both" />
+		<placement object_id="11249" segment_id="2" offset="14393.23" orientation="Both" />
+		<placement object_id="11250" segment_id="2" offset="14413.15" orientation="Both" />
+		<placement object_id="11251" segment_id="2" offset="14416.15" orientation="Both" />
+		<placement object_id="11252" segment_id="2" offset="14474.17" orientation="Both" />
+		<placement object_id="11253" segment_id="2" offset="14509.27" orientation="Both" />
+		<placement object_id="11254" segment_id="2" offset="14512.27" orientation="Both" />
+		<placement object_id="11255" segment_id="2" offset="14532.19" orientation="Both" />
+		<placement object_id="11256" segment_id="2" offset="14535.19" orientation="Both" />
+		<placement object_id="11257" segment_id="2" offset="14587.61" orientation="Both" />
+		<placement object_id="11258" segment_id="2" offset="14667" orientation="Both" />
+		<placement object_id="11259" segment_id="2" offset="14688" orientation="Both" />
+		<placement object_id="11260" segment_id="2" offset="14808" orientation="Both" />
+		<placement object_id="11261" segment_id="2" offset="14920" orientation="Both" />
+		<placement object_id="11262" segment_id="2" offset="15040" orientation="Both" />
+		<placement object_id="11263" segment_id="2" offset="15061" orientation="Both" />
+		<placement object_id="11264" segment_id="2" offset="15153.41" orientation="Both" />
+		<placement object_id="11265" segment_id="2" offset="15303.41" orientation="Both" />
+		<placement object_id="11266" segment_id="2" offset="15379.47" orientation="Both" />
+		<placement object_id="11267" segment_id="2" offset="15394.33" orientation="Both" />
+		<placement object_id="11268" segment_id="2" offset="15397.33" orientation="Both" />
+		<placement object_id="11269" segment_id="2" offset="15417.25" orientation="Both" />
+		<placement object_id="11270" segment_id="2" offset="15420.25" orientation="Both" />
+		<placement object_id="11271" segment_id="2" offset="15478.27" orientation="Both" />
+		<placement object_id="11272" segment_id="2" offset="15513.37" orientation="Both" />
+		<placement object_id="11273" segment_id="2" offset="15516.37" orientation="Both" />
+		<placement object_id="11274" segment_id="2" offset="15536.29" orientation="Both" />
+		<placement object_id="11275" segment_id="2" offset="15539.29" orientation="Both" />
+		<placement object_id="11276" segment_id="2" offset="15591.71" orientation="Both" />
+		<placement object_id="11277" segment_id="2" offset="15641.67" orientation="Both" />
+		<placement object_id="11278" segment_id="2" offset="15791.67" orientation="Both" />
+		<placement object_id="11279" segment_id="2" offset="15865" orientation="Both" />
+		<placement object_id="11280" segment_id="2" offset="15886" orientation="Both" />
+		<placement object_id="11281" segment_id="2" offset="15949" orientation="Both" />
+		<placement object_id="11282" segment_id="2" offset="16069" orientation="Both" />
+		<placement object_id="11283" segment_id="2" offset="16090" orientation="Both" />
+		<placement object_id="11284" segment_id="2" offset="16186.52" orientation="Both" />
+		<placement object_id="11285" segment_id="2" offset="16201.38" orientation="Both" />
+		<placement object_id="11286" segment_id="2" offset="16204.38" orientation="Both" />
+		<placement object_id="11287" segment_id="2" offset="16224.3" orientation="Both" />
+		<placement object_id="11288" segment_id="2" offset="16227.3" orientation="Both" />
+		<placement object_id="11289" segment_id="2" offset="16285.32" orientation="Both" />
+		<placement object_id="11290" segment_id="2" offset="16320.42" orientation="Both" />
+		<placement object_id="11291" segment_id="2" offset="16323.42" orientation="Both" />
+		<placement object_id="11292" segment_id="2" offset="16343.34" orientation="Both" />
+		<placement object_id="11293" segment_id="2" offset="16346.34" orientation="Both" />
+		<placement object_id="11294" segment_id="2" offset="16398.76" orientation="Both" />
+		<placement object_id="11295" segment_id="2" offset="16478" orientation="Both" />
+		<placement object_id="11296" segment_id="2" offset="16499" orientation="Both" />
+		<placement object_id="11297" segment_id="2" offset="16619" orientation="Both" />
+		<placement object_id="11298" segment_id="2" offset="16762.86" orientation="Both" />
+		<placement object_id="11299" segment_id="2" offset="16806.44" orientation="Both" />
+		<placement object_id="11300" segment_id="2" offset="16861.84" orientation="Both" />
+		<placement object_id="11301" segment_id="2" offset="16948.41" orientation="Both" />
+		<placement object_id="11302" segment_id="2" offset="17109" orientation="Both" />
+		<placement object_id="11303" segment_id="2" offset="17229" orientation="Both" />
+		<placement object_id="11304" segment_id="2" offset="17250" orientation="Both" />
+		<placement object_id="11305" segment_id="2" offset="17402.35" orientation="Both" />
+		<placement object_id="11306" segment_id="2" offset="17478.41" orientation="Both" />
+		<placement object_id="11307" segment_id="2" offset="17493.27" orientation="Both" />
+		<placement object_id="11308" segment_id="2" offset="17496.27" orientation="Both" />
+		<placement object_id="11309" segment_id="2" offset="17516.19" orientation="Both" />
+		<placement object_id="11310" segment_id="2" offset="17519.19" orientation="Both" />
+		<placement object_id="11311" segment_id="2" offset="17577.21" orientation="Both" />
+		<placement object_id="11312" segment_id="2" offset="17612.31" orientation="Both" />
+		<placement object_id="11313" segment_id="2" offset="17615.31" orientation="Both" />
+		<placement object_id="11314" segment_id="2" offset="17635.23" orientation="Both" />
+		<placement object_id="11315" segment_id="2" offset="17638.23" orientation="Both" />
+		<placement object_id="11316" segment_id="2" offset="17690.65" orientation="Both" />
+		<placement object_id="11317" segment_id="2" offset="17740.61" orientation="Both" />
+		<placement object_id="11318" segment_id="2" offset="17827" orientation="Both" />
+		<placement object_id="11319" segment_id="2" offset="17848" orientation="Both" />
+		<placement object_id="11320" segment_id="2" offset="17869" orientation="Both" />
+		<placement object_id="11321" segment_id="2" offset="17998.08" orientation="Both" />
+		<placement object_id="11322" segment_id="2" offset="18061.73" orientation="Both" />
+		<placement object_id="11323" segment_id="2" offset="18107.57" orientation="Both" />
+		<placement object_id="11324" segment_id="2" offset="18171.21" orientation="Both" />
+		<placement object_id="11325" segment_id="2" offset="18234.85" orientation="Both" />
+	</track_objects>
+	<points_behaviour>
+		<point_behaviour object_id="1">
+			<state state_id="Main Line">
+				<active_connection connection_id="1" />
+				<active_connection connection_id="2" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="3" />
+				<active_connection connection_id="4" />
+			</state>
+		</point_behaviour>
+		<point_behaviour object_id="2">
+			<state state_id="Main Line">
+				<active_connection connection_id="5" />
+				<active_connection connection_id="6" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="7" />
+				<active_connection connection_id="8" />
+			</state>
+		</point_behaviour>
+		<point_behaviour object_id="3">
+			<state state_id="Main Line">
+				<active_connection connection_id="9" />
+				<active_connection connection_id="10" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="11" />
+				<active_connection connection_id="12" />
+			</state>
+		</point_behaviour>
+		<point_behaviour object_id="4">
+			<state state_id="Main Line">
+				<active_connection connection_id="13" />
+				<active_connection connection_id="14" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="15" />
+				<active_connection connection_id="16" />
+			</state>
+		</point_behaviour>
+	</points_behaviour>
+	<track_geometry>
+		<segment_geometry segment_id="14">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="5200.00000542" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="10000" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="20000" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="2">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="0" y="500" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="9999.995" y="500" z="10.999995" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="19999.99" y="500" z="20.99999" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="3">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="0" y="1000" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="5000" y="1000" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-1000" />
+				</transition>
+			</point>
+			<point x="5783.32690963" y="1378.39003173" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="5845.48790645" y="1456.72272269" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="1000" />
+				</transition>
+			</point>
+			<point x="6628.81481608" y="1835.11275442" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="6728.81481608" y="1835.11275442" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="1000" />
+				</transition>
+			</point>
+			<point x="7512.14172571" y="1456.72272269" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="7574.30272254" y="1378.39003173" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-1000" />
+				</transition>
+			</point>
+			<point x="8357.62963216" y="1000" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="9457.62963216" y="1000" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="100" />
+				</transition>
+			</point>
+			<point x="9541.77673064" y="954.030230587" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="9595.80696123" y="869.883132106" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-100" />
+				</transition>
+			</point>
+			<point x="9679.95405971" y="823.913362693" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="10779.9540597" y="823.913362693" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-100" />
+				</transition>
+			</point>
+			<point x="10864.1011582" y="869.883132106" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="10918.1313888" y="954.030230587" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="100" />
+				</transition>
+			</point>
+			<point x="11002.2784873" y="1000" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="19302.2784873" y="1000" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="7">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="2100.00000894" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="3099.99999578" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="5">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="0" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="2100.00000894" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="9">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="2100.00000894" y="10" z="1" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-669.831686387" />
+					<arg name="rb" value="-493.443560218" />
+					<arg name="re" value="-5735.51370057" />
+				</transition>
+			</point>
+			<point x="2101.42172502" y="10.0017133642" z="0.999823790404" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-493.443560218" />
+					<arg name="rb" value="-2842.05286722" />
+					<arg name="re" value="3224.76220082" />
+				</transition>
+			</point>
+			<point x="2101.99999654" y="10.0034157095" z="0.999732296062" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-2842.05286722" />
+					<arg name="rb" value="1950.99203828" />
+					<arg name="re" value="10079.8889959" />
+				</transition>
+			</point>
+			<point x="2102.35687663" y="10.0045642805" z="0.999714146625" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1950.99203828" />
+					<arg name="rb" value="-136.798023089" />
+					<arg name="re" value="1353.9653687" />
+				</transition>
+			</point>
+			<point x="2103.45712676" y="10.0093292946" z="1.00012471742" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-136.798023089" />
+					<arg name="rb" value="-1445.01491685" />
+					<arg name="re" value="-96.4613840796" />
+				</transition>
+			</point>
+			<point x="2103.50931217" y="10.0096972598" z="1.0001512785" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1445.01491685" />
+					<arg name="rb" value="-480.449004184" />
+					<arg name="re" value="-15980.014083" />
+				</transition>
+			</point>
+			<point x="2114.47938286" y="10.1573994266" z="0.99900127113" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-480.449004184" />
+					<arg name="rb" value="1559.84830077" />
+					<arg name="re" value="-1185.3598001" />
+				</transition>
+			</point>
+			<point x="2115.38842532" y="10.1781966204" z="0.998245073025" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1559.84830077" />
+					<arg name="rb" value="-636.258373821" />
+					<arg name="re" value="205.010127106" />
+				</transition>
+			</point>
+			<point x="2115.68828126" y="10.1850974431" z="0.998100001069" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-636.258373821" />
+					<arg name="rb" value="-697.369615198" />
+					<arg name="re" value="-72110.7084998" />
+				</transition>
+			</point>
+			<point x="2137.7223322" y="11.0660150704" z="1.00019340068" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-697.369615198" />
+					<arg name="rb" value="-577.056917437" />
+					<arg name="re" value="-9347.21633086" />
+				</transition>
+			</point>
+			<point x="2141.8438713" y="11.3112968725" z="0.99904211614" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-577.056917437" />
+					<arg name="rb" value="-5262.94089023" />
+					<arg name="re" value="216.4564908" />
+				</transition>
+			</point>
+			<point x="2142.26644012" y="11.3379844564" z="0.999244654816" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-5262.94089023" />
+					<arg name="rb" value="-836.160416673" />
+					<arg name="re" value="-67.6356309884" />
+				</transition>
+			</point>
+			<point x="2142.35206578" y="11.3434069511" z="0.999315192123" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-836.160416673" />
+					<arg name="rb" value="672.339054141" />
+					<arg name="re" value="-64052.3863483" />
+				</transition>
+			</point>
+			<point x="2159.24382984" y="12.4570426445" z="1.00025870549" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="672.339054141" />
+					<arg name="rb" value="654.112961102" />
+					<arg name="re" value="374087.687437" />
+				</transition>
+			</point>
+			<point x="2189.94279748" y="13.6165847418" z="0.999172770448" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="654.112961102" />
+					<arg name="rb" value="-13310685.531" />
+					<arg name="re" value="-4981256.63163" />
+				</transition>
+			</point>
+			<point x="2208.92622789" y="13.7078357812" z="0.999245173328" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-13310685.531" />
+					<arg name="rb" value="-13263006.8222" />
+					<arg name="re" value="713327757.648" />
+				</transition>
+			</point>
+			<point x="2990.01708676" y="13.7075428728" z="1.00116337001" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-13263006.8222" />
+					<arg name="rb" value="734.813989143" />
+					<arg name="re" value="-207645.331335" />
+				</transition>
+			</point>
+			<point x="3009.98473087" y="13.6176986609" z="1.00026323766" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="734.813989143" />
+					<arg name="rb" value="577.199294915" />
+					<arg name="re" value="-8995.31141728" />
+				</transition>
+			</point>
+			<point x="3010.52021662" y="13.610225543" z="1.00019740487" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="577.199294915" />
+					<arg name="rb" value="695.923308007" />
+					<arg name="re" value="45657.7131272" />
+				</transition>
+			</point>
+			<point x="3023.77154041" y="13.2760163549" z="1.00009757289" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="695.923308007" />
+					<arg name="rb" value="568.02099583" />
+					<arg name="re" value="-33325.8439797" />
+				</transition>
+			</point>
+			<point x="3027.47386726" y="13.1343180538" z="1.00040155469" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="568.02099583" />
+					<arg name="rb" value="1274.78113964" />
+					<arg name="re" value="12693.9240481" />
+				</transition>
+			</point>
+			<point x="3030.10057527" y="13.0207676339" z="1.00074339089" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1274.78113964" />
+					<arg name="rb" value="357.730185944" />
+					<arg name="re" value="-2954.13925818" />
+				</transition>
+			</point>
+			<point x="3034.1614389" y="12.8272496877" z="0.998895540345" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="357.730185944" />
+					<arg name="rb" value="1093.6495771" />
+					<arg name="re" value="121.824550001" />
+				</transition>
+			</point>
+			<point x="3034.33359853" y="12.8182677286" z="0.998820536695" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1093.6495771" />
+					<arg name="rb" value="587.065356029" />
+					<arg name="re" value="-140484.923426" />
+				</transition>
+			</point>
+			<point x="3039.78856006" y="12.5153478716" z="1.00020295065" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="587.065356029" />
+					<arg name="rb" value="-11976.5408114" />
+					<arg name="re" value="-14878.9700306" />
+				</transition>
+			</point>
+			<point x="3050.11760948" y="11.8415395826" z="0.999020315388" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-11976.5408114" />
+					<arg name="rb" value="-1454.66605077" />
+					<arg name="re" value="4022.75957754" />
+				</transition>
+			</point>
+			<point x="3055.0467477" y="11.5103514942" z="0.999770955407" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1454.66605077" />
+					<arg name="rb" value="-511.458457446" />
+					<arg name="re" value="-3902.50557696" />
+				</transition>
+			</point>
+			<point x="3061.21293021" y="11.1247149483" z="0.999612835957" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-511.458457446" />
+					<arg name="rb" value="-956.231465267" />
+					<arg name="re" value="1669.0578248" />
+				</transition>
+			</point>
+			<point x="3063.81188481" y="10.9801300102" z="0.999515501421" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-956.231465267" />
+					<arg name="rb" value="-583.852057609" />
+					<arg name="re" value="-4162.68574848" />
+				</transition>
+			</point>
+			<point x="3068.63702233" y="10.735016019" z="1.00029847998" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-583.852057609" />
+					<arg name="rb" value="-761.336169938" />
+					<arg name="re" value="11486.2888588" />
+				</transition>
+			</point>
+			<point x="3078.56807813" y="10.3444716172" z="1.00044141577" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-761.336169938" />
+					<arg name="rb" value="-580.289872314" />
+					<arg name="re" value="-4912.43128907" />
+				</transition>
+			</point>
+			<point x="3083.82513624" y="10.1956383034" z="0.99997717442" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-580.289872314" />
+					<arg name="rb" value="-946.825182626" />
+					<arg name="re" value="5333.40911124" />
+				</transition>
+			</point>
+			<point x="3090.49535969" y="10.0680570496" z="0.999989688587" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-946.825182626" />
+					<arg name="rb" value="-323.709951562" />
+					<arg name="re" value="-20824.3005985" />
+				</transition>
+			</point>
+			<point x="3092.65015772" y="10.040061169" z="1.00123004211" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-323.709951562" />
+					<arg name="rb" value="-3880.16415723" />
+					<arg name="re" value="-1831.13690113" />
+				</transition>
+			</point>
+			<point x="3094.12272369" y="10.0270822591" z="1.00140929956" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-3880.16415723" />
+					<arg name="rb" value="-914.028042556" />
+					<arg name="re" value="70067.299889" />
+				</transition>
+			</point>
+			<point x="3096.00003231" y="10.0131424878" z="1.00090807639" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-914.028042556" />
+					<arg name="rb" value="-528.055278899" />
+					<arg name="re" value="-3455.89071179" />
+				</transition>
+			</point>
+			<point x="3096.56826532" y="10.0095776898" z="1.00071726002" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-528.055278899" />
+					<arg name="rb" value="-669.83168438" />
+					<arg name="re" value="8209.66456251" />
+				</transition>
+			</point>
+			<point x="3099.99999578" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="13">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="4199.99999465" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="5200.00000542" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="11">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="3099.99999578" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="4199.99999465" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="15">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="4199.99999465" y="10" z="1" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="399.81812966" />
+					<arg name="rb" value="414.422575202" />
+					<arg name="re" value="-9425.94048498" />
+				</transition>
+			</point>
+			<point x="4201.92870853" y="9.99540243807" z="0.999802674049" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="414.422575202" />
+					<arg name="rb" value="258.413629448" />
+					<arg name="re" value="5600.52368705" />
+				</transition>
+			</point>
+			<point x="4204.99985541" y="9.96717698118" z="1.00001636853" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="258.413629448" />
+					<arg name="rb" value="-2012.8118349" />
+					<arg name="re" value="-1439.90019473" />
+				</transition>
+			</point>
+			<point x="4206.46390379" y="9.94352370624" z="0.999775241599" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-2012.8118349" />
+					<arg name="rb" value="265.746567435" />
+					<arg name="re" value="2167.37791462" />
+				</transition>
+			</point>
+			<point x="4208.63087652" y="9.90482416882" z="0.999399986408" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="265.746567435" />
+					<arg name="rb" value="483.817412251" />
+					<arg name="re" value="85026.8775798" />
+				</transition>
+			</point>
+			<point x="4211.78802204" y="9.82447229936" z="1.00049087104" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="483.817412251" />
+					<arg name="rb" value="329.306159511" />
+					<arg name="re" value="-4296.09753584" />
+				</transition>
+			</point>
+			<point x="4217.46011094" y="9.61800210342" z="0.998807400024" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="329.306159511" />
+					<arg name="rb" value="415.823184362" />
+					<arg name="re" value="80.0402448962" />
+				</transition>
+			</point>
+			<point x="4217.55955708" y="9.6136011051" z="0.998774017769" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="415.823184362" />
+					<arg name="rb" value="387.114990958" />
+					<arg name="re" value="-45570.7672805" />
+				</transition>
+			</point>
+			<point x="4238.27203964" y="8.16254377541" z="0.999991746963" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="387.114990958" />
+					<arg name="rb" value="867.597822764" />
+					<arg name="re" value="355.610045814" />
+				</transition>
+			</point>
+			<point x="4238.96417969" y="8.09527940325" z="1.00055402124" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="867.597822764" />
+					<arg name="rb" value="270.368451216" />
+					<arg name="re" value="-510.267064591" />
+				</transition>
+			</point>
+			<point x="4240.62362297" y="7.93026425833" z="1.0008079078" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="270.368451216" />
+					<arg name="rb" value="602.389198215" />
+					<arg name="re" value="1351.35428624" />
+				</transition>
+			</point>
+			<point x="4243.84957955" y="7.58576024618" z="0.999894832872" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="602.389198215" />
+					<arg name="rb" value="392.758711677" />
+					<arg name="re" value="-1524.75791467" />
+				</transition>
+			</point>
+			<point x="4246.12582596" y="7.32877450229" z="1.00027917237" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="392.758711677" />
+					<arg name="rb" value="357.443312606" />
+					<arg name="re" value="3220.42953505" />
+				</transition>
+			</point>
+			<point x="4248.63137491" y="7.03093002006" z="0.999795623434" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="357.443312606" />
+					<arg name="rb" value="470.083349608" />
+					<arg name="re" value="-18874.1518261" />
+				</transition>
+			</point>
+			<point x="4257.27377896" y="5.87496971131" z="0.999526321671" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="470.083349608" />
+					<arg name="rb" value="265.716170113" />
+					<arg name="re" value="-15889.1849224" />
+				</transition>
+			</point>
+			<point x="4258.19049114" y="5.7416201019" z="0.99925672572" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="265.716170113" />
+					<arg name="rb" value="530.885316657" />
+					<arg name="re" value="288.598435561" />
+				</transition>
+			</point>
+			<point x="4258.70977112" y="5.66485563445" z="0.999566041123" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="530.885316657" />
+					<arg name="rb" value="323.207938098" />
+					<arg name="re" value="-1743.69973654" />
+				</transition>
+			</point>
+			<point x="4261.71788227" y="5.20744218893" z="1.00147141064" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="323.207938098" />
+					<arg name="rb" value="-8230.80015021" />
+					<arg name="re" value="-1216280.66329" />
+				</transition>
+			</point>
+			<point x="4271.92355989" y="3.50324057557" z="0.998879191596" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-8230.80015021" />
+					<arg name="rb" value="-37664.6679947" />
+					<arg name="re" value="11922.2942467" />
+				</transition>
+			</point>
+			<point x="4280.02484364" y="2.11254717401" z="0.999618506975" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-37664.6679947" />
+					<arg name="rb" value="-401.710996555" />
+					<arg name="re" value="-10132.5019481" />
+				</transition>
+			</point>
+			<point x="4284.9334499" y="1.28178353582" z="1.00055943201" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-401.710996555" />
+					<arg name="rb" value="-399.018179914" />
+					<arg name="re" value="35190.1669869" />
+				</transition>
+			</point>
+			<point x="4294.76281383" y="-0.21485065162" z="1.00140068887" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-399.018179914" />
+					<arg name="rb" value="-329.145838971" />
+					<arg name="re" value="-51.5006054312" />
+				</transition>
+			</point>
+			<point x="4294.81294226" y="-0.221843373591" z="1.0013872505" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-329.145838971" />
+					<arg name="rb" value="-507.686557362" />
+					<arg name="re" value="5648.10492641" />
+				</transition>
+			</point>
+			<point x="4299.08358426" y="-0.792131397221" z="0.999769464313" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-507.686557362" />
+					<arg name="rb" value="-383.993589841" />
+					<arg name="re" value="17197.8786394" />
+				</transition>
+			</point>
+			<point x="4300.78805688" y="-1.00780868026" z="0.999865481132" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-383.993589841" />
+					<arg name="rb" value="-415.434706553" />
+					<arg name="re" value="-72413.8151029" />
+				</transition>
+			</point>
+			<point x="4318.45645387" y="-2.80320521178" z="0.9995671365" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-415.434706553" />
+					<arg name="rb" value="-285.087928574" />
+					<arg name="re" value="4023.80553497" />
+				</transition>
+			</point>
+			<point x="4322.79135095" y="-3.12143785179" z="1.00130871809" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-285.087928574" />
+					<arg name="rb" value="488.034619989" />
+					<arg name="re" value="-1130.75749271" />
+				</transition>
+			</point>
+			<point x="4324.1093495" y="-3.20770659725" z="1.00177991424" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="488.034619989" />
+					<arg name="rb" value="-381.889972933" />
+					<arg name="re" value="-92.8391041251" />
+				</transition>
+			</point>
+			<point x="4324.16223577" y="-3.21117583091" z="1.00175273926" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-381.889972933" />
+					<arg name="rb" value="-387.373970224" />
+					<arg name="re" value="10223.4014035" />
+				</transition>
+			</point>
+			<point x="4339.41633613" y="-3.90688478802" z="1.00096914431" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-387.373970224" />
+					<arg name="rb" value="160.660867297" />
+					<arg name="re" value="46.5053979827" />
+				</transition>
+			</point>
+			<point x="4339.48118147" y="-3.90855704382" z="1.00105950158" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="160.660867297" />
+					<arg name="rb" value="-364.837126009" />
+					<arg name="re" value="-84.0784942901" />
+				</transition>
+			</point>
+			<point x="4339.70750466" y="-3.91450066979" z="1.00122794588" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-364.837126009" />
+					<arg name="rb" value="-444.385244807" />
+					<arg name="re" value="9124.89352716" />
+				</transition>
+			</point>
+			<point x="4347.71611692" y="-4.04234072629" z="0.999918631073" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-444.385244807" />
+					<arg name="rb" value="-301.600011684" />
+					<arg name="re" value="-4455.92848419" />
+				</transition>
+			</point>
+			<point x="4349.93706829" y="-4.04989423582" z="0.999976857518" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-301.600011684" />
+					<arg name="rb" value="-95717.0359045" />
+					<arg name="re" value="159.525080623" />
+				</transition>
+			</point>
+			<point x="4349.97341156" y="-4.04989689456" z="0.999972892925" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-95717.0359045" />
+					<arg name="rb" value="88526686.0406" />
+					<arg name="re" value="-2126541.4484" />
+				</transition>
+			</point>
+			<point x="4359.98008005" y="-4.05007818415" z="0.999997615814" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="88526686.0406" />
+					<arg name="rb" value="17498412.5417" />
+					<arg name="re" value="1934143830.4" />
+				</transition>
+			</point>
+			<point x="5040.00119409" y="-4.0567206311" z="1.00019717216" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="17498412.5417" />
+					<arg name="rb" value="-1861.94102167" />
+					<arg name="re" value="-281509.299786" />
+				</transition>
+			</point>
+			<point x="5050.00046824" y="-4.04801259966" z="1.00002427737" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1861.94102167" />
+					<arg name="rb" value="-700.961018583" />
+					<arg name="re" value="-154525.827494" />
+				</transition>
+			</point>
+			<point x="5052.70876502" y="-4.03774892492" z="0.999905614764" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-700.961018583" />
+					<arg name="rb" value="-216.863314993" />
+					<arg name="re" value="16049.3170592" />
+				</transition>
+			</point>
+			<point x="5055.99898251" y="-4.00677557175" z="1.00006990603" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-216.863314993" />
+					<arg name="rb" value="-168.179614301" />
+					<arg name="re" value="19118.9203798" />
+				</transition>
+			</point>
+			<point x="5057.27666448" y="-3.98315620888" z="1.00030741577" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-168.179614301" />
+					<arg name="rb" value="922.16050104" />
+					<arg name="re" value="-204.873901627" />
+				</transition>
+			</point>
+			<point x="5057.32689229" y="-3.98204652524" z="1.00031227231" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="922.16050104" />
+					<arg name="rb" value="-180.862383375" />
+					<arg name="re" value="-28448.1879942" />
+				</transition>
+			</point>
+			<point x="5062.43817528" y="-3.85431720798" z="0.999720151233" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-180.862383375" />
+					<arg name="rb" value="206.09828603" />
+					<arg name="re" value="407.548627547" />
+				</transition>
+			</point>
+			<point x="5062.64654523" y="-3.84729263652" z="0.999730598745" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="206.09828603" />
+					<arg name="rb" value="-385.074314801" />
+					<arg name="re" value="-2451.98277685" />
+				</transition>
+			</point>
+			<point x="5063.3480466" y="-3.82432936188" z="0.999844843087" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-385.074314801" />
+					<arg name="rb" value="-411.375832773" />
+					<arg name="re" value="3125883.55947" />
+				</transition>
+			</point>
+			<point x="5093.79190494" y="-1.64207201338" z="1.00059369043" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-411.375832773" />
+					<arg name="rb" value="-661.493401067" />
+					<arg name="re" value="-40.0274195013" />
+				</transition>
+			</point>
+			<point x="5093.84311224" y="-1.63643892726" z="1.00056205436" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-661.493401067" />
+					<arg name="rb" value="-339.798845162" />
+					<arg name="re" value="575.740269836" />
+				</transition>
+			</point>
+			<point x="5094.74484974" y="-1.53637659783" z="1.00013591525" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-339.798845162" />
+					<arg name="rb" value="-469.939408917" />
+					<arg name="re" value="-6065.52707472" />
+				</transition>
+			</point>
+			<point x="5100.58017499" y="-0.835820581971" z="0.999158777702" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-469.939408917" />
+					<arg name="rb" value="-349.518653975" />
+					<arg name="re" value="5264.75647953" />
+				</transition>
+			</point>
+			<point x="5102.57739341" y="-0.576897344786" z="0.998233428725" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-349.518653975" />
+					<arg name="rb" value="-459.647904048" />
+					<arg name="re" value="6713.99688848" />
+				</transition>
+			</point>
+			<point x="5109.92779691" y="0.468912160682" z="1.00034724592" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-459.647904048" />
+					<arg name="rb" value="-286.918342188" />
+					<arg name="re" value="-45.5040974256" />
+				</transition>
+			</point>
+			<point x="5109.97958961" y="0.476757006266" z="1.00036097203" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-286.918342188" />
+					<arg name="rb" value="-1202.70094476" />
+					<arg name="re" value="29836.2367208" />
+				</transition>
+			</point>
+			<point x="5114.04988212" y="1.11592787289" z="0.999353536705" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1202.70094476" />
+					<arg name="rb" value="-137.263459871" />
+					<arg name="re" value="1023.91756857" />
+				</transition>
+			</point>
+			<point x="5115.4287147" y="1.34039567208" z="1.00006140551" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-137.263459871" />
+					<arg name="rb" value="-1542.69411275" />
+					<arg name="re" value="-465.317839971" />
+				</transition>
+			</point>
+			<point x="5116.02159395" y="1.44002687651" z="1.00038778478" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1542.69411275" />
+					<arg name="rb" value="1968.14135945" />
+					<arg name="re" value="129501.719595" />
+				</transition>
+			</point>
+			<point x="5132.46334113" y="4.25461953332" z="0.999742050416" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1968.14135945" />
+					<arg name="rb" value="371.957030131" />
+					<arg name="re" value="-22216.4134908" />
+				</transition>
+			</point>
+			<point x="5132.91847094" y="4.33191862191" z="0.999749115224" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="371.957030131" />
+					<arg name="rb" value="610.037506772" />
+					<arg name="re" value="10978.1188879" />
+				</transition>
+			</point>
+			<point x="5136.93581403" y="4.9926922894" z="1.00052406609" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="610.037506772" />
+					<arg name="rb" value="361.411338619" />
+					<arg name="re" value="-1239.83821412" />
+				</transition>
+			</point>
+			<point x="5137.69508465" y="5.113818769" z="1.00057458361" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="361.411338619" />
+					<arg name="rb" value="451.644751345" />
+					<arg name="re" value="31277.0367978" />
+				</transition>
+			</point>
+			<point x="5154.41839883" y="7.39347715077" z="1.00100446696" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="451.644751345" />
+					<arg name="rb" value="209.430231295" />
+					<arg name="re" value="-1037.81196499" />
+				</transition>
+			</point>
+			<point x="5156.27930692" y="7.60346664087" z="0.999867831471" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="209.430231295" />
+					<arg name="rb" value="576.699981766" />
+					<arg name="re" value="515.603123748" />
+				</transition>
+			</point>
+			<point x="5157.24214297" y="7.70676265168" z="0.999315738349" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="576.699981766" />
+					<arg name="rb" value="340.241184294" />
+					<arg name="re" value="-13365.097965" />
+				</transition>
+			</point>
+			<point x="5165.70803201" y="8.52593553209" z="0.999747184837" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="340.241184294" />
+					<arg name="rb" value="507.946752085" />
+					<arg name="re" value="6215.94644729" />
+				</transition>
+			</point>
+			<point x="5169.01060534" y="8.79515020536" z="0.999744068818" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="507.946752085" />
+					<arg name="rb" value="388.66973128" />
+					<arg name="re" value="-3451.08331913" />
+				</transition>
+			</point>
+			<point x="5169.51618787" y="8.83415158127" z="0.999841493609" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="388.66973128" />
+					<arg name="rb" value="429.307962822" />
+					<arg name="re" value="-30085.3071787" />
+				</transition>
+			</point>
+			<point x="5177.82532048" y="9.38346072259" z="0.99967713704" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="429.307962822" />
+					<arg name="rb" value="269.608670736" />
+					<arg name="re" value="11774.6811997" />
+				</transition>
+			</point>
+			<point x="5181.0482262" y="9.54950855873" z="0.999609062661" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="269.608670736" />
+					<arg name="rb" value="1780.24239578" />
+					<arg name="re" value="2935.18404748" />
+				</transition>
+			</point>
+			<point x="5181.21544175" y="9.55720760984" z="0.999633244268" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1780.24239578" />
+					<arg name="rb" value="305.714857212" />
+					<arg name="re" value="-102674.19463" />
+				</transition>
+			</point>
+			<point x="5184.33224454" y="9.69315641863" z="1.00012548992" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="305.714857212" />
+					<arg name="rb" value="488.507575245" />
+					<arg name="re" value="-14161.3606732" />
+				</transition>
+			</point>
+			<point x="5190.3619244" y="9.88171059323" z="0.999700738704" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="488.507575245" />
+					<arg name="rb" value="382.494754458" />
+					<arg name="re" value="4237.6036614" />
+				</transition>
+			</point>
+			<point x="5194.38617299" y="9.95961068397" z="1.00047157016" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="382.494754458" />
+					<arg name="rb" value="388.008879814" />
+					<arg name="re" value="-3760.55043557" />
+				</transition>
+			</point>
+			<point x="5198.00001451" y="9.99492781551" z="1.0011434482" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="388.008879814" />
+					<arg name="rb" value="397.229126636" />
+					<arg name="re" value="-3472.26178939" />
+				</transition>
+			</point>
+			<point x="5199.95000543" y="9.99999686139" z="1.00002140509" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="397.229126636" />
+					<arg name="rb" value="399.8227111" />
+					<arg name="re" value="58.3973261547" />
+				</transition>
+			</point>
+			<point x="5200.00000542" y="10" z="1" e="0" />
+		</segment_geometry>
+	</track_geometry>
+	<object_geometries>
+		<object_geometry object_id="1" x="2100.00000894" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="2" x="3099.99999578" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="3" x="5200.00000542" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="4" x="4199.99999465" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10000" x="500" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10001" x="505" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10002" x="510" y="7" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10003" x="510" y="7" z="4.8" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10004" x="515" y="7" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10005" x="520" y="7" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10006" x="510" y="7" z="2.5" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10007" x="525" y="13" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10008" x="525" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10009" x="530" y="13" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10010" x="530" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10011" x="535" y="13" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10012" x="540" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10013" x="545" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10014" x="550" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10015" x="555" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10016" x="560" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10017" x="565" y="13" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10018" x="565" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10019" x="570" y="13" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10020" x="570" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10021" x="575" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10022" x="580" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10023" x="585" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10024" x="590" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10025" x="595" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10026" x="600" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10027" x="605" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10028" x="610" y="7" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10029" x="810" y="10" z="1" heading="-180" pitch="0" roll="0" />
+		<object_geometry object_id="10030" x="820" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10031" x="830" y="8" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10032" x="840" y="8" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10033" x="850" y="8" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10034" x="860" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10035" x="870" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10036" x="880" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10037" x="890" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10038" x="900" y="10" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10039" x="910" y="10" z="3" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10040" x="920" y="10" z="2" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10043" x="930" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10045" x="940" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10046" x="900" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10047" x="950" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10048" x="960" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="10049" x="970" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11000" x="49.999975" y="502.5" z="1.049999975" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11001" x="19899.99005" y="497.5" z="20.89999005" heading="-180" pitch="0" roll="0" />
+		<object_geometry object_id="11002" x="55.529972235" y="500" z="1.05552997224" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11003" x="81.849959075" y="500" z="1.08184995908" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11004" x="149.55992522" y="500" z="1.14955992522" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11005" x="177.969911015" y="500" z="1.17796991102" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11006" x="223.809888095" y="500" z="1.2238098881" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11007" x="263.29986835" y="500" z="1.26329986835" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11008" x="314.21984289" y="500" z="1.31421984289" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11009" x="375.63981218" y="500" z="1.37563981218" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11010" x="400.9997995" y="500" z="1.4009997995" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11011" x="520.9997395" y="500" z="1.5209997395" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11012" x="541.999729" y="500" z="1.541999729" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11013" x="637.67968116" y="500" z="1.63767968116" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11014" x="652.53967373" y="500" z="1.65253967373" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11015" x="655.53967223" y="500" z="1.65553967223" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11016" x="675.45966227" y="500" z="1.67545966227" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11017" x="678.45966077" y="500" z="1.67845966077" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11018" x="736.47963176" y="500" z="1.73647963176" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11019" x="771.57961421" y="500" z="1.77157961421" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11020" x="774.57961271" y="500" z="1.77457961271" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11021" x="794.49960275" y="500" z="1.79449960275" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11022" x="797.49960125" y="500" z="1.79749960125" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11023" x="849.91957504" y="500" z="1.84991957504" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11024" x="928.9995355" y="500" z="1.9289995355" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11025" x="949.999525" y="500" z="1.949999525" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11026" x="1069.999465" y="500" z="2.069999465" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11027" x="1249.999375" y="500" z="2.249999375" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11028" x="1429.999285" y="500" z="2.429999285" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11029" x="1579.99921" y="500" z="2.57999921" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11030" x="1729.999135" y="500" z="2.729999135" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11031" x="1914.9990425" y="500" z="2.9149990425" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11032" x="2094.9989525" y="500" z="3.0949989525" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11033" x="2214.9988925" y="500" z="3.2149988925" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11034" x="2235.998882" y="500" z="3.235998882" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11035" x="2332.45883377" y="500" z="3.33245883377" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11036" x="2347.31882634" y="500" z="3.34731882634" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11037" x="2350.31882484" y="500" z="3.35031882484" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11038" x="2370.23881488" y="500" z="3.37023881488" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11039" x="2373.23881338" y="500" z="3.37323881338" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11040" x="2431.25878437" y="500" z="3.43125878437" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11041" x="2466.35876682" y="500" z="3.46635876682" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11042" x="2469.35876532" y="500" z="3.46935876532" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11043" x="2489.27875536" y="500" z="3.48927875536" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11044" x="2492.27875386" y="500" z="3.49227875386" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11045" x="2544.69872765" y="500" z="3.54469872765" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11046" x="2624.9986875" y="500" z="3.6249986875" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11047" x="2645.998677" y="500" z="3.645998677" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11048" x="2825.998587" y="500" z="3.825998587" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11049" x="3005.998497" y="500" z="4.005998497" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11050" x="3061.998469" y="500" z="4.061998469" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11051" x="3181.998409" y="500" z="4.181998409" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11052" x="3202.9983985" y="500" z="4.2029983985" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11053" x="3299.21835039" y="500" z="4.29921835039" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11054" x="3314.07834296" y="500" z="4.31407834296" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11055" x="3317.07834146" y="500" z="4.31707834146" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11056" x="3336.9983315" y="500" z="4.3369983315" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11057" x="3339.99833" y="500" z="4.33999833" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11058" x="3398.01830099" y="500" z="4.39801830099" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11059" x="3433.11828344" y="500" z="4.43311828344" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11060" x="3436.11828194" y="500" z="4.43611828194" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11061" x="3456.03827198" y="500" z="4.45603827198" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11062" x="3459.03827048" y="500" z="4.45903827048" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11063" x="3511.45824427" y="500" z="4.51145824427" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11064" x="3592.9982035" y="500" z="4.5929982035" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11065" x="3613.998193" y="500" z="4.613998193" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11066" x="3738.9981305" y="500" z="4.7389981305" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11067" x="3938.9980305" y="500" z="4.9389980305" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11068" x="4134.9979325" y="500" z="5.1349979325" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11069" x="4254.9978725" y="500" z="5.2549978725" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11070" x="4275.997862" y="500" z="5.275997862" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11071" x="4371.91781404" y="500" z="5.37191781404" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11072" x="4386.77780661" y="500" z="5.38677780661" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11073" x="4389.77780511" y="500" z="5.38977780511" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11074" x="4409.69779515" y="500" z="5.40969779515" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11075" x="4412.69779365" y="500" z="5.41269779365" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11076" x="4470.71776464" y="500" z="5.47071776464" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11077" x="4505.81774709" y="500" z="5.50581774709" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11078" x="4508.81774559" y="500" z="5.50881774559" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11079" x="4528.73773563" y="500" z="5.52873773563" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11080" x="4531.73773413" y="500" z="5.53173773413" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11081" x="4584.15770792" y="500" z="5.58415770792" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11082" x="4666.9976665" y="500" z="5.6669976665" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11083" x="4687.997656" y="500" z="5.687997656" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11084" x="4807.997596" y="500" z="5.807997596" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11085" x="4987.997506" y="500" z="5.987997506" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11086" x="5167.997416" y="500" z="6.167997416" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11087" x="5237.997381" y="500" z="6.237997381" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11088" x="5357.997321" y="500" z="6.357997321" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11089" x="5378.9973105" y="500" z="6.3789973105" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11090" x="5453.52727324" y="500" z="6.45352727324" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11091" x="5468.38726581" y="500" z="6.46838726581" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11092" x="5471.38726431" y="500" z="6.47138726431" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11093" x="5491.30725435" y="500" z="6.49130725435" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11094" x="5494.30725285" y="500" z="6.49430725285" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11095" x="5552.32722384" y="500" z="6.55232722384" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11096" x="5587.42720629" y="500" z="6.58742720629" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11097" x="5590.42720479" y="500" z="6.59042720479" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11098" x="5610.34719483" y="500" z="6.61034719483" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11099" x="5613.34719333" y="500" z="6.61334719333" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11100" x="5665.76716712" y="500" z="6.66576716712" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11101" x="5744.9971275" y="500" z="6.7449971275" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11102" x="5765.997117" y="500" z="6.765997117" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11103" x="5885.997057" y="500" z="6.885997057" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11104" x="6085.996957" y="500" z="7.085996957" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11105" x="6176.96691152" y="500" z="7.17696691152" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11106" x="6296.96685152" y="500" z="7.29696685152" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11107" x="6317.96684102" y="500" z="7.31796684102" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11108" x="6394.02680299" y="500" z="7.39402680299" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11109" x="6408.88679556" y="500" z="7.40888679556" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11110" x="6411.88679406" y="500" z="7.41188679406" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11111" x="6431.8067841" y="500" z="7.4318067841" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11112" x="6434.8067826" y="500" z="7.4348067826" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11113" x="6492.82675359" y="500" z="7.49282675359" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11114" x="6527.92673604" y="500" z="7.52792673604" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11115" x="6530.92673454" y="500" z="7.53092673454" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11116" x="6550.84672458" y="500" z="7.55084672458" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11117" x="6553.84672308" y="500" z="7.55384672308" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11118" x="6606.26669687" y="500" z="7.60626669687" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11119" x="6707.996646" y="500" z="7.707996646" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11120" x="6827.996586" y="500" z="7.827996586" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11121" x="6977.996511" y="500" z="7.977996511" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11122" x="7127.996436" y="500" z="8.127996436" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11123" x="7252.9963735" y="500" z="8.2529963735" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11124" x="7372.9963135" y="500" z="8.3729963135" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11125" x="7393.996303" y="500" z="8.393996303" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11126" x="7490.29625485" y="500" z="8.49029625485" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11127" x="7505.15624742" y="500" z="8.50515624742" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11128" x="7508.15624592" y="500" z="8.50815624592" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11129" x="7528.07623596" y="500" z="8.52807623596" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11130" x="7531.07623446" y="500" z="8.53107623446" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11131" x="7589.09620545" y="500" z="8.58909620545" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11132" x="7624.1961879" y="500" z="8.6241961879" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11133" x="7627.1961864" y="500" z="8.6271961864" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11134" x="7647.11617644" y="500" z="8.64711617644" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11135" x="7650.11617494" y="500" z="8.65011617494" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11136" x="7702.53614873" y="500" z="8.70253614873" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11137" x="7782.9961085" y="500" z="8.7829961085" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11138" x="7803.996098" y="500" z="8.803996098" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11139" x="7864.64606768" y="500" z="8.86464606768" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11140" x="7908.22604589" y="500" z="8.90822604589" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11141" x="7963.62601819" y="500" z="8.96362601819" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11142" x="8065.995967" y="500" z="9.065995967" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11143" x="8185.995907" y="500" z="9.185995907" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11144" x="8206.9958965" y="500" z="9.2069958965" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11145" x="8339.95583002" y="500" z="9.33995583002" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11146" x="8416.01579199" y="500" z="9.41601579199" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11147" x="8430.87578456" y="500" z="9.43087578456" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11148" x="8433.87578306" y="500" z="9.43387578306" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11149" x="8453.7957731" y="500" z="9.4537957731" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11150" x="8456.7957716" y="500" z="9.4567957716" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11151" x="8514.81574259" y="500" z="9.51481574259" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11152" x="8549.91572504" y="500" z="9.54991572504" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11153" x="8552.91572354" y="500" z="9.55291572354" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11154" x="8572.83571358" y="500" z="9.57283571358" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11155" x="8575.83571208" y="500" z="9.57583571208" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11156" x="8647.995676" y="500" z="9.647995676" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11157" x="8668.9956655" y="500" z="9.6689956655" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11158" x="8689.995655" y="500" z="9.689995655" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11159" x="8751.83562408" y="500" z="9.75183562408" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11160" x="8778.15561092" y="500" z="9.77815561092" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11161" x="8828.18558591" y="500" z="9.82818558591" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11162" x="8874.15556292" y="500" z="9.87415556292" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11163" x="8970.14551493" y="500" z="9.97014551493" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11164" x="8970.14551493" y="500" z="9.97014551493" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11165" x="9006.02549699" y="500" z="10.006025497" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11166" x="9072.52546374" y="500" z="10.0725254637" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11167" x="9249.72537514" y="500" z="10.2497253751" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11168" x="9338.87533056" y="500" z="10.3388753306" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11169" x="9388.85530557" y="500" z="10.3888553056" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11170" x="9409.85529507" y="500" z="10.4098552951" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11171" x="9463.90526805" y="500" z="10.463905268" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11172" x="9466.90526655" y="500" z="10.4669052665" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11173" x="9486.82525659" y="500" z="10.4868252566" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11174" x="9489.82525509" y="500" z="10.4898252551" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11175" x="9547.84522608" y="500" z="10.5478452261" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11176" x="9582.94520853" y="500" z="10.5829452085" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11177" x="9585.94520703" y="500" z="10.585945207" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11178" x="9605.86519707" y="500" z="10.6058651971" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11179" x="9608.86519557" y="500" z="10.6088651956" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11180" x="9661.28516936" y="500" z="10.6612851694" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11181" x="9741.995129" y="500" z="10.741995129" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11182" x="9762.9951185" y="500" z="10.7629951185" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11183" x="9882.9950585" y="500" z="10.8829950585" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11184" x="10082.9949585" y="500" z="11.0829949585" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11185" x="10232.9948835" y="500" z="11.2329948835" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11186" x="10382.9948085" y="500" z="11.3829948085" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11187" x="10526.9947365" y="500" z="11.5269947365" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11188" x="10646.9946765" y="500" z="11.6469946765" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11189" x="10667.994666" y="500" z="11.667994666" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11190" x="10762.9646185" y="500" z="11.7629646185" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11191" x="10777.8246111" y="500" z="11.7778246111" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11192" x="10780.8246096" y="500" z="11.7808246096" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11193" x="10800.7345996" y="500" z="11.8007345996" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11194" x="10803.7345981" y="500" z="11.8037345981" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11195" x="10861.7645691" y="500" z="11.8617645691" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11196" x="10896.8545516" y="500" z="11.8968545516" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11197" x="10899.8545501" y="500" z="11.8998545501" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11198" x="10919.7845401" y="500" z="11.9197845401" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11199" x="10922.7845386" y="500" z="11.9227845386" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11200" x="10975.2045124" y="500" z="11.9752045124" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11201" x="11055.994472" y="500" z="12.055994472" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11202" x="11076.9944615" y="500" z="12.0769944615" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11203" x="11196.9944015" y="500" z="12.1969944015" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11204" x="11396.9943015" y="500" z="12.3969943015" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11205" x="11596.9942015" y="500" z="12.5969942015" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11206" x="11796.9941015" y="500" z="12.7969941015" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11207" x="11917.994041" y="500" z="12.917994041" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11208" x="12037.993981" y="500" z="13.037993981" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11209" x="12058.9939705" y="500" z="13.0589939705" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11210" x="12155.3339223" y="500" z="13.1553339223" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11211" x="12170.1939149" y="500" z="13.1701939149" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11212" x="12173.1939134" y="500" z="13.1731939134" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11213" x="12193.1139034" y="500" z="13.1931139034" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11214" x="12196.1139019" y="500" z="13.1961139019" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11215" x="12254.1338729" y="500" z="13.2541338729" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11216" x="12289.2338554" y="500" z="13.2892338554" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11217" x="12292.2338539" y="500" z="13.2922338539" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11218" x="12312.1538439" y="500" z="13.3121538439" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11219" x="12315.1538424" y="500" z="13.3151538424" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11220" x="12367.5738162" y="500" z="13.3675738162" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11221" x="12446.9937765" y="500" z="13.4469937765" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11222" x="12467.993766" y="500" z="13.467993766" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11223" x="12587.993706" y="500" z="13.587993706" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11224" x="12787.993606" y="500" z="13.787993606" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11225" x="12922.9935385" y="500" z="13.9229935385" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11226" x="13115.993442" y="500" z="14.115993442" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11227" x="13235.993382" y="500" z="14.235993382" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11228" x="13256.9933715" y="500" z="14.2569933715" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11229" x="13353.2733234" y="500" z="14.3532733234" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11230" x="13368.1333159" y="500" z="14.3681333159" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11231" x="13371.1333144" y="500" z="14.3711333144" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11232" x="13391.0533045" y="500" z="14.3910533045" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11233" x="13394.053303" y="500" z="14.394053303" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11234" x="13452.073274" y="500" z="14.452073274" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11235" x="13487.1732564" y="500" z="14.4871732564" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11236" x="13490.1732549" y="500" z="14.4901732549" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11237" x="13510.093245" y="500" z="14.510093245" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11238" x="13513.0932435" y="500" z="14.5130932435" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11239" x="13565.5132172" y="500" z="14.5655132172" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11240" x="13644.9931775" y="500" z="14.6449931775" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11241" x="13665.993167" y="500" z="14.665993167" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11242" x="13785.993107" y="500" z="14.785993107" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11243" x="13945.993027" y="500" z="14.945993027" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11244" x="14137.992931" y="500" z="15.137992931" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11245" x="14257.992871" y="500" z="15.257992871" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11246" x="14278.9928605" y="500" z="15.2789928605" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11247" x="14375.3628123" y="500" z="15.3753628123" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11248" x="14390.2228049" y="500" z="15.3902228049" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11249" x="14393.2228034" y="500" z="15.3932228034" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11250" x="14413.1427934" y="500" z="15.4131427934" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11251" x="14416.1427919" y="500" z="15.4161427919" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11252" x="14474.1627629" y="500" z="15.4741627629" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11253" x="14509.2627454" y="500" z="15.5092627454" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11254" x="14512.2627439" y="500" z="15.5122627439" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11255" x="14532.1827339" y="500" z="15.5321827339" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11256" x="14535.1827324" y="500" z="15.5351827324" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11257" x="14587.6027062" y="500" z="15.5876027062" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11258" x="14666.9926665" y="500" z="15.6669926665" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11259" x="14687.992656" y="500" z="15.687992656" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11260" x="14807.992596" y="500" z="15.807992596" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11261" x="14919.99254" y="500" z="15.91999254" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11262" x="15039.99248" y="500" z="16.03999248" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11263" x="15060.9924695" y="500" z="16.0609924695" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11264" x="15153.4024233" y="500" z="16.1534024233" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11265" x="15303.4023483" y="500" z="16.3034023483" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11266" x="15379.4623103" y="500" z="16.3794623103" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11267" x="15394.3223028" y="500" z="16.3943223028" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11268" x="15397.3223013" y="500" z="16.3973223013" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11269" x="15417.2422914" y="500" z="16.4172422914" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11270" x="15420.2422899" y="500" z="16.4202422899" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11271" x="15478.2622609" y="500" z="16.4782622609" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11272" x="15513.3622433" y="500" z="16.5133622433" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11273" x="15516.3622418" y="500" z="16.5163622418" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11274" x="15536.2822319" y="500" z="16.5362822319" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11275" x="15539.2822304" y="500" z="16.5392822304" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11276" x="15591.7022042" y="500" z="16.5917022042" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11277" x="15641.6621792" y="500" z="16.6416621792" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11278" x="15791.6621042" y="500" z="16.7916621042" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11279" x="15864.9920675" y="500" z="16.8649920675" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11280" x="15885.992057" y="500" z="16.885992057" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11281" x="15948.9920255" y="500" z="16.9489920255" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11282" x="16068.9919655" y="500" z="17.0689919655" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11283" x="16089.991955" y="500" z="17.089991955" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11284" x="16186.5119067" y="500" z="17.1865119067" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11285" x="16201.3718993" y="500" z="17.2013718993" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11286" x="16204.3718978" y="500" z="17.2043718978" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11287" x="16224.2918879" y="500" z="17.2242918879" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11288" x="16227.2918864" y="500" z="17.2272918864" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11289" x="16285.3118573" y="500" z="17.2853118573" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11290" x="16320.4118398" y="500" z="17.3204118398" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11291" x="16323.4118383" y="500" z="17.3234118383" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11292" x="16343.3318283" y="500" z="17.3433318283" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11293" x="16346.3318268" y="500" z="17.3463318268" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11294" x="16398.7518006" y="500" z="17.3987518006" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11295" x="16477.991761" y="500" z="17.477991761" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11296" x="16498.9917505" y="500" z="17.4989917505" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11297" x="16618.9916905" y="500" z="17.6189916905" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11298" x="16762.8516186" y="500" z="17.7628516186" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11299" x="16806.4315968" y="500" z="17.8064315968" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11300" x="16861.8315691" y="500" z="17.8618315691" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11301" x="16948.4015258" y="500" z="17.9484015258" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11302" x="17108.9914455" y="500" z="18.1089914455" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11303" x="17228.9913855" y="500" z="18.2289913855" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11304" x="17249.991375" y="500" z="18.249991375" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11305" x="17402.3412988" y="500" z="18.4023412988" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11306" x="17478.4012608" y="500" z="18.4784012608" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11307" x="17493.2612534" y="500" z="18.4932612534" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11308" x="17496.2612519" y="500" z="18.4962612519" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11309" x="17516.1812419" y="500" z="18.5161812419" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11310" x="17519.1812404" y="500" z="18.5191812404" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11311" x="17577.2012114" y="500" z="18.5772012114" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11312" x="17612.3011939" y="500" z="18.6123011939" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11313" x="17615.3011924" y="500" z="18.6153011924" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11314" x="17635.2211824" y="500" z="18.6352211824" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11315" x="17638.2211809" y="500" z="18.6382211809" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11316" x="17690.6411547" y="500" z="18.6906411547" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11317" x="17740.6011297" y="500" z="18.7406011297" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11318" x="17826.9910865" y="500" z="18.8269910865" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11319" x="17847.991076" y="500" z="18.847991076" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11320" x="17868.9910655" y="500" z="18.8689910655" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11321" x="17998.071001" y="500" z="18.998071001" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11322" x="18061.7209691" y="500" z="19.0617209691" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11323" x="18107.5609462" y="500" z="19.1075609462" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11324" x="18171.2009144" y="500" z="19.1712009144" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="11325" x="18234.8408826" y="500" z="19.2348408826" heading="0" pitch="0" roll="0" />
+	</object_geometries>
+</world_definition>

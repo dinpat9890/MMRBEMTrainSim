@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nodes version="2.5.0.2">
+	<node id="1973385845" name="raspberries_02_02" type="ObjectMeshStatic">
+		<mesh_name>raspberries/raspberries_02_02.mesh</mesh_name>
+		<surface material="f12d54e919a853f78443678bc888bbfe8985d69b" max_visible_distance="15" name="raspberries_02_02_lod_0_raspberries_mat" property="surface_base"/>
+		<surface material="f12d54e919a853f78443678bc888bbfe8985d69b" max_visible_distance="60" min_visible_distance="15" name="raspberries_02_02_lod_1_raspberries_mat" property="surface_base"/>
+		<surface material="f12d54e919a853f78443678bc888bbfe8985d69b" min_visible_distance="60" name="raspberries_02_02_lod_2_raspberries_mat" property="surface_base"/>
+		<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999988 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

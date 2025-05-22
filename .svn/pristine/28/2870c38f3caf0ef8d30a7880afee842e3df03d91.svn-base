@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<project name="BEML_EMU Model DLL" default="build.all">
+  <import file="../../../ant.common_properties.xml" />
+  <import file="${dir.software}/ant.paths.xml" />
+
+  <!-- This module is not built against the static CRT. -->
+  <property name="no.build.win32.debug.dll" value="true" />
+  <property name="no.build.win32.release.static" value="true" />
+  <property name="no.build.win32.debug.static" value="true" />
+  <property name="no.build.x64.release.static" value="true" />
+  <property name="no.build.x64.debug.static" value="true" />
+  <property name="no.build.x64.release.dll" value="true" />
+  <property name="no.build.x64.debug.dll" value="true" />
+
+  <!-- As much as possible, this should be standard -->
+  <import file="${dir.deps.processes}/builder/builder.software.cpp.xml" as="builder" />
+  <import file="${dir.deps.processes}/modeller/modeller.software.cpp.xml" as="modeller" />
+  <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+  
+  <!-- Override the build targets to generate, extract, process and deploy code first -->
+  <!-- We can actually doing this by extending the pre build target! -->
+  <target name="generate.all" description="Generates fresh model code ready to build" extensionOf="pre.build"
+          depends="code.register.generate,
+                   code.register.install,
+                   code.model.process,
+                   code.model.deploy"/>
+</project>

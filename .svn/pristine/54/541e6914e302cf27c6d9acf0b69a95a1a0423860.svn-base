@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProtos.pb.cc">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.cc">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UnitsCommonCode\source\CommsPropertyAccessors.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BroadcastMessageQueue.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CommsPISData.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DVAAudioConfigHandler.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PISAudio.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PISState.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PISUnit.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UnitDLL.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AnnouncementsPlay.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProtos.pb.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UnitsCommonCode\include\CommsPropertyAccessors.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectConstants.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectDefinition.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BroadcastMessageQueue.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommsPISData.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DVAAudioConfigHandler.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IPISData.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PISAudio.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PISConstants.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PISState.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PISUnit.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnnouncementsPlay.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PISUnit.ini" />
+    <None Include="Source\PISIntercomUnit\PISIntercomUnit.vcxproj" />
+    <None Include="PISIntercomUnit\PISIntercomUnit.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="External">
+      <UniqueIdentifier>{7c15dfb5-772d-4e1f-b58b-7b39f5d11239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{b2d3f140-9802-4ea1-bb9b-d541ef0ab1c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

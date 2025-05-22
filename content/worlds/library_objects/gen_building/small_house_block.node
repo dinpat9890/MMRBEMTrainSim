@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="578258679" name="small_house_block">
+		<mesh_name>../worlds/library_objects/gen_building/small_house_block.mesh</mesh_name>
+		<surface name="small_house_block_bldg_res_01c_d" max_visible_distance="1500" max_fade_distance="10" material="00bef6271f1f24f6793869a549b61ab17cbb8c2d" property="surface_base"/>
+		<surface name="small_house_block_bldg_res_02_grill_d" max_visible_distance="1500" max_fade_distance="10" material="06271682fb702f63a825be4f6483e19449af937e" property="surface_base"/>
+		<surface name="small_house_block_bldg_res_02a_d" max_visible_distance="1500" max_fade_distance="10" material="cd98dd3b4a1d65a0a7b3f6434b4a56dba8f9034c" property="surface_base"/>
+		<surface name="small_house_block_bldg_res_02d_d" max_visible_distance="1500" max_fade_distance="10" material="30a4e83c1bc52aefcb55955b01e07427abf0c8cb" property="surface_base"/>
+		<surface name="small_house_block_corrugated_sheet_bldgs_set_d" max_visible_distance="1500" max_fade_distance="10" material="a6823a4362292ef199f8d065e444688df4468f01" property="surface_base"/>
+		<surface name="small_house_block_generic_bldg_res_01_type03_d" max_visible_distance="1500" max_fade_distance="10" material="272e1d1aadeabd89e1f1a6f3498b739c274005eb" property="surface_base"/>
+		<surface name="small_house_block_generic_bldg_res_fences_d" max_visible_distance="1500" material="0b65f59d7bbac6c1df9eafeb4bbd3cb56e7add46" property="surface_base"/>
+		<surface name="small_house_block_generic_building_2_d" max_visible_distance="1500" max_fade_distance="10" material="6b769c60a92c22e569c87143ce18d214dd5102da" property="surface_base"/>
+		<surface name="small_house_block_generic_house_15_d" max_visible_distance="1500" max_fade_distance="10" material="eb65e650771f81ef50bac6aec859622bce797ee5" property="surface_base"/>
+		<surface name="small_house_block_generic_house_16_d" max_visible_distance="1500" max_fade_distance="10" material="717045c3ac63ad82a27ba7bd117c3041539a1a9c" property="surface_base"/>
+		<surface name="small_house_block_generic_house_8_d" max_visible_distance="1500" max_fade_distance="10" material="5e08734b75bfc48f656ec94fc3998f10167d7aa0" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

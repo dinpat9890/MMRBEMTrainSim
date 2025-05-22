@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<project name="RadioUnit" default="build.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" >
+  <import file="../../../ant.common_properties.xml" />
+  <!-- This module is not built against the static CRT. -->
+  <property name="no.build.win32.release.static" value="true" />
+  <property name="no.build.win32.debug.static" value="true" />
+  <property name="no.build.x64.release.static" value="true" />
+  <property name="no.build.x64.debug.static" value="true" />
+  <property name="no.build.x64.release.dll" value="true" />
+  <property name="no.build.x64.debug.dll" value="true" />
+
+  <!-- As much as possible, this should be standard -->
+  <import file="${dir.deps.processes}/builder/builder.software.cpp.xml" as="builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+  <target name="prepare.all" description="Prepares all content for the project, ready for a build" />
+  <target name="clear.all" description="Clear all dependencies" />
+</project>

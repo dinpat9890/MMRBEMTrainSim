@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+  <layer_config name="Project">
+    <generates type="FeatureConstantsH" filename="ProjectFeatureConstants.h" include="project_features"/>
+    <generates type="FeatureConstantsJava" filename="ProjectFeatureConstants.java" include="project_features"/>
+  </layer_config>
+</comms_config>

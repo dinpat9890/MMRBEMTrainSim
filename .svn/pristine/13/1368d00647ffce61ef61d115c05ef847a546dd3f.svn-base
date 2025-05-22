@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1050061418" name="linden_seedling_tree">
+		<mesh_name>linden/linden_seedling_tree.mesh</mesh_name>
+		<surface name="linden_trunk_lod_0_linden_trunk" min_fade_distance="15" max_fade_distance="15" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<surface name="linden_leaves_lod_0_linden_leaves" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="linden_leaves_lod_1_linden_leaves" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="linden_leaves_lod_2_linden_leaves" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="linden_twigs_linden_trunk" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999988 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

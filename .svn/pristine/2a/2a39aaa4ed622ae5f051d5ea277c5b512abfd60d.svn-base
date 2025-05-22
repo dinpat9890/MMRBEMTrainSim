@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_rowan" guid="66e8e006f0668dba6aa567741e0dad4217c428a9" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<options cast_world_shadow="0"/>
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/imposter_bush.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/elm_rought/textures/elm_01_imposter_n.dds</texture>
+	<parameter name="diffuse_color">0.43921572 0.411764741 0.36470589 1</parameter>
+</material>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Restricted_Manual_Mode_Marker_Board" group="Sign" constant_name="FETY_RESTRICTED_MANUAL_MODE_MARKER_BOARD" modifiable="0" available="1" user_feature="0" version="2.0">
+    
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Not Visible" user_selectable="1" />
+        <feature_type_state state_id="2" name="Visible"     user_selectable="1" />
+    </feature_type_state_type>
+    
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="Visible" />
+    </object_parameters>
+    
+    <feature_type_icon icon_code="Restricted_Manual_Mode_Marker_Board" small_icon="icons/restricted_manual_mode_marker.zip#restricted_manual_mode_marker-SMALL.png" big_icon="icons/restricted_manual_mode_marker.zip#restricted_manual_mode_marker-BIG.png">
+        <feature_type_state_icon state_id="2" icon_code="Visible" small_icon="icons/restricted_manual_mode_marker.zip#restricted_manual_mode_marker-SMALL.png" big_icon="icons/restricted_manual_mode_marker.zip#restricted_manual_mode_marker-BIG.png" />
+    </feature_type_icon>
+   
+   <feature_type_vision class="SignFeature" raycast_type="RaycastGround" node_file="restricted_manual_mode_marker_board.node">
+       <scripting>
+           <script script_path="scripts/SignFeature.us.cpp" />
+       </scripting>
+  </feature_type_vision>
+   
+</feature_type>

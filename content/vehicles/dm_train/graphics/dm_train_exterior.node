@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1800241246" folded="1" name="dm_train_exterior">
+		<mesh_name>../vehicles/dm_train/graphics/dm_train_exterior.mesh</mesh_name>
+		<surface name="dirty_glass" enabled="0" material="0ce0ac0f9aa06b463be2cd9b35d037c299b28272" property="surface_base"/>
+		<surface name="dm_train_exterior" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+		<surface name="dm_train_glass" enabled="0" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+		<surface name="flasherlight" material="1d0c323aaa391aca7f8917c4c28cd5852d222d61" property="surface_base"/>
+		<surface name="floodlight" material="1d0c323aaa391aca7f8917c4c28cd5852d222d61" property="surface_base"/>
+		<surface name="headlight_l" material="ad20e20db75c5d4e6330598aef39dfa8284956d8" property="surface_base"/>
+		<surface name="headlight_r" material="ad20e20db75c5d4e6330598aef39dfa8284956d8" property="surface_base"/>
+		<surface name="indicator_l_green" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_l_red" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_l_white" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_r_green" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_r_red" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_r_white" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="taillight_l_red" enabled="0" material="5046373df7770e6c9adcecb899838c0bbd8af6ce" property="surface_base"/>
+		<surface name="taillight_l_white" material="4bdf47d0eb2fda418371e817220211946d2987e7" property="surface_base"/>
+		<surface name="taillight_r_red" enabled="0" material="5046373df7770e6c9adcecb899838c0bbd8af6ce" property="surface_base"/>
+		<surface name="taillight_r_white" material="4bdf47d0eb2fda418371e817220211946d2987e7" property="surface_base"/>
+		<transform>1 8.46384073938e-012 4.65584510287e-010 0.0 -4.4408920985e-016 1 0 0.0 -1.59001767783e-016 -1.08338649857e-009 0.999999940405 0.0 -1.36424205266e-011 3.27418092638e-011 -6.25277607469e-013 1.0</transform>
+		<node type="NodeReference" id="457886738" name="doors">
+			<reference>../vehicles/dm_train/graphics/dm_train_door.node</reference>
+			<transform>1.00000005961 0 0 0.0 0 1.00000005961 0 0.0 0 0 1.00000005961 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1584440297" name="dm_train_interior">
+			<reference>../vehicles/dm_train/graphics/dm_train_interior.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1803675378" folded="1" name="headlights">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="LightProj" id="1322203093" name="HeadLightLowBeamLHS">
+				<penumbra>1</penumbra>
+				<attenuation_distance>250</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<fov>40</fov>
+				<znear>1</znear>
+				<color>1 1 0.886274576 1</color>
+				<shadow>0</shadow>
+				<shadow_bias>1</shadow_bias>
+				<visible_distance>800</visible_distance>
+				<fade_distance>200</fade_distance>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999940395 0 0 0.0 0 1.78785338532e-007 0.999839961519 0.0 0 -0.999839961519 1.78785338532e-007 0.0 -0.974000058055 -0.603000035942 1.33500007957 1.0</transform>
+			</node>
+			<node type="LightProj" id="977261698" name="HeadLightLowBeamRHS">
+				<penumbra>1</penumbra>
+				<attenuation_distance>250</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<fov>40</fov>
+				<znear>1</znear>
+				<color>1 1 0.886274576 1</color>
+				<shadow>0</shadow>
+				<shadow_bias>1</shadow_bias>
+				<visible_distance>800</visible_distance>
+				<fade_distance>200</fade_distance>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999940395 0 0 0.0 0 1.78783988501e-007 0.999832451334 0.0 0 -0.999832451334 1.78783988501e-007 0.0 0.974000058055 -0.603000035942 1.33500007957 1.0</transform>
+			</node>
+			<node type="LightProj" id="73592608" name="FloodLight">
+				<penumbra>1</penumbra>
+				<attenuation_distance>300</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<fov>60</fov>
+				<znear>1</znear>
+				<color>1 1 0.937254965 1</color>
+				<shadow>0</shadow>
+				<shadow_bias>1</shadow_bias>
+				<visible_distance>800</visible_distance>
+				<fade_distance>200</fade_distance>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999940395 0 0 0.0 0 1.07259217684e-006 0.999728262408 0.0 0 -0.999728381618 1.07259229052e-006 0.0 -0.0152750008719 -1.24203007089 3.59901320543 1.0</transform>
+			</node>
+			<node type="LightOmni" id="1978772921" name="Taillight_RHS">
+				<attenuation_distance>0.300000012</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<color>1 0 0 1</color>
+				<intensity>0.200000003</intensity>
+				<attenuation_power>0.550000012</attenuation_power>
+				<shadow_resolution>0</shadow_resolution>
+				<shadow_bias>1</shadow_bias>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999821186 -1.32354139743e-023 0 0.0 6.61493277231e-024 5.95820139852e-008 0.999620199159 0.0 -6.61549343111e-024 -0.999625921183 5.95823479417e-008 0.0 1.13 -0.762999999995 1.843 1.0</transform>
+			</node>
+			<node type="LightOmni" id="651212887" name="Taillight_LHS">
+				<attenuation_distance>0.300000012</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<color>1 0 0 1</color>
+				<intensity>0.200000003</intensity>
+				<attenuation_power>0.550000012</attenuation_power>
+				<shadow_resolution>0</shadow_resolution>
+				<shadow_bias>1</shadow_bias>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999821186 -1.32354139743e-023 0 0.0 6.61496077687e-024 5.95822662279e-008 0.999624431089 0.0 -6.61552143567e-024 -0.999630153113 5.95826001844e-008 0.0 -1.13 -0.762999999999 1.843 1.0</transform>
+			</node>
+			<node type="LightProj" id="653327047" name="HeadLightHighBeamRHS">
+				<penumbra>1</penumbra>
+				<attenuation_distance>250</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<fov>50</fov>
+				<znear>1</znear>
+				<color>1 1 0.886274576 1</color>
+				<intensity>2.5</intensity>
+				<shadow>0</shadow>
+				<shadow_bias>1</shadow_bias>
+				<visible_distance>800</visible_distance>
+				<fade_distance>200</fade_distance>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999940395 0 0 0.0 0 1.78783988501e-007 0.999832451334 0.0 0 -0.999832451334 1.78783988501e-007 0.0 0.974000058055 -0.603000035942 1.33500007957 1.0</transform>
+			</node>
+			<node type="LightProj" id="540719194" name="HeadLightHighBeamLHS">
+				<penumbra>1</penumbra>
+				<attenuation_distance>250</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<fov>50</fov>
+				<znear>1</znear>
+				<color>1 1 0.886274576 1</color>
+				<intensity>2.5</intensity>
+				<shadow>0</shadow>
+				<shadow_bias>1</shadow_bias>
+				<visible_distance>800</visible_distance>
+				<fade_distance>200</fade_distance>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999940395 0 0 0.0 0 1.78785338532e-007 0.999839961519 0.0 0 -0.999839961519 1.78785338532e-007 0.0 -0.974000058055 -0.603000035942 1.33500007957 1.0</transform>
+			</node>
+			<node type="LightOmni" id="1137791699" name="rmlight_RHS">
+				<attenuation_distance>1</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<color>0.247058839 1 0 1</color>
+				<intensity>0.0199999996</intensity>
+				<attenuation_power>0.550000012</attenuation_power>
+				<shadow>0</shadow>
+				<shadow_resolution>0</shadow_resolution>
+				<shadow_bias>1</shadow_bias>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999880791 -3.30877510421e-023 -1.32348882231e-023 0.0 1.65371779056e-023 3.57488730157e-007 0.999610900833 0.0 -2.64677697443e-023 -0.999616742089 3.57490833364e-007 0.0 1.55920318194 -2.0465942388 3.25822938019 1.0</transform>
+			</node>
+			<node type="LightOmni" id="804252112" name="rmlight_LHS">
+				<attenuation_distance>1</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<color>0.247058839 1 0 1</color>
+				<intensity>0.0199999996</intensity>
+				<attenuation_power>0.550000012</attenuation_power>
+				<shadow>0</shadow>
+				<shadow_resolution>0</shadow_resolution>
+				<shadow_bias>1</shadow_bias>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999880791 -7.27924251778e-023 -2.31610536016e-023 0.0 3.96887198145e-023 8.93710357232e-007 0.999597966623 0.0 -5.95549125994e-023 -0.999603807879 8.93715529984e-007 0.0 -1.56296018237 -2.0465942388 3.25822938019 1.0</transform>
+			</node>
+			<node type="LightOmni" id="763896802" name="FlashLight">
+				<attenuation_distance>0.300000012</attenuation_distance>
+				<shape>2 1 0.200000003</shape>
+				<shape_type>-1</shape_type>
+				<color>0.737254918 0.603921592 0.329411775 1</color>
+				<intensity>0.200000003</intensity>
+				<attenuation_power>0.550000012</attenuation_power>
+				<shadow_resolution>0</shadow_resolution>
+				<shadow_bias>1</shadow_bias>
+				<shadow_screen_space>0</shadow_screen_space>
+				<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+				<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+				<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+				<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+				<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+				<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+				<transform>0.999999940395 0 0 0.0 2.35098870164e-038 1.54925053406e-006 0.999696493131 0.0 -1.23259516441e-032 -0.999696671945 1.54925076143e-006 0.0 0.932678053237 -1.24203007089 3.35405619145 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeReference" id="1628593304" name="passengers">
+			<reference>../vehicles/dm_train/graphics/passengers.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshSkinned" id="1077347621" name="wiper_right">
+			<mesh_name>../vehicles/dm_train/graphics/wiper_right.mesh</mesh_name>
+			<anim_name>../vehicles/dm_train/graphics/animations/wiper_right.anim</anim_name>
+			<loop>1</loop>
+			<speed>30</speed>
+			<surface name="wiper_right" max_visible_distance="500" max_fade_distance="5" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="wiper_right_blade" max_visible_distance="500" max_fade_distance="5" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="wiper_right_blade_bottom" viewport_mask="0x0" max_visible_distance="500" max_fade_distance="5" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<surface name="wiper_right_blade_top" viewport_mask="0x0" max_visible_distance="500" max_fade_distance="5" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<transform>1.00000005961 0 0 0.0 0 1.00000005961 0 0.0 0 0 1.00000005961 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshSkinned" id="577749261" name="wiper_left">
+			<mesh_name>../vehicles/dm_train/graphics/wiper_left.mesh</mesh_name>
+			<anim_name>../vehicles/dm_train/graphics/animations/wiper_left.anim</anim_name>
+			<loop>1</loop>
+			<speed>30</speed>
+			<surface name="wiper_left" max_visible_distance="500" max_fade_distance="5" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="wiper_left_blade" max_visible_distance="500" max_fade_distance="5" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="wiper_left_blade" viewport_mask="0x0" max_visible_distance="500" max_fade_distance="5" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<surface name="wiper_left_blade_bottom" viewport_mask="0x0" max_visible_distance="500" max_fade_distance="5" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<surface name="wiper_left_blade_top" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<transform>0.999999954963 -7.35389528099e-010 -1.55967806612e-011 0.0 1.2428903566e-009 0.999999964676 1.13092894771e-009 0.0 1.92420206288e-011 -2.04174248689e-009 0.999999897136 0.0 -0.0499999999993 3.63797880709e-012 -1.13686837722e-013 1.0</transform>
+		</node>
+		<node type="ObjectMeshSkinned" id="389417935" name="wiper_center">
+			<mesh_name>../vehicles/dm_train/graphics/wiper_center.mesh</mesh_name>
+			<anim_name>../vehicles/dm_train/graphics/animations/wiper_center.anim</anim_name>
+			<loop>1</loop>
+			<speed>30</speed>
+			<surface name="wiper_center" max_visible_distance="500" max_fade_distance="5" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="wiper_center_blade" max_visible_distance="500" max_fade_distance="5" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="wiper_center_blade_bottom" viewport_mask="0x0" max_visible_distance="500" max_fade_distance="5" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<surface name="wiper_center_blade_top" viewport_mask="0x0" max_visible_distance="500" max_fade_distance="5" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.3 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1614603423" enabled="0" name="cab_fire">
+			<reference>../features/fire/graphics/cab_fire_large.node</reference>
+			<transform>1.00000005961 -1.11022315698e-016 0 0.0 1.11022315698e-016 1.00000005961 0 0.0 0 0 1.00000005961 0.0 -0.711712083041 -17.0610739908 1.12112413082 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="528840157" folded="1" name="headlights_particle">
+			<transform>0.999999940396 -6.61796867941e-024 0 0.0 6.61796867941e-024 0.999999940396 0 0.0 0 0 1 0.0 -4.54747350886e-013 -1.81898940355e-012 0 1.0</transform>
+			<node type="ObjectVolumeOmni" id="701782941" enabled="0" collider="0" name="Taillight_RHS_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.200000003</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="49ff73251c2b848f629bc8b0122cc00f62e8e99e" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 0 0.0 6.61744568929e-024 5.96046518808e-008 -0.999999940395 0.0 1.11022302463e-016 1 5.96046412227e-008 0.0 1.13000013471 -0.690000082252 1.80100010735 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1389201316" enabled="0" collider="0" name="Taillight_LHS_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.200000003</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="49ff73251c2b848f629bc8b0122cc00f62e8e99e" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 0 0.0 6.61744568929e-024 5.96046518808e-008 -0.999999940395 0.0 1.11022302463e-016 1 5.96046412227e-008 0.0 -1.1300001347 -0.69000008225 1.80100010735 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1275147078" enabled="0" collider="0" name="FlashLight_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.200000003</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 -4.1876985635e-038 0.0 1.19113935632e-022 1.07288295226e-006 -0.99999922514 0.0 1.11022223053e-016 0.999999284744 1.07288282436e-006 0.0 0.874505206296 -1.13977926886 3.37337339362 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="2044423069" enabled="0" collider="0" name="FloodLight_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.200000003</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="c3b884988f1b97b8a0fa7ef2a45f27fcbc843b96" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 -3.08567275849e-038 0.0 2.64697455229e-022 2.38418272147e-006 -0.999998509884 0.0 1.11022143644e-016 0.999998569488 2.38418220988e-006 0.0 -0.008156001918 -1.00717423758 3.590918419 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="338233532" enabled="0" collider="0" name="HeadLightLowBeamLHS_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.200000003</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="c3b884988f1b97b8a0fa7ef2a45f27fcbc843b96" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 0 0.0 6.61744568929e-024 5.96046518808e-008 -0.999999940395 0.0 1.11022302463e-016 1 5.96046412227e-008 0.0 -0.974000116104 -0.401000047799 1.33500007957 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1546622547" enabled="0" collider="0" name="HeadLightLowBeamRHS_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.200000003</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="c3b884988f1b97b8a0fa7ef2a45f27fcbc843b96" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 0 0.0 6.61744568929e-024 5.96046518808e-008 -0.999999940395 0.0 1.11022302463e-016 1 5.96046412227e-008 0.0 0.974000116115 -0.402000048098 1.33500007957 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="227761928" enabled="0" collider="0" name="HeadLightHighBeamLHS_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.300000012</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="c3b884988f1b97b8a0fa7ef2a45f27fcbc843b96" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 0 0.0 6.61744568929e-024 5.96046518808e-008 -0.999999940395 0.0 1.11022302463e-016 1 5.96046412227e-008 0.0 -0.974000116104 -0.400000044048 1.33500007403 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1365234885" enabled="0" collider="0" name="HeadLightHighBeamRHS_particle">
+				<width>0.00999999978</width>
+				<height>0.00999999978</height>
+				<radius>0.300000012</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="c3b884988f1b97b8a0fa7ef2a45f27fcbc843b96" property="surface_base"/>
+				<transform>1.00000011921 -1.11022315697e-016 0 0.0 6.61744568929e-024 5.96046518808e-008 -0.999999940395 0.0 1.11022302463e-016 1 5.96046412227e-008 0.0 0.974000116115 -0.401000047799 1.33500007957 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="2102369849" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="1f016fbb2c3dba6ca3e2653c99cddec21e31f6d0" property="surface_base"/>
+				<transform>-3.57627925496e-007 1.98523378567e-023 1 0.0 -2.64697859372e-023 1 -1.98523323347e-023 0.0 -1.00000011921 -2.64697859372e-023 -3.57627882863e-007 0.0 -1.513 -2.03761467131 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1337889998" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>1.78813934326e-007 -1.32348898008e-023 0.999999761582 0.0 1.32348929316e-023 1 0 0.0 -0.999999761581 -2.46519032882e-032 1.78813898799e-007 0.0 -1.513 -3.431 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1818087759" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>7.15255566774e-007 -3.97046599362e-023 0.999999523163 0.0 3.97046788442e-023 1 2.31610536016e-023 0.0 -0.999999523162 2.64697858879e-023 7.15255367823e-007 0.0 -1.513 -8.64679023037 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1845833866" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="49ff73251c2b848f629bc8b0122cc00f62e8e99e" property="surface_base"/>
+				<transform>1.07288306594e-006 -5.95569741271e-023 0.999999284745 0.0 5.95570182787e-023 1 4.3013387514e-023 0.0 -0.999999284744 3.97046788442e-023 1.07288282436e-006 0.0 -1.513 -11.2675338486 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="668495903" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>1.54971965571e-006 -8.60267221743e-023 0.999999046326 0.0 8.60268041912e-023 1 6.94831608049e-023 0.0 -0.999999046325 6.61744647568e-023 1.5497192436e-006 0.0 -1.513 -13.8760214639 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1979266243" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>1.90734681382e-006 -9.59528603371e-023 0.999998807907 0.0 1.19114036582e-022 1 7.94093293388e-023 0.0 -0.999998807907 9.92616971475e-023 1.90734635908e-006 0.0 -1.513 -19.1078796981 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1310338110" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>1.78813934326e-007 -1.32348898008e-023 -0.999999761582 0.0 1.32348929316e-023 1 0 0.0 0.999999761581 2.46519032882e-032 1.78813898799e-007 0.0 1.513 -3.431 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1561765204" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="1f016fbb2c3dba6ca3e2653c99cddec21e31f6d0" property="surface_base"/>
+				<transform>1.07288374807e-006 1.12496577507e-022 -1 0.0 6.61744645349e-024 1 1.15805274319e-022 0.0 1.00000107288 2.46519032882e-032 1.07288475704e-006 0.0 1.513 -2.03761467131 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1458091241" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>-1.19209204286e-006 -2.97784839081e-023 -0.999999046326 0.0 -6.61744648061e-023 1 -2.64697764463e-023 0.0 0.999999046325 7.94093577624e-023 -1.19209178706e-006 0.0 1.513 -13.8760214639 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1546866069" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="49ff73251c2b848f629bc8b0122cc00f62e8e99e" property="surface_base"/>
+				<transform>-3.57627698122e-007 -2.97784870635e-023 -0.999999284745 0.0 -1.32348929809e-023 1 -2.64697764463e-023 0.0 0.999999284744 2.64697859372e-023 -3.57627627068e-007 0.0 1.513 -11.2675338486 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="429489132" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>8.94069430046e-007 5.62482698207e-023 -0.999999523163 0.0 -2.46519032882e-032 1 7.27918836495e-023 0.0 0.999999523162 1.32348929809e-023 8.94069266622e-007 0.0 1.513 -8.64679023038 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1831796159" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>-2.38418363096e-006 -3.30871819036e-023 -0.999998807907 0.0 -1.32348929588e-022 1 -2.64697764463e-023 0.0 0.999998807907 1.32348929588e-022 -2.384182892e-006 0.0 1.513 -19.1078796981 3.261 1.0</transform>
+			</node>
+		</node>
+		<node type="LightEnvironmentProbe" id="1413121161" name="dm_saloon_light">
+			<attenuation_distance>0.400000006 0.400000006 0.400000006</attenuation_distance>
+			<is_dynamic>0</is_dynamic>
+			<is_local_space>0</is_local_space>
+			<is_sky_cutout>0</is_sky_cutout>
+			<is_box_projection>1</is_box_projection>
+			<is_box_gi>1</is_box_gi>
+			<box_gloss_corners>1</box_gloss_corners>
+			<box_size>2.69901538 20.1966305 2.01987076</box_size>
+			<is_sun_light_color>0</is_sun_light_color>
+			<grab_offset>0 0 0</grab_offset>
+			<reflection_update>1</reflection_update>
+			<reflection_mask>0xffffffff</reflection_mask>
+			<resolution>-1</resolution>
+			<zfar>10000</zfar>
+			<znear>0.100000001</znear>
+			<supersampling>-1</supersampling>
+			<reflection_intensity>0.100000001</reflection_intensity>
+			<reflection_color>1 1 1 1</reflection_color>
+			<ambient_intensity>0.600000024</ambient_intensity>
+			<ambient_color>1 1 1 1</ambient_color>
+			<ambient_contrast>0.100000001</ambient_contrast>
+			<texture>core/textures/common/environment_default.dds</texture>
+			<attenuation_power>0.400000006</attenuation_power>
+			<shadow_bias>1</shadow_bias>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>1 1.69280088737e-011 9.31168848054e-010 0.0 8.38894167798e-017 1 6.93889390391e-018 0.0 -6.2257424832e-010 -8.41131775342e-010 0.999985156001 0.0 -0.015549161144 -12.3477371718 2.09648606092 1.0</transform>
+		</node>
+		<node type="LightEnvironmentProbe" id="1452399448" name="dm_cabin_light">
+			<attenuation_distance>0.400000006 0.400000006 0.400000006</attenuation_distance>
+			<is_dynamic>0</is_dynamic>
+			<is_local_space>0</is_local_space>
+			<is_sky_cutout>0</is_sky_cutout>
+			<is_box_projection>1</is_box_projection>
+			<is_box_gi>1</is_box_gi>
+			<box_gloss_corners>1</box_gloss_corners>
+			<box_size>2.74396181 0.783053041 1.92667139</box_size>
+			<is_sun_light_color>0</is_sun_light_color>
+			<grab_offset>0 0 0</grab_offset>
+			<reflection_update>1</reflection_update>
+			<reflection_mask>0xffffffff</reflection_mask>
+			<resolution>-1</resolution>
+			<zfar>10000</zfar>
+			<znear>0.100000001</znear>
+			<supersampling>-1</supersampling>
+			<reflection_intensity>0.100000001</reflection_intensity>
+			<reflection_color>1 1 1 1</reflection_color>
+			<ambient_intensity>0.600000024</ambient_intensity>
+			<ambient_color>1 1 1 1</ambient_color>
+			<ambient_contrast>0.100000001</ambient_contrast>
+			<texture>core/textures/common/environment_default.dds</texture>
+			<attenuation_power>0.400000006</attenuation_power>
+			<shadow_bias>1</shadow_bias>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>1 2.96238896638e-011 1.6295456525e-009 0.0 1.39400568043e-016 1 1.04083408559e-017 0.0 -1.46655900454e-009 -1.23483266321e-009 0.999985156008 0.0 0.00353139065737 -1.68631097926 2.04965976836 1.0</transform>
+		</node>
+	</node>
+</nodes>

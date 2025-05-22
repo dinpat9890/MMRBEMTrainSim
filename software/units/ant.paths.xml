@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project name="UnitSoftwarePaths" >
+  <!-- If you're adding a module, just append its path to one of the following: -->
+  <path id="cpp.units">
+    <pathelement path="${dir.software}/units/PlatformPassengersUnits"/>
+    <pathelement path="${dir.software}/units/SaloonCCTVUnit"/>
+    <pathelement path="${dir.software}/units/PISUnit"/>
+    <pathelement path="${dir.software}/units/RadioUnit"/>
+    <pathelement path="${dir.software}/units/DVAUnit"/>
+  </path>
+
+  <path id="cpp.libs">
+  </path>
+
+  <path id="cpp.apps">
+    <!-- pathelement path="speed_limit_units"/ -->
+  </path>
+
+  <path id="java.libs">
+  </path>
+
+  <path id="java.apps">
+  </path>
+
+  <path id="web.apps">
+  </path>
+
+  <path id="project.cots">
+  </path>
+
+  <path id="all_software">
+    <path refid="cpp.libs"/>
+    <path refid="cpp.apps"/>
+    <path refid="cpp.units"/>
+    <path refid="java.libs"/>
+    <path refid="java.apps"/>
+    <path refid="web.apps"/>
+    <path refid="project.cots"/>
+  </path>
+</project>

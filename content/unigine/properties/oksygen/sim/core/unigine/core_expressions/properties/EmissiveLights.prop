@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties version="1.00">
+	<property name="EmissiveLights">
+		<parameter name="Ambient" type="float">0.2</parameter>
+	</property>
+</properties>

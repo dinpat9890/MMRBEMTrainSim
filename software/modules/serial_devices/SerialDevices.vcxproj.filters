@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ddd97cec-54ea-4bb8-aba6-49624f200f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware">
+      <UniqueIdentifier>{1d3cca57-c74a-4358-907b-01c20a777351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{ad659897-0964-461e-a189-9c7cd91ed537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Hardware\FlightSimGaugeHardware.cpp">
+      <Filter>Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FlightSimGaugeUnit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SerialDeviceApplication.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SerialDevices.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Hardware\FlightSimHardwareV2.cpp">
+      <Filter>Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FlightSimUnitV2.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Hardware\ArduinoHardware.cpp">
+      <Filter>Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Hardware\ArduinoProperties.cpp">
+      <Filter>Hardware</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Hardware\FlightSimGaugeHardware.h">
+      <Filter>Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FlightSimGaugeUnit.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SerialDeviceApplication.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SerialDeviceCommon.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hardware\FlightSimHardwareV2.h">
+      <Filter>Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FlightSimUnitV2.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hardware\ArduinoHardware.h">
+      <Filter>Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hardware\ArduinoProperties.h">
+      <Filter>Hardware</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

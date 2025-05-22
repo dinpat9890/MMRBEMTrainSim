@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1989087862" name="wash_plant">
+		<mesh_name>../worlds/mmrbem/graphics/depot/wash_plant.mesh</mesh_name>
+		<surface name="wash_plant_concrete_wall_stained" material="7f94074832a6498d78ca0ba0255283c8cb1b8fec" property="surface_base"/>
+		<surface name="wash_plant_generic_metal" material="31392cb040148a4ea61d8c3bec465635ec98ffbf" property="surface_base"/>
+		<surface name="wash_plant_generic_metal_blue" material="95f41e2a4b2ce1f95928b0174d6bb5f58163b923" property="surface_base"/>
+		<surface name="wash_plant_wash_plant" material="78ef014c5524db7ee8c4f3c785ff5098b87a0796" property="surface_base"/>
+		<transform>0.999999933446 3.38899819319e-009 0 0.0 0 1 0 0.0 0 0 0.999999940395 0.0 1.09139364213e-011 3.63797880709e-012 -1.42108547152e-014 1.0</transform>
+	</node>
+</nodes>

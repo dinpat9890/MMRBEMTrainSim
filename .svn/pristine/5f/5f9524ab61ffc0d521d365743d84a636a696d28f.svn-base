@@ -1,0 +1,17 @@
+
+[Defaults]
+System=System.ini
+
+[System.1]
+Module Name=Shutdown
+
+[Actions]
+Action = Shutdown
+#Action = Logoff
+#Action = Exit
+Time = 16
+
+[Admin]
+# Optional, defaults to -1
+# You really don't want to use 0 for this.
+Admin Shutdown Reason Code=-1

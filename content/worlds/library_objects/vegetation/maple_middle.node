@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="681355407" name="maple_middle">
+		<mesh_name>../worlds/shared/graphics/vegetation/maple_middle.mesh</mesh_name>
+		<surface name="tree_branches_lod2" material="d0369851badfaa46abee7766290120e83c447cc5" property="surface_base"/>
+		<surface name="tree_trunk_lod2" material="e9db7946d84fd759b42b7868c2a3eb33e82dd5f6" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

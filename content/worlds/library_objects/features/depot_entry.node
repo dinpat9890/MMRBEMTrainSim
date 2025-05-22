@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="997277456" name="depot_entry">
+		<mesh_name>../worlds/library_objects/features/depot_entry.mesh</mesh_name>
+		<surface name="depot_entry" max_visible_distance="800" max_fade_distance="10" material="a8c299dd10009e963b1e810a290e077870d42c75" property="surface_base"/>
+		<transform>0.999999940395 -2.77555756156e-016 0 0.0 2.77555756156e-016 0.999999940395 0 0.0 0 0 0.999999940395 0.0 1.09139364213e-011 2.18278728426e-011 0 1.0</transform>
+	</node>
+</nodes>

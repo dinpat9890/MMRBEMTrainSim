@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="metal_railing_04" guid="70be85a0e67740d096f5c3a64d8e7035c76926fc" base_material="mesh_base">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options transparent="2" depth_mask="1" two_sided="1" overlap="0"/>
+	<texture name="albedo">../worlds/library_objects/gen_building/textures/metal_railing_04.dds</texture>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0.5</parameter>
+</material>

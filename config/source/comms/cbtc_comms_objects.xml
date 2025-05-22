@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+
+  <layer name="Project">
+    <!-- The following type definition is related to fault properties being set -->
+    <number_type name="Faults">
+      <number_type_value name="No Fault"                  constant_name="NO_FAULT"                    value="0"/>
+      <number_type_value name="Fault"                     constant_name="FAULT"                       value="1"/>
+    </number_type>
+
+    <number_type name="VisionDoorStatus">
+      <number_type_value name="Disabled"                  constant_name="DISABLED"                    value="0"/>
+      <number_type_value name="Enabled"                   constant_name="ENABLED"                     value="1"/>
+    </number_type>
+
+    <!-- The following type definitions are related to the properties under the CBTC Vehicle Inputs object -->
+    <number_type name="ServiceBrakeOrder">
+      <number_type_value name="Full SB Demand"            constant_name="FULL_SB_DEMAND"              value="0"/>
+      <number_type_value name="No SB Demand"              constant_name="NO_SB_DEMAND"                value="1"/>
+    </number_type>
+
+    <number_type name="EmergencyBrakeOrder">
+      <number_type_value name="Emergency Brake Demand"    constant_name="EMERGENCY_BRAKE_DEMAND"      value="0"/>
+      <number_type_value name="No Emergency Brake"        constant_name="NO_EB_BRAKE"                 value="1"/>
+    </number_type>
+
+    <number_type name="ImmobilisationState">
+      <number_type_value name="Immobilised"               constant_name="IMMOBILSED"                  value="0"/>
+      <number_type_value name="Movement Allowed"          constant_name="MOVEMENT_ALLOWED"            value="1"/>
+    </number_type>
+
+    <number_type name="ATOState">
+      <number_type_value name="Not In AM"                 constant_name="NOT_IN_AM"                   value="0"/>
+      <number_type_value name="AM ATO Enabled"            constant_name="AM_ATO_ENABLED"              value="1"/>
+      <number_type_value name="AM ATO Disabled"           constant_name="AM_ATO_DISABLED"             value="2"/>
+    </number_type>
+	
+	<number_type name="UTOState">
+      <number_type_value name="AM UTO Disabled"           constant_name="AM_UTO_DISABLED"             value="0"/>
+      <number_type_value name="AM UTO Enabled"            constant_name="AM_UTO_ENABLED"              value="1"/>
+    </number_type>
+    
+	<number_type name="ModeSelector">
+      <number_type_value name="OFF UTO"                   constant_name="OFF_UTO"                     value="0"/>
+      <number_type_value name="RMR"                       constant_name="RMR"                         value="1"/>
+      <number_type_value name="STANDBY"                   constant_name="STANDBY"                     value="2"/>
+      <number_type_value name="RMF"                       constant_name="RMF"                         value="3"/>
+      <number_type_value name="ATP"                       constant_name="ATP"                         value="4"/>
+      <number_type_value name="ATO"                       constant_name="ATO"                         value="5"/>
+    </number_type>
+
+    <number_type name="IndicatorState">
+      <number_type_value name="Off"                       constant_name="OFF"                         value="0"/>
+      <number_type_value name="On"                        constant_name="ON"                          value="1"/>
+    </number_type>
+
+    <number_type name="CBTCAudio">
+      <number_type_value name="Off"                       constant_name="OFF"                         value="0"/>
+      <number_type_value name="Play"                      constant_name="PLAY"                        value="1"/>
+    </number_type>
+
+    <number_type name="Region">
+      <number_type_value name="Outside Region"            constant_name="OUTSIDE_REGION"              value="0"/>
+      <number_type_value name="Inside Region"             constant_name="INSIDE_REGION"               value="1"/>
+    </number_type>
+
+    <number_type name="ZeroSpeedState">
+      <number_type_value name="Speed Above Min"           constant_name="SPEED_ABOVE_MIN"             value="0"/>
+      <number_type_value name="Speed Below Min"           constant_name="SPEED_BELOW_MIN"             value="1"/>
+    </number_type>
+
+    <number_type name="OpenDoorRequest">
+      <number_type_value name="No Open Door Request"      constant_name="NO_OPEN_DOOR_REQUEST"        value="0"/>
+      <number_type_value name="Open Door Request"         constant_name="OPEN_DOOR_REQUESTED"         value="1"/>
+    </number_type>
+
+    <number_type name="CloseDoorRequest">
+      <number_type_value name="No Close Door Request"      constant_name="NO_CLOSE_DOOR_REQUEST"      value="0"/>
+      <number_type_value name="Close Door Request"         constant_name="CLOSE_DOOR_REQUESTED"       value="1"/>
+    </number_type>
+
+    <!-- The following type definitions are related to the properties under the CBTC Vehicle Outputs object -->
+    <number_type name="CorrectSideDoorEnable">
+      <number_type_value name="Side Disabled"             constant_name="SIDE_DISABLED"               value="0"/>
+      <number_type_value name="Side Enabled"              constant_name="SIDE_ENABLED"                value="1"/>
+    </number_type>
+
+    <number_type name="DoorInhibit">
+      <number_type_value name="Door Enabled"              constant_name="DOOR_ENABLED"                value="0"/>
+      <number_type_value name="Door Inhibited"            constant_name="DOOR_INHIBITED"              value="1"/>
+    </number_type>
+
+    <number_type name="PowerSupply">
+      <number_type_value name="No Power"                  constant_name="NO_POWER"                    value="0"/>
+      <number_type_value name="Power On"                  constant_name="POWER_ON"                    value="1"/>
+    </number_type>
+
+    <number_type name="CabinActivation">
+      <number_type_value name="Inactive"                  constant_name="INACTIVE"                    value="0"/>
+      <number_type_value name="Active"                    constant_name="ACTIVE"                      value="1"/>
+    </number_type>
+
+    <number_type name="ATCBypassState">
+      <number_type_value name="No Bypass"                 constant_name="NO_BYPASS"                   value="0"/>
+      <number_type_value name="Bypass Enabled"            constant_name="BYPASS_ENABLED"              value="1"/>
+    </number_type>
+
+    <number_type name="DriverModeSelection">
+      <number_type_value name="OFF"                       constant_name="OFF"                         value="0"/>
+      <number_type_value name="ATP"                       constant_name="ATP"                         value="1"/>
+      <number_type_value name="ROS"                       constant_name="ROS"                         value="2"/>
+      <number_type_value name="RMR"                       constant_name="RMR"                         value="3"/>
+      <number_type_value name="RMF"                       constant_name="RMF"                         value="4"/>
+      <number_type_value name="ATB"                       constant_name="ATB"                         value="5"/>
+      <number_type_value name="ATO"                       constant_name="ATO"                         value="6"/>
+      <number_type_value name="UTO"                       constant_name="UTO"                         value="7"/>
+      <number_type_value name="ATC_BYPASS_MODE"           constant_name="ATC_BYPASS_MODE"             value="8"/>
+    </number_type>
+
+    <number_type name="TBCPosition">
+      <number_type_value name="Braking"                   constant_name="BRAKING"                     value="-1"/>
+      <number_type_value name="FullSB"                    constant_name="FULL_SB"                     value="0"/>
+      <number_type_value name="Traction"                  constant_name="TRACTION"                    value="1"/>
+    </number_type>
+
+    <number_type name="ButtonState">
+      <number_type_value name="Unpressed"                 constant_name="UNPRESSED"                   value="0"/>
+      <number_type_value name="Pressed"                   constant_name="PRESSED"                     value="1"/>
+    </number_type>
+
+    <number_type name="DoorMode">
+      <number_type_value name="Manual"                    constant_name="MANUAL"                      value="0"/>
+      <number_type_value name="Auto"                      constant_name="AUTO"                        value="1"/>
+    </number_type>
+
+    <number_type name="SafetyBrakeStatus">
+      <number_type_value name="Safety Brake Applied"      constant_name="SAFETY_BRAKE_APPLIED"        value="0"/>
+      <number_type_value name="No Safety Brake"           constant_name="NO_SAFETY_BRAKE"             value="1"/>
+    </number_type>
+
+    <number_type name="NoDoorInterlockBypass">
+      <number_type_value name="Bypass Enabled"            constant_name="BYPASS_ENABLED"              value="0"/>
+      <number_type_value name="No Bypass"                 constant_name="NO_BYPASS"                   value="1"/>
+    </number_type>
+
+    <number_type name="TrainDoorInterlock">
+      <number_type_value name="No Interlock"             constant_name="NO_INTERLOCK"                 value="0"/>
+      <number_type_value name="Doors Interlocked"        constant_name="DOORS_INTERLOCKED"            value="1"/>
+    </number_type>
+
+    <!-- The following type definition is related to Onboard Input properties -->
+    <number_type name="PlatformStatus">
+      <number_type_value name="Not Docked"                constant_name="NOT_DOCKED"                  value="0"/>
+      <number_type_value name="Docked"                    constant_name="DOCKED"                      value="1"/>
+      <number_type_value name="Ready To Depart"           constant_name="READY_TO_DEPART"             value="2"/>
+      <number_type_value name="Hold"                      constant_name="HOLD"                        value="3"/>
+      <number_type_value name="PSD Unlocked"              constant_name="PSD_UNLOCKED"                value="4"/>
+      <number_type_value name="Immediate Departure"       constant_name="IMMEDIATE_DEPARTURE"         value="5"/>
+    </number_type>
+
+    <number_type name="PlatformRegion">
+      <number_type_value name="Outside Region"            constant_name="OUTSIDE_REGION"              value="0"/>
+      <number_type_value name="Entering Region"           constant_name="ENTERING_REGION"             value="1"/>
+      <number_type_value name="Within Region"             constant_name="WITHIN_REGION"               value="2"/>
+      <number_type_value name="Exiting Region"            constant_name="EXITING_REGION"              value="3"/>
+    </number_type>
+
+    <number_type name="PlatformDetection">
+      <number_type_value name="No Platform Detected"      constant_name="NO_PLATFORM_DETECTED"        value="0"/>
+      <number_type_value name="Platform Detected"         constant_name="PLATFORM_DETECTED"           value="1"/>
+    </number_type>
+
+    <number_type name="PSDPresent">
+      <number_type_value name="PSD Not Present"           constant_name="PSD_NOT_PRESENT"             value="0"/>
+      <number_type_value name="PSD Present"               constant_name="PSD_PRESENT"                 value="1"/>
+    </number_type>
+
+    <!-- The following type definition is related to Vehicle Onboard Input properties -->
+
+    <number_type name="BeaconStates">
+      <number_type_value name="Faulty"                    constant_name="FAULTY"                      value="-1"/>
+      <number_type_value name="Unknown"                   constant_name="UNKNOWN"                     value="0"/>
+    </number_type>
+
+    <!-- The following type definition is related to CBTC Onboard Output properties read by the DMI unit -->
+    <number_type name="DMIWarningStatus">
+      <number_type_value name="Normal"                    constant_name="NORMAL"                      value="0"/>
+      <number_type_value name="Warning"                   constant_name="WARNING"                     value="1"/>
+      <number_type_value name="Intervention"              constant_name="INTERVENTION"                value="2"/>
+    </number_type>
+
+    <number_type name="CurrentDrivingMode">
+      <number_type_value name="No Mode"                   constant_name="NO_MODE"                     value="0"/>
+      <number_type_value name="ATP"                       constant_name="ATP"                         value="1"/>
+      <number_type_value name="ROS"                       constant_name="ROS"                         value="2"/>
+      <number_type_value name="RMR"                       constant_name="RMR"                         value="3"/>
+      <number_type_value name="RMF"                       constant_name="RMF"                         value="4"/>
+      <number_type_value name="ATB"                       constant_name="ATB"                         value="5"/>
+      <number_type_value name="ATO"                       constant_name="ATO"                         value="6"/>
+      <number_type_value name="UTO"                       constant_name="UTO"                         value="7"/>
+      <number_type_value name="ATC Bypass"                constant_name="ATC_BYPASS"                  value="8"/>
+    </number_type>
+
+    <number_type name="CBTCMode">
+      <number_type_value name="No Mode"                   constant_name="NO_MODE"                     value="0"/>
+      <number_type_value name="ATP"                       constant_name="ATP"                         value="1"/>
+      <number_type_value name="ROS"                       constant_name="ROS"                         value="2"/>
+      <number_type_value name="RMR"                       constant_name="RMR"                         value="3"/>
+      <number_type_value name="RMF"                       constant_name="RMF"                         value="4"/>
+      <number_type_value name="ATB"                       constant_name="ATB"                         value="5"/>
+      <number_type_value name="ATO"                       constant_name="ATO"                         value="6"/>
+      <number_type_value name="UTO"                       constant_name="UTO"                         value="7"/>
+      <number_type_value name="ATC Bypass"                constant_name="ATC_BYPASS"                  value="8"/>      
+    </number_type>
+
+    <number_type name="SafetyBrakeState">
+      <number_type_value name="Inactive"                  constant_name="INACTIVE"                    value="0"/>
+      <number_type_value name="Active"                    constant_name="ACTIVE"                      value="1"/>
+      <number_type_value name="FSB Active"                constant_name="FSB_ACTIVE"                  value="2"/>
+    </number_type>
+
+    <number_type name="ATCStatus">
+      <number_type_value name="Healthy"                   constant_name="HEALTHY"                     value="0"/>
+      <number_type_value name="Warning"                   constant_name="WARNING"                     value="1"/>
+      <number_type_value name="Degraded"                  constant_name="DEGRADED"                    value="2"/>
+    </number_type>
+
+    <number_type name="LocalisationStatus">
+      <number_type_value name="Unavailable"               constant_name="UNAVAILABLE"                 value="0"/>
+      <number_type_value name="Not Localised"             constant_name="NOT_LOCALISED"               value="1"/>
+      <number_type_value name="Localised"                 constant_name="LOCALISED"                   value="2"/>
+      <number_type_value name="Memorised Localisation"    constant_name="MEMORISED_LOCALISATION"      value="3"/>
+    </number_type>
+
+    <number_type name="DriverEventStatus">
+      <number_type_value name="Inactive"                  constant_name="INACTIVE"                    value="0"/>
+      <number_type_value name="Active"                    constant_name="ACTIVE"                      value="1"/>
+    </number_type>
+
+    <number_type name="RadioCommsStatus">
+      <number_type_value name="Not Established"           constant_name="COMMS_NOT_ESTABLISHED "      value="0"/>
+      <number_type_value name="Established"               constant_name="COMMS_ESTABLISHED "          value="1"/>
+    </number_type>
+
+    <number_type name="TrainDoorStatus">
+      <number_type_value name="Unknown"                   constant_name="UNKNOWN"                     value="0"/>
+      <number_type_value name="Door Closed"               constant_name="DOOR_CLOSED"                 value="1"/>
+      <number_type_value name="Door Opening"              constant_name="DOOR_OPENING"                value="2"/>
+      <number_type_value name="Door Open"                 constant_name="DOOR_OPEN"                   value="3"/>
+      <number_type_value name="Door Warning Open"         constant_name="DOOR_WARNING_OPEN"           value="4"/>
+      <number_type_value name="Door Warning Closing"      constant_name="DOOR_WARNING_CLOSING"        value="5"/>
+    </number_type>
+
+    <number_type name="PSDDoorStatus">
+      <number_type_value name="Unavailable"               constant_name="UNAVAILABLE"                 value="0"/>
+      <number_type_value name="Unknown"                   constant_name="UNKNOWN"                     value="1"/>
+      <number_type_value name="PSD Closed"                constant_name="PSD_CLOSED"                  value="2"/>
+      <number_type_value name="PSD Opening"               constant_name="PSD_OPENING"                 value="3"/>
+      <number_type_value name="PSD Opened"                constant_name="PSD_OPENED"                  value="4"/>
+      <number_type_value name="PSD Closing"               constant_name="PSD_CLOSING"                 value="5"/>
+      <number_type_value name="PSD Closing Failure"       constant_name="PSD_CLOSING_FAILURE"         value="6"/>
+    </number_type>
+
+    <number_type name="DepartureInformation">
+      <number_type_value name="No Indication"             constant_name="NO_INDICATION"               value="0"/>
+      <number_type_value name="No Departure Info"         constant_name="NO_DEPARTURE_INFO"           value="1"/>
+      <number_type_value name="Hold Train"                constant_name="TRAIN_HOLD"                  value="2"/>
+      <number_type_value name="Remaining_Time"            constant_name="REMAINING_TIME"              value="3"/>
+    </number_type>
+
+    <number_type name="DepartureOrder">
+      <number_type_value name="No Order"                  constant_name="NO_ORDER"                    value="0"/>
+      <number_type_value name="Start Order"               constant_name="START_ORDER"                 value="1"/>
+      <number_type_value name="Close Doors Order"         constant_name="CLOSE_DOORS_ORDER"           value="2"/>
+      <number_type_value name="Open Doors Order"          constant_name="OPEN_DOORS_ORDER"            value="3"/>
+    </number_type>
+
+    <number_type name="TrainDockingStatus">
+      <number_type_value name="Unknown"                   constant_name="UNKNOWN"                     value="0"/>
+      <number_type_value name="Correctly Docked"          constant_name="CORRECTLY_DOCKED"            value="1"/>
+      <number_type_value name="Short Stop"                constant_name="SHORT_STOP"                  value="2"/>
+      <number_type_value name="Long Stop"                 constant_name="LONG_STOP"                   value="3"/>
+      <number_type_value name="Too Long Stop"             constant_name="TOO_LONG_STOP"               value="4"/>
+      <number_type_value name="Operational Stop Distance" constant_name="OPERATIONAL_STOP_DISTANCE"   value="5"/>
+    </number_type>
+
+    <number_type name="DetrainmentDoorStatus">
+      <number_type_value name="Door Closed"               constant_name="DOOR_CLOSED"                 value="0"/>
+      <number_type_value name="Door Open"                 constant_name="DOOR_OPEN"                   value="1"/>
+    </number_type>
+
+    <number_type name="ATPZoneStatus">
+      <number_type_value name="Otherwise"           	  constant_name="OTHERWISE"      				value="0"/>
+      <number_type_value name="Non ATP Zone"           	  constant_name="NON_ATP_ZONE"      			value="1"/>
+      <number_type_value name="About To Leave ATP Zone"   constant_name="ABOUT_TO_LEAVE_ATP_ZONE"       value="2"/>
+    </number_type>
+
+    <number_type name="DepotIndication">
+      <number_type_value name="NoDisplay"           		constant_name="NO_DISPLAY"      			value="0"/>
+      <number_type_value name="Depot"           			constant_name="DEPOT"      					value="1"/>
+    </number_type>
+
+    <!-- ================================== CBTC Interface Objects ================================== -->
+
+    <!-- The following object definition defines the inputs used by the CBTC Onboard Unit -->
+    <object_class class="CBTC Onboard Inputs" constant_name="CBTC_ONBOARD_INPUTS">
+      <object_number  name="Platform Status"                constant_name="PLATFORM_STATUS"                   default="0"  delta="0.5"/>
+      <object_number  name="Train Near Platform"            constant_name="TRAIN_NEAR_PLATFORM"               default="0"  delta="0.5"/>
+      <object_number  name="PSD Present"                    constant_name="PSD_PRESENT"                       default="0"  delta="0.5"/>
+      <object_number  name="LHS Platform Detection"         constant_name="LHS_PLATFORM_DETECTION"            default="0"  delta="0.5"/>
+      <object_number  name="RHS Platform Detection"         constant_name="RHS_PLATFORM_DETECTION"            default="0"  delta="0.5"/>
+      <object_number  name="CBTC Message Acknowledge"       constant_name="CBTC_MESSAGE_ACKNOWLEDGE"          default="0"  delta="0.5"/>
+      <object_number  name="Last Detected Beacon"           constant_name="LAST_DETECTED_BEACON"              default="0"  delta="0.5"/>
+	  <object_number  name="Depot Region"                   constant_name="DEPOT_REGION"                      default="0"  delta="0.5"/>
+	  <object_number  name="ATP Zone Region"                constant_name="ATP_ZONE_REGION"                   default="0"  delta="0.5"/>
+	  <object_raw     name="Movement Authority"             constant_name="MOVEMENT_AUTHORITY"/>
+      <object_raw     name="Speed Limit Data"               constant_name="SPEED_LIMIT_DATA" />
+      <object_raw     name="Gradient Data"                  constant_name="GRADIENT_DATA" />
+      <object_raw     name="Track Events"                   constant_name="TRACK_EVENTS" />
+	</object_class>
+
+    <!-- The following object definition defines the outputs generated by the CBTC Onboard Unit -->
+    <object_class class="CBTC Onboard Outputs"                 constant_name="CBTC_ONBOARD_OUTPUTS">
+      <object_number  name="Warning Status"                  constant_name="WARNING_STATUS"                   default="0"  delta="0.5"/>
+      <object_number  name="Current Driving Mode"            constant_name="CURRENT_DRIVING_MODE"             default="0"  delta="0.5"/>
+      <object_number  name="Current Train Speed"             constant_name="CURRENT_TRAIN_SPEED"              default="0"  delta="0.01"/>
+      <object_number  name="CBTC Target Speed"               constant_name="CBTC_TARGET_SPEED"                default="0"  delta="0.1"/>
+      <object_number  name="CBTC Permitted Speed"            constant_name="CBTC_PERMITTED_SPEED"             default="0"  delta="0.1"/>
+      <object_number  name="Safety Brake Status"             constant_name="SAFETY_BRAKE_STATUS"              default="0"  delta="0.5"/>
+      <object_number  name="ATC Status"                      constant_name="ATC_STATUS"                       default="0"  delta="0.5"/>
+      <object_number  name="Target Distance"                 constant_name="TARGET_DISTANCE"                  default="0"  delta="0.5"/>
+      <object_number  name="Localisation Status"             constant_name="LOCALISATION_STATUS"              default="0"  delta="0.5"/>
+      <object_number  name="Advisory Speed"                  constant_name="ADVISORY_SPEED"                   default="0"  delta="0.01"/>
+	  <object_number  name="Warning Speed"                   constant_name="WARNING_SPEED"                    default="0"  delta="0.01"/>
+      <object_number  name="Driver Event Skip Station"       constant_name="DRIVER_EVENT_SKIP_STATION"        default="0"  delta="0.5"/>
+      <object_number  name="Driver Event Change Ends"        constant_name="DRIVER_EVENT_CHANGE_ENDS"         default="0"  delta="0.5"/>
+      <object_number  name="Driver Event Work Zone"          constant_name="DRIVER_EVENT_WORK_ZONE"           default="0"  delta="0.5"/>
+	  <object_number  name="Detrainment Door Status"         constant_name="DETRAINMENT_DOOR_STATUS"          default="0"  delta="0.5"/>
+      <object_number  name="Radio Communication Status"      constant_name="RADIO_COMMUNICATION_STATUS"       default="0"  delta="0.5"/>
+      <object_number  name="ATC ByPass State"                constant_name="ATC_BYPASS_STATE"                 default="0"  delta="0.5"/>
+       <object_number name="ATP Zone Status"                 constant_name="ATP_ZONE_STATUS"                  default="0"  delta="0.5"/>
+      <object_number  name="Depot Indication"                constant_name="DEPOT_INDICATION"                 default="0"  delta="0.5"/>
+	  <object_number  name="Emergency Brake Triger"          constant_name="EMERGENCY_BRAKE_TRIGGER"          default="0"  delta="0.5"/>
+      <object_raw     name="Available Modes"                 constant_name="AVAILABLE_MODES" />
+      <object_raw     name="CBTC Text Messages"              constant_name="CBTC_TEXT_MESSAGES" />
+    </object_class>
+
+    <!-- The following object definition defines the inputs to the Platform Control Unit -->
+    <object_class class="CBTC Platform Inputs" constant_name="CBTC_PLATFORM_INPUTS">
+      <object_number  name="LHS SD Open Inhibit Code"         constant_name="LHS_SD_OPEN_INHIBIT_CODE"         default="0"  delta="0.5"/>
+      <object_number  name="LHS SD Close Inhibit Code"        constant_name="LHS_SD_CLOSE_INHIBIT_CODE"        default="0"  delta="0.5"/>
+      <object_number  name="RHS SD Open Inhibit Code"         constant_name="RHS_SD_OPEN_INHIBIT_CODE"         default="0"  delta="0.5"/>
+      <object_number  name="RHS SD Close Inhibit Code"        constant_name="RHS_SD_CLOSE_INHIBIT_CODE"        default="0"  delta="0.5"/>
+      <object_number  name="Forced Door SD Inhibit Code"      constant_name="FORCE_DOOR_SD_INHIBIT_CODE"       default="0"  delta="0.5"/>
+	  <object_number  name="PSD Not Working"                  constant_name="PSD_NOT_WORKING"                  default="0"  delta="0.5"/>
+      <object_number  name="PSD Open Fault"                   constant_name="PSD_OPEN_FAULT"                   default="0"  delta="0.5"/>
+      <object_number  name="PSD Close Fault"                  constant_name="PSD_CLOSE_FAULT"                  default="0"  delta="0.5"/>
+      <object_number  name="Platform Door Open Request"       constant_name="PLATFORM_DOOR_OPEN_REQUEST"       default="0"  delta="0.5"/>
+      <object_number  name="Platform Door Close Request"      constant_name="PLATFORM_DOOR_CLOSE_REQUEST"      default="0"  delta="0.5"/>
+      <object_number  name="Platform Door Interlock Override" constant_name="PLATFORM_DOOR_INTERLOCK_OVERRIDE" default="0"  delta="0.5"/> 
+    </object_class>
+
+    <!-- The following object definition defines the outputs generated by the Platform Control Unit -->
+    <object_class class="CBTC Platform Outputs" constant_name="CBTC_PLATFORM_OUTPUTS">
+      <object_number  name="Train Door Status"               constant_name="TRAIN_DOOR_STATUS"                default="0"  delta="0.5"/>
+      <object_number  name="PSD Door Status"                 constant_name="PSD_DOOR_STATUS"                  default="0"  delta="0.5"/>
+      <object_number  name="Departure Order"                 constant_name="DEPARTURE_ORDER"                  default="0"  delta="0.5"/>
+      <object_number  name="PSD Interlock Override Status"   constant_name="PSD_INTERLOCK_OVERRIDE_STATUS"    default="0"  delta="0.5"/>
+	  <object_number  name="Train_Docking_Status"            constant_name="TRAIN_DOCKING_STATUS"             default="0"  delta="0.5"/>
+	  <object_raw     name="Departure Information"           constant_name="DEPARTURE_INFORMATION" />
+      <object_raw     name="Train Docking Info"              constant_name="TRAIN_DOCKING_INFO" />
+      <object_raw     name="Current Station Name"            constant_name="CURRENT_STATION_NAME" />      
+    </object_class>
+  </layer>
+
+  <relationship parent="Vehicle" child="CBTC Onboard Inputs" />
+  <relationship parent="Vehicle" child="CBTC Onboard Outputs" />
+  <relationship parent="Train" child="CBTC Platform Inputs" />
+  <relationship parent="Train" child="CBTC Platform Outputs" />
+
+  <class_ids>
+    <class_id class_name="CBTC Onboard Inputs"               class_id="801" />
+    <class_id class_name="CBTC Onboard Outputs"              class_id="802" />
+    <class_id class_name="CBTC Platform Inputs"              class_id="803" />
+    <class_id class_name="CBTC Platform Outputs"             class_id="804" />
+  </class_ids>
+
+</comms_config>

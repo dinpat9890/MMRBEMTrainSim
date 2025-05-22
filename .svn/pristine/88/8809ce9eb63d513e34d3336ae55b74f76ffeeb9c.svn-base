@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{8084de5d-6ec0-4214-85f8-940fa862e5e5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Source\Common">
+      <UniqueIdentifier>{84bb0d71-8146-4314-a15f-f06540228f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Infraction Rules">
+      <UniqueIdentifier>{a4a3c33c-94fe-4103-b14f-6ed932b14470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DataAccess">
+      <UniqueIdentifier>{455cdf12-22fd-415a-8394-a1820241e456}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ProjectConfig.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyser.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserProperties.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\InfractionRule.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\InfractionUnit.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\InterpretedTrainProperties.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\SATrainPathWatcher.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\SATrainPathWatcherUnit.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\SessionFeatureUnit.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\SimPropertyWatcher.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserUnits\TransactionLogUnit.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SessionAnalyserModule.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataAccess\SessionTransactionalDataWriter.cpp">
+      <Filter>Source\DataAccess</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LocomotiveTrainProperties.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DBScoringParameterProvider.cpp">
+      <Filter>Source\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\RollbackInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\PantographOperatedInMotionInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\EmergencyStopInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\DeadmanEmergencyBelowRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\DoorNotOpenedForBoardingPassInfraction.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\PassingStopReverseMarkerBoardInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\AlertPeopleInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\IncorrectStoppingLocationAtStationInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\DeadmanEmergencyAboveRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\DoorOpenedFromWrongSideInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\DoorOpenedCmdRemovedTooQuicklyInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\DoorOpenedFromWrongPanelInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\DoorOpenedCmdHeldTooLongInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\JerkyDrivingInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\TrainStoppedAfterStoppingPointInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\TrainStoppedBeforeStoppingPointInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\ElectricConsumptionInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\ObstructionCollisionInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\ElectricEfficiencyInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\CBTCEBInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\RedSignalOverrunInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\RunningTimeNotAchievedInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InfractionRules\TimetableNotFollowedInfractionRule.cpp">
+      <Filter>Infraction Rules</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\ProjectConfig.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserProperties.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\InfractionRule.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\InfractionUnit.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\InterpretedTrainProperties.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\SATrainPathWatcher.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\SATrainPathWatcherUnit.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\SessionFeatureUnit.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\TransactionLogUnit.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserModule.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\SimPropertyWatcher.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DataAccess\SessionTransactionalDataWriter.h">
+      <Filter>Source\DataAccess</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SessionAnalyserUnits\Utility.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LocomotiveTrainProperties.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ScoringParameterProvider.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DBScoringParameterProvider.h">
+      <Filter>Source\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\RollbackInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CreateCallback.h" />
+    <ClInclude Include="Source\InfractionRules\PantographOperatedInMotionInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ScoringParameterValidation.h" />
+    <ClInclude Include="Source\InfractionRules\EmergencyStopInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\DeadmanEmergencyBelowRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\DoorNotOpenedForBoardingPassInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\PassingStopReverseMarkerBoardInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\AlertPeopleInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\EfficiencyInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\IncorrectStoppingLocationAtStationInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\DeadmanEmergencyAboveRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\DoorOpenedFromWrongSideInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\DoorOpenedCmdRemovedTooQuicklyInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\DoorOpenedFromWrongPanelInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\DoorOpenedCmdHeldTooLongInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\JerkyDrivingInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\TrainStoppedAfterStoppingPointInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\TrainStoppedBeforeStoppingPointInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\ElectricConsumptionInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\ObstructionCollisionInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\ElectricEfficiencyInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\CBTCEBInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\RedSignalOverrunInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\RunningTimeNotAchievedInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InfractionRules\TimetableNotFollowedInfractionRule.h">
+      <Filter>Infraction Rules</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

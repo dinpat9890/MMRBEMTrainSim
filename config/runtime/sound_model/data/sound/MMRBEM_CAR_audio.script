@@ -1,0 +1,611 @@
+(! Line 16 Audio Script
+   Project: Beijing YanFang Line
+   © Copyright SYDAC Pty Ltd, 2018
+)
+
+(set-observer-hub (get-local-hub))
+
+(! include "CoreObjectConstants.scr")
+(include "Sound\Utilities.script")
+(include "Sound\Environment.script")
+(include "Sound\PassingTrains.scr")
+(include "Sound\CBTCAudio.script")
+(include "Sound\Thunder.script")
+(! include "Sound\PlatformScreenDoorTest.script")
+
+(! OPTIMIZATION: Only track the closest 16 vehicles)
+(with $cpn (closest-position-n (observer-vehicle-position) 16)
+  (for-all-trains $train
+    (enable-if-other-train $train
+      (for-all-vehicles $train $vehicle
+        (set-observed-vehicle-position-latched $train $vehicle
+          (not (inside-closest-position-n $cpn
+                 (latched-vehicle-track-position (not (periodic 4.0)) $train $vehicle)
+               )
+          )
+        )
+      )
+    )
+  )
+)
+
+
+(define get-observer-vehicle-audio-output-number $train $name
+  (case 
+    (for-all-vehicles $train $vehicle 
+      (== (get-track-position-vehicle (observer-vehicle-position)) $vehicle)
+      (get-vehicle-audio-output-number $train $vehicle $name)
+    )
+  )
+)
+
+(define-other-trains-passing-sound
+  "sound\environment\TrainPassingLoop.wav" 43271 163380
+  16 4 60 2
+  4
+  65 95 30 3
+  0.45 0.04
+)
+
+
+(! define get-tms-output-number $train $vehicle $number_name $default_value
+  (get-number (number-id (child-object-id (vehicle-object $train $vehicle) (class-tms-vehicle-outputs)) $number_name) $default_value)
+)
+(nest
+  (
+    (with-var $observer_at_cutting     0.0)
+    (with-var $observer_outside_tunnel 0.0)
+    (with-var $observer_at_underbridge 0.0)
+    (with-var $observer_at_overbridge  0.0)
+    (with-var $observer_at_station     0.0)
+  )
+    (define vcb_on_volume $ventilation $level1 $level2 $level3 
+        (if (== $ventilation $level1) 
+            90
+            (if (== $ventilation $level2)
+                 93
+                 (if (== $ventilation $level3)
+                     95
+                     100
+                 )
+            )
+        )
+    )
+
+ 
+  (for-all-trains $train 
+    (enable-if-simulated-train $train 
+      (for-all-vehicles $train $vehicle
+        (enable-if-observer-vehicle $train $vehicle 
+
+        (! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+        (! ~~~~~~~~~~~~~~~~~~~~~~~~ Train Generated Sounds ~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+        (! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+
+
+          (! Electrical HORN )
+          (nest
+            (
+              (symbol $HORN_POSITION (position 0 0 0))
+              (symbol $HIGH_HORN_VOLUME 100.0)
+			  (symbol $LOW_HORN_VOLUME 85.0)
+            )
+            
+            (! High HORNS)
+            (define-observer-sound $sound "sound\MMRBEM_CAR\Horn.wav" (inactivation) (loop) 28838 41862
+              (set-sound-position $sound $HORN_POSITION)
+              (set-sound-volume           $sound  $HIGH_HORN_VOLUME)
+              (set-sound-state            $sound (get-observer-vehicle-audio-output-number $train "Horn High"))
+              (set-sound-frequency        $sound 1.00)
+            )
+			(! Low HORNS)
+            (define-observer-sound $sound "sound\MMRBEM_CAR\Horn.wav" (inactivation) (loop) 28838 41862
+              (set-sound-position $sound $HORN_POSITION)
+              (set-sound-volume           $sound  $LOW_HORN_VOLUME)
+              (set-sound-state            $sound (get-observer-vehicle-audio-output-number $train "Horn Low"))
+              (set-sound-frequency        $sound 1.00)
+            )
+          )
+            (! Door Closing Sound )
+            (nest
+            (
+              (symbol $DOOR_CLOSING_POSITION (position 0.0 0.0 0.0))
+              (symbol $DOOR_CLOSING_VOLUME 100.0)           
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\DoorClose.wav" (to-completion) (no-loop) 0 0
+              (set-vehicle-sound-position $sound $DOOR_CLOSING_POSITION)
+              (set-sound-volume $sound  $DOOR_CLOSING_VOLUME)
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "Saloon Door Closing Buzzer"))
+            )
+            )
+            
+            (! Door Opening Sound )
+            (nest
+            (
+              (symbol $DOOR_OPENING_POSITION (position 0.0 0.0 0.0))
+              (symbol $DOOR_OPENING_VOLUME 100.0)           
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\DoorOpen.wav" (to-completion) (no-loop) 0 0
+              (set-vehicle-sound-position $sound $DOOR_OPENING_POSITION)
+              (set-sound-volume $sound  $DOOR_OPENING_VOLUME)
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "Saloon Door Opening Buzzer"))
+            )
+            )
+			
+			(! Door Warning Buzzer)
+            (nest
+            (
+              (symbol $DOOR_OPENING_POSITION (position 0.0 0.0 0.0))
+              (symbol $DOOR_OPENING_VOLUME 100.0)           
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\PIS\Common\DoorChime.wav" (to-completion) (no-loop) 0 0
+              (set-vehicle-sound-position $sound $DOOR_OPENING_POSITION)
+              (set-sound-volume $sound  $DOOR_OPENING_VOLUME)
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "Door Warning Buzzer"))
+            )
+            )
+			
+			(! EED EAD Operated)
+            (nest
+            (
+              (symbol $EED_EAD_POSITION (position 0.0 0.0 0.0))
+              (symbol $EED_EAD_VOLUME 80.0)           
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\MMRBEM_CAR\EED_EAD_Operated.wav" (to-completion) (no-loop) 0 0
+              (set-vehicle-sound-position $sound $EED_EAD_POSITION)
+              (set-sound-volume $sound  $EED_EAD_VOLUME)
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "EED EAD Operated"))
+            )
+            )
+
+		  (! VCB Off)
+          (nest
+            (
+              (symbol $VCB_OFF_VOLUME  100.0)
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\VCB_Off.wav" (to-completion) (no-loop) 0 0
+               (set-sound-x-position $sound 1.0)
+               (set-sound-y-position $sound 0.0)
+               (set-sound-z-position $sound -1.0)
+               (set-sound-volume    $sound 100.0)
+               (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "VCB Open Sound"))
+            )
+          )
+		  
+		  (! VCB On )
+			(define-sound $sound "sound\environment\VCB_On.wav" (inactivation) (loop) 448494 470000 (relative)
+               (set-sound-x-position $sound -1.0)
+               (set-sound-y-position $sound 0.0)
+               (set-sound-z-position $sound -1.0)
+			   (set-sound-volume    $sound 80.0)    
+			   (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "VCB Close Sound"))
+            )
+            (! Compressor running )
+            (define-sound $sound "sound\environment\Compressor.wav" (inactivation) (loop) 0 25412 (relative)
+              (set-sound-x-position $sound 1.0)
+              (set-sound-y-position $sound -1.0)
+              (set-sound-z-position $sound -1.0)
+              (set-sound-volume     $sound 75.0)
+              (set-sound-state      $sound (get-vehicle-audio-output-number $train $vehicle "Compressor Start And Run Sound"))
+            )
+
+          (! SWITCHING ON FLASHER LIGHT Sound )
+          (nest
+            (
+              (symbol $SWITCHING_ON_FLASHER_LIGHT_POSITION (position 0.0 0.0 0.0))
+              (symbol $SWITCHING_ON_FLASHER_LIGHT_VOLUME 65.0)           
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\Flasher_Light.wav" (to-completion) (no-loop) 0 0
+              (set-vehicle-sound-position $sound $SWITCHING_ON_FLASHER_LIGHT_POSITION)
+              (set-sound-volume $sound (adjust-for-cuttings $SWITCHING_ON_FLASHER_LIGHT_VOLUME))
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "Flasher Light Operation Sound"))
+            )
+          )
+
+            (! Deadman Relay Pickup)
+              (! nest
+                (
+                  (symbol $DEADMAN_RELAY_PICKUP 85)
+                )
+                (define-sound $sound  "sound\environment\Deadman_Relay.wav" (to-completion) (no-loop) 0 0 (relative)
+                  (set-sound-x-position $sound 0.0)
+                  (set-sound-y-position $sound -1.0)
+                  (set-sound-z-position $sound 0.0)
+                  (set-sound-volume     $sound $DEADMAN_RELAY_PICKUP)
+                  (set-sound-frequency  $sound 1.00)
+                  (set-sound-state      $sound (== (get-vehicle-audio-output-number $train $vehicle "Deadman Alarm") 1))
+                )
+            )
+          (! Pantograph Raise)
+          (nest
+            (
+              (symbol $PANTOGRAPH_RAISE_VOLUME  100.0)
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\Pantograph_Raise.wav" (to-completion) (no-loop) 0 0
+               (set-sound-x-position $sound 1.0)
+               (set-sound-y-position $sound 0.0)
+               (set-sound-z-position $sound -1.0)
+               (set-sound-volume    $sound 100.0)
+               (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "Pantograph Raising"))
+            )
+          )
+          
+          (! Pantograph Lower)
+          (nest
+            (
+              (symbol $PANTOGRAPH_LOWER_VOLUME  100.0)
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\Pantograph_Lower.wav" (to-completion) (no-loop) 0 0
+               (set-sound-x-position $sound 1.0)
+               (set-sound-y-position $sound 0.0)
+               (set-sound-z-position $sound -1.0)
+               (set-sound-volume    $sound 100.0)
+               (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "Pantograph Lowering"))
+            )
+          )
+          (! WHEEL SLIP)
+          (define-sound $sound  "sound\environment\WheelSlip.wav" (inactivation) (loop) 0 0 (relative)
+            (set-sound-position   $sound (position 0.0 0.0 -1.0))
+            (set-sound-volume     $sound 87.50)
+            (set-sound-frequency  $sound 1.00)
+            (set-sound-state      $sound (>< 0.5 (get-vehicle-audio-output-number $train $vehicle  "Wheel Slip") 1.5))
+          )
+          (! WHEEL SLIDE)
+          (define-sound $sound  "sound\environment\WheelSlipSlideLoop.wav" (inactivation) (loop) 0 0 (relative)
+            (set-sound-position   $sound (position 0.0 0.0 -1.0))
+            (set-sound-volume     $sound 87.50)
+            (set-sound-frequency  $sound 1.00)
+            (set-sound-state      $sound (>< 0.5 (get-vehicle-audio-output-number $train $vehicle  "Wheel Slide") 1.5))
+          )
+			
+          (! AERODYNAMIC NOISE )
+          (nest
+            (
+              (symbol $WINDAGE_GAIN_MAX_SPEED 115.0)
+              (symbol $WINDAGE_GAIN_MAX       -20.0)
+              (symbol $WINDAGE_GAIN_MIN_SPEED  25.0)
+              (symbol $WINDAGE_GAIN_MIN       -50.0)
+            )
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\WindageLoop.wav" (inactivation) (loop) 85065 207055
+              (set-sound-position $sound (position 0 0 0))
+              (set-sound-volume $sound
+                (* (get-var $observer_outside_tunnel)
+                  (limit 0 100
+                    (- (vol_for_speed_1 $WINDAGE_GAIN_MAX $WINDAGE_GAIN_MAX_SPEED $WINDAGE_GAIN_MIN $WINDAGE_GAIN_MIN_SPEED (get-abs-observer-speed))
+                      (underbridge_subtraction_offset)
+                    )
+                  )
+                )
+              )
+              (set-sound-frequency $sound (+ 0.89 (* 0.005 (get-abs-observer-speed))))
+              (set-sound-state     $sound (> (get-abs-observer-speed) 2.5))
+            )
+          )
+			
+		  (! BPVentAudio Sound -- Auto Brake | Pneumatic Pressure Release)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\Auto_Brake.wav" (inactivation) (loop) 117965 153354
+              (set-sound-x-position $sound 0.0)
+              (set-sound-y-position $sound -1.0)
+              (set-sound-z-position $sound -1.0)
+              (set-sound-volume $sound 90.0)
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "Pneumatic Pressure Release"))
+             )
+			 
+		(! Air Brakes Pressure Release)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\Auto_Brake_Short.wav" (to-completion) (no-loop) 0 0
+              (set-sound-x-position $sound 0.0)
+              (set-sound-y-position $sound -1.0)
+              (set-sound-z-position $sound -1.0)
+              (set-sound-volume $sound 100.0)
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "Air Brake Release"))
+             )
+			 
+		  (! Windscreen Wiper)
+          (nest
+            (
+				(symbol $WINDSCREEN_WIPER_POSITION (position 0.0 0.0 0.0) )
+				(symbol $WINDSCREEN_WIPER_VOLUME      100.0)
+				(symbol $WINDSCREEN_WIPER_FREQ      1.0)
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\Windscreen_Wiper.wav" (inactivation) (no-loop) 11129 40280 
+				(set-sound-x-position $sound 0.0)
+				(set-sound-y-position $sound 0.0)
+				(set-sound-z-position $sound 0.0)
+				(set-sound-volume     $sound 100.0)
+				(set-sound-state      $sound (get-vehicle-audio-output-number $train $vehicle "Wiper Sound"))
+            )
+          )			 
+
+		  
+          (! Emergency_Brake_Application Sound )
+          (nest
+            (
+              (symbol $EMERGENCY_BRAKE_VOLUME 95.0)
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_eb.wav" (to-completion) (no-loop) 0 0
+              (set-sound-x-position $sound 0.0)
+              (set-sound-y-position $sound 0.0)
+              (set-sound-z-position $sound 0.0)
+              (set-sound-volume $sound $EMERGENCY_BRAKE_VOLUME)
+              (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle "Emergency Brake Application Sound"))
+            )
+          )
+          (! Wheel Squeal)
+          (! nest
+            (
+              (symbol $DYNAMIC_BRAKE_WHEEL_SQUEAL_VOLUME  100.0)
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\150BrakeWheelSqueal.wav" (to-completion) (no-loop) 0 0
+               (set-sound-x-position $sound 0.0)
+               (set-sound-y-position $sound 0.0)
+               (set-sound-z-position $sound 1.0)
+               (set-sound-volume     $sound $DYNAMIC_BRAKE_WHEEL_SQUEAL_VOLUME)
+			   (set-sound-frequency  $sound_id 1.00)
+               (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "Lead Car Brake Cylinder Pressure"))
+            )
+          )
+
+          (! Coupling )
+          (nest
+            (
+              (symbol $COUPLE_POSITION (position 0.5 0.0 0.0))
+              (symbol $COUPLE_VOLUME 100.0)
+              (symbol $UNCOUPLE_VOLUME 95.0)
+			  (symbol $COLLISION_VOLUME 100.0)
+            )
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\TrainCouple.wav" (to-completion) (no-loop) 0 0
+              (set-sound-position  $sound $COUPLE_POSITION)
+              (set-sound-volume    $sound $COUPLE_VOLUME)
+              (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "Collision Detection Coupling"))
+            )
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\TrainUncouple.wav" (to-completion) (no-loop) 0 0
+              (set-sound-position  $sound $COUPLE_POSITION)
+              (set-sound-volume    $sound $UNCOUPLE_VOLUME)
+              (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "Mechanical Uncouple"))
+            )
+			(define-vehicle-sound $sound $train $vehicle "sound\environment\Collision.wav" (to-completion) (no-loop) 0 0
+              (set-sound-position  $sound $COUPLE_POSITION)
+              (set-sound-volume    $sound $COLLISION_VOLUME)
+              (set-sound-state     $sound (or (get-vehicle-number $train $vehicle "Coupler Damaged Overlay") (get-number (number-id (child-object-id (object-id (class-world)) (class-train)) "Collision"))))
+            )
+          )
+		  
+		  (! TRACTION MOTOR )
+          (nest
+            (
+              (symbol $TRACTION_MOTOR_POSITION (position -1.0 0 0))              
+			  (symbol $TRACTION_ACCELERATION (get-vehicle-number $train $vehicle "Acceleration"))
+			  (symbol $VEHICLE_SPEED (get-vehicle-number $train $vehicle "Speed"))
+            )
+            (define-vehicle-sound $sound $train $vehicle "sound\MMRBEM_CAR\Train_Accelerated.wav" (inactivation) (no-loop) 0 0
+              (set-sound-x-position $sound -1.0)
+              (set-sound-y-position $sound 0.0)
+              (set-sound-z-position $sound 0.0)
+              (set-sound-volume   $sound (+ 85.0 (limit 0 15.0 (- 15.0 (/ $VEHICLE_SPEED 5.34)))))
+              (set-sound-frequency $sound 1.0 )
+              (set-sound-state     $sound (> $TRACTION_ACCELERATION 0.7) )
+            )
+			(define-vehicle-sound $sound $train $vehicle "sound\MMRBEM_CAR\Train_Running.wav" (inactivation) (loop) 690 91935
+              (set-sound-x-position $sound -1.0)
+              (set-sound-y-position $sound 0.0)
+              (set-sound-z-position $sound 0.0)
+              (set-sound-volume   $sound (+ 85.0 (limit 0 15.0 (- 15.0 (/ $VEHICLE_SPEED 5.34)))))
+              (set-sound-frequency $sound 1.0 )
+              (set-sound-state     $sound (> $VEHICLE_SPEED 2.67)) 
+            )
+			(define-vehicle-sound $sound $train $vehicle "sound\MMRBEM_CAR\Train_Slowed_Down.wav" (to-completion) (no-loop) 0 0
+              (set-sound-x-position $sound -1.0)
+              (set-sound-y-position $sound 0.0)
+              (set-sound-z-position $sound 0.0)
+              (set-sound-volume   $sound (+ 85.0 (limit 0 15.0 (- 15.0 (/ $VEHICLE_SPEED 5.34)))))
+              (set-sound-frequency $sound 1.0 )
+              (set-sound-state     $sound (and (< $TRACTION_ACCELERATION -0.7)  (> $VEHICLE_SPEED 5.0) (< $VEHICLE_SPEED 7.0)))
+            )
+          )
+		  
+		  
+          (! POINTS, POINTS TRACK CLATTER)
+          (nest
+            (
+              (symbol $POINTS_VOLUME         82.0)
+            )
+            (for-track-association-crossed (observed-vehicle-position $train $vehicle) (get-point-track-associations) $position $trigger
+              (define-sound  $sound "sound\environment\Points.wav" (to-completion) (no-loop) 0 0 (absolute)
+                (set-sound-position          $sound $position)
+                (set-sound-volume            $sound $POINTS_VOLUME)
+                (set-sound-frequency         $sound (limit 0 1.1 (+ 0.5 (* 0.06 (get-abs-observer-speed)))))
+                (set-sound-state             $sound (sustain $trigger 1.5))
+              )
+            )
+          )
+          (! Flanging sound)
+          (nest
+            (
+              (symbol $FLANGING_POSITION (position -2.0 0.0 0.0))
+
+              (symbol $FLANGING_MED_dB_MAX_SPEED 100.0)
+              (symbol $FLANGING_MED_dB_MAX       -11.0)
+              (symbol $FLANGING_MED_dB_MIN_SPEED  8.0)
+              (symbol $FLANGING_MED_dB_MIN       -24.0)
+              (symbol $FLANGING_MED_CURVE_TRIGGER_DURATION 4.5)
+
+              (symbol $FLANGING_TIGHT_dB_MAX_SPEED 100.0)
+              (symbol $FLANGING_TIGHT_dB_MAX        -1.0)
+              (symbol $FLANGING_TIGHT_dB_MIN_SPEED  8.0)
+              (symbol $FLANGING_TIGHT_dB_MIN       -10.0)
+              (symbol $FLANGING_TIGHT_CURVE_TRIGGER_DURATION 2.5)
+
+              (symbol $FLANGING_LOW_CURVE_S1    1.5)
+              (symbol $FLANGING_LOW_CURVE_S2   16.7)
+              (symbol $FLANGING_LOW_CURVE_S3   28.5)
+              (symbol $FLANGING_MED_CURVE_S1    1.5)
+              (symbol $FLANGING_MED_CURVE_S2   16.7)
+              (symbol $FLANGING_MED_CURVE_S3   28.5)
+              (symbol $FLANGING_TIGHT_CURVE_S1  1.5)
+              (symbol $FLANGING_TIGHT_CURVE_S2  8.7)
+              (symbol $FLANGING_TIGHT_CURVE_S3 11.5)
+
+              (symbol $FLANGING_HIGH_VOLUME    100)
+            )
+
+            (! MEDIUM CURVE LOW SPEED)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingMedCurveLowSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_MED_dB_MAX $FLANGING_MED_dB_MAX_SPEED $FLANGING_MED_dB_MIN $FLANGING_MED_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-frequency $sound (limit 0.9 1.3 (+ 0.89 (* 0.005 (get-abs-observer-speed)))))
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-medium-curve) (>< $FLANGING_MED_CURVE_S1 (get-abs-observer-speed) $FLANGING_MED_CURVE_S2))
+                  $FLANGING_MED_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (! MEDIUM CURVE MED SPEED)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingMedCurveMedSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_MED_dB_MAX $FLANGING_MED_dB_MAX_SPEED $FLANGING_MED_dB_MIN $FLANGING_MED_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-frequency $sound (limit 0.9 1.5 (+ 0.89 (* 0.005 (get-abs-observer-speed)))))
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-medium-curve) (>< $FLANGING_MED_CURVE_S2 (get-abs-observer-speed) $FLANGING_MED_CURVE_S3))
+                  $FLANGING_MED_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (! MEDIUM CURVE HIGH SPEED)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingMedCurveHighSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_MED_dB_MAX $FLANGING_MED_dB_MAX_SPEED $FLANGING_MED_dB_MIN $FLANGING_MED_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-frequency $sound (limit 0.9 1.7 (+ 0.89 (* 0.005 (get-abs-observer-speed)))))
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-medium-curve) (> (get-abs-observer-speed) $FLANGING_MED_CURVE_S3))
+                  $FLANGING_MED_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (! TIGHT CURVE LOW SPEED)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingTightCurveLowSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_TIGHT_dB_MAX $FLANGING_TIGHT_dB_MAX_SPEED $FLANGING_TIGHT_dB_MIN $FLANGING_TIGHT_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-frequency $sound (limit 0.9 1.3 (+ 0.89 (* 0.005 (get-abs-observer-speed)))))
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-tight-curve) (>< $FLANGING_TIGHT_CURVE_S1 (get-abs-observer-speed) $FLANGING_TIGHT_CURVE_S2))
+                  $FLANGING_TIGHT_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+            (! TIGHT CURVE MED SPEED)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingTightCurveMedSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings  (vol_for_speed_1 $FLANGING_TIGHT_dB_MAX $FLANGING_TIGHT_dB_MAX_SPEED $FLANGING_TIGHT_dB_MIN $FLANGING_TIGHT_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-frequency $sound (limit 0.9 1.5 (+ 0.89 (* 0.005 (get-abs-observer-speed)))))
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-tight-curve) (>< $FLANGING_TIGHT_CURVE_S2 (get-abs-observer-speed) $FLANGING_TIGHT_CURVE_S3))
+                  $FLANGING_TIGHT_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (! TIGHT CURVE HIGH SPEED)
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingTightCurveHighSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (! set-sound-volume $sound
+                (adjust-for-cuttings  (vol_for_speed_1 $FLANGING_TIGHT_dB_MAX $FLANGING_TIGHT_dB_MAX_SPEED $FLANGING_TIGHT_dB_MIN $FLANGING_TIGHT_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-volume $sound $FLANGING_HIGH_VOLUME)
+              (set-sound-frequency $sound (limit 0.9 1.7 (+ 0.89 (* 0.005 (get-abs-observer-speed)))))
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-tight-curve) (> (get-abs-observer-speed) $FLANGING_TIGHT_CURVE_S3))
+                  $FLANGING_TIGHT_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+          )
+				
+          (! Cab Buzzer Sounds )
+          (nest
+            (
+              (symbol $VIGILANCE_ALARM_POS      (position 0 0 0))
+              (symbol $VIGILANCE_ALARM_VOLUME   90.0)
+           
+              (symbol $CFA_ALARM_POS            (position -1.5 0.0 2.5))
+              (symbol $CFA_ALARM_VOLUME         90.0)
+
+            )
+            ( define-observer-sound $sound "sound\MMRBEM_CAR\Vigilance_Alarm.wav" (inactivation) (loop) 0 0
+              (set-sound-position $sound $VIGILANCE_ALARM_POS)
+              (set-sound-volume           $sound (adjust-for-cuttings $VIGILANCE_ALARM_VOLUME))
+              (set-sound-state            $sound (get-observer-vehicle-audio-output-number $train "Deadman Alarm"))
+            )
+			
+			(! define-vehicle-sound $sound $train $vehicle "387\Cl387_PEA.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound (position -1.5 0 2.5))
+              (set-sound-volume           $sound (adjust-for-cuttings 100))
+              (set-sound-state            $sound (get-vehicle-audio-output-number $train $vehicle "Door Buzzer"))
+            ) 
+            
+          )
+        )
+      )
+    )
+  )
+)
+
+
+(! Derailment State)
+(for-all-trains $train
+  (for-all-vehicles $train $vehicle
+        (nest
+          (
+            (symbol $DERAILMENT_POSITION (position 0.0 -1.0 -0.5))
+            (symbol $DERAILMENT_VOLUME  100.0)
+          )
+
+          (define-vehicle-sound $sound $train $vehicle "sound\environment\Derailment.wav" (to-completion) (no-loop) 0 0
+            (set-sound-position  $sound (position 0 (* $vehicle 0.5) 0))
+            (set-sound-volume    $sound $DERAILMENT_VOLUME)
+            (set-sound-state     $sound (get-number (number-id (child-object-id (object-id (class-world)) (class-train)) "Derailment")))
+          )
+        )
+    )
+)
+
+(! SOFT COLLISIONS)   
+(for-all-trains $train
+  (for-all-vehicles $train $vehicle
+          (define-vehicle-sound $sound $train $vehicle "sound\environment\SoftCollision1.wav" (to-completion) (no-loop) 0 0
+            (set-sound-position  $sound (position 0 0 0))
+            (set-sound-volume    $sound 90.0)
+            (set-sound-state     $sound (get-vehicle-audio-output-number $train $vehicle "Obstacle Soft Collision"))
+			)
+          )       
+    )
+)

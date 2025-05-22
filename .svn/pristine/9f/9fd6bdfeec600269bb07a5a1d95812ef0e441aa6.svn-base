@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="bush_1_mat" guid="f18768a0fa45d1f9aa09eeecdea6753f2ece0658" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<state name="leafs">1</state>
+	<state name="noise_2d">0</state>
+	<state name="material_ssao">0</state>
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="translucent">1</parameter>
+	<parameter name="animation_stem_noise">0.621999979</parameter>
+	<parameter name="animation_stem_offset">0.0299999993</parameter>
+	<parameter name="animation_stem_radius">0.476000011</parameter>
+	<parameter name="animation_leaf_noise">4</parameter>
+	<parameter name="animation_leaf_offset">0.00300000003</parameter>
+	<parameter name="animation_leaf_scale">5</parameter>
+</material>

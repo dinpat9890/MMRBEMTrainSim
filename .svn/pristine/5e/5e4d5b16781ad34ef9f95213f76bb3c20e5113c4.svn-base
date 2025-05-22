@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+	</properties>
+	<node type="NodeDummy" id="1622672404" name="MarkerPin">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="598658120" name="Pole">
+			<mesh_name>marker_pin_pole.mesh</mesh_name>
+			<surface name="Body" material="20400762567087583756ebc48f8036ce46763992" property="surface_base"/>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 1 1.0</transform>
+			<node type="ObjectMeshStatic" id="1873952768" folded="1" name="Sign">
+				<mesh_name>marker_pin_label.mesh</mesh_name>
+				<surface name="Label" folded="1" material="81867540eda80cc38ae7d3922e2bcfa8be728fe7" property="Label">
+					<property>
+						<parameter name="parameter">MarkerLabel</parameter>
+						<parameter name="text">XXXXXX</parameter>
+						<parameter name="font size">0.5</parameter>
+						<parameter name="text align">1</parameter>
+						<parameter name="vertical align">1</parameter>
+						<parameter name="clip text">0</parameter>
+					</property>
+				</surface>
+				<surface name="Sign" material="5879ca96b927549e818b04ebca1ddba171f55e9c" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 2.1 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1747739218" folded="1" name="Head">
+				<mesh_name>marker_pin_head.mesh</mesh_name>
+				<surface name="Blue" material="5f7ab1016a70b05319080b503bede054beb4217a" property="surface_base"/>
+				<surface name="Green" material="5bde187201f07176b5a8f6d8b6f674fa425d54e7" property="surface_base"/>
+				<surface name="Grey" material="20400762567087583756ebc48f8036ce46763992" property="surface_base"/>
+				<surface name="Red" material="c789fb9e1dee099a1776e068d9918584a25e4973" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 1.2 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

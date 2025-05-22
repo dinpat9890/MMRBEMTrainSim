@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<project name="Master Config" default="build.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../ant.common_properties.xml" />
+ 
+  <!-- Now import all of the other scripts, so that we have a single entry point, if desired -->
+  <import file="ant.build.xml" />
+  <import file="ant.package.xml" />
+
+  <!-- Define the extension points that these scripts may be looking for -->
+  <extension-point name="build.all" description="Builds all content for the project" />
+  <extension-point name="clean.all" description="Cleans all built content for the project" />
+  <extension-point name="deploy.all" description="Prepares the deploy folder, ready for deployment" />
+  <extension-point name="install.all" description="Prepares the install folder, ready for use in installation" />
+</project>

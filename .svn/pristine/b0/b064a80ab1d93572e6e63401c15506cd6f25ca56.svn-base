@@ -1,0 +1,897 @@
+/*
+ * IOControls_types.h
+ *
+ * Code generation for model "IOControls".
+ *
+ * Model version              : 1.62
+ * Simulink Coder version : 9.2 (R2019b) 18-Jul-2019
+ *
+ * Target selection: grt.tlc
+ * Note: GRT includes extra infrastructure and instrumentation for prototyping
+ * Embedded hardware selection: 32-bit Generic
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ */
+
+#ifndef RTW_HEADER_IOControls_types_h_
+#define RTW_HEADER_IOControls_types_h_
+#include "rtwtypes.h"
+#include "builtin_typeid_types.h"
+#include "multiword_types.h"
+#ifndef DEFINED_TYPEDEF_FOR_BD_IOControls_In_InputControl_
+#define DEFINED_TYPEDEF_FOR_BD_IOControls_In_InputControl_
+
+typedef struct {
+  real_T Value;
+  real_T Mode;
+  real_T InitVal;
+  real_T InternalRequest;
+  real_T Inhibit;
+} BD_IOControls_In_InputControl;
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_BD_IOControls_In_MCBControl_
+#define DEFINED_TYPEDEF_FOR_BD_IOControls_In_MCBControl_
+
+typedef struct {
+  real_T Value;
+  real_T Mode;
+  real_T InitVal;
+  real_T InternalRequest;
+  real_T Inhibit;
+  real_T TripRequest;
+} BD_IOControls_In_MCBControl;
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_BD_IOControls_In_Vehicle_
+#define DEFINED_TYPEDEF_FOR_BD_IOControls_In_Vehicle_
+
+typedef struct {
+  BD_IOControls_In_InputControl EmergencyBrakePB;
+  BD_IOControls_In_InputControl HornPB;
+  BD_IOControls_In_InputControl CabConsoleLightPB;
+  BD_IOControls_In_InputControl DoorProvenLoopCutoutPB;
+  BD_IOControls_In_InputControl LeftDoorClosePBOperatingPanel1;
+  BD_IOControls_In_InputControl RightDoorClosePBOperatingPanel1;
+  BD_IOControls_In_InputControl LeftDoorOpenPBOperatingPanel1;
+  BD_IOControls_In_InputControl RightDoorOpenPBOperatingPanel1;
+  BD_IOControls_In_InputControl CabMainLightPB;
+  BD_IOControls_In_InputControl ParkingBrakeOnSwitch;
+  BD_IOControls_In_InputControl ParkingBrakeOffSwitch;
+  BD_IOControls_In_InputControl DoorCloseAnnouncementPB;
+  BD_IOControls_In_InputControl ROSPB;
+  BD_IOControls_In_InputControl UTOPB;
+  BD_IOControls_In_InputControl ATOStartPB;
+  BD_IOControls_In_InputControl EmergencyBrakeResetPB;
+  BD_IOControls_In_InputControl ControlKey;
+  BD_IOControls_In_InputControl ModeSelector;
+  BD_IOControls_In_InputControl MasterControllerHandle;
+  BD_IOControls_In_InputControl DeadmanSafetyDevice;
+  BD_IOControls_In_InputControl CallOnLightPB;
+  BD_IOControls_In_InputControl VCBOpenPB;
+  BD_IOControls_In_InputControl WiperSelectionSwitch;
+  BD_IOControls_In_InputControl WiperPump;
+  BD_IOControls_In_InputControl LIMPHomePB;
+  BD_IOControls_In_InputControl PowerOffPB;
+  BD_IOControls_In_InputControl PantoDownPB;
+  BD_IOControls_In_InputControl VCBClosePB;
+  BD_IOControls_In_InputControl LeftDoorOpenPBOperatingPanel2;
+  BD_IOControls_In_InputControl LeftDoorOpenPB1OperatingPanel2;
+  BD_IOControls_In_InputControl LeftDoorClosePBOperatingPanel2;
+  BD_IOControls_In_InputControl PantoUpPB;
+  BD_IOControls_In_InputControl SafetyCutoutSS;
+  BD_IOControls_In_InputControl BrakeLoopCutoutSS;
+  BD_IOControls_In_InputControl PantoSelector;
+  BD_IOControls_In_InputControl DeadmanBypassSwitch;
+  BD_IOControls_In_InputControl HeadLightSwitch;
+  BD_IOControls_In_InputControl UncouplePB;
+  BD_IOControls_In_InputControl FlasherLightPB;
+  BD_IOControls_In_InputControl FloodLightPB;
+  BD_IOControls_In_InputControl BatteryResetPB;
+  BD_IOControls_In_InputControl RightDoorOpenPBOperatingPanel5;
+  BD_IOControls_In_InputControl RightDoorOpenPB1OperatingPanel5;
+  BD_IOControls_In_InputControl RightDoorClosePBOperatingPanel5;
+  BD_IOControls_In_InputControl DoorProvenLoopOutputSwitch;
+  BD_IOControls_In_InputControl LampTestPB;
+  BD_IOControls_In_InputControl WFLTestPB;
+  BD_IOControls_In_InputControl WiperControlSwitch;
+  BD_IOControls_In_InputControl EmergencyStopPB;
+  BD_IOControls_In_InputControl HoldDoorCloseBypassSS;
+  BD_IOControls_In_InputControl CabBoosterFanSS;
+  BD_IOControls_In_InputControl EmergencyBrakePBBypassSS;
+  BD_IOControls_In_InputControl CabEEDLeft;
+  BD_IOControls_In_InputControl CabEEDRight;
+  BD_IOControls_In_InputControl SafetyCover;
+  BD_IOControls_In_InputControl DummyCover;
+  BD_IOControls_In_InputControl RampCoverLockingLever;
+  BD_IOControls_In_InputControl RampCover;
+  BD_IOControls_In_InputControl RampHandle;
+  BD_IOControls_In_InputControl RampEndSupport;
+  BD_IOControls_In_InputControl RampMiddleSupport;
+  BD_IOControls_In_InputControl WinderHandlesAccessCover;
+  BD_IOControls_In_InputControl LargeHandle;
+  BD_IOControls_In_InputControl RampWinder;
+  BD_IOControls_In_InputControl SmallHandle;
+  BD_IOControls_In_InputControl EmergencyDoorGasSpring;
+  BD_IOControls_In_InputControl DoorWinder;
+  BD_IOControls_In_MCBControl EBLR2CB;
+  BD_IOControls_In_MCBControl EBMVCB;
+  BD_IOControls_In_MCBControl EDCB;
+  BD_IOControls_In_MCBControl ELCB1;
+  BD_IOControls_In_MCBControl ELCB2;
+  BD_IOControls_In_MCBControl ERCB;
+  BD_IOControls_In_MCBControl HCB;
+  BD_IOControls_In_MCBControl HLLCB;
+  BD_IOControls_In_MCBControl HLRCB;
+  BD_IOControls_In_MCBControl ILCB1;
+  BD_IOControls_In_MCBControl ILCB2;
+  BD_IOControls_In_MCBControl LDICB;
+  BD_IOControls_In_MCBControl LDLCB;
+  BD_IOControls_In_MCBControl LDRCB;
+  BD_IOControls_In_MCBControl MLCB;
+  BD_IOControls_In_MCBControl MMCB;
+  BD_IOControls_In_MCBControl NBCB;
+  BD_IOControls_In_MCBControl NVICB;
+  BD_IOControls_In_MCBControl OCCB1;
+  BD_IOControls_In_MCBControl OCCB2;
+  BD_IOControls_In_MCBControl ODDCB;
+  BD_IOControls_In_MCBControl PBCB;
+  BD_IOControls_In_MCBControl PISCB1;
+  BD_IOControls_In_MCBControl PISCB2;
+  BD_IOControls_In_MCBControl POCB;
+  BD_IOControls_In_MCBControl PPU1CB;
+  BD_IOControls_In_MCBControl PPU2CB;
+  BD_IOControls_In_MCBControl PPU3CB;
+  BD_IOControls_In_MCBControl RIO1CB;
+  BD_IOControls_In_MCBControl RIO2CB;
+  BD_IOControls_In_MCBControl SIOCB1;
+  BD_IOControls_In_MCBControl SIOCB2;
+  BD_IOControls_In_MCBControl SSICB;
+  BD_IOControls_In_MCBControl TBCCB1;
+  BD_IOControls_In_MCBControl TBCCB2;
+  BD_IOControls_In_MCBControl TBNCB;
+  BD_IOControls_In_MCBControl TDICB;
+  BD_IOControls_In_MCBControl TLLCB;
+  BD_IOControls_In_MCBControl TLRCB;
+  BD_IOControls_In_MCBControl TRIVCB;
+  BD_IOControls_In_MCBControl TVDUCB;
+  BD_IOControls_In_MCBControl TWVCB;
+  BD_IOControls_In_MCBControl VCCBOrUCCB;
+  BD_IOControls_In_MCBControl VCBCCB;
+  BD_IOControls_In_MCBControl VIO1CB;
+  BD_IOControls_In_MCBControl VIO2CB;
+  BD_IOControls_In_MCBControl WFLCB;
+  BD_IOControls_In_MCBControl WIFICB;
+  BD_IOControls_In_MCBControl WWCB;
+  BD_IOControls_In_MCBControl BECUCB1;
+  BD_IOControls_In_MCBControl BECUCB2;
+  BD_IOControls_In_MCBControl BECUCB3;
+  BD_IOControls_In_MCBControl RSACB;
+  BD_IOControls_In_MCBControl CMCCB;
+  BD_IOControls_In_MCBControl CILCB;
+  BD_IOControls_In_MCBControl CICB;
+  BD_IOControls_In_MCBControl CELCB;
+  BD_IOControls_In_MCBControl CECB;
+  BD_IOControls_In_MCBControl CDUCB;
+  BD_IOControls_In_MCBControl CCNVIO1CB;
+  BD_IOControls_In_MCBControl CBTCCB1;
+  BD_IOControls_In_MCBControl CBFCCB;
+  BD_IOControls_In_MCBControl CBFCB;
+  BD_IOControls_In_MCBControl C1CB;
+  BD_IOControls_In_MCBControl BLCB;
+  BD_IOControls_In_MCBControl ZVBACB;
+  BD_IOControls_In_MCBControl EBLR1CB;
+  BD_IOControls_In_MCBControl DRCB;
+  BD_IOControls_In_MCBControl DPLCB;
+  BD_IOControls_In_MCBControl DMICB;
+  BD_IOControls_In_MCBControl DLCB;
+  BD_IOControls_In_MCBControl DIOCB2;
+  BD_IOControls_In_MCBControl DIOCB1;
+  BD_IOControls_In_MCBControl CSCCB;
+  BD_IOControls_In_MCBControl CSBCB;
+  BD_IOControls_In_MCBControl CSACB;
+  BD_IOControls_In_MCBControl CRSBCB;
+  BD_IOControls_In_MCBControl SOCB2;
+  BD_IOControls_In_MCBControl SOCB1;
+  BD_IOControls_In_MCBControl MSOCB5;
+  BD_IOControls_In_MCBControl MSOCB4;
+  BD_IOControls_In_MCBControl MSOCB3;
+  BD_IOControls_In_MCBControl MSOCB2;
+  BD_IOControls_In_MCBControl MSOCB1;
+  BD_IOControls_In_MCBControl HVAC1;
+  BD_IOControls_In_MCBControl SAC2CCB;
+  BD_IOControls_In_MCBControl HVAC2;
+  BD_IOControls_In_MCBControl SAC1CCB;
+  BD_IOControls_In_MCBControl CMCB;
+  BD_IOControls_In_MCBControl AC2CB;
+  BD_IOControls_In_MCBControl AC1CB;
+  BD_IOControls_In_MCBControl FDSCB;
+  BD_IOControls_In_MCBControl BCBCB;
+  BD_IOControls_In_MCBControl ERVRCB1;
+  BD_IOControls_In_MCBControl ERVRCB2;
+  BD_IOControls_In_MCBControl ESKCB;
+  BD_IOControls_In_MCBControl HMCB;
+  BD_IOControls_In_MCBControl SP1CB;
+  BD_IOControls_In_MCBControl SP2CB;
+  BD_IOControls_In_MCBControl SP3CB;
+  BD_IOControls_In_MCBControl SP4CB;
+  BD_IOControls_In_MCBControl SP5CB;
+  BD_IOControls_In_MCBControl SPCB6;
+  BD_IOControls_In_MCBControl SPCB7;
+  BD_IOControls_In_MCBControl SPCB8;
+  BD_IOControls_In_MCBControl RPTCB;
+  BD_IOControls_In_MCBControl TERCB1;
+  BD_IOControls_In_MCBControl TERCB2;
+  BD_IOControls_In_InputControl SPSW;
+  BD_IOControls_In_InputControl SPPB;
+  BD_IOControls_In_MCBControl APSCB;
+  BD_IOControls_In_MCBControl APSICB;
+  BD_IOControls_In_MCBControl BCGCB;
+  BD_IOControls_In_MCBControl DSCB;
+  BD_IOControls_In_MCBControl MTBMCCB;
+  BD_IOControls_In_MCBControl PADCB;
+  BD_IOControls_In_MCBControl PANCB;
+  BD_IOControls_In_MCBControl SSCB;
+  BD_IOControls_In_MCBControl PTCB;
+  BD_IOControls_In_MCBControl VCBCB;
+  BD_IOControls_In_MCBControl SP12CB;
+  BD_IOControls_In_MCBControl MTBM1CB;
+  BD_IOControls_In_MCBControl MTBM2CB;
+  BD_IOControls_In_MCBControl SP11CB;
+  BD_IOControls_In_MCBControl SP6CB;
+  BD_IOControls_In_MCBControl MTOPCB;
+  BD_IOControls_In_InputControl ORDCOS;
+  BD_IOControls_In_InputControl ADDCOS;
+  BD_IOControls_In_MCBControl LeftDoor1DCUCB;
+  BD_IOControls_In_MCBControl LeftDoor2DCUCB;
+  BD_IOControls_In_MCBControl LeftDoor3DCUCB;
+  BD_IOControls_In_MCBControl LeftDoor4DCUCB;
+  BD_IOControls_In_MCBControl RightDoor1DCUCB;
+  BD_IOControls_In_MCBControl RightDoor2DCUCB;
+  BD_IOControls_In_MCBControl RightDoor3DCUCB;
+  BD_IOControls_In_MCBControl RightDoor4DCUCB;
+  BD_IOControls_In_InputControl LeftDoor1Coving;
+  BD_IOControls_In_InputControl LeftDoor2Coving;
+  BD_IOControls_In_InputControl LeftDoor3Coving;
+  BD_IOControls_In_InputControl LeftDoor4Coving;
+  BD_IOControls_In_InputControl RightDoor1Coving;
+  BD_IOControls_In_InputControl RightDoor2Coving;
+  BD_IOControls_In_InputControl RightDoor3Coving;
+  BD_IOControls_In_InputControl RightDoor4Coving;
+  BD_IOControls_In_InputControl LeftDoor1EED;
+  BD_IOControls_In_InputControl LeftDoor2EED;
+  BD_IOControls_In_InputControl LeftDoor3EED;
+  BD_IOControls_In_InputControl LeftDoor4EED;
+  BD_IOControls_In_InputControl RightDoor1EED;
+  BD_IOControls_In_InputControl RightDoor2EED;
+  BD_IOControls_In_InputControl RightDoor3EED;
+  BD_IOControls_In_InputControl RightDoor4EED;
+  BD_IOControls_In_InputControl LeftDoor1ManualClose;
+  BD_IOControls_In_InputControl LeftDoor2ManualClose;
+  BD_IOControls_In_InputControl LeftDoor3ManualClose;
+  BD_IOControls_In_InputControl LeftDoor4ManualClose;
+  BD_IOControls_In_InputControl RightDoor1ManualClose;
+  BD_IOControls_In_InputControl RightDoor2ManualClose;
+  BD_IOControls_In_InputControl RightDoor3ManualClose;
+  BD_IOControls_In_InputControl RightDoor4ManualClose;
+  BD_IOControls_In_InputControl LeftDoor1ManualOpen;
+  BD_IOControls_In_InputControl LeftDoor2ManualOpen;
+  BD_IOControls_In_InputControl LeftDoor3ManualOpen;
+  BD_IOControls_In_InputControl LeftDoor4ManualOpen;
+  BD_IOControls_In_InputControl RightDoor1ManualOpen;
+  BD_IOControls_In_InputControl RightDoor2ManualOpen;
+  BD_IOControls_In_InputControl RightDoor3ManualOpen;
+  BD_IOControls_In_InputControl RightDoor4ManualOpen;
+  BD_IOControls_In_InputControl LeftDoor1Lockout;
+  BD_IOControls_In_InputControl LeftDoor2Lockout;
+  BD_IOControls_In_InputControl LeftDoor3Lockout;
+  BD_IOControls_In_InputControl LeftDoor4Lockout;
+  BD_IOControls_In_InputControl RightDoor1Lockout;
+  BD_IOControls_In_InputControl RightDoor2Lockout;
+  BD_IOControls_In_InputControl RightDoor3Lockout;
+  BD_IOControls_In_InputControl RightDoor4Lockout;
+  BD_IOControls_In_InputControl LeftDoorEADCover;
+  BD_IOControls_In_InputControl RightDoorEADCover;
+  BD_IOControls_In_InputControl LeftDoorEAD;
+  BD_IOControls_In_InputControl RightDoorEAD;
+  BD_IOControls_In_InputControl ParkBrakeIsolationCockBogie1;
+  BD_IOControls_In_InputControl ParkBrakeIsolationCockBogie2;
+  BD_IOControls_In_InputControl MRIsolationCock;
+  BD_IOControls_In_InputControl UncouplingCock;
+  BD_IOControls_In_InputControl Horn1IsolationCock;
+  BD_IOControls_In_InputControl Horn2IsolationCock;
+  BD_IOControls_In_InputControl MREPIsolationCockEnd1;
+  BD_IOControls_In_InputControl BIC1Inside;
+  BD_IOControls_In_InputControl BIC1Outside;
+  BD_IOControls_In_InputControl BIC2Inside;
+  BD_IOControls_In_InputControl BIC2Outside;
+  BD_IOControls_In_InputControl MREPIsolationCockEnd2;
+  BD_IOControls_In_InputControl EPIC;
+  BD_IOControls_In_InputControl ASCOEnd1;
+  BD_IOControls_In_InputControl ASCOEnd2;
+  BD_IOControls_In_InputControl ASIsolationCock;
+  BD_IOControls_In_InputControl SR;
+  BD_IOControls_In_InputControl ParkingBrakeManualReleaseBogie1Handle1;
+  BD_IOControls_In_InputControl ParkingBrakeManualReleaseBogie1Handle2;
+  BD_IOControls_In_InputControl ParkingBrakeManualReleaseBogie2Handle1;
+  BD_IOControls_In_InputControl ParkingBrakeManualReleaseBogie2Handle2;
+  BD_IOControls_In_InputControl PECUPushButton;
+  BD_IOControls_In_InputControl Microphone;
+  BD_IOControls_In_InputControl DriversBackDoor;
+  BD_IOControls_In_InputControl PantographIsolationCock;
+  BD_IOControls_In_InputControl VCBIsolationCock;
+  BD_IOControls_In_InputControl ORDPlunger;
+} BD_IOControls_In_Vehicle;
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_InputStates_
+#define DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_InputStates_
+
+typedef struct {
+  real_T EmergencyBrakePB;
+  real_T HornPB;
+  real_T CabConsoleLightPB;
+  real_T DoorProvenLoopCutoutPB;
+  real_T LeftDoorClosePBOperatingPanel1;
+  real_T RightDoorClosePBOperatingPanel1;
+  real_T LeftDoorOpenPBOperatingPanel1;
+  real_T RightDoorOpenPBOperatingPanel1;
+  real_T CabMainLightPB;
+  real_T ParkingBrakeOnSwitch;
+  real_T ParkingBrakeOffSwitch;
+  real_T DoorCloseAnnouncementPB;
+  real_T ROSPB;
+  real_T UTOPB;
+  real_T ATOStartPB;
+  real_T EmergencyBrakeResetPB;
+  real_T ControlKey;
+  real_T ModeSelector;
+  real_T MasterControllerHandle;
+  real_T DeadmanSafetyDevice;
+  real_T CallOnLightPB;
+  real_T VCBOpenPB;
+  real_T WiperSelectionSwitch;
+  real_T WiperPump;
+  real_T LIMPHomePB;
+  real_T PowerOffPB;
+  real_T PantoDownPB;
+  real_T VCBClosePB;
+  real_T LeftDoorOpenPBOperatingPanel2;
+  real_T LeftDoorOpenPB1OperatingPanel2;
+  real_T LeftDoorClosePBOperatingPanel2;
+  real_T PantoUpPB;
+  real_T SafetyCutoutSS;
+  real_T BrakeLoopCutoutSS;
+  real_T PantoSelector;
+  real_T DeadmanBypassSwitch;
+  real_T HeadLightSwitch;
+  real_T UncouplePB;
+  real_T FlasherLightPB;
+  real_T FloodLightPB;
+  real_T BatteryResetPB;
+  real_T RightDoorOpenPBOperatingPanel5;
+  real_T RightDoorOpenPB1OperatingPanel5;
+  real_T RightDoorClosePBOperatingPanel5;
+  real_T DoorProvenLoopOutputSwitch;
+  real_T LampTestPB;
+  real_T WFLTestPB;
+  real_T WiperControlSwitch;
+  real_T EmergencyStopPB;
+  real_T HoldDoorCloseBypassSS;
+  real_T CabBoosterFanSS;
+  real_T EmergencyBrakePBBypassSS;
+  real_T CabEEDLeft;
+  real_T CabEEDRight;
+  real_T SafetyCover;
+  real_T DummyCover;
+  real_T RampCoverLockingLever;
+  real_T RampCover;
+  real_T RampHandle;
+  real_T RampEndSupport;
+  real_T RampMiddleSupport;
+  real_T WinderHandlesAccessCover;
+  real_T LargeHandle;
+  real_T RampWinder;
+  real_T SmallHandle;
+  real_T EmergencyDoorGasSpring;
+  real_T DoorWinder;
+  real_T EBLR2CB;
+  real_T EBMVCB;
+  real_T EDCB;
+  real_T ELCB1;
+  real_T ELCB2;
+  real_T ERCB;
+  real_T HCB;
+  real_T HLLCB;
+  real_T HLRCB;
+  real_T ILCB1;
+  real_T ILCB2;
+  real_T LDICB;
+  real_T LDLCB;
+  real_T LDRCB;
+  real_T MLCB;
+  real_T MMCB;
+  real_T NBCB;
+  real_T NVICB;
+  real_T OCCB1;
+  real_T OCCB2;
+  real_T ODDCB;
+  real_T PBCB;
+  real_T PISCB1;
+  real_T PISCB2;
+  real_T POCB;
+  real_T PPU1CB;
+  real_T PPU2CB;
+  real_T PPU3CB;
+  real_T RIO1CB;
+  real_T RIO2CB;
+  real_T SIOCB1;
+  real_T SIOCB2;
+  real_T SSICB;
+  real_T TBCCB1;
+  real_T TBCCB2;
+  real_T TBNCB;
+  real_T TDICB;
+  real_T TLLCB;
+  real_T TLRCB;
+  real_T TRIVCB;
+  real_T TVDUCB;
+  real_T TWVCB;
+  real_T VCCBOrUCCB;
+  real_T VCBCCB;
+  real_T VIO1CB;
+  real_T VIO2CB;
+  real_T WFLCB;
+  real_T WIFICB;
+  real_T WWCB;
+  real_T BECUCB1;
+  real_T BECUCB2;
+  real_T BECUCB3;
+  real_T RSACB;
+  real_T CMCCB;
+  real_T CILCB;
+  real_T CICB;
+  real_T CELCB;
+  real_T CECB;
+  real_T CDUCB;
+  real_T CCNVIO1CB;
+  real_T CBTCCB1;
+  real_T CBFCCB;
+  real_T CBFCB;
+  real_T C1CB;
+  real_T BLCB;
+  real_T ZVBACB;
+  real_T EBLR1CB;
+  real_T DRCB;
+  real_T DPLCB;
+  real_T DMICB;
+  real_T DLCB;
+  real_T DIOCB2;
+  real_T DIOCB1;
+  real_T CSCCB;
+  real_T CSBCB;
+  real_T CSACB;
+  real_T CRSBCB;
+  real_T SOCB2;
+  real_T SOCB1;
+  real_T MSOCB5;
+  real_T MSOCB4;
+  real_T MSOCB3;
+  real_T MSOCB2;
+  real_T MSOCB1;
+  real_T HVAC1;
+  real_T SAC2CCB;
+  real_T HVAC2;
+  real_T SAC1CCB;
+  real_T CMCB;
+  real_T AC2CB;
+  real_T AC1CB;
+  real_T FDSCB;
+  real_T BCBCB;
+  real_T ERVRCB1;
+  real_T ERVRCB2;
+  real_T ESKCB;
+  real_T HMCB;
+  real_T SP1CB;
+  real_T SP2CB;
+  real_T SP3CB;
+  real_T SP4CB;
+  real_T SP5CB;
+  real_T SPCB6;
+  real_T SPCB7;
+  real_T SPCB8;
+  real_T RPTCB;
+  real_T TERCB1;
+  real_T TERCB2;
+  real_T SPSW;
+  real_T SPPB;
+  real_T APSCB;
+  real_T APSICB;
+  real_T BCGCB;
+  real_T DSCB;
+  real_T MTBMCCB;
+  real_T PADCB;
+  real_T PANCB;
+  real_T SSCB;
+  real_T PTCB;
+  real_T VCBCB;
+  real_T SP12CB;
+  real_T MTBM1CB;
+  real_T MTBM2CB;
+  real_T SP11CB;
+  real_T SP6CB;
+  real_T MTOPCB;
+  real_T ORDCOS;
+  real_T ADDCOS;
+  real_T LeftDoor1DCUCB;
+  real_T LeftDoor2DCUCB;
+  real_T LeftDoor3DCUCB;
+  real_T LeftDoor4DCUCB;
+  real_T RightDoor1DCUCB;
+  real_T RightDoor2DCUCB;
+  real_T RightDoor3DCUCB;
+  real_T RightDoor4DCUCB;
+  real_T LeftDoor1Coving;
+  real_T LeftDoor2Coving;
+  real_T LeftDoor3Coving;
+  real_T LeftDoor4Coving;
+  real_T RightDoor1Coving;
+  real_T RightDoor2Coving;
+  real_T RightDoor3Coving;
+  real_T RightDoor4Coving;
+  real_T LeftDoor1EED;
+  real_T LeftDoor2EED;
+  real_T LeftDoor3EED;
+  real_T LeftDoor4EED;
+  real_T RightDoor1EED;
+  real_T RightDoor2EED;
+  real_T RightDoor3EED;
+  real_T RightDoor4EED;
+  real_T LeftDoor1ManualClose;
+  real_T LeftDoor2ManualClose;
+  real_T LeftDoor3ManualClose;
+  real_T LeftDoor4ManualClose;
+  real_T RightDoor1ManualClose;
+  real_T RightDoor2ManualClose;
+  real_T RightDoor3ManualClose;
+  real_T RightDoor4ManualClose;
+  real_T LeftDoor1ManualOpen;
+  real_T LeftDoor2ManualOpen;
+  real_T LeftDoor3ManualOpen;
+  real_T LeftDoor4ManualOpen;
+  real_T RightDoor1ManualOpen;
+  real_T RightDoor2ManualOpen;
+  real_T RightDoor3ManualOpen;
+  real_T RightDoor4ManualOpen;
+  real_T LeftDoor1Lockout;
+  real_T LeftDoor2Lockout;
+  real_T LeftDoor3Lockout;
+  real_T LeftDoor4Lockout;
+  real_T RightDoor1Lockout;
+  real_T RightDoor2Lockout;
+  real_T RightDoor3Lockout;
+  real_T RightDoor4Lockout;
+  real_T LeftDoorEADCover;
+  real_T RightDoorEADCover;
+  real_T LeftDoorEAD;
+  real_T RightDoorEAD;
+  real_T ParkBrakeIsolationCockBogie1;
+  real_T ParkBrakeIsolationCockBogie2;
+  real_T MRIsolationCock;
+  real_T UncouplingCock;
+  real_T Horn1IsolationCock;
+  real_T Horn2IsolationCock;
+  real_T MREPIsolationCockEnd1;
+  real_T BIC1Inside;
+  real_T BIC1Outside;
+  real_T BIC2Inside;
+  real_T BIC2Outside;
+  real_T MREPIsolationCockEnd2;
+  real_T EPIC;
+  real_T ASCOEnd1;
+  real_T ASCOEnd2;
+  real_T ASIsolationCock;
+  real_T SR;
+  real_T ParkingBrakeManualReleaseBogie1Handle1;
+  real_T ParkingBrakeManualReleaseBogie1Handle2;
+  real_T ParkingBrakeManualReleaseBogie2Handle1;
+  real_T ParkingBrakeManualReleaseBogie2Handle2;
+  real_T PECUPushButton;
+  real_T Microphone;
+  real_T DriversBackDoor;
+  real_T PantographIsolationCock;
+  real_T VCBIsolationCock;
+  real_T ORDPlunger;
+} BD_IOControls_Out_Vehicle_InputStates;
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_MCBTripStates_
+#define DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_MCBTripStates_
+
+typedef struct {
+  real_T EBLR2CB;
+  real_T EBMVCB;
+  real_T EDCB;
+  real_T ELCB1;
+  real_T ELCB2;
+  real_T ERCB;
+  real_T HCB;
+  real_T HLLCB;
+  real_T HLRCB;
+  real_T ILCB1;
+  real_T ILCB2;
+  real_T LDICB;
+  real_T LDLCB;
+  real_T LDRCB;
+  real_T MLCB;
+  real_T MMCB;
+  real_T NBCB;
+  real_T NVICB;
+  real_T OCCB1;
+  real_T OCCB2;
+  real_T ODDCB;
+  real_T PBCB;
+  real_T PISCB1;
+  real_T PISCB2;
+  real_T POCB;
+  real_T PPU1CB;
+  real_T PPU2CB;
+  real_T PPU3CB;
+  real_T RIO1CB;
+  real_T RIO2CB;
+  real_T SIOCB1;
+  real_T SIOCB2;
+  real_T SSICB;
+  real_T TBCCB1;
+  real_T TBCCB2;
+  real_T TBNCB;
+  real_T TDICB;
+  real_T TLLCB;
+  real_T TLRCB;
+  real_T TRIVCB;
+  real_T TVDUCB;
+  real_T TWVCB;
+  real_T VCCBOrUCCB;
+  real_T VCBCCB;
+  real_T VIO1CB;
+  real_T VIO2CB;
+  real_T WFLCB;
+  real_T WIFICB;
+  real_T WWCB;
+  real_T BECUCB1;
+  real_T BECUCB2;
+  real_T BECUCB3;
+  real_T RSACB;
+  real_T CMCCB;
+  real_T CILCB;
+  real_T CICB;
+  real_T CELCB;
+  real_T CECB;
+  real_T CDUCB;
+  real_T CCNVIO1CB;
+  real_T CBTCCB1;
+  real_T CBFCCB;
+  real_T CBFCB;
+  real_T C1CB;
+  real_T BLCB;
+  real_T ZVBACB;
+  real_T EBLR1CB;
+  real_T DRCB;
+  real_T DPLCB;
+  real_T DMICB;
+  real_T DLCB;
+  real_T DIOCB2;
+  real_T DIOCB1;
+  real_T CSCCB;
+  real_T CSBCB;
+  real_T CSACB;
+  real_T CRSBCB;
+  real_T SOCB2;
+  real_T SOCB1;
+  real_T MSOCB5;
+  real_T MSOCB4;
+  real_T MSOCB3;
+  real_T MSOCB2;
+  real_T MSOCB1;
+  real_T HVAC1;
+  real_T SAC2CCB;
+  real_T HVAC2;
+  real_T SAC1CCB;
+  real_T CMCB;
+  real_T AC2CB;
+  real_T AC1CB;
+  real_T FDSCB;
+  real_T BCBCB;
+  real_T ERVRCB1;
+  real_T ERVRCB2;
+  real_T ESKCB;
+  real_T HMCB;
+  real_T SP1CB;
+  real_T SP2CB;
+  real_T SP3CB;
+  real_T SP4CB;
+  real_T SP5CB;
+  real_T SPCB6;
+  real_T SPCB7;
+  real_T SPCB8;
+  real_T RPTCB;
+  real_T TERCB1;
+  real_T TERCB2;
+  real_T APSCB;
+  real_T APSICB;
+  real_T BCGCB;
+  real_T DSCB;
+  real_T MTBMCCB;
+  real_T PADCB;
+  real_T PANCB;
+  real_T SSCB;
+  real_T PTCB;
+  real_T VCBCB;
+  real_T SP12CB;
+  real_T MTBM1CB;
+  real_T MTBM2CB;
+  real_T SP11CB;
+  real_T SP6CB;
+  real_T MTOPCB;
+  real_T LeftDoor1DCUCB;
+  real_T LeftDoor2DCUCB;
+  real_T LeftDoor3DCUCB;
+  real_T LeftDoor4DCUCB;
+  real_T RightDoor1DCUCB;
+  real_T RightDoor2DCUCB;
+  real_T RightDoor3DCUCB;
+  real_T RightDoor4DCUCB;
+} BD_IOControls_Out_Vehicle_MCBTripStates;
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_OutputStates_
+#define DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_OutputStates_
+
+typedef struct {
+  real_T HornPBLamp;
+  real_T CabConsoleLightPBLamp;
+  real_T CabConsoleLight;
+  real_T LeftDoorClosePBOperatingPanel1Lamp;
+  real_T RightDoorClosePBOperatingPanel1Lamp;
+  real_T LeftDoorOpenPBOperatingPanel1Lamp;
+  real_T RightDoorOpenPBOperatingPanel1Lamp;
+  real_T CabMainLightPBLamp;
+  real_T CabMainLight;
+  real_T ParkingBrakeOnSwitchLamp;
+  real_T ParkingBrakeOffSwitchLamp;
+  real_T DoorCloseAnnouncementPBLamp;
+  real_T ROSPBLamp;
+  real_T UTOPBLamp;
+  real_T ATOStartPBLamp;
+  real_T EmergencyBrakeResetPBLamp;
+  real_T MRAirGaugeMRPressure;
+  real_T BCSRDualPressureGaugeBCPressure;
+  real_T BCSRDualPressureGaugeSRPressure;
+  real_T CallOnLightPBLamp;
+  real_T VCBOpenPBLamp;
+  real_T LIMPHomePBLamp;
+  real_T PowerOffPBLamp;
+  real_T PantoDownPBLamp;
+  real_T VCBClosePBLamp;
+  real_T LeftDoorOpenPBOperatingPanel2Lamp;
+  real_T LeftDoorOpenPB1OperatingPanel2Lamp;
+  real_T LeftDoorClosePBOperatingPanel2Lamp;
+  real_T PantoUpPBLamp;
+  real_T APSFaultIndicator;
+  real_T PowerFaultIndicator;
+  real_T EmergencyBrakeIndicator;
+  real_T VCBTripIndicator;
+  real_T LineVoltageIndicator;
+  real_T OtherCabOccupiedIndicator;
+  real_T ParkingBrakeIndicator;
+  real_T AllDoorCloseIndicator;
+  real_T HVACFaultIndicator;
+  real_T SaloonDoorCloseIndicator;
+  real_T UncouplePBLamp;
+  real_T FlasherLightPBLamp;
+  real_T FloodLightPBLamp;
+  real_T BatteryResetPBLamp;
+  real_T RightDoorOpenPBOperatingPanel5Lamp;
+  real_T RightDoorOpenPB1OperatingPanel5Lamp;
+  real_T RightDoorClosePBOperatingPanel5Lamp;
+  real_T LampTestPBLamp;
+  real_T WFLTestPBLamp;
+  real_T DoorIndicator;
+  real_T Ramp;
+  real_T EmergencyDoor;
+  real_T RampSupportDown;
+  real_T GasSpringLocked;
+  real_T LeftDoor1Position;
+  real_T LeftDoor2Position;
+  real_T LeftDoor3Position;
+  real_T LeftDoor4Position;
+  real_T RightDoor1Position;
+  real_T RightDoor2Position;
+  real_T RightDoor3Position;
+  real_T RightDoor4Position;
+  real_T LeftDoor1aPosition;
+  real_T LeftDoor1InsideLamp;
+  real_T LeftDoor2InsideLamp;
+  real_T LeftDoor3InsideLamp;
+  real_T LeftDoor4InsideLamp;
+  real_T RightDoor1InsideLamp;
+  real_T RightDoor2InsideLamp;
+  real_T RightDoor3InsideLamp;
+  real_T RightDoor4InsideLamp;
+  real_T LeftDoor1OutsideLamp;
+  real_T LeftDoor2OutsideLamp;
+  real_T LeftDoor3OutsideLamp;
+  real_T LeftDoor4OutsideLamp;
+  real_T RightDoor1OutsideLamp;
+  real_T RightDoor2OutsideLamp;
+  real_T RightDoor3OutsideLamp;
+  real_T RightDoor4OutsideLamp;
+  real_T FloodLight;
+  real_T FlasherLight;
+  real_T UTOOrRMLight;
+  real_T MarkerOrTailLight;
+  real_T HeadLight;
+  real_T WaitIndicator;
+  real_T CallIndicator;
+  real_T TalkIndicator;
+  real_T PantographPosition;
+  real_T WiperPositionLeft;
+  real_T WiperPositionCenter;
+  real_T WiperPositionRight;
+  real_T WiperWash;
+  real_T VehicleDerailed;
+  real_T VehicleBogieDerailed;
+} BD_IOControls_Out_Vehicle_OutputStates;
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_
+#define DEFINED_TYPEDEF_FOR_BD_IOControls_Out_Vehicle_
+
+typedef struct {
+  BD_IOControls_Out_Vehicle_InputStates InputStates;
+  BD_IOControls_Out_Vehicle_MCBTripStates MCBTripStates;
+  BD_IOControls_Out_Vehicle_OutputStates OutputStates;
+} BD_IOControls_Out_Vehicle;
+
+#endif
+
+/* Parameters for system: '<S3645>/UncouplingCock-Toggle' */
+typedef struct P_ToggleControl_T_ P_ToggleControl_T;
+
+/* Parameters for system: '<S3602>/PECUPushButton-Momentary' */
+typedef struct P_MomentaryControl_T_ P_MomentaryControl_T;
+
+/* Parameters for system: '<S3147>/RightDoor4DCUCB-MCB' */
+typedef struct P_MCBControl_T_ P_MCBControl_T;
+
+/* Parameters for system: '<S493>/RampWinder-Rotary' */
+typedef struct P_RotaryControl_T_ P_RotaryControl_T;
+
+/* Parameters for system: '<S349>/WiperControlSwitch-Increment' */
+typedef struct P_IncrementControl_T_ P_IncrementControl_T;
+
+/* Parameters for system: '<S342>/HoldDoorCloseBypassSS-Increment' */
+typedef struct P_IncrementControl_f_T_ P_IncrementControl_f_T;
+
+/* Parameters for system: '<S21>/ModeSelector-Increment' */
+typedef struct P_IncrementControl_l_T_ P_IncrementControl_l_T;
+
+/* Parameters for system: '<S20>/MasterControllerHandle-Increment' */
+typedef struct P_IncrementControl_k_T_ P_IncrementControl_k_T;
+
+/* Parameters for system: '<Root>/ForEachVehicle' */
+typedef struct P_CoreSubsys_IOControls_T_ P_CoreSubsys_IOControls_T;
+
+/* Parameters (default storage) */
+typedef struct P_IOControls_T_ P_IOControls_T;
+
+/* Forward declaration for rtModel */
+typedef struct tag_RTM_IOControls_T RT_MODEL_IOControls_T;
+
+#endif                                 /* RTW_HEADER_IOControls_types_h_ */

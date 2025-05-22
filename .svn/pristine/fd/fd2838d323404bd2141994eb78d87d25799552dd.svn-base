@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1496746608" name="Beacon">
+		<mesh_name>cbtc_beacon/graphics/Beacon.mesh</mesh_name>
+		<surface name="Body" max_visible_distance="800" material="a5fd3d27176a6771c3e946c4c56aa422d3896a49" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.tcms.fe.gui.presenter.DoorLoopInterlocksScreenController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <fx:include maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="DoorLoopInterlocksEightCar.fxml" />
+      <GridPane fx:id="sixCarGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="54.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="46.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="3.9" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="96.1" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Hostler Mode activated in M3" GridPane.columnIndex="1" />
+                        <Label fx:id="detrainmentDoorDm1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Detrainment door open in DM1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="leftDoorDm1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop left side open in DM1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="leftDoorT2Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop left side open in T2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="leftDoorM3Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop left side open in M3" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="rightDoorDm1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop right side open in DM1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="rightDoorT2Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop right side open in T2" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="rightDoorM3Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop right side open in M3" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="pabrDm1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="PABR de-energized in DM1" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                     </children>
+                  </GridPane>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="3.9" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="96.1" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.11" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Hostler Mode activated in M4" GridPane.columnIndex="1" />
+                        <Label fx:id="detrainmentDoorDm6Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Detrainment door open in DM6" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="leftDoorM4Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop left side open in M4" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="leftDoorT5Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop left side open in T5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="leftDoorDm6Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop left side open in DM6" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="rightDoorM4Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop right side open in M4" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="rightDoorT5Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop right side open in T5" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="rightDoorDm6Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="Local door loop right side open in DM6" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="pabrDm6Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="door-loop-intrlocks-screen-label" text="PABR de-energized in DM6" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

@@ -1,0 +1,67 @@
+[Defaults]
+#Database=database.ini
+Database=database_manual_vision_mmrbem.ini
+
+[Files]
+# These are relative to the current working directory!
+Data Path=./
+Config File=./vision.cfg
+
+[Windowing]
+Width=1600
+Height=900
+Full-screen=0
+
+# If set to true (1), the window is drawn without a frame. Due to
+# restrictions in the Unigine API this will also lock the window to
+# the top-left of the screen. Only used if Full-screen is set to
+# false (0).
+Frameless=0
+
+# If set to 1, the mouse cursor is shown when the editor is not loaded
+# otherwise when set to 0, cursor is only shown when editor is loaded (default)
+Show Mouse Cursor=1
+
+# Set to 1 to enable vsync, or 0 to run without it.
+# If unspecified, the default is 1 (vsync is enabled).
+Enable VSync=0
+
+[Graphics]
+# Engine options: Direct3D11, Direct3D10, Direct3D9, Open GL
+Engine=Direct3D11
+Anti-aliasing=8
+Gamma=1.0
+Refresh Rate=60
+
+[Communications]
+Address=127.0.0.1
+Port=5050
+Engine Name=Forward
+Display Names=Forward
+
+[Plugins]
+Subsystem Path=..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\autogen_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\environment_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\feature_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\perspective_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\view_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\train\subsystems\train_subsystems\bin
+
+[Subsystem Plugins]
+autogen_subsystems
+environment_subsystems
+feature_subsystems
+perspective_subsystems
+view_subsystems
+train_subsystems
+
+# Change this to 1 to support Ogre style feature raycast Y offset behaviour
+[Feature]
+Y Raycast Offset=0
+
+[Autogen]
+Clean Files=0
+Delete Files=0
+Generate Files=1
+Autogen Path=oksygen/sim/project/scripts/auto_gen
+
+[Logging]
+Level=VERBOSE
+
+[Train]
+Manual Vision=1

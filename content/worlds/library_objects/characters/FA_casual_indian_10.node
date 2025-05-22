@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="185506558" name="FA_casual_indian_09">
+		<mesh_name>../worlds/library_objects/characters/FA_casual_indian_09.mesh</mesh_name>
+		<surface name="FA_casual_indian_LP" min_visible_distance="20" max_visible_distance="800" min_fade_distance="1" material="a865b6e953868acea206852c4fc2ae58d45542aa" property="surface_base"/>
+		<surface name="FA_casual_indian_MP" max_visible_distance="20" max_fade_distance="1" material="a865b6e953868acea206852c4fc2ae58d45542aa" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.42108547152e-014 0 0 1.0</transform>
+	</node>
+</nodes>

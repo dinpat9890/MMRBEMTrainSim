@@ -1,0 +1,54 @@
+#
+# Properties for the BasicSessionSetupPlugin in the SCC.
+#
+
+#
+# GUI setup
+#
+
+# Flag that allows us to enter a reference session for comparisons
+scc.enableReferenceSession = true
+
+# Flag that allows us to select simulated location
+scc.enableSimulatedLocation = true
+
+# Declare certain fields as mandatory in the SCC
+scc.mandatory.courseId = false
+scc.mandatory.sessionCode = false
+
+# Debug flag that allows us to enter an offset when loading a scenario
+scc.allowOffset = true
+
+#
+# Instructor Hubs
+#
+
+# Set this to zero if instructor hubs are not required.
+scc.instructorhub.count=0
+
+# Each instructor hub property set needs a type and a mode to be specified
+# Valid values for type come from HUBTYPE.HUTY_HUB_TYPE_NAME
+# Valid values for mode come from HUBMODE.HUMO_HUB_MODE_NAME
+# The type and mode must be associated with each other in HUBMODETYPEASSOC
+#scc.instructorhub.1.type=Driver's Instructor Desk
+#scc.instructorhub.1.mode=Driver's Instructor
+#scc.instructorhub.2.type=Guard's Instructor Desk
+#scc.instructorhub.2.mode=Guard's Instructor
+
+# Driver response system settings
+#drs.hubtype.responsehardware=Response System
+#drs.system=Driver
+
+##Ideal Run properties
+#Instructor and trainee to be used for Ideal run generation
+scc.idealrunsession.instructor.userid=13000
+scc.idealrunsession.trainee.userid=0
+# To display/hide ideal run sessions for replay.
+scc.replaysession.hideidealruns=true
+
+# Hub location filter
+# Possible values are ShowAll, EndCars, LeadCars
+scc.basicSessionSetup.virtualLocationFilter=LeadCars
+
+#
+scc.simulatedLocationFilePath=../Environment/SimulatedLocation.properties

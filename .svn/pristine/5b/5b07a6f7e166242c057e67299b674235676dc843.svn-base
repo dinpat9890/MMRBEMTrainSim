@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+package com.sydac.mmrbem.hmi.common.protos;
+
+option java_package = "com.sydac.mmrbem.dmi.common.protos";
+option java_outer_classname = "DMIProtos";
+
+
+ /**
+  * Commonly used enum and messages. Do not try to change these protos.  
+  * Use wherever these types are applied.
+ **/
+
+message TextMessages {
+
+     enum AckState {
+         NO_ACK = 1;
+         ACK_ENABLED = 2;
+         ACK_DISABLED = 3;
+     }
+
+     message TextMessage {
+         required double uniqueId = 1;
+         required string displayText = 2;
+         optional double timeStamp = 3;
+         required AckState ackState = 4;
+         required double priority = 5;
+     }
+
+     repeated TextMessage textMessage = 1;
+ }

@@ -1,0 +1,23 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+
+[System.1]
+Module Name=DS-07-IO Module
+
+[Simulator]
+Hub Name=Driver's Cab
+
+[Scripting]
+Creator ID=99
+Plugin Path=..\Bin
+Properties Path=..\Environment
+Plugins=wago_pluginD
+Plugin Properties=IOPlugins.ini
+Permanent Script=
+
+[Config]
+Class=*
+Mode=*
+Session Script=MMRBEM_DSW_IO.script
+

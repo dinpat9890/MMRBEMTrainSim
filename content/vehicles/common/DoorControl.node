@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="WorldExpression" id="1041292721" name="DoorController_5" property="DoorControl">
+		<expression>{
+#include &lt;vehicles/common/DoorControl.h&gt;
+}</expression>
+		<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+	</node>
+</nodes>

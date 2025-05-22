@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="rope" guid="937754577343827e0242ccf1586f253ac0c08606" base_material="mesh_base">
+	<texture name="albedo">../features/obstruction_features/graphics/textures/rope.dds</texture>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0</parameter>
+</material>

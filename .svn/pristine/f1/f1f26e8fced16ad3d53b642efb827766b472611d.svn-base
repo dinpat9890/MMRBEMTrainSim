@@ -1,0 +1,1309 @@
+/*
+ * ==================================================================
+ *
+ * (C) Copyright 2019 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *
+ * ==================================================================
+ */
+
+
+/** CSS styles for all the components is given here **/
+.root {
+    /** Can assign variable to common styles and use same for other components. **/
+    -fx-background-color: rgb(192.0, 192.0, 192.0);
+}
+
+/** Gray Color used in various state **/
+* {
+    -fx-light-gray-color: rgb(192.0, 192.0, 192.0);
+}
+
+/** DMI background Color used in various state **/
+* {
+    -fx-dmi-background-color: rgb(28.0,40.0,65.0);
+}
+
+/** Black Color used in various state **/
+* {
+    -fx-black-color: rgb(0.0, 0.0, 0.0);
+}
+
+/** green Color used in various state **/
+* {
+    -fx-green-color: rgb(0.0, 255.0, 0.0);
+}
+
+/** Yellow Color used in various state **/
+* {
+    -fx-yellow-color: rgb(255.0, 255.0, 0.0);
+}
+
+/** red Color used in various state **/
+* {
+    -fx-red-color: rgb(255.0, 0.0, 0.0);
+}
+
+/** white Color used in various state **/
+* {
+    -fx-white-color: rgb(255.0, 255.0, 255.0);
+}
+
+/** dark gray Color used in various state **/
+* {
+    -fx-dark-gray-color: rgb(119.0, 136.0, 153.0);
+}
+
+/** gray Color used in various state **/
+* {
+    -fx-gray-color: rgb(195.0, 195.0, 197.0);
+}
+
+/** Dark Blue Color used in various state **/
+* {
+    -fx-dark-blue-color: rgb(6.0, 60.0, 120.0);
+}
+
+/** Blue Color used in various state **/
+* {
+    -fx-blue-color: rgb(0.0, 122.0, 255.0);
+}
+
+/** Bypass Normal state **/
+* {
+    -fx-bypass-normal-color: rgb(0.0, 0.0, 0.0);
+}
+
+/** Light blue color**/
+* {
+    -fx-light-blue-color: rgb(0.0, 122.0, 255.0);
+}
+
+/** Brown color**/
+* {
+    -fx-brown-color: brown;
+}
+
+/** red Color used in various state **/
+* {
+    -fx-orange-color: orange;
+}
+
+.main-panel-grid{
+ -fx-background-color: -fx-dmi-background-color;
+ -fx-border-width: 3.0;
+ -fx-border-color: black;
+ -fx-border-insets: 0.0;
+ -fx-padding: 0.0 4.0 0.0 4.0;
+}
+
+.main-screen-label {
+	-fx-background-color: -fx-dmi-background-color;
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.advisery-speed-label {
+    -fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 40.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-border-width: 3.0;
+    -fx-border-insets: 1.0;
+	-fx-border-color: -fx-light-gray-color;
+}
+
+.a1-area-status-normal{
+	-fx-background-color:  -fx-dmi-background-color;
+}
+
+.a1-area-status-warning{
+	-fx-background-color: rgb(255.0,128.0,65.0);
+}
+
+
+.a1-area-status-intervention{
+	-fx-background-color: -fx-red-color;
+}
+.a2-area-target-dist-bar{
+	-fx-background-color:  none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/target_distance_bargraph.png');
+     -fx-background-size:100.0%;
+}
+
+.a2-area-target-dist-bar-invisible{
+	-fx-background-color:  none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.a2-target-dist-bar-status{
+	-fx-background-radius: 1.0 1.0 0.0 0.0;
+    -fx-background-color: -fx-light-gray-color;
+}
+
+.atc-bypass-speed-dial{
+  -fx-image: url('../images/atc_bypass_speed_dial.png');
+   -fx-background-size:100.0%;
+}
+
+.speedo-meter-img{
+	-fx-image: url('../images/speedometer85.png');
+	 -fx-background-size:100.0%;
+}
+
+.speedo-meter-img-rmf, .speedo-meter-img-ros{
+	-fx-image: url('../images/speedometer_25.png');
+	 -fx-background-size:100.0%;
+}
+
+.speedo-meter-img-rmr{
+	-fx-image: url('../images/speedometer_10.png');
+	 -fx-background-size:100.0%;
+}
+
+.speedo-meter-needle-normal{
+	-fx-image: url('../images/speedometer_needle_white.png');
+	 -fx-background-size:100.0%;
+}
+
+.advisory-speed-arrow{
+	-fx-image: url('../images/advisory_speed_arrow.png');
+	 -fx-background-size:100.0%;
+}
+
+.warning-speed-arrow{
+	-fx-image: url('../images/warning_speed_arrow.png');
+	 -fx-background-size:100.0%;
+}
+
+.speedo-meter-needle-intervention{
+	-fx-image: url('../images/speedometer_needle_red.png');
+	 -fx-background-size:100.0%;
+}
+
+.speedo-meter-needle-warning{
+	-fx-image: url('../images/speedometer_needle_orange.png');
+	 -fx-background-size:100.0%;
+}
+
+.speedo-meter-speed-label{
+	-fx-text-fill: -fx-white-color;
+    -fx-font-size: 40.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.speedo-meter-speed-label-small{
+	-fx-text-fill: -fx-white-color;
+    -fx-font-size: 25.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+
+
+.driving-mode-available{
+   -fx-background-color: -fx-light-gray-color;
+    -fx-padding: 0.0;
+    -fx-border-insets: 1.0;
+	-fx-border-color: rgb(192.0,192.0,192.0);
+}
+
+.driving-mode-not-available{
+	-fx-background-color: none;
+    -fx-padding: 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 1.0;
+	-fx-border-color: rgb(192.0,192.0,192.0);
+}
+
+.driving-mode-unavailable{
+	-fx-background-color: none;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.driving-no-mode-default{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/stop.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-atp-available{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/atp.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-rm-available{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/rm.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-ros-available{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/ros.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-ato-available{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/ato.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-uto-available{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/uto.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-atb-available{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/atb.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-am-unavailable{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/am_unavailable.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-am-default{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/am_default.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-am-selected{
+	 -fx-background-color: none;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/am_selected.png');
+     -fx-background-size:100.0%;
+}
+
+
+.driving-mode-cm-unavailable{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/cm_unavailable.png');
+     -fx-background-size:100.0%;
+}
+
+
+.driving-mode-cm-default{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/cm_default.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-cm-selected{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/cm_selected.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-rmf-unavailable{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/rmf_unavailable.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-rmf-default{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/rmf_default.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-rmf-selected{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/rmf_selected.png');
+     -fx-background-size:100.0%;
+}
+
+
+
+.driving-mode-rmr-unavailable{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/rmr_unavailable.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-rmr-default{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/rmr_default.png');
+     -fx-background-size:100.0%;
+}
+
+.driving-mode-rmr-selected{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/rmr_selected.png');
+     -fx-background-size:100.0%;
+}
+
+.localisation-unavailable{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.atc-not-localised{
+	 -fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/atc__not_localized.png');
+     -fx-background-size:100.0%;
+}
+
+.atc-localised{
+	-fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/atc_localized.png');
+     -fx-background-size:100.0%;
+}
+    
+.atc-memorised-localised{
+	-fx-background-color: none;
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/atc_localized.png');
+     -fx-background-size:100.0%;
+}
+.area-d1-label{
+	-fx-background-color: none;
+	-fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.crew-id-button{
+	-fx-text-fill: black;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/popup_button.jpg');
+     -fx-background-size:100.0%;
+}
+
+.crew-cancel-button{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/wrong.png');
+     -fx-background-size:100.0%;
+}
+
+.crew-validate-button{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/right.png');
+     -fx-background-size:100.0%;
+}
+
+.crew-id-popup-buttons{
+	-fx-background-color: rgb(169.0,169.0,169.0);
+	-fx-text-fill:  -fx-black-color;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-border-color: rgb(169.0,169.0,169.0);
+}
+
+.crew-text-border-label {
+    -fx-border-width: 1.0px;
+    -fx-border-color: -fx-black-color;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.crew-text-bold-label {
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+   
+.startup-screen-logo{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/alstom_logo.jpg');
+     -fx-background-size:100.0%;
+}
+
+.psddoor-status-not-available{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: -fx-dmi-background-color;
+}
+
+.psddoor-status-unknown{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/platform_screen_gate_status_unknown.png');
+     -fx-background-size:100.0%;
+}
+
+.psddoor-status-closed{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/platform_screen_gate_closed.png');
+     -fx-background-size:100.0%;
+}
+
+.psddoor-status-opening{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/platform_screen_gate_opening.png');
+     -fx-background-size:100.0%;
+}
+
+.psddoor-status-opened{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/platform_screen_gate_open.png');
+     -fx-background-size:100.0%;
+}
+
+.psddoor-status-closing{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/platform_screen_gate_closing.png');
+     -fx-background-size:100.0%;
+}
+
+.psddoor-status-closing-failure{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/platform_screen_gate_closing.png');
+     -fx-background-size:100.0%;
+}
+
+.departure-information-no-indication{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: -fx-dmi-background-color;
+}
+
+.departure-information-no-info{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/no_departure_info.png');
+     -fx-background-size:100.0%;
+}
+
+.departure-information-train-hold{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/train_hold.png');
+     -fx-background-size:100.0%;
+}
+
+.departure-information-remaining-time{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-text-fill: -fx-gray-color;
+}
+
+.safetyBrake-status-release{
+	-fx-background-color: none;
+}
+
+.safetyBrake-status-applied{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/braking_command_applied_by_rs.png');
+     -fx-background-size:100.0%;
+} 
+
+.fullServiceBrake-status-applied{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/fsb_applied_by_atc.png');
+     -fx-background-size:100.0%;
+}
+
+.docking-status-unknown{
+	-fx-background-color: -fx-dmi-background-color;
+}
+
+.docking-status-correctly-docked{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/correctly_docked.png');
+     -fx-background-size:100.0%;
+}
+
+.docking-status-short-stop{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/short_stop.png');
+     -fx-background-size:100.0%;
+}
+
+.docking-status-long-stop{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/long_stop.png');
+     -fx-background-size:100.0%;
+}
+
+.docking-status-too-long-stop{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/too_long_stop.png');
+     -fx-background-size:100.0%;
+}
+
+.operational-service-stopping-distance{
+	-fx-background-color: none;
+	-fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 35.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.departure-order-no-order{
+	-fx-background-color: -fx-dmi-background-color;
+}
+
+.departure-order-start{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/start_order.png');
+     -fx-background-size:100.0%;
+}
+
+.departure-order-close-doors{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/close_doors_order.png');
+     -fx-background-size:100.0%;
+}
+
+.departure-order-open-doors{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/open_doors_order.png');
+     -fx-background-size:100.0%;
+}
+
+.train-door-status-unknown{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/train_door_status_unknown.png');
+     -fx-background-size:100.0%;
+}
+
+.train-door-status-closed{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/train_doors_closed.png');
+     -fx-background-size:100.0%;
+}
+
+.train-door-status-opening{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/train_doors_opening.png');
+     -fx-background-size:100.0%;
+}
+
+.train-door-status-open{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/train_doors_open.png');
+     -fx-background-size:100.0%;
+}
+
+.train-door-status-warning-open{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/train_doors_open.png');
+     -fx-background-size:100.0%;
+}
+
+.train-door-status-warning-closing{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/train_doors_closing.png');
+     -fx-background-size:100.0%;
+}
+
+.train-door-status-warning-flash{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-border-width: 4.0;
+    -fx-border-color: yellow;
+}
+
+.b-label, .b-label:empty{
+   -fx-background-color: -fx-dmi-background-color;
+}
+
+.b-label:ChangeOfEnds{
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/change_of_ends.png');
+     -fx-background-size:100.0%;
+}
+
+.b-label:SkipStation{
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/skip_station_line.png');
+     -fx-background-size:100.0%;
+}
+
+.b-label:WorkZone{
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/work_zone.png');
+     -fx-background-size:100.0%;
+}
+
+.b-label:NeutralZone{
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/neutral_zone.png');
+    -fx-background-size:100.0%;
+}
+
+.atc-status-normal{
+	   -fx-background-color: none;
+}
+
+.atc-status-red{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+     -fx-background-color: none;
+    -fx-background-image: url('../images/atc_status_red.png');
+     -fx-background-size:100.0%;
+}
+
+.atc-status-yellow{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+     -fx-background-color: none;
+    -fx-background-image: url('../images/atc_status_yellow.png');
+     -fx-background-size:100.0%;
+}
+
+.radio-comm-status-normal{
+	   -fx-background-color: none;
+}
+
+.radio-comm-status-fault{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+     -fx-background-color: none;
+    -fx-background-image: url('../images/radio_communication_status_text.png');
+     -fx-background-size:100.0%;
+}
+
+.life-indicator-label-state-0 {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+}
+
+.life-indicator-label-state-1 {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+    -fx-background-image: url('../images/li_01.png');
+     -fx-background-size:100.0%;
+}
+
+.life-indicator-label-state-2 {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+    -fx-background-image: url('../images/li_02.png');
+     -fx-background-size:100.0%;
+}
+
+.life-indicator-label-state-3 {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+    -fx-background-image: url('../images/li_03.png');
+     -fx-background-size:100.0%;
+}
+
+.life-indicator-label-state-4 {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+    -fx-background-image: url('../images/li_04.png');
+     -fx-background-size:100.0%;
+}
+
+.life-indicator-label-state-5 {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+    -fx-background-image: url('../images/li_05.png');
+     -fx-background-size:100.0%;
+}
+
+.life-indicator-label-state-6 {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+    -fx-background-image: url('../images/li_06.png');
+     -fx-background-size:100.0%;
+}
+
+.button-up-disabled {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-border-color: -fx-light-gray-color;
+	-fx-border-width: 0.5px;
+    -fx-background-image: url('../images/up_unlit.png');
+     -fx-background-size:100.0%;
+}
+
+.button-up-enabled {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/up.png');
+     -fx-background-size:100.0%;
+}
+
+.button-down-enabled {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+    -fx-background-image: url('../images/down.png');
+     -fx-background-size:100.0%;
+}
+
+.button-down-disabled {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-border-color: -fx-light-gray-color;
+	-fx-border-width: 0.5px;
+    -fx-background-image: url('../images/down_unlit.png');
+     -fx-background-size:100.0%;
+}
+
+.label-new-message-show{
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/new_message_indicator.png');
+     -fx-background-size:100.0%;
+}
+
+.label-new-message-hide{
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+}
+
+.table-view {
+    -fx-base: rgba(255.0, 255.0, 255.0, 0.0);
+    -fx-control-inner-background: rgba(255.0, 255.0, 255.0, 0.0);
+    -fx-background-color: rgba(255.0, 255.0, 255.0, 0.0);
+    -fx-focus-traversable: false;
+    -fx-padding: 0.0;
+    -fx-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-wrap-text: false;
+    -fx-border-color: -fx-light-gray-color;
+    -fx-border-width: 1.0px;
+}
+
+.table-row-cell {
+    -fx-background-color: rgba(255.0, 255.0, 255.0, 0.0);
+    -fx-border-color: none;
+    -fx-table-cell-border-color: rgba(255.0, 255.0, 255.0, 0.0);
+    -fx-padding: 0.0;
+    -fx-insets: 0.0;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center;
+    -fx-border-insets: 0.0;
+    -fx-border-width: 0.0 0.0 0.0 0.0;
+}
+
+
+.table-row-cell .text {
+       -fx-fill: -fx-light-gray-color;
+       -fx-font-weight: bold;
+       -fx-font-size : 19.0;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0.0;
+    -fx-pref-width: 0.0;
+    -fx-max-width: 0.0;
+    -fx-min-height: 0.0;
+    -fx-pref-height: 0.0;
+    -fx-max-height: 0.0;
+}
+
+.button-ack-enabled {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+	-fx-background-color: none;
+	-fx-text-fill: black;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-image: url('../images/ack_button_enabled.jpg');
+     -fx-background-size:100.0%;
+}
+
+.button-ack-disabled {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+	-fx-text-fill: black;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-image: url('../images/ack_button_disabled.jpg');
+     -fx-background-size:100.0%;
+}
+
+
+.button-ack-hide {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+}
+
+.high-priority-message-label{
+	-fx-background-color: none;
+    -fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 4.0px;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-border-color: -fx-light-gray-color;
+    -fx-border-width: 1.0px;
+}
+
+.high-priority-message-with-ack-label{
+	-fx-background-color: none;
+    -fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 4.0px;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.high-priority-message-with-ack-pane{
+	-fx-background-color: none;
+    -fx-padding: 0.0px;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-border-color: -fx-yellow-color;
+    -fx-border-width: 1.0px;
+}
+
+.high-priority-message-pane-hide{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+}
+
+.high-priority-message-pane-gray{
+    -fx-border-color: -fx-light-gray-color;
+    -fx-border-width: 1.0px;
+}
+
+.high-priority-message-pane-yellow{
+    -fx-border-color: -fx-yellow-color;
+    -fx-border-width: 1.0px;
+}
+
+.high-priority-message-without-ack-pane{
+	-fx-background-color: none;
+    -fx-padding: 0.0px;
+    -fx-background-insets: 0.0;
+}
+
+.high-priority-message-without-ack-label{
+	-fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 4.0px;
+    -fx-border-insets: 0.0;
+    -fx-border-color: -fx-yellow-color;
+    -fx-border-width: 1.0px;
+}
+
+.high-priority-message-without-ack-no-border-label{
+	-fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 4.0px;
+    -fx-border-insets: 0.0;
+ 
+}
+
+.noheader .column-header-background {
+    -fx-max-height: 0.0;
+    -fx-pref-height: 0.0;
+    -fx-min-height: 0.0;
+    -fx-background-color: none;
+}
+
+.no-message--pane{
+	-fx-background-color: none;
+    -fx-padding: 0.0px;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-border-color: -fx-light-gray-color;
+    -fx-border-width: 1.0px;
+}
+
+.bold-label{
+	-fx-background-color: none;
+    -fx-text-fill: -fx-light-gray-color;
+    -fx-text-size: 20.0px;
+}
+
+.button-menu-background {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/menu_buttons.jpg');
+     -fx-background-size:100.0%;
+}
+
+.button-menu-text{
+	-fx-text-fill: black;
+    -fx-font-size: 30.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.menu-label-text{
+	-fx-text-fill: -fx-white-color;
+    -fx-font-size: 30.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+    -fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+}
+
+.menu-button{
+	-fx-text-fill: black;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/popup_button.jpg');
+     -fx-background-size:100.0%;
+}
+
+
+.sound-button{
+	-fx-text-fill: black;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/sound_button.png');
+     -fx-background-size:100.0%;
+}
+
+.progress-bar .bar {
+    -fx-background-color:  rgb(5.0,55.0,116.0); 
+    -fx-background-insets: 0.0;
+    -fx-padding: 0.0; 
+}
+
+.progress-bar > .track {
+    -fx-control-inner-background: rgb(83.0,116.0,223.0);
+	-fx-border-color: rgb(5.0,55.0,116.0);
+	-fx-border-width: 1.5px;
+	-fx-background-insets: 0.0;
+    -fx-border-insets: 0.0;
+	 -fx-padding: 0.0; 
+}
+
+.crew-title{
+	-fx-text-fill: white;
+    -fx-font-size: 30.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: none;
+}
+
+.crew-clear-button{
+	-fx-text-fill: black;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/crew_clear_button.png');
+     -fx-background-size:100.0%;
+}
+
+.crew-keypad-button{
+	-fx-text-fill: black;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: none;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/crew_keypad_button.png');
+     -fx-background-size:100.0%;
+}
+
+.detrainment-door-closed-status{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/detrainment_door_closed.png');
+    -fx-background-size:100.0%;
+}
+
+.detrainment-door-open-status{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/detrainment_door_open.png');
+    -fx-background-size:100.0%;
+}
+
+.detrainment-door-unknown{
+	-fx-background-color: -fx-dmi-background-color;
+}
+
+.non-atp-zone-status{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/non_atp_zone.png');
+    -fx-background-size:100.0%;
+}
+
+.about-to-leave-atp-zone-status{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/about_to_leave_non_atp_zone.png');
+    -fx-background-size:100.0%;
+}
+
+.otherwise-atp-zone-status{
+	-fx-background-color: -fx-dmi-background-color;
+}
+
+.depot-indication{
+	-fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-background-image: url('../images/depot_indication.png');
+    -fx-background-size:100.0%;
+}
+
+.no-display{
+	-fx-background-color: -fx-dmi-background-color;
+}
+.dmi-brightness-icon{
+	-fx-background-color: rgb(144.0,146.0,143.0);
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/brightness.png');
+     -fx-background-size:100.0%;
+}
+.dmi-sound-icon{
+   -fx-background-color: rgb(144.0,146.0,143.0);
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/sound.png');
+     -fx-background-size:100.0%;
+}
+
+/* Brightness Panel */
+
+.settings-panel-grid-bg {
+ -fx-background-color: -fx-dmi-background-color;
+ -fx-border-width: 2.0;
+ -fx-border-color: yellow;
+ -fx-border-insets: 0.0;
+}
+
+.dmi-brightness-panel-icon {
+    -fx-background-color: -fx-dmi-background-color;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/dmi_brightness.png');
+    -fx-background-size:100.0%;
+}
+
+.dmi-sound-panel-icon {
+   -fx-background-color: -fx-dmi-background-color;
+   -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/sound_white_icon.png');
+     -fx-background-size:100.0%;
+}
+
+.dmi-cancel-button-icon {
+    -fx-background-color: rgb(250, 250, 250);
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/dmi_cancel_icon.png');
+    -fx-background-size: 100.0%;
+}
+
+.auto-button{
+    -fx-text-fill: black;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(250, 250, 250);
+    -fx-background-size:100.0%;
+    -fx-alignment: center;
+}
+
+.dmi-plus-button-icon {
+    -fx-background-color: rgb(250, 250, 250);
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/plus_icon.png');
+    -fx-background-size: 100.0%;
+}
+
+.dmi-minus-button-icon {
+    -fx-background-color: rgb(250, 250, 250);
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../images/minus_icon.png');
+    -fx-background-size: 100.0%;
+}
+
+.dmi-progress-bar-fill, .dmi-progress-bar-fill:no_fill {
+	-fx-background-color: white;
+}
+
+.dmi-progress-bar-fill:progress_fill {
+    -fx-background-color: blue;
+}
+
+.dmi-transparant-grid {
+	-fx-background-color: transparent;
+}

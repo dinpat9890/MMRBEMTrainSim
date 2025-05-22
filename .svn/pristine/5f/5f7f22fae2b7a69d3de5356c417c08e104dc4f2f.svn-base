@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+
+<GridPane fx:id="mainGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="419.0" style="-fx-background-color: -fx-dmi-background-color;" stylesheets="@dmi-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.dmi.fe.gui.presenter.MainScreenAreaBLeftController">
+
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="100.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="87.29" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="1.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.71" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowIndex="2">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="14.29" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="14.29" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="14.28" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="14.28" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="14.28" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="14.29" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="14.29" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="100.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label fx:id="areaB3Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="b-label" GridPane.columnIndex="2" />
+				<Label fx:id="areaB4Label" alignment="CENTER" layoutX="126.0" layoutY="13.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="b-label" GridPane.columnIndex="3" />
+				<Label fx:id="areaB5Label" alignment="CENTER" layoutX="217.0" layoutY="13.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="b-label" GridPane.columnIndex="4" />
+			</children>
+		</GridPane>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+      		<AnchorPane fx:id="anchorPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="419.0" style="-fx-background-color: none;">
+      			<children>
+      				<Circle fx:id="circle1" fill="#e1e4e8" layoutX="219.0" layoutY="210.0" radius="200.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: -fx-light-gray-color;" />
+      				<AnchorPane fx:id="anchorPane2" prefHeight="419.0" prefWidth="419.0">
+      					<children>
+      						<Circle fx:id="circle2" fill="#0a0a0a" layoutX="219.0" layoutY="210.0" radius="187.0" stroke="#1c284000" strokeType="INSIDE" style="-fx-fill: -fx-dmi-background-color;" />
+      						<AnchorPane fx:id="anchorPane3" prefHeight="419.0" prefWidth="419.0" />
+      						<Arc fx:id="permittedSpeedArc" fill="#030303" layoutX="219.0" layoutY="210.0" length="272.0" radiusX="201.0" radiusY="201.0" startAngle="-130.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: -fx-dmi-background-color;" type="ROUND" />
+      						<AnchorPane fx:id="anchorPane4" prefHeight="419.0" prefWidth="419.0">
+      							<children>
+      								<Arc fx:id="targetSpeedArc" fill="#f1ff1f" layoutX="219.5" layoutY="210.5" length="53.0" radiusX="205.0" radiusY="205.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: yellow;" type="ROUND">
+      									<rotationAxis>
+      										<Point3D x="1.0" y="1.0" z="1.0" />
+      									</rotationAxis>
+      								</Arc>
+      								<AnchorPane fx:id="anchorPane5" prefHeight="419.0" prefWidth="419.0" />
+      								<Circle fx:id="circle3" fill="#0a0a0a" layoutX="219.0" layoutY="210.0" radius="172.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: -fx-dmi-background-color;" />
+      								<AnchorPane fx:id="anchorPane6" prefHeight="419.0" prefWidth="419.0" />
+      								<ImageView fx:id="speedDial" fitHeight="419.0" fitWidth="419.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" styleClass="speedo-meter-img" />
+      								<Label fx:id="speedLabel" alignment="CENTER" layoutX="184.0" layoutY="184.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="68.0" styleClass="speedo-meter-speed-label" text="25" />
+      								<AnchorPane fx:id="needleBase" layoutX="56.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="325.0" rotate="-53.0">
+      									<children>
+      										<ImageView fx:id="needle" fitHeight="205.0" fitWidth="81.0" layoutX="122.0" pickOnBounds="true" preserveRatio="true" rotate="-140.0" styleClass="speedo-meter-needle-normal">
+      											<rotationAxis>
+      												<Point3D />
+      											</rotationAxis>
+      										</ImageView>
+      										<AnchorPane fx:id="speedIndicatorHookLabelBase" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="325.0" rotate="-125.0">
+      											<children>
+      												<Label fx:id="speedIndicatorHookLabel" layoutX="308.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="20.5" rotate="34.0" style="-fx-background-color: -fx-light-gray-color;" />
+      											</children>
+      										</AnchorPane>
+      									</children>
+      								</AnchorPane>
+                              <AnchorPane fx:id="advisoryArrowBase" layoutX="56.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="325.0" rotate="-53.0">
+                                 <children>
+                                    <ImageView fx:id="advisorySpeedArrow" fitHeight="205.0" fitWidth="81.0" layoutX="122.0" layoutY="-60.0" pickOnBounds="true" preserveRatio="true" rotate="-140.0" styleClass="advisory-speed-arrow">
+                                       <rotationAxis>
+                                          <Point3D />
+                                       </rotationAxis>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="warningArrowBase" layoutX="56.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="325.0" rotate="-53.0">
+                                 <children>
+                                    <ImageView fx:id="warningSpeedArrow" fitHeight="205.0" fitWidth="81.0" layoutX="122.0" layoutY="-60.0" pickOnBounds="true" preserveRatio="true" rotate="-140.0" styleClass="warning-speed-arrow">
+                                       <rotationAxis>
+                                          <Point3D />
+                                       </rotationAxis>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+      							</children>
+      						</AnchorPane>
+      					</children>
+      				</AnchorPane>
+      			</children>
+      		</AnchorPane>
+         </children>
+      </GridPane>
+	</children>
+</GridPane>

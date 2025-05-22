@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+	</properties>
+	<node type="ObjectMeshStatic" id="1060119549" name="gantry_type01_pole_label">
+		<mesh_name>../worlds/library_objects/gantry/gantry_type01_pole_label.mesh</mesh_name>
+		<surface name="gantry_type01_pole_label" max_visible_distance="1000" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<surface name="label" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="4512e4a99a4af35837f509d78f9bb7609875b907" property="Label">
+			<property>
+				<parameter name="text align">1</parameter>
+				<parameter name="vertical align">1</parameter>
+			</property>
+		</surface>
+		<surface name="label_body" max_visible_distance="1000" max_fade_distance="10" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

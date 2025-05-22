@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1872000018" name="route_indicator">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1872632875" name="pole">
+			<mesh_name>../worlds/library_objects/features/route_indicator_pole.mesh</mesh_name>
+			<surface name="pole" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1024978603" name="head">
+			<mesh_name>../worlds/library_objects/features/route_indicator_head.mesh</mesh_name>
+			<surface name="d" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="52c0af055b0ca948078fef730a28246b7fb7aa3a" property="surface_base"/>
+			<surface name="head" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="head_light_off" max_visible_distance="1000" max_fade_distance="10" material="52c0af055b0ca948078fef730a28246b7fb7aa3a" property="surface_base"/>
+			<surface name="m" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="52c0af055b0ca948078fef730a28246b7fb7aa3a" property="surface_base"/>
+			<surface name="s" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="52c0af055b0ca948078fef730a28246b7fb7aa3a" property="surface_base"/>
+			<surface name="t" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="52c0af055b0ca948078fef730a28246b7fb7aa3a" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

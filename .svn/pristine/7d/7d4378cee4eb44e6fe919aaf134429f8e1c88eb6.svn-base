@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shanty_wall_mixed" guid="262905aa975a30a2dc31ddedbc3d0a1eea625cf4" base_material="mesh_base">
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/library_objects/building_library/textures/shanty_wall_mixed.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

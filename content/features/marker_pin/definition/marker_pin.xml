@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<feature_type name="Marker Pin" group="UserFeatures" constant_name="FETY_MARKER_PIN" modifiable="0" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Automated" user_selectable="1" />
+        <feature_type_state state_id="2" name="Red" user_selectable="1" />
+        <feature_type_state state_id="3" name="Green" user_selectable="1" />
+        <feature_type_state state_id="4" name="Blue" user_selectable="1" />
+    </feature_type_state_type>
+
+    <object_parameters>
+        <key name="Initial State" type="State" default="Red" description="Initial State"  />
+        <key name="User State" type="State" default="Red" description="User Selected State"  />
+        <!-- PoleFeature Script Properties -->
+        <key name="HeightAdjust"     type="double" default="0" description="Height Adjust (m) +Up" /> 
+        <key name="HorizontalAdjust" type="double" default="0" description="Horizontal Adjust (m) +Left" /> 
+        <key name="LateralAdjust"    type="double" default="0" description="Lateral Adjust (m) +To" /> 
+        <key name="PoleEnable"       type="double" default="1" description="0 To disable Pole" />
+        <!-- MarkerPin Script Properties -->
+        <key name="BallEnable" type="double" default="1" description="Set to 0 to turn off Ball" />
+        <key name="MarkerLabel" type="string" default="XXXXXX" description="Text Label"  />
+    </object_parameters>
+
+    <feature_type_icon icon_code="MARKER_PIN"  small_icon="icons/marker_pin.zip#MARKER_PIN-Red-SMALL.png"   big_icon="icons/marker_pin.zip#MARKER_PIN-Red-BIG.png"   >
+        <feature_type_state_icon state_id="1" icon_code="Automated"  small_icon="icons/marker_pin.zip#MARKER_PIN-Red-SMALL.png"   big_icon="icons/marker_pin.zip#MARKER_PIN-Red-BIG.png" />
+        <feature_type_state_icon state_id="2" icon_code="Red"  small_icon="icons/marker_pin.zip#MARKER_PIN-Red-SMALL.png"   big_icon="icons/marker_pin.zip#MARKER_PIN-Red-BIG.png" />
+        <feature_type_state_icon state_id="3" icon_code="Green"  small_icon="icons/marker_pin.zip#MARKER_PIN-Green-SMALL.png"   big_icon="icons/marker_pin.zip#MARKER_PIN-Green-BIG.png" />
+        <feature_type_state_icon state_id="4" icon_code="Blue"  small_icon="icons/marker_pin.zip#MARKER_PIN-Blue-SMALL.png"   big_icon="icons/marker_pin.zip#MARKER_PIN-Blue-BIG.png" />
+    </feature_type_icon>
+
+    <feature_type_vision class="SwitchablePartFeature" raycast_type="RaycastGround" node_file="marker_pin.node" >
+        <scripting>
+            <script script_path="Scripts/MarkerPin.us.cpp" />
+        </scripting>
+        <model_parts>
+            <model_part model_part_id="1" name="Pole/Head/Red" />
+            <model_part model_part_id="2" name="Pole/Head/Green" />
+            <model_part model_part_id="3" name="Pole/Head/Blue" />
+        </model_parts>
+        <model_state_parts>
+            <model_state_part state_id="2" part_id="1" />
+            <model_state_part state_id="3" part_id="2" />
+            <model_state_part state_id="4" part_id="3" />
+        </model_state_parts>
+    </feature_type_vision>
+</feature_type>

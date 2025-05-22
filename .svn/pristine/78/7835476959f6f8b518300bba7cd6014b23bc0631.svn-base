@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<world version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+		<library>extrude.prop</library>
+		<library>FlashingLight.prop</library>
+		<library>worlds/library_objects/Environment.prop</library>
+	</properties>
+	<sound>
+		<attenuation>3</attenuation>
+	</sound>
+	<editor>
+		<data>
+			<settings>
+				<item name="save_camera">1</item>
+			</settings>
+		</data>
+		<node type="NodeLayer" id="2109610783" folded="1" name="mumbai_metro">
+			<layer>../worlds/mmrbem/graphics/layers/mumbai_metro.node</layer>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</editor>
+</world>

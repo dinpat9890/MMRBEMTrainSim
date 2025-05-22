@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="outer_veg_billboards" guid="dec2f84d983ce42e5811efaf4770951ca62356f1" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<texture name="diffuse">../worlds/shared/graphics/vegetation/textures/outer_tree_billboard.dds</texture>
+	<parameter name="diffuse_color">0.858823597 0.858823597 0.858823597 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+</material>

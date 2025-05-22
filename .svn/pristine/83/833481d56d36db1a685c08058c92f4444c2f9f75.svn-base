@@ -1,0 +1,86 @@
+
+################################   Group List   ################################
+[Id 1201]	
+Text= ALL STN OPS
+
+[Id 1253]	
+Text= All Sites
+
+[Id 9001]	
+Text= All Train
+
+[Id 9006]	
+Text= All Train PA
+
+[Id 1701]	
+Text= CHARKOP DEPOT
+
+[Id 1105]	
+Text= Crtis All
+
+[Id 1106]	
+Text= Crtis MainLine
+
+[Id 3000]	
+Text= DMO 1
+
+[Id 3001]	
+Text= DMO 2
+
+[Id 3002]	
+Text= DMO 3
+
+[Id 1104]	
+Text= Fall Back
+
+[Id 1101]	
+Text= Mainline AOC-1
+
+[Id 1102]	
+Text= Mainline AOC-2
+
+[Id 1103]	
+Text= Mainline AOC-3
+
+[Id 1202]	
+Text= OCC STN Comm
+
+[Id 9101]	
+Text= PAGRP1
+
+[Id 9102]	
+Text= PAGRP2
+
+[Id 1703]	
+Text= ROLLING STOCK
+
+[Id 1705]	
+Text= SHUNT DEPOT
+
+[Id 9004]	
+Text= Train Crisis 
+
+
+[Id 3001]	
+Text= DMO 2
+
+[Id 3002]	
+Text= DMO 3
+
+[Id 3003]	
+Text= DMO 4
+
+[Id 3004]	
+Text= DMO 5
+
+[Id 1104]	
+Text= Fall Back
+
+[Id 9003]	
+Text= All_TB_DN
+
+[Id 9002]	
+Text= All_TB_UP
+
+[Id 1706]	
+Text= MANDALE DEPOT

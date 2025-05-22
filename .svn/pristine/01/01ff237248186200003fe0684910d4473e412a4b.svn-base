@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="594.0" styleClass="grid-background" stylesheets="@radio-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.radio.fe.gui.presenter.MainMenuController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints percentHeight="11.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="35.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <fx:include source="HeaderPanel.fxml" />
+      <fx:include source="CabSignalPanel.fxml" GridPane.rowIndex="2" />
+      <fx:include source="CallInfoPanel.fxml" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

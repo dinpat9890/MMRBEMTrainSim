@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<project name="Package" default="package.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="./ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+
+  <!-- Import core packaging scripts. Each subdirectory can import their own too -->
+  <import file="${dir.deps.processes}/packager/packager.xml" as="packager" />
+  
+  <!-- Import packaging scripts from other folders (which may use core scripts -->
+  <import file="${dir.config}/ant.package.xml" as="package.config" />
+  <import file="${dir.content}/ant.package.xml" as="package.content" />
+  <import file="${dir.software}/ant.package.xml" as="package.software" />
+  <import file="${dir.db}/ant.package.xml" as="package.database" />
+  
+  <!-- A handy target for retrieving everything -->
+  <extension-point name="package.all" description="Packages all output files for the project" />
+
+  <!-- Creates the deploy folder, which starts by copying selective dependencies across, setting up
+       the directories, and then copying across the project's own content -->
+  <extension-point name="deploy.all" description="Prepares the deploy folder, ready for deployment" extensionOf="package.all" />
+
+  <extension-point name="install.all" description="Prepares the install folder, ready for use in installation" extensionOf="package.all" />
+</project>

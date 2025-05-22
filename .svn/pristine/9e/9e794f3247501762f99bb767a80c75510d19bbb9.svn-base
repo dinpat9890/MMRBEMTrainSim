@@ -1,0 +1,7 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+Logging=Logging.ini
+
+[System.1]
+Module Name=FC-10-Scripting Engine

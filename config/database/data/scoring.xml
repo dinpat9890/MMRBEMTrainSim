@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <scoring>
+    <categories>
+      <category name="Safety" description="Safety Category" />
+      <category name="AtpAto" description="ATP/ATO rule categoty" />
+      <category name="Operation" description="Operation Category" />
+      <category name="Efficiency" description="Energy category" />
+    </categories>
+    <rules>
+      <!--
+        DATABASE CONSTRAINTS TO CONSIDER:
+
+        Attribute                          | Character Limit | Must be unique?
+        rule@name                          |               8 |      yes
+        rule@description_short             |             120 |
+        rule@description_long              |             240 |
+        rule/parameter@name                |              10 |
+        rule/parameter@display_units_label |              20 |      yes
+      -->
+      <rule name="ESTOP" category="AtpAto" description_short="Emergency Stop" description_long="Emergency stop">
+        <parameter name="EMERPNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+        <parameter name="MAX_DIST" si_value="250" display_units="m" lower_bound="0" upper_bound="1000" display_units_label="meter" />
+      </rule>
+      
+      <rule name="CB_OSPD" category="AtpAto" description_short="CBTC EB Overspeed" description_long="CBTC EB due to overspeed.">
+        <parameter name="OSPD_PNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+      
+      <rule name="CB_RED" category="AtpAto" description_short="CBTC EB RedSignal Overrun" description_long="CBTC EB due to red signal overrun">
+        <parameter name="RED_PNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+      
+      <rule name="CB_FBDP" category="AtpAto" description_short="CBTC EB Forbidden Departure" description_long="CBTC EB due to forbidden departure">
+        <parameter name="FBDP_PNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+      
+      <rule name="CB_FBDR" category="AtpAto" description_short="CBTC EB Forbidden Driving" description_long="CBTC EB due to forbidden driving mode">
+        <parameter name="FRDR_PNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+            
+      <rule name="ROLLBACK" category="Safety" description_short="Rollback" description_long="Rollback Detection">
+        <parameter name="RBMINDIST" si_value="1" display_units="m" lower_bound="0" upper_bound="100" display_units_label="metres" />
+        <parameter name="RBMAXDIST" si_value="5" display_units="m" lower_bound="0" upper_bound="100" display_units_label="metres" />
+        <parameter name="RBMINPNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+        <parameter name="RBMAXPNLTY" si_value="50" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+      <rule name="PANTO" category="Safety" description_short="Pantograph" description_long="Pantograph Operated in Motion">
+        <parameter name="PTPNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+      <rule name="DEAD_BEL" category="Safety" description_short="Deadman Below" description_long="Deadman emergency below 40 kph">
+        <parameter name="PNTY_BEL" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+        <parameter name="DD_SPD_LES" si_value="40" display_units="" lower_bound="0" upper_bound="1000" display_units_label="km/h" />
+      </rule>
+      <rule name="DEAD_ABV" category="Safety" description_short="Deadman Above" description_long="Deadman emergency above 40 kph">
+        <parameter name="PNTY_ABV" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+        <parameter name="DD_SPD_ABV" si_value="40" display_units="" lower_bound="0" upper_bound="1000" display_units_label="km/h" />
+      </rule>
+      <rule name="PSRMBI" category="Safety" description_short="Passing Stopping Reverse Infraction" description_long="Passing stopping reverse infraction board">
+        <parameter name="PSRPNLTY" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+      
+      
+      <rule name="RUNTIME" category="Operation" description_short="Running time not achieved" description_long="Running time not achieved">
+                <parameter name="LMT_MN_TM" si_value="60" display_units="s" lower_bound="0" upper_bound="1000" display_units_label="seconds" />
+                <parameter name="LMT_MX_TM" si_value="120" display_units="s" lower_bound="0" upper_bound="1000" display_units_label="seconds" />
+                <parameter name="RNTM_P_MN" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" /> 
+                <parameter name="RNTM_P_MX" si_value="50" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />                
+       </rule>
+       <rule name="TIMETABL" category="Operation" description_short="Timetable Not Followed" description_long="Timetable Not Followed">
+                <parameter name="LMT_MN_TM1" si_value="60" display_units="s" lower_bound="0" upper_bound="1000" display_units_label="seconds" />
+                <parameter name="LMT_MX_TM1" si_value="120" display_units="s" lower_bound="0" upper_bound="1000" display_units_label="seconds" />
+                <parameter name="RNTM_P_MN1" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" /> 
+                <parameter name="RNTM_P_MX1" si_value="50" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />                             
+       </rule>
+      <rule name="DNOBPASS" category="Operation" description_short="Doors not opened for passengers" description_long="Doors not opened for boarding passengers">
+                <parameter name="WAIT_TIME1" si_value="5" display_units="s" lower_bound="0" upper_bound="1000" display_units_label="seconds" >
+                    <parameter_details description="wait time for the doors to be enabled for passanger boarding"/>
+                </parameter>
+                <parameter name="DNOBPAS_P1" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" >
+                    <parameter_details description="Door Not Opened for Boarding Passengers Penalty"/>
+                </parameter>
+       </rule>
+       <rule name="DOPWRGPN" category="Operation" description_short="Doors Opend From Wrong Panel" description_long="Doors Opend From Wrong Panel infraction">                
+                <parameter name="DOPWRGPN_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" >
+                    <parameter_details description="Door Opened from wrong panel Penalty"/>
+                </parameter>
+           </rule>
+      <rule name="ECON" category="Efficiency" description_short="Energy Consumption" description_long="Electric consumption infraction">
+                <parameter name="EL_CON_MIN" si_value="500" display_units="" lower_bound="0" upper_bound="1000" display_units_label="kilowatt hour" />
+                <parameter name="EL_CON_MAX" si_value="1500" display_units="" lower_bound="0" upper_bound="2000" display_units_label="kilowatt hour" />
+                <parameter name="ECON_P" si_value="10" display_units="" lower_bound="0" upper_bound="100" display_units_label="points" />                
+      </rule>
+      <rule name="EEFFI" category="Efficiency" description_short="Energy Efficiency" description_long="Electric efficiency infraction">
+                <parameter name="EFF_MIN" si_value="5" display_units="" lower_bound="0" upper_bound="100" display_units_label="kWh/Km/Ton" />
+                <parameter name="EFF_MAX" si_value="15" display_units="" lower_bound="0" upper_bound="100" display_units_label="kWh/Km/Ton" />   
+                <parameter name="EEFFI_P" si_value="10" display_units="" lower_bound="0" upper_bound="100" display_units_label="points" />                
+      </rule>
+      <rule name="STPOSBEF" category="Operation" description_short="Stop Position Before Stopping Point" description_long="Train Stopped Before platform stop marker board">
+                <parameter name="STPOSBEF_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+                <parameter name="MAX_DIST1" si_value="5" display_units="m" lower_bound="0" upper_bound="100" display_units_label="meter" />
+                <parameter name="MIN_DIST1" si_value="1" display_units="m" lower_bound="0" upper_bound="100" display_units_label="meter" />
+      </rule>
+      <rule name="STPOSAFT" category="Operation" description_short="Stop Position After Stopping Point" description_long="Train Stopped after stoping point.">
+                <parameter name="STPOSAFT_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+                <parameter name="MAX_DIST2" si_value="5" display_units="m" lower_bound="0" upper_bound="100" display_units_label="meter" />
+                <parameter name="MIN_DIST2" si_value="1" display_units="m" lower_bound="0" upper_bound="100" display_units_label="meter" />
+      </rule>
+      
+      <rule name="DOPRMQK" category="Operation" description_short="Door Open Cmd Removed Too Quickly" description_long="Door open command removed too quickly.">
+                <parameter name="DOPRMQK_P" si_value="10" display_units="" lower_bound="0" upper_bound="100" display_units_label="points" />
+                <parameter name="MIN_PRS_TM" si_value="3" display_units="s" lower_bound="0" upper_bound="10" display_units_label="seconds" />                
+      </rule>
+      
+      <rule name="DOPHLDL" category="Operation" description_short="Door Open Cmd Held Too Long" description_long="Door open command held too long.">
+                <parameter name="DOPHLDL_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+                <parameter name="MAX_PRS_TM" si_value="3" display_units="s" lower_bound="0" upper_bound="1000" display_units_label="seconds" />                
+      </rule>
+      
+      <rule name="WRGDROP" category="Operation" description_short="Non Platform Side Door Opened" description_long="Non platform side door opened">
+                <parameter name="WRGDROP_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>
+      
+       <rule name="JRKYDRIV" category="Operation" description_short="Jerky Driving Infraction" description_long="Jerky Driving Infraction">
+                <parameter name="JRKYDRIV_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+                <parameter name="LIMIT_ACCL" si_value="10" display_units="m/s/s/s" lower_bound="0" upper_bound="100" display_units_label="m/s/s/s" />
+                <parameter name="LIMIT_DECL" si_value="-10" display_units="m/s/s/s" lower_bound="-100" upper_bound="0" display_units_label="m/s/s/s" />
+      </rule>
+      <rule name="OBSTRCOL" category="Safety" description_short="Obstruction collision" description_long="Obstruction collision">
+        <parameter name="OBSTRCOL_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" />
+      </rule>  
+       <rule name="ALERTPPL" category="Safety" description_short="Alert people" description_long="Alert people">
+                <parameter name="AP_DIS_MIN" si_value="200" display_units="m" lower_bound="0" upper_bound="1000" display_units_label="meters" >
+                    <parameter_details description="Minimum distance from people for alerting"/>
+                </parameter>
+                <parameter name="AP_DIS_MAX" si_value="400" display_units="m" lower_bound="0" upper_bound="1000" display_units_label="meters" >
+                    <parameter_details description="Maximum distance from people for alerting"/>
+                </parameter>
+                <parameter name="AP_P" si_value="10" display_units="" lower_bound="0" upper_bound="1000" display_units_label="points" >
+                    <parameter_details description="Alert people Penalty"/>
+                </parameter>
+          </rule>
+    </rules>
+    <schemes>
+      <scheme name="Default" description="Default weight scheme - all weights are unity">
+        <scheme_category_weight category="Safety" weight="1" />
+        <scheme_category_weight category="AtpAto" weight="1" />
+        <scheme_category_weight category="Operation" weight="1" />
+        <scheme_category_weight category="Efficiency" weight="1" />
+        <scheme_rule_weight category="AtpAto" rule="ESTOP" weight="1" />
+        <scheme_rule_weight category="AtpAto" rule="CB_OSPD" weight="1" />
+        <scheme_rule_weight category="AtpAto" rule="CB_FBDR" weight="1" />
+        <scheme_rule_weight category="AtpAto" rule="CB_FBDP" weight="1" />
+        <scheme_rule_weight category="AtpAto" rule="CB_RED" weight="1" />
+        <scheme_rule_weight category="Safety" rule="ROLLBACK" weight="1" />
+        <scheme_rule_weight category="Safety" rule="PANTO" weight="1" />
+        <scheme_rule_weight category="Safety" rule="DEAD_BEL" weight="1" />
+        <scheme_rule_weight category="Safety" rule="DEAD_ABV" weight="1" />        
+        <scheme_rule_weight category="Safety" rule="PSRMBI" weight="1" />   
+        <scheme_rule_weight category="Safety"    rule="OBSTRCOL"   weight="1" />                  
+        <scheme_rule_weight category="Safety"    rule="ALERTPPL"   weight="1" />                  
+        <scheme_rule_weight category="Operation" rule="DNOBPASS" weight="1" />
+        <scheme_rule_weight category="Operation" rule="DOPWRGPN" weight="1" />
+        <scheme_rule_weight category="Operation" rule="DOPRMQK" weight="1" />     
+        <scheme_rule_weight category="Operation" rule="DOPHLDL" weight="1" /> 
+        <scheme_rule_weight category="Operation" rule="WRGDROP" weight="1" />   
+        <scheme_rule_weight category="Operation" rule="JRKYDRIV" weight="1" />  
+        <scheme_rule_weight category="Operation" rule="STPOSAFT" weight="1" />   
+        <scheme_rule_weight category="Operation" rule="STPOSBEF" weight="1" />   
+        <scheme_rule_weight category="Operation" rule="RUNTIME" weight="1" />   
+        <scheme_rule_weight category="Operation" rule="TIMETABL" weight="1" />           
+		<scheme_rule_weight category="Efficiency" rule="ECON" weight="1" />
+        <scheme_rule_weight category="Efficiency" rule="EEFFI" weight="1" />        
+      </scheme>
+    </schemes>
+  </scoring>
+</config>

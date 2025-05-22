@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="dm_headlight" guid="ad20e20db75c5d4e6330598aef39dfa8284956d8" parent="74de717c488e1384c0a179ba0f7519c6733d1fe5" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1"/>
+	<state name="workflow">0</state>
+	<state name="emission">1</state>
+	<texture name="diffuse">../vehicles/dm_train/graphics/textures/dm_train.dds</texture>
+	<texture name="albedo">../vehicles/dm_train/graphics/textures/dm_train.dds</texture>
+	<texture name="emission">../vehicles/dm_train/graphics/textures/dm_train_e.dds</texture>
+	<parameter name="albedo_color">1 1 1 1</parameter>
+	<parameter name="gloss">0.867999971</parameter>
+	<parameter name="color"/>
+	<parameter name="emission_color">0.937254965 0.768627524 0.450980425 1</parameter>
+	<parameter name="emission_scale">40</parameter>
+</material>

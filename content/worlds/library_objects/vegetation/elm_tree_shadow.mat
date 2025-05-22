@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="elm_tree_shadow" guid="47fbf7d10ef3139aeb7e9c0df6150fa1dd41a99d" parent="bb87a0cdf6c15b12e4967a1fe5d9ed606b93bf17" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options two_sided="1"/>
+	<state name="noise_2d">0</state>
+	<state name="noise_3d">0</state>
+	<state name="material_ssao">0</state>
+	<state name="material_ssr">0</state>
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/elm_imposter.dds</texture>
+</material>

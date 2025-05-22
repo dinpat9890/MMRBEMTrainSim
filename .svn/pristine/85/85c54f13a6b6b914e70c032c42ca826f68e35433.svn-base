@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>extrude.prop</library>
+	</properties>
+	<node type="NodeLayer" id="872097571" folded="1" name="platform_doors">
+		<layer>../worlds/mmrbem/graphics/layers/platform_doors.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1761416243" folded="1" name="line_2a">
+		<layer>../worlds/mmrbem/graphics/layers/line_2a.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="471980" folded="1" name="line_2b">
+		<layer>../worlds/mmrbem/graphics/layers/line_2b.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1074044911" folded="1" name="line_7">
+		<layer>../worlds/mmrbem/graphics/layers/line_7.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1480497361" folded="1" name="terrain">
+		<layer>../worlds/mmrbem/graphics/layers/terrain.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="702706205" folded="1" name="environment">
+		<layer>../worlds/mmrbem/graphics/layers/environment.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1691404642" folded="1" name="track_cable_support">
+		<layer>../worlds/mmrbem/graphics/layers/track_cable_support.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1691404642" folded="1" name="fixed_features">
+		<layer>../worlds/mmrbem/graphics/layers/fixed_features.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

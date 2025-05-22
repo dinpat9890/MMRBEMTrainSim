@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="outer_tree_billboards" guid="58d1dfe088484e2417c84648e7e6a842b68bb863" base_material="grass_base">
+	<state name="shape">1</state>
+	<state name="animation">0</state>
+	<texture name="diffuse">../worlds/shared/graphics/vegetation/textures/outer_tree_billboard.dds</texture>
+	<parameter name="diffuse_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="microfiber">0</parameter>
+	<parameter name="translucent_scale">1</parameter>
+</material>

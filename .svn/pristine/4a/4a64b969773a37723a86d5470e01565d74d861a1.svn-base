@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+	</properties>
+	<node type="NodeDummy" id="1375018905" name="shunt_signal">
+		<transform>0.999999940395 -1.66533453694e-016 0 0.0 5.55111512313e-017 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.63797880709e-012 3.63797880709e-012 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1853402710" name="head">
+			<mesh_name>../worlds/library_objects/features/shunt_signal_head.mesh</mesh_name>
+			<surface name="head" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="off" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="on" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1846704957" name="ID_Plate">
+			<mesh_name>../worlds/library_objects/features/shunt_signal_label.mesh</mesh_name>
+			<surface name="label1" enabled="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="dcedb85797b786f21d123bc7dd461feb11a9b16f" property="Label">
+				<property>
+					<parameter name="parameter">label1</parameter>
+					<parameter name="font size">0.90000000000000002</parameter>
+					<parameter name="text align">1</parameter>
+					<parameter name="vertical align">1</parameter>
+				</property>
+			</surface>
+			<surface name="label2" enabled="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="dcedb85797b786f21d123bc7dd461feb11a9b16f" property="Label">
+				<property>
+					<parameter name="parameter">label2</parameter>
+					<parameter name="font size">0.90000000000000002</parameter>
+					<parameter name="text align">1</parameter>
+					<parameter name="vertical align">1</parameter>
+				</property>
+			</surface>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1354482647" name="pole">
+			<mesh_name>../worlds/library_objects/features/shunt_signal_pole.mesh</mesh_name>
+			<surface name="pole" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="pole_id_plate" max_visible_distance="1000" max_fade_distance="10" material="29ad5435d971b6cd6a9d8b29cb2842f812d2f480" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

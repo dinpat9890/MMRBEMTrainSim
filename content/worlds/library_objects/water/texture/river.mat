@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="river" guid="58e0b9938ca87f94f53aa83c58f1fa5fac783fab" base_material="water_mesh_base">
+	<options depth_pre_pass="1"/>
+	<state name="caustics">0</state>
+	<texture name="water_depth_lut">../worlds/library_objects/water/texture/water_depth_lut.tga</texture>
+	<parameter name="detail4_intensity">1</parameter>
+	<parameter name="subsurface_color">0.274509817 0.498039246 0.517647088 1</parameter>
+	<parameter name="ambient_subsurface_intensity">0.100000001</parameter>
+	<parameter name="wave_subsurface_intensity">0.100000001</parameter>
+	<parameter name="underwater_fog_transparency">0.100000001</parameter>
+	<parameter name="underwater_fog_depth">0.100000001</parameter>
+</material>

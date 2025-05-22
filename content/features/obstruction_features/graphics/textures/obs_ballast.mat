@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="obs_ballast" guid="2a3bdef29a9384784f3bf61f9a4bdaadab8d811b" parent="ed5b6243626c5495704e7b00e18805401bf8b514" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<state name="specular_map">0</state>
+	<state name="parallax">1</state>
+	<texture name="albedo">../features/obstruction_features/graphics/textures/trackside_gravel_alb.dds</texture>
+	<texture name="shading">../features/obstruction_features/graphics/textures/trackside_gravel_met.dds</texture>
+	<texture name="normal">textures/trackside_gravel_n.dds</texture>
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="uv_transform">vec4(2.0f,2.0f,0.0f,0.0f)</parameter>
+</material>

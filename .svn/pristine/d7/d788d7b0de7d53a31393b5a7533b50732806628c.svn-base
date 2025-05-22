@@ -1,0 +1,152 @@
+// Message definitions for PISAudioPlayer
+syntax = "proto2";
+
+package PIS.Audio.Protos;
+
+option java_package         = "com.sydac.mmrbem.pis.common.protos";
+option java_outer_classname = "PISAudioProtos";
+
+enum MessageType
+{
+    SET_ENABLED = 0;
+    SET_VOLUME = 1;
+    
+    START_DVA = 2;
+    STOP_DVA = 3;
+
+    START_PA = 4;
+    STOP_PA = 5;
+    
+    DVA_STARTED = 6;
+    DVA_STOPPED = 7;
+    DVA_ENDED = 8;
+    DVA_ABORTED = 9;
+    
+    PA_JINGLE_STARTED = 10;
+    PA_JINGLE_STOPPED = 11;
+    PA_JINGLE_ENDED = 12;
+    
+    PA_STARTED = 13;
+    PA_PAUSED = 14;
+    PA_STOPPED = 15;
+    PA_ABORTED = 16;
+}
+
+message DigitalVoiceAnnouncementPart
+{
+    repeated string words = 1;
+}
+
+message DigitalVoiceAnnouncement
+{
+    required int32 type = 1;
+
+    repeated DigitalVoiceAnnouncementPart parts = 2;
+    
+    // Announcement can be repeated in the given interval from beginning to beginning or
+    // defining a gap between the end of the previous iteration to the starting of the new iteration. 
+    // repeat_interval gets the priority.
+    
+    required uint32 repeat_count = 3;
+    optional float  repeat_interval = 4;
+    optional float  repeat_gap = 5;
+}
+
+message PublicAnnouncement
+{
+    required int32  type = 1;
+    optional string jingle = 2;
+}
+
+message SetEnabled
+{
+    required bool enabled = 1;
+}
+
+message StartDVA
+{
+    required DigitalVoiceAnnouncement dva = 1;
+}
+
+message StopDVA
+{
+    required int32 message_id = 1;
+}
+
+message SetVolume
+{
+    required float volume_pct = 1;
+}
+
+message StartPA
+{
+    required PublicAnnouncement pa = 1;
+}
+
+message StopPA
+{
+    required int32 message_id = 1;
+}
+
+message DVAStarted
+{
+    required int32 message_id = 1;
+    required int32 iteration = 2;
+    required int32 pis_message_part_index = 3;
+    required int32 pis_message_word_index = 4;
+}
+
+message DVAStopped
+{
+    required int32 message_id = 1;
+    required int32 iteration = 2;    
+    required int32 pis_message_part_index = 3;
+    required int32 pis_message_word_index = 4;
+}
+
+message DVAEnded
+{
+    required int32 message_id = 1;
+    required int32 iteration = 2;
+}
+
+message DVAAborted
+{
+    required int32 message_id = 1;
+    required int32 iteration = 2;   
+}
+
+message PAJingleStarted
+{    
+    required int32 message_id = 1;
+}
+
+message PAJingleStopped
+{    
+    required int32 message_id = 1;
+}
+
+message PAJingleEnded
+{    
+    required int32 message_id = 1;
+}
+
+message PAStarted
+{
+    required int32 message_id = 1;
+}
+
+message PAPaused
+{
+    required int32 message_id = 1;
+}
+
+message PAStopped
+{
+    required int32 message_id = 1;
+}
+
+message PAAborted
+{
+    required int32 message_id = 1;
+}

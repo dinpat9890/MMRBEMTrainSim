@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="animals_base" guid="30ac7634815508730994eb284f09c1ded1ed095b" base_material="mesh_base">
+	<parameter name="specular">0</parameter>
+</material>

@@ -1,0 +1,27 @@
+#
+# SMC Simulator Records properties
+#
+
+# This plugin is a container for all plugins that interact with simulator usage records.
+#
+# Default plugins come from Core, but may be included/excluded/substituted
+# according to individual projects' needs.
+#
+simulatormanager.records.plugin.count=2
+simulatormanager.records.plugin.1.class = com.sydac.simulatormanager.records.plugin.drivingrecords.DrivingRecordsPlugin
+simulatormanager.records.plugin.2.class = com.sydac.simulatormanager.records.plugin.logs.SessionLogsPlugin
+
+# Properties for the Driving Records Plugin
+#
+# These may be moved into their own file at some point.
+#
+simulatormanager.maxdrivingrecords=30
+simulatormanager.reportingToolPath=..\\Startup\\StartLDB.bat
+simulatormanager.postRunExecPath=..\\Startup\\StartPRA.bat
+simulatormanager.traineeDatabasePath=..\\\\Startup\\StartTDB.bat
+simulatormanager.iconifyISOnHelperApps=false
+simulatormanager.archivePath=..\\Archive\\Records
+
+# If set to true, then sessions are marked as expired when deleted
+# otherwise, they are simply deleted.
+simulatormanager.markSessionsExpired=false

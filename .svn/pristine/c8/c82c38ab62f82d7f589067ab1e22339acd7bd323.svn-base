@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="4_lane_stripes" guid="4247a3f83ee424279cdada833bef82c2be7d9bd7" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/4_lane_stripes.dds</texture>
+	<parameter name="roughness">0.829999983</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="microfiber">0</parameter>
+</material>

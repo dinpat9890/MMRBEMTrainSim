@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.cc" />
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProtos.pb.cc" />
+    <ClCompile Include="..\UnitsCommonCode\source\CommsPropertyAccessors.cpp" />
+    <ClCompile Include="Source\RadioUnit.cpp" />
+    <ClCompile Include="Source\UnitDLL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectConstants.h" />
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectDefinition.h" />
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.h" />
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProtos.pb.h" />
+    <ClInclude Include="..\UnitsCommonCode\include\CommsPropertyAccessors.h" />
+    <ClInclude Include="Source\RadioState.h" />
+    <ClInclude Include="Source\RadioUnit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RadioUnit.ini" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D11E9DF-3ACD-4E3D-BF75-18C484BC1F81}</ProjectGuid>
+    <RootNamespace>PlatformCCTVUnit</RootNamespace>
+    <ProjectName>RadioUnit</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectConfigRoot)project_comms_structure/include;$(CoreSimIncludeRoot)core_data_access/include;$(CoreSimIncludeRoot)Primitives/include;$(CoreSimIncludeRoot)Utility/Include;$(CoreSimIncludeRoot)file_access/Include;$(DependenciesDir)software/oksygen/sim/train/libraries/world_api/include;$(DependenciesDir)software/oksygen/common/libraries/common/Include;$(DependenciesDir)software/oksygen/common/libraries/network_definition/include;$(DependenciesDir)software/oksygen/common/libraries/sim_common/include;$(DependenciesDir)software/oksygen/common/libraries/sim_comms/include;$(DependenciesDir)software/oksygen/common/libraries/comms/Include;$(CoreSimIncludeRoot)/core_properties/include;$(CoreSimIncludeRoot)/core_types/include;$(CoreTrainSimConfigRoot)/train_comms_structure/include;$(DependenciesDir)software/oksygen/sim/train/libraries/train_data_access/include;$(DependenciesDir)software/oksygen/sim/train/libraries/train_serialisation/include;$(DependenciesDir)software/oksygen/sim/train/libraries/train_types/include;$(DependenciesDir)software/oksygen/sim/core/config/core_comms_structure/include;$(DependenciesDir)software/oksygen/sim/core/libraries/core_types/include;$(DependenciesDir)software/oksygen/sim/core/libraries/core_properties/include;$(ProjectLibrariesRoot)Serialisation/Source/Cpp;$(DependenciesDir)cots/oksygen/cots/protobuf/include;$(ProjectDir)..\UnitsCommonCode\include;$(ProjectLibrariesRoot)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNIT_DLL_EXPORTS;WIN32;_LIB;_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectConfigRoot)project_comms_structure/lib;$(CoreSimIncludeRoot)core_data_access/$(LibOutDir);$(CoreSimIncludeRoot)core_properties/$(LibOutDir);$(CoreSimIncludeRoot)primitives/$(LibOutDir);$(CoreSimIncludeRoot)utility/$(LibOutDir);$(CoreSimIncludeRoot)file_access/$(LibOutDir);$(DependenciesDir)software/oksygen/sim/train/libraries/train_serialisation/$(LibOutDir);$(DependenciesDir)software/oksygen/sim/train/libraries/train_data_access/$(LibOutDir);$(DependenciesDir)software/oksygen/sim/train/libraries/content_utility/$(LibOutDir);$(DependenciesDir)software/oksygen/sim/train/libraries/world_api/$(LibOutDir);$(DependenciesDir)software/oksygen/sim/core/libraries/core_types/$(LibOutDir);$(DependenciesDir)software/oksygen/sim/core/libraries/core_properties/$(LibOutDir);$(DependenciesDir)software/oksygen/common/libraries/comms/$(LibOutDir);$(DependenciesDir)software/oksygen/common/libraries/network_definition/$(LibOutDir);$(DependenciesDir)software/oksygen/common/libraries/sim_common/$(LibOutDir);$(DependenciesDir)software/oksygen/common/libraries/sim_comms/$(LibOutDir);$(DependenciesDir)software/oksygen/common/libraries/common/$(LibOutDir);$(DependenciesDir)software/oksygen/common/libraries/scripting/$(LibOutDir);$(ProjectConfigRoot)project_comms_structure/$(LibOutDir);$(DependenciesDir)cots/oksygen/cots/protobuf/$(LibOutDir);$(SoftwareDir)units/PISUnit/PISAudioControllerProxy/$(LibOutDir);Build/Win32/Release DLL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>project_comms_structure$(LibType);comms$(LibType);core_types$(LibType);core_data_access$(LibType);core_properties$(LibType);libprotobuf$(LibType);network_definition$(LibType);Primitives$(LibType);sim_comms$(LibType);common$(LibType);train_data_access$(LibType);train_serialisation$(LibType);Utility$(LibType);world_api$(LibType);scripting$(LibType);file_access$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

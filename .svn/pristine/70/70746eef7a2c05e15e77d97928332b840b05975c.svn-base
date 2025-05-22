@@ -1,0 +1,10 @@
+#
+# Domain : Peer Application Manager  (pam)
+#
+# Properties that are specific to a particular system type
+#
+# The particular comms systems that this SCC should listen to/join/drive.
+pam.systems=driver
+
+# The way the SCC names itself in the different systems
+pam.module.name.driver=IWS-01-Simulator Controller Console

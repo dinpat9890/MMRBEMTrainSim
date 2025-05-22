@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" percentWidth="100.0" prefWidth="1024.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" percentHeight="100.0" prefHeight="634.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.17" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.07" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.34" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.07" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.34" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.07" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.34" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.07" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="3.51" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.36" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="91.8" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.34" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="42.95" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.3" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="35.74" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.2" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.4" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="80.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.4" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Pantograph Status Icons" />
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="7.2" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="19.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="25.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="18.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/pantograph_lowered.png" />
+                                 </image>
+                              </ImageView>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="LOWERED" GridPane.columnIndex="2" />
+                              <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@../images/pantograph_raised.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../images/pantograph_lowered_faulty.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                                 <image>
+                                    <Image url="@../images/pantograph_raised_faulty.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                                 <image>
+                                    <Image url="@../images/pantograph_isolated.png" />
+                                 </image>
+                              </ImageView>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="RAISED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="LOWERED and FAULTY" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="RAISED and FAULTY" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ISOLATED" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="14.51" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="4.83" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="61.29" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.74" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Train Direction Icons" />
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="17.7" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.08" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="38.46" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="16.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="38.46" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-direction-icons-forward-for-DM1" stylesheets="@tcms-application.css" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-direction-icons-forward-for-DM6" stylesheets="@tcms-application.css" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="FORWARD for DM6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="FORWARD for DM1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.65" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.88" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="88.46" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="17.7" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="13.04" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.87" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="OPEN" GridPane.columnIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="CLOSED" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="OPEN and FAULTY" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="CLOSED and FAULTY" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ISOLATED" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/vcb_open.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../images/vcb_closed.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                                 <image>
+                                    <Image url="@../images/vcb_open_and_fault.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                                 <image>
+                                    <Image url="@../images/vcb_closed_and_fault.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+                                 <image>
+                                    <Image url="@../images/vcb_isolated.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="VCB Status Icons" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="3" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.47" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.47" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="57.04" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="14.4" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="4.8" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="64.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="16.8" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="19.7" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="9.5" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="46.25" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.5" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="46.25" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="cab-status-not-active" stylesheets="@tcms-application.css" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="cab-status-active" stylesheets="@tcms-application.css" GridPane.rowIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="NOT ACTIVE" GridPane.columnIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ACTIVE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="CAB Status Icons" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="14.4" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="4.8" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="58.4" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="22.4" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="19.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="71.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="41.09" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.8" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="41.9" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-sideview-wheel-isolated" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="NOT ISOLATED" GridPane.columnIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ISOLATED" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-sideview-wheel-not-isolated" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Boogie Isolation Status Icons" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.42" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.8" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="92.76" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="17.7" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.97" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.8" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.97" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.8" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.7" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.8" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.97" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.8" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.97" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.8" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.97" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.98" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.97" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.98" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.97" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/door_open.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../images/door_open_and_infault.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                                 <image>
+                                    <Image url="@../images/door_closed_and_locked.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+                                 <image>
+                                    <Image url="@../images/door_closed_and_infault.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+                                 <image>
+                                    <Image url="@../images/door_closed_and_isolated.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="10">
+                                 <image>
+                                    <Image url="@../images/door_closed_and_not_locked.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="12">
+                                 <image>
+                                    <Image url="@../images/door_emergency_open.png" />
+                                 </image>
+                              </ImageView>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="OPEN" GridPane.columnIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="CLOSED" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="CLOSED and FAULTY" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ISOLATED" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ENABLED to OPEN" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="EMERGENCY OPEN" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="OPEN and FAULTY" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-component-name" text="PUSH BACK" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="14">
+                                 <image>
+                                    <Image url="@../images/door_push_back.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Door Status Icons" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="5" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="36.08" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="28.17" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="35.73" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.57" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.85" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="76.19" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="12.38" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="17.7" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.5" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.5" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.5" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.5" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.5" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.5" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.5" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.5" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="46.0" styleClass="train-top-view-propulsion-coasting_or_off" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-propulsion-power_or_brake" stylesheets="@tcms-application.css" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-propulsion-faulty" GridPane.rowIndex="5" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-propulsion-isolated" GridPane.rowIndex="7" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="COASTING or OFF" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="POWER or BRAKE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="FAULTY" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ISOLATED" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Propulsion Status Icons" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.97" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="3.65" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="69.51" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="15.85" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="17.7" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.26" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.05" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="15.79" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.05" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="15.79" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.05" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-service-brake-not_applied" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="NOT APPLIED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="APPLIED (boogie 1 and/or 2)" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="FAULTY (boogie 1 and/or 2)" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-service-brake-applied" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-service-brake-faulty" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Service Brake Status" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.65" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.88" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="57.69" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="30.76" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="25.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.66" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="25.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="11.66" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="25.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-parking-brake-not_applied" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-parking-brake-applied" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="train-top-view-parking-brake-isolated" GridPane.rowIndex="5" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="NOT APPLIED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="APPLIED (boogie 1 and/or 2)" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ISOLATED (boogie 1 and/or 2)" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Parking Brake Status" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="7" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="21.47" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="17.18" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="61.34" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="14.4" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="4.8" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="64.8" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="16.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="22.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="7.2" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="70.8" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="3.2" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="40.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="13.58" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="3.2" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="special-modes-icons-not-active" stylesheets="@tcms-application.css" text="X X X" textFill="#fcfcfc" GridPane.rowIndex="1" />
+                              <Label contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="special-modes-icons-active" stylesheets="@tcms-application.css" text="X X X" textFill="#fcfcfc" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="NOT ACTIVE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ACTIVE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Special Mode Icons" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="18.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="76.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.42" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="8.85" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="15.92" />
+                            <ColumnConstraints hgrow="SOMETIMES" percentWidth="70.796" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="12.5" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="25.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="25.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="25.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="12.5" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="passenger-alarm-status-not-active" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="NOT ACTIVE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="passenger-alarm-status-active" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="status-operating-help-screen-component-name" stylesheets="@tcms-application.css" text="ACTIVE" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="status-operating-help-screen-heading" text="Passenger Alarm Status Icons" />
+                        <Line endX="124.5" startX="-100.0" stroke="#fff200" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="generic_structure_22" guid="696fa8a0e58c44863374c9ed122cc8d5b84afca2" parent="74de717c488e1384c0a179ba0f7519c6733d1fe5" base_material="mesh_base">
+	<options two_sided="0"/>
+	<texture name="albedo">../worlds/library_objects/gen_building/textures/generic_structure_22.dds</texture>
+	<texture name="emission">../worlds/library_objects/gen_building/textures/generic_structure_22_e.dds</texture>
+	<parameter name="albedo_color">1 1 1 1</parameter>
+	<parameter name="emission_color">1 1 1 1</parameter>
+	<parameter name="emission_scale">0.200000003</parameter>
+</material>

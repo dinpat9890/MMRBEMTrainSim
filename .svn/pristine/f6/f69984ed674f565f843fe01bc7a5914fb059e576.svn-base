@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Source/Java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/data_objects/jar/dataobjects.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/foundation/jar/foundation.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/i18n/jar/i18n.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/logging/jar/logging.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/registry/jar/registry.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/unit_conversions/jar/unitconversions.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-COTS/protobuf/lib/protobuf.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-COTS/jscience/jscience.jar"/>
+	<classpathentry kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/febe/jar/febeutils.jar" sourcepath="D:/Projects/Core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MMRBEM-Libraries-ProjectCommsStructure"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MMRBEM-Libraries-Serialisation"/>
+	<classpathentry kind="output" path="Build"/>
+</classpath>

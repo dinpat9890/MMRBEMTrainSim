@@ -1,0 +1,74 @@
+[Defaults]
+DNS=RigDNS.ini
+
+[Setup]
+Description=Development Rig
+Environment=CoreRig
+Wait Timeout=240
+Configure=ConfigureRig.bat
+Install Path=\\$[Name]\c$\CoreTrainSim
+Local Path=c:\CoreTrainSim
+VNC Settings=setup.ini
+User=user
+Password=devrig
+
+[Database]
+User=core_1_2_3
+Password=coreschemamgr
+Connection=CORE
+Server Name=rig-core-db.simulation.lan
+Port=1521
+Instance=xe
+Sys Password=coresysmgr
+System Password=coresystemmgr
+Oracle Admin Path=C:\oraclexe\app\oracle\product\10.2.0\server\NETWORK\ADMIN\ C:\XEClient\Network\admin\
+
+[Computer.1]
+Name=RIG-01-SCC
+Execute=CommsShow.bat HubModule.bat SCC.bat
+Install=Setup_LocalTest.bat
+
+[Computer.2]
+Name=RIG-01-MODEL
+Execute=TrainDisplay.bat SessionAnalyserInstructor.bat
+Install=Push_Standard.bat
+
+[Computer.3]
+Name=RIG-01-TD
+Execute=SoftPLC.bat ScriptingEngine.bat ProceduralTrainer.bat
+Install=Push_Standard.bat
+
+[Computer.4]
+Name=RIG-01-PT_AUDIO
+Execute=SoundModel.bat AudioEngine.bat
+Install=Push_Standard.bat
+
+[Computer.5]
+Name=RIG-01-VISIONPL
+Execute=WorldModel.bat TrainModel.bat VisionComms.bat LoggingAndReplay.bat SessionAnalyser.bat
+Install=Push_Standard.bat
+
+[Computer.6]
+Name=RIG-01-VISION
+Execute="Vision-64.bat"
+Install=Push_All.bat
+
+[Vision.ini Communications]
+Address=$[Computer.5 - IP Address]
+
+[TraineeDatabase.ini Target]
+FileNameMask = ..\Archive\Records\TraineeDB.tdb
+
+[DrivingRecord.ini Target]
+FileNameMask = ..\Archive\Records\DR<SessionID>_<HubID>.ldr
+
+[IdealTrainModel.ini Paths]
+Server path=..\Archive\Replay\
+Temp path= ..\Temp\IdealRuns\
+
+[LoggingAndReplay.ini Paths]
+Server path = ..\Archive\Replay\
+Temp path= ..\Temp\
+
+[IntercomRecorder.ini Intercom]
+Server path = ..\Archive\Voice\

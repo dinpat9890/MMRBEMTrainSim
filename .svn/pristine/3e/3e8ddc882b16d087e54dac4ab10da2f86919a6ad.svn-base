@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="dm_taillight" guid="5046373df7770e6c9adcecb899838c0bbd8af6ce" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1"/>
+	<state name="workflow">0</state>
+	<state name="emission">1</state>
+	<texture name="diffuse">../vehicles/dm_train/graphics/textures/dm_train.dds</texture>
+	<texture name="albedo">../vehicles/dm_train/graphics/textures/dm_train.dds</texture>
+	<texture name="emission">../vehicles/dm_train/graphics/textures/dm_train_e.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="diffuse_color">1 1 1 1</parameter>
+	<parameter name="gloss">0.867999971</parameter>
+	<parameter name="emission_color">1 0.10980393 0.0274509825 1</parameter>
+	<parameter name="emission_scale">2.09100008</parameter>
+</material>

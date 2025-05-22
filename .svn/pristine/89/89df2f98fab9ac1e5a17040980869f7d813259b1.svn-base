@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_linden_sydac" guid="2cb32e12f71e9412f69f567e6d5a5170e623c044" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<blend src="none" dest="none"/>
+	<state name="normal_map">0</state>
+	<texture name="diffuse">shared/graphics/vegetation/textures/linden_imposter_v2.dds</texture>
+	<texture name="normal">linden/textures/linden_imposter_n.dds</texture>
+	<parameter name="diffuse_color">0.470588267 0.53725493 0.46274513 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+	<parameter name="noise_scale">0.25</parameter>
+	<parameter name="occlusion_visibility">1</parameter>
+</material>

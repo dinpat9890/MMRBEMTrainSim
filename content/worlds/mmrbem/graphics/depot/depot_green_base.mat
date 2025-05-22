@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="depot_green_base" guid="2f73692e0918f759bb9173a703a42f0535216562" base_material="mesh_base">
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/mmrbem/graphics/depot/textures/depot_green_base.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

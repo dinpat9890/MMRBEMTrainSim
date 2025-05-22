@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+    <layer name="Project">
+        <object_class class="CCTV" constant_name="CCTV" />
+
+        <!-- The following type definitions are related to the CCTV Camera Matrix selection properties under the CCTV OnBoard Outputs object -->
+        <number_type name="MatrixViewSelection">
+            <number_type_value name="Two View Matrix"                     constant_name="TWO_VIEW_MATRIX"                       value="2"/>
+            <number_type_value name="Four View Matrix"                    constant_name="FOUR_VIEW_MATRIX"                      value="4"/>
+            <number_type_value name="Six View Matrix"                     constant_name="SIX_VIEW_MATRIX"                       value="6"/>
+            <number_type_value name="Twelve View Matrix"                  constant_name="TWELVE_VIEW_MATRIX"                    value="12"/>
+        </number_type>
+
+        <!-- The following type definitions are related to the CCTV Camera VehicleType_SideCamera selection properties under the CCTV OnBoard Outputs object -->
+        <number_type name="VehicleModuleSelection">
+            <!-- CCTV Camera CarType for first five cars -->
+            <number_type_value name="Vehicle 1 MC1"                                 constant_name="VEHICLE_1_MC1"                                   value="1"/>
+            <number_type_value name="Vehicle 1 F1"                                  constant_name="VEHICLE_1_F1"                                    value="2"/>
+            <number_type_value name="Vehicle 1 TP"                                  constant_name="VEHICLE_1_TP"                                    value="3"/>
+            <number_type_value name="Vehicle 1 F2"                                  constant_name="VEHICLE_1_F2"                                    value="4"/>
+            <number_type_value name="Vehicle 1 MSC1"                                constant_name="VEHICLE_1_MSC1"                                  value="5"/>
+            <!-- CCTV Camera CarType for next five cars -->
+            <number_type_value name="Vehicle 2 MSC1"                                constant_name="VEHICLE_2_MSC1"                                  value="6"/>
+            <number_type_value name="Vehicle 2 F2"                                  constant_name="VEHICLE_2_F2"                                    value="7"/>
+            <number_type_value name="Vehicle 2 TP"                                  constant_name="VEHICLE_2_TP"                                    value="8"/>
+            <number_type_value name="Vehicle 2 F1"                                  constant_name="VEHICLE_2_F1"                                    value="9"/>
+            <number_type_value name="Vehicle 2 MC1"                                 constant_name="VEHICLE_2_MC1"                                   value="10"/>
+            <!-- CCTV Cameras for side/mirror -->
+            <number_type_value name="Vehicle 1 MC1 Mirror Cameras"                  constant_name="VEHICLE_1_MC1_MIRROR_CAMERAS"                    value="11"/>
+            <number_type_value name="Vehicle 1 MSC1 Mirror Cameras"                 constant_name="VEHICLE_1_MSC1_MIRROR_CAMERAS"                   value="15"/>
+            <number_type_value name="Vehicle 2 MSC1 Mirror Cameras"                 constant_name="VEHICLE_2_MSC1_MIRROR_CAMERAS"                   value="16"/>
+            <number_type_value name="Vehicle 2 MC1 Mirror Cameras"                  constant_name="VEHICLE_2_MC1_MIRROR_CAMERAS"                    value="20"/>
+        </number_type>
+
+        <!-- Driving direction status -->
+        <number_type name="DrivingDirection">
+            <number_type_value name="White"                               constant_name="WHITE"                                 value="0"/>
+            <number_type_value name="Yellow"                              constant_name="YELLOW"                                value="1"/>
+            <number_type_value name="Red"                                 constant_name="RED"                                   value="2"/>
+        </number_type>
+
+        <!-- CCTV input data for CPP -->
+        <object_class class="CCTVInputs" constant_name="CCTV_INPUTS">
+            <!-- CCTV input data May be not needed let it be here till confirm from front end side-->
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Inputs" constant_name="IO_CONTROLLER_CLASS_INPUTS_TAG" default="0.0" delta="0.5" />
+            <object_number name="Class Inputs" constant_name="CLASS_INPUTS" default="0.0" delta="0.5" />
+            
+            <!-- CCTV input from Java front end -->
+            <object_number name="Driving Direction Left Pressed"                    constant_name="DRIVING_DIRECTION_LEFT_PRESSED"              default="0.0" delta="0.5" />
+            <object_number name="Driving Direction Right Pressed"                   constant_name="DRIVING_DIRECTION_RIGHT_PRESSED"             default="0.0" delta="0.5" />
+            <object_number name="Matrix View Selection Request"                     constant_name="MATRIX_VIEW_SELECTION_REQUEST"               default="0.0" delta="0.5" />
+            <object_number name="Vehicle Module Selection Request"                  constant_name="VEHICLE_MODULE_SELECTION_REQUEST"            default="0.0" delta="0.5" />
+            <object_number name="Left Two Mirror Cameras Pressed Request"           constant_name="LEFT_TWO_MIRROR_CAMERAS_PRESSED_REQUEST"     default="0.0" delta="0.5" />
+            <object_number name="Right Two Mirror Cameras Pressed Request"          constant_name="RIGHT_TWO_MIRROR_CAMERAS_PRESSED_REQUEST"    default="0.0" delta="0.5" />
+            <object_number name="Previous Button Pressed Request"                   constant_name="PREVIOUS_BUTTON_PRESSED_REQUEST"             default="0.0" delta="0.5" />
+            <object_number name="Home Button Pressed Request"                       constant_name="HOME_BUTTON_PRESSED_REQUEST"                 default="0.0" delta="0.5" />
+            <object_number name="Current Event Screen Button Pressed"               constant_name="CURRENT_EVENT_SCREEN_BUTTON_PRESSED"         default="0.0" delta="0.5" />
+            <object_number name="Current Selected Vehicle"                          constant_name="CURRENT_SELECTED_VEHICLE"                    default="0.0" delta="0.5" />
+
+           <!--  The signal will get populated by the platform unit-->
+            <object_number name="Platform CCTV"                                     constant_name="PLATFORM_CCTV"                               default="0.0" delta="0.5" />
+        </object_class>
+
+        <object_class class="CCTVInputsValues" constant_name="CCTV_INPUTS_VALUES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Values" constant_name="IO_CONTROLLER_CLASS_VALUES_TAG" default="0.0" delta="0.5" />
+            <object_number name="Class Values" constant_name="CLASS_VALUES" default="0.0" delta="0.5" />
+            
+            <!-- CCTV input from Java front end -->
+            <object_number name="Driving Direction Left Pressed"                    constant_name="DRIVING_DIRECTION_LEFT_PRESSED"              default="0.0" delta="0.5" />
+            <object_number name="Driving Direction Right Pressed"                   constant_name="DRIVING_DIRECTION_RIGHT_PRESSED"             default="0.0" delta="0.5" />
+            <object_number name="Matrix View Selection Request"                     constant_name="MATRIX_VIEW_SELECTION_REQUEST"               default="0.0" delta="0.5" />
+            <object_number name="Vehicle Module Selection Request"                  constant_name="VEHICLE_MODULE_SELECTION_REQUEST"            default="0.0" delta="0.5" />
+            <object_number name="Left Two Mirror Cameras Pressed Request"           constant_name="LEFT_TWO_MIRROR_CAMERAS_PRESSED_REQUEST"     default="0.0" delta="0.5" />
+            <object_number name="Right Two Mirror Cameras Pressed Request"          constant_name="RIGHT_TWO_MIRROR_CAMERAS_PRESSED_REQUEST"    default="0.0" delta="0.5" />
+            <object_number name="Previous Button Pressed Request"                   constant_name="PREVIOUS_BUTTON_PRESSED_REQUEST"             default="0.0" delta="0.5" />
+            <object_number name="Home Button Pressed Request"                       constant_name="HOME_BUTTON_PRESSED_REQUEST"                 default="0.0" delta="0.5" />
+            <object_number name="Current Event Screen Button Pressed"               constant_name="CURRENT_EVENT_SCREEN_BUTTON_PRESSED"         default="0.0" delta="0.5" />
+            <object_number name="Current Selected Vehicle"                          constant_name="CURRENT_SELECTED_VEHICLE"                    default="0.0" delta="0.5" />
+            
+           <!--  The signal will get populated by the platform unit-->
+            <object_number name="Platform CCTV"                                     constant_name="PLATFORM_CCTV"                               default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <object_class class="CCTVInputsModes" constant_name="CCTV_INPUTS_MODES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Modes" constant_name="IO_CONTROLLER_CLASS_MODES_TAG" default="0.0" delta="0.5" />
+            <object_number name="Class Modes" constant_name="CLASS_MODES" default="0.0" delta="0.5" />
+
+            <!-- CCTV input from Java front end -->
+            <object_number name="Driving Direction Left Pressed"                    constant_name="DRIVING_DIRECTION_LEFT_PRESSED"              default="0.0" delta="0.5" />
+            <object_number name="Driving Direction Right Pressed"                   constant_name="DRIVING_DIRECTION_RIGHT_PRESSED"             default="0.0" delta="0.5" />
+            <object_number name="Left Two Mirror Cameras Pressed Request"           constant_name="LEFT_TWO_MIRROR_CAMERAS_PRESSED_REQUEST"     default="0.0" delta="0.5" />
+            <object_number name="Right Two Mirror Cameras Pressed Request"          constant_name="RIGHT_TWO_MIRROR_CAMERAS_PRESSED_REQUEST"    default="0.0" delta="0.5" />
+            <object_number name="Matrix View Selection Request"                     constant_name="MATRIX_VIEW_SELECTION_REQUEST"               default="0.0" delta="0.5" />
+            <object_number name="Vehicle Module Selection Request"                  constant_name="VEHICLE_MODULE_SELECTION_REQUEST"            default="0.0" delta="0.5" />
+            <object_number name="Previous Button Pressed Request"                   constant_name="PREVIOUS_BUTTON_PRESSED_REQUEST"             default="0.0" delta="0.5" />
+            <object_number name="Home Button Pressed Request"                       constant_name="HOME_BUTTON_PRESSED_REQUEST"                 default="0.0" delta="0.5" />
+            <object_number name="Current Event Screen Button Pressed"               constant_name="CURRENT_EVENT_SCREEN_BUTTON_PRESSED"         default="0.0" delta="0.5" />
+            <object_number name="Current Selected Vehicle"                          constant_name="CURRENT_SELECTED_VEHICLE"                    default="0.0" delta="0.5" />
+            
+           <!--  The signal will get populated by the platform unit-->
+            <object_number name="Platform CCTV"                                     constant_name="PLATFORM_CCTV"                               default="0.0" delta="0.5" />
+        </object_class>
+
+        <!-- CCTV output data from CPP -->
+        <object_class class="CCTVOutputs" constant_name="CCTV_OUTPUTS">
+          <!-- Required by the IO Controller -->
+            <object_number name="Class Outputs"                                     constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"             default="0.0" delta="0.5" />
+            <object_number name="Class Outputs"                                     constant_name="CLASS_OUTPUTS"                               default="0.0" delta="0.5" />
+        <!--Header panel objects -->        
+            <object_number name="Current Date Time"                                 constant_name="CURRENT_DATE_TIME"                           default="0.0" delta="0.5" />
+            <object_raw    name="Selected Vehicle Modules"                          constant_name="SELECTED_VEHICLE_MODULES"                    default="0.0" delta="0.5" />
+            <object_number name="Selected Matrix Request"                           constant_name="SELECTED_MATRIX_REQUEST"                     default="0.0" delta="0.5" />
+            <object_number name="Driving Direction Left Status"                     constant_name="DRIVING_DIRECTION_LEFT_STATUS"               default="0.0" delta="0.5" />
+            <object_number name="Driving Direction Right Status"                    constant_name="DRIVING_DIRECTION_RIGHT_STATUS"              default="0.0" delta="0.5" />
+            <object_number name="Silent Alarm Active"                               constant_name="SILENT_ALARM_ACTIVE"                         default="0.0" delta="0.5" />
+            
+        </object_class>
+    </layer>
+
+    <!-- Parent-child relationship mapping -->
+    <relationship parent="Train" child="CCTV"/>
+    <relationship parent="CCTV" child="CCTVInputs"/>
+    <relationship parent="CCTV" child="CCTVOutputs"/>
+
+    <!-- Class ID declerations -->
+    <class_ids>
+        <class_id class_name="CCTV" class_id="2001" />
+        <class_id class_name="CCTVInputs" class_id="2002" />
+        <class_id class_name="CCTVInputsValues" class_id="2003" />
+        <class_id class_name="CCTVInputsModes" class_id="2004" />
+        <class_id class_name="CCTVOutputs" class_id="2005" />
+    </class_ids>
+</comms_config>
+

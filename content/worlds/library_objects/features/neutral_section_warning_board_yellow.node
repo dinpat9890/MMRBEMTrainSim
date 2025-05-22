@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1648089611" name="neutral_section_warning_board_yellow">
+		<mesh_name>../worlds/library_objects/features/neutral_section_warning_board_yellow.mesh</mesh_name>
+		<surface name="250m" max_visible_distance="1000" max_fade_distance="10" material="0916e07a5bc85163a56c44020af566094ac1c82e" property="surface_base"/>
+		<surface name="500m" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="0916e07a5bc85163a56c44020af566094ac1c82e" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

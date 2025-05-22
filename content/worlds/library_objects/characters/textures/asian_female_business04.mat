@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="asian_female_business04" guid="8d84e25f38630acb7651d711518d175c828d574e" parent="f4a968fecc6da61f97606239b14677d71f6a13cc" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/characters/textures/asian_female_business04.dds</texture>
+</material>

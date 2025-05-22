@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Neutral_Section_Warning_Board_Yellow" group="Sign" constant_name="FETY_NEUTRAL_SECTION_WARNING_BOARD_YELLOW" modifiable="0" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="250m" user_selectable="1" />
+        <feature_type_state state_id="2" name="500m"   user_selectable="1" />
+    </feature_type_state_type>
+
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="250m" />
+    </object_parameters>
+
+    <feature_type_icon icon_code="neutral_section_warning_board_yellow" small_icon="icons/neutral_section_warning_yellow.zip#neutral_section_warning_yellow_250m-SMALL.png" big_icon="icons/neutral_section_warning_yellow.zip#neutral_section_warning_yellow_250m-BIG.png">
+        <feature_type_state_icon state_id="1" icon_code="250m" small_icon="icons/neutral_section_warning_yellow.zip#neutral_section_warning_yellow_250m-SMALL.png" big_icon="icons/neutral_section_warning_yellow.zip#neutral_section_warning_yellow_250m-BIG.png" />
+        <feature_type_state_icon state_id="2" icon_code="500m" small_icon="icons/neutral_section_warning_yellow.zip#neutral_section_warning_yellow_500m-SMALL.png" big_icon="icons/neutral_section_warning_yellow.zip#neutral_section_warning_yellow_500m-BIG.png" />
+    </feature_type_icon>
+
+   <feature_type_vision class="SignFeature" raycast_type="RaycastGround" node_file="neutral_section_warning_board_yellow.node">
+        <scripting>
+            <script script_path="scripts/SignFeature.us.cpp" />
+        </scripting>
+        <model_parts>
+            <model_part model_part_id="1" name="250m" />
+            <model_part model_part_id="2" name="500m" />
+        </model_parts>
+        <model_state_parts>
+            <model_state_part state_id="1" part_id="1" />
+            <model_state_part state_id="2" part_id="2" />
+        </model_state_parts>
+  </feature_type_vision>
+
+</feature_type>

@@ -1,0 +1,4 @@
+[Audio]
+AudioEngineID   = 1
+StartWaveID     = 2000
+CabToCabAlarm   = CommonTrain\BellLoop2.wav

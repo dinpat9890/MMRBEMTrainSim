@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1777840551" name="main_track">
+		<mesh_name>../features/obstruction_features/graphics/main_track.mesh</mesh_name>
+		<surface name="main_trackbed" max_visible_distance="1500" material="7571533ecc6d3986fc747ecbb90a51d63d5ca243" property="surface_base"/>
+		<surface name="main_trackrail" max_visible_distance="1500" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+		<transform>0.999999940395 -1.11022302463e-016 0 0.0 1.11022302463e-016 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 -1.13686837722e-013 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Main_Line_Signal_Short" group="Signal" constant_name="FETY_MAIN_LINE_SIGNAL_SHORT" modifiable="0" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Automated"   user_selectable="1" />
+        <feature_type_state state_id="2" name="Off"         user_selectable="1"> <properties><property name="Stop State" value="1" /></properties></feature_type_state>
+        <feature_type_state state_id="3" name="Red"         user_selectable="1"> <properties><property name="Stop State" value="1" /></properties></feature_type_state>
+        <feature_type_state state_id="4" name="Violet"      user_selectable="1"> <properties><property name="Stop State" value="2" /></properties></feature_type_state>
+        <feature_type_state state_id="5" name="Green"       user_selectable="1"> <properties><property name="Stop State" value="3" /></properties></feature_type_state>
+    </feature_type_state_type>
+
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="Violet" />
+        <key name="User State"     type="State" default="Automated" description="Automated User State" />
+        <!-- Feature Properties -->
+        <key name="label1"          type="string"  default="xxx"  description="Label on ID plate" />
+        <key name="label2"          type="string"  default="xxx"  description="Label on ID plate" />
+    </object_parameters>
+
+    <feature_type_icon icon_code="Main_Line_Signal_Short" small_icon="icons/main_line_signal_short.zip#off-SMALL.png" big_icon="icons/main_line_signal_short.zip#off-BIG.png">
+         <feature_type_state_icon state_id="2" icon_code="Off" small_icon="icons/main_line_signal_short.zip#off-SMALL.png" big_icon="icons/main_line_signal_short.zip#off-BIG.png" />
+         <feature_type_state_icon state_id="3" icon_code="Red" small_icon="icons/main_line_signal_short.zip#red-SMALL.png" big_icon="icons/main_line_signal_short.zip#red-BIG.png" />
+         <feature_type_state_icon state_id="4" icon_code="Violet" small_icon="icons/main_line_signal_short.zip#violet-SMALL.png" big_icon="icons/main_line_signal_short.zip#violet-BIG.png" />
+         <feature_type_state_icon state_id="5" icon_code="Green" small_icon="icons/main_line_signal_short.zip#green-SMALL.png" big_icon="icons/main_line_signal_short.zip#green-BIG.png" />
+     </feature_type_icon>
+
+   <feature_type_vision class="SignalFeature" raycast_type="RaycastGround" node_file="main_line_signal_short.node">
+       <scripting>
+           <script script_path="scripts/SignalFeature.us.cpp" />
+       </scripting>
+       <model_parts>
+            <model_part model_part_id="1" name="head/red" />
+            <model_part model_part_id="2" name="head/violet" />
+            <model_part model_part_id="3" name="head/green" />
+        </model_parts>
+        <model_state_parts>
+            <model_state_part state_id="3" part_id="1" />
+            <model_state_part state_id="4" part_id="2" />
+            <model_state_part state_id="5" part_id="3" />
+        </model_state_parts>
+  </feature_type_vision>
+
+</feature_type>

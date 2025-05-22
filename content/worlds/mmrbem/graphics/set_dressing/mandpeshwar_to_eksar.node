@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1058563824" name="mandapeshwar_to_eksar">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/mandapeshwar_to_eksar.mesh</mesh_name>
+		<surface name="mandapeshwar_to_eksar_gantry_poles_numbers_01" material="43b1c41a69d7648982190206b8d8e54836349f2c" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

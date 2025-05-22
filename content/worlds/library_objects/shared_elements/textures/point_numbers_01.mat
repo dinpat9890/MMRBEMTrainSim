@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="point_numbers_01" guid="f585fb588d233b8968ea3a1dc58ba0ec576b1a5e" parent="74de717c488e1384c0a179ba0f7519c6733d1fe5" base_material="mesh_base">
+	<options two_sided="0"/>
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/points_numbers_01.dds</texture>
+	<texture name="emission">../worlds/library_objects/shared_elements/textures/platform_lights_e.dds</texture>
+	<parameter name="albedo_color">1 1 1 1</parameter>
+</material>

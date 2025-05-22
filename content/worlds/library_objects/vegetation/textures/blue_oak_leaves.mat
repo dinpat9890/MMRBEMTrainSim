@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="blue_oak_leaves" guid="650a8b76f1b24a6c3a9e5730c8fffa33ac7a2882" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/blue_oak_leaves_alb.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/textures/blue_oak_leaves_n.dds</texture>
+	<parameter name="translucent">1</parameter>
+</material>

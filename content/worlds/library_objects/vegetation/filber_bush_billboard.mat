@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="filber_bush_billboard" guid="4bf94e1953930c4ef3e81163a6d052ade8de7bce" base_material="grass_base">
+	<options cast_world_shadow="0"/>
+	<state name="shape">1</state>
+	<state name="animation">0</state>
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/filber_bush_billboard.dds</texture>
+	<parameter name="diffuse_color">0.356862754 0.349019617 0.349019617 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+</material>

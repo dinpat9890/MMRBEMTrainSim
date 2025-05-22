@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2048921268" name="buckling_track">
+		<mesh_name>../features/obstruction_features/graphics/buckling_track.mesh</mesh_name>
+		<surface name="buckling_trackbed" max_visible_distance="1500" material="7571533ecc6d3986fc747ecbb90a51d63d5ca243" property="surface_base"/>
+		<surface name="buckling_trackrail" max_visible_distance="1500" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+		<transform>0.999999940395 7.77156117238e-016 5.3668007538e-018 0.0 -5.55111512313e-017 0.999999940395 1.04083408559e-017 0.0 6.50521303491e-018 -1.04083408559e-017 0.999999940395 0.0 -1.81898940355e-011 1.45519152284e-011 -2.84217094304e-013 1.0</transform>
+	</node>
+</nodes>

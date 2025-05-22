@@ -1,0 +1,28 @@
+## SimSetup
+## Mon Jun 12 14:11:03 2023
+
+
+[Database]
+# The location of the server.
+# In the Core modules, the C++ applications need the TNS name of the server,
+# and the Java applications need the host/port/instance information.  Other
+# projects might use different combinations of these settings.  Therefore you
+# need to specify both.
+# The TNS name of the server
+Connection=XE
+Instance=xe
+# Media Path, where media is stored
+Media Path=..\Data\Multimedia
+# Storage limit, in MB
+Media Storage Limit=1024
+Oracle Admin Path=C:\oraclexe\app\oracle\product\10.2.0\server\NETWORK\ADMIN\ C:\XEClient\Network\admin\
+Password=mmrbemschemamgr
+# The port the server runs on.  1521 is used if it's not specified.
+Port=1521
+# The network location of the server
+# The name or IP address of the server
+Server Name=172.17.102.1
+Sys Password=mmrbemsystemmgr
+System Password=mmrbemsystemmgr
+# The database credentials
+User=mmrbem_1_0_0

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+	<layer name="Project">
+       
+	   	<number_type name="RadioGroup">
+            <number_type_value name="Radio Main Line Group" constant_name="RADIO_MAIN" value="1"/>
+            <number_type_value name="Radio Depot Group"  constant_name="DEPOT" value="2"/>
+            <number_type_value name="Radio Shunting Group"  constant_name="SHUNT" value="3"/>
+			<number_type_value name="Radio Train Group"  constant_name="TRAIN" value="4"/>
+        </number_type>
+		<number_type name="RadioCallType">
+            <number_type_value name="Radio Half Duplex" constant_name="RADIO_HALF_DUPLEX" value="1"/>
+            <number_type_value name="Radio Full Duplex"  constant_name="RADIO_FULL_DUPLEX" value="2"/>
+            <number_type_value name="Radio Group"  constant_name="RADIO_GROUP" value="3"/>
+			<number_type_value name="Radio Emergency"  constant_name="RADIO_EMERGNECY" value="4"/>
+        </number_type>
+		<number_type name="RadioIntercomState">
+            <number_type_value name="Call Not connected" constant_name="INACTIVE" value="0"/>
+            <number_type_value name="Call Request"  constant_name="CALL_REQUEST" value="1"/>
+            <number_type_value name="Call Connected"  constant_name="CALL_CONNECTED" value="2"/>
+        </number_type>
+		<number_type name="RadioScc">
+            <number_type_value name="No Call Request" constant_name="INACTIVE" value="0"/>
+            <number_type_value name="Call Request By CAB"  constant_name="CAB" value="1"/>
+            <number_type_value name="Call Request By SCC"  constant_name="SCC" value="2"/>
+        </number_type>
+		
+	    <object_class class="Radio Intercom" constant_name="RADIO_INTERCOM" />
+
+		<object_class class="Radio Intercom InputsValues" constant_name="RADIO_INTERCOM_INPUTS_VALUES">
+          
+			<!-- Intercom status set by intercom module, 0 indicates no intercom connection and 1 indicates intercom connection need to establish -->
+			<object_number name="Intercom status" 									constant_name="INTERCOM_STATUS" 							 		 default="0.0"  delta="0.5" />
+			
+			<!-- Radio calls Request -->
+			<object_number name="Radio Half duplex call Request" 					constant_name="RADIO_HALF_DUPLEX_CALL_REQ" 							 	 default="0.0"  delta="0.5" />
+			<object_number name="Radio Full duplex call Request" 					constant_name="RADIO_FULL_DUPLEX_CALL_REQ" 							 	 default="0.0"  delta="0.5" />
+			<object_number name="Radio Emergency call Request" 						constant_name="RADIO_EMRGNCY_CALL_REQ" 							 		 default="0.0"  delta="0.5" />
+			<object_number name="Radio Group call Request" 							constant_name="RADIO_GROUP_CALL_REQ" 							 		 default="0.0"  delta="0.5" />
+
+            <object_number name="Radio Scc Half duplex call Request" 				constant_name="RADIO_SCC_HALF_DUPLEX_CALL_REQ" 							 default="0.0"  delta="0.5" />
+			<object_number name="Radio Scc Full duplex call Request" 				constant_name="RADIO_SCC_FULL_DUPLEX_CALL_REQ" 							 default="0.0"  delta="0.5" />
+			<object_number name="Radio Scc Emergency call Request" 					constant_name="RADIO_SCC_EMRGNCY_CALL_REQ" 							 	 default="0.0"  delta="0.5" />
+			<object_number name="Radio Scc Group call Request" 						constant_name="RADIO_SCC_GROUP_CALL_REQ" 							 	 default="0.0"  delta="0.5" />           
+
+			<object_number name="Radio Scc Intercom Accept" 						constant_name="RADIO_SCC_INTERCOM" 							 		 default="0.0"  delta="0.5" />
+			<object_number name="Radio Cab Intercom Accept" 						constant_name="RADIO_CAB_INTERCOM" 							 		 default="0.0"  delta="0.5" />
+			<object_number name="Radio Scc Cancel" 									constant_name="RADIO_SCC_CANCEL" 							 		 default="0.0"  delta="0.5" />
+			<object_number name="Radio Cab Cancel" 									constant_name="RADIO_CAB_CANCEL" 							 		 default="0.0"  delta="0.5" />
+			<object_raw name   ="Radio Stat Message"               					constant_name="RADIO_STAT_MSG" />
+		
+		</object_class>
+
+		<object_class class="Radio Intercom Outputs" constant_name="RADIO_INTERCOM_OUTPUTS">
+			
+			<!-- Required by the IO Controller -->
+            <object_number name="Class Outputs"                           			constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"           	default="0.0" delta="0.5" />
+            <object_number name="Class Outputs"                           			constant_name="CLASS_OUTPUTS"                             	default="0.0" delta="0.5" />
+			<object_number name="Cab Scc" 									        constant_name="CAB_SCC" 							 		default="0.0" delta="0.5" />
+			<object_number name="Power State" 										constant_name="POWER_STATE" 							 	default="-1" delta="0.5" />
+			<object_number name="Radio Intercom state" 								constant_name="RADIO_INTERCOM_STATE" 						default="0" delta="0.5" />
+			<object_number name="Selected Radio Group Call" 						constant_name="SELECTED_RADIO_GROUP_CALL" 					default="0" delta="0.5" />
+			<object_number name="Selected Radio Dialled Number" 					constant_name="SELECTED_RADIO_DIALLED_NO" 					default="0" delta="0.5" />
+			<object_number name="Selected Radio Call Type" 							constant_name="SELECTED_RADIO_CALL_TYPE" 					default="0" delta="0.5" />
+			<object_raw name="Selected Radio Stat Message"               	    constant_name="SELECTED_RRADIO_STAT_MSG" />
+			
+		</object_class>
+	  
+	</layer>
+  
+
+  <!-- Parent-child relationship mapping -->
+  <relationship parent="Train" child="Radio Intercom"/>
+  <relationship parent="Radio Intercom" child="Radio Intercom InputsValues"/>
+  <relationship parent="Radio Intercom" child="Radio Intercom Outuputs"/>
+
+  <!-- Class ID declarations -->
+  <class_ids>
+    <class_id class_name="Radio Intercom" class_id="8001" />
+	<class_id class_name="Radio Intercom InputsValues" class_id="8002" />
+    <class_id class_name="Radio Intercom Outputs" class_id="8003" />
+  </class_ids>
+</comms_config>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{187E8F6C-B57F-4808-A68F-4620B27D9D42}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DA651890-47CE-4FF7-AFCF-86905393AE1E}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Externals">
+      <UniqueIdentifier>{84d2c7fd-6b9c-4df5-ac81-581b68499a32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\UnitDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SpeedLimitUnit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SpeedLimitProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\project\include\project\Utilities\ScenarioTrainLengthService.cpp">
+      <Filter>Externals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.cc">
+      <Filter>Externals</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\SpeedLimitUnit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SpeedLimitProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\project\include\project\Utilities\ScenarioTrainLengthService.h">
+      <Filter>Externals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.h">
+      <Filter>Externals</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\res\Plugin.rc" />
+  </ItemGroup>
+</Project>

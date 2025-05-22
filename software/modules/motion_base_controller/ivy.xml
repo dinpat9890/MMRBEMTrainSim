@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+  <info organisation="sydac.sim.project.modules" module="motion_base_controller" revision="0.0.0" status="integration"/>
+  <configurations>
+    <conf name="build" description="Dependencies for building this module" visibility="private"/>
+    <conf name="runtime" description="Runtime artifacts" visibility="public"/>
+    <conf name="doc" description="Documentation" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="bin" type="zip" conf="runtime" packaging="zip"/>
+    <artifact name="bin_debug" type="zip" conf="runtime" packaging="zip"/>
+  </publications>
+  <dependencies defaultconfmapping="build->link,runtime;%->#">
+    <dependency org="sydac.common.libraries" name="sim_comms" rev="6.1.4-rc3" revConstraint="latest.integration"/>
+    <dependency org="sydac.common.libraries" name="sydac_common" rev="6.1.2-rc1" revConstraint="latest.integration"/>
+    <dependency org="sydac.sim.core.libraries" name="core_data_access" rev="3.1.4-rc1" revConstraint="latest.integration"/>
+    <dependency org="sydac.sim.core.libraries" name="core_types" rev="3.1.2-rc2" revConstraint="latest.integration"/>
+    <dependency org="sydac.sim.core.libraries" name="utility" rev="3.1.4-rc5" revConstraint="latest.integration"/>
+    <dependency org="sydac.sim.train.libraries" name="train_data_access" rev="3.1.4-rc5" revConstraint="latest.integration"/>
+    <!-- Dependencies from within the project. -->
+    <!--
+    <dependency org="sydac.cots" name="vmmlib" rev="1.7" conf="*"/>
+    -->
+  </dependencies>
+</ivy-module>

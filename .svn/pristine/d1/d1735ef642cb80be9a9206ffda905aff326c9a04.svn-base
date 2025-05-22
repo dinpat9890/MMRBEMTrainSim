@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="787798547" name="dahisar_e_station">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/dahisar_e_station.mesh</mesh_name>
+		<surface name="dahisar_e_station" material="ed8031e9523e11543c9e52ad867cbb625231de0d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

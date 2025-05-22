@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="634456059" name="station_light_double">
+		<transform>0.999999940395 -5.55111512313e-016 -1.20274411954e-050 0.0 -8.32667268469e-016 0.999999940395 4.00914706514e-051 0.0 -1.73729706156e-050 1.20274411954e-050 1 0.0 2.0008883439e-011 2.77395884041e-011 -3.5527136788e-014 1.0</transform>
+		<node id="1177147839" type="ObjectMeshDynamic" enabled="0" name="Cylinder_0">
+			<object_surface name="cylinder" begin="0" end="72"/>
+			<vertex type="float" num_vertex="26" offset="0" size="3">0 0 2.5 -8.74227801e-009 -0.200000003 2.5 0.173205078 0.100000001 2.5 -0.173205078 0.100000016 2.5 2.38497622e-009 -0.200000003 2.5 0 0 -2.5 1.7484556e-008 -0.200000003 -2.5 -0.173205093 0.099999994 -2.5 0.173205093 0.099999994 -2.5 -1.7484556e-008 -0.200000003 -2.5 -8.74227801e-009 -0.200000003 2.5 0.173205078 0.100000001 2.5 -0.173205078 0.100000016 2.5 2.38497622e-009 -0.200000003 2.5 -8.74227801e-009 -0.200000003 0.833333254 0.173205078 0.100000001 0.833333254 -0.173205078 0.100000016 0.833333254 2.38497622e-009 -0.200000003 0.833333254 -8.74227801e-009 -0.200000003 -0.833333492 0.173205078 0.100000001 -0.833333492 -0.173205078 0.100000016 -0.833333492 2.38497622e-009 -0.200000003 -0.833333492 -8.74227801e-009 -0.200000003 -2.5 0.173205078 0.100000001 -2.5 -0.173205078 0.100000016 -2.5 2.38497622e-009 -0.200000003 -2.5</vertex>
+			<vertex type="float" num_vertex="26" offset="16" size="4">0.5 0.5 0 0 0.49999997 1 0 0 0.933012724 0.25 0 0 0.0669873059 0.24999997 0 0 0.5 1 0 0 0.5 0.5 0 0 0.50000006 0 0 0 0.0669872761 0.75 0 0 0.933012724 0.75 0 0 0.49999997 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.333333343 0 0 0 0.333333343 0 0 0 0.333333343 0 0 0 0.333333343 0 0 0 0.666666687 0 0 0 0.666666687 0 0 0 0.666666687 0 0 0 0.666666687 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0</vertex>
+			<vertex type="float" num_vertex="26" offset="32" size="4">-0 -0 -0 -1 -0 -0 -0 -1 -0 -0 -0 -1 -0 -0 -0 -1 -0 -0 -0 -1 -1 -0 -0 -0.00100000005 -1 -2.15079758e-008 -0 -0.00100000005 -1 -1.07539879e-008 -0 -0.00100000005 -1 1.07539879e-008 -0 -0.00100000005 -1 2.15079758e-008 -0 -0.00100000005 0.707106769 -1.54543098e-008 -1.54543098e-008 0.707106769 0.353553385 0.612372398 0.612372458 0.353553385 0.353553385 -0.612372398 -0.612372458 0.353553385 0.707106769 4.21608171e-009 4.21608171e-009 0.707106769 0.707106769 -1.54543098e-008 -1.54543098e-008 0.707106769 0.353553385 0.612372398 0.612372458 0.353553385 0.353553385 -0.612372398 -0.612372458 0.353553385 0.707106769 4.21608171e-009 4.21608171e-009 0.707106769 0.707106769 -1.54543098e-008 -1.54543098e-008 0.707106769 0.353553385 0.612372398 0.612372458 0.353553385 0.353553385 -0.612372398 -0.612372458 0.353553385 0.707106769 4.21608171e-009 4.21608171e-009 0.707106769 0.707106769 -1.54543098e-008 -1.54543098e-008 0.707106769 0.353553385 0.612372398 0.612372458 0.353553385 0.353553385 -0.612372398 -0.612372458 0.353553385 0.707106769 4.21608171e-009 4.21608171e-009 0.707106769</vertex>
+			<vertex type="float" num_vertex="26" offset="48" size="4">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vertex>
+			<indices num_indices="72">0 1 2 0 2 3 0 3 4 5 6 7 5 7 8 5 8 9 10 14 11 15 11 14 11 15 12 16 12 15 12 16 13 17 13 16 14 18 15 19 15 18 15 19 16 20 16 19 16 20 17 21 17 20 18 22 19 23 19 22 19 23 20 24 20 23 20 24 21 25 21 24</indices>
+			<surface name="cylinder" cast_shadow="0" cast_world_shadow="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1.3999999404 0.0 0 0 2.529 1.0</transform>
+		</node>
+		<node type="ObjectMeshDynamic" id="1475414572" enabled="0" name="Cylinder_1">
+			<reference>1177147839</reference>
+			<surface name="cylinder" cast_shadow="0" cast_world_shadow="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+			<transform>1 0 0 0.0 0 -0.0001220703125 -0.999999880791 0.0 0 0.499999940396 -6.1035148974e-005 0.0 0 1.81898940355e-012 6.176 1.0</transform>
+		</node>
+		<node type="LightProj" id="564964075" enabled="0" name="LightProj">
+			<penumbra>0.5</penumbra>
+			<attenuation_distance>15</attenuation_distance>
+			<shape>2 1 0.200000003</shape>
+			<shape_type>-1</shape_type>
+			<fov>100</fov>
+			<znear>1</znear>
+			<color>1 0.968627512 0.847058892 1</color>
+			<attenuation_power>0.100000001</attenuation_power>
+			<shadow>0</shadow>
+			<shadow_resolution>0</shadow_resolution>
+			<shadow_bias>1</shadow_bias>
+			<visible_distance>300</visible_distance>
+			<fade_distance>100</fade_distance>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>0.99999892994 2.51457708766e-007 -1.49011585293e-008 0.0 -1.8609788377e-007 0.965924657486 -0.258818978067 0.0 -4.66644012875e-008 0.258819411598 0.965927923964 0.0 -0.0139034544627 -0.678796197579 6.03775520337 1.0</transform>
+		</node>
+		<node type="LightProj" id="31701478" name="LightProj">
+			<penumbra>0.5</penumbra>
+			<attenuation_distance>20</attenuation_distance>
+			<shape>2 1 0.200000003</shape>
+			<shape_type>-1</shape_type>
+			<fov>115</fov>
+			<znear>1</znear>
+			<color>1 0.968627512 0.847058892 1</color>
+			<attenuation_power>0.100000001</attenuation_power>
+			<shadow>0</shadow>
+			<shadow_resolution>0</shadow_resolution>
+			<shadow_bias>1</shadow_bias>
+			<visible_distance>300</visible_distance>
+			<fade_distance>100</fade_distance>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>0.999998701013 -1.01063357794e-007 9.60055510083e-036 0.0 8.9478294496e-008 0.999998617519 7.78118274209e-036 0.0 -9.60056889956e-036 -7.78119440319e-036 1.00000011921 0.0 -0.0438651996901 -0.0913436633004 6.018 1.0</transform>
+		</node>
+	</node>
+</nodes>

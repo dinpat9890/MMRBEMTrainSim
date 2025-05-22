@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="814047929" name="mc_s_rockthrower_02">
+		<mesh_name>../features/obstruction_features/graphics/mc_s_rockthrower.mesh</mesh_name>
+		<surface name="Little_Punk_1" max_visible_distance="800" material="024c52a6488714f075c3965866b1f1ff4d31b54f" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1174552609" name="gantry_type01_pole">
+		<mesh_name>../worlds/library_objects/gantry/gantry_type01_pole.mesh</mesh_name>
+		<surface name="gantry_type01_pole_gantry_atlas_d" max_visible_distance="500" max_fade_distance="5" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

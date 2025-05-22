@@ -1,0 +1,965 @@
+# Translations for Sim Properties.
+# Copyright (C) 2022 Sydac Pty Ltd
+# This file is distributed under the same license as the Sim Properties package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Sim Properties ${version.number}\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-15 13:17+0530\n"
+"PO-Revision-Date: 2022-11-15 13:17+0530\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_AU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Automatic Train Events"
+msgstr "Automatic Train Events"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Feature Data and Events"
+msgstr "Feature Data and Events"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Train Dynamic Outputs"
+msgstr "Train Dynamic Outputs"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Fault States for Cab Simulators per train"
+msgstr "Fault States for Cab Simulators per train"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Vehicle Overrides"
+msgstr "Vehicle Overrides"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Environment Effects"
+msgstr "Environment Effects"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Simulation Overrides"
+msgstr "Simulation Overrides"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Vehicle Outputs"
+msgstr "Vehicle Outputs"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Vehicle Faults"
+msgstr "Vehicle Faults"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Lead Loco Dynamic Outputs"
+msgstr "Lead Loco Dynamic Outputs"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Train Faults"
+msgstr "Train Faults"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Train Overrides"
+msgstr "Train Overrides"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Vehicle Inputs"
+msgstr "Vehicle Inputs"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Fault States for Cab Simulators per vehicle"
+msgstr "Fault States for Cab Simulators per vehicle"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Scoring Outputs per vehicle"
+msgstr "Scoring Outputs per vehicle"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Session Control"
+msgstr "Session Control"
+
+#. This is the name of a Simulation Property Group, a collection of related Sim Properties.
+msgid "Scoring Outputs per train"
+msgstr "Scoring Outputs per train"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Low MR Pressure"
+msgstr "Fault - Low MR Pressure"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Pantograph Down For ADD Intervention"
+msgstr "Fault - Pantograph Down For ADD Intervention"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Lateral Acceleration Rate"
+msgstr "Lateral Acceleration Rate"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Track Adhesion Override"
+msgstr "Track Adhesion Override"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Pantograph Raise Failure State"
+msgstr "Fault - Pantograph Raise Failure State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Pantograph Down For ORD Intervention State"
+msgstr "Fault - Pantograph Down For ORD Intervention State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "OCC Cab Activation Command"
+msgstr "OCC Cab Activation Command"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fog Density Percentage"
+msgstr "Fog Density Percentage"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Sun Glare Percentage"
+msgstr "Sun Glare Percentage"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Auto Power On"
+msgstr "Auto Power On"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - FWD REV Train Line Mismatch State"
+msgstr "Fault - FWD REV Train Line Mismatch State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Enable Live3D"
+msgstr "Enable Live3D"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - FWD REV Train Line Mismatch"
+msgstr "Fault - FWD REV Train Line Mismatch"
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Simulation Property, which describes input/output value to the user.
+#.  • This is the name of a Log Event, an event that occurred during simulation.
+#.  • This is the description of a Log Event, an event that occurred during simulation.
+msgid "Total Energy Consumption"
+msgstr "Total Energy Consumption"
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Simulation Property, which describes input/output value to the user.
+#.  • This is the name of a Log Event, an event that occurred during simulation.
+#.  • This is the description of a Log Event, an event that occurred during simulation.
+msgid "Mode Selector"
+msgstr "Mode Selector"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Ignore Vigilance Override"
+msgstr "Ignore Vigilance Override"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "OCC Train Wakeup Command"
+msgstr "OCC Train Wakeup Command"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Pantograph Down For ADD Intervention State"
+msgstr "Fault - Pantograph Down For ADD Intervention State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Load Override - Train"
+msgstr "Load Override - Train"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Wind Speed km/h"
+msgstr "Wind Speed km/h"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Door Close Obstruction"
+msgstr "Fault - Door Close Obstruction"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Master Controllerand Train Line Incongruence State"
+msgstr "Fault - Master Controllerand Train Line Incongruence State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Haze Density Percentage"
+msgstr "Haze Density Percentage"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Snow Percentage"
+msgstr "Snow Percentage"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Pantograph Down For ORD Intervention"
+msgstr "Fault - Pantograph Down For ORD Intervention"
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Simulation Property, which describes input/output value to the user.
+#.  • This is the description of a Log Event, an event that occurred during simulation.
+msgid "Traction Brake Controller"
+msgstr "Traction Brake Controller"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Low MR Pressure State"
+msgstr "Fault - Low MR Pressure State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Lead Car Jerk"
+msgstr "Lead Car Jerk"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Master Controllerand Train Line Incongruence"
+msgstr "Fault - Master Controllerand Train Line Incongruence"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Total Dynamic Brake Force"
+msgstr "Total Dynamic Brake Force"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Load Override - Vehicle"
+msgstr "Load Override - Vehicle"
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Simulation Property, which describes input/output value to the user.
+#.  • This is the name of a Log Event, an event that occurred during simulation.
+#.  • This is the description of a Log Event, an event that occurred during simulation.
+msgid "Lead Car Speed"
+msgstr "Lead Car Speed"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Wind Direction Angle"
+msgstr "Wind Direction Angle"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - CC Detect Detrainment Door Open"
+msgstr "Fault - CC Detect Detrainment Door Open"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Lateral Acceleration"
+msgstr "Lateral Acceleration"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Rain Intensity Percentage"
+msgstr "Rain Intensity Percentage"
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Simulation Property, which describes input/output value to the user.
+#.  • This is the name of a Log Event, an event that occurred during simulation.
+#.  • This is the description of a Log Event, an event that occurred during simulation.
+msgid "Lead Car Acceleration"
+msgstr "Lead Car Acceleration"
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Simulation Property, which describes input/output value to the user.
+#.  • This is the name of a Log Event, an event that occurred during simulation.
+#.  • This is the description of a Log Event, an event that occurred during simulation.
+msgid "Lead Car Position"
+msgstr "Lead Car Position"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Door Open Obstruction State"
+msgstr "Fault - Door Open Obstruction State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Pantograph Raise Failure"
+msgstr "Fault - Pantograph Raise Failure"
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Simulation Property, which describes input/output value to the user.
+#.  • This is the name of a Log Event, an event that occurred during simulation.
+msgid "Horn Activation"
+msgstr "Horn Activation"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Target Velocity"
+msgstr "Target Velocity"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Lightning"
+msgstr "Lightning"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Door Open Obstruction"
+msgstr "Fault - Door Open Obstruction"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - CC Detect Detrainment Door Open State"
+msgstr "Fault - CC Detect Detrainment Door Open State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Fault - Door Close Obstruction State"
+msgstr "Fault - Door Close Obstruction State"
+
+#. This is the name of a Simulation Property, which describes input/output value to the user.
+msgid "Cloud Density Percentage"
+msgstr "Cloud Density Percentage"
+
+#. This is the state of a Simulation Property.
+msgid "5 km/h <= Speed < 10 km/h"
+msgstr "5 km/h <= Speed < 10 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "80 km/h <= Speed < 90 km/h"
+msgstr "80 km/h <= Speed < 90 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "15 km/h"
+msgstr "15 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "110 km/h"
+msgstr "110 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "+5 Percent"
+msgstr "+5 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "15 Percent"
+msgstr "15 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "90 Percent"
+msgstr "90 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+30 Percent"
+msgstr "+30 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+75 Percent"
+msgstr "+75 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "45 km/h"
+msgstr "45 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "CBTC"
+msgstr "CBTC"
+
+#. This is the state of a Simulation Property.
+msgid "-80 Percent"
+msgstr "-80 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "80 km/h"
+msgstr "80 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "90 km/h <= Speed < 100 km/h"
+msgstr "90 km/h <= Speed < 100 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "140 Percent"
+msgstr "140 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+15 Percent"
+msgstr "+15 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Door B2"
+msgstr "Door B2"
+
+#. This is the state of a Simulation Property.
+msgid "85 Percent"
+msgstr "85 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Door B3"
+msgstr "Door B3"
+
+#. This is the state of a Simulation Property.
+msgid "25 Percent"
+msgstr "25 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "75 km/h"
+msgstr "75 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Comms OK"
+msgstr "Comms OK"
+
+#. This is the state of a Simulation Property.
+msgid "Door B1"
+msgstr "Door B1"
+
+#. This is the state of a Simulation Property.
+msgid "50 km/h <= Speed < 60 km/h"
+msgstr "50 km/h <= Speed < 60 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "150 Degrees"
+msgstr "150 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "Door B4"
+msgstr "Door B4"
+
+#. This is the state of a Simulation Property.
+msgid "40 Percent"
+msgstr "40 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "150 Percent"
+msgstr "150 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "-100 Percent"
+msgstr "-100 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "5 Percent"
+msgstr "5 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "80 Percent"
+msgstr "80 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Low"
+msgstr "Low"
+
+#. This is the state of a Simulation Property.
+msgid "0 km/h"
+msgstr "0 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "330 Degrees"
+msgstr "330 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "75 Percent"
+msgstr "75 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Powered On"
+msgstr "Powered On"
+
+#. This is the state of a Simulation Property.
+msgid "30 Percent"
+msgstr "30 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Door A1"
+msgstr "Door A1"
+
+#. This is the state of a Simulation Property.
+msgid "-90 Percent"
+msgstr "-90 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "60 km/h <= Speed < 70 km/h"
+msgstr "60 km/h <= Speed < 70 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Door A2"
+msgstr "Door A2"
+
+#. This is the state of a Simulation Property.
+msgid "Warning"
+msgstr "Warning"
+
+#. This is the state of a Simulation Property.
+msgid "Pressed"
+msgstr "Pressed"
+
+#. This is the state of a Simulation Property.
+msgid "Pause"
+msgstr "Pause"
+
+#. This is the state of a Simulation Property.
+msgid "Set"
+msgstr "Set"
+
+#. This is the state of a Simulation Property.
+msgid "-15 Percent"
+msgstr "-15 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "90 km/h"
+msgstr "90 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Door A3"
+msgstr "Door A3"
+
+#. This is the state of a Simulation Property.
+msgid "Door A4"
+msgstr "Door A4"
+
+#. This is the state of a Simulation Property.
+msgid "20 km/h"
+msgstr "20 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "90 Degrees"
+msgstr "90 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "95 Percent"
+msgstr "95 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "65 km/h"
+msgstr "65 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "65 Percent"
+msgstr "65 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "0 Degrees"
+msgstr "0 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "Off"
+msgstr "Off"
+
+#. This is the state of a Simulation Property.
+msgid "OFF"
+msgstr "OFF"
+
+#. This is the state of a Simulation Property.
+msgid "Open"
+msgstr "Open"
+
+#. This is the state of a Simulation Property.
+msgid "50 Percent"
+msgstr "50 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "105 km/h"
+msgstr "105 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "20 Percent"
+msgstr "20 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Accurate Docking"
+msgstr "Accurate Docking"
+
+#. This is the state of a Simulation Property.
+msgid "+50 Percent"
+msgstr "+50 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "15 km/h <= Speed < 20 km/h"
+msgstr "15 km/h <= Speed < 20 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Not Set"
+msgstr "Not Set"
+
+#. This is the state of a Simulation Property.
+msgid "-5 Percent"
+msgstr "-5 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "130 km/h"
+msgstr "130 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "70 Percent"
+msgstr "70 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "-45 Percent"
+msgstr "-45 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+80 Percent"
+msgstr "+80 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Delocalised"
+msgstr "Delocalised"
+
+#. This is the state of a Simulation Property.
+msgid "+25 Percent"
+msgstr "+25 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "70 km/h <= Speed < 80 km/h"
+msgstr "70 km/h <= Speed < 80 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "5 km/h"
+msgstr "5 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Memorised Location"
+msgstr "Memorised Location"
+
+#. This is the state of a Simulation Property.
+msgid "Trip Continuously"
+msgstr "Trip Continuously"
+
+#. This is the state of a Simulation Property.
+msgid "110 km/h <= Speed < 120 km/h"
+msgstr "110 km/h <= Speed < 120 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "30 km/h"
+msgstr "30 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Overshoot"
+msgstr "Overshoot"
+
+#. This is the state of a Simulation Property.
+msgid "RMF"
+msgstr "RMF"
+
+#. This is the state of a Simulation Property.
+msgid "55 km/h"
+msgstr "55 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Normal"
+msgstr "Normal"
+
+#. This is the state of a Simulation Property.
+msgid "120 Degrees"
+msgstr "120 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "130 Percent"
+msgstr "130 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "2 Percent"
+msgstr "2 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "-65 Percent"
+msgstr "-65 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "140 km/h"
+msgstr "140 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "RMR"
+msgstr "RMR"
+
+#. This is the state of a Simulation Property.
+msgid "-20 Percent"
+msgstr "-20 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "45 Percent"
+msgstr "45 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "60 Degrees"
+msgstr "60 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "-70 Percent"
+msgstr "-70 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "40 km/h <= Speed < 50 km/h"
+msgstr "40 km/h <= Speed < 50 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "110 Percent"
+msgstr "110 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "60 Percent"
+msgstr "60 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+60 Percent"
+msgstr "+60 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Critical"
+msgstr "Critical"
+
+#. This is the state of a Simulation Property.
+msgid "0 Percent"
+msgstr "0 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "100 km/h <= Speed < 110 km/h"
+msgstr "100 km/h <= Speed < 110 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "+45 Percent"
+msgstr "+45 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Lost Comms"
+msgstr "Lost Comms"
+
+#. This is the state of a Simulation Property.
+msgid "+55 Percent"
+msgstr "+55 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "120 km/h"
+msgstr "120 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Released"
+msgstr "Released"
+
+#. This is the state of a Simulation Property.
+msgid "Automated"
+msgstr "Automated"
+
+#. This is the state of a Simulation Property.
+msgid "+70 Percent"
+msgstr "+70 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "0 km/h <= Speed < 5 km/h"
+msgstr "0 km/h <= Speed < 5 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "-25 Percent"
+msgstr "-25 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "210 Degrees"
+msgstr "210 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "-50 Percent"
+msgstr "-50 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "150 km/h"
+msgstr "150 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "3 Percent"
+msgstr "3 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "100 Percent"
+msgstr "100 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Localised"
+msgstr "Localised"
+
+#. This is the state of a Simulation Property.
+msgid "Active"
+msgstr "Active"
+
+#. This is the state of a Simulation Property.
+msgid "-35 Percent"
+msgstr "-35 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Trip Once"
+msgstr "Trip Once"
+
+#. This is the state of a Simulation Property.
+msgid "25 km/h <= Speed < 30 km/h"
+msgstr "25 km/h <= Speed < 30 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "10 km/h"
+msgstr "10 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "120 km/h <= Speed"
+msgstr "120 km/h <= Speed"
+
+#. This is the state of a Simulation Property.
+msgid "20 km/h <= Speed < 25 km/h"
+msgstr "20 km/h <= Speed < 25 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "70 km/h"
+msgstr "70 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "-40 Percent"
+msgstr "-40 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "30 Degrees"
+msgstr "30 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "-85 Percent"
+msgstr "-85 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "35 km/h"
+msgstr "35 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "+10 Percent"
+msgstr "+10 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "270 Degrees"
+msgstr "270 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "40 km/h"
+msgstr "40 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "-60 Percent"
+msgstr "-60 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Undershoot"
+msgstr "Undershoot"
+
+#. This is the state of a Simulation Property.
+msgid "Cleared"
+msgstr "Cleared"
+
+#. This is the state of a Simulation Property.
+msgid "1 Percent"
+msgstr "1 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Clear"
+msgstr "Clear"
+
+#. This is the state of a Simulation Property.
+msgid "+35 Percent"
+msgstr "+35 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "60 km/h"
+msgstr "60 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Very Low"
+msgstr "Very Low"
+
+#. This is the state of a Simulation Property.
+msgid "+20 Percent"
+msgstr "+20 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "35 Percent"
+msgstr "35 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "10 km/h <= Speed < 15 km/h"
+msgstr "10 km/h <= Speed < 15 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "+65 Percent"
+msgstr "+65 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "95 km/h"
+msgstr "95 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "160 km/h"
+msgstr "160 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "Inactive"
+msgstr "Inactive"
+
+#. This is the state of a Simulation Property.
+msgid "-75 Percent"
+msgstr "-75 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "-30 Percent"
+msgstr "-30 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "55 Percent"
+msgstr "55 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+85 Percent"
+msgstr "+85 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "30 km/h <= Speed < 40 km/h"
+msgstr "30 km/h <= Speed < 40 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "180 Degrees"
+msgstr "180 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "25 km/h"
+msgstr "25 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "240 Degrees"
+msgstr "240 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "50 km/h"
+msgstr "50 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "100 km/h"
+msgstr "100 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "-55 Percent"
+msgstr "-55 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "300 Degrees"
+msgstr "300 Degrees"
+
+#. This is the state of a Simulation Property.
+msgid "-10 Percent"
+msgstr "-10 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "120 Percent"
+msgstr "120 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "10 Percent"
+msgstr "10 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "4 Percent"
+msgstr "4 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "Very High"
+msgstr "Very High"
+
+#. This is the state of a Simulation Property.
+msgid "+100 Percent"
+msgstr "+100 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+90 Percent"
+msgstr "+90 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "+40 Percent"
+msgstr "+40 Percent"
+
+#. This is the state of a Simulation Property.
+msgid "85 km/h"
+msgstr "85 km/h"
+
+#. This is the state of a Simulation Property.
+msgid "On"
+msgstr "On"
+
+#. This is the name of a Log Event, an event that occurred during simulation.
+msgid "Master Controller Handle"
+msgstr "Master Controller Handle"
+
+#. This is the description of a Log Event, an event that occurred during simulation.
+msgid "Horn (low/high) or bell activation"
+msgstr "Horn (low/high) or bell activation"

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Build file for Simulator Models                                   -->
+<!-- ======================================================================= -->
+<project name="Models" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../../ant.common_properties.xml" />
+  <ivy:settings file="../../ivysettings.xml" />
+
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <!-- <import file="ant.paths.xml" as="paths" /> -->
+
+  <!-- Import the sub-building functionality -->
+  <import file="${dir.deps.processes}/modeller/modeller.software.simulink.xml" as="simulink_builder" />
+
+  <!-- ======================================================================= -->
+  <!-- Retrieve Dependencies                                                   -->
+  <!-- ======================================================================= -->
+  <target name="retrieve.dependencies" description="Retrieves dependencies">
+    <ivy:retrieve pattern="${dir.model.dependencies}/(/[module])" conf="*" type="simulink-project,simulink-projects-package" symlink="true" />
+  </target>
+
+  <!-- ======================================================================= -->
+  <!-- Clean Retrieved Dependencies                                            -->
+  <!-- ======================================================================= -->
+  <target name="clean.dependencies" depends="clean.work" description="Removes any retrieved dependencies">
+    <exec executable="cmd.exe" failonerror="true">
+      <arg line="/c rmdir /S /Q ${dir.model.dependencies}" />
+    </exec>
+  </target>
+</project>

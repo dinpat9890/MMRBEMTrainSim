@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="593422667" name="tree_medium_0">
+		<mesh_name>../worlds/shared/graphics/vegetation/tree_medium.mesh</mesh_name>
+		<surface name="tree_medium_leaves" max_visible_distance="800" material="7b86cecad0a657f6512591c28932d6ef1729d5e7" property="surface_base"/>
+		<surface name="tree_medium_trunk" max_visible_distance="800" material="1033d1fea76f864acdfb21043b9fc244206affdf" property="surface_base"/>
+		<transform>0.999999940395 -1.11022302463e-016 0 0.0 -8.32667268469e-017 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -4.54747350886e-013 0 -4.26325641456e-014 1.0</transform>
+	</node>
+</nodes>

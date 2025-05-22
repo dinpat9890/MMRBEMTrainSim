@@ -1,0 +1,26 @@
+# 
+# Domain : Peer Application Manager  (pam)
+# 
+applicationManager.logFile=../Logs/radio_frontend.log
+
+# The class name that extends PeerApplication
+pam.applicationClass=com.sydac.mmrbem.radio.fe.base.RadioFrontendModule
+
+# This key determines whether the application should be visible only during a session, or all the time
+pam.applicationVisible.sessionOnly=true
+pam.showSplashScreen=true
+pam.connectToDatabase=true
+
+# This key allows the application to ignore a shutdown message, which will normally cause the application
+# to exit gracefully.
+pam.ignoreShutdown=false
+
+# The following define the position and size of the application, which is used to place the application
+# on the correct screen and to load the correct splash screen image
+
+# Maximum height is 490, but we leave a bit of room to account for the bracket
+# obscuring the screen due to angle of viewing 
+pam.screen.height=320
+pam.screen.width=569
+pam.screen.xPosition=0
+pam.screen.yPosition=427

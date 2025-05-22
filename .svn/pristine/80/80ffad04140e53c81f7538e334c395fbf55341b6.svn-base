@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2106327568" name="tree_medium_0">
+		<mesh_name>../worlds/shared/graphics/vegetation/tree_medium.mesh</mesh_name>
+		<surface name="tree_medium_leaves" material="4329832d2678c765202f34b181ff15f7d91c1623" property="surface_base"/>
+		<surface name="tree_medium_trunk" material="1033d1fea76f864acdfb21043b9fc244206affdf" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

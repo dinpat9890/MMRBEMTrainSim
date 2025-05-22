@@ -1,0 +1,220 @@
+(! Intercom Audio Routing Script )
+(include "ProjectObjectConstants.script")
+(define instructor-hub-id (hub-from-name "Cab Instructor Station" "Driver's Cab"))
+(define trainee-hub-id (hub-from-name "Driver's Cab" "Driver's Cab"))
+
+(define instructor-port $terminal_name
+   (port (terminal $terminal_name) (instructor-hub-id))
+)
+ 
+(define trainee-port $terminal_name
+  (port (terminal $terminal_name) (trainee-hub-id))
+)
+
+
+(enable-if-in-session
+  (enable-if-not-preview
+    (enable-if-not-replay
+
+      (define train-type-crrc-redline 1)
+
+      (define trainee-train-object
+        (child-object-id (object-id (class-world)) (class-train) "Train Type" (train-type-crrc-redline))
+      )
+
+      (nest
+        (
+          (symbol $INTERCOM_INACTIVE  0)
+          (symbol $INTERCOM_DAILLING   1)
+		  (symbol $INTERCOM_ACTIVE    2)
+
+          (symbol $PUBLIC_ADDRESS_INACTIVE  0)
+          (symbol $PUBLIC_ADDRESS_ACTIVE    1)
+
+          (symbol $INTERCOM_NUMBER    	    "Intercom")
+          (symbol $PUBLIC_ADDRESS_NUMBER    "Public Address")
+
+        )
+
+        (define intercom-connected
+          (symbol $intercom_outputs (child-object-id (child-object-id (trainee-train-object) (class-intercom)) (class-intercom-outputs))
+            (symbol $intercom_connection (get-number (number-id $intercom_outputs $INTERCOM_NUMBER) $INTERCOM_INACTIVE)
+                (== $intercom_connection $INTERCOM_ACTIVE)
+            )
+          )
+        )
+		
+        (define pa-connected
+          (symbol $intercom_outputs (child-object-id (child-object-id (trainee-train-object) (class-intercom)) (class-intercom-outputs))
+            (symbol $pa_connection (get-number (number-id $intercom_outputs $PUBLIC_ADDRESS_NUMBER) $PUBLIC_ADDRESS_INACTIVE)
+                (== $pa_connection $PUBLIC_ADDRESS_ACTIVE)
+            )
+          )
+        )
+
+        (! log "Intercom State = " (get-number (number-id $intercom_outputs $INTERCOM_NUMBER) 0))
+		(! log "PA State = " (get-number (number-id $intercom_outputs $PUBLIC_ADDRESS_NUMBER) 0))
+
+        (! Route Gooseneck Mic to Instructor Speaker)
+        (connection
+          (trainee-port    "Cab Gooseneck Mic")
+          (instructor-port "Instructor 1 Speaker")
+          (if
+            (or
+              (intercom-connected)
+              (pa-connected)
+            )
+            1.0
+            0.0
+          )
+        )
+		
+        (connection
+          (trainee-port    "Desk Gooseneck Mic")
+          (instructor-port "Instructor 2 Speaker")
+          (if
+            (or
+              (intercom-connected)
+              (pa-connected)
+            )
+            1.0
+            0.0
+          )
+        )
+
+        (! Route Internal Mic to Instructor Speaker)
+        (connection
+          (trainee-port    "Cab Internal Mic")
+          (instructor-port "Instructor 1 Speaker")
+          (if
+            (or
+              (intercom-connected)
+              (pa-connected)
+            )
+            0.0
+            1.0
+          )
+        )
+		
+        (connection
+          (trainee-port    "Desk Internal Mic")
+          (instructor-port "Instructor 2 Speaker")
+          (if
+            (or
+              (intercom-connected)
+              (pa-connected)
+            )
+            0.0
+            1.0
+          )
+        )
+		
+
+        (! DEFAULT ROUTES BELOW)
+		
+        (! Setting Default Route from Instructor Mic to Cab or Desk)
+        (connection
+          (instructor-port "Instructor 1 Mic")
+          (trainee-port    "Cab Internal Speaker")
+           1.0
+          )
+        )
+
+        (connection
+          (instructor-port  "Instructor 2 Mic")
+          (trainee-port     "Desk Internal Speaker")
+           1.0
+          )
+        )
+
+        (! Setting Default Route from Instructor Radio to Instructor Speaker)
+		(! This means we don't have to connect the Radio Speaker at the Instructor Station)
+        (connection
+          (instructor-port   "Instructor 1 Radio Speaker")
+          (instructor-port   "Instructor 1 Speaker")
+          1.0
+        )
+		
+	(connection
+          (instructor-port   "Instructor 2 Radio Speaker")
+          (instructor-port   "Instructor 2 Speaker")
+          1.0
+        )
+
+        (! Setting Default Route from Cab/Desk Radio to Cab/Desk Internal Speaker)
+		(! This means we don't have to connect the Radio Speaker at the Instructor Station)
+        (connection
+          (trainee-port   "Cab Radio Speaker")
+          (trainee-port   "Cab Internal Speaker")
+          1.0
+        )
+		
+	(connection
+          (trainee-port   "Desk Radio Speaker")
+          (trainee-port   "Desk Internal Speaker")
+          1.0
+        )
+  	
+        (! Mapping Recording Channels)
+        (connection
+          (instructor-port   "Instructor 1 Mic")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+        (connection
+          (instructor-port   "Instructor 2 Mic")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+        (connection
+          (trainee-port      "Cab Internal Mic")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+        (connection
+          (trainee-port      "Desk Internal Mic")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+        (connection
+          (trainee-port      "Cab Gooseneck Mic")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+        (connection
+          (trainee-port      "Desk Gooseneck Mic")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+        (connection
+          (trainee-port   "Cab Radio Speaker")
+          (instructor-port   "Intercom Recorder")
+          1.0
+        )
+	(connection
+          (trainee-port   "Desk Radio Speaker")
+          (instructor-port   "Intercom Recorder")
+          1.0
+        )
+        (connection
+          (instructor-port   "Instructor 1 Radio Speaker")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+        (connection
+          (instructor-port   "Instructor 2 Radio Speaker")
+          (instructor-port   "Intercom Recorder")
+           1.0
+        )
+
+        (! Mapping Replay Channels)
+        (connection
+          (instructor-port   "Playback")
+          (trainee-port      "Observer Speaker")
+           1.0
+        )
+
+      ) (! end nest)
+    ) (! end enable-if-not-replay)
+  ) (! end enable-if-not-preview)
+) (! end enable-if-in-session)

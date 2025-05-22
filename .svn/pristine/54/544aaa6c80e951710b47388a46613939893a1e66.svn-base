@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="atc_begin_end_board" guid="ea856d531419511cf936d1051b509eafc56f0e15" base_material="mesh_base">
+	<state name="workflow">0</state>
+	<state name="emission">0</state>
+	<state name="material_motion_blur">0</state>
+	<texture name="diffuse">../worlds/library_objects/features/textures/mumbai_track_signs.dds</texture>
+	<texture name="albedo">../worlds/library_objects/features/textures/atc_begin_end_board.dds</texture>
+	<texture name="emission">../worlds/library_objects/features/textures/mumbai_track_signs_e.dds</texture>
+	<parameter name="albedo_color">0.909803987 0.909803987 0.909803987 1</parameter>
+	<parameter name="metalness">0.342000008</parameter>
+	<parameter name="roughness">0.691999972</parameter>
+	<parameter name="specular">0.245000005</parameter>
+	<parameter name="diffuse_color">0.917647123 0.917647123 0.917647123 1</parameter>
+	<parameter name="specular_color">0.31764707 0.31764707 0.31764707 1</parameter>
+	<parameter name="gloss">0.800000012</parameter>
+	<parameter name="emission_color">0.643137276 0.647058845 0.576470613 1</parameter>
+	<parameter name="emission_scale">2</parameter>
+</material>

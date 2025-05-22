@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="wash_plant" guid="78ef014c5524db7ee8c4f3c785ff5098b87a0796" base_material="mesh_base">
+	<state name="emission">1</state>
+	<texture name="albedo">../worlds/mmrbem/graphics/depot/textures/wash_plant.dds</texture>
+	<texture name="emission">../worlds/mmrbem/graphics/depot/textures/wash_plant_e.dds</texture>
+	<parameter name="albedo_color">0.858823597 0.858823597 0.858823597 1</parameter>
+	<parameter name="specular">0.261000007</parameter>
+	<parameter name="emission_color">1 0.980392218 0.909803987 1</parameter>
+	<parameter name="emission_scale">1</parameter>
+</material>

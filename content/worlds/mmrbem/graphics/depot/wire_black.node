@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="781885794" name="wire">
+		<mesh_name>../worlds/mmrbem/graphics/depot/wire_black.mesh</mesh_name>
+		<surface name="wire_black" max_visible_distance="800" max_fade_distance="10" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+		<transform>0.999999880791 -2.40135958129e-017 2.37169225231e-018 0.0 1.36988520977e-017 0.999999880791 0 0.0 2.344587198e-018 3.46944695195e-018 0.999999940395 0.0 0 -3.63797880709e-012 0 1.0</transform>
+	</node>
+</nodes>

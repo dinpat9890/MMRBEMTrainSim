@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="depot_tram_rail_pavers_base_green" guid="9b3574e2a6c85368e476d67c32d84626a14d5c19" base_material="mesh_base">
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/mmrbem/graphics/depot/textures/depot_tram_rail_pavers_green.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

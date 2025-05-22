@@ -1,0 +1,4157 @@
+/*
+ * ==================================================================
+ *
+ * (C) Copyright 2022 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *
+ * ==================================================================
+ */
+.root {
+	-fx-background-color: black;
+}
+
+.header-panel {
+	-fx-background-color: grey;
+}
+
+.header-panel-border {
+	-fx-border-color: white;
+	-fx-border-width: 0.0 3.0 0.0 0.0;
+}
+
+.header-panel-bottom-border {
+	-fx-border-color: white;
+	-fx-border-width: 0.0 0.0 2.0 0.0;
+}
+
+.header-panel-column-label {
+	-fx-text-fill: white;
+	-fx-font-size: 13.0px;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-date-label {
+	-fx-text-fill: white;
+	-fx-font-size: 13.0px;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: bottom-center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-time-label {
+	-fx-text-fill: white;
+	-fx-font-size: 13.0px;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: top-center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-first-coloumn-label {
+	-fx-text-fill: white;
+	-fx-font-size: 12.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-number-label {
+	-fx-text-fill: white;
+	-fx-font-size: 28.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+}
+
+.header-panel-screen-title-label {
+	-fx-text-fill: white;
+	-fx-font-size: 20.5px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+}
+
+.header-panel-opMode-label {
+	-fx-text-fill: white;
+	-fx-font-size: 10.0;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-powerOn-label {
+	-fx-text-fill: white;
+	-fx-font-size: 12.0;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-login-title-label {
+	-fx-text-fill: white;
+	-fx-font-size: 21.0;
+	-fx-font-family: Franklin Gothic Heavy;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-title-label, .header-panel-title-label:empty {
+	-fx-text-fill: white;
+	-fx-font-size: 21.0;
+	-fx-font-family: Franklin Gothic Heavy;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.header-panel-title-label:welcome {
+	-fx-text-fill: white;
+	-fx-font-size: 21.0;
+	-fx-font-family: Franklin Gothic Heavy;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-background-color: green;
+}
+
+.header-panel-title-label:access_denied {
+	-fx-text-fill: white;
+	-fx-font-size: 21.0;
+	-fx-font-family: Franklin Gothic Heavy;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-background-color: red;
+}
+
+.vduSwitch-icon {
+	-fx-background-image: url('../images/tcms_cctv_vdu_switch.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+.header-panel-vdu-settings-icon, .header-panel-vdu-settings-icon:unselected
+	{
+	-fx-background-image: url('../images/vdu_settings.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+.header-panel-vdu-settings-icon:armed {
+	-fx-background-color: red;
+}
+
+.header-panel-vdu-settings-icon:slected {
+	-fx-background-color: white;
+}
+
+.header-panel-user-not-Login-icon, .header-panel-userLogin-icon:unselected
+	{
+	-fx-background-image: url('../images/no_user_logged_in.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+.header-panel-userLogin-icon:armed {
+	-fx-background-color: red;
+}
+
+.header-panel-userLogin-icon:selected {
+	-fx-background-color: white;
+}
+
+.header-panel-operator-loggedin-icon {
+	-fx-background-image: url('../images/operator_button_selected.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS class for VDU Selection Popup Panel                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.vdu-selection-popup-outer-grid {
+	-fx-background-color: transparent;
+}
+
+.vdu-selection-popup {
+	-fx-background-color: rgb(187.0, 187.0, 187.0);
+	-fx-border-color: white;
+	-fx-border-width: 0.0 3.0 3.0 3.0;
+	-fx-border-radius: 0.0px 0.0px 10.0px 10.0px;
+	-fx-background-radius: 0.0px 0.0px 10.0px 10.0px;
+}
+
+.vdu-selection-label {
+	-fx-text-fill: white;
+	-fx-font-size: 20.0;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS class for VDU Settings Popup Panel                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.vdu-settings-popup-outer-grid {
+	-fx-background-color: transparent;
+}
+
+.vdu-settings-popup {
+	-fx-background-color: rgb(187.0, 187.0, 187.0);
+	-fx-border-color: white;
+	-fx-border-width: 0.0 3.0 3.0 3.0;
+	-fx-border-radius: 0.0px 0.0px 10.0px 10.0px;
+	-fx-background-radius: 0.0px 0.0px 10.0px 10.0px;
+}
+
+.vdu-settings-label {
+	-fx-text-fill: white;
+	-fx-font-size: 20.0;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.vdu-brightness-icon {
+	-fx-background-image: url('../images/brightness.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+.vdu-volume-icon {
+	-fx-background-image: url('../images/volume.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * CSS class for Footer panel                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.footer-panel {
+	-fx-border-color: white;
+	-fx-border-width: 4.0 0.0 0.0 0.0;
+	-fx-background-color: grey;
+}
+
+.footer-button-grid-border {
+	-fx-border-width: 2.0 4.0 8.0 4.0;
+	-fx-border-color: rgb(145.0, 145.0, 145.0);
+	-fx-background-color: rgb(145.0, 145.0, 145.0);
+}
+
+.button.button-default:faults_priority_1 {
+	-fx-background-color: red;
+}
+
+.button.button-default:faults_priority_2 {
+	-fx-background-color: yellow;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * CSS class for Footer panel submenu popup                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+.footer-submenu-outer-grid {
+	-fx-background-color: transparent;
+}
+
+.footer-submenu-inner-grid {
+	-fx-border-color: white;
+	-fx-border-width: 4.0 4.0 0.0 4.0;
+	-fx-border-radius: 20.0px 20.0px 0.0px 0.0px;
+	-fx-background-radius: 19.0px 19.0px 0.0 0.0;
+	-fx-background-color: rgb(145.0, 145.0, 145.0, 145.0);
+	-fx-background-size: 100.0%;
+	-fx-alignment: center;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+}
+
+.footer-submenu-inner-1 {
+	-fx-border-color: white;
+	-fx-border-width: 0.0;
+	-fx-border-radius: 10.0px 10.0px 0.0px 0.0px;
+	-fx-background-radius: 20.0px 20.0px 0.0 0.0;
+	-fx-background-color: rgb(145.0, 145.0, 145.0, 145.0);
+	-fx-background-size: 100.0%;
+	-fx-alignment: center;
+}
+
+.footer-submenu-inner-sub-grid {
+	-fx-border-width: 8.0 4.0 8.0 4.0;
+	-fx-border-color: rgb(145.0, 145.0, 145.0);
+	-fx-border-radius: 10.0px 10.0px 0.0px 0.0px;
+	-fx-background-radius: 20.0px 20.0px 0.0px 20.0px;
+	-fx-background-color: rgb(145.0, 145.0, 145.0);
+}
+
+.button.button-footer-submenu-label {
+	-fx-font-size: 16.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+	-fx-text-alignment: center;
+	-fx-text-fill: black;
+}
+
+.button.button-propulsion-subsystem-icon, .button.button-propulsion-subsystem-icon:unselected
+	{
+	-fx-background-image: url('../images/propulsion_system.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.button.button-brake-subsystem-icon, .button.button-brake-subsystem-icon:unselected
+	{
+	-fx-background-image: url('../images/brake_system.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 75.0%;
+}
+
+.button.button-door-subsystem-icon, .button.button-door-subsystem-icon:unselected
+	{
+	-fx-background-image: url('../images/door_system.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 45.0%;
+}
+
+.button.button-battery-subsystem-icon, .button.button-battery-subsystem-icon:unselected
+	{
+	-fx-background-image: url('../images/battery_system.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.button.button-fire-subsystem-icon, .button.button-fire-subsystem-icon:unselected
+	{
+	-fx-background-image: url('../images/fire_system.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.button.button-hvac-subsystem-icon, .button.button-hvac-subsystem-icon:unselected
+	{
+	-fx-background-image: url('../images/hvac_system.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.button.button-light-subsystem-icon, .button.button-light-subsystem-icon:unselected
+	{
+	-fx-background-image: url('../images/light_system.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Common CSS class for all buttons  in header and footer                      *
+ *                                                                             *
+ ******************************************************************************/
+.button {
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.button-default, .button.button-brightness, .button.button-default:unselected,
+	.button.button-brightness:unselected, .button-footer-submenu-label:unselected,
+	.button-system-default:unselected, .button.button-fire-detection-default:unselected,
+	.button.button-hvac-system-screen:unselected {
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+	-fx-text-fill: black;
+}
+
+.button.button-default:armed, .button.button-footer-submenu-label:armed,
+	.button.button-propulsion-subsystem-icon:armed, .button.button-brake-subsystem-icon:armed,
+	.button.button-door-subsystem-icon:armed, .button.button-battery-subsystem-icon:armed,
+	.button.button-fire-subsystem-icon:armed, .button.button-hvac-subsystem-icon:armed,
+	.button.button-light-subsystem-icon:armed, .button-system-default:armed,
+	.button.button-fire-detection-default:armed, .button.button-hvac-system-screen:armed
+	{
+	-fx-background-color: yellow;
+}
+
+.button.button-default:selected, .button.button-footer-submenu-label:selected
+	{
+	-fx-text-fill: white;
+}
+
+.button.button-brightness:selected {
+	-fx-text-fill: white;
+	-fx-background-color: black;
+}
+
+.button.button-default:disabled, .button.button-footer-submenu-label:disabled
+	{
+	visibility: false;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Dialog                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.tms-dialog-pane {
+	-fx-background-color: transparent;
+}
+
+.tms-dialog {
+	-fx-background-color: rgb(42.0, 53.0, 65.0);
+	-fx-border-color: rgb(192.0, 192.0, 192.0);
+	-fx-border-width: 0.5px;
+}
+
+.tms-dialog>.label {
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Arial";
+}
+
+.tms-dialog>#messageLabel {
+	-fx-text-fill: rgb(14.0, 186.0, 225.0);
+	-fx-font-size: 18.0px;
+}
+
+.data-table {
+	-fx-border-color: yellow;
+	-fx-table-cell-border-color: red;
+}
+
+.column-header-background {
+	-fx-background-color: transparent;
+}
+
+.data-loading-bottom-label, .data-loading-bottom-label:unselected {
+	-fx-background-color: rgb(242.0, 239.0, 235.0);
+	-fx-border-width: 1.0px;
+	-fx-border-color: rgb(111.0, 111.0, 111.0);
+	-fx-text-fill: black;
+}
+
+.data-loading-bottom-label:selected {
+	-fx-background-color: blue;
+	-fx-border-width: 1.5px;
+	-fx-border-color: rgb(112.0, 170.0, 210.0);
+}
+
+.data-loading-message-label {
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-font-size: 35.0px;
+}
+
+.communication-error-label {
+	-fx-background-color: red;
+	-fx-text-alignment: center;
+	-fx-font-size: 25.0px;
+	-fx-text-fill: white;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-font-weight: bold;
+}
+
+.login-label {
+	-fx-font-weight: bold;
+	-fx-font-size: 15.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-text-fill: white;
+}
+
+.login-panel-hitachi-image {
+	-fx-background-image: url("../images/login_panel.png");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: white;
+}
+
+.hmi-version-label {
+	-fx-margin-left: 15.0px;
+	-fx-font-weight: bold;
+	-fx-font-size: 40.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-background-color: red;
+}
+
+.login-userid-label {
+	-fx-font-weight: bold;
+	-fx-font-size: 24.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-text-fill: white;
+	-fx-background-color: maroon;
+}
+
+.login-dialog-pane {
+	-fx-background-color: rgba(187.0, 187.0, 187.0, 0.0);
+}
+
+.login-dialog {
+	-fx-background-color: rgb(187.0, 187.0, 187.0);
+	-fx-border-color: rgb(192.0, 192.0, 192.0);
+	-fx-border-width: 0.5px;
+	-fx-background-radius: 0.0px 0.0px 10.0px 10.0px;
+}
+
+.button.button-operator-login, .button.button-operator-login:unselected
+	{
+	-fx-background-image: url('../images/operator_button_not_selected.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.button-operator-login:armed {
+	-fx-background-color: yellow;
+}
+
+.button.button-logout {
+	-fx-font-size: 23.0;
+}
+
+.button.button-logout:armed {
+	-fx-background-color: yellow;
+}
+
+.button.button-operator-login:selected {
+	-fx-background-image: url('../images/operator_button_selected.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: black;
+}
+
+.button.button-maintainer-login, .button-maintainer-login:unselected {
+	-fx-background-image: url('../images/maintenance_button.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.button-engineer-login, .button-engineer-login:unselected {
+	-fx-background-image: url('../images/engineer_button.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Train Top View Panel                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.train-side-view-t-car-panto:raised {
+	-fx-background-image: url('../images/pantograph_raised.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-side-view-t-car-panto:raised_faulty {
+	-fx-background-image: url('../images/pantograph_raised_faulty.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-side-view-t-car-panto, .train-side-view-t-car-panto:lowered {
+	-fx-background-image: url('../images/pantograph_lowered.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-side-view-t-car-panto:lowered_faulty {
+	-fx-background-image: url('../images/pantograph_lowered_faulty.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-side-view-t-car-panto:isolated {
+	-fx-background-image: url('../images/pantograph_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-side-view-t-car-panto:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-sideview-wheel:isolated {
+	-fx-background-image: url('../images/boogie_wheel_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-sideview-wheel, .train-sideview-wheel:not_isolated {
+	-fx-background-image: url('../images/boogie_wheel_not_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-side-view-t-car-vcb, .train-side-view-t-car-vcb:closed {
+	-fx-background-image: url('../images/vcb_closed.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-side-view-t-car-vcb:closed_and_faulty {
+	-fx-background-image: url('../images/vcb_closed_and_fault.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-side-view-t-car-vcb:open {
+	-fx-background-image: url('../images/vcb_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-side-view-t-car-vcb:open_and_faulty {
+	-fx-background-image: url('../images/vcb_open_and_fault.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-side-view-t-car-vcb:isolated {
+	-fx-background-image: url('../images/vcb_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-side-view-t-car-vcb:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-side-view-car-fault-label:priority_1_fault {
+	-fx-background-color: rgb(254.0, 0.0, 0.0);
+}
+
+.train-side-view-car-fault-label:priority_2_fault {
+	-fx-background-color: yellow;
+}
+
+.train-side-view-car-fault-label, .train-side-view-car-fault-label:no_active_fault
+	{
+	-fx-background-color: white;
+}
+
+.train-side-view-dm-front-cab, .train-side-view-dm-front-cab:active {
+	-fx-background-color: rgb(0.0, 255.0, 0.0);
+	-fx-background-radius: 30.0 0.0 0.0 0.0;
+}
+
+.train-side-view-dm-rear-cab, .train-side-view-dm-rear-cab:active {
+	-fx-background-color: rgb(0.0, 255.0, 0.0);
+	-fx-background-radius: 0.0 30.0 0.0 0.0;
+}
+
+.train-side-view-dm-front-cab:not_active {
+	-fx-background-color: white;
+	-fx-background-radius: 30.0 0.0 0.0 0.0;
+}
+
+.train-side-view-dm-rear-cab:not_active {
+	-fx-background-color: white;
+	-fx-background-radius: 0.0 30.0 0.0 0.0;
+}
+
+.train-side-view-car-caption-label, .train-side-view-car-caption-label:deselect {
+	-fx-text-fill: black;
+	-fx-background-color: transparent;
+	-fx-text-alignment: center;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-size: 24.0px;
+}
+
+.train-side-view-car-caption-label:select {
+	-fx-border-color: #90EE90;
+	-fx-border-width: 2.0px;
+}
+
+.train-side-view-direction-left-arrow,
+	.train-side-view-direction-left-arrow:forward {
+	-fx-background-image: url('../images/left_arrow.png');
+	-fx-background-position: left;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 20.0%;
+}
+
+.train-side-view-direction-right-arrow,
+	.train-side-view-direction-right-arrow:backward {
+	-fx-background-image: url('../images/right_arrow.png');
+	-fx-background-position: right;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 20.0%;
+}
+
+.train-side-view-direction-right-arrow:no_direction,
+	.train-side-view-direction-left-arrow:no_direction {
+	visibility: false;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Train Top View Panel                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.train-top-view-bg {
+	-fx-background-color: rgb(87.0, 87.0, 87.0);
+}
+
+.train-top-view-door:open {
+	-fx-background-image: url('../images/door_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-door:open_and_faulty {
+	-fx-background-image: url('../images/door_open_and_infault.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-door, .train-top-view-door:closed_and_locked {
+	-fx-background-image: url('../images/door_closed_and_locked.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-door:isolated {
+	-fx-background-image: url('../images/door_closed_and_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-door:close_and_faulty {
+	-fx-background-image: url('../images/door_closed_and_infault.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-door:closed_but_not_locked {
+	-fx-background-image: url('../images/door_closed_and_not_locked.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-door:emergency {
+	-fx-background-image: url('../images/door_emergency.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-door-id-label {
+	-fx-text-fill: white;
+	-fx-text-alignment: center;
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Demi";
+	-fx-alignment: center;
+}
+
+.train-top-view-service-brake, .train-top-view-service-brake:applied {
+	-fx-background-image: url('../images/brake_green.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-service-brake:not_applied {
+	-fx-background-image: url('../images/brake_orange.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-service-brake:faulty {
+	-fx-background-image: url('../images/brake_red.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70.0%;
+}
+
+.train-top-view-parking-brake, .train-top-view-parking-brake:applied {
+	-fx-background-image: url('../images/parking_brake_green.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.train-top-view-parking-brake:not_applied {
+	-fx-background-image: url('../images/parking_brake_orange.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.train-top-view-parking-brake:isolated {
+	-fx-background-image: url('../images/parking_brake_blue.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.train-top-view-propulsion, .train-top-view-propulsion:power_or_brake {
+	-fx-background-image: url('../images/propulsion_white.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.train-top-view-propulsion:coasting_or_off {
+	-fx-background-image: url('../images/propulsion_gray.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.train-top-view-propulsion:faulty {
+	-fx-background-image: url('../images/propulsion_red.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.train-top-view-propulsion:isolated {
+	-fx-background-image: url('../images/propulsion_blue.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.train-notch-indicator-grid-border {
+	-fx-border-width: 0.0 0.0 0.0 2.0px;
+	-fx-border-color: white;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Train Data Section (Operating Screen)                                       *
+ *                                                                             *
+ ******************************************************************************/
+.train-data-section-label {
+	-fx-text-fill: white;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+}
+
+.train-data-section-border {
+	-fx-border-width: 0.0 0.0 0.0 2.0px;
+	-fx-border-color: white;
+}
+/*******************************************************************************
+ *                                                                             *
+ * Train Notch (Operating Screen)                                              *
+ *                                                                             *
+ ******************************************************************************/
+.train-notch-bg-image {
+	-fx-background-image: url('../images/notch.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 107.0%;
+}
+
+.train-notch-braking-bar-label {
+	-fx-background-color: red;
+}
+
+.train-notch-propulsion-bar-label {
+	-fx-background-color: blue;
+}
+/*******************************************************************************
+ *                                                                             *
+ * Train Indicators (Operating Screen)                                         *
+ *                                                                             *
+ ******************************************************************************/
+.train-indicator-common-label:active {
+	-fx-text-fill: black;
+	-fx-text-alignment: center;
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-background-color: white;
+}
+
+.train-indicator-atc-label:active {
+	-fx-background-color: blue;
+}
+
+.train-indicator-common-label, .train-indicator-atc-label,
+	.train-indicator-common-label:inactive, .train-indicator-atc-label:inactive
+	{
+	-fx-text-fill: black;
+	-fx-text-alignment: center;
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-background-color: rgb(128.0, 128.0, 128.0);
+}
+
+.train-indicator-section-border {
+	-fx-border-width: 2.0px 0.0 0.0 0.0;
+	-fx-border-color: white;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ *               Table                                                         *
+ *                                                                             *
+ ******************************************************************************/
+.table-view {
+	-fx-focus-color: white;
+	-fx-focus-traversable: false;
+	-fx-background-color: transparent;
+	-fx-alignment: center;
+	-fx-border-color: transparent;
+	-fx-table-cell-border-color: transparent;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button, .table-view *.scroll-bar:horizontal *.decrement-button
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow, .table-view *.scroll-bar:horizontal *.decrement-arrow
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+	-fx-shape: null;
+}
+
+.table-view .scroll-bar:vertical>.increment-button, .table-view .scroll-bar:vertical>.decrement-button
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+}
+
+.table-view *.scroll-bar:vertical *.increment-arrow, .table-view *.scroll-bar:vertical *.decrement-arrow
+	{
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-padding: 0.0;
+	-fx-shape: null;
+}
+
+.table-view:row-selection .column-header-background .filler {
+	-fx-background-color: transparent;
+	-fx-border-insets: 0.0;
+	-fx-border-width: 0.0;
+	-fx-border-color: transparent;
+	-fx-focus-traversable: false;
+}
+
+.table-view .column-header#no-border-column {
+	-fx-border-width: 0.0px 0.0px 1.0px 0.0px;
+	-fx-border-color: white;
+	-fx-focus-traversable: false;
+}
+
+.table-cell {
+	-fx-text-fill: white;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Calibri";
+	-fx-font-weight: normal;
+	-fx-border-color: white;
+	-fx-border-width: 0.0;
+	-fx-padding: 2 12.0 2 2.0;
+	-fx-alignment: center;
+	-fx-background-color: black;
+	-fx-wrap-text: true;
+}
+
+.table-row-cell {
+	-fx-background-color: black;
+	-fx-border-color: transparent;
+	-fx-table-cell-border-color: transparent;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *               Propulsion System                                             *
+ *                                                                             *
+ ******************************************************************************/
+.button.button-system-default {
+	-fx-font-size: 22.0px;
+	-fx-background-radius: 6.0px;
+	-fx-background-insets: 0.0, 5.0, 0.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.label.status-table-label {
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 14.0px;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+.label.status-table-label:unknown {
+	-fx-background-color: black;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:not_enabled, .label.status-table-label:enabled,
+	.label.status-table-label:open, .label.status-table-label:unavailable,
+	.label.status-table-label:normal {
+	-fx-background-color: black;
+	-fx-border-insets: 6.0px 10.0px 6.0px 8.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 6.0px 10.0px 6.0px 8.0px;
+	-fx-border-color: white;
+}
+
+.label.status-table-label:open {
+	-fx-background-color: black;
+	-fx-border-insets: 12.0px 10.0px 12.0px 8.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 12.0px 10.0px 12.0px 8.0px;
+	-fx-border-color: white;
+}
+
+.label.status-table-label:closed {
+	-fx-background-color: green;
+	-fx-border-insets: 12.0px 10.0px 12.0px 8.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-border-color: white;
+	-fx-background-insets: 12.0px 10.0px 12.0px 8.0px;
+}
+
+.label.status-table-label:available, .label.status-table-label:trip_forced
+	{
+	-fx-background-color: green;
+	-fx-border-insets: 6.0px 10.0px 6.0px 8.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-border-color: white;
+	-fx-background-insets: 6.0px 10.0px 6.0px 8.0px;
+}
+
+.table-cell-box-separator {
+	-fx-border-width: 0.0 0.0px 0.0 0.0px;
+	-fx-border-color: black;
+	-fx-border-insets: 0.0 5.0 0.0 5.0;
+}
+
+.status-table-label:coasting_or_off {
+	-fx-background-image: url('../images/propulsion_gray.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 35.0%;
+	-fx-background-insets: 6.0px, 0.0px, 0.0px, 0.0px;
+	-fx-border-insets: 6.0px 24.0px 6.0px 0.0px;
+	-fx-padding: 0.0, 14.0px, 0.0, 0.0;
+}
+
+.status-table-label:faulty {
+	-fx-background-image: url('../images/propulsion_red.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 38.0%;
+	-fx-background-insets: 6.0px, 0.0px, 0.0px, 0.0px;
+	-fx-border-insets: 6.0px 24.0px 6.0px 0.0px;
+	-fx-padding: 0.0, 14.0px, 0.0, 0.0;
+}
+
+.status-table-label:power_or_brake {
+	-fx-background-image: url('../images/propulsion_white.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 38.0%;
+	-fx-background-insets: 6.0px, 0.0px, 0.0px, 0.0px;
+	-fx-border-insets: 6.0px 24.0px 6.0px 0.0px;
+	-fx-padding: 0.0, 14.0px, 0.0, 0.0;
+}
+
+.status-table-label:isolated {
+	-fx-background-image: url('../images/propulsion_blue.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 38.0%;
+	-fx-background-insets: 6.0px, 0.0px, 0.0px, 0.0px;
+	-fx-border-insets: 6.0px 24.0px 6.0px 0.0px;
+	-fx-padding: 0.0, 14.0px, 0.0, 0.0;
+}
+
+.status-table-label:unknown {
+	-fx-background-color: black;
+	-fx-border-insets: 6.0px 4.0px 6.0px 3.0px;
+	-fx-border-width: 0.0px;
+}
+
+.status-table-label:value-table-label {
+	-fx-border-width: 0.0;
+	-fx-font-size: 12.0px;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *               Door System 	                                               *
+ *                                                                             *
+ ******************************************************************************/
+.dcu-status-label, .dcu-status-label:dcu_ok {
+	-fx-text-fill: black;
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Demi Cond";
+	-fx-background-image: url('../images/dcu_status.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-alignment: center;
+}
+
+.dcu-status-label:dcu_faulty {
+	-fx-text-fill: black;
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Demi Cond";
+	-fx-background-image: url('../images/dcu_status_fault.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-alignment: center;
+}
+
+.dcu-status-label:dcu_not_available {
+	visibility: false;
+}
+
+.dcu-status-border {
+	-fx-border-width: 0.0 2.0 0.0 0.0;
+	-fx-border-color: white;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *               APS System 	                                               *
+ *                                                                             *
+ ******************************************************************************/
+.aps-system-border {
+	-fx-border-color: white;
+	-fx-border-width: 2.0 0.0 0.0 0.0;
+}
+
+.label.status-table-label:aps_group_label {
+	-fx-boder-width: 0.0;
+	-fx-text-fill: rgb(93.0, 121.0, 87.0);
+	-fx-alignment: "top-center";
+}
+
+.label.status-table-label:aps_cu_unknown {
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-background-insets: 5.0px 0.0 4.0px 0.0;
+}
+
+.label.status-table-label:aps_cu_active {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-background-insets: 5.0px 0.0 4.0px 0.0;
+}
+
+.label.status-table-label:aps_cu_not_active {
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-background-insets: 5.0px 0.0 4.0px 0.0;
+}
+
+.label.status-table-label:aps_cu_faulty {
+	-fx-background-color: red;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-background-insets: 5.0px 0.0 4.0px 0.0;
+}
+
+.label.status-table-label:aps_cu_isolated {
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-background-insets: 5.0px 0.0 4.0px 0.0;
+}
+
+.label.status-table-label:ak_state_closed, .label.status-table-label:k_state_closed
+	{
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-background-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-border-width: 1.0px;
+}
+
+.label.status-table-label:ak_state_open, .label.status-table-label:k_state_open
+	{
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 5.0px 0.0 4.0px 0.0;
+	-fx-background-insets: 5.0px 0.0 4.0px 0.0;
+}
+
+.label.status-table-label:ak_state_unknown, .label.status-table-label:k_state_unknown,
+	.label.status-table-label:aps_cu_blank {
+	visibility: hidden;
+}
+
+.label.status-table-label:aps_out_volt_label {
+	-fx-boder-width: 0.0;
+	-fx-text-fill: white;
+	-fx-alignment: top-center;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *               Battery System 	                                           *
+ *                                                                             *
+ ******************************************************************************/
+.battery-label-border {
+	-fx-border-color: grey;
+	-fx-border-width: 0.0 0.0 1.0 0.0;
+}
+
+.label.status-table-label:battery-bcg-status-label, .label.status-table-label:bcg_ok
+	{
+	-fx-background-color: green;
+	-fx-text-fill: black;
+	-fx-background-insets: 4.0px 8.0px 4.0px 8.0px;
+	-fx-background-position: center;
+}
+
+.label.status-table-label:bcg_faulty {
+	-fx-background-color: red;
+	-fx-text-fill: black;
+	-fx-background-insets: 4.0px 8.0px 4.0px 8.0px;
+	-fx-background-position: center;
+}
+
+.label.status-table-label:bcg_unknown {
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+	-fx-background-insets: 4.0px 8.0px 4.0px 8.0px;
+	-fx-background-position: center;
+}
+
+.label.status-table-label:bcg_isolated {
+	-fx-background-color: blue;
+	-fx-text-fill: black;
+	-fx-background-insets: 4.0px 8.0px 4.0px 8.0px;
+	-fx-background-position: center;
+}
+
+.label.status-table-label:bcg_blank {
+	visibility: hidden;
+}
+
+.label.status-table-label:battery_bcg_output_volt_status_label {
+	-fx-font-size: 22.0px;
+}
+
+.label.status-table-label:battery_volt_status_label {
+	-fx-font-size: 15.0px;
+	-fx-font-weight: bolder;
+}
+
+.label.status-table-label:battery_output_current_status_label {
+	-fx-font-size: 15.0px;
+	-fx-font-weight: bolder;
+}
+
+.label.status-table-label:battery_current_temperature_status_label {
+	-fx-font-size: 22.0px;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *               Brake System 	                                         	   *
+ *                                                                             *
+ ******************************************************************************/
+.label.status-table-label:serv_brk_isolated {
+	-fx-background-image: url('../images/brake_blue.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:serv_brk_faulty {
+	-fx-background-image: url('../images/brake_red.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:serv_brk_applied {
+	-fx-background-image: url('../images/brake_green.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:serv_brk_not_applied {
+	-fx-background-image: url('../images/brake_orange1.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:prkg_brk_isolated {
+	-fx-background-image: url('../images/parking_brake_blue.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:prkg_brk_applied {
+	-fx-background-image: url('../images/parking_brake_green.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:prkg_brk_not_applied {
+	-fx-background-image: url('../images/parking_brake_orange.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:serv_brk_unknown, .label.status-table-label:prkg_brk_unknown,
+	.label.status-table-label:wsp_unknown, .label.status-table-label:wsp_unknown,
+	.label.status-table-label:susp_unknown, .label.status-table-label:becu_unknown,
+	.label.status-table-label:trn_line_unknown, .label.status-table-label:fsb_unknown,
+	.label.status-table-label:eb_line_unknown, .label.status-table-label:hld_brk_unknown,
+	.label.status-table-label:ed_cut_out_unknown, .label.status-table-label:epic_unknown,
+	.label.status-table-label:rpress_unknown {
+	visibility: false;
+}
+
+.label.status-table-label:wsp_activated {
+	-fx-background-color: yellow;
+	-fx-text-fill: rgb(186.0, 184.0, 180.0);
+	-fx-background-insets: 8.0px 6.0px 6.0px 6.0px;
+}
+
+.label.status-table-label:susp_activated {
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+	-fx-background-insets: 8.0px 6.0px 6.0px 6.0px;
+}
+
+.label.status-table-label:susp_faulty {
+	-fx-background-color: red;
+	-fx-text-fill: white;
+	-fx-background-insets: 8.0px 6.0px 6.0px 6.0px;
+}
+
+.label.status-table-label:wsp_not_activated, .label.status-table-label:susp_not_activated
+	{
+	-fx-background-color: grey;
+	-fx-text-fill: rgb(186.0, 184.0, 180.0);
+	-fx-background-insets: 8.0px 6.0px 6.0px 6.0px;
+}
+
+.label.status-table-label:becu_ok {
+	-fx-background-image: url('../images/brake_control_unit_white.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:becu_not_ok {
+	-fx-background-image: url('../images/brake_control_unit_grey.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:becu_major_fault {
+	-fx-background-image: url('../images/brake_control_unit_red.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:becu_minor_fault {
+	-fx-background-image: url('../images/brake_control_unit_yellow.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 50.0%;
+}
+
+.label.status-table-label:trn_line_energized, .label.status-table-label:fsb_energized,
+	.label.status-table-label:eb_line_energized, .label.status-table-label:hld_brk_applied,
+	.label.status-table-label:ed_cut_out_active {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-background-insets: 4.0px 6.0px 4.0px 6.0px;
+}
+
+.label.status-table-label:trn_line_not_energized, .label.status-table-label:fsb_not_energized,
+	.label.status-table-label:eb_line_not_energized, .label.status-table-label:hld_brk_not_applied,
+	.label.status-table-label:ed_cut_out_not_active, .label.status-table-label:epic_not_isolated,
+	.label.status-table-label:rpress_not_isolated {
+	-fx-background-color: grey;
+	-fx-text-fill: rgb(186.0, 184.0, 180.0);
+	-fx-background-insets: 4.0px 6.0px 4.0px 6.0px;
+}
+
+.label.status-table-label:epic_isolated, .label.status-table-label:rpress_isolated
+	{
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+	-fx-background-insets: 6.0px 10.0px 6.0px 8.0px;
+}
+
+.label.status-table-label:brake_header_label {
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.label.status-table-label:brake_screen_label_font_size_1 {
+	-fx-font-size: 12.0px;
+}
+
+.label.status-table-label:brake_screen_label_font_size_1 {
+	-fx-font-size: 12.0px;
+	-fx-alignment: center-right;
+}
+
+.label.status-table-label:brake_screen_label_font_size_2 {
+	-fx-font-size: 10.0px;
+	-fx-alignment: center-right;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *               FIRE DETECTION                                        	       *
+ *                                                                             *
+ ******************************************************************************/
+.label.status-table-label:fdu_fault_not_energized, .label.status-table-label:fire_sensor_fault_faulty
+	 {
+	-fx-background-color: red;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+
+.label.status-table-label:wired_line_faulty {
+	-fx-background-color: yellow;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:fdu_fault_energized, .label.status-table-label:fire_sensor_fault_not_faulty,
+	.label.status-table-label:fire_sensor_alarm_normal, .label.status-table-label:fire_sensor_disabled_not_disabled,
+	.label.status-table-label:wired_line_healthy {
+	-fx-background-color: black;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+.label.status-table-label:fdu_fault_unknown, .label.status-table-label:fire_sensor_fault_unknown,
+	.label.status-table-label:fire_sensor_alarm_unknown, .label.status-table-label:fire_sensor_disabled_unknown,
+	.label.status-table-label:wired_line_unknown {
+	-fx-background-color: grey;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+.label.status-table-label:fdu_fault_not_available, .label.status-table-label:wired_line_not_available,
+	.label.status-table-label:wired_line_not_available_under_frame_fire,
+	.label.status-table-label:wired_line_not_available_internal_fire {
+	visibility: hidden;
+}
+
+.label.status-table-label:fire_sensor_alarm_pre_alarm {
+	-fx-background-color: yellow;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:fire_sensor_alarm_heat_smoke {
+	-fx-background-color: orange;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:fire_sensor_disabled_disabled {
+	-fx-background-color: blue;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+.label.status-table-label:wired_line_healthy_under_frame_fire {
+	-fx-background-color: black;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-font-size: 10.0px;
+}
+
+ .label.status-table-label:wired_line_healthy_external_smoke
+	{
+	-fx-background-color: orange;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:wired_line_healthy_internal_fire
+	{
+	-fx-background-color: yellow;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+
+.label.status-table-label:wired_line_unknown_external_smoke, .label.status-table-label:wired_line_unknown_internal_fire
+	{
+	-fx-background-color: black;
+	-fx-border-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 0.0px 12.0px 1.0px 12.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+.button.button-fire-detection-default {
+	-fx-font-size: 15.0px;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *        CSS class for heading and labels inside OperatingHelpScreen          *
+ *                                                                             *
+ ******************************************************************************/
+.status-operating-help-screen-heading {
+	-fx-text-fill: yellow;
+	-fx-font-size: 12.0px;
+	-fx-font-weight: bold;
+}
+
+.status-operating-help-screen-component-name {
+	-fx-text-fill: white;
+	-fx-font-size: 12.0px;
+	-fx-font-weight: bold;
+}
+
+.cab-status-active {
+	-fx-background-radius: 20.0 0.0 0.0 0.0;
+	-fx-background-color: linear-gradient(to right, rgb(0.0, 255.0, 0.0)
+		60.0%, grey 40.0%);
+}
+
+.cab-status-not-active {
+	-fx-background-radius: 20.0 0.0 0.0 0.0;
+	-fx-background-color: grey;
+}
+
+.boogie-isolation-status {
+	-fx-background-color: grey;
+	-fx-background-position: bottom;
+}
+
+.special-modes-icons-not-active {
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+}
+
+.special-modes-icons-active {
+	-fx-background-color: white 20.0%;
+	-fx-text-fill: black;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+}
+
+.passenger-alarm-status-not-active {
+	-fx-background-radius: 20.0 20.0 20.0 20.0;
+	-fx-background-color: white;
+}
+
+.passenger-alarm-status-active {
+	-fx-background-radius: 20.0 20.0 20.0 20.0;
+	-fx-background-color: red;
+}
+
+.train-direction-icons-forward-for-DM1 {
+	-fx-background-image: url('../images/left_arrow.png');
+	-fx-background-repeat: no-repeat;
+}
+
+.train-direction-icons-forward-for-DM6 {
+	-fx-background-image: url('../images/right_arrow.png');
+	-fx-background-repeat: no-repeat;
+}
+
+.vcb-status-icons-open {
+	-fx-background-image: url('../images/vcb_open.png');
+	-fx-background-repeat: no-repeat;
+	-fx-size: 10.0px;
+}
+
+.vcb-status-icons-closed {
+	-fx-background-image: url('../images/vcb_closed.png');
+	-fx-background-repeat: no-repeat;
+}
+
+.vcb-status-icons-open-and-faulty {
+	-fx-background-image: url('../images/vcb_open_and_fault.png');
+	-fx-background-repeat: no-repeat;
+}
+
+.vcb-status-icons-closed-and-faulty {
+	-fx-background-image: url('../images/vcb_closed_and_fault.png');
+	-fx-background-repeat: no-repeat;
+}
+
+.vcb-status-icons-isolated {
+	-fx-background-image: url('../images/vcb_isolated.png');
+	-fx-background-repeat: no-repeat;
+}
+
+.train-sideview-wheel-isolated {
+	-fx-background-image: url('../images/operating_help_bogie_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-sideview-wheel-not-isolated {
+	-fx-background-image:
+		url('../images/operating_help_bogie_not_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-top-view-propulsion-power_or_brake {
+	-fx-background-image: url('../images/propulsion_white.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 90.0%;
+}
+
+.train-top-view-propulsion-coasting_or_off {
+	-fx-background-image: url('../images/propulsion_gray.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 90.0%;
+}
+
+.train-top-view-propulsion-faulty {
+	-fx-background-image: url('../images/propulsion_red.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 90.0%;
+}
+
+.train-top-view-propulsion-isolated {
+	-fx-background-image: url('../images/propulsion_blue.png');
+	-fx-background-position: bottom;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 90.0%;
+}
+
+.train-top-view-service-brake-applied {
+	-fx-background-image: url('../images/brake_green.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-top-view-service-brake-not_applied {
+	-fx-background-image: url('../images/brake_orange.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-top-view-service-brake-faulty {
+	-fx-background-image: url('../images/brake_red.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-top-view-parking-brake-applied {
+	-fx-background-image: url('../images/parking_brake_green.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-top-view-parking-brake-not_applied {
+	-fx-background-image: url('../images/parking_brake_orange.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.train-top-view-parking-brake-isolated {
+	-fx-background-image: url('../images/parking_brake_blue.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *               HVAC SYSTEM STATUS SCREEN                                     *
+ *                                                                             *
+ ******************************************************************************/
+.label.status-table-label:hvac_unknown {
+	-fx-background-color: grey;
+	-fx-border-color: grey;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:hvac_isolated {
+	-fx-background-color: blue;
+	-fx-border-color: blue;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:hvac_faulty {
+	-fx-background-color: red;
+	-fx-border-color: red;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:hvac_ok {
+	-fx-background-color: white;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:hvac_temperature {
+	-fx-background-color: black;
+	-fx-border-color: black;
+	-fx-text-fill: white;
+	-fx-font-size: 22.0;
+	-fx-font-weight: bold;
+}
+
+.button.button-hvac-system-screen {
+	-fx-font-size: 20.0px;
+}
+
+.label.status-table-label:hvac_auto {
+	-fx-background-color: white;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:damper_status {
+	-fx-background-color: black;
+	-fx-border-color: black;
+	-fx-text-fill: white;
+	-fx-font-size: 20.0px;
+}
+/******************************************************************************
+ *                                                                             *
+ *             WHEEL FLANGE LUBRICATOR SYSTEM STATUS SCREEN                    *
+ *                                                                             *
+ ******************************************************************************/
+.label.status-table-label:wfl_status_ok, .label.status-table-label:wfl_pump_status_active
+	{
+	-fx-border-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-background-color: white;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:wfl_status_faulty {
+	-fx-border-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-background-color: red;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:wfl_status_unknown, .label.status-table-label:wfl_oil_level_status_unknown,
+	.label.status-table-label:wfl_pump_status_unknown {
+	-fx-border-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-background-color: grey;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:wfl_oil_level_status_high, .label.status-table-label:wfl_pump_status_not_active
+	{
+	-fx-border-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-background-color: black;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+.label.status-table-label:wfl_oil_level_status_low {
+	-fx-border-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-background-color: yellow;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:wfl_oil_level_status_blank, .label.status-table-label:wfl_pump_status_blank,
+	.label.status-table-label:wfl_status_blank {
+	-fx-text-fill: transparent;
+	-fx-background-color: transparent;
+}
+
+.button.wfl_isolated_button {
+	-fx-font-size: 14.0px;
+}
+
+.button.wfl_isolated_button:armed {
+	-fx-background-color: green;
+}
+
+.label.status-table-label:wfl_status_isolated {
+	-fx-border-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 12.0px 4.0px 12.0px;
+	-fx-background-color: blue;
+	-fx-border-color: blue;
+	-fx-text-fill: black;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *             Active Faults Screen                   							*
+ *                                                                             *
+ ******************************************************************************/
+.filter-main-grid {
+	-fx-background-color: rgb(196.0, 196.0, 196.0);
+	-fx-border-color: white;
+	-fx-border-width: 4.0px;
+	-fx-border-radius: 12.0px;
+	-fx-background-radius: 12.0px;
+}
+
+.filter-sub-grid {
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+	-fx-border-color: white;
+	-fx-border-width: 4.0px;
+	-fx-border-radius: 12.0px;
+	-fx-background-radius: 12.0px;
+}
+
+.active-faults-count-label {
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-background-color: black;
+}
+
+.active-faults-table {
+	-fx-focus-color: transparent;
+	-fx-focus-traversable: false;
+	-fx-background-color: transparent;
+	-fx-alignment: center;
+	-fx-base: transparent;
+	-fx-background-color: transparent;
+	-fx-control-inner-background: transparent;
+	-fx-table-cell-border-color: black;
+	-fx-table-header-border-color: transparent;
+}
+
+.active-faults-table .table-cell {
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: normal;
+	-fx-border-color: white;
+	-fx-border-width: 1.0 0.0 0.0 0.0;
+	-fx-padding: 0.0;
+	-fx-alignment: center-left;
+	-fx-wrap-text: true;
+}
+
+.active-faults-table .table-row-cell {
+	-fx-background-color: grey;
+	-fx-border-color: black;
+	-fx-table-cell-border-color: transparent;
+}
+
+.active-faults-table .table-cell:priority_1 {
+	-fx-text-fill: blue;
+}
+
+.active-faults-table .table-cell:priority_2 {
+	-fx-text-fill: red;
+}
+
+.active-faults-table .table-cell:any_priority {
+	-fx-text-fill: green;
+}
+
+.active-faults-table .cell.indexed-cell:any_priority {
+	-fx-background-color: transparent;
+}
+
+.active-faults-table .cell.indexed-cell:priority_1 {
+	-fx-background-color: red;
+	-fx-text-background-color: black;
+	-fx-text-fill: black;
+}
+
+.active-faults-table .cell.indexed-cell:priority_2 {
+	-fx-background-color: yellow;
+	-fx-text-background-color: white;
+	-fx-text-fill: white;
+}
+
+.active-faults-table .column-header .label {
+	-fx-text-fill: yellow;
+	-fx-font-size: 17.0px;
+	-fx-background-color: black;
+	-fx-border-width: 0.0;
+	-fx-border-color: black;
+	-fx-alignment: center-left;
+	-fx-border-style: none;
+	-fx-table-cell-border-color: transparent;
+}
+
+.button.active-faults-update-button, .button.active-faults-update-button:unselected
+	{
+	-fx-font-size: 17.0px;
+	-fx-background-radius: 12.0px;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+	-fx-font-weight: bold;
+}
+
+.button.active-faults-update-button:armed {
+	-fx-background-color: yellow;
+	-fx-text-fill: white;
+}
+
+.button.active-faults-update-button:selected {
+	-fx-background-color: linear-gradient(to bottom, yellow 10.0%, rgb(197, 191, 45)
+		30.0%, rgb(180.0, 175.0, 41.0) 50.0%, rgb(109.0, 102.0, 0) 80.0%,
+		rgb(50.0, 50.0, 5.0) 100.0%);
+}
+
+.button.filter-options-button-default, .button.filter-options-button-default:unselected
+	{
+	-fx-font-size: 15.0px;
+	-fx-background-radius: 12.0px;
+	-fx-background-insets: 3.0, 0.0, 3.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.button.filter-options-button-default:selected {
+	-fx-background-color: linear-gradient(to bottom, yellow 10.0%, rgb(197, 191, 45)
+		30.0%, rgb(180.0, 175.0, 41.0) 50.0%, rgb(109.0, 102.0, 0) 80.0%,
+		rgb(50.0, 50.0, 5.0) 100.0%);
+	-fx-text-fill: white;
+}
+
+.button.filter-options-button-default:armed {
+	-fx-background-color: yellow;
+	-fx-text-fill: white;
+}
+
+.button.filter-submenu-buttons, .button.filter-submenu-buttons:unselected
+	{
+	-fx-font-size: 15.0px;
+	-fx-background-radius: 10.0px;
+	-fx-background-insets: 3.0, 0.0, 3.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.button.filter-submenu-buttons:armed {
+	-fx-background-color: yellow;
+	-fx-text-fill: white;
+}
+
+.button.active-faults-up-button, .active-faults-up-button:not_active {
+	-fx-background-image: url('../images/arrow_up_grey.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.active-faults-up-button:active {
+	-fx-background-image: url('../images/arrow_up_black.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.active-faults-up-button:armed {
+	-fx-background-image: url('../images/arrow_up_black.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: yellow;
+}
+
+.button.active-faults-down-button, .active-faults-down-button:not_active
+	{
+	-fx-background-image: url('../images/arrow_down_grey.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.active-faults-down-button:active {
+	-fx-background-image: url('../images/arrow_down_black.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.active-faults-down-button:armed {
+	-fx-background-image: url('../images/arrow_down_black.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: yellow;
+}
+
+.button.active-faults-filter-button:selected {
+	-fx-background-image: url('../images/filter_icon_grey.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: linear-gradient(to bottom, yellow 10.0%, rgb(197, 191, 45)
+		30.0%, rgb(180.0, 175.0, 41.0) 50.0%, rgb(109.0, 102.0, 0) 80.0%,
+		rgb(50.0, 50.0, 5.0) 100.0%);
+}
+
+.button.active-faults-filter-button, .active-faults-filter-button:unselected
+	{
+	-fx-background-image: url('../images/filter_icon_black.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.active-faults-filter-button:armed {
+	-fx-background-color: yellow;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *             Fault Details Screen                   							*
+ *                                                                             *
+ ******************************************************************************/
+.fault-details-header-labels {
+	-fx-text-fill: rgb(253.0, 253.0, 14.0);
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-background-color: rgb(51.0, 51.0, 51.0);
+}
+
+.fault-details-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+}
+
+.fault-details-date-time-label {
+	-fx-text-fill: white;
+	-fx-font-size: 13.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+}
+
+.fault-detail-operator-guide-label {
+	-fx-text-fill: white;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: top-left;
+}
+
+.button.fault-details-button, .button.fault-details-button:unselected {
+	-fx-font-size: 16.0px;
+	-fx-background-radius: 12.0px;
+	-fx-background-insets: 0.0, 0.0, 5.0, 0.0;
+	-fx-padding: 0.0px 0.0px 4.0px 0.0px;
+}
+
+.button.fault-details-button:armed {
+	-fx-text-fill: white;
+	-fx-background-color: yellow;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      LIGHT SYSTEM STATUS SCREEN                             *
+ *                                                                             *
+ ******************************************************************************/
+.label.status-table-label:light_system_unknown {
+	-fx-border-insets: 4.0px 26.0px 4.0px 26.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 26.0px 4.0px 26.0px;
+	-fx-background-color: grey;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:light_system_on {
+	-fx-border-insets: 4.0px 26.0px 4.0px 26.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 26.0px 4.0px 26.0px;
+	-fx-background-color: white;
+	-fx-border-color: white;
+	-fx-text-fill: black;
+}
+
+.label.status-table-label:light_system_off {
+	-fx-border-insets: 4.0px 26.0px 4.0px 26.0px;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-background-insets: 4.0px 26.0px 4.0px 26.0px;
+	-fx-background-color: black;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+}
+
+.label.status-table-label:light_system_unavailable {
+	visibility: false;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      LOW VOLTAGE SYSTEM COMMANDS SCREEN                     *
+ *                                                                             *
+ ******************************************************************************/
+.button.button-isolate-bcg:isolate {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 3.0px;
+	-fx-background-insets: 0.0, 5.0, 0.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+	-fx-background-color: white;
+}
+
+.button.button-isolate-bcg:reinsert {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 3.0px;
+	-fx-background-insets: 0.0, 5.0, 0.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}
+
+.button.button-popb {
+	-fx-background-radius: 0.0px;
+	-fx-background-insets: 0.0, 5.0, 0.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.button.button-popb:armed {
+	-fx-background-color: yellow;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *             Event Area Display Panel                                         *
+ *                                                                             *
+ ******************************************************************************/
+.event-display-area-grid-border {
+	-fx-border-color: white;
+	-fx-border-width: 3.0 2.0 2.0 0.0;
+}
+
+.event-display-area-label, .event-display-area-label-any_priority {
+	-fx-text-fill: white;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: normal;
+	-fx-border-color: white;
+	-fx-border-width: 0.0 2.0 0.0 0.0;
+	-fx-padding: 0.0;
+	-fx-alignment: center;
+	-fx-background-color: black;
+	-fx-wrap-text: true;
+}
+
+.event-display-area-label-priority_1 {
+	-fx-text-fill: white;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: normal;
+	-fx-border-color: white;
+	-fx-border-width: 0.0 2.0 0.0 0.0;
+	-fx-padding: 0.0;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+	-fx-background-color: red;
+}
+
+.event-display-area-label-priority_2 {
+	-fx-background-color: yellow;
+	-fx-text-fill: black;
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: normal;
+	-fx-border-color: white;
+	-fx-border-width: 0.0 3.0 0.0 0.0;
+	-fx-padding: 0.0;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *             Energy Consumption Counters Screen                   		   *
+ *                                                                             *
+ ******************************************************************************/
+.counters-header-label {
+	-fx-text-fill: rgb(253.0, 253.0, 14.0);
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+}
+
+.energy-counters-table {
+	-fx-focus-color: transparent;
+	-fx-focus-traversable: false;
+	-fx-background-color: transparent;
+	-fx-alignment: center;
+	-fx-base: transparent;
+	-fx-background-color: transparent;
+	-fx-control-inner-background: #1d1d1d;
+	-fx-table-cell-border-color: transparent;
+	-fx-table-header-border-color: transparent;
+}
+
+.energy-counters-table .table-cell {
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: normal;
+	-fx-border-color: transparent;
+	-fx-border-width: 0.0 0.0 0.0 0.0;
+	-fx-padding: 0.0;
+	-fx-alignment: center;
+	-fx-background-color: black;
+	-fx-wrap-text: true;
+}
+
+.energy-consump-counts-label {
+	-fx-text-fill: white;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-background-color: black;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *             TEST SCREENS                  		  						   *
+ *                                                                             *
+ ******************************************************************************/
+.test-screen-count-label {
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-background-color: black;
+}
+
+.test-screen-table {
+	-fx-focus-color: transparent;
+	-fx-focus-traversable: false;
+	-fx-background-color: transparent;
+	-fx-alignment: center;
+	-fx-base: transparent;
+	-fx-background-color: transparent;
+	-fx-control-inner-background: #1d1d1d;
+	-fx-table-cell-border-color: black;
+	-fx-table-header-border-color: transparent;
+}
+
+.test-screen-table .table-cell, .test-screen-table .table-cell .any_priority
+	{
+	-fx-text-fill: white;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: normal;
+	-fx-border-color: white;
+	-fx-border-width: 1.0 0.0 0.0 0.0;
+	-fx-padding: 2.0;
+	-fx-alignment: center-left;
+	-fx-background-color: black;
+	-fx-wrap-text: true;
+}
+
+.cell .indexed-cell .table-row-cell .priority_1, .test-screen-table .table-cell .priority_1
+	{
+	-fx-background-color: red;
+}
+
+.test-screen-table .table-cell .priority_2 {
+	-fx-background-color: yellow;
+}
+
+.test-screen-table .column-header .label {
+	-fx-text-fill: yellow;
+	-fx-font-size: 17.0px;
+	-fx-background-color: black;
+	-fx-border-width: 0.0;
+	-fx-border-color: black;
+	-fx-alignment: center-left;
+	-fx-border-style: none;
+	-fx-table-cell-border-color: transparent;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *             Odometer Counter Screen                   						*
+ *                                                                             *
+ ******************************************************************************/
+.odometer-header-label {
+	-fx-text-fill: green;
+	-fx-font-size: 22.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-background-color: rgb(51.0, 51.0, 51.0);
+}
+
+.odometer-label {
+	-fx-text-fill: white;
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+	-fx-background-color: black;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *             High Voltage System Screen                   					*
+ *                                                                             *
+ ******************************************************************************/
+.hv-dm-front-car {
+	-fx-background-image: url('../images/hv_dm_front.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-t-car {
+	-fx-background-image: url('../images/hv_t.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-m-left-car {
+	-fx-background-image: url('../images/hv_m_left.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-m-right-car {
+	-fx-background-image: url('../images/hv_m_right.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-dm-rear-car {
+	-fx-background-image: url('../images/hv_dm_rear.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-dm-front-car-k-contactor:closed {
+	-fx-background-image: url('../images/hv_double_switch_close.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 85.0%;
+}
+
+.hv-dm-front-car-k-contactor, .hv-dm-front-car-k-contactor:open {
+	-fx-background-image: url('../images/hv_double_switch_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 83.0%;
+}
+
+.hv-dm-front-car-ak-contactor:open {
+	-fx-background-image: url('../images/hv_single_switch_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 55.0%;
+}
+
+.hv-dm-front-car-ak-contactor, .hv-dm-front-car-ak-contactor:closed {
+	-fx-background-image: url('../images/hv_single_switch_close.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 54.0%;
+}
+
+.hv-panto, .hv-panto:raised {
+	-fx-background-image: url('../images/pantograph_raised.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-panto:raised_faulty {
+	-fx-background-image: url('../images/pantograph_raised_faulty.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-panto:lowered {
+	-fx-background-image: url('../images/pantograph_lowered.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-panto:lowered_faulty {
+	-fx-background-image: url('../images/pantograph_lowered_faulty.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-panto:isolated {
+	-fx-background-image: url('../images/pantograph_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-panto:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-egs:closed {
+	-fx-background-image: url('../images/hv_vertical_double_close.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 53.0%;
+}
+
+.hv-egs, .hv-egs:open {
+	-fx-background-image: url('../images/hv_vertical_double_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 53.0%;
+}
+
+.hv-vcb, .hv-vcb:closed {
+	-fx-background-image: url('../images/hv_vcb_close.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 33.0%;
+}
+
+.hv-vcb:closed_and_faulty {
+	-fx-background-image: url('../images/hv_vcb_closed_and_fault.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 30.0%;
+}
+
+.hv-vcb:open {
+	-fx-background-image: url('../images/hv_vcb_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 33.0%;
+}
+
+.hv-vcb:open_and_faulty {
+	-fx-background-image: url('../images/hv_vcb_open_and_fault.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 30.0%;
+}
+
+.hv-vcb:isolated {
+	-fx-background-image: url('../images/hv_vcb_isolated.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 31.0%;
+}
+
+.hv-vcb:unknown {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.hv-t-car-single-switch-k:k_state_closed {
+	-fx-background-image: url('../images/hv_single_switch_close.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 65.0%;
+}
+
+.hv-t-car-single-switch-ak:ak_state_closed {
+	-fx-background-image: url('../images/hv_single_switch_close.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 65.0%;
+}
+
+.hv-t-car-single-switch-ak:ak_state_open {
+	-fx-background-image: url('../images/hv_single_switch_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 65.0%;
+}
+
+.hv-t-car-single-switch-k:k_state_open {
+	-fx-background-image: url('../images/hv_single_switch_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 65.0%;
+}
+
+.aps-status-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+	-fx-background-color: white;
+	-fx-alignment: center;
+}
+
+.aps-status-label:aps_cu_unknown {
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+}
+
+.aps-status-label:aps_cu_active {
+	-fx-background-color: green;
+	-fx-text-fill: white;
+}
+
+.aps-status-label:aps_cu_not_active {
+	-fx-background-color: grey;
+	-fx-text-fill: white;
+}
+
+.aps-status-label:aps_cu_faulty {
+	-fx-background-color: red;
+	-fx-text-fill: white;
+}
+
+.aps-status-label:aps_cu_isolated {
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}
+
+.hv-ci-propulsion, .hv-ci-propulsion:power_or_brake {
+	-fx-background-color: green;
+	-fx-text-fill: white;
+}
+
+.hv-ci-propulsion:coasting_or_off {
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+}
+
+.hv-ci-propulsion:faulty {
+	-fx-background-color: red;
+	-fx-text-fill: white;
+}
+
+.hv-ci-propulsion:isolated {
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}
+
+.hv-car-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.hv-ci-state, .hv-ci-propulsion:ci_active {
+	-fx-background-color: green;
+	-fx-text-fill: white;
+}
+
+.hv-ci-state:ci_off {
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+}
+
+.hv-ci-state:ci_faulty {
+	-fx-background-color: red;
+	-fx-text-fill: white;
+}
+
+.hv-ci-state:ci_isolated {
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                            Route Screen                                     *
+ *                                                                             *
+ ******************************************************************************/
+.route-screen-title-label {
+	-fx-text-fill: white;
+	-fx-font-size: 14.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.route-screen-sub-title-label {
+	-fx-text-fill: white;
+	-fx-font-size: 13.0px;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: bottom-left;
+	-fx-font-weight: bold;
+}
+
+.route-screen-boxed-label {
+	-fx-text-fill: white;
+	-fx-font-size: 14.0px;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-border-width: 1.0px;
+	-fx-border-color: white;
+	-fx-border-insets: 1.0px;
+}
+
+.route-train-id-boxed-label {
+	-fx-text-fill: black;
+	-fx-background-color: white;
+	-fx-font-size: 12.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-border-width: 1.5px;
+	-fx-border-color: black;
+	-fx-border-insets: 1.0px;
+}
+
+.train-id-main-grid {
+	-fx-background-color: rgb(196.0, 196.0, 196.0);
+	-fx-border-radius: 12.0px;
+	-fx-background-radius: 12.0px;
+}
+
+.button.route-screen-mode-buttons, .button.route-screen-mode-buttons:unselected
+	{
+	-fx-font-size: 15.0px;
+	-fx-text-fill: black;
+}
+
+.button.route-screen-mode-buttons:selected {
+	-fx-text-fill: white;
+}
+
+.button.route-screen-mode-buttons:armed {
+	-fx-text-fill: white;
+	-fx-background-color: yellow;
+}
+
+.button.platform-buttons, .button.platform-buttons:unselected {
+	-fx-font-size: 15.0px;
+	-fx-text-fill: black;
+}
+
+.button.platform-buttons:selected {
+	-fx-font-size: 15.0px;
+	-fx-text-fill: black;
+	-fx-background-color: green;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      LOW VOLTAGE SYSTEM STATUS SCREEN                       *
+ *                                                                             *
+ ******************************************************************************/
+.lv-dm-front-car {
+	-fx-background-image: url('../images/lv_dm1.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.lv-dm-rear-car {
+	-fx-background-image: url('../images/lv_dm6.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.lv-m-car {
+	-fx-background-image: url('../images/lv_m.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.lv-t-car {
+	-fx-background-image: url('../images/lv_t.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.lv-car-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.lv-static-label {
+	-fx-text-fill: black;
+	-fx-font-size: 10.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.lv-bcg-status-label, .lv-bcg-status-label:bcg_ok {
+	-fx-background-color: green;
+	-fx-background-position: center;
+	-fx-font-size: 14.0px;
+	-fx-text-fill: white;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.lv-bcg-status-label:bcg_faulty {
+	-fx-background-color: red;
+	-fx-text-fill: black;
+	-fx-background-position: center;
+}
+
+.lv-bcg-status-label:bcg_isolated {
+	-fx-background-color: blue;
+	-fx-text-fill: black;
+	-fx-background-position: center;
+}
+
+.lv-bcg-status-label:bcg_unknown {
+	-fx-background-color: grey;
+	-fx-text-fill: black;
+	-fx-background-position: center;
+}
+
+.lv-bcg-status-label:bcg_blank {
+	visibility: hidden;
+}
+
+.lv-bic-tcc-switch:bic_open, .lv-bic-tcc-switch:tcc_open {
+	-fx-background-image: url('../images/lv_switch_disconnected.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 67.0%;
+}
+
+.lv-bic-tcc-switch, .lv-bic-tcc-switch:bic_closed, .lv-bic-tcc-switch:tcc_closed
+	{
+	-fx-background-image: url('../images/lv_switch_connected.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 65.0%;
+}
+
+.lv-switch-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 9.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.lv-status-label, .lv-status-label:aux_comp_active {
+	-fx-text-fill: black;
+	-fx-font-size: 9.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-background-color: white;
+	-fx-font-weight: bold;
+}
+
+.lv-status-label:aux_comp_inactive {
+	-fx-background-color: grey;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      TCMS Event Recorders Screen                                 *
+ *                                                                             *
+ ******************************************************************************/
+.event-records-screen {
+	-fx-background-image: url('../images/event_records_screen.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      TCMS SW Versions Screen                                 *
+ *                                                                             *
+ ******************************************************************************/
+.software-version-screen {
+	-fx-background-image: url('../images/software_version_screen.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      TCMS Remote I/O Screen                                 *
+ *                                                                             *
+ ******************************************************************************/
+.remote-io-screen {
+	-fx-background-image: url('../images/remote_io_screen.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      TCMS ECN STATUS SCREEN                                 *
+ *                                                                             *
+ ******************************************************************************/
+.ecn-car-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.ecn-dm-car-front-bg-image {
+	-fx-background-image: url('../images/ecn_dm_front_car.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-dm-rear-bg-image {
+	-fx-background-image: url('../images/ecn_dm_rear.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-t-m-bg-image {
+	-fx-background-image: url('../images/ecn_t_m.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 99.5%;
+}
+
+.ecn-status-label, .ecn-status-label:cs_ok, .ecn-status-label:alg_ok,
+	.ecn-status-label:tbn_ok {
+	-fx-background-color: white;
+	-fx-background-radius: 14.0px;
+	-fx-text-fill: black;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-size: 24.0px;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.ecn-status-label:cs_not_available, .ecn-status-label:alg_not_available,
+	.ecn-status-label:tbn_not_available {
+	-fx-background-color: grey;
+}
+
+.ecn-status-label:cs_faulty, .ecn-status-label:alg_faulty,
+	.ecn-status-label:tbn_faulty {
+	-fx-background-color: red;
+}
+
+.ecn-ter-status-label, .ecn-ter-status-label:ter_ok {
+	-fx-background-color: white;
+	-fx-background-radius: 6.0px;
+}
+
+.ecn-ter-status-label:ter_not_available {
+	-fx-background-color: grey;
+	-fx-background-radius: 6.0px;
+}
+
+.ecn-ter-status-label:ter_faulty {
+	-fx-background-color: red;
+	-fx-background-radius: 6.0px;
+}
+
+.ecn-ter-label {
+	-fx-text-fill: black;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-size: 24.0px;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.ecn-tbn-front-label, .ecn-tbn-front-label:tbn_ok {
+	-fx-background-image: url('../images/ecn_dm_front_tbn_white.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-tbn-front-label:tbn_not_available {
+	-fx-background-image: url('../images/ecn_dm_front_tbn_grey.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-tbn-front-label:tbn_faulty {
+	-fx-background-image: url('../images/ecn_dm_front_tbn_red.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-tbn-rear-label, .ecn-tbn-rear-label:tbn_ok {
+	-fx-background-image: url('../images/ecn_dm_rear_tbn_white.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-tbn-rear-label:tbn_not_available {
+	-fx-background-image: url('../images/ecn_dm_rear_tbn_grey.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-tbn-rear-label:tbn_faulty {
+	-fx-background-image: url('../images/ecn_dm_rear_tbn_red.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.ecn-small-label {
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-size: 14.0px;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      TCMS System Status SCREEN                                 *
+ *                                                                             *
+ ******************************************************************************/
+.status-dm-front-car-screen {
+	-fx-background-image: url('../images/dm1.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.status-dm-rear-car-screen {
+	-fx-background-image: url('../images/dm6.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.status-middle-car-screen {
+	-fx-background-image: url('../images/t2.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.tcms-status-label, .tcms-status-label:ccu_ok, .tcms-status-label:rio1_ok,
+	.tcms-status-label:er_ok, .tcms-status-label:rio2_ok {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: Arial;
+	-fx-alignment: center;
+	-fx-background-color: rgb(0, 203.0, 0);
+	-fx-background-radius: 7.0px;
+	-fx-font-weight: bold;
+}
+
+.tcms-status-label, .tcms-status-label:rio1_unknown, .tcms-status-label:rio2_unknown
+	{
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: Arial;
+	-fx-alignment: center;
+	-fx-background-color: white;
+	-fx-background-radius: 7.0px;
+	-fx-font-weight: bold;
+}
+
+.tcms-status-label:ccu_faulty, .tcms-status-label:rio1_faulty,
+	.tcms-status-label:er_faulty, .tcms-status-label:rio2_faulty {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: Arial;
+	-fx-alignment: center;
+	-fx-background-color: red;
+	-fx-background-radius: 7.0px;
+	-fx-font-weight: bold;
+}
+
+.tcms-line-status, .tcms-line-status:rio12line_ok {
+	-fx-background-image: url('../images/tcms_status_ok_line.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 80.0%;
+}
+
+.tcms-line-status:rio12line_faulty {
+	-fx-background-image: url('../images/tcms_status_faulty_line.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 80.0%;
+}
+
+.tcms-long-line-status, .tcms-long-line-status:rio12line_ok {
+	-fx-background-image: url('../images/tcms_ok_line.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.tcms-long-line-status:rio12line_faulty {
+	-fx-background-image: url('../images/tcms_faulty_line.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      MEDIUM VOLTAGE SYSTEM SCREEN                           *
+ *                                                                             *
+ ******************************************************************************/
+.mv-car-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+.mv-pec {
+	-fx-text-fill: white;
+	-fx-font-size: 9.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: bottom-center;
+	-fx-font-weight: bold;
+}
+
+.mv-booster-fan-label {
+	-fx-text-fill: black;
+	-fx-font-size: 9.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-background-color: grey;
+	-fx-background-radius: 7.0px;
+	-fx-font-weight: bold;
+}
+
+.mv-status-label, .mv-status-label:hvac_operating_unit_off,
+	.mv-status-label:aux_comp_active, .mv-status-label:main_comp_active {
+	-fx-text-fill: black;
+	-fx-font-size: 9.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-background-color: white;
+	-fx-background-radius: 7.0px;
+	-fx-font-weight: bold;
+}
+
+.mv-status-label, .mv-status-label:main_comp_active {
+	-fx-text-fill: black;
+	-fx-font-size: 9.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-background-color: green;
+	-fx-background-radius: 7.0px;
+	-fx-font-weight: bold;
+}
+
+.mv-status-label:main_comp_inactive, .mv-status-label:aux_comp_inactive,
+	.mv-status-label:bcg_unknown {
+	-fx-background-color: grey;
+}
+
+.mv-status-label:hvac_operating_pre_heating, .mv-status-label:hvac_operating_pre_cooling,
+	.mv-status-label:hvac_operating_ventilation, .mv-status-label:hvac_operating_cooling,
+	.mv-status-label:hvac_operating_heating, .mv-status-label:hvac_operating_emergency_vent,
+	.mv-status-label:bcg_ok {
+	-fx-background-color: green;
+}
+
+.mv-status-label:hvac_operating_fault, .mv-status-label:bcg_faulty {
+	-fx-background-color: red;
+}
+
+.mv-status-label:hvac_operating_isolated, .mv-status-label:bcg_isolated
+	{
+	-fx-background-color: blue;
+}
+
+.mv-shore-supply-status-label {
+	-fx-text-fill: black;
+	-fx-font-size: 9.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-alignment: center;
+	-fx-background-color: grey;
+	-fx-font-weight: bold;
+}
+
+.mv-pec-label, .mv-pec-label:pec_open {
+	-fx-background-image: url('../images/pec_open.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 75.0%;
+}
+
+.mv-pec-label:pec_closed {
+	-fx-background-image: url('../images/pec_closed.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 75.0%;
+}
+
+.mv-dm-front-car-image {
+	-fx-background-image: url('../images/mv_dm_front1.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.mv-dm-rear-car-image {
+	-fx-background-image: url('../images/mv_dm_rear1.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.mv-m-front-car-image {
+	-fx-background-image: url('../images/mv_m_front.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.mv-m-rear-car-image {
+	-fx-background-image: url('../images/mv_m_rear.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.mv-t-front-car-image {
+	-fx-background-image: url('../images/mv_t_front.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.mv-t-rear-car-image {
+	-fx-background-image: url('../images/mv_t_rear.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.mv-aps-status-label {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-wrap-text: true;
+	-fx-background-color: white;
+	-fx-alignment: center;
+}
+
+.mv-aps-status-label:aps_cu_unknown {
+	-fx-background-color: grey;
+}
+
+.mv-aps-status-label:aps_cu_active {
+	-fx-background-color: green;
+}
+
+.mv-aps-status-label:aps_cu_not_active {
+	-fx-background-color: grey;
+}
+
+.mv-aps-status-label:aps_cu_faulty {
+	-fx-background-color: red;
+}
+
+.mv-aps-status-label:aps_cu_isolated {
+	-fx-background-color: blue;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      SPEED LIMIT INTERLOCKS SCREEN                          *
+ *                                                                             *
+ ******************************************************************************/
+.speed-limit-screen-text {
+	-fx-text-fill: rgb(112.0, 112.0, 112.0);
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.speed-limit-screen-selected-state {
+	-fx-text-fill: red;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.panto-label, .panto-label:closed {
+	-fx-text-fill: rgb(112.0, 112.0, 112.0);
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.panto-label:open {
+	-fx-text-fill: red;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.interlock-car-label {
+	-fx-text-fill: white;
+	-fx-font-size: 22.0px;
+	-fx-font-family: Franklin Gothic Demi;
+	-fx-text-alignment: right;
+	-fx-font-weight: bold;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      DOOR LOOP INTERLOCKS SCREEN                            *
+ *                                                                             *
+ ******************************************************************************/
+.door-loop-intrlocks-screen-label, .door-loop-intrlocks-screen-label:closed
+	{
+	-fx-text-fill: rgb(112.0, 112.0, 112.0);
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.door-loop-intrlocks-screen-label:open {
+	-fx-text-fill: red;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      PROPULSION TEMPERATURES SCREEN                         *
+ *                                                                             *
+ ******************************************************************************/
+.prop-temp-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 13.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: bottom-center;
+	-fx-font-weight: bold;
+	-fx-border-color: grey;
+	-fx-border-width: 0 0 2px 0;
+	-fx-padding: 0 0 2 0;
+}
+
+.label.status-table-label:temperatures {
+	-fx-background-color: black;
+	-fx-border-color: black;
+	-fx-text-fill: white;
+	-fx-font-size: 16.0;
+	-fx-font-weight: bold;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      SPECIAL MODES SCREEN                                   *
+ *                                                                             *
+ ******************************************************************************/
+.spc-modes-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: bottom-center;
+	-fx-font-weight: bold;
+	-fx-border-color: grey;
+	-fx-border-width: 0 0 2px 0;
+	-fx-padding: 0 0 2 0;
+}
+
+.spc-modes-status-label, .spc-modes-status-label:inactive {
+	-fx-text-fill: black;
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-alignment: center;
+	-fx-background-color: grey;
+	-fx-text-alignment: center;
+}
+
+.spc-modes-status-label:active {
+	-fx-background-color: green;
+}
+
+.button.spc-modes-washing-speed-button:selected {
+	-fx-background-color: green;
+	-fx-text-fill: white;
+}
+
+.button.spc-modes-washing-speed-button:unselected {
+	-fx-text-fill: white;
+}
+
+.button.spc-activate-buttons:unavailable {
+	-fx-background-color: grey;
+}
+
+.button.spc-activate-buttons, .button.spc-activate-buttons:available {
+	
+}
+
+.button.spc-activate-buttons:activated {
+	-fx-background-color: green;
+}
+
+.button.spc-activate-buttons:armed {
+	-fx-background-color: yellow;
+}
+
+.spc-modes-speed-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      Brake System Commands Screen                           *
+ *                                                                             *
+ ******************************************************************************/
+.brake-commands-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 16.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: bottom-center;
+	-fx-font-weight: bold;
+	-fx-border-color: grey;
+	-fx-border-width: 0 0 2px 0;
+	-fx-padding: 0 0 2 0;
+}
+
+.brake-commands-grid-border {
+	-fx-border-color: grey;
+	-fx-border-width: 2px 0 2px 0;
+}
+
+.label.status-table-label:parking_brk_applied {
+	-fx-background-image: url('../images/parking_brake_green.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 35.0%;
+}
+
+.label.status-table-label:parking_brk_not_applied {
+	-fx-background-image: url('../images/parking_brake_orange.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 35.0%;
+}
+
+.label.status-table-label:parking_brk_isolated {
+	-fx-background-image: url('../images/parking_brake_blue.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 35.0%;
+}
+
+.button.bogie-isolate-buttons:isolated {
+	-fx-background-color: green;
+	-fx-text-fill: white;
+}
+
+.button.bogie-isolate-buttons:not_isolated {
+	-fx-text-fill: white;
+}
+
+.button.parking-brake-request-buttons:default {
+	
+}
+
+.button.parking-brake-request-buttons:requested {
+	-fx-background-color: green;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      Doors System Commands Screen                           *
+ *                                                                             *
+ ******************************************************************************/
+.doors-isolate-commands-panel-grid-border {
+	-fx-border-color: grey;
+	-fx-border-width: 0 1 0 0;
+}
+
+.button.door-commands-isolate-buttons:isolated {
+	-fx-background-color: green;
+	-fx-text-fill: white;
+	-fx-font-size: 12px;
+	-fx-background-radius: 8px;
+}
+
+.button.door-commands-isolate-buttons:not_isolated {
+	-fx-background-color: grey;
+	-fx-text-fill: white;
+	-fx-font-size: 12px;
+	-fx-background-radius: 8px;
+}
+
+.button.door-commands-open-doors-button {
+	-fx-background-color: grey;
+	-fx-text-fill: white;
+	-fx-font-size: 22px;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                               Miscellania Screen                            *
+ *                                                                             *
+ ******************************************************************************/
+.label.miscellania-header-label {
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 15.0px;
+	-fx-alignment: bottom-center;
+	-fx-wrap-text: true;
+	-fx-border-color: grey;
+	-fx-border-width: 0 0 1 0;
+}
+
+.button.button-misc-horn:isolated, .button.button-misc-horn:armed {
+	-fx-background-color: green;
+}
+
+.button.button-misc-horn, .button.button-misc-horn:reinserted {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 8.0px;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                     High Voltage Commands Screen                            *
+ *                                                                             *
+ ******************************************************************************/
+.hv-commands-header-label {
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 17.0px;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+.hv-commands-panel-grid-border {
+	-fx-border-color: white;
+	-fx-border-width: 2 0 0 0;
+}
+
+.button.button-hv-commands {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 5.0px;
+	-fx-background-color: white;
+}
+
+.button.button-hv-commands:command_not_available {
+	-fx-background-color: grey;
+}
+
+.button.button-hv-commands:command_available {
+	-fx-background-color: white;
+}
+
+.button.button-hv-commands:unselected {
+	-fx-background-color: white;
+}
+
+.button.button-hv-commands:command_selected {
+	-fx-background-color: green;
+}
+
+.button.button-hv-commands:selected {
+	-fx-background-color: green;
+}
+
+.button.button-hv-commands:armed {
+	-fx-background-color: green;
+}
+
+.button.button-req-vcb-confirm {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 5.0px;
+	-fx-background-color: green;
+}
+
+.button.button-req-vcb-decline {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 5.0px;
+	-fx-background-color: red;
+}
+
+.spc-modes-commond-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 13.0px;
+	-fx-font-family: Franklin Gothic Medium;
+	-fx-alignment: bottom-center;
+	-fx-font-weight: bold;
+	-fx-border-color: grey;
+	-fx-border-width: 0 0 2px 0;
+	-fx-padding: 0 0 2 0;
+}
+
+.table {
+	-fx-border-width: 0.0px;
+}
+
+.miscellana-lbl {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 5.0px;
+	-fx-background-insets: 0.0, 5.0, 0.0, 0.0;
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+	-fx-background-color: white;
+}
+
+.miscellana-lbl:misc_not_active {
+	-fx-background-color: white;
+}
+
+.miscellana-lbl:misc_active {
+	-fx-background-color: red;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                     MEdium  Voltage Commands Screen                            *
+ *                                                                             *
+ ******************************************************************************/
+.button.button-medium-hv-command:force {
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.button-medium-hv-command:unforce {
+	-fx-background-color: linear-gradient(to top, grey 0.0%, green 20.0%, green 50.0%, green 80.0%
+		, green 100.0%);
+}
+
+.button.button-medium-hv-command:armed {
+	-fx-background-color: green;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                     RB e Commands Screen                            *
+ *                                                                             *
+ ******************************************************************************/
+.button.button-rb-commands {
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.button-rb-commands:command_not_available {
+	-fx-background-color: grey;
+}
+
+.button.button-rb-commands:command_available {
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.button-rb-commands:unselected {
+	-fx-background-color: white;
+}
+
+.button.button-rb-commands:command_selected {
+	-fx-background-color: green;
+}
+
+.button.button-rb-commands:selected {
+	-fx-background-color: green;
+}
+
+.button.button-rb-commands:armed {
+	-fx-background-color: green;
+}
+
+.hv-rb-header-label {
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 13.0px;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+	-fx-border-color: white;
+	-fx-border-width: 0 0 1 0;
+}
+
+.hv-rb-label {
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 12.0px;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+	
+}
+
+.label.pis-label {
+	-fx-background-color: black;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 14.0px;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+.label.pis-label:normal {
+	-fx-background-color: black;
+	-fx-text-fill: white;
+}
+
+.label.pis-label:talking {
+	-fx-background-color: green;
+	-fx-text-fill: black;
+}
+
+.label.pis-label:faulty {
+	-fx-background-color: red;
+	-fx-text-fill: black;
+}
+
+.label.pis-label:isolated {
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}
+
+.label.pis-label:ongoing {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+}
+
+.label.pis-label:reset {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+}
+
+.pis-header-label {
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 15.0px;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+	-fx-border-color: white;
+	-fx-border-width: 0 0 1 0;
+}
+
+.pabr-label {
+	-fx-background-color: green;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-font-weight: bold;
+	-fx-font-size: 14.0px;
+	-fx-alignment: center;
+	-fx-wrap-text: true;
+}
+
+.button.button-reset-disable {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 7.0px;
+	-fx-background-insets: 0.0, 5.0, 0.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+	-fx-background-color: grey;
+}
+
+.button.button-reset-disable:disable {
+	-fx-font-size: 14.0px;
+	-fx-background-radius: 7.0px;
+	-fx-background-insets: 0.0, 5.0, 0.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+	-fx-background-color: grey;
+}
+
+.button.button-reset-disable:enable {
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 7.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.button-reset-disable:selected {
+	-fx-background-color: green;
+}
+
+.button.button-reset-disable:armed {
+	-fx-background-color: green;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                    HVAC Commands Screen                            *
+ *                                                                             *
+ ******************************************************************************/
+.button.hvac-command-buttons:unavailable {
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.hvac-command-buttons, .button.hvac-command-buttons:available {
+	-fx-font-size: 12.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.hvac-command-buttons:activated {
+	-fx-background-color: green;
+}
+
+.button.hvac-command-buttons:armed {
+	-fx-background-color: yellow;
+}
+
+.hvacCommnadlbl {
+	-fx-font-size: 7.0px;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-padding: 2.0 2.0 4.0 2.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      Enable to run  INTERLOCKS SCREEN                          *
+ *                                                                             *
+ ******************************************************************************/
+.ebrun-label, .ebrun-label:not_active {
+	-fx-text-fill: rgb(112.0, 112.0, 112.0);
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.ebrun-label:active {
+	-fx-text-fill: red;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                      Brake loop  INTERLOCKS SCREEN                          *
+ *                                                                             *
+ ******************************************************************************/
+.barke-loop-label, .barke-loop-label:not_active {
+	-fx-text-fill: rgb(112.0, 112.0, 112.0);
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.barke-loop-label:active {
+	-fx-text-fill: red;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+}
+
+.toggle-button {
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+/** Toggle button selected style **/
+.toggle-button:armed, .toggle-button-unused {
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+	-fx-text-fill: black;
+	-fx-background-color: yellow;
+}
+
+.toggle-button.toggle-button:armed {
+	-fx-background-color: yellow;
+}
+
+.toggle-button.toggle-button:selected {
+	-fx-background-color: linear-gradient(to top, green 100.0%, green 20.0%, green 50.0%, green
+		80.0%, green 100.0%);
+}
+
+.button.button-route:reset {
+	-fx-background-color: linear-gradient(to top, green 100.0%, green 20.0%, green 50.0%, green
+		80.0%, green 100.0%);
+}
+
+.button.button-route:set {
+	-fx-font-size: 17.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.button-route:armed {
+	-fx-background-color: green;
+}
+
+.button.route-button-default, .button.route-button-default:unselected {
+	-fx-font-size: 15.0px;
+	-fx-background-radius: 12.0px;
+	-fx-background-insets: 3.0, 0.0, 3.0, 0.0;
+	-fx-padding: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.button.route-button-default:selected {
+	-fx-background-color: linear-gradient(to bottom, yellow 10.0%, rgb(197, 191, 45)
+		30.0%, rgb(180.0, 175.0, 41.0) 50.0%, rgb(109.0, 102.0, 0) 80.0%,
+		rgb(50.0, 50.0, 5.0) 100.0%);
+	-fx-text-fill: white;
+}
+
+.button.route-button-default:armed {
+	-fx-background-color: green;
+}
+
+.button.route-button-default:disabled {
+	-fx-text-fill: white;
+}
+
+.fire-dectection-screen-boxed-label, .fire-dectection-screen-boxed-label:inactive {
+	-fx-text-fill: white;
+	-fx-font-size: 11.5;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-border-width: 1.0px;
+	-fx-border-color: white;
+	-fx-border-insets: 1.0px;
+}
+
+.fire-dectection-screen-boxed-label:enable {
+	-fx-background-color: blue;
+	-fx-text-fill: black;
+	-fx-font-size: 11.5;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-border-color: black;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 0.0px;
+}
+
+.fire-dectection-screen-boxed-label:active {
+	-fx-background-color: #FF8C00;
+	-fx-text-fill: black;
+	-fx-font-size: 11.5;
+	-fx-font-family: Franklin Gothic Medium Cond;
+	-fx-alignment: center;
+	-fx-font-weight: bold;
+	-fx-border-color: black;
+	-fx-border-width: 1.0px;
+	-fx-border-insets: 0.0px;
+}
+
+
+.button.fire-details:reset {
+	-fx-background-color: linear-gradient(to top, green 100.0%, green 20.0%, green 50.0%, green
+		80.0%, green 100.0%);
+}
+
+.button.button-fire-details:set {
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Franklin Gothic Medium";
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 4.0 4.0 8.0 4.0;
+	-fx-background-radius: 12.0px;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-text-alignment: center;
+	-fx-background-color: linear-gradient(to bottom, white 0.0%, rgb(232.0, 232.0, 232.0)
+		20.0%, rgb(164.0, 164.0, 164.0) 50.0%, rgb(110.0, 110.0, 110.0) 80.0%,
+		rgb(62.0, 62.0, 62.0) 100.0%);
+}
+
+.button.button-fire-details:armed {
+	-fx-background-color: green;
+}
+
+.grid-pane:selected {
+    -fx-border-color: blue;
+    -fx-border-width: 3;
+    -fx-border-radius: 5;
+}
+
+.label.pabr-label, .label.pabr-label:active {
+	-fx-background-color: green;
+			-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+			-fx-border-color: white;
+			-fx-text-fill: white;
+			-fx-font-family: "Franklin Gothic Medium";
+			-fx-font-weight: bold;
+			-fx-font-size: 14.0px;
+			-fx-alignment: center;
+			-fx-wrap-text: true;
+}
+
+.label.pabr-label:not_active {
+	-fx-background-color: black;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+				-fx-border-color: white;
+				-fx-text-fill: white;
+				-fx-font-family: "Franklin Gothic Medium";
+				-fx-font-weight: bold;
+				-fx-font-size: 14.0px;
+				-fx-alignment: center;
+				-fx-wrap-text: true;
+}
+
+.label.pabr-label:not_known {
+	-fx-background-color: gray;
+	-fx-border-width: 1.0px, 1.0px, 1.0px, 1.0px;
+				-fx-border-color: white;
+				-fx-text-fill: black;
+				-fx-font-family: "Franklin Gothic Medium";
+				-fx-font-weight: bold;
+				-fx-font-size: 14.0px;
+				-fx-alignment: center;
+				-fx-wrap-text: true;
+}
+
+
+

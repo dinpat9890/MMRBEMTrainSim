@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="marker_pin_red" guid="c789fb9e1dee099a1776e068d9918584a25e4973" base_material="mesh_base">
+	<parameter name="albedo_color">1 0 0 1</parameter>
+</material>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1664614484" name="line_2a_depot_building">
+		<mesh_name>../worlds/mmrbem/graphics/depot/line_2a_depot_building.mesh</mesh_name>
+		<surface name="line_2a_depot_building_depot_01" max_visible_distance="1000" max_fade_distance="10" material="a7168e711aeb0e66ee12c58696e2d9cd428be9e8" property="surface_base"/>
+		<surface name="line_2a_depot_building_depot_02" max_visible_distance="1000" max_fade_distance="10" material="10c234ab03a84330b2c4da398b5512b1d2ae9265" property="surface_base"/>
+		<surface name="line_2a_depot_building_depot_green_base" max_visible_distance="1000" max_fade_distance="10" material="2f73692e0918f759bb9173a703a42f0535216562" property="surface_base"/>
+		<surface name="line_2a_depot_building_depot_name_board" max_visible_distance="1000" max_fade_distance="10" material="28e9e51a8c163127b247e3030354afe0a9084a13" property="surface_base"/>
+		<surface name="line_2a_depot_building_depot_rough concrete" max_visible_distance="1000" max_fade_distance="10" material="68420a2261aaa870139bdadba92297c9bc0a8bfe" property="surface_base"/>
+		<surface name="line_2a_depot_building_depot_skyblue_base" max_visible_distance="1000" max_fade_distance="10" material="003c655fb7c8e32a8bbdbfc5f8bef72cc4d23ece" property="surface_base"/>
+		<surface name="line_2a_depot_building_depot_tram_rail_pavers" max_visible_distance="1000" max_fade_distance="10" material="1dc5a299dabde72f2b478ed8506a3b5819156028" property="surface_base"/>
+		<surface name="line_2a_depot_building_depot_tram_rail_pavers_green" max_visible_distance="1000" max_fade_distance="10" material="9b3574e2a6c85368e476d67c32d84626a14d5c19" property="surface_base"/>
+		<surface name="line_2a_depot_building_feature_signal_mumbai" max_visible_distance="1000" max_fade_distance="10" material="c90f075103b255107eac4758fecb69359dc381df" property="surface_base"/>
+		<surface name="line_2a_depot_building_generic_metal" max_visible_distance="1000" max_fade_distance="10" material="1592e9b50d50ce280b2b5aaa0851fb05fa36a9dd" property="surface_base"/>
+		<surface name="line_2a_depot_building_metal_roof_pattern" max_visible_distance="1000" max_fade_distance="10" material="e999a24d85297bdf7ea4d18cefc015d50e190348" property="surface_base"/>
+		<transform>0.999999880791 -1.01062418344e-015 3.70576914424e-022 0.0 -5.94386574704e-016 0.999999880791 -4.23516473627e-022 0.0 3.1101991032e-022 -3.1763735522e-022 0.999999940395 0.0 2.0008883439e-011 2.91038304567e-011 2.12416889633e-014 1.0</transform>
+	</node>
+</nodes>

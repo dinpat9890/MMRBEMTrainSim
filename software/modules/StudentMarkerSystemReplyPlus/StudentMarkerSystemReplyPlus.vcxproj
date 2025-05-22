@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ProjectOracleProxy.cpp" />
+    <ClCompile Include="Source\ProjectSessionAccess.cpp" />
+    <ClCompile Include="Source\SMS.cpp" />
+    <ClCompile Include="Source\SMSApplication.cpp" />
+    <ClCompile Include="Source\StudentMarkerUnit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\OracleProxy.h" />
+    <ClInclude Include="Source\ProjectOracleProxy.h" />
+    <ClInclude Include="Source\ProjectSessionAccess.h" />
+    <ClInclude Include="Source\SMSApplication.h" />
+    <ClInclude Include="Source\StudentMarkerUnit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BCE582A9-6864-44C7-BCAF-8FA700C60BA1}</ProjectGuid>
+    <RootNamespace>SessionAnalyser</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <!-- Define some properties so that we know where our shared properties are, which in turn should
+       pull in the core properties from the dependencies -->
+  <Import Project="../../project.cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(COTSIncludeRoot)oci/Win32/include;$(COTSIncludeRoot)oci/Win64/include;$(COTSIncludeRoot)/fmt/include;$(CoreSimIncludeRoot)core_types/include;$(CommonIncludeRoot)comms/include;$(CommonIncludeRoot)sim_comms/include;$(CommonIncludeRoot)common/include;$(CommonIncludeRoot)sim_common/include;$(CommonIncludeRoot)oracle_access/include;$(CommonIncludeRoot)network_definition/include;$(CoreTrainSimIncludeRoot)world_api/include;$(CoreSimIncludeRoot)utility/include;$(CoreSimIncludeRoot)core_properties/include;$(CoreSimConfigRoot)core_comms_structure/include;$(CoreSimIncludeRoot)core_data_access/include;$(CoreSimIncludeRoot)file_access/include;$(CoreTrainSimIncludeRoot)train_data_access/include;$(CoreTrainSimConfigRoot)train_comms_structure/include;$(ProjectConfigRoot)project_comms_structure/include;$(ProjectConfigRoot)project_features/include;third_party/session_data_access/include;Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CONSOLE;WIN32;_VARIADIC_MAX=10;_WINSOCK_DEPRECATED_NO_WARNINGS;$(ClPreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(COTSIncludeRoot)/fmt/lib/fmt$(LibType);$(COTSIncludeRoot)/zlib/lib/zlib$(LibType);$(CommonIncludeRoot)common/lib/common$(LibType);$(CommonIncludeRoot)comms/lib/comms$(LibType);$(CommonIncludeRoot)network_definition/lib/network_definition$(LibType);$(CommonIncludeRoot)oracle_access/lib/oracle_access$(LibType);$(CommonIncludeRoot)sim_comms/lib/sim_comms$(LibType);$(CoreSimIncludeRoot)config_file_access/lib/config_file_access$(LibType);$(CoreSimIncludeRoot)core_data_access/lib/core_data_access$(LibType);$(CoreSimIncludeRoot)core_properties/lib/core_properties$(LibType);$(CoreSimIncludeRoot)file_access/lib/file_access$(LibType);$(CoreSimIncludeRoot)utility/lib/utility$(LibType);$(CoreTrainSimIncludeRoot)train_data_access/lib/train_data_access$(LibType);$(CoreTrainSimIncludeRoot)world_api/lib/world_api$(LibType);third_party/session_data_access/lib/session_data_access$(LibType);$(COTSIncludeRoot)oci/Win32/lib/oci.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(COTSIncludeRoot)oci/Win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <PropertyGroup>
+    <LocalDebuggerCommandArguments>..\Environment\StudentMarkerSystemReplyPlus.ini</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>..\..\..\deploy\data</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=$(cotsdir)\xerces\Bin\$(Platform);$(cotsdir)\oci\$(Platform)\bin;C:\Progra~2\Oracle\Instantclient_11_2\bin
+TNS_ADMIN=..\Environment\
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <OutDir>$(SolutionDir)\bin</OutDir>
+    <LibraryPath>C:\Projects\Bala\MumL3_test\software\modules\StudentMarkerSystemReplyPlus\bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <OutDir>$(SolutionDir)\bin</OutDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

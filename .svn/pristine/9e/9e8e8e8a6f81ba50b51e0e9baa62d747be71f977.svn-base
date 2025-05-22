@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MotionBase", "MotionBase.vcxproj", "{70DC0C24-B19B-4778-A71A-97ECBCB0A031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug DLL|Win32 = Debug DLL|Win32
+		Release DLL|Win32 = Release DLL|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70DC0C24-B19B-4778-A71A-97ECBCB0A031}.Debug DLL|Win32.ActiveCfg = Debug DLL|Win32
+		{70DC0C24-B19B-4778-A71A-97ECBCB0A031}.Debug DLL|Win32.Build.0 = Debug DLL|Win32
+		{70DC0C24-B19B-4778-A71A-97ECBCB0A031}.Release DLL|Win32.ActiveCfg = Release DLL|Win32
+		{70DC0C24-B19B-4778-A71A-97ECBCB0A031}.Release DLL|Win32.Build.0 = Release DLL|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

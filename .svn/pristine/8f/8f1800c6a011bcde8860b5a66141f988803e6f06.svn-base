@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<!-- ===================================================================== -->
+<!-- Describes the build activities for this module                        -->
+<!-- ===================================================================== -->
+<project name="Serialisation" default="build.jar">
+  
+  <import file="../../../ant.common_properties.xml" />
+  <!-- For using top level scripts/properties -->
+  <property name="path.root" value="${basedir}/../.."/>
+  
+  <!-- Import Properties from root path.root directory -->
+  <property file="${path.root}/build.properties"/>
+  <!-- Path of this directory -->
+  <dirname property="this.path" file="${ant.file}"/>
+  <!-- Name of this directory (not a path) -->
+  <basename property="this.dir" file="${this.path}"/>
+  <!-- Name of this module (as published in Ivy) -->
+  <property name="module.name" value="${this.dir}"/>
+  <!-- Relative path of the module to the base dir from the properties file -->
+  <property name="module.path" value="${protos-serialisation.basedir}"/>
+  <!-- Jar file name -->
+  <property name="jar.base.name" value="${protos-serialisation.jar.base.name}" />
+
+  <!-- move these to software properties? -->
+  <property name="dependencies.dir" value="${path.root}/../dependencies"/>
+  <property name="libraries.dir" value="${path.root}/Libraries"/>
+  <property name="deploy.dir" value="${path.root}/../Deploy"/>
+
+  
+  <path id="project.classpath">
+    <pathelement location="${dependencies.dir}/cots/oksygen/cots/protobuf/lib/protobuf.jar"/>
+  </path>
+  
+  <target name="prepare.all" description="Prepares all content for the project, ready for a build" />
+  <target name="clear.all" description="Clear all dependencies" />
+  
+  <target name="compile.source" depends="compile.dependencies">
+    <echo message="Compiling the source for ${ant.file}"/>
+    
+    <!-- Run javac on all java files -->
+    <javac srcdir="${src.dir}" destdir="${bld.dir}"
+           encoding="${source.encoding}"
+           debug="${java.compile.debug}"
+           optimize="${java.compile.optimize}"
+           deprecation="${java.compile.deprecation}"
+           nowarn="${java.compile.nowarn}">
+      <compilerarg value="-Xlint:all,-serial"/>
+      <classpath refid="project.classpath"/>
+    </javac>
+  </target>
+  
+  <target name="compile.dependencies" depends="generate.source">
+    <echo message="Compiling the dependencies of ${ant.file}"/>
+    <property name="depends.cache" value="${module.path}/${depends.cache.file}"/>
+    <delete file="${depends.cache.file}"/>
+  </target>
+
+  <target name="generate.source" depends="clean.generated" unless="proto.java.uptodate">
+    <mkdir dir="${src.dir}"/>
+	    <exec executable="${dependencies.dir}/${protoc}" failonerror="true">
+    <!-- <exec executable="${path.root}/../dependencies/cots/oksygen/cots/protobuf/bin/protoc.exe" failonerror="true"> -->
+        <arg  value="-I=${path.root}/${module.path}"/>
+        <arg  value="--java_out=${path.root}/${module.path}/${src.subdir}"/>
+        <arg  value="--cpp_out=${path.root}/${module.path}/Source/Cpp"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/TCMSProto.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/CBTCOnboard.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/DMIProtos.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/SaloonCCTVProtos.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/PAPISProtos.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/PISProtos.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/PISAudioProtos.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/PISProjectAnnouncementProtos.proto"/>
+        <arg  value="${path.root}/${module.path}/Source/Protobuf/RadioProtos.proto"/>
+		 <arg  value="${path.root}/${module.path}/Source/Protobuf/PSDProtos.proto"/>
+        
+    </exec>
+  </target>
+  
+  <target name="clean.generated" description="Cleans the generated source">
+    <delete dir="${src.dir}"/>
+  </target>
+  
+   <!-- As much as possible, this should be standard -->
+  <import file="${dir.deps.processes}/builder/builder.software.jar.xml" as="builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+  
+</project>

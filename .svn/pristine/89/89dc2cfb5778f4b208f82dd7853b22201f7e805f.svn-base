@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Buffer_Stop" group="Buffer" constant_name="FETY_BUFFER_STOP" modifiable="0" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Visible"   user_selectable="1" />
+    </feature_type_state_type>
+
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="Visible" />
+        <!-- Feature Properties -->
+        <key name="Collider"    type="double"  default="2.0"  description="Adjacency Collision Enables" />
+        <key name="label1"      type="string"  default="xxx"  description="Label on ID plate" />
+        <key name="label2"      type="string"  default="xxx"  description="Label on ID plate" />
+    </object_parameters>
+
+    <feature_type_icon icon_code="Buffer" small_icon="icons/buffer.zip#buffer-SMALL.png" big_icon="icons/buffer.zip#buffer-BIG.png">
+        <feature_type_state_icon state_id="1" icon_code="Visible" small_icon="icons/buffer.zip#buffer-SMALL.png" big_icon="icons/buffer.zip#buffer-BIG.png" />
+    </feature_type_icon>
+
+   <feature_type_vision class="SignalFeature" raycast_type="RaycastGround" node_file="buffer.node">
+  </feature_type_vision>
+
+</feature_type>

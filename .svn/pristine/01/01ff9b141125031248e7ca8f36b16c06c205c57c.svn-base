@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="red_panel_01" guid="fa47e5cd6673e7e5ba92cf40b118314e8b48bbfc" base_material="mesh_base">
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/red_panel_01.dds</texture>
+	<texture name="shading">../worlds/mmrbem/graphics/stations/texture/red_panel_01_met.dds</texture>
+	<texture name="normal">../worlds/mmrbem/graphics/stations/texture/red_panel_01_n.dds</texture>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">1</parameter>
+</material>

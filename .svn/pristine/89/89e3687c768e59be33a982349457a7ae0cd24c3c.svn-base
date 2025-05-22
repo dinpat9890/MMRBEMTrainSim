@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="bush" guid="0ecaa72fb51fb7b4a4d6b62b32dc45eec792834c" base_material="mesh_base">
+	<options two_sided="0"/>
+	<state name="workflow">0</state>
+	<state name="vegetation">1</state>
+	<state name="leafs">1</state>
+	<state name="noise_2d">0</state>
+	<state name="material_ssao">0</state>
+	<texture name="emission">../worlds/line_n/graphics/points_of_interest/textures/11_immeubles_e.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="diffuse_color">1 1 1 1</parameter>
+	<parameter name="specular_color">0 0 0 1</parameter>
+	<parameter name="microfiber">0.5</parameter>
+	<parameter name="emission_color">1 1 1 1</parameter>
+</material>

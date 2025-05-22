@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Custom build script for the project comms structure                     -->
+<!-- ======================================================================= -->
+<project name="ProjectCommsStructure" default="build.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" >
+  <import file="../../../ant.common_properties.xml" />
+  <import file="${dir.software}/ant.paths.xml" />
+  
+  <property name="jar.base.name" value="projectcommsstructure" />
+
+  <!-- Reduce the set of build configurations -->
+  <property name="no.build.win32.release.static" value="true"/>
+  <property name="no.build.win32.debug.static" value="true"/>
+  <property name="no.build.x64.release.static" value="true" />
+  <property name="no.build.x64.debug.static" value="true" />
+
+  <!-- As much as possible, this should be standard -->
+  <import file="${dir.deps.processes}/builder/builder.config.comms_structure.xml" as="builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+</project>

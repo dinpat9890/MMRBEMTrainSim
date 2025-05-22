@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mainGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1016.0" stylesheets="@dmi-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.dmi.fe.gui.presenter.MainScreenMenuPopupController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="100.0" />
+  </rowConstraints>
+   <children>
+      <Pane fx:id="menuPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1016.0" GridPane.rowIndex="1">
+         <children>
+            <GridPane layoutX="575.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="432.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="93.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane fx:id="menuGridPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: rgb(28.0,40.0,65.0); -fx-border-color: yellow;" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.9" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="5.2" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="5.2" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="85.72" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane fx:id="mainMenuPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: rgb(28.0,40.0,65.0);" stylesheets="@dmi-application.css" GridPane.rowIndex="3">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="4.58" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="90.82" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="4.58" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.03" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.03" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.03" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.03" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="13.69" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="1.21" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="languageButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLanguageButtonAction" text="LANGUAGE" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Arial Black" size="30.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="closeButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCloseButtonAction" text="CLOSE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Button>
+                              <Label fx:id="testLabel" alignment="CENTER" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="TEST" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="statusLabel" alignment="CENTER" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="STATUS" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="resetLabel" alignment="CENTER" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="RESET" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="setupLabel" alignment="CENTER" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="SETUP" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="languageMenuPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: rgb(28.0,40.0,65.0);" stylesheets="@dmi-application.css" visible="false" GridPane.rowIndex="3">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="4.58" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="90.82" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="4.58" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.03" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.03" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="3.03" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="28.87" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="12.15" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="1.21" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="languageEnglishButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLanguageEnglishButtonAction" text="ENGLISH" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Arial Black" size="30.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="previousButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLanguagePreviousButtonAction" text="PREVIOUS" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <styleClass>
+                                    <String fx:value="button-menu-background" />
+                                    <String fx:value="button-menu-text" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <Label fx:id="menuTitleLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="menu-label-text" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

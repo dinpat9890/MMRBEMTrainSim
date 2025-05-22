@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1809988143" name="rope">
+		<mesh_name>../features/obstruction_features/graphics/rope.mesh</mesh_name>
+		<surface name="rope" max_visible_distance="800" max_fade_distance="10" material="937754577343827e0242ccf1586f253ac0c08606" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

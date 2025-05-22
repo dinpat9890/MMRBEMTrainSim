@@ -1,0 +1,17 @@
+(set-observer-pt (get-pt))
+
+(include "PTSoundHelpers.script")
+
+(! Handy for getting information about PT screens )
+( log "screen id: " (get-gmi-position-screen (observer-gmi-position)))
+( log "screen vehicle position: " 
+     (get-position-x (get-gmi-position-vehicle-position (observer-gmi-position))) " "
+     (get-position-y (get-gmi-position-vehicle-position (observer-gmi-position))) " "
+     (get-position-z (get-gmi-position-vehicle-position (observer-gmi-position) )))
+( log "screen position: " 
+     (get-position-x (observer-gmi-position)) " "
+     (get-position-y (observer-gmi-position)) " "
+     (get-position-z (observer-gmi-position)))
+( log "screen inside: " (get-gmi-position-inside-vehicle (observer-gmi-position)))
+
+(include "Leopard_audio_PT.script")

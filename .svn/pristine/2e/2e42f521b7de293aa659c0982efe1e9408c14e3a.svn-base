@@ -1,0 +1,1 @@
+call bin\simsetup.bat /m /wake

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <track>
+    <segment_feature_assoc_orientations>
+      <segment_feature_assoc_orientation name="From Alpha" />
+      <segment_feature_assoc_orientation name="From Beta" />
+      <segment_feature_assoc_orientation name="Both" />
+    </segment_feature_assoc_orientations>
+    <transition_types>
+      <transition_type transition_type_id="3" name="Curve">
+        <transition_type_parameter name="r" description="Radius of Curvature" />
+        <transition_type_parameter name="re" description="Radius of Elevation Curvature" />
+      </transition_type>
+      <transition_type transition_type_id="0" name="None" />
+      <transition_type transition_type_id="1" name="Normal">
+        <transition_type_parameter name="r" description="Radius of Curvature" />
+      </transition_type>
+      <transition_type transition_type_id="4" name="Spiral">
+        <transition_type_parameter name="ra" description="Initial Radius of Curvature" />
+        <transition_type_parameter name="rb" description="Final Radius of Curvature" />
+        <transition_type_parameter name="re" description="Radius of Elevation Curvature" />
+      </transition_type>
+      <transition_type transition_type_id="2" name="Straight" />
+    </transition_types>
+  </track>
+</config>

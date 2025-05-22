@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectVolumeBox" id="1497451772" collider="0" folded="1" name="fog">
+		<size>100000 100000 800</size>
+		<surface name="volume" material="6f99ede5ec32c04556570904abcf228f9527e8b5" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3252.955 22349.245 -349.8 1.0</transform>
+	</node>
+	<node type="ObjectCloudLayer" id="705196183" collider="0" name="clouds">
+		<coverage_animation_offset>253.117935 0 0 0</coverage_animation_offset>
+		<noise_animation_offset>124.965096 0 -62.4825478 0</noise_animation_offset>
+		<surface name="clouds_surface" material="4cd4ffafffe5f9c0ec010dfc25ca883b2234a527" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 400 1.0</transform>
+	</node>
+</nodes>

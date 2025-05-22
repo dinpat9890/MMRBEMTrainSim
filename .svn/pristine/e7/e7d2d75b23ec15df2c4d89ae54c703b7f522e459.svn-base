@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Work Zone End" group="CBTC" constant_name="FETY_WORK_ZONE_END" modifiable="1" available="1" user_feature="0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Active" user_selectable="1" />
+    </feature_type_state_type>
+
+    <feature_type_icon icon_code="WorkZoneEnd" small_icon="Icons/work_zone_end.zip#work_zone_end-small.png" big_icon="Icons/work_zone_end.zip#work_zone_end-big.png">
+        <feature_type_state_icon state_id="1" icon_code="Active" small_icon="Icons/work_zone_end.zip#work_zone_end-small.png" big_icon="Icons/work_zone_end.zip#work_zone_end-big.png" />
+    </feature_type_icon>
+
+</feature_type>

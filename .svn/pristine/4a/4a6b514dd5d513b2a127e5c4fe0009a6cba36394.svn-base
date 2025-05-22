@@ -1,0 +1,22 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+
+[System.1]
+Module Name=UpDown
+XXDrop Modules=1
+XXSync Period=1
+XXSystem Name=Driver
+XXWatchdog Period=1
+
+[Module]
+Dump Script=1
+Script=..\Data\UpDown.script
+
+[Miscellaneous]
+DLL Filename=core_session_data.dll
+Start Wait Time=5.0
+Cycle=1
+Progress=1
+Unpause=0
+Wait For Creation Time=5.0

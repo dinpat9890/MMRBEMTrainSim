@@ -1,0 +1,40 @@
+# These properties are for configuring log4j.
+# For more details see http://logging.apache.org/log4j/1.2/manual.html
+
+# log4j.rootLogger describes the configuration of log4j.
+# First comes the log level, then comma separated "appenders" (see below) which logs are written to.
+# Valid values for the log level are (from most to least verbose):
+# ALL, TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF
+log4j.rootLogger=INFO, console, file
+
+# The following describe the appenders that logs are written to.
+# These properties describe the class that is used to do the appending (ie the Appender class),
+# the format of the log (generally our PatternLayoutWithThrowable class, with a ConversionPattern defined as well),
+# and other appender-specific properties.
+# The ConversionPattern format is a string with the following special entries:
+# %t Thread name
+# %p Log level (of the message, not the logger)
+# %n New line
+# %d Date
+# %F File name
+# %L Line number
+# %m Log message
+
+# An appender for logging to the console.
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+log4j.appender.console.layout=com.sydac.common.log.PatternLayoutWithThrowable
+log4j.appender.console.layout.ConversionPattern=%t ** %p **%n%d, (%F:%L)%n%m%n
+log4j.appender.console.encoding=UTF-8
+
+# An appender for logging to a local file.
+log4j.appender.file=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.file.DatePattern='.'yyyy-MM-dd
+log4j.appender.file.layout=com.sydac.common.log.PatternLayoutWithThrowable
+log4j.appender.file.layout.ConversionPattern=%t ** %p **%n%d, (%F:%L)%n%m%n
+log4j.appender.file.encoding=UTF-8
+
+# An appender for logging across the network. This is a custom appender.
+log4j.appender.remote=com.sydac.common.log.MulticastAppender
+log4j.appender.remote.MulticastAddress=233.1.9.200
+log4j.appender.remote.layout=com.sydac.common.log.PatternLayoutWithThrowable
+log4j.appender.remote.layout.ConversionPattern=%t ** %p **%n%d, (%F:%L)%n%m%n

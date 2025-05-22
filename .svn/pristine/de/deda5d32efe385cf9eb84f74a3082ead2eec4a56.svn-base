@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeLayer" id="419052166" folded="1" name="line_2b_set_dressing">
+		<layer>../worlds/mmrbem/graphics/layers/line_2b_set_dressing.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1584301926" folded="1" name="line_2b_stations">
+		<layer>../worlds/mmrbem/graphics/layers/line_2b_stations.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="792278616" folded="1" name="line_2b_track">
+		<layer>../worlds/mmrbem/graphics/layers/line_2b_track.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1422800469" folded="1" name="trackside_objects_line_2b">
+		<layer>../worlds/mmrbem/graphics/layers/trackside_objects_line_2b.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="544692723" folded="1" name="wiring_line2_b">
+		<layer>../worlds/mmrbem/graphics/layers/wiring_line2_b.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeDummy" id="1129047631" folded="1" name="line_2b_track">
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="1161288430" name="track_2b_1">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_1.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 2380 22653 -8 1.0</transform>
+		</node>
+		<node type="NodeReference" id="556851118" name="track_2b_2">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_2.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3058 21528 -13 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1068537050" name="track_2b_3">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_3.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3256 20128 -14 1.0</transform>
+		</node>
+		<node type="NodeReference" id="320670089" name="track_2b_4">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_4.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3006 18589 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1636064198" name="track_2b_5">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_5.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 2864 17076 -14 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1515628433" name="track_2b_6">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_6.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 2851 15557 -11 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1134292404" name="track_2b_7">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_7.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3996 15484 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1966975757" name="track_2b_8">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_8.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 5203 16525 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1966665253" name="track_2b_9">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_9.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 6429 17515 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1484295883" name="track_2b_10">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_10.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 7716 17358 -14 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1057777518" name="track_2b_11">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_11.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 7733 16034 -16 1.0</transform>
+		</node>
+		<node type="NodeReference" id="663372544" name="track_2b_12">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_12.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 9020 15185 -7 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1330591509" name="track_2b_13">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_13.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 10242 14325 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1835611415" name="track_2b_14">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_14.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 11840 14133 -3 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2078052389" name="track_2b_15">
+			<reference>../worlds/mmrbem/graphics/track_mesh/track_2b_15.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 13137 14681 -16 1.0</transform>
+		</node>
+	</node>
+	<node type="NodeDummy" id="777278244" folded="1" name="line_2b_wall_pillar">
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="302126623" name="pillar_2b_1">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_1.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 2380 22653 -8 1.0</transform>
+		</node>
+		<node type="NodeReference" id="896149181" name="pillar_2b_2">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_2.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3058 21528 -13 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1101742644" name="pillar_2b_3">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_3.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3256 20128 -14 1.0</transform>
+		</node>
+		<node type="NodeReference" id="693781899" name="pillar_2b_4">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_4.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3006 18589 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1262821778" name="pillar_2b_5">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_5.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 2864 17076 -14 1.0</transform>
+		</node>
+		<node type="NodeReference" id="746535668" name="pillar_2b_6">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_6.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 2851 15557 -11 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1364604557" name="pillar_2b_7">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_7.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 3996 15484 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1659239359" name="pillar_2b_8">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_8.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 5203 16525 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1729472147" name="pillar_2b_9">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_9.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 6429 17515 -12 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1538603349" name="pillar_2b_10">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_10.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 7716 17358 -14 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1266856318" name="pillar_2b_11">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_11.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 7733 16034 -16 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1372348056" name="pillar_2b_12">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_12.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 9020 15185 -7 1.0</transform>
+		</node>
+		<node type="NodeReference" id="528360942" name="pillar_2b_13">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_13.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 10242 14325 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1565621949" name="pillar_2b_14">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_14.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 11840 14133 -3 1.0</transform>
+		</node>
+		<node type="NodeReference" id="534764708" name="pillar_2b_15">
+			<reference>../worlds/mmrbem/graphics/wall_pillers/pillar_2b_15.node</reference>
+			<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 13137 14681 -16 1.0</transform>
+		</node>
+	</node>
+</nodes>

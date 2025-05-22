@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="trackrail" guid="13f53e7983c9fd4461fca5be157c9e1701d46c3a" base_material="mesh_base">
+	<texture name="albedo">../features/obstruction_features/graphics/textures/trackrail.dds</texture>
+	<parameter name="metalness">0.5</parameter>
+	<parameter name="roughness">0.699999988</parameter>
+</material>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="153374182" name="pillar_2a_2">
+		<mesh_name>../worlds/mmrbem/graphics/wall_pillers/pillar_2a_2.mesh</mesh_name>
+		<surface name="pillar_2a_2_concrete_bridge" max_visible_distance="1000" max_fade_distance="10" material="35c269a4af952f63defa87525805828aee50d24a" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

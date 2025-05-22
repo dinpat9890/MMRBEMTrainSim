@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_outer" guid="115450b7e41ae567cbe557fa71b673d5c9694bc5" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<state name="noise">0</state>
+	<texture name="diffuse">../worlds/shared/graphics/vegetation/textures/outer_tree_billboard.dds</texture>
+	<texture name="normal">../worlds/shared/graphics/vegetation/textures/outer_tree_billboard_n.dds</texture>
+	<parameter name="diffuse_color">0.917647123 0.917647123 0.917647123 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+</material>

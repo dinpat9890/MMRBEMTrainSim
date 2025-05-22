@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="380892657" name="bush1">
+		<mesh_name>../worlds/shared/graphics/vegetation/bush01.mesh</mesh_name>
+		<surface name="bush01_leaves" material="7b86cecad0a657f6512591c28932d6ef1729d5e7" property="surface_base"/>
+		<surface name="bush01_trunk" material="f8d1b92326b02e25847eaa488a3589c737aba6b9" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

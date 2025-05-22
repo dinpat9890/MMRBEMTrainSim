@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<project name="Package Database" default="install.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+  
+  <!-- Import core packaging scripts, just for the database -->
+  <import file="${dir.deps.processes}/packager/packager.database.xml" as="packager" />
+  
+  <!-- Extend the install.all target, but do it here so that a project can intercept, add or
+       override. Ordinarily though we will just depend on core implementation -->
+  <!-- For now this will do everything, although it is likely that the content folder should know
+       how to install its content, rather than the database folder needing to know how to do it.
+       Fortunately we can do this because the paths are shared and defined at a higher level -->
+  <target name="install.database" description="Copies files necessary to deploy the database into the install folder" extensionOf="install.all" depends="install.database.prepare.mapping,install.database.build,install.database.sample,install.database.data,install.database.features, install.database.tracks,install.database.scenarios"/>
+  <copy todir="${dir.install.db.tracks}" file="${file.tracks.track_skins_list}" failonerror="false"/>
+  
+   <target name="install.database.prepare.mapping" description="Prepares folders and mappings needed by various targets in the database install folder">
+	<!-- Ensure that the population folder is present to write the db_mapping into -->
+	<mkdir dir="${dir.install.db.population}" />
+
+	<!-- Prepare the db_mapping to be used. This requires us copying in all of the db_mapping
+		 files and getting xml2db to merge them. We delete the temporaries after running xml2db -->
+	<copy todir="${dir.install.db}/temp">
+	  <!-- To make these unique, we use a regex mapping -->
+	  <path refid="install.database.mappings" />
+	  <!-- Use a package mapper to retain the unique directory path in the name -->
+	  <packagemapper from="*db_mapping.xml" to="*db_mapping.xml" />
+	</copy>
+	<exec executable="${dir.tools.xml2db}/xml2db.exe" failonerror="true">
+	  <arg line="/merge /m ${dir.tools.xml2db.mapping} /xmldir ${dir.install.db}/temp /xmlfile ${dir.install.db.population}/db_mapping.xml" />
+	  <env key="PATH" path="${env.Path};${dir.deps.cots}/Xerces/bin/Win32"/>
+	</exec>
+	<delete includeEmptyDirs="true">
+	  <fileset dir="${dir.install.db}/temp"/>
+	</delete>
+  </target>
+</project>

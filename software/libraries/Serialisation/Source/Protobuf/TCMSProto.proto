@@ -1,0 +1,2113 @@
+syntax = "proto2";
+
+package tcms.protos;
+
+
+option java_package = "com.sydac.mmrbem.tcms.common.proto";
+option java_outer_classname = "TCMSProto";
+
+/**
+  * Data structure to hold Train configuration details
+  * Gives information about each vehicle
+  *
+ **/
+ message TrainConfigurationData
+ {
+	message VehicleDetail
+	{
+		required int32 carIndex = 1;
+		required string carType	= 2;
+		required string carOrientation = 3;
+		required string carClassCode = 4;
+		required string carDisplayName = 5;
+		
+	}
+	
+	repeated VehicleDetail vehicleDetails = 1;
+ }
+
+  
+ /**
+   * Maintain Door states for each vehicle.
+  **/
+  message VehicleDoorStatesList
+  { 
+ 
+    enum DoorState
+    {
+        UNKNOWN = 0;
+        CLOSED_AND_LOCKED = 1;
+        CLOSED_BUT_NOT_LOCKED= 2;    
+        OPEN =3; 
+        OPEN_AND_FAULTY = 4;
+        CLOSE_AND_FAULTY = 5;
+        ISOLATED = 6;
+        EMERGENCY = 7; 
+         
+    } 
+ 
+    message VehicleDoorState
+    {
+        required DoorState doorState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated VehicleDoorState vehicle = 1;
+  }
+  
+  /**
+ * Pantograph Status
+ **/
+  message PantographStatusList
+  { 
+ 
+    enum Pantograph
+    {
+        UNKNOWN = 0;
+        RAISED = 1;
+        LOWERED = 2;
+        RAISED_FAULTY = 3;
+        LOWERED_FAULTY = 4;
+        ISOLATED = 5;  
+    } 
+ 
+    message PantographStatus
+    {
+        required Pantograph pantograhState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated PantographStatus pantographStatus = 1;
+  }
+  
+  	
+/**
+ * Train Side View status List.
+ **/
+  message TrainSideViewStatusList
+  { 
+   
+    enum BoogieIsolationState
+    {
+        NOT_ISOLATED = 0; //white color
+        ISOLATED = 1; //blue color
+    }
+ 
+ 
+     enum ActiveCabState
+    {
+        NOT_ACTIVE = 0; //GREY COLOR
+        ACTIVE = 1; //GREEN COLOR
+    }
+ 
+    message TrainSideViewStatus
+    {
+        required BoogieIsolationState boogie1IsolationState= 1;
+        required BoogieIsolationState boogie2IsolationState= 2;
+        required ActiveCabState activeCabState= 3;
+        required int32 carIndex = 4;
+    }
+ 
+    repeated TrainSideViewStatus trainSideViewStatus = 1;
+  }
+  
+  /**
+ * Driver cab direction status List.
+ **/
+  message DriverCabDirectionList
+  { 
+    enum DirectionState
+    {
+        FORWARD = 1;
+        BACKWARD = 2;
+        NO_DIRECTION = 3;
+    }
+    message DriverCabDirection
+    {
+        required DirectionState directionState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated DriverCabDirection driverCabDirection = 1;
+  }
+  
+  /**
+ *  Cab Fault status List.
+ **/
+  message CabFaultStatusList
+  { 
+    enum CabFaultSate
+    {
+        PRIORITY_1_FAULT = 1;
+        PRIORITY_2_FAULT = 2;
+        NO_ACTIVE_FAULT = 3;
+    }
+    message CabFaultStatus
+    {
+        required CabFaultSate cabFaultSate = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated CabFaultStatus cabFaultStatus = 1;
+  }
+  
+  /**
+ * VCB status List.
+ **/
+  message VCBStatusList
+  { 
+    enum VCBState
+    {
+        UNKNOWN = 0;
+        OPEN = 1;
+        CLOSED = 2;
+        OPEN_AND_FAULTY = 3;
+        CLOSED_AND_FAULTY = 4;
+        ISOLATED = 5;
+    }
+ 
+    message VCBStatus
+    {
+        required VCBState vcbState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated VCBStatus vcbStatus = 1;
+  }
+  
+  /**
+ * Parking Brake status List.
+ **/
+  message ParkingBrakeStatusList
+  { 
+    enum ParkingBrakeState
+    {
+        UNKNOWN = 0;
+        APPLIED = 1;               
+        NOT_APPLIED = 2;               
+        ISOLATED = 3;      
+    }
+ 
+    message ParkingBrakeStatus
+    {
+        required ParkingBrakeState parkingBrakeState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated ParkingBrakeStatus parkingBrakeStatus = 1;
+  }
+  
+  /**
+ * Propulsion status List.
+ **/
+  message PropulsionStatusList
+  { 
+    enum PropulsionState
+    {
+        UNKNOWN = 0;
+        COASTING_OR_OFF = 1;
+        POWER_OR_BRAKE = 2;            
+        FAULTY = 3;            
+        ISOLATED = 4;                  
+    }
+ 
+    message PropulsionStatus
+    {
+        required PropulsionState propulsionState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated PropulsionStatus propulsionStatus = 1;
+  }
+  
+  /**
+ * Service Brake status List.
+ **/
+  message ServiceBrakeStatusList
+  { 
+    enum ServiceBrakeState
+    {
+        UNKNOWN = 0;
+        APPLIED = 1;               
+        NOT_APPLIED = 2;               
+        FAULTY = 3;   
+        ISOLATED = 4; 
+    }
+ 
+    message ServiceBrakeStatus
+    {
+        required ServiceBrakeState serviceBrakeState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated ServiceBrakeStatus serviceBrakeStatus = 1;
+  }
+  
+  /**
+ * PCU status list
+ **/
+  message PCUStatusList
+  {
+    enum PCUState
+    {
+        UNKNOWN = 0;
+        OK = 1;   
+        FAULTY = 2;
+        ISOLATED = 3;
+    }
+ 
+    message PCUStatus
+    {
+        required PCUState pcuState = 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated PCUStatus pcuStatus = 1;
+   }
+   
+   /**
+ * Propulsion status list
+ **/
+  message PropulsionEnabledStatusList
+  {
+     enum PropulsionEnabledState
+    {
+        UNKNOWN = 0;
+        ENABLED = 1;   
+        NOT_ENABLED = 2;
+    }
+ 
+    message PropulsionEnabledStatus
+    {
+        required PropulsionEnabledState propulsionEnabledState = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated PropulsionEnabledStatus propulsionEnabledStatus = 1;
+  }
+  
+  /**
+ * AK contactor status list
+ **/
+    message AKContactorStatusList
+  {
+ 
+     enum AKContactorState
+    {
+        UNKNOWN = 0;
+        CLOSED = 1;   
+        OPEN = 2;
+    }
+    message AKContactorStatus
+    {
+        required AKContactorState akContactorState = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated AKContactorStatus akContactorStatus = 1;
+  }
+  
+  /**
+ * K contactor status list
+ **/
+    message KContactorStatusList
+    {
+    enum KContactorState
+    {
+        UNKNOWN = 0;
+        CLOSED = 1;   
+        OPEN = 2;
+    }
+ 
+    message KContactorStatus
+    {
+        required KContactorState kContactorState = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated KContactorStatus kContactorStatus = 1;
+  }
+  
+  /**
+ * Dynamic brake status list
+ **/
+    message DynamicBrakeStatusList
+    {
+        enum DynamicBrakeState
+        {
+        UNKNOWN = 0;
+        AVAILABLE = 1;
+        UNAVAILABLE = 2;
+        }
+ 
+ 
+        message DynamicBrakeStatus
+        {
+            required DynamicBrakeState dynamicBrakeState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated DynamicBrakeStatus dynamicBrakeStatus = 1;
+    }
+    
+    /**
+ *  VCB trip command status list
+ **/
+    message VCBTripCommandStatusList
+    {
+        enum VCBTripCommandState
+        {
+            UNKNOWN = 0;
+            NORMAL = 1;
+            TRIP_FORCED = 2;
+        }
+ 
+        message  VCBTripCommandStatus
+        {
+        required VCBTripCommandState vcbTripCommandState = 1;
+        required int32 carIndex = 2;
+        }
+ 
+        repeated VCBTripCommandStatus vcbTripCommandStatus = 1;
+ 
+    }  
+    
+    
+    /**
+ * Filter Voltage status list
+ **/
+    message FilterVoltageStatusList
+    {
+ 
+        message FilterVoltage
+        {
+            required int32 filterVoltage = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated FilterVoltage filterVoltage = 1;
+    } 
+    
+    /**
+ * Tractive effort status list
+ **/
+    message TractiveEffortStatusList
+    {
+ 
+        message TractiveEffort
+        {
+            required int32 tractiveEffort = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated TractiveEffort tractiveEffort = 1;
+    } 
+    
+    /**
+   * Maintains Door Control Unit states for each vehicle.
+  **/
+  message DCUStatusList
+  {
+  
+    enum DCUState
+    {
+        DCU_NOT_AVAILABLE = 0;
+        DCU_OK = 1;
+        DCU_FAULTY = 2;
+    }
+  
+    message DCUStatus
+    {
+        required DCUState dcuState = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated DCUStatus dcuStatus= 1;
+  }
+  
+  /**
+*   Auxiliary Power Supply control unit status list.
+**/
+    message APSControlUnitStatusList
+    {
+         
+        enum APSControlUnitState
+        {
+            APS_CU_UNKNOWN = 1;
+            APS_CU_NOT_ACTIVE = 2;
+            APS_CU_ACTIVE = 3;
+            APS_CU_FAULTY = 4;
+            APS_CU_ISOLATED = 5;
+            APS_CU_BLANK = 6;
+        }
+ 
+ 
+        message APSControlUnitStatus
+        {
+            required APSControlUnitState apsControlUnitState1 = 1;
+            required APSControlUnitState apsControlUnitState2 = 2;
+            required int32 carIndex = 3;
+        }
+ 
+ 
+        repeated APSControlUnitStatus apsControlUnitStatus = 1;
+    }
+
+
+  /**
+ * AK status list
+ **/
+    message AKStatusList
+  {
+  
+     enum AKState
+    {
+        AK_STATE_OPEN = 1;
+        AK_STATE_CLOSED = 2;
+        AK_STATE_UNKNOWN = 3;
+    }
+ 
+    message AKStatus
+    {
+        required AKState akState1 = 1;
+        required AKState akState2 = 2;
+        required int32 carIndex = 3;
+    }
+   
+    repeated AKStatus akStatus = 1;
+  }
+  
+  /**
+ * K status list
+ **/
+    message KStatusList
+  {
+  
+     enum KState
+    {
+        K_STATE_OPEN = 1;
+        K_STATE_CLOSED = 2;
+        K_STATE_UNKNOWN = 3;
+    }
+ 
+    message KStatus
+    {
+        required KState kState1 = 1;
+        required KState kState2 = 2;
+        required int32 carIndex = 3;
+    }
+   
+    repeated KStatus kStatus = 1;
+  }
+  
+  /**
+ * APS Output Voltage status list
+ **/
+    message APSOutputVoltageStatusList
+  {
+ 
+    message APSOutputVoltageStatus
+    {
+        required float apsOutputVoltage1 = 1;
+        required float apsOutputVoltage2 = 2;
+        required int32 carIndex = 3;
+    }
+   
+    repeated APSOutputVoltageStatus apsOutputVoltageStatus= 1;
+  }
+  
+  /**
+ * BCG status list
+ **/
+  message BCGStatusList
+  {
+    enum BCGState
+    {
+        BCG_UNKNOWN = 1;
+        BCG_OK = 2;   
+        BCG_FAULTY = 3;
+        BCG_BLANK = 4;
+        BCG_ISOLATED = 5;
+    }
+ 
+    message BCGStatus
+    {
+        required BCGState bcgState1 = 1;
+        required BCGState bcgState2 = 2;
+        required int32 carIndex = 3;
+    }
+ 
+    repeated BCGStatus bcgStatus = 1;
+   }
+  
+  
+/**
+ * BCG output voltage status list
+ **/
+  message BCGOutputVoltageStatusList
+  {
+ 
+    message BCGOutputVoltage
+    {
+        required int32 bcgOutputVoltage = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated BCGOutputVoltage bcgOutputVoltage = 1;
+  }
+  
+ /**
+  * Battery voltage status list
+  **/
+    message BatteryVoltageStatusList
+    {
+ 
+     message BatteryVoltage
+     {
+        required int32 batteryVoltage = 1;
+        required int32 carIndex = 2;
+     }
+ 
+     repeated BatteryVoltage  batteryVoltage = 1;
+    }
+    
+ /**
+  * Output current status list
+  **/
+    message OutputCurrentStatusList
+    {
+ 
+     message OutputCurrent
+     {
+        required int32 outputCurrent1 = 1;
+        required int32 outputCurrent2 = 2;
+        required int32 carIndex = 3;
+     }
+ 
+     repeated OutputCurrent  outputCurrent = 1;
+    }
+    
+ /**
+  * Total Output current status list
+  **/
+    message TotalOutputCurrentStatusList
+    {
+ 
+        message TotalOutputCurrent
+        {
+            required int32 totalOutputCurrent = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated TotalOutputCurrent  totalOutputCurrent = 1;
+    }
+    
+/**
+  * Battery current status list
+  **/
+    message BatteryCurrentStatusList
+    {
+ 
+        message BatteryCurrent
+        {
+            required int32 batteryCurrent = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated BatteryCurrent batteryCurrent = 1;
+    }       
+    
+/**
+ * Battery temperature status list
+ **/
+    message BatteryTemperatureStatusList
+    {
+ 
+        message BatteryTemperature
+        {
+            required int32 batteryTemperature = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated BatteryTemperature batteryTemperature = 1;
+    }      
+    
+    
+ /**
+*   Brake System - Service brake status list.
+**/
+    message ServiceBrkStatusList
+    { 
+        enum ServiceBrkState
+        {
+            SERV_BRK_UNKNOWN = 0;
+            SERV_BRK_NOT_APPLIED = 1;
+            SERV_BRK_APPLIED = 2;
+            SERV_BRK_ISOLATED = 3;
+            SERV_BRK_FAULTY = 4;
+        } 
+ 
+        message ServiceBrkStatus
+        {
+            required ServiceBrkState serviceBrkState1 = 1;
+            required ServiceBrkState serviceBrkState2 = 2;
+            required int32 carIndex = 3;
+        }
+ 
+        repeated ServiceBrkStatus serviceBrkStatus = 1;
+    }
+    
+/**
+*   Brake System - Parking brake status
+**/
+    message ParkingBrkStatusList
+    {
+        enum ParkingBrkState
+        {
+            PRKG_BRK_UNKNOWN = 1;
+            PRKG_BRK_NOT_APPLIED = 2;
+            PRKG_BRK_APPLIED = 3;
+            PRKG_BRK_ISOLATED = 4;
+        }
+ 
+        message ParkingBrkStatus
+        {
+            required ParkingBrkState parkingBrkState1 = 1;
+            required ParkingBrkState parkingBrkState2 = 2;
+            required int32 carIndex = 3;
+        }
+ 
+        repeated ParkingBrkStatus parkingBrkStatus = 1;
+    }
+    
+/**
+*   WSP status list
+**/
+    message WSPStatusList
+    {
+        enum WSPState
+        {
+            WSP_UNKNOWN = 1;
+            WSP_NOT_ACTIVATED = 2;
+            WSP_ACTIVATED = 3;
+        }
+ 
+        message WSPStatus
+        {
+            required WSPState wspState1 =1;
+            required WSPState wspState2 =2;
+            required int32 carIndex = 3;
+        }
+ 
+        repeated WSPStatus wspStatus = 1;
+    }
+    
+/**
+*   SUSP status list
+**/
+    message SUSPStatusList
+    {
+        enum SUSPState
+        {
+            SUSP_UNKNOWN = 1;
+            SUSP_NOT_ACTIVATED = 2;
+            SUSP_ACTIVATED = 3;
+            SUSP_FAULTY = 4;
+        }
+ 
+        message SUSPStatus
+        {
+            required SUSPState suspState1 =1;
+            required SUSPState suspState2 =2;
+            required int32 carIndex = 3;
+        }
+ 
+        repeated SUSPStatus suspStatus = 1;
+    }
+    
+/**
+*   Brake control unit status list.
+**/
+    message BrakeControlUnitStatusList
+    {
+        enum BrakeControlUnitState
+        {
+            BECU_UNKNOWN = 0;
+            BECU_NOT_OK = 1;
+            BECU_OK = 2;            
+            BECU_MAJOR_FAULT = 3;
+            BECU_MINOR_FAULT = 4;
+          
+        }
+ 
+        message BrakeControlUnitStatus
+        {
+            required BrakeControlUnitState brakeControlUnitState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated BrakeControlUnitStatus brakeControlUnitStatus = 1;
+    }   
+    
+/**
+*   Train line status list - Brake Train Line Status and Motor Train Line Status
+**/
+    message TrainLineStatusList
+    {
+        enum TrainLineState
+        {
+            TRN_LINE_UNKNOWN = 1;
+            TRN_LINE_NOT_ENERGIZED = 2;
+            TRN_LINE_ENERGIZED = 3;
+        }
+        
+        message TrainLineStatus
+        {
+            required TrainLineState brakeTrainLineState = 1;
+            required TrainLineState motorTrainLineState = 2;
+            required int32 carIndex = 3;
+        }
+        
+        repeated TrainLineStatus trainLineStatus = 1;
+    }
+    
+/**
+*   Full service brake line status list
+**/
+    message FullServiceBrakeLineStatusList
+    {
+        enum FullServiceBrakeLineState
+        {
+            FSB_UNKNOWN = 1;
+            FSB_NOT_ENERGIZED = 2;
+            FSB_ENERGIZED = 3;
+        }
+ 
+        message FullServiceBrakeLineStatus
+        {
+            required FullServiceBrakeLineState fullServiceBrakeLineState1 = 1;
+            required FullServiceBrakeLineState fullServiceBrakeLineState2 = 2;
+            required int32 carIndex = 3;
+        }
+ 
+        repeated FullServiceBrakeLineStatus fullServiceBrakeLineStatus = 1;
+    }
+    
+/**
+*   Emergency brake line status list
+**/
+    message EmergencyBrakeLineStatusList
+    {
+        enum EmergencyBrakeLineState
+        {
+            EB_LINE_UNKNOWN = 1;
+            EB_LINE_NOT_ENERGIZED = 2;
+            EB_LINE_ENERGIZED = 3;
+        }
+     
+        message EmergencyBrakeLineStatus
+        {
+            required EmergencyBrakeLineState emergencyBrakeLineState1 = 1;
+            required EmergencyBrakeLineState emergencyBrakeLineState2 = 2;         
+            required int32 carIndex = 3;
+        }
+     
+        repeated EmergencyBrakeLineStatus emergencyBrakeLineStatus = 1;
+    }    
+   
+/**
+*	Holding brake status and EPIC Isolation status list
+**/
+	message HoldingBrakeEpicIsolationStatusList
+
+	{
+
+		enum HoldingBrakeState
+		{
+			HLD_BRK_UNKNOWN = 1;
+			HLD_BRK_NOT_APPLIED = 2;
+			HLD_BRK_APPLIED = 3;
+		}
+
+		enum EpicIsolationState
+		{
+			EPIC_UNKNOWN = 1;
+            EPIC_NOT_ISOLATED = 2;
+            EPIC_ISOLATED = 3;
+		}
+
+		message HoldingBrakeEpicIsolationStatus
+		{
+			required HoldingBrakeState holdingBrakeState = 1;
+			required EpicIsolationState epicIsolationState = 2;
+			required int32 carIndex = 3;
+		}
+
+		repeated HoldingBrakeEpicIsolationStatus holdingBrakeEpicIsolationStatus = 1;
+
+	}
+    
+/**
+*	Main pipe pressure status list.
+**/
+	message MainPipePressureStatusList
+	{
+	
+		message MainPipePressureStatus
+		{
+			required float mainPipePressure = 1;
+			required int32 carIndex = 2;
+		}
+
+		repeated MainPipePressureStatus mainPipePressureStatus = 1;
+	}	
+	
+/**
+*   ED cut out status list
+**/
+    message EDCutOutRPRESSIsolationStatusList
+    {
+        enum EDCutOutState
+        {
+            ED_CUT_OUT_UNKNOWN = 1;
+            ED_CUT_OUT_NOT_ACTIVE = 2;
+            ED_CUT_OUT_ACTIVE = 3;
+        }
+        
+         enum RPRESSIsolationState
+        {
+            RPRESS_UNKNOWN = 1;
+            RPRESS_NOT_ISOLATED = 2;
+            RPRESS_ISOLATED = 3;
+        }
+   
+        message EDCutOutRpressIsolationStatus
+        {
+            required EDCutOutState edCutOutState = 1;
+            required RPRESSIsolationState rpressIsolationState = 2;
+            required int32 carIndex = 3;
+        }
+   
+        repeated EDCutOutRpressIsolationStatus edCutOutRpressIsolationStatus = 1;
+    }  	
+	
+/**
+*	Brake cylinder pressure status list.
+**/
+	message BrakeCylinderPressureStatusList
+	{
+
+		message BrakeCylinderPressureStatus
+		{
+			required float bogie1brakeCylinderPressure = 1;
+			required float bogie2brakeCylinderPressure = 2;
+			required int32 carIndex = 3;
+		}
+
+		repeated BrakeCylinderPressureStatus brakeCylinderPressureStatus = 1;
+	}
+	
+/**
+*	Air suspension pressure status list.
+**/
+	message AirSuspensionPressureStatusList
+	{
+
+		message AirSuspensionPressureStatus
+		{
+			required float airSuspensionPressure = 1;
+			required int32 carIndex = 2;
+		}
+
+		repeated AirSuspensionPressureStatus airSuspensionPressureStatus = 1;
+	}
+	
+/**
+*	EP brake delivered status list.
+**/
+	message EPBrakeDeliveredStatusList
+	{
+
+		message EPBrakeDeliveredStatus
+		{
+			required int32 epBrakeDeliveredEffort = 1;
+			required int32 carIndex = 2;
+		}
+
+		repeated EPBrakeDeliveredStatus epBrakeDeliveredStatus = 1;
+	}
+	
+/**
+*	ED brake requested status list.
+**/
+	message EDBrakeRequestedStatusList
+	{
+
+		message EDBrakeRequestedStatus
+		{
+			required int32 edBrakeRequestedEffort = 1;
+			required int32 carIndex = 2;
+		}
+
+		repeated EDBrakeRequestedStatus edBrakeRequestedStatus = 1;
+	}
+	
+/**
+*	Car weight status list.
+**/
+	message CarWeightStatusList
+	{
+
+		message CarWeightStatus
+		{
+			required float carWeight = 1;
+			required int32 carIndex = 2;
+		}
+
+		repeated CarWeightStatus carWeightStatus = 1;
+	}
+	
+/**
+*	Fire Detection Unit fault status list.
+**/
+	message FDUFaultStatusList
+	{
+		
+		enum FDUFaultState
+		{
+			FDU_FAULT_UNKNOWN = 1;
+			FDU_FAULT_NOT_ENERGIZED = 2;
+			FDU_FAULT_ENERGIZED = 3;
+			FDU_FAULT_NOT_AVAILABLE = 4;
+		}
+		
+		message FDUFaultStatus
+		{
+			required FDUFaultState fduFaultState = 1;
+			required int32 carIndex = 2;
+		}
+
+		repeated FDUFaultStatus fduFaultStatus = 1;
+	}
+	
+/**
+*   Fire Sensor fault status list.
+**/
+    message FireSensorFaultStatusList
+    {
+ 
+        enum FireSensorFaultState
+        {
+            FIRE_SENSOR_FAULT_UNKNOWN = 1;
+            FIRE_SENSOR_FAULT_FAULTY = 2;
+            FIRE_SENSOR_FAULT_NOT_FAULTY = 3;
+        }
+ 
+        message FireSensorFaultStatus
+        {
+            required FireSensorFaultState fireSensorFaultState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated FireSensorFaultStatus fireSensorFaultStatus = 1;
+    }
+    
+/**
+*   Fire Sensor Alarm status list.
+**/
+    message FireSensorAlarmStatusList
+    {
+ 
+        enum FireSensorAlarmState
+        {
+            FIRE_SENSOR_ALARM_UNKNOWN = 0;
+            FIRE_SENSOR_ALARM_NORMAL = 1;
+            FIRE_SENSOR_ALARM_PRE_ALARM = 2;
+            FIRE_SENSOR_ALARM_HEAT_SMOKE = 3;
+        }
+ 
+        message FireSensorAlarmStatus
+        {
+            required FireSensorAlarmState fireSensorAlarmState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated FireSensorAlarmStatus fireSensorAlarmStatus = 1;
+    }
+    
+/**
+*   Fire Sensor Disabled status list.
+**/
+    message FireSensorDisabledStatusList
+    {
+ 
+        enum FireSensorDisabledState
+        {
+            FIRE_SENSOR_DISABLED_UNKNOWN = 1;
+            FIRE_SENSOR_DISABLED_DISABLED = 2;
+            FIRE_SENSOR_DISABLED_NOT_DISABLED = 3;
+        }
+ 
+        message FireSensorDisabledStatus
+        {
+            required FireSensorDisabledState fireSensorDisabledState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated FireSensorDisabledStatus fireSensorDisabledStatus = 1;
+    }
+    
+/**
+*   Fire System Wired line status list
+**/    
+    message FireSystemWiredLineStatusList
+    {
+        enum FireSystemWireLineState
+        {
+            WIRED_LINE_HEALTHY = 0;
+            WIRED_LINE_NOT_AVAILABLE = 1;
+            WIRED_LINE_FAULTY = 2;
+            WIRED_LINE_UNKNOWN = 3;
+        }
+
+        message FireSystemWiredLineStatus
+        {
+            required int32 carIndex = 1;
+            required FireSystemWireLineState fireSystemWireLineState = 2;
+        }
+        
+        repeated FireSystemWiredLineStatus fireSystemWiredLineStatus = 1;
+    }
+    
+/**
+*   HVAC operation mode status list
+**/
+    message HVACOperationModeStatusList
+    {
+    
+        enum HVACOperatingState
+        {
+            HVAC_OPERATING_UNIT_OFF = 0;
+            HVAC_OPERATING_PRE_HEATING = 1;
+            HVAC_OPERATING_PRE_COOLING = 2;
+            HVAC_OPERATING_VENTILATION = 3;
+            HVAC_OPERATING_COOLING = 4;
+            HVAC_OPERATING_HEATING = 5;
+            HVAC_OPERATING_EMERGENCY_VENT = 6;
+            HVAC_OPERATING_FAULT = 7;
+            HVAC_OPERATING_ISOLATED = 8;
+        }
+ 
+        message HVACOperatingStatus
+        {
+            required HVACOperatingState hvacOperatingState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated HVACOperatingStatus hvacOperatingStatus = 1;
+    }
+    
+/**
+*   Set point temperature status list
+**/
+    message SetPointTemperatureStatusList
+    {
+         
+        message SetPointTemperatureStatus
+        {
+            required float setPointTemperature = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated SetPointTemperatureStatus setPointTemperatureStatus = 1;
+    }
+    
+/**
+*   Internal temperature status list
+**/
+    message InternalTemperatureStatusList
+    {
+ 
+        message InternalTemperatureStatus
+ 
+        {
+            required float internalTemperature = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated InternalTemperatureStatus internalTemperatureStatus= 1;
+    }
+    
+/**
+*   External temperature status list
+**/
+    message ExternalTemperatureStatusList
+    {
+ 
+        message ExternalTemperatureStatus
+ 
+        {
+            required float externalTemperature = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated ExternalTemperatureStatus externalTemperatureStatus= 1;
+    }
+
+ /**
+*   Wheel Flange Lubricator Status list.
+**/
+    message WFLStatusList
+    {
+         
+        enum WFLState
+        {
+            WFL_STATUS_UNKNOWN = 0;
+            WFL_STATUS_OK = 1;
+            WFL_STATUS_FAULTY = 2;
+            WFL_STATUS_BLANK = 3;
+            WFL_STATUS_ISOLATED = 4;
+        }
+ 
+ 
+        message WFLStatus
+        {
+            required WFLState wflState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated WFLStatus wflStatus = 1;
+    }
+
+/**
+*   Wheel Flange Lubricator Oil level status list.
+**/
+    message WFLOilLevelStatusList
+    {
+ 
+ 
+        enum WFLOilState
+        {
+            WFL_OIL_LEVEL_STATUS_UNKNOWN= 0;
+            WFL_OIL_LEVEL_STATUS_LOW = 1;
+            WFL_OIL_LEVEL_STATUS_HIGH = 2;
+            WFL_OIL_LEVEL_STATUS_BLANK = 3;
+        }
+ 
+ 
+        message WFLOilLevelStatus
+        {
+            required WFLOilState wflOilState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated WFLOilLevelStatus wflOilLevelStatus = 1;
+    }
+
+/**
+*   Wheel Flange Pump status list.
+**/
+    message WFLPumpStatusList
+    {
+ 
+        enum WFLPumpState
+        {
+            WFL_PUMP_STATUS_NOT_ACTIVE = 0;
+            WFL_PUMP_STATUS_ACTIVE = 1;
+            WFL_PUMP_STATUS_UNKNOWN = 2;
+            WFL_PUMP_STATUS_BLANK = 3;
+        }
+ 
+        message WFLPumpStatus
+        {
+            required WFLPumpState wflPumpState = 1;
+            required int32 carIndex = 3;
+        }
+ 
+        repeated WFLPumpStatus wflPumpStatus = 1;
+    }
+    
+/**
+*   Wheel Flange Pump Isolate button status list.
+**/
+    message WFL_Isolate_Status_List
+    {
+ 
+ 
+        enum IsolateState
+        {
+            WFL_ISOLATE_BUTTON_LIST_UNKNOWN = 1;
+            WFL_ISOLATE_BUTTON_LIST_ISOLATED = 2;
+            WFL_ISOLATE_BUTTON_LIST_NOT_ISOLATED = 3;
+        }
+ 
+ 
+        message IsolateButtonStatus
+        {
+            required IsolateState isolateState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated IsolateButtonStatus isolateButtonStatus = 1;
+}
+
+/**
+*   Active faults list
+**/
+    message ActiveFaultsList
+    {
+         
+        message FaultsStatus
+        {
+            required int32 id = 1; // event occurrence sequence
+            required int32 faultId = 2;
+            required string carIndex = 3;
+            required string faultCode = 4;
+            required int32 faultLevel = 5;
+            required string faultSystemName = 6;
+            required string faultDescription = 7;
+            required int64 faultOccurrenceDateTime = 8;
+            required string faultComponenet = 9;
+            required string operatorGuide = 10;
+            required bool acknowledged = 11;
+        }
+         
+        repeated FaultsStatus faults = 1;
+    }
+    
+/**
+*   Logged faults list
+**/
+    message LoggedFaultsList
+    {
+         
+        message LoggedFaultsStatus
+        {
+            required int32 id = 1; // event occurrence sequence
+            required int32 faultId = 2;
+            required string carIndex = 3;
+            required string faultCode = 4;
+            required int32 faultLevel = 5;
+            required string faultSystemName = 6;
+            required string faultDescription = 7;
+            required int64 faultOccurrenceDateTime = 8;
+            required int64 faultClearanceDateTime = 9;
+            required string faultComponenet = 10;
+            required string operatorGuide = 11;
+        }
+         
+        repeated LoggedFaultsStatus faults = 1;
+    }
+
+/**
+*   Saloon light groups and Flasher lights status list.
+**/
+    message LightStatusList
+    {
+         
+        enum LightState
+        {
+        	LIGHT_SYSTEM_OFF = 0;
+        	LIGHT_SYSTEM_ON = 1;
+            LIGHT_SYSTEM_UNKNOWN = 2;
+            LIGHT_SYSTEM_UNAVAILABLE = 3;
+        }  
+ 
+ 
+        message LightStatus
+        {
+            required LightState lightState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated LightStatus lightStatus = 1;
+    }
+    
+    
+/**
+* Energy consumption counters list
+**/
+    message EnergyConsumpCountersList
+    {
+        message EnergyConsumpStatus
+        {
+            required string counterName = 1;
+            required string description = 2;
+            required int64 currentValue = 3;
+            required string measurUnit = 4;
+        }
+         
+        repeated EnergyConsumpStatus energyConsumpStatus= 1;
+    }
+
+/**
+*   Fire detection system tests list
+**/
+    message TestSystemStatusList
+    {
+        message TestSystemStatus
+        {
+            required int32 id = 1;
+            required string carIndex = 2;
+            required string componenetName = 3;
+            required string testStatus = 4;
+            required int64  lastUpdateDate = 5;
+            required int64  lastUpdateTime = 6;
+        }
+   
+   
+        repeated TestSystemStatus testSystemStatus = 1;
+    }
+    
+/**
+*   Low Voltage system BIC Status list
+**/ 
+    message LVBatteryIsolationContactorStatusList
+    {
+        enum LVBatteryIsolationContactorState
+        {
+            BIC_OPEN = 0;
+            BIC_CLOSED = 1;
+        }
+        
+        message LVBatteryIsolationContactorStatus
+        {
+            required LVBatteryIsolationContactorState lvBatteryIsolationContactorState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated LVBatteryIsolationContactorStatus lvBatteryIsolationContactorStatus = 1;
+    }  
+    
+/**
+*   Low Voltage system TCC Status list
+**/ 
+    message LVTrainControlContactorStatusList
+    {
+        enum LVTrainControlContactorState
+        {
+            TCC_OPEN = 0;
+            TCC_CLOSED = 1;
+        }
+        
+        message LVTrainControlContactorStatus
+        {
+            required LVTrainControlContactorState lvTrainControlContactorState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated LVTrainControlContactorStatus lvTrainControlContactorStatus = 1;
+    }  
+    
+/**
+*   TCMS ECN Component Switch Status list
+**/ 
+    message ECNComponentSwitchStatusList
+    {
+        enum ECNComponentSwitchState
+        {
+            CS_NOT_AVAILABLE = 0;
+            CS_OK = 1;
+            CS_FAULTY = 2;
+        }
+        
+        message ECNComponentSwitchStatus
+        {
+            required ECNComponentSwitchState ecnComponentSwitchState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated ECNComponentSwitchStatus ecnComponentSwitchStatus = 1;
+    }
+    
+/**
+*   TCMS ECN TBN Status list
+**/ 
+    message TrainBackboneNodeStatusList
+    {
+        enum TrainBackboneNodeState
+        {
+            TBN_NOT_AVAILABLE = 0;
+            TBN_OK = 1;
+            TBN_FAULTY = 2;
+        }
+        
+        message TrainBackboneNodeStatus
+        {
+            required TrainBackboneNodeState trainBackboneNodeState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated TrainBackboneNodeStatus trainBackboneNodeStatus = 1;
+    }
+    
+/**
+*   TCMS ECN TER Status list
+**/ 
+    message TrainEthernetRepeaterStatusList
+    {
+        enum TrainEthernetRepeaterState
+        {
+            TER_NOT_AVAILABLE = 0;
+            TER_OK = 1;
+            TER_FAULTY = 2;
+        }
+        
+        message TrainEthernetRepeaterStatus
+        {
+            required TrainEthernetRepeaterState trainEthernetRepeaterState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated TrainEthernetRepeaterStatus trainEthernetRepeaterStatus = 1;
+    }
+    
+/**
+*   TCMS ALG TER Status list
+**/ 
+    message ALGStatusList
+    {
+        enum ALGState
+        {
+            ALG_NOT_AVAILABLE = 0;
+            ALG_OK = 1;
+            ALG_FAULTY = 2;
+        }
+        
+        message ALGStatus
+        {
+            required ALGState algState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated ALGStatus algStatus = 1;
+   }
+
+/** SpeedLimitDataList Status list
+  *
+ **/
+ message SpeedLimitData
+ {
+    message SpeedLimitDataStatus
+    {
+        required int32 limitId = 1;
+        required int32 speedLimitState = 2;
+    }
+    
+    repeated SpeedLimitDataStatus speedLimitDataStatus = 1;
+ }
+
+/**
+*   PEC Status List
+**/
+    message PECStatusList
+    {
+        enum PECState
+        {
+            PEC_OPEN = 0;
+            PEC_CLOSED = 1;
+        }
+        
+        message PECStatus
+        {
+            required PECState pecState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated PECStatus pecStatus = 1;
+    }
+    
+/**
+*   Aux Comp Status List
+**/
+    message AuxCompStatusList
+    {
+        enum AuxCompState
+        {
+            AUX_COMP_INACTIVE = 0;
+            AUX_COMP_ACTIVE = 1;
+        }
+        
+        message AuxCompStatus
+        {
+            required AuxCompState auxCompState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated AuxCompStatus auxCompStatus = 1;
+    }
+    
+/**
+*   MainComp Status List
+**/
+    message MainCompStatusList
+    {
+        enum MainCompState
+        {
+            MAIN_COMP_INACTIVE = 0;
+            MAIN_COMP_ACTIVE = 1;
+        }
+        
+        message MainCompStatus
+        {
+            required MainCompState mainCompState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated MainCompStatus mainCompStatus = 1;
+    }
+     /**
+  * PantographInterlockList Status list
+  *
+ **/
+ message PantographInterlockData
+ {
+    enum PantoState
+        {   
+            CLOSED = 0;
+             OPEN = 1;
+        }
+    message PantographInterlockStatus
+    {
+        required int32 carIndex = 1;
+        required PantoState acpmState = 2;
+        required PantoState ocpmState = 3;
+    }
+    
+    repeated PantographInterlockStatus pantographInterlockStatus = 1;
+ }
+     
+/**
+  * VCBInterlockList Status list
+  *
+ **/
+ message VcbInterlockData
+ {
+    enum VcbState
+        {   
+            CLOSED = 0;
+             OPEN = 1;
+        }
+    message VcbInterlockStatus
+    {
+        required int32 carIndex = 1;
+        required VcbState vcbTransformerTempState = 2;
+        required VcbState vcbByAcState = 3;
+        required VcbState vcbByMtrState = 4;
+        required VcbState vcbByIcMState = 5;
+        required VcbState vcbByIcDmState = 6;
+        required VcbState vcbByApsState = 7;
+        required VcbState vcbNoLineVoltageState =8;
+        required VcbState vcbByApsAkState = 9;
+        required VcbState vcbByCiAkState = 10;
+     }
+    
+    repeated VcbInterlockStatus vcbInterlockStatus = 1;
+ }
+
+/**
+  * EBLoopInterlockList Status list
+  *
+ **/
+ message EbInterlockData
+ {
+    enum EbState
+        {   
+            CLOSED = 0;
+             OPEN = 1;
+        }
+    message EbInterlockStatus
+    {
+        required int32 carIndex = 1;
+        required EbState ebByCc = 2;
+        required EbState ebByPushButton = 3;
+        required EbState ebByDeadman = 4;
+        required EbState ebByNonCabEnabled = 5;
+        required EbState ebByNonDirectionSelected = 6;
+        required EbState ebByMc = 7;
+        required EbState ebByBrakeLoop = 8;
+        required EbState ebByAtcZeroSpeed = 9;
+        required EbState masterControllerInFSB = 10;
+    }
+    
+    repeated EbInterlockStatus ebInterlockStatus = 1;
+ }
+
+ /**
+  * Door Loop InterlockList Status list
+  *
+ **/
+ message DoorLoopInterlockData
+ {
+    enum DoorLoopInterlockState
+        {   
+            CLOSED = 1;
+             OPEN = 0;
+        }
+    message DoorLoopInterlockStatus
+    {
+        required int32 carIndex = 1;
+        required DoorLoopInterlockState DoorLoopInterlockState = 2;
+    }
+    
+    repeated DoorLoopInterlockStatus doorLoopInterlockStatus = 1;
+ }
+ 
+ /**
+ * Propulsion Motor Temperatures list
+ **/
+  message MotorTemperaturesList
+  { 
+
+    message MotorTemperature
+    {
+        required int32 bogie1motorTemperature= 1;
+        required int32 bogie2motorTemperature= 2;
+        required int32 carIndex = 3;
+    }
+
+    repeated MotorTemperature motorTemperature= 1;
+   }
+
+/**
+ * Main Transformer Temperatures list
+ **/
+  message MainTransformerTemperaturesList
+  {
+ 
+    message MainTransformerTemperatures
+    {
+        required int32 mainTransformerTemperature= 1;
+        required int32 carIndex = 2;
+    }
+ 
+    repeated MainTransformerTemperatures mainTransformerTemperatures= 1;
+   }
+   
+/**
+*   TCMS Status - CCU Status list
+**/ 
+    message CCUStatusList
+    {
+        enum CCUState
+        {
+            CCU_OK = 1;
+            CCU_FAULTY = 2;
+        }
+        
+        message CCUStatus
+        {
+            required CCUState ccuState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated CCUStatus ccuStatus = 1;
+    }
+    
+/**
+*   TCMS Status - RIO1-M Status list
+**/ 
+    message RIO1FaultStatusList
+    {
+        enum RIO1FaultState
+        {
+            RIO1_OK = 1;
+            RIO1_FAULTY = 2;
+        }
+        
+        message RIO1FaultStatus
+        {
+            required RIO1FaultState riO1FaultState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated RIO1FaultStatus riO1FaultStatus = 1;
+    }
+    
+/**
+*   TCMS Status - RIO1-RIO2 Communication Line Status list
+**/ 
+    message RIO12LineStatusList
+    {
+        enum RIO12LineState
+        {
+            RIO12LINE_OK = 1;
+            RIO12LINE_FAULTY = 2;
+        }
+        
+        message RIO12LineStatus
+        {
+            required RIO12LineState rio12LineState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated RIO12LineStatus rio12LineStatus = 1;
+    }
+    
+/**
+*   TCMS Status - ER Status list
+**/ 
+    message ERStatusList
+    {
+        enum ERState
+        {
+            ER_OK = 1;
+            ER_FAULTY = 2;
+        }
+        
+        message ERStatus
+        {
+            required ERState erState = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated ERStatus erStatus = 1;
+    }
+    
+      /**
+ * CI  status list
+ **/
+    message CIStatusList
+    {
+    enum CIState
+    {
+     	CI_OFF=0;
+       CI_ACTIVE=1;
+       CI_ISOLATED = 2;
+       CI_FAULTY = 3;
+    }
+ 
+    message CIStatus
+    {
+        required CIState cIState = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated CIStatus cIStatus = 1;
+  }
+  
+  
+   message HVAC1StatusList
+    {
+    enum HVAC1State
+    {
+     	OPEN = 1;
+        CLOSED = 0;   
+      
+      
+    }
+ 
+    message HVAC1Status
+    {
+        required HVAC1State havac1State = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated HVAC1Status hvac1Status = 1;
+  }
+  
+  message HVSelectedCarIndexList
+    {
+   
+    message SelectedCarIndex
+    {
+        required int32 carIndex = 1;
+        required int32 pantoButtonSelected = 2;
+    }
+  
+    repeated SelectedCarIndex selectedCarIndex = 1;
+  }
+  
+  /**
+*   HVAC Control mode status list
+**/
+    message HVACControlModeStatusList
+    {
+    
+        enum HVACControlState
+        {
+            HVAC_CONTROL_AUTO = 0;
+            HVAC_CONTROL_REDUCED = 1;
+           
+        }
+ 
+        message HVACControlStatus
+        {
+            required HVACControlState hvacControlState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+        repeated HVACControlStatus hvacControlStatus = 1;
+    }
+    
+   message APSCIBStatusList
+    {
+    enum APSCIBState
+    {
+     	OPEN = 0;
+        CLOSED = 1;   
+      
+      
+    }
+ 
+    message APSCIBStatus
+    {
+        required APSCIBState apscibState = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated APSCIBStatus apscibStatus = 1;
+  }
+  
+   message FDUCBStatusList
+    {
+    enum FDUCBState
+    {
+     	OPEN = 0;
+        CLOSED = 1;   
+      
+      
+    }
+ 
+    message FDUCBStatus
+    {
+        required FDUCBState fducbState = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated FDUCBStatus fducbStatus = 1;
+  }
+  
+  enum MiscState
+    {
+        MISC_NOT_ACTIVE = 0; //WHITE COLOR
+        MISC_ACTIVE = 1; //GREEN COLOR
+    }
+    
+   
+    
+     message ObstrectionStatusList
+    {
+         
+ 
+        message ObstrectionStatus
+        {
+            required MiscState miscState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated ObstrectionStatus obstrectionStatus = 1;
+    }
+    
+      message DerailmentStatusList
+    {
+         
+ 
+        message DerailmentStatus
+        {
+            required MiscState miscState = 1;
+            required int32 carIndex = 2;
+        }
+ 
+ 
+        repeated DerailmentStatus derailmentStatus = 1;
+    }
+    
+
+  /**
+*   TCMS Status - RIO1- Status list
+**/ 
+    message RIO1StatusList
+    {
+        enum RIO1State
+        {
+         	RIO1_UNKNOW = 0;
+            RIO1_OK = 1;
+            RIO1_FAULTY = 2;
+           
+        }
+        
+        message RIO1Status
+        {
+            required RIO1State rio1State = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated RIO1Status rio1Status = 1;
+    }    
+    
+    
+    /**
+*   TCMS Status - RIO2- Status list
+**/ 
+    message RIO2StatusList
+    {
+        enum RIO2State
+        {
+        	RIO2_UNKNOW = 0;
+            RIO2_OK = 1;
+            RIO2_FAULTY = 2;
+        }
+        
+        message RIO2Status
+        {
+            required RIO2State rio2State = 1;
+            required int32 carIndex = 2;
+        }
+        
+        repeated RIO2Status rio2Status = 1;
+    } 
+    
+/**
+  * Enable to Run Status list
+  *
+ **/
+ message EnableToRunList
+ {
+    enum ERState
+        {   
+            ACTIVE = 1;
+             NOT_ACTIVE = 0;
+        }
+    message EnableToRunStatus
+    {
+        required int32 carIndex = 1;
+        required ERState erHighVolatgeMissing = 2;
+        required ERState erCabNotEnabled = 3;
+        required ERState erDrivingModeNotOk = 4;
+        required ERState erTrainDirectionMissing = 5;
+        required ERState erAtcStatus = 6;
+        required ERState erTrainReady = 7;
+        required ERState erManyRPressure = 8;
+        required ERState erManyEpicCutout = 9;
+        required ERState erManyBogieIsolated = 10;
+        required ERState erMotoringTl = 11;
+        required ERState erBrakeLoopTl = 12;
+        required ERState erParkingBrakeTl = 13;
+        required ERState erDoorLoopOpenTl = 14;
+        required ERState erZvrdNotActive = 15;
+    }
+    
+    repeated EnableToRunStatus enableToRunStatus = 1;
+ }  
+    
+  enum BrakeLoopState
+        {   
+            ACTIVE = 1;
+             NOT_ACTIVE = 0;
+        }   
+    
+    
+/**
+  * MainReserviorPressureLowList Status list
+  *
+ **/
+ message MainReserviorPressureLowList
+ {
+   
+    message MainReserviorStatus
+    {
+        required int32 carIndex = 1;
+        required BrakeLoopState mainReseerviorState = 2;
+    }
+    
+    repeated MainReserviorStatus mainReserviorStatus = 1;
+ }  
+        
+ /**
+  * AutomaticDropList Status list
+  *
+ **/
+ message AutomaticDropList
+ {
+   
+    message AutomaticDropStatus
+    {
+        required int32 carIndex = 1;
+        required BrakeLoopState automaticDropState = 2;
+    }
+    
+    repeated AutomaticDropStatus automaticDropStatus = 1;
+ }    
+ 
+ /**
+  * AutomaticDropList Status list
+  *
+ **/
+ message BrakeLoopCbTripedList
+ {
+    
+    message BrakeLoopCbTripedStatus
+    {
+        required int32 carIndex = 1;
+        required BrakeLoopState brakeLoopCbTripedState = 2;
+    }
+    
+    repeated BrakeLoopCbTripedStatus brakeLoopCbTripedStatus = 1;
+ } 
+ 
+ 
+   
+    /**
+*   Route Station List - For Jave BE to FE communication
+**/
+  message StationList
+  {
+  	message StationDetail
+  	{
+  		required int32 stationId = 1;
+  		required string stationName = 2;
+  		required string stationCode = 3;
+  	}
+  	repeated StationDetail stationDetail = 1;
+  }
+  
+  
+   message HVAC2StatusList
+    {
+    enum HVAC2State
+    {
+     	OPEN = 1;
+        CLOSED = 0;   
+      
+      
+    }
+ 
+    message HVAC2Status
+    {
+        required HVAC2State havac2State = 1;
+        required int32 carIndex = 2;
+    }
+  
+    repeated HVAC2Status hvac2Status = 1;
+  }
+  
+  message SkipIDList
+{
+	message SkipId
+	{
+		required int32 stationId = 1;
+	}
+	repeated SkipId idList= 1;
+}
+
+message VehiclePecuList
+{
+	message VehiclePecu
+	{
+	    required int32 pecu1 = 1;
+        required int32 pecu2 = 2;
+        required int32 pecu3 = 3;
+        required int32 pecu4 = 4;
+        required int32 vehInd = 5;
+    }
+	repeated VehiclePecu PecuList = 1;
+}
+  

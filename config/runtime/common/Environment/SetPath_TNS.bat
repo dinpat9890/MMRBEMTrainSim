@@ -1,0 +1,1 @@
+set TNS_ADMIN=%~dp0..\Environment\

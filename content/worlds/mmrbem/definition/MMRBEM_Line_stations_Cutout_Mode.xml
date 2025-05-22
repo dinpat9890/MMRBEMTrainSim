@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<world_config title="Mumbai_Metro_L2_L7_Track_Cutout_Mode">
+   <stations>
+        <station name="Gundavali">
+            <station_features>
+                <station_feature feature="Gundavali_1" />
+                <station_feature feature="Gundavali_2" />
+            </station_features>
+        </station>
+        <station name="Mogra">
+            <station_features>
+                <station_feature feature="Mogra_1" />
+                <station_feature feature="Mogra_2" />
+            </station_features>
+        </station>
+        <station name="Jogeshwari (East)">
+            <station_features>
+                <station_feature feature="Jogeshwari (East)_1" />
+				<station_feature feature="Jogeshwari (East)_2" />
+            </station_features>
+        </station>
+        <station name="Goregaon (East)">
+            <station_features>
+                <station_feature feature="Goregaon (East)_1" />
+                <station_feature feature="Goregaon (East)_2" />
+            </station_features>
+        </station>
+        <station name="Aarey">
+            <station_features>
+                <station_feature feature="Aarey_1" />
+                <station_feature feature="Aarey_2" />
+            </station_features>
+        </station>
+        <station name="Dindoshi">
+            <station_features>
+                <station_feature feature="Dindoshi_1" />
+                <station_feature feature="Dindoshi_2" />
+            </station_features>
+        </station>
+        <station name="Kurar">
+            <station_features>
+                <station_feature feature="Kurar_1" />
+                <station_feature feature="Kurar_2" />
+            </station_features>
+        </station>
+        <station name="Akurli">
+            <station_features>
+                <station_feature feature="Akurli_1" />
+                <station_feature feature="Akurli_2" />
+            </station_features>
+        </station>
+        <station name="Poisar">
+            <station_features>
+                <station_feature feature="Poisar_1" />
+                <station_feature feature="Poisar_2" />
+            </station_features>
+        </station>
+        <station name="Magathane">
+            <station_features>
+                <station_feature feature="Magathane_1" />
+                <station_feature feature="Magathane_2" />
+            </station_features>
+        </station>
+        <station name="Devipada">
+            <station_features>
+                <station_feature feature="Devipada_1" />
+                <station_feature feature="Devipada_2" />
+            </station_features>
+        </station>
+        <station name="Rashtriya udyan">
+            <station_features>
+                <station_feature feature="Rashtriya udyan_1" />
+                <station_feature feature="Rashtriya udyan_2" />
+            </station_features>
+        </station>
+        <station name="Ovaripada">
+            <station_features>
+                <station_feature feature="Ovaripada_1" />
+                <station_feature feature="Ovaripada_2" />
+            </station_features>
+		</station>
+
+        <station name="Dahisar East">
+            <station_features>
+                <station_feature feature="Dahisar East_1" />
+                <station_feature feature="Dahisar East_2" />
+            </station_features>
+		</station>
+        <station name="Anand Nagar">
+            <station_features>
+                <station_feature feature="Anand Nagar_1" />
+                <station_feature feature="Anand Nagar_2" />
+            </station_features>
+		</station>
+        <station name="Kandarpada">
+            <station_features>
+                <station_feature feature="Kandarpada_1" />
+                <station_feature feature="Kandarpada_2" />
+            </station_features>
+		</station>
+        <station name="Mandapeshwar">
+            <station_features>
+                <station_feature feature="Mandapeshwar_1" />
+                <station_feature feature="Mandapeshwar_2" />
+            </station_features>
+		</station>
+        <station name="Eksar">
+            <station_features>
+                <station_feature feature="Eksar_1" />
+                <station_feature feature="Eksar_2" />
+            </station_features>
+		</station>
+        <station name="Borivali West">
+            <station_features>
+                <station_feature feature="Borivali West_1" />
+                <station_feature feature="Borivali West_2" />
+            </station_features>
+		</station>
+        <station name="Pahadi Eksar">
+            <station_features>
+                <station_feature feature="Pahadi Eksar_1" />
+                <station_feature feature="Pahadi Eksar_2" />
+            </station_features>
+		</station>
+        <station name="Kandivali West">
+            <station_features>
+                <station_feature feature="Kandivali West_1" />
+                <station_feature feature="Kandivali West_2" />
+            </station_features>
+		</station>
+        <station name="Dahanukarwadi">
+            <station_features>
+                <station_feature feature="Dahanukarwadi_1" />
+                <station_feature feature="Dahanukarwadi_2" />
+            </station_features>
+		</station>
+        <station name="Valnai">
+            <station_features>
+                <station_feature feature="Valnai_1" />
+                <station_feature feature="Valnai_2" />
+            </station_features>
+		</station>
+        <station name="Malad West">
+            <station_features>
+                <station_feature feature="Malad West_1" />
+                <station_feature feature="Malad West_2" />
+            </station_features>
+		</station>
+        <station name="Lower Malad">
+            <station_features>
+                <station_feature feature="Lower Malad_1" />
+                <station_feature feature="Lower Malad_2" />
+            </station_features>
+		</station>
+        <station name="Pahadi Goregaon">
+            <station_features>
+                <station_feature feature="Pahadi Goregaon_1" />
+                <station_feature feature="Pahadi Goregaon_2" />
+            </station_features>
+		</station>
+        <station name="Goregaon West">
+            <station_features>
+                <station_feature feature="Goregaon West_1" />
+                <station_feature feature="Goregaon West_2" />
+            </station_features>
+		</station>
+        <station name="Oshiwara">
+            <station_features>
+                <station_feature feature="Oshiwara_1" />
+                <station_feature feature="Oshiwara_2" />
+            </station_features>
+		</station>
+        <station name="Lower Oshiwara">
+            <station_features>
+                <station_feature feature="Lower Oshiwara_1" />
+                <station_feature feature="Lower Oshiwara_2" />
+            </station_features>
+		</station>
+        <station name="Andheri West">
+            <station_features>
+                <station_feature feature="Andheri West_1" />
+                <station_feature feature="Andheri West_2" />
+            </station_features>
+		</station>
+   </stations>
+   
+   <destinations>
+      <destination code="Ovaripada" name="Ovaripada" />
+	  <destination code="Gundavali" name="Gundavali" />
+	  <destination code="Dahisar East" name="Dahisar East" />
+	  <destination code="Andheri West_2" name="Andheri West_2" />
+   </destinations>
+   
+   <lines>
+
+      <line code="L7" name="Mumbai Line L7">
+         <line_stations>
+            <line_station station="Gundavali" sequence="1" />
+            <line_station station="Mogra" sequence="2" />
+            <line_station station="Jogeshwari (East)" sequence="3" />
+            <line_station station="Goregaon (East)" sequence="4" />
+            <line_station station="Aarey" sequence="5" />
+            <line_station station="Dindoshi" sequence="6" />
+            <line_station station="Kurar" sequence="7" />
+            <line_station station="Akurli" sequence="8" />
+            <line_station station="Poisar" sequence="9" />
+            <line_station station="Magathane" sequence="10" />
+            <line_station station="Devipada" sequence="11" />
+            <line_station station="Rashtriya udyan" sequence="12" />
+			<line_station station="Ovaripada" sequence="13" />
+         </line_stations>
+
+         <routes>
+            <route code="L7-UP" name="Mumbai Line L7" destination="Ovaripada">
+               <route_stations>
+                  <route_station station="Gundavali" sequence="1" location="1" />
+                  <route_station station="Mogra" sequence="2" location="2" />
+                  <route_station station="Jogeshwari (East)" sequence="3" location="3" />
+                  <route_station station="Goregaon (East)" sequence="4" location="4" />
+                  <route_station station="Aarey" sequence="5" location="5" />
+                  <route_station station="Dindoshi" sequence="6" location="6" />
+                  <route_station station="Kurar" sequence="7" location="7" />
+                  <route_station station="Akurli" sequence="8" location="8" />
+                  <route_station station="Poisar" sequence="9" location="9" />
+                  <route_station station="Magathane" sequence="10" location="10" />
+                  <route_station station="Devipada" sequence="11" location="11" />
+                  <route_station station="Rashtriya udyan" sequence="12" location="12" />
+				  <route_station station="Ovaripada" sequence="13" location="13" />
+               </route_stations>
+            </route>
+
+            <route code="L7-DOWN" name="Mumbai Line 7 Reverse" destination="Gundavali">
+               <route_stations>
+                  <route_station station="Ovaripada" sequence="1" location="13" />
+				  <route_station station="Rashtriya udyan" sequence="2" location="12" />
+                  <route_station station="Devipada" sequence="3" location="11" />
+                  <route_station station="Magathane" sequence="4" location="10" />
+                  <route_station station="Poisar" sequence="5" location="9" />
+                  <route_station station="Akurli" sequence="6" location="8" />
+                  <route_station station="Kurar" sequence="7" location="7" />
+                  <route_station station="Dindoshi" sequence="8" location="6" />
+                  <route_station station="Aarey" sequence="9" location="5" />
+                  <route_station station="Goregaon (East)" sequence="10" location="4" />
+                  <route_station station="Jogeshwari (East)" sequence="11" location="3" />
+                  <route_station station="Mogra" sequence="12" location="2" />
+                  <route_station station="Gundavali" sequence="13" location="1" />
+               </route_stations>
+            </route>
+         </routes>
+
+      </line>
+      
+       <line code="L2A" name="Mumbai Line L2A">
+         <line_stations>
+            <line_station station="Dahisar East" sequence="1" />
+            <line_station station="Anand Nagar" sequence="2" />
+            <line_station station="Kandarpada" sequence="3" />
+            <line_station station="Mandapeshwar" sequence="4" />
+            <line_station station="Eksar" sequence="5" />
+            <line_station station="Borivali West" sequence="6" />
+            <line_station station="Pahadi Eksar" sequence="7" />
+            <line_station station="Kandivali West" sequence="8" />
+            <line_station station="Dahanukarwadi" sequence="9" />
+            <line_station station="Valnai" sequence="10" />
+            <line_station station="Malad West" sequence="11" />
+            <line_station station="Lower Malad" sequence="12" />
+			<line_station station="Pahadi Goregaon" sequence="13" />
+			<line_station station="Goregaon West" sequence="14" />
+			<line_station station="Oshiwara" sequence="15" />
+			<line_station station="Lower Oshiwara" sequence="16" />
+			<line_station station="Andheri West" sequence="17" />
+         </line_stations>
+
+         <routes>
+            <route code="L2A-UP" name="Mumbai Line 2A" destination="Andheri West">
+               <route_stations>				  
+				  <route_station station="Dahisar East" sequence="1" location="1" />
+                  <route_station station="Anand Nagar" sequence="2" location="2" />
+                  <route_station station="Kandarpada" sequence="3" location="3" />
+                  <route_station station="Mandapeshwar" sequence="4" location="4" />
+                  <route_station station="Eksar" sequence="5" location="5" />
+                  <route_station station="Borivali West" sequence="6" location="6" />
+                  <route_station station="Pahadi Eksar" sequence="7" location="7" />
+                  <route_station station="Kandivali West" sequence="8" location="8" />
+                  <route_station station="Dahanukarwadi" sequence="9" location="9" />
+                  <route_station station="Valnai" sequence="10" location="10" />
+                  <route_station station="Malad West" sequence="11" location="11" />
+                  <route_station station="Lower Malad" sequence="12" location="12" />
+                  <route_station station="Pahadi Goregaon" sequence="13" location="13" />
+                  <route_station station="Goregaon West" sequence="14" location="14" />
+                  <route_station station="Oshiwara" sequence="15" location="15" />
+                  <route_station station="Lower Oshiwara" sequence="16" location="16" />
+                  <route_station station="Andheri West" sequence="17" location="17" />
+               </route_stations>
+            </route>
+
+            <route code="L2A-DOWN" name="Mumbai Line 2A Reverse" destination="Dahisar East">
+               <route_stations>
+                  <route_station station="Andheri West" sequence="1" location="17" />
+                  <route_station station="Lower Oshiwara" sequence="2" location="16" />
+                  <route_station station="Oshiwara" sequence="3" location="15" />
+                  <route_station station="Goregaon West" sequence="4" location="14" />
+                  <route_station station="Pahadi Goregaon" sequence="5" location="13" />
+                  <route_station station="Lower Malad" sequence="6" location="12" />
+                  <route_station station="Malad West" sequence="7" location="11" />
+                  <route_station station="Valnai" sequence="8" location="10" />
+                  <route_station station="Dahanukarwadi" sequence="9" location="9" />
+                  <route_station station="Kandivali West" sequence="10" location="8" />
+                  <route_station station="Pahadi Eksar" sequence="11" location="7" />
+                  <route_station station="Borivali West" sequence="12" location="6" />
+                  <route_station station="Eksar" sequence="13" location="5" />
+                  <route_station station="Mandapeshwar" sequence="14" location="4" />
+                  <route_station station="Kandarpada" sequence="15" location="3" />
+                  <route_station station="Anand Nagar" sequence="16" location="2" />
+				  <route_station station="Dahisar East" sequence="17" location="1" />
+               </route_stations>
+            </route>
+         </routes>
+
+      </line>
+      
+ 
+
+   </lines>
+
+</world_config>

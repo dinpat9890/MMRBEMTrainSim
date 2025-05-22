@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="282166410" name="building_highrise_01">
+		<mesh_name>../worlds/library_objects/gen_building/building_highrise_01.mesh</mesh_name>
+		<surface name="building_highrise_01_building_highrise_glass_01" max_visible_distance="8000" max_fade_distance="10" material="5c557267d802d94621ae5ed8603f95a6eedb3536" property="surface_base"/>
+		<surface name="building_highrise_01_building_highrise_glass_01_blue" max_visible_distance="8000" max_fade_distance="10" material="2f015ad18583d490bcda487eed08361237dc349c" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

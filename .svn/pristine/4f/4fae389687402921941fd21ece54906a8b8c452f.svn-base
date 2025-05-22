@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\FlightSimGaugeUnit.cpp" />
+    <ClCompile Include="Source\FlightSimUnitV2.cpp" />
+    <ClCompile Include="Source\Hardware\ArduinoHardware.cpp" />
+    <ClCompile Include="Source\Hardware\ArduinoProperties.cpp" />
+    <ClCompile Include="Source\Hardware\FlightSimGaugeHardware.cpp" />
+    <ClCompile Include="Source\Hardware\FlightSimHardwareV2.cpp" />
+    <ClCompile Include="Source\SerialDeviceApplication.cpp" />
+    <ClCompile Include="Source\SerialDevices.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\FlightSimGaugeUnit.h" />
+    <ClInclude Include="Source\FlightSimUnitV2.h" />
+    <ClInclude Include="Source\Hardware\ArduinoHardware.h" />
+    <ClInclude Include="Source\Hardware\ArduinoProperties.h" />
+    <ClInclude Include="Source\Hardware\FlightSimGaugeHardware.h" />
+    <ClInclude Include="Source\Hardware\FlightSimHardwareV2.h" />
+    <ClInclude Include="Source\SerialDeviceApplication.h" />
+    <ClInclude Include="Source\SerialDeviceCommon.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{191A1F1F-4972-458E-BF96-3186C37E27E5}</ProjectGuid>
+    <RootNamespace>SerialDevices</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+          Source;
+          $(CoreTrainSimIncludeRoot)world_api/Include;
+          $(CommonIncludeRoot)sim_common/Include;
+          $(CommonIncludeRoot)sim_comms/Include;
+          $(CommonIncludeRoot)network_definition/Include;
+          $(CoreSimIncludeRoot)core_data_access/include;
+          $(ProjectIncludeRoot)Include;
+          $(ProjectConfigRoot)project_comms_structure/Include;
+          $(CommonIncludeRoot)comms/Include;
+          $(CommonIncludeRoot)scripting/Include;
+          $(CommonIncludeRoot)common/Include;
+          $(CoreSimConfigRoot)/core_comms_structure/include;
+          $(CoreSimIncludeRoot)/utility/include;
+          $(CoreSimIncludeRoot)/core_types/include;
+          $(CoreSimIncludeRoot)/core_properties/include;
+          $(CoreSimIncludeRoot)/file_access/include;
+          $(CoreTrainSimIncludeRoot)/train_data_access/include;
+          $(CoreTrainSimConfigRoot)/train_comms_structure/include;
+          $(simfreightconfigroot)/freight_comms_structure/include;
+          %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_VARIADIC_MAX=10;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>
+          $(CoreTrainSimIncludeRoot)\world_api\lib;
+          $(CoreSimIncludeRoot)\utility\lib;
+          $(CommonIncludeRoot)\common\lib;
+          $(CommonIncludeRoot)\comms\lib;
+          $(CoreSimIncludeRoot)\core_data_access\lib;
+          $(CommonIncludeRoot)\network_definition\lib;
+          $(CommonIncludeRoot)\sim_comms\lib;
+          $(CommonIncludeRoot)\sim_common\lib;
+          $(CommonIncludeRoot)oracle_access/lib;
+          $(CoreSimIncludeRoot)core_properties/lib;
+          $(CoreTrainSimIncludeRoot)train_data_access/lib;
+          $(CoreSimIncludeRoot)file_access/lib;
+          $(COTSIncludeRoot)zlib/Lib;
+          $(CoreSimIncludeRoot)config_file_access/lib;
+          %(AdditionalLibraryDirectories)
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+          sim_comms$(LibType);
+          network_definition$(LibType);
+          core_data_access$(LibType);
+          comms$(LibType);
+          common$(LibType);
+          utility$(LibType);
+          world_api$(LibType);
+          oracle_access$(LibType);
+          core_properties$(LibType);
+          train_data_access$(LibType);
+          file_access$(LibType);
+          zlib$(LibType);
+          config_file_access$(LibType);
+          %(AdditionalDependencies)
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

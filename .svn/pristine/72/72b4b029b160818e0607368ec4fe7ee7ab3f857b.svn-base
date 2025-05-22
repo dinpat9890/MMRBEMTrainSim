@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="951164203" folded="1" name="_track">
+		<transform>1.00000011921 0 0 0.0 0 1.00000011921 0 0.0 0 0 1.0000000596 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="622941049" enabled="0" folded="1" name="_segments">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="1616723843" name="_segment_1">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_1.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5867.79301105 16929.4660865 -12.3263105876 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1482638768" name="_segment_2">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_2.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3766.68926285 15871.586709 -12.3580166598 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="179919750" name="_segment_3">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_3.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2890.66463253 21290.1065834 -13.2634094215 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1472424227" name="_segment_5">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_5.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 13265.3594768 14541.9445919 -19.5636726057 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1246431737" name="_segment_6">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_6.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 11138.6362243 14383.8517911 -3.87240636926 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1667104067" name="_segment_7">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_7.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12935.7806992 14682.1520732 -15.6854089951 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="760044316" name="_segment_8">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_8.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 13264.7322957 14549.9413942 -19.5638310253 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1905405646" name="_segment_9">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_9.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 9731.00755171 14920.3211733 -6.39603623461 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="338462488" name="_segment_10">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_10.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12936.3150683 14679.7178773 -15.6788581053 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="299958453" name="_segment_11">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_11.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12936.5501308 14679.798767 -15.6864752004 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1135344498" name="_segment_12">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_12.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12937.1552165 14677.3300604 -15.6790274502 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1199687928" name="_segment_13">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_13.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6017.72424827 17022.5195761 -12.3290557821 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="717884840" name="_segment_14">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_14.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5744.16374597 16860.1048554 -12.3264024586 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="917346225" name="_segment_15">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_15.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5989.23740908 17003.20024 -12.3287957003 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="143647921" name="_segment_16">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_16.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5711.56677377 16846.6397143 -12.3242411598 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1172939287" name="_segment_17">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_17.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2904.07596236 17512.9635312 -10.9776399328 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="399400330" name="_segment_18">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_18.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5862.84197797 16937.6137789 -12.3261941769 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1229760398" name="_segment_19">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_19.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 7454.7506926 16756.6435803 -12.8274691108 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="821359547" name="_segment_20">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_20.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 9048.36859537 15174.4511566 -7.64467608166 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="751262631" name="_segment_21">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_21.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3193.50608147 16978.7282427 -11.4281527456 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2026416866" name="_segment_22">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_22.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8527.38852762 15691.8640537 -9.36664519616 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="342805292" name="_segment_23">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_23.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6015.95848328 17024.2664699 -12.3301127955 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="37483830" name="_segment_24">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_24.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5979.19941607 17000.0563932 -12.3282045909 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="264095782" name="_segment_25">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_25.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5864.8739129 16933.3953194 -12.327782213 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2099944727" name="_segment_26">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_26.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5751.71009426 16867.4120745 -12.3282236359 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="920997609" name="_segment_27">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_27.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5706.03745838 16840.7818888 -12.3285180197 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1974793651" name="_segment_148">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_segments/_segment_148.mesh</mesh_name>
+				<surface name="collapsed_0" max_visible_distance="1000" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="collapsed_1" max_visible_distance="1000" material="7164fa2ba3625069843073ca2146eb87977c826e" property="surface_base"/>
+				<surface name="collapsed_2" enabled="0" max_visible_distance="1000" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2756.71816753 20666.5741173 -10.5208649475 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1389826333" folded="1" name="_switches">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="1881079748" name="IL&amp;FS_7">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_7.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6020.4911963 17018.7143486 -12.3286590709 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1754876259" name="IL&amp;FS_2">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_2.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5716.21357229 16840.8824454 -12.3257460337 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="30482301" name="Mandale_3">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/Mandale_3.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12973.651232 14694.5140483 -16.4795768234 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1483318133" name="Chembur_1">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/Chembur_1.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 9011.932097 15192.5387361 -7.6485692117 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1681534866" name="Mandale_4">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/Mandale_4.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12975.5315107 14689.8232192 -16.4841880145 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1582750617" name="Mandale_2">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/Mandale_2.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12898.5212275 14664.7698102 -14.870184593 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="443089254" name="IL&amp;FS_6">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_6.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5988.75871568 17005.6303138 -12.3285318549 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1768402437" name="IL&amp;FS_4">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_4.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5771.76682533 16879.1064745 -12.3280657918 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1572318698" name="IL&amp;FS_5">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_5.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5957.98100047 16987.6841644 -12.3274986342 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1443220006" name="IL&amp;FS_1">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_1.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5681.86715524 16831.9306694 -12.3133341931 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="788039900" name="IL&amp;FS_3">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_3.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5741.26918673 16861.3243379 -12.3282943737 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="855870024" name="Sarasvat_1">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/Sarasvat_1.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2910.43991411 17553.1357617 -10.9681895335 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="900460408" name="Sarasvat_2">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/Sarasvat_2.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2897.72521729 17472.9549962 -10.9832461173 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1784734746" name="IL&amp;FS_8">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/IL&amp;FS_8.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6043.07029151 17042.8691064 -12.3329042148 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1698998658" name="Chembur_2">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/Chembur_2.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 9084.93581552 15156.4044268 -7.58324817353 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="902755734" name="7P3101">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/7P3101.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4913.7106739 21848.9413243 -0.00238552984872 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1352320112" name="7P3102">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/7P3102.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4918.49767821 21847.5207093 -0.0143929070544 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1951247989" name="2AP6003">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/2AP6003.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2548.1993946 23479.0998121 -9.60088303028 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="113017139" name="2AP6004">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b//_track/_switches/2AP6004.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2544.12189457 23558.1005016 -8.19814120963 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="951482156" name="Mandale_1">
+				<mesh_name>../worlds/mmrbem/graphics/track/2b/_track/_switches/Mandale_1.mesh</mesh_name>
+				<surface name="Branch Line" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Main Line" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<surface name="Broken" enabled="0" max_visible_distance="300" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 12898.3165422 14669.9437739 -14.9047544916 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

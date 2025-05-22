@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="station_names" guid="40e63899c21ea87770c69cd8ea47be16544c1135" base_material="mesh_base">
+	<state name="workflow">0</state>
+	<texture name="diffuse">fgw_150/graphics/textures/sr_side_overhead_support.dds</texture>
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/station_names.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

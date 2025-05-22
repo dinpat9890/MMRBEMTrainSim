@@ -1,0 +1,6 @@
+[Filetypes]
+# use the following codes to describe the type of query to use
+# 0 Single, 1 All, 2 Latest
+DrivingRecord.ini=1
+TraineeDatabase.ini=2
+

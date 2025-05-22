@@ -1,0 +1,100 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+
+[System.1]
+Module Name=FC-03-CBTC OnBoard Unit
+
+[Simulator]
+# Session Time Limit is in minutes.
+Session Time Limit=60.0
+
+
+[Unit Plugins]
+cbtc_on_board_units
+
+[Module Resource Plugins]
+train_data_access_resources
+
+[Scenario Resource Plugins]
+world_access_resources
+
+[Session Resource Plugins]
+all_vehicles_watcher_resources
+points_watcher_resources
+train_object_definition_resources
+modelled_train_selector_resources
+
+### CBTC Onboard Parameters ###
+[OnBoard Configuration]
+CBTC Active Vehicle Index = 0.0
+Train Position Uncertainty = 8.0
+FSB active speed limit = 3.0
+
+[Speed Monitoring]
+# Define the deceleration rate (in m/s^2) for the ATO Permitted Speed curve sent to the ATO controller in the tram model
+ATO Brake Demand = 0.3
+Dbec = 2.0
+Service Brake Time = 0.0
+Indication Time = 3.0
+EBD = 2.39
+SBD = 1.18
+Auto Speed Limit = 80.0
+Semi Auto Speed Limit = 50.0
+RMF Speed Limit = 25.0
+RMR Speed Limit = 10.0
+Auto Skip Speed Limit = 40.0
+Semi Auto Speed Limit = 25.0
+Memorised Localisation Speed Limit = 10.0
+Memorised Localisation Validity Distance = 64
+Rollback Distance = 2.0
+Max Reverse Zone = 10.0
+Long Docking Distance = 10.0
+Overshoot Distance = 3.0
+Undershoot Distance = 3.0
+Work Zone Alarm Distance = 1000.0
+Train Length = 200.0
+FSB Enable = 0.0
+
+[Speed Curve Config]
+# Speed difference between Permitted speed and Emergency Brake Intervention supervision limits, minimum value (km/h)
+Min EBI DV = 7.5
+# Speed difference between Permitted speed and Emergency Brake Intervention supervision limits, maximum value (km/h)
+Max EBI DV = 15.0
+# Value of MRSP where dV_ebi starts to increase to dV_ebi_max (km/h)
+Min EBI Velocity = 110.0
+# Value of MRSP where dV_ebi stops to increase to dV_ebi_max (km/h)
+Max EBI Velocity = 210.0
+# Speed difference between Permitted speed and Service Brake Intervention supervision limits, minimum value (km/h)
+Min SBI DV = 5.5
+# Speed difference between Permitted speed and Service Brake Intervention supervision limits, maximum value (km/h)
+Max SBI DV = 10.0
+# Value of MRSP where dV_sbi starts to increase to dV_sbi_max (km/h)
+Min SBI Velocity = 110.0
+# Value of MRSP where dV_sbi stops to increase to dV_sbi_max (km/h)
+Max SBI Velocity = 210.0
+# Speed difference between Permitted speed and Warning supervision limits, minimum value (km/h)
+Min Warning DV = 4.0
+# Speed difference between Permitted speed and Warning supervision limits, maximum value (km/h)
+Max Warning DV = 5.0
+# Value of MRSP where dV_warning starts to increase to dV_warning_max (km/h)
+Min Warning Velocity = 110.0
+# Value of MRSP where dV_warning stops to increase to dV_warning_max (km/h)
+Max Warning Velocity = 140.0
+# Time between Warning supervision limit and SBI (sec)
+Warning Time = 2.0
+# Driver reaction time between Permitted speed supervision limit and SBI (sec)
+Driver Time = 4.0
+# Time between the pre-indication location and the indication supervision limit valid for MRSP speed (sec).
+Prediction Time = 0.0
+
+# Change the Logging Level of the Train Model
+[Logging]
+# Valid Values are :
+# ERR or ERROR
+# WARN or WARNING
+# INFO - This is the Default Logging Level
+# VERBOSE
+Level=INFO
+#Maximum Log Size= 
+#Backup Log Count=

@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<project name="ProjectPaths" >
+  <path id="deploy.binaries.dependencies">
+    <fileset dir="${dir.deps}/software">
+        <!-- Catch, by default, all binaries, which are exes and dlls -->
+        <include name="**/bin/*"/>
+
+        <!-- Explicitly exclude tools we dont want. Default is for no tools. These would be
+             install -->
+        <exclude name="**/tools/**"/>
+
+        <!-- Should not be including debug versions in deploy -->
+        <exclude name="**/*Dd.dll"/>
+        <exclude name="**/*Dd.exe"/>
+        <exclude name="**/*_d.dll"/>
+        <exclude name="**/*_d.exe"/>
+
+        <!-- A special debug exclusion for Unigine plugins too -->
+        <exclude name="**/*_x64d.dll"/>
+
+        <!-- Some libraries are incorrectly publishing with lib and ilk files -->
+        <exclude name="**/*.exp"/>
+        <exclude name="**/*.ilk"/>
+        <exclude name="**/*.lib"/>
+        <exclude name="**/*.pdb"/>
+
+        <!-- We may want to exclude core speed limit functionality in lieu of project
+             implementations -->
+        <exclude name="**/*speed_limit*.dll" />
+
+        <!-- We may want to exclude core train initialisation resources in lieu of project
+             implementations -->
+        <!-- exclude name="**/*train_model_initialisation_resources*.dll"/ -->
+      </fileset>
+      <pathelement path="${dir.deps}/software/oksygen/sim/core/tools/sim_setup/bin/sim_setup.exe" />
+      <pathelement path="${dir.deps}/software/oksygen/common/tools/comms_show/bin/comms_show.exe" />
+      <pathelement path="${dir.deps}/software/oksygen/sim/core/tools/core_session_data_dll/bin/core_session_data_dll.dll" />
+  </path>
+
+  <path id="deploy.jars.dependencies">
+    <fileset dir="${dir.deps}/software">
+      <include name="**/Jar/*" />
+      <include name="**/jar/*" />
+      <exclude name="**/cots/**" />
+    </fileset>
+    <fileset dir="${dir.deps}/org">
+      <include name="/springframework/**/*" />
+    </fileset>
+    <fileset dir="${dir.deps}/commons-logging">
+      <include name="/**/*" />
+    </fileset>
+  </path>
+
+  <path id="deploy.scripts.dependencies">
+    <fileset dir="${dir.deps}/software">
+      <include name="**/script/*.script" />
+      <include name="**/script/*.scr" />
+    </fileset>
+  </path>
+
+  <!-- Ideally, the only COTS that is present within the top-level dependencies folder is COTS
+       that we require at run-time, and so we could just copy all folders. However, we haven't
+       divided COTS up that well, and one zip may include MBs of stuff that software needs, and a
+       single DLL that we need at run-time. We have made some attempt to only copy the portions of
+       COTS that are required in order to reduce the deploy size. -->
+  <path id="deploy.cots">
+    <fileset dir="${dir.deps.cots}">
+      <exclude name="**/*.c"/>
+      <exclude name="**/*.h"/>
+      <exclude name="**/*.exp"/>
+      <exclude name="**/*.hpp"/>
+      <exclude name="**/*.lib"/>
+      <exclude name="**/*.pdb"/>
+      <exclude name="**/doc/**"/>
+      <exclude name="**/examples/**"/>
+      <exclude name="**/findbugs/**"/>
+      <exclude name="**/jdk/**"/>
+      <exclude name="**/*-javadoc.jar"/>
+      <exclude name="**/*-javadoc.zip"/>
+      <exclude name="**/*-sources.jar"/>
+      <exclude name="**/*-sources.zip"/>
+      <exclude name="**/*-src.zip"/>
+      <exclude name="**/physx/**/*CHECKED*"/>
+      <exclude name="**/physx/**/*DEBUG*"/>
+      <exclude name="**/physx/**/*PROFILE*"/>
+      <exclude name="**/physx/**/*.map"/>
+      <exclude name="**/Unigine/docs/**"/>
+      <exclude name="**/Unigine/**/*_x84d.*"/>
+      <exclude name="**/Unigine2/**/*_x84d.*"/>
+      <exclude name="**/wago/include/**"/>
+      <exclude name="**/xerces/xercesc-doc.zip"/>
+      <exclude name="**/xerces/xercesc-pdb.zip"/>
+    </fileset>
+
+    <!-- Specific files that we do require, which the above would exclude -->
+    <fileset dir="${dir.deps.cots}">
+      <include name="Unigine/data/**/*.h" />
+    </fileset>
+
+    <!-- Add another fileset here for any COTS coming directly from the project -->
+  </path>
+  
+  
+    <path id="deploy.web.dependencies">
+        <fileset dir="${dir.deps}/software">
+            <include name="**/cordova_package/**" />
+            <include name="**/cordova_package/**/**" />
+        </fileset>
+        <dirset dir="${dir.deps}/software">
+            <include name="**/cordova_package/**" />
+            <include name="**/cordova_package/**/**" />
+        </dirset>
+    </path>
+
+    <path id="deploy.scripts.dependencies">
+        <fileset dir="${dir.deps}/software">
+            <include name="**/script/*.script" />
+            <include name="**/script/*.scr" />
+        </fileset>
+    </path>
+
+  <path id="install.binaries">
+    <fileset dir="${dir.deps.software}">
+      <!-- Specific tools, for now, but this could be more generic -->
+      <!-- Yes, there is some stuff here that is not purely core. This is really just a template
+           though, and the presence of such won't break anything. -->
+      <include name="**/tools/**/bin/xml2db*"/>
+      <include name="**/tools/**/bin/import_export_features*"/>
+      <include name="**/tools/**/bin/export_track*"/>
+      <include name="**/tools/**/bin/import_track*"/>
+      <include name="**/tools/**/bin/import_export_scenario*"/>
+      <include name="**/tools/**/bin/track_map*"/>
+      <include name="**/tools/**/bin/TrackShow*"/>
+    </fileset>
+
+    <!-- Add another fileset here for any install tools built by the project -->
+  </path>
+
+  <path id="install.cots">
+    <fileset dir="${dir.deps.cots}">
+      <include name="**/xerces/**"/>
+      <exclude name="**/xerces/xercesc-doc.zip"/>
+      <exclude name="**/xerces/xercesc-pdb.zip"/>
+      <include name="**/oci/**"/>
+    </fileset>
+
+  <!-- Add another fileset here for any COTS coming directly from the project -->
+  </path>
+
+  <path id="install.networks">
+    <!-- Worlds coming in from dependencies -->
+    <fileset dir="${dir.content.deps.worlds}" erroronmissingdir="false">
+      <include name="**/definition/**"/>
+    </fileset>
+
+    <!-- Worlds that we have created ourselves, but should be with the same directory structure -->
+    <fileset dir="${dir.content.project.worlds}" erroronmissingdir="false">
+      <include name="**/definition/**"/>
+    </fileset>
+  </path>
+
+  <!-- Paths for content files. These are a bit different because they will refer to outside of our
+       subdirectory hierarchy. -->
+  <path id="config.comms.common">
+    <pathelement path="${dir.config.source}/comms/comms_objects.xml" />
+    <pathelement path="${dir.config.source}/comms/comms_objects_generation.xml" />
+	<pathelement path="${dir.config.source.comms}/comms_motion_base.xml" />
+     <pathelement path="${dir.config.source}/comms/vdu_comms_objects.xml" />
+     <pathelement path="${dir.config.source}/comms/cbtc_comms_objects.xml" />
+     <pathelement path="${dir.config.source}/comms/cctv_comms_objects.xml" />
+	 <pathelement path="${dir.config.source}/comms/pis_be_comms_objects.xml" />
+	 <pathelement path="${dir.config.source}/comms/papis_comms_objects.xml" /> 
+   <pathelement path="${dir.config.source}/comms/radio_comms_objects.xml" /> 
+	 <pathelement path="${dir.config.source}/comms/radio_intercom_objects.xml" /> 
+	 <!-- pathelement path="${dir.config.source}/comms/saloon_cctv_comms_objects.xml" /--> 
+	 <!-- <pathelement path="${dir.config.source}/comms/vdu_comms_objects.xml" />  /-->
+	 <pathelement path="${dir.config.source.comms}/pis_be_comms_objects.xml"/>
+     <pathelement path="${dir.config.source}/comms/dmi_comms_objects.xml" />
+	  <pathelement path="${dir.config.source}/comms/psd_comms_objects.xml" />
+    <pathelement path="${dir.config.source}/comms/intercom_comms_objects.xml" />
+    <pathelement path="${dir.software.deps}/software/oksygen/sim/core/config/core_comms_structure/config/comms_objects.xml"/>
+    <pathelement path="${dir.software.deps}/software/oksygen/sim/train/config/train_comms_structure/config/comms_objects.xml"/>
+
+  </path>
+
+  <path id="config.comms.trains">
+    <fileset dir="${dir.config.source.trains}">
+      <include name="*/config/comms_objects.xml"/>
+    </fileset>
+  </path>
+
+  <path id="config.comms">
+    <path refid="config.comms.common"/>
+    <path refid="config.comms.trains"/>
+  </path>
+
+  <path id="config.comms.classpath">
+    <pathelement location="${dir.software.deps}/software/oksygen/common/libraries/java_interface/jar/comms.jar"/>
+    <pathelement location="${dir.software.deps}/software/oksygen/sim/core/config/core_comms_structure/jar/CoreCommsStructure.jar"/>
+    <pathelement location="${dir.software.deps}/software/oksygen/sim/train/config/train_comms_structure/jar/TrainCommsStructure.jar"/>
+  </path>
+
+  <path id="config.features">
+    <fileset dir="${dir.software.deps}/features">
+      <include name="**/*.xml"/>
+    </fileset>
+    <fileset dir="${dir.content}/features">
+      <include name="**/*.xml"/>
+    </fileset>
+  </path>
+
+  <path id="content.features.icons">
+    <fileset dir="${dir.content.deps}/features">
+      <include name="**/icons/*"/>
+    </fileset>
+    <fileset dir="${dir.content}/features">
+      <include name="*/**/icons/*"/>
+    </fileset>
+  </path>
+
+  <path id="content.features.xml">
+    <fileset dir="${dir.content.deps}/features">
+      <include name="**/*.xml"/>
+    </fileset>
+    <fileset dir="${dir.content}/features">
+      <include name="*/**/*.xml"/>
+    </fileset>
+  </path>
+
+  <path id="content.features.scripts">
+    <fileset dir="${dir.content.deps}/vision/oksygen/content/core/features">
+      <include name="**/raw_script.zip"/>
+    </fileset>
+    <fileset dir="${dir.content}/features">
+      <include name="**/scripts/*"/>
+    </fileset>
+  </path>
+
+  <path id="content.features.icons">
+    <fileset dir="${dir.content.deps}/features">
+      <include name="**/icons/*"/>
+    </fileset>
+    <fileset dir="${dir.content}/features">
+      <include name="**/icons/*"/>
+    </fileset>
+  </path>
+</project>

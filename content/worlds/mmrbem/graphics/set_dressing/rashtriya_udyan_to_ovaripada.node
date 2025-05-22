@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="186655823" name="rashtriya_udyan_to_ovaripada">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/rashtriya_udyan_to_ovaripada.mesh</mesh_name>
+		<surface name="rashtriya_udyan_to_ovaripada_gantry_poles_numbers_05" material="44268a4792a98ff7906bbbbadb65b08f1fec15ea" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

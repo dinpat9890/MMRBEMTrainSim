@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="linden_leaves_summer_0" guid="119894b660706adfc372edbf5c5c450260acbe39" parent="3a1dc21df92abecdfd383c310fdda515b1acebd3" base_material="mesh_base">
+	<texture name="albedo">linden/textures/linden_leaves_summer_alb.dds</texture>
+	<texture name="normal">linden/textures/linden_leaves_n.dds</texture>
+	<parameter name="specular">0</parameter>
+	<parameter name="animation_stem_noise">0.38499999</parameter>
+	<parameter name="animation_stem_offset">0.0399999991</parameter>
+	<parameter name="animation_stem_radius">0.150000006</parameter>
+	<parameter name="animation_stem_scale">2</parameter>
+</material>

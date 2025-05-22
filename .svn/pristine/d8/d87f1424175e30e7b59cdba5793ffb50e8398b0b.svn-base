@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<track version="2.4" min_time="0" max_time="1" unit_time="0.100000001">
+	<parameter type="material.parameterSlider" name="clouds_sydac" string="density">
+		<key time="0" type="1">0</key>
+		<key time="0.204126418" type="1">2</key>
+		<key time="1" type="1">4</key>
+	</parameter>
+	<parameter type="material.parameterSlider" name="clouds_sydac" string="coverage_contrast">
+		<key time="0" type="1">1</key>
+		<key time="1" type="1">0.5</key>
+	</parameter>
+	<parameter type="material.parameterSlider" name="clouds_sydac" string="ambient_intensity">
+		<key time="0" type="1">1</key>
+		<key time="1" type="1">0.100000001</key>
+	</parameter>
+	<parameter type="material.parameterSlider" name="clouds_sydac" string="sun_intensity">
+		<key time="0" type="1">0.25</key>
+		<key time="0.5" type="1">0.349999994</key>
+		<key time="1" type="1">0.5</key>
+	</parameter>
+	<parameter type="render.environment.preset1.intensity">
+		<key time="0" type="1">0</key>
+		<key time="0.501877964" type="1">0.150000006</key>
+		<key time="1" type="1">0.25</key>
+	</parameter>
+	<parameter type="render.environment.preset0.intensity">
+		<key time="0" type="1">1</key>
+		<key time="0.307726055" type="1">0.94011724</key>
+		<key time="1" type="1">0.189999998</key>
+	</parameter>
+	<parameter type="render.color.saturation">
+		<key time="0.499000013" type="1">0.75</key>
+		<key time="1" type="1">0.5</key>
+	</parameter>
+	<parameter type="render.shadowDistance">
+		<key time="0" type="1">500</key>
+		<key time="0.474928647" type="1">400</key>
+		<key time="1" type="1">300</key>
+	</parameter>
+</track>

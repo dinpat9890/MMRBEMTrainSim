@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="52517745" name="filber_tree_4">
+		<mesh_name>filbert/filber_tree_4.mesh</mesh_name>
+		<surface name="filbert_trunk_filbert_trunk" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="ff976a5e925e66b76db2b593cec77a317b11914f" property="surface_base"/>
+		<surface name="filbert_leaves_lod_0_filbert_leaves" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="4bd80213b5cfd288b645d5f82528e8233fb31338" property="surface_base"/>
+		<surface name="filbert_leaves_lod_1_filbert_leaves" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="4bd80213b5cfd288b645d5f82528e8233fb31338" property="surface_base"/>
+		<surface name="filbert_leaves_lod_2_filbert_leaves" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="4bd80213b5cfd288b645d5f82528e8233fb31338" property="surface_base"/>
+		<surface name="filbert_twigs_filbert_trunk" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="ff976a5e925e66b76db2b593cec77a317b11914f" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

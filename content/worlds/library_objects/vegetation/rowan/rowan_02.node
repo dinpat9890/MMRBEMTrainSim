@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1839953600" name="rowan_02">
+		<mesh_name>rowan/rowan_02.mesh</mesh_name>
+		<surface name="rowan_tree_02_lod2_rowan_trunk_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="1033d1fea76f864acdfb21043b9fc244206affdf" property="surface_base"/>
+		<surface name="rowan_leaves_02_lod2_rowan_leaves_autm_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="981d3a12a3dadcad4f3384876e5d11072e777eba" property="surface_base"/>
+		<surface name="rowan_tree_02_lod1_rowan_trunk_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="1033d1fea76f864acdfb21043b9fc244206affdf" property="surface_base"/>
+		<surface name="rowan_leaves_02_lod1_rowan_leaves_autm_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="981d3a12a3dadcad4f3384876e5d11072e777eba" property="surface_base"/>
+		<surface name="rowan_tree_02_lod0_rowan_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="1033d1fea76f864acdfb21043b9fc244206affdf" property="surface_base"/>
+		<surface name="rowan_leaves_02_lod0_rowan_leaves_autm_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="981d3a12a3dadcad4f3384876e5d11072e777eba" property="surface_base"/>
+		<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999988 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

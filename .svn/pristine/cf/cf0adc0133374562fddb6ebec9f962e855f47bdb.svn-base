@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<xs:schema targetNamespace="http://www.sydac.com.au/WorldTypes/1.0/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      WorldTypes 1.0 XML Schema
+      XML Schema for http://www.sydac.com.au/TrackTypes/1.0/ namespace
+
+      Created 2004-11-24
+
+      Created by 
+
+      James Errington (james.errington@sydac.com.au)
+
+      This schema declares XML elements for the TrackTypes elements from the
+      http://www.sydac.com.au/TrackTypes/1.0/ namespace.
+    </xs:documentation>
+
+  </xs:annotation>
+
+	<xs:element name="world_types">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="object_type_groups">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="object_type_group" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="name" form="unqualified" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="object_types">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="object_type" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="state_type" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="state" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="key" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+												<xs:attribute name="type" form="unqualified" type="xs:string" use="required" />
+												<xs:attribute name="optional" form="unqualified" type="xs:boolean" use="optional" default="false" />
+												<xs:attribute name="default" form="unqualified" type="xs:string" use="optional" />
+												<xs:attribute name="description" form="unqualified" type="xs:string" use="optional" />
+												<xs:attribute name="units" form="unqualified" type="xs:string" use="optional" />
+												<xs:attribute name="min" form="unqualified" type="xs:double" use="optional" />
+												<xs:attribute name="max" form="unqualified" type="xs:double" use="optional" />
+                                                <xs:attribute name="displayed" form="unqualified" type="xs:boolean" use="optional" default="false" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="name" form="unqualified" type="xs:string" use="required" />
+									<xs:attribute name="group" form="unqualified" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

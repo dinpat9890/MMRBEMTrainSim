@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="109342508" name="cow">
+		<mesh_name>obstruction_features/graphics/cow.mesh</mesh_name>
+		<surface name="MESH_cow_brown_3581_main" max_visible_distance="800" material="6495fd68e6dae90966ca4dac94ebbc43f4975c1b" property="surface_base"/>
+		<surface name="MESH_cow_brown_3581_opacity" max_visible_distance="200" material="34cd608692a3fe6ec3a7eb4e369eb8778ec31777" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

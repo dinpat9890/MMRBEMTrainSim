@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.sydac.com.au/GMI/1.0/"
+           xmlns="http://www.sydac.com.au/GMI/1.0/"
+           elementFormDefault="qualified">
+  <xs:include schemaLocation="object.xsd"/>
+  <xs:element name="gmi_screens" type="gmi_screens"/>
+  <xs:complexType name="gmi_screens">
+    <xs:annotation>
+      <xs:documentation>All of the screens for a train type or car class.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="screen" type="screen"/>
+        <xs:element name="screen_object_type" type="screen_object_type"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="screen" abstract="true">
+    <xs:annotation>
+      <xs:documentation>
+        The base definition for screens.
+        A screen is identified in other elements in the XML by its name.
+        The ID is used in comms so the PT can tell the model what the user is
+        looking at.
+        For root screens (ie those that are accessed by clicking on icons,
+        those that show the side and plan views), the ID MUST be 0.
+        For all other screens the IDs MUST be unique.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="hotspots" type="hotspots" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="optional"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="vehicle_screen">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Vehicle Screen.
+        Screens need to be provided for the different orientations of the vehicle.
+        The ID is always zero for vehicle screens and so is not needed for this type.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="screen">
+        <xs:sequence>
+          <xs:element name="orientation_1-2" type="vehicle" minOccurs="1" maxOccurs="1"/>
+          <xs:element name="orientation_2-1" type="vehicle" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="prohibited"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="vehicle">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Screen for a Vehicle with a certain orientation.
+        These are the screens that show the user some graphics.
+        They may show objects that are affected by the model. For reuse, the
+        screen objects' graphics are defined elsewhere. In the screen we
+        specify what type of object we are talking about and how it interacts
+        with the model.
+        The size of the screen will automatically be calculated from the
+        background image's size (if one is supplied) but you can override that.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="screen_object" type="screen_object" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="plugin_panel" type="plugin_panel" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="background_image" type="xs:string" use="optional"/>
+    <xs:attribute name="width" type="xs:string" use="optional"/>
+    <xs:attribute name="height" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="main_screen">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Main Screen.
+        These are the screens that show the user some graphics.
+        They may show objects that are affected by the model. For reuse, the
+        modelled objects' graphics are defined elsewhere. In the screen we
+        specify what type of object we are talking about and how it interacts
+        with the model.
+        The size of the screen will automatically be calculated from the
+        background image's size (if one is supplied) but you can override that.
+        The side describes what side of the car a screen is on, when looking towards the no. 1 end.
+        This is used to determine the side of the train that a screen is on,
+        and that information will be displayed to the user in the title of the screen.
+        This is useful for differentiating doors and other similar-looking screens.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="screen">
+        <xs:sequence>
+          <xs:element name="audio_location" type="audio_location"/>
+          <xs:element name="screen_object" type="screen_object" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="plugin_panel" type="plugin_panel" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="background_image" type="xs:string" use="optional"/>
+        <xs:attribute name="width" type="xs:string" use="optional"/>
+        <xs:attribute name="height" type="xs:string" use="optional"/>
+        <xs:attribute name="side" type="side_type" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="side_type">
+    <xs:annotation>
+      <xs:documentation>
+        Describes which side of the car a screen is located (for someone facing the no. 1 end).
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="left"/>
+      <xs:enumeration value="right"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="audio_location">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a location for audio purposes.
+        Distances are measured in whole meters.
+        Angles are measured in degrees.
+        A heading of 0 faces the no 1 end of the car; positive headings turn clockwise.
+        distance_from_no1_end is an offset from the no 1 end of the vehicle.
+        distance_from_middle and on_left indicate a distance and direction to position the screen
+        by offsetting along a line perpendicular to the direction of travel and parallel to the ground.
+        distance_from_track is a vertical offset from the track (which is essentially the lowest point of the train).
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="distance_from_no1_end" type="xs:float" use="required"/>
+    <xs:attribute name="distance_from_middle" type="xs:float" use="optional"/>
+    <xs:attribute name="on_left" type="xs:boolean" use="optional"/>
+    <xs:attribute name="distance_from_track" type="xs:float" use="optional"/>
+    <xs:attribute name="heading" type="xs:integer" use="required"/>
+    <xs:attribute name="pitch" type="xs:integer" use="optional"/>
+    <xs:attribute name="roll" type="xs:integer" use="optional"/>
+    <xs:attribute name="indoors" type="xs:boolean" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="screen_object">
+    <xs:annotation>
+      <xs:documentation>
+        Used for attaching screen objects to screens.
+        Hotspots can be hidden on certain cars (the default is for them to be
+        visible on all cars). They can be made visible on certain cars as well;
+        this will result in changing the logic so that hotspots are hidden by
+        default. You shouldn't use both of these elements in any one instance.
+        Numbers are assigned to the internal varibles of each object.
+        Initial variable values can be used instead of Numbers when the value
+        doesn't need to change.
+        Additional undefined properties may be added as well.
+        --
+        There is a special type of object called static_image, which is an
+        image that doesn't change. These can be used to obscure other parts of
+        the screen, for the situations where you have something like dangling
+        wires in front of a gauge or something static superimposed on something
+        dynamic. This was acheived in the past using a type that was added as a
+        dummy, but that's a bit silly so this type has been added.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="position" type="screen_position" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="label"  type="label" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="hotspots" type="hotspots" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="number" type="number" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="initial_value" type="initial_variable_value" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="property" type="property" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="screen_position">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a position for screen objects.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="coordinate_2d">
+        <xs:attribute name="scale" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="label">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a label for screen objects.
+        The id is a unique string used to identify labels when Comms
+        properties are unavailable or ambiguous.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="id" type="xs:string" use="optional"/>
+    <xs:attribute name="default_text" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="hotspots">
+    <xs:annotation>
+      <xs:documentation>
+        Provides fine control over hotspot rendering.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="visible" type="xs:boolean" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="number">
+    <xs:annotation>
+      <xs:documentation>
+        Connects a Comms number to a modelled object's variable.
+        The number name must be the name of a number constant in one of the following inner classes of
+        ProjectObjectConstants:
+          Vehicle (if the variable is a Vehicle Variable),
+          VehicleInputValues (if the variable is a Value Variable),
+          VehicleInputs (if the variable is an Input Variable),
+          VehicleOutputs (if the variable is an Output Variable).
+        The type of variable is defined in the screen_object_type definition.
+        In the case of an object with only a single variable, no variable name
+        needs to be specified.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="variable" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="initial_variable_value">
+    <xs:annotation>
+      <xs:documentation>
+        Sets a variable to an initial value that will not change.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="variable" type="xs:string" use="optional"/>
+    <xs:attribute name="value" type="xs:double" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="plugin_screen">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Plugin Screen.
+        These are the screens that can do basically anything you want, as long
+        as you're writing the functionality.
+        These are basically separate from the rest of the GMI stuff. The GMI
+        will allow you to navigate to them and that's it.
+        Use this to embed more complex screens (eg TOS style screens) into a PT
+        or other GMI app.
+        The class attribute must be the fully qualified name of a class that implements IGMIObjectPlugin.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="screen">
+        <xs:sequence>
+          <xs:element name="audio_location" type="audio_location"/>
+          <xs:element name="property" type="property" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="class" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="plugin_panel">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Plugin Screen Object that supplies a panel which will be placed on the screen.
+        This allows you to create whatever graphics you want within the supplied panel.
+        The dimension attributes describe the placement of the panel (using "native" coordinates)
+        on the host screen.
+        The class attribute must be the fully qualified name of a class that implements IGMIScreenObjectPlugin.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="rectangle">
+        <xs:sequence>
+          <xs:element name="property" type="property" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="class" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

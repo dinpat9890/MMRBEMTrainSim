@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<project name="Prepare" default="prepare.all" xmlns:ivy="antlib:org.apache.ivy.ant">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="./ant.common_properties.xml" />
+
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+
+  <!-- A handy property for referencing the core preparation script -->
+  <property name="file.preparer" value="${dir.deps.processes}/preparer/preparer.xml" />
+
+  <!-- Import the core prepare xml, which will potentially inject any targets that we do not have,
+       and will provide the implementation for the targets that we do have. We need to be prepared
+       for this not to exist, though, in case we have not retrieved any dependencies yet. -->
+  <import file="${file.preparer}" as="preparer" optional="true" />
+
+  <!-- Set up ivy -->
+  <ivy:settings file="ivysettings.xml" />
+
+  <!-- The target that we implement, that will fetch just the core preparation scripts, which can
+       then be used to implement our other targets -->
+  <target name="bootstrap" description="Retrieves the core preparation scripts" >
+    <ivy:retrieve pattern="${dir.deps}/[root]/[orgPath]/[module]/[artifact](.[ext])" conf="process" type="-module" sync="false" symlink="true" />
+  </target>
+
+  <!-- A handy target for retrieving everything -->
+  <extension-point name="prepare.all" description="Retrieves all dependencies" />
+  <extension-point name="clear.all" description="Removes all dependencies" />
+
+  <!-- Any other targets should come from the core preparation scripts. We will patch off to the
+     common ones in case we were not able to import them (because we hadn't run the bootstrap
+     target yet). These will be the common ones, anyway. -->
+  <target name="prepare.content" description="Retrieves the dependencies necessary for content generation" depends="bootstrap" extensionOf="prepare.all" >
+    <ant antfile="${file.preparer}" target="prepare.content" />
+  </target>
+
+  <target name="prepare.runtime" description="Retrieves the dependencies necessary for deploy generation" depends="bootstrap" extensionOf="prepare.all" >
+    <ant antfile="${file.preparer}" target="prepare.runtime" />
+  </target>
+
+  <target name="prepare.software" description="Retrieves the dependencies necessary for software generation" depends="bootstrap" extensionOf="prepare.all" >
+    <ant antfile="${file.preparer}" target="prepare.software" />
+
+    <!-- Unfortunatly, the simulink projects have to be special to keep the project relative references the same for reference
+        projects in depedencies folders, and outside of them-->
+    <ivy:retrieve pattern="${dir.software.deps}/(/[module])" conf="*" type="simulink-project,simulink-projects-package" symlink="true" />
+  </target>
+
+  <target name="clear.content" description="Retrieves the dependencies necessary for content generation" depends="bootstrap" extensionOf="clear.all" >
+    <ant antfile="${file.preparer}" target="clear.content" />
+  </target>
+
+  <target name="clear.software" description="Retrieves the dependencies necessary for software generation" depends="bootstrap" extensionOf="clear.all" >
+    <ant antfile="${file.preparer}" target="clear.software" />
+  </target>
+  
+  <!-- List the remove of the runtime last, because, for the moment, this is where this script is
+       stored, and we won't be able to run after this! -->
+  <target name="clear.runtime" description="Retrieves the dependencies necessary for deploy generation" depends="bootstrap" extensionOf="clear.all" >
+    <ant antfile="${file.preparer}" target="clear.runtime" />
+  </target>
+</project>

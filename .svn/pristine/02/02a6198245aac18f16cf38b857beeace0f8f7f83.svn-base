@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.tcms.fe.gui.presenter.MiscellaniaScreenController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="14.4" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="84.6" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <fx:include maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="TrainSideViewPanel.fxml" />
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="92.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellania-header-label" text="HORN" />
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="12.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="55.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="12.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="3.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="9.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="3.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="9.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="3.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="9.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="2.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.1" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.1" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.1" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="9.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="lowSoundFrontBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#lowSoundButtonAction" styleClass="button-misc-horn" text="LOW SOUND" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="lowSoundRearBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#lowSoundButtonAction" styleClass="button-misc-horn" text="LOW SOUND" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button fx:id="highSoundRearBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#highSoundButtonAction" styleClass="button-misc-horn" text="HIGH SOUND" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Button fx:id="isolateHornRearBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#isolateReinsertHornBtnAction" styleClass="button-misc-horn" text="ISOLATE" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Button fx:id="highSoundFrontBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#highSoundButtonAction" styleClass="button-misc-horn" text="HIGH SOUND" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button fx:id="isolateHornFrontBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#isolateReinsertHornBtnAction" styleClass="button-misc-horn" text="ISOLATE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellania-header-label" text="OBSTACLES" GridPane.columnSpan="5" GridPane.rowIndex="6" />
+                        <Label fx:id="odlLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="ODL" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label fx:id="odrLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="ODR" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label fx:id="ddlLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="DDL" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <Label fx:id="ddrlbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="DDR" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                        <Label fx:id="odlLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="ODL" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                        <Label fx:id="odrLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="ODR" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                        <Label fx:id="ddlLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="DDL" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                        <Label fx:id="ddrlbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellana-lbl" text="DDR" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="miscellania-header-label" text="CCU features" GridPane.columnSpan="5" GridPane.rowIndex="15" />
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="250.0" styleClass="button-misc-horn" text="DISABLE SPEED CALIBRATION FACTOR" GridPane.columnIndex="2" GridPane.rowIndex="17">
+                           <GridPane.margin>
+                              <Insets left="150.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1395303888" name="door_left_b1">
+		<mesh_name>../vehicles/dm_train/graphics/door_left_b1.mesh</mesh_name>
+		<surface name="door_left_b1_dm_train" max_visible_distance="800" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+		<surface name="door_left_b1_glass" max_visible_distance="800" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

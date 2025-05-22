@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1895143277" name="PSD_template">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="2096806391" folded="1" name="station_door_left_1">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1936460064" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.0670000636 158.689009459 1.213 1.0</transform>
+				<node type="NodeReference" id="1763149118" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>0.999999940391 1.4803196707e-007 0 0.0 -1.4803196707e-007 0.999999940391 0 0.0 0 0 1 0.0 0 -2.22044604925e-016 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1924864848" folded="1" name="station_door_right_1">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="221330915" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 158.689 1.213 1.0</transform>
+				<node type="NodeReference" id="497365198" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="50392380" folded="1" name="station_door_left_2">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="507125656" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 153.47 1.213 1.0</transform>
+				<node type="NodeReference" id="1283215161" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>0.999999940391 1.112571577e-014 0 0.0 -7.45623071139e-015 0.999999940391 0 0.0 0 0 0.999999999999 0.0 0 -2.84217094304e-014 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1506303999" folded="1" name="station_door_right_2">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="164045580" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 153.47 1.213 1.0</transform>
+				<node type="NodeReference" id="2127641827" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="795545658" folded="1" name="station_door_left_3">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1078484471" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 148.234 1.213 1.0</transform>
+				<node type="NodeReference" id="986965899" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1523983009" folded="1" name="station_door_right_3">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1424549475" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 148.234 1.213 1.0</transform>
+				<node type="NodeReference" id="1103021455" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>0.999999821186 3.26845865987e-007 0 0.0 -3.26845865987e-007 0.999999821186 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="565209193" folded="1" name="station_door_left_4">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1915133181" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 143.01 1.213 1.0</transform>
+				<node type="NodeReference" id="221605988" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>0.999999821186 3.26845865987e-007 0 0.0 -3.26845865987e-007 0.999999821186 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="394527414" folded="1" name="station_door_right_4">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1003132574" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 143.01 1.213 1.0</transform>
+				<node type="NodeReference" id="1279469185" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="927110440" folded="1" name="station_door_left_5">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="275672905" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 135.78 1.213 1.0</transform>
+				<node type="NodeReference" id="723282946" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="123038446" folded="1" name="station_door_right_5">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="684963542" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 135.78 1.213 1.0</transform>
+				<node type="NodeReference" id="503321147" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="2089989509" folded="1" name="station_door_left_6">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="659869085" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 130.553 1.213 1.0</transform>
+				<node type="NodeReference" id="1819141503" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1664104557" folded="1" name="station_door_right_6">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="61234762" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 130.553 1.213 1.0</transform>
+				<node type="NodeReference" id="1105409885" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="220238092" folded="1" name="station_door_left_7">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1512881195" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 125.32 1.213 1.0</transform>
+				<node type="NodeReference" id="42047379" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="116221715" folded="1" name="station_door_right_7">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="556230446" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 125.32 1.213 1.0</transform>
+				<node type="NodeReference" id="699590381" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="25018502" folded="1" name="station_door_left_8">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1223750616" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 120.108 1.213 1.0</transform>
+				<node type="NodeReference" id="1613632866" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1541125575" folded="1" name="station_door_right_8">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="696882028" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 120.108 1.213 1.0</transform>
+				<node type="NodeReference" id="596819614" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1364775625" folded="1" name="station_door_left_9">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="2043250824" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 112.858 1.213 1.0</transform>
+				<node type="NodeReference" id="650834240" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1145524157" folded="1" name="station_door_right_9">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="2085598322" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 112.858 1.213 1.0</transform>
+				<node type="NodeReference" id="999248406" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1082161272" folded="1" name="station_door_left_10">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1100452707" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 107.633 1.213 1.0</transform>
+				<node type="NodeReference" id="54061179" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="17200062" folded="1" name="station_door_right_10">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="492360950" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 107.633 1.213 1.0</transform>
+				<node type="NodeReference" id="539283260" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1156754386" folded="1" name="station_door_left_11">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="746379806" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 102.391 1.213 1.0</transform>
+				<node type="NodeReference" id="619644193" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="385752431" folded="1" name="station_door_right_11">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="434658750" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 102.391 1.213 1.0</transform>
+				<node type="NodeReference" id="298101113" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1826411128" folded="1" name="station_door_left_12">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1667069252" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 97.17 1.213 1.0</transform>
+				<node type="NodeReference" id="352308683" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="967421597" folded="1" name="station_door_right_12">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1890271852" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 97.17 1.213 1.0</transform>
+				<node type="NodeReference" id="1164066566" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1286205490" folded="1" name="station_door_right_13">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="393378942" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 89.876 1.213 1.0</transform>
+				<node type="NodeReference" id="740189281" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="866357631" folded="1" name="station_door_left_13">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="2093164097" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 89.876 1.213 1.0</transform>
+				<node type="NodeReference" id="1324713263" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1594344891" folded="1" name="station_door_left_14">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1707648985" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 84.651 1.213 1.0</transform>
+				<node type="NodeReference" id="1974187750" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1294919428" folded="1" name="station_door_right_14">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1506575591" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 84.651 1.213 1.0</transform>
+				<node type="NodeReference" id="101231262" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1961819269" folded="1" name="station_door_left_15">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1103953168" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 79.411 1.213 1.0</transform>
+				<node type="NodeReference" id="330932542" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="918301718" folded="1" name="station_door_right_15">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1306908221" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 79.411 1.213 1.0</transform>
+				<node type="NodeReference" id="1966719651" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="346705543" folded="1" name="station_door_right_16">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1590852050" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 74.194 1.213 1.0</transform>
+				<node type="NodeReference" id="739645686" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1802822375" folded="1" name="station_door_left_16">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="851165718" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 74.194 1.213 1.0</transform>
+				<node type="NodeReference" id="986148474" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1810083325" folded="1" name="station_door_left_17">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="379498764" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 66.948 1.213 1.0</transform>
+				<node type="NodeReference" id="1347769100" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="515913267" folded="1" name="station_door_right_17">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1519008265" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 66.948 1.213 1.0</transform>
+				<node type="NodeReference" id="1897497238" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="765684535" folded="1" name="station_door_left_18">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1323991090" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 61.712 1.213 1.0</transform>
+				<node type="NodeReference" id="1674702520" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="600746383" folded="1" name="station_door_right_18">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="2049747767" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 61.712 1.213 1.0</transform>
+				<node type="NodeReference" id="491040741" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="39871582" folded="1" name="station_door_right_19">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1693560194" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 56.488 1.213 1.0</transform>
+				<node type="NodeReference" id="29038386" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1344059816" folded="1" name="station_door_left_19">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="303898897" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 56.488 1.213 1.0</transform>
+				<node type="NodeReference" id="261368092" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1812144443" folded="1" name="station_door_right_20">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="351507537" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 51.26 1.213 1.0</transform>
+				<node type="NodeReference" id="1763685757" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1795262614" folded="1" name="station_door_left_20">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1401319714" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 51.26 1.213 1.0</transform>
+				<node type="NodeReference" id="1310086140" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="821036802" folded="1" name="station_door_right_21">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1606536530" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 44.028 1.213 1.0</transform>
+				<node type="NodeReference" id="1709870379" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="288457755" folded="1" name="station_door_left_21">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="155279316" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 44.028 1.213 1.0</transform>
+				<node type="NodeReference" id="1925532" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="990935062" folded="1" name="station_door_right_22">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1984156636" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 38.813 1.213 1.0</transform>
+				<node type="NodeReference" id="821521961" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="474550511" folded="1" name="station_door_left_22">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="48613694" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 38.813 1.213 1.0</transform>
+				<node type="NodeReference" id="1372259761" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="265552085" folded="1" name="station_door_right_23">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="536850228" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 33.578 1.213 1.0</transform>
+				<node type="NodeReference" id="1628657542" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="240331526" folded="1" name="station_door_left_23">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="2026622181" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 33.578 1.213 1.0</transform>
+				<node type="NodeReference" id="1520113107" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="642022238" folded="1" name="station_door_right_24">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="514105043" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 28.332 1.213 1.0</transform>
+				<node type="NodeReference" id="1325834295" name="plat_pass_door_r">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_r.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1951602652" folded="1" name="station_door_left_24">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0670000636 -158.689009459 -1.213 1.0</transform>
+			<node type="NodeDummy" id="1947790729" folded="1" name="Dummy">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.067 28.332 1.213 1.0</transform>
+				<node type="NodeReference" id="216282058" folded="1" name="plat_pass_door_l">
+					<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+</nodes>

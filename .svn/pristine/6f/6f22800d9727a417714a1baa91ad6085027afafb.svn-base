@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="concrete_wall_stained" guid="7f94074832a6498d78ca0ba0255283c8cb1b8fec" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/concrete_wall_stained.dds</texture>
+	<parameter name="albedo_color">0.929411829 0.90196085 0.854902029 1</parameter>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="microfiber">0</parameter>
+</material>

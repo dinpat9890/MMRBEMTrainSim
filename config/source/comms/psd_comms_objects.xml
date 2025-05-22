@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+	<layer name="Project">
+		<object_class class="PSD" constant_name="PSD" />
+
+		<!-- PSD inputs data from UI -->
+		<object_class class="PSDInputs" constant_name="PSD_INPUTS">
+
+			<!-- Required by the IO Controller -->
+			<object_number name="Class Inputs"                                  constant_name="IO_CONTROLLER_CLASS_INPUTS_TAG"                  default="0.0" delta="0.5"/>
+			<object_number name="Class Inputs"                                  constant_name="CLASS_INPUTS"                                    default="0.0" delta="0.5"/>
+
+			<object_number name="PG Open Button"                     			constant_name="PG_OPEN_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PG Close Button"                     			constant_name="PG_CLOSE_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PSE Enable Button"                     		constant_name="PSE_ENABLE_BUTTON"                       		default="0"  delta="0.5"/>
+			<object_number name="Interlock Override Button"                     constant_name="INTERLOCK_OVERRIDE_BUTTON"                       default="0"  delta="0.5"/>
+			<object_number name="Lamp Test Button"                     			constant_name="LAMP_TEST_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PG Open Button Press Request"                  constant_name="PG_OPEN_BUTTON_PRESS_REQUEST"                    default="-1"  delta="0.5"/>
+			<object_number name="PG Close Button Press Request"                  constant_name="PG_CLOSE_BUTTON_PRESS_REQUEST"                  default="-1"  delta="0.5"/>
+			<object_number name="PSE Enable Button Press Request"                constant_name="PSE_ENABLE_BUTTON_PRESS_REQUEST"              	default="-1"  delta="0.5"/>
+			<object_number name="Interlock Override Button Press Request"        constant_name="INTERLOCK_OVERRIDE_BUTTON_PRESS_REQUEST"     	default="-1"  delta="0.5"/>
+			<object_number name="Lamp Test Button Press Request"                 constant_name="LAMP_TEST_BUTTON_PRESS_REQUEST"               	default="-1"  delta="0.5"/>
+		
+
+
+		</object_class>
+
+		<object_class class="PSDInputsValues" constant_name="PSD_INPUTS_VALUES">
+			<!-- Required by the IO Controller -->
+			<object_number name="Class Values"                                  constant_name="IO_CONTROLLER_CLASS_VALUES_TAG"                  default="0.0" delta="0.5" />
+			<object_number name="Class Values"                                  constant_name="CLASS_VALUES"                                    default="0.0" delta="0.5" />
+
+		<object_number name="PG Open Button"                     			constant_name="PG_OPEN_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PG Close Button"                     			constant_name="PG_CLOSE_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PSE Enable Button"                     		constant_name="PSE_ENABLE_BUTTON"                       		default="0"  delta="0.5"/>
+			<object_number name="Interlock Override Button"                     constant_name="INTERLOCK_OVERRIDE_BUTTON"                       default="0"  delta="0.5"/>
+			<object_number name="Lamp Test Button"                     			constant_name="LAMP_TEST_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PG Open Button Press Request"                  constant_name="PG_OPEN_BUTTON_PRESS_REQUEST"                    default="-1"  delta="0.5"/>
+			<object_number name="PG Close Button Press Request"                  constant_name="PG_CLOSE_BUTTON_PRESS_REQUEST"                  default="-1"  delta="0.5"/>
+			<object_number name="PSE Enable Button Press Request"                constant_name="PSE_ENABLE_BUTTON_PRESS_REQUEST"              	default="-1"  delta="0.5"/>
+			<object_number name="Interlock Override Button Press Request"        constant_name="INTERLOCK_OVERRIDE_BUTTON_PRESS_REQUEST"     	default="-1"  delta="0.5"/>
+			<object_number name="Lamp Test Button Press Request"                 constant_name="LAMP_TEST_BUTTON_PRESS_REQUEST"               	default="-1"  delta="0.5"/>
+		
+		</object_class>
+
+		<object_class class="PSDInputsModes" constant_name="PSD_INPUTS_MODES">
+			<!-- Required by the IO Controller -->
+			<object_number name="Class Modes"                                   constant_name="IO_CONTROLLER_CLASS_MODES_TAG"                   default="0.0" delta="0.5" />
+			<object_number name="Class Modes"                                   constant_name="CLASS_MODES"                                     default="0.0" delta="0.5" />
+
+		<object_number name="PG Open Button"                     			constant_name="PG_OPEN_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PG Close Button"                     			constant_name="PG_CLOSE_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PSE Enable Button"                     		constant_name="PSE_ENABLE_BUTTON"                       		default="0"  delta="0.5"/>
+			<object_number name="Interlock Override Button"                     constant_name="INTERLOCK_OVERRIDE_BUTTON"                       default="0"  delta="0.5"/>
+			<object_number name="Lamp Test Button"                     			constant_name="LAMP_TEST_BUTTON"                       			default="0"  delta="0.5"/>
+			<object_number name="PG Open Button Press Request"                  constant_name="PG_OPEN_BUTTON_PRESS_REQUEST"                    default="-1"  delta="0.5"/>
+			<object_number name="PG Close Button Press Request"                  constant_name="PG_CLOSE_BUTTON_PRESS_REQUEST"                  default="-1"  delta="0.5"/>
+			<object_number name="PSE Enable Button Press Request"                constant_name="PSE_ENABLE_BUTTON_PRESS_REQUEST"              	default="-1"  delta="0.5"/>
+			<object_number name="Interlock Override Button Press Request"        constant_name="INTERLOCK_OVERRIDE_BUTTON_PRESS_REQUEST"     	default="-1"  delta="0.5"/>
+			<object_number name="Lamp Test Button Press Request"                 constant_name="LAMP_TEST_BUTTON_PRESS_REQUEST"               	default="-1"  delta="0.5"/>
+		
+		</object_class>
+
+		<!-- PSD output data from UI -->
+		<object_class class="PSDOutputs" constant_name="PSD_OUTPUTS">
+			<!-- Required by the IO Controller -->
+			<object_number name="Class Outputs"                                 constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"                 default="0.0" delta="0.5" />
+			<object_number name="Class Outputs"                                 constant_name="CLASS_OUTPUTS"                                   default="0.0" delta="0.5" />
+			<object_number name="PSD Screen Id"                             constant_name="PSD_SCREEN_ID"                               default="0.0" delta="0.5" />
+
+			<object_number name="PSE Enable Status"                     		constant_name="PSE_ENABLE_STATUS"                       		default="0.0"  delta="0.5"/>
+			<object_number name="Train Docking Status"                          constant_name="TRAIN_DOCKING_STATUS"                            default="0.0"  delta="0.5"/>
+			
+			<object_number name="Interlock Override Status"                     constant_name="INTERLOCK_OVERRIDE_STATUS"                       default="0.0"  delta="0.5"/>
+				<object_number name="Platform Side"                     			constant_name="PLATFORM_SIDE"                       			default="0.0"  delta="0.5"/>
+			<object_number name="Train Direction"                     			constant_name="TRAIN_DIRECTION"                       			default="0.0"  delta="0.5"/>
+			<object_number name="Lamp Test Status"                     			constant_name="LAMP_TEST_STATUS"                       			default="0.0"  delta="0.5"/>
+			<object_number name="PSD Door Status"                     			constant_name="PSD_DOOR_STATUS"                       			default="0.0"  delta="0.5"/>
+		</object_class>
+	</layer>
+
+	<!-- Parent-child relationship mapping -->
+	<relationship parent="Vehicle" child="PSD"/>
+	<relationship parent="PSD" child="PSDInputs"/>
+	<relationship parent="PSD" child="PSDOutputs"/>
+
+	<!-- Class ID declerations -->
+	<class_ids>
+		<class_id class_name="PSD" class_id="501" />
+		<class_id class_name="PSDInputs" class_id="502" />
+		<class_id class_name="PSDInputsValues" class_id="503" />
+		<class_id class_name="PSDInputsModes" class_id="504" />
+		<class_id class_name="PSDOutputs" class_id="505" />
+	</class_ids>
+</comms_config>
+

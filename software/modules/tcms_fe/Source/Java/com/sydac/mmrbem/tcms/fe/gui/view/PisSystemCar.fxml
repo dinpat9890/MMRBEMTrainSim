@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="420.0" prefWidth="110.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="1.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.5" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="pecuLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="pis-label" GridPane.rowIndex="1" />
+            <Label fx:id="pecuLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="pis-label" text="PECU 2" GridPane.rowIndex="3" />
+            <Label fx:id="pecuLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="pis-label" text="PECU 3" GridPane.rowIndex="5" />
+            <Label fx:id="pecuLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="pis-label" text="PECU 4" GridPane.rowIndex="7" />
+            <Button fx:id="pecuResetButton1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onResetButtonAction" styleClass="button-reset-disable" text="PECU 1" GridPane.rowIndex="9" />
+            <Button fx:id="pecuResetButton2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onResetButtonAction" styleClass="button-reset-disable" text="PECU 2" GridPane.rowIndex="11" />
+            <Button fx:id="pecuResetButton3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onResetButtonAction" styleClass="button-reset-disable" text="PECU 3" GridPane.rowIndex="13" />
+            <Button fx:id="pecuResetButton4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onResetButtonAction" styleClass="button-reset-disable" text="PECU 4" GridPane.rowIndex="15" />
+            <Label fx:id="paborLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="pis-label" text="PABOR " GridPane.rowIndex="17" />
+            <Label fx:id="pabrLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="pabr-label" text="PABR" GridPane.rowIndex="18" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

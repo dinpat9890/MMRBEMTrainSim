@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="station_guard_head" guid="15abc143017a2691fa58518d12610c273c4e522f" base_material="mesh_base">
+	<texture name="albedo">../features/animated_features/graphics/textures/MA_cman0323_head.dds</texture>
+	<texture name="shading">../features/animated_features/graphics/textures/MA_cman0323_head_met.dds</texture>
+	<parameter name="microfiber">0.787999988</parameter>
+	<parameter name="normal_scale">0</parameter>
+</material>

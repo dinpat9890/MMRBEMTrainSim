@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="649741539" name="depot_exit">
+		<mesh_name>../worlds/library_objects/features/depot_exit.mesh</mesh_name>
+		<surface name="depot_exit" max_visible_distance="800" max_fade_distance="10" material="a8c299dd10009e963b1e810a290e077870d42c75" property="surface_base"/>
+		<transform>0.999999940395 -3.88578058619e-016 0 0.0 3.88578058619e-016 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.63797880709e-012 1.81898940355e-011 0 1.0</transform>
+	</node>
+</nodes>

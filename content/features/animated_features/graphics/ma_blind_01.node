@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="799827073" name="ma_blind_01">
+		<mesh_name>animated_features/graphics/ma_blind_01.mesh</mesh_name>
+		<anim_name>animated_features/graphics/animations/ma_blind_idle.anim</anim_name>
+		<loop>1</loop>
+		<speed>30</speed>
+		<surface name="MA_Blind_WS_MP" material="5f17a2e7558013315da2002223e1689712a1f9ec" property="surface_base"/>
+		<surface name="guide_dog" material="639f2b3229f96f3f8bdf35beb82de58aa6708e1d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -3.63797880709e-012 3.63797880709e-012 0 1.0</transform>
+	</node>
+</nodes>

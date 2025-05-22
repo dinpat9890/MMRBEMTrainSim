@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="996887592" name="pine_03_1">
+		<mesh_name>pine/pine_03_1.mesh</mesh_name>
+		<surface name="pine_tree_03_1_lod_2_pine_trunk" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="e0d5efd1c2d44f10293d20c41da932bda7caab9a" property="surface_base"/>
+		<surface name="pine_leaves_03_1_lod_2_pine_leaves_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="28f8b67b9a0479b715637f7fb3f43b971e2f0a84" property="surface_base"/>
+		<surface name="pine_leaves_03_1_lod_1_pine_leaves_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="28f8b67b9a0479b715637f7fb3f43b971e2f0a84" property="surface_base"/>
+		<surface name="pine_tree_03_1_lod_1_pine_trunk" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="e0d5efd1c2d44f10293d20c41da932bda7caab9a" property="surface_base"/>
+		<surface name="pine_leaves_03_1_lod_0_pine_leaves_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="28f8b67b9a0479b715637f7fb3f43b971e2f0a84" property="surface_base"/>
+		<surface name="pine_tree_03_1_lod_0_pine_trunk" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="e0d5efd1c2d44f10293d20c41da932bda7caab9a" property="surface_base"/>
+		<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999988 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

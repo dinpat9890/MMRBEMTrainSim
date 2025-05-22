@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="209228805" name="skyscraper_building_1">
+		<mesh_name>../worlds/library_objects/gen_building/skyscraper_building_1.mesh</mesh_name>
+		<surface name="skyscraper_building_1.max_generic_bldg_res_04_type02_d.dds" max_visible_distance="2000" max_fade_distance="10" material="82ac2440a9e5868c68e202a4eb5d84235bd64b07" property="surface_base"/>
+		<transform>0.999999940395 6.93889390391e-018 0 0.0 -6.93889390391e-018 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -1.45519152284e-011 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1554464168" name="broken_rail">
+		<mesh_name>../features/obstruction_features/graphics/broken_rail.mesh</mesh_name>
+		<surface name="severe_break" max_visible_distance="1000" max_fade_distance="10" material="13f53e7983c9fd4461fca5be157c9e1701d46c3a" property="surface_base"/>
+		<surface name="small_break" max_visible_distance="1000" max_fade_distance="10" material="13f53e7983c9fd4461fca5be157c9e1701d46c3a" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -1.13686837722e-013 0 0.25 1.0</transform>
+	</node>
+</nodes>

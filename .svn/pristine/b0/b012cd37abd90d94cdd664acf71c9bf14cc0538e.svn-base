@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1766075950" name="poisar_to_magathane">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/poisar_to_magathane.mesh</mesh_name>
+		<surface name="poisar_to_magathane_gantry_poles_numbers_04" material="ff55708f1585842f1a58d88f4bc895994086ed0e" property="surface_base"/>
+		<surface name="poisar_to_magathane_gantry_poles_numbers_05" material="44268a4792a98ff7906bbbbadb65b08f1fec15ea" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

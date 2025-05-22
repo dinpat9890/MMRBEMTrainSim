@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="cow_brown_opacity" guid="34cd608692a3fe6ec3a7eb4e369eb8778ec31777" parent="30ac7634815508730994eb284f09c1ded1ed095b" base_material="mesh_base">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options transparent="2" depth_mask="1" cast_shadow="0" cast_world_shadow="1"/>
+	<texture name="albedo">../features/obstruction_features/graphics/textures/cow_brown_opacity_d.dds</texture>
+</material>

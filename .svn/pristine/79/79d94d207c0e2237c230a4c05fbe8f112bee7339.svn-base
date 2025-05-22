@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="grass_trackside" guid="8a1bd2cf8b249930f3d45b762000b43bc226c926" base_material="grass_base">
+	<options cast_world_shadow="0"/>
+	<state name="shape">1</state>
+	<texture name="diffuse">../worlds/library_objects/vegetation/grass_regular_d.dds</texture>
+	<parameter name="diffuse_color">0.576470613 0.639215708 0.490196109 1</parameter>
+</material>

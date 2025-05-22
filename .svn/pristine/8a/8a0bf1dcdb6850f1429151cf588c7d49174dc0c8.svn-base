@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="signal_color_far_red" guid="4a20be2f3790a111692560dba28a46587293b6c8" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<state name="emission">1</state>
+	<state name="geometry_inflation">1</state>
+	<state name="material_motion_blur">0</state>
+	<texture name="albedo">../worlds/library_objects/features/textures/feature_signal.dds</texture>
+	<texture name="emission">../worlds/library_objects/features/textures/feature_signal_e.dds</texture>
+	<parameter name="albedo_color">1 1 1 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="color"/>
+	<parameter name="shading"/>
+	<parameter name="emission_scale">0.5</parameter>
+	<parameter name="vertex_balloon">4</parameter>
+</material>

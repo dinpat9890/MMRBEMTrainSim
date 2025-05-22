@@ -1,0 +1,46 @@
+
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒáÂ‘øÿÿÿÿHšÂRMINORZ
+CODE_SMELL
+e	java:S106T"9Replace this use of System.out or System.err by a logger.(ªÕÍˆHëÁRMAJORZ
+CODE_SMELL
+f	java:S106Ç"9Replace this use of System.out or System.err by a logger.(Àûå HñÁRMAJORZ
+CODE_SMELL
+~
+java:S1192}"NDefine a constant instead of duplicating this literal "SendEvent.PNG" 4 times.(ÀÈ¥H†ÂRCRITICALZ
+CODE_SMELL
+¢
+java:S1130À"uRemove the declaration of thrown exception 'org.sikuli.script.FindFailed', as it cannot be thrown from method's body.(û³IHïÁRMINORZ
+CODE_SMELL
+x	java:S116	"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯HãÁRMINORZ
+CODE_SMELL
+y	java:S116	"MRename this field "S1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯HäÁRMINORZ
+CODE_SMELL
+Œ
+java:S1192y"WDefine a constant instead of duplicating this literal "FireImmediateEvent.PNG" 4 times.(‡¢¸ÂúÿÿÿÿH÷ÁRCRITICALZ
+CODE_SMELL
+M
+java:S1659	" Declare "S1" on a separate line.(ÕÊ²¯HåÁRMINORZ
+CODE_SMELL
+
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(°ãš§ıÿÿÿÿHéÁRMINORZ
+CODE_SMELL
+„
+java:S1192"TDefine a constant instead of duplicating this literal "SimulatorStatus.PNG" 4 times.(´¨È“HÂRCRITICALZ
+CODE_SMELL
+}
+java:S1192,"NDefine a constant instead of duplicating this literal "OkButton.PNG" 14 times.(ÑåµxH‹ÂRCRITICALZ
+CODE_SMELL
+f	java:S106¸"9Replace this use of System.out or System.err by a logger.(š¹üÖHîÁRMAJORZ
+CODE_SMELL
+O
+java:S1659""Declare "mode" on a separate line.(ËùŸÁHçÁRMINORZ
+CODE_SMELL
+‹
+java:S1192"UDefine a constant instead of duplicating this literal "SelectEventState.PNG" 4 times.(¾ÚÄÿÿÿÿÿHüÁRCRITICALZ
+CODE_SMELL
+†
+java:S1192"PDefine a constant instead of duplicating this literal "SelectEvent.PNG" 4 times.(ªÎ’ÄüÿÿÿÿHòÁRCRITICALZ
+CODE_SMELL
+™
+java:S1130["lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ë…¸¸HìÁRMINORZ
+CODE_SMELL

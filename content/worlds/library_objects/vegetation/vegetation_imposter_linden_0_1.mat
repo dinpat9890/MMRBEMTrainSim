@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_linden_0_1" guid="2c21db062f27fb4ff3484802f64a21bd9daa2e3b" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<options cast_world_shadow="0"/>
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/linden_imposter.dds</texture>
+	<texture name="normal">../../../../SNCFSNTrainSim/trunk/dependencies/vision/oksygen/content/core/graphics/vegetation/graphics/linden/textures/linden_0_imposter_n.dds</texture>
+	<parameter name="diffuse_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+</material>

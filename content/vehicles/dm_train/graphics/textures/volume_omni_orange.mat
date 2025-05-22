@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="volume_omni_orange" guid="51d42054356d03d326192b95e502c998b153a433" base_material="volume_omni_base">
+	<parameter name="diffuse_color">0.839215755 0.592156887 0.13333334 1</parameter>
+	<parameter name="diffuse_scale">1</parameter>
+</material>

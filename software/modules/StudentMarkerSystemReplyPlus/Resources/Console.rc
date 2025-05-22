@@ -1,0 +1,110 @@
+#include <windows.h>
+
+// Instead of #include "resource.h"
+#define MAIN_ICON                       VS_USER_DEFINED+1
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MAIN_ICON               ICON                    "Console.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+// Provide a default naming scheme for when no preprocessor definitions are included.
+// The preprocessor definitions will come from the vcxproj file and release.properties
+// Does not support ANSI macros - see http://msdn.microsoft.com/en-us/library/aa381032(VS.85).aspx
+#ifndef VER_NAME_STR
+#  define VER_NAME_STR "Unnamed"
+#endif
+#ifndef VER_DESCRIPTION_STR
+#  define VER_DESCRIPTION_STR VER_NAME_STR
+#endif
+#ifndef VER_PRODUCTNAME_STR
+#  ifndef VER_USERNAME_STR
+#    define VER_PRODUCTNAME_STR "Developer"
+#  else
+#    define VER_PRODUCTNAME_STR VER_USERNAME_STR
+#  endif
+#endif
+#ifndef VER_FILEVERSION
+#  define VER_FILEVERSION 0,0,0,0
+#endif
+#ifndef VER_FILEVERSION_STR
+#  define VER_FILEVERSION_STR "Unversioned"
+#endif
+#ifndef VER_BUILD_TYPE_STR
+#  ifdef _WIN64
+#    ifndef _DEBUG
+#      define VER_BUILDTYPE_STR "(x64)"
+#    else
+#      define VER_BUILDTYPE_STR "(x64 Debug)"
+#    endif
+#  else
+#    ifndef _DEBUG
+#      define VER_BUILDTYPE_STR ""
+#    else
+#      define VER_BUILDTYPE_STR "(Debug)"
+#    endif
+#  endif
+#endif
+
+// The resource ID VS_VERSION_INFO must be used to specify version info
+// see WinVer.h
+
+// Refer to ms-help://MS.MSDNQTR.v90.en/tools/tools/versioninfo_resource.htm for field descriptions.
+
+VS_VERSION_INFO VERSIONINFO
+ // FILEVERSION gets shown under Details in Windows 7
+ FILEVERSION VER_FILEVERSION
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG // | VS_FF_PRIVATEBUILD
+#else
+ FILEFLAGS 0 // | VS_FF_PRIVATEBUILD
+#endif
+ FILEOS      VOS__WINDOWS32
+ FILETYPE    VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0904b0"
+        BEGIN
+            // Using ProductVersion as FileVersion is not shown under Details in Windows 7
+
+            // Was required for Version tab to appear on File Properties in Windows XP, but this is gone now
+            VALUE "FileVersion",      VER_FILEVERSION_STR
+
+            // Required
+            VALUE "CompanyName",      "SYDAC Pty Ltd"
+            VALUE "FileDescription",  VER_DESCRIPTION_STR
+            VALUE "ProductName",      VER_PRODUCTNAME_STR
+            VALUE "ProductVersion",   VER_FILEVERSION_STR " " VER_BUILDTYPE_STR
+            
+            // Required, but not strictly necessary
+            VALUE "InternalFilename", VER_NAME_STR
+            VALUE "OriginalFilename", VER_NAME_STR ".exe"
+
+            // Optional
+            VALUE "LegalCopyright",   "Copyright (C) 2015 SYDAC Pty Ltd"
+
+            // VS_FF_PRIVATEBUILD must be specified - we're putting the builder in the product name instead
+            //VALUE "PrivateBuild",    "Built by X"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc09, 1200
+    END
+END

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="670443070" name="pacificsilverfir">
+		<mesh_name>../worlds/shared/graphics/vegetation/pacificsilverfir.mesh</mesh_name>
+		<surface name="tree_branches_lod2" material="e1381909f6bc4f6c55d003cc8a062eb18017d419" property="surface_base"/>
+		<surface name="tree_trunk_lod2" material="45616b9f04cb5000b5f31b1500c7de0aa1617af5" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

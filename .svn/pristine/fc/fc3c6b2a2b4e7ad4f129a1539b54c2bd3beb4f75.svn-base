@@ -1,0 +1,38 @@
+## Domain : Event Script (es)
+## Default ES properties
+
+## set to true to use multiple trigger event scripting interface, instead of the basic view
+es.enableMultiTriggerScripting=true
+
+## Flag for using the old unintuitive layout we had before
+es.gui.trainPositionConditionPanel.legacyLayout=false
+
+## Flags for including the various Condition types
+es.condition.elapsedTime.active=true
+es.condition.trainPosition.active=true
+es.condition.event.active=true
+es.condition.featureState.active=true
+## Note that simulated time condition editing is a bit fragile (disabled by default)
+es.condition.simulatedTime.active=false
+
+## Indicates if events scheduled prior to simulation start time will be 
+## executed (as part of the initial conditions)
+## Note that Actions with delays are not included in this processing.
+## Note that if Simulated Time Conditions are not enabled, this will have no effect.
+es.condition.simulatedTime.executePastEvents=true
+
+## Allows the user is able to enter a time in the past or beyond maxSessionTime
+es.condition.simulatedTime.fullDatetimeRange=true
+
+## Max Seesion Time in Seconds (e.g. 86400 seconds in a day)
+es.condition.simulatedTime.maxSessionTime=86400
+
+## Flags for including the various Action types
+es.action.event.active=true
+es.action.featureState.active=true
+es.action.camera.active=true
+es.action.multimedia.active=true
+es.action.prompt.active=true
+
+## Tool for media preview. This is passed the filename to preview
+es.multimedia.previewTool=../Startup/StartMultimediaPreview.bat

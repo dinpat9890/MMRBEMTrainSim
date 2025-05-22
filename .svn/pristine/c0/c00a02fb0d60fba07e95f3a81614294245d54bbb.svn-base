@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shirt" guid="7f0c5e61448d2560e7c9d08b42b518d00b01adf2" base_material="mesh_base">
+	<texture name="albedo">../features/obstruction_features/graphics/textures/shirt.dds</texture>
+	<parameter name="albedo_color">0.898039281 0.898039281 0.898039281 1</parameter>
+	<parameter name="specular">0</parameter>
+</material>

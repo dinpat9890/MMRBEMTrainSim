@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeReference" id="1019043029" name="plat_pass_dooryellow_l">
+		<reference>../worlds/mmrbem/graphics/stations/plat_pass_door_l.node</reference>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

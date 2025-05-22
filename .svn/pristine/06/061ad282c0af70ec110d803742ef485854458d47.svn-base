@@ -1,0 +1,4683 @@
+# Do not remove this blank message , this is used to show blank message
+
+################################   TCMS Faults   ################################
+[EventId 012001]	
+FaultId=012001 
+FaultVehicleId=2    
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph down for ADD Intervention
+FaultComponent=PANTO_T2
+OperatorGuidance=ADD (Automatic Drop Device) intervention, Pantographs are lowered
+
+[EventId 015001]	
+FaultId=012001 
+FaultVehicleId=5   
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph down for ADD Intervention
+FaultComponent=PANTO_T5
+OperatorGuidance=ADD (Automatic Drop Device) intervention, Pantographs are lowered
+
+[EventId 018001]	
+FaultId=012001  
+FaultVehicleId=7  
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph down for ADD Intervention
+FaultComponent=PANTO_T8
+OperatorGuidance=ADD (Automatic Drop Device) intervention, Pantographs are lowered
+
+[EventId 012002]
+FaultId=012002
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph down for ORD Intervention
+FaultComponent=PANTO_T2
+OperatorGuidance=ORD (Over Reach Detection) intervention, Pantographs are lowered
+
+[EventId 015002]
+FaultId=012002
+FaultVehicleId=5
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph down for ORD Intervention
+FaultComponent=PANTO_T5
+OperatorGuidance=ORD (Over Reach Detection) intervention, Pantograph are lowered
+
+[EventId 017002]
+FaultId=012002
+FaultVehicleId=7
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph down for ORD Intervention
+FaultComponent=PANTO_T8
+OperatorGuidance=ORD (Over Reach Detection) intervention, Pantograph are lowered
+
+[EventId 012021]
+FaultId=012021
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph rising failure in car T2
+FaultComponent=PANTO_T2
+OperatorGuidance=Pantograph rising failure in car T2
+
+[EventId 015021]
+FaultId=012021
+FaultVehicleId=5
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph rising failure in car T5
+FaultComponent=PANTO_T5
+OperatorGuidance=Pantograph rising failure in car T5
+
+[EventId 017021]
+FaultId=012021
+FaultVehicleId=7
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph rising failure in car T8
+FaultComponent=PANTO_T8
+OperatorGuidance=Pantograph rising failure car T8
+
+[EventId 101115]
+FaultId=101115
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+ 
+[EventId 102115]
+FaultId=101115
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103115]
+FaultId=101115
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104115]
+FaultId=101115
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_B4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105115]
+FaultId=101115
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_B4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106115]
+FaultId=101115
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_B4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107115]
+FaultId=101115
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108115]
+FaultId=101115
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101215]
+FaultId=101215
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 102215]
+FaultId=101215
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103215]
+FaultId=101215
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104215]
+FaultId=101215
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105215]
+FaultId=101215
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106215]
+FaultId=101215
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107215]
+FaultId=101215
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108215]
+FaultId=101215
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101315]
+FaultId=101315
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 102315]
+FaultId=101315
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103315]
+FaultId=101315
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104315]
+FaultId=101315
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105315]
+FaultId=101315
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106315]
+FaultId=101315
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107315]
+FaultId=101315
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108315]
+FaultId=101315
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101415]
+FaultId=101415
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 102415]
+FaultId=101415
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103415]
+FaultId=101415
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104415]
+FaultId=101415
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105415]
+FaultId=101415
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106415]
+FaultId=101415
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107415]
+FaultId=101415
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108415]
+FaultId=101415
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101515]
+FaultId=101515
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 102515]
+FaultId=101515
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103515]
+FaultId=101515
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104515]
+FaultId=101515
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105515]
+FaultId=101515
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106515]
+FaultId=101515
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_A4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107515]
+FaultId=101515
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108515]
+FaultId=101515
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_B1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101615]
+FaultId=101615
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 102615]
+FaultId=101615
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103615]
+FaultId=101615
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104615]
+FaultId=101615
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105615]
+FaultId=101615
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106615]
+FaultId=101615
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_A3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107615]
+FaultId=101615
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108615]
+FaultId=101615
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_B2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101715]
+FaultId=101715
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 102715]
+FaultId=101715
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103715]
+FaultId=101715
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104715]
+FaultId=101715
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105715]
+FaultId=101715
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106715]
+FaultId=101715
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_A2
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107715]
+FaultId=101715
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108715]
+FaultId=101715
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_B3
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101815]
+FaultId=101815
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 DM1 failed to open due to obstruction
+FaultComponent=DOOR_DM1_B4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 102815]
+FaultId=101815
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 T2 failed to open due to obstruction
+FaultComponent=DOOR_T2_B4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 103815]
+FaultId=101815
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 M3 failed to open due to obstruction
+FaultComponent=DOOR_M3_B4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 104815]
+FaultId=101815
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 M4 failed to open due to obstruction
+FaultComponent=DOOR_M4_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 105815]
+FaultId=101815
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 T5 failed to open due to obstruction
+FaultComponent=DOOR_T5_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 106815]
+FaultId=101815
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 DM6 failed to open due to obstruction
+FaultComponent=DOOR_DM6_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 107815]
+FaultId=101815
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 M7 failed to open due to obstruction
+FaultComponent=DOOR_M7_A1
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 108815]
+FaultId=101815
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 T8 failed to open due to obstruction
+FaultComponent=DOOR_T8_B4
+OperatorGuidance=During door opening, the door is obstruced 3 times before door fully open;Try to open and close the door;If failure is still present, isolate the door to continue with the service
+
+[EventId 101114]
+FaultId=101114
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102114]
+FaultId=101114
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103114]
+FaultId=101114
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104114]
+FaultId=101114
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105114]
+FaultId=101114
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106114]
+FaultId=101114
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107114]
+FaultId=101114
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108114]
+FaultId=101114
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 101214]
+FaultId=101214
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102214]
+FaultId=101214
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103214]
+FaultId=101214
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104214]
+FaultId=101214
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105214]
+FaultId=101214
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106214]
+FaultId=101214
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107214]
+FaultId=101214
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108214]
+FaultId=101214
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 101314]
+FaultId=101314
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102314]
+FaultId=101314
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103314]
+FaultId=101314
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104314]
+FaultId=101314
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105314]
+FaultId=101314
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106314]
+FaultId=101314
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107314]
+FaultId=101314
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108314]
+FaultId=101314
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 101414]
+FaultId=101414
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102414]
+FaultId=101414
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103414]
+FaultId=101414
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104414]
+FaultId=101414
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105414]
+FaultId=101414
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106414]
+FaultId=101414
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107414]
+FaultId=101414
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108414]
+FaultId=101414
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 101514]
+FaultId=101514
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102514]
+FaultId=101514
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103514]
+FaultId=101514
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104514]
+FaultId=101514
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105514]
+FaultId=101514
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106514]
+FaultId=101514
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A4 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_A4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107514]
+FaultId=101514
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108514]
+FaultId=101514
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B1 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_B1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 101614]
+FaultId=101614
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102614]
+FaultId=101614
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103614]
+FaultId=101614
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104614]
+FaultId=101614
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105614]
+FaultId=101614
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106614]
+FaultId=101614
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A3 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_A3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107614]
+FaultId=101614
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108614]
+FaultId=101614
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B2 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_B2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 101714]
+FaultId=101714
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102714]
+FaultId=101714
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103714]
+FaultId=101714
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104714]
+FaultId=101714
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105714]
+FaultId=101714
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106714]
+FaultId=101714
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A2 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_A2
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107714]
+FaultId=101714
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108714]
+FaultId=101714
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B3 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_B3
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 101814]
+FaultId=101814
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 DM1 failed to close due to obstruction
+FaultComponent=DOOR_DM1_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 102814]
+FaultId=101814
+FaultVehicleId=2
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 T2 failed to close due to obstruction
+FaultComponent=DOOR_T2_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 103814]
+FaultId=101814
+FaultVehicleId=3
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 M3 failed to close due to obstruction
+FaultComponent=DOOR_M3_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 104814]
+FaultId=101814
+FaultVehicleId=4
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 M4 failed to close due to obstruction
+FaultComponent=DOOR_M4_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 105814]
+FaultId=101814
+FaultVehicleId=5
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 T5 failed to close due to obstruction
+FaultComponent=DOOR_T5_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 106814]
+FaultId=101814
+FaultVehicleId=6
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 DM6 failed to close due to obstruction
+FaultComponent=DOOR_DM6_A1
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 107814]
+FaultId=101814
+FaultVehicleId=7
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 M7 failed to close due to obstruction
+FaultComponent=DOOR_M7_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 108814]
+FaultId=101814
+FaultVehicleId=8
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door B4 T8 failed to close due to obstruction
+FaultComponent=DOOR_T8_B4
+OperatorGuidance=The door has been obstructed before door close switch activates 3 times during one closing door cycle.;Try to open and close the door.;If failure is still present, isolate the door to continue with the service
+
+[EventId 031032]
+FaultId=031032
+FaultVehicleId=1
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=FWD/REV Train Line mismatch in DM1
+FaultComponent=DESK_DM1
+OperatorGuidance=Mismatch between Direction in Desk DM1 enabled and related Train Line UDT forward / Reverse.;No valid direction can be determinate.;TCMS set Train Direction as Incoherent.
+
+[EventId 036032]
+FaultId=031032
+FaultVehicleId=6
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=FWD/REV Train Line mismatch in DM6
+FaultComponent=DESK_DM6
+OperatorGuidance=Desk DM1 enabled and FWD/REV Train Line mismatch.
+
+[EventId 038032]
+FaultId=031032
+FaultVehicleId=8
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=FWD/REV Train Line mismatch in DM8
+FaultComponent=DESK_DM8
+OperatorGuidance=Desk DM1 enabled and FWD/REV Train Line mismatch.
+
+[EventId 091007]
+FaultId=091007
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU DM1 - Low MR pressure
+FaultComponent=BRAKES
+OperatorGuidance=Main reservoir pressure below the limit.
+
+[EventId 096007]
+FaultId=091007
+FaultVehicleId=6
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU DM6 - Low MR pressure
+FaultComponent=BRAKES
+OperatorGuidance=Main reservoir pressure below the limit.
+
+[EventId 098007]
+FaultId=091007
+FaultVehicleId=8
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU DM8 - Low MR pressure
+FaultComponent=BRAKES
+OperatorGuidance=Main reservoir pressure below the limit.
+
+[EventId 090043]
+FaultId=090043
+FaultVehicleId=0
+FaultSystem=VEHICLE
+FaultLevel=1
+FaultDescription=Emergency brake requested by CC
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 091044]
+FaultId=091044
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=1
+FaultDescription=Emergency brake due to EB push button  in DM1
+FaultComponent=ER_DM1
+OperatorGuidance=Release EB push button.
+
+[EventId 091046]
+FaultId=091046
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=1
+FaultDescription=Emergency brake due Dead man in DM1
+FaultComponent=ER_DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 241005]
+FaultId=241005
+FaultVehicleId=0
+FaultSystem=VEHICLE
+FaultLevel=3
+FaultDescription=High Tractive effort required
+FaultComponent=TCMS
+OperatorGuidance=Activate HTE mode in special modes page in order to apply extra torque.
+
+[EventId 001002]
+FaultId=001002
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=1
+FaultDescription=Obstacle detected right side DM1
+FaultComponent=ER_DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 001003]
+FaultId=001003
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=1
+FaultDescription=Derailment detected right side DM1
+FaultComponent=ER_DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 001008]
+FaultId=001008
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=2
+FaultDescription=Dead Man bypassed in DM1
+FaultComponent=DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 001010]
+FaultId=001010
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=2
+FaultDescription=Horn isolated by VDU in DM1
+FaultComponent=DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 031028]
+FaultId=031028
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=3
+FaultDescription=Coupling circuit not powered car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 031036]
+FaultId=031036
+FaultVehicleId=1
+FaultSystem=VEHICLE
+FaultLevel=3
+FaultDescription=Cab Enabling Circuit Breaker tripped car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Try to close CECB.;Check CECB operation and related cabling.
+
+[EventId 171001]
+FaultId=171001
+FaultVehicleId=1
+FaultSystem=TR
+FaultLevel=2
+FaultDescription=Train Radio failure in DM1
+FaultComponent=TR_MASTER_DM1
+OperatorGuidance=Check Train Radio Operation.
+
+[EventId 040004]
+FaultId=040004
+FaultVehicleId=0
+FaultSystem=TCMS
+FaultLevel=1
+FaultDescription=CCU communication error
+FaultComponent=MDCU_MASTER
+OperatorGuidance=Check CCU - Switch ethernet connection.;Check consist switch.;Check CCU board.
+
+[EventId 041002]
+FaultId=041002
+FaultVehicleId=1
+FaultSystem=TCMS
+FaultLevel=1
+FaultDescription=RIO1 and RIO2 DM1 communication error
+FaultComponent=MDCU_MASTER
+OperatorGuidance=Check RIO - Switch ethernet connection.;Check consist switch.;Check RIO board.
+
+[EventId 041003]
+FaultId=041003
+FaultVehicleId=1
+FaultSystem=TCMS
+FaultLevel=1
+FaultDescription=MCB TCMS Group tripped car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Try to close MCB.;Check MCB circuit.;Replace MCB.
+
+[EventId 041140]
+FaultId=041140
+FaultVehicleId=1
+FaultSystem=TCMS
+FaultLevel=1
+FaultDescription=ER1 Major fault
+FaultComponent=MDCU_MASTER
+OperatorGuidance=Inform to OCC.
+
+[EventId 120001]
+FaultId=120001
+FaultVehicleId=0
+FaultSystem=TCMS
+FaultLevel=3
+FaultDescription=ATC Bypassed
+FaultComponent=TCMS
+OperatorGuidance=Inform to OCC.
+
+[EventId 120002]
+FaultId=120002
+FaultVehicleId=0
+FaultSystem=TCMS
+FaultLevel=2
+FaultDescription=Traction cut - mode selector in ATP/ATO/UTO
+FaultComponent=TCMS
+OperatorGuidance=Keep Mode Selector in FWD/REV mode for train movement.
+
+[EventId 131001]
+FaultId=131001
+FaultVehicleId=1
+FaultSystem=PAPIS
+FaultLevel=1
+FaultDescription=PEA 1 alarm active in car DM1
+FaultComponent=PAPIS_CU_MASTER_DM1
+OperatorGuidance=No maintenance action required.
+
+[EventId 131005]
+FaultId=131005
+FaultVehicleId=1
+FaultSystem=PAPIS
+FaultLevel=2
+FaultDescription=PEA 1 call not acknowledged in car DM1
+FaultComponent=PAPIS_CU_MASTER_DM1
+OperatorGuidance=No maintenance action required.
+
+[EventId 131010]
+FaultId=131010
+FaultVehicleId=1
+FaultSystem=PAPIS
+FaultLevel=3
+FaultDescription=PEA 1 failure in car DM1
+FaultComponent=PAPIS_CU_MASTER_DM1
+OperatorGuidance=Check that the power and ethernet wiring is correct and connected to the device.;Check that the Ethernet cabling is correctly connected to the switch according to the on-board connection scheme and that the switch is powered and working.;If the anomaly persists, replace the PECU. Then contact personnel for testing new equipment.
+
+[EventId 131014]
+FaultId=131014
+FaultVehicleId=1
+FaultSystem=PAPIS
+FaultLevel=3
+FaultDescription=PCU failure in car DM1
+FaultComponent=PAPIS_CU_MASTER_DM1
+OperatorGuidance=Check that the power and ethernet wiring is correct and connected to the device.;Check that the Ethernet cabling is correctly connected to the switch according to the on-board connection scheme and that the switch is powered and working.;If the anomaly persists, replace the PA controller mode. Then contact personnel for testing new equipment.
+
+[EventId 131015]
+FaultId=131015
+FaultVehicleId=1
+FaultSystem=PAPIS
+FaultLevel=3
+FaultDescription=MCB PA GROUP open in DM1
+FaultComponent=PAPIS_CU_MASTER_DM1
+OperatorGuidance=Try to close MCB.;Check MCB and cabling
+
+[EventId 030018]
+FaultId=030018
+FaultVehicleId=0
+FaultSystem=LV
+FaultLevel=3
+FaultDescription=Double Cab Key Insertion
+FaultComponent=VEHICLE
+OperatorGuidance=Remove the key on one cab.
+
+[EventId 031029]
+FaultId=031029
+FaultVehicleId=1
+FaultSystem=LV
+FaultLevel=2
+FaultDescription=MCB 110VDC GROUP Tripped car DM1
+FaultComponent=DM1
+OperatorGuidance=Try to close MCB.;Verify circuit breaker and relatwed cabling.
+
+[EventId 033032]
+FaultId=031032
+FaultVehicleId=3
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=FWD/REV Train Line mismatch in DM1
+FaultComponent=M3
+OperatorGuidance=Check direction train line circuit.
+
+[EventId 031034]
+FaultId=031034
+FaultVehicleId=1
+FaultSystem=LV
+FaultLevel=2
+FaultDescription=Mechanical coupler relay fault in DM1
+FaultComponent=DM1
+OperatorGuidance=Check mechanical coupler circuit and related circuit.
+
+[EventId 033005]
+FaultId=033005
+FaultVehicleId=3
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=Battery fuse blown
+FaultComponent=M3
+OperatorGuidance=Replace battery fuse.
+
+[EventId 033007]
+FaultId=033007
+FaultVehicleId=3
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=BIC contactor activation fault
+FaultComponent=M3
+OperatorGuidance=Check BIC operation and cabling.
+
+[EventId 033031]
+FaultId=033031
+FaultVehicleId=3
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=Low Battery voltage alarm in M3
+FaultComponent=M3
+OperatorGuidance=Raise Pantgraph and close VCB in order to charge battery.
+
+[EventId 111001]
+FaultId=111001
+FaultVehicleId=1
+FaultSystem=LIGHTS
+FaultLevel=2
+FaultDescription=MCB Light Group tripped in car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Try to close MCB.;Check MCB circuit.;Replace MCB.
+
+[EventId 081001]
+FaultId=081001
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=1
+FaultDescription=MCB HVAC Group tripped car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Try to close MCB.;Check MCB circuit.;Replace MCB.
+
+[EventId 081010]
+FaultId=081010
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=2
+FaultDescription=HVAC1 Major DM1 fault 
+FaultComponent=MDCU_MASTER_DM1
+OperatorGuidance=Check HVAC Operation.
+
+[EventId 081011]
+FaultId=081011
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=2
+FaultDescription=HVAC1 DM1 Supply Fan MPCB Trip
+FaultComponent=HVAC1_DM1
+OperatorGuidance=Check that the power wiring is correct for Supply Fan motor.; Measure the current for any imbalance of current.;Check MPCB Auxillary control wiring and latch.;If the anomaly persists, replace the apparatus.;Then contact personnel for testing new equipment.
+
+[EventId 081012]
+FaultId=081012
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=2
+FaultDescription=HVAC1 DM1 Emergency Inverter Trip
+FaultComponent=HVAC1_DM1
+OperatorGuidance=Check 110VDC supply is not low.;Check for Emergency Inverter MCB Trip.;Check Auxillary control wiring of  inverter feedback.;Check that the power  wiring is correct for Supply Fan  motor.;Measure the current for any imbalance of current.;If the anomaly persists, replace the apparatus.;Then contact personnel for testing new equipment.
+
+[EventId 081013]
+FaultId=081013
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=2
+FaultDescription=HVAC 1 DM1 RCCB Trip
+FaultComponent=HVAC1_DM1
+OperatorGuidance=Check 110VDC supply is not low.;Check for Emergency Inverter MCB Trip.;Check Auxillary control wiring of  inverter feedback.;Check that the power  wiring is correct for Supply Fan  motor.;Measure the current for any imbalance of current.;If the anomaly persists, replace the apparatus.;Then contact personnel for testing new equipment.
+
+[EventId 081014]
+FaultId=081014
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=3
+FaultDescription=HVAC 1 DM1 in fire mode
+FaultComponent=HVAC1_DM1
+OperatorGuidance=No maintenance action required.
+
+[EventId 081015]
+FaultId=081015
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=3
+FaultDescription=HVAC1 DM1 in external smoke mode
+FaultComponent=HVAC1_DM1
+OperatorGuidance=No maintenance action required.
+
+[EventId 081016]
+FaultId=081016
+FaultVehicleId=1
+FaultSystem=HVAC
+FaultLevel=3
+FaultDescription=HVAC1 DM1 in reduced mode
+FaultComponent=HVAC1_DM1
+OperatorGuidance=Check maintenance detailed messages.
+
+[EventId 011017]
+FaultId=011017
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=VCB opened by CI (DM1) car T2
+FaultComponent=T2
+OperatorGuidance=Check IC protection.
+
+[EventId 012003]
+FaultId=012003
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph down for BUVDR Intervention
+FaultComponent=T2
+OperatorGuidance=Check pantograph operation.
+
+[EventId 012005]
+FaultId=012005
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph Circuit not energized
+FaultComponent=T2
+OperatorGuidance=Check circuit breaker status.
+
+[EventId 012006]
+FaultId=012006
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph pipe low pressure
+FaultComponent=T2
+OperatorGuidance=ACMG low pressure detected.;Pantograph cannot be rised.
+
+[EventId 012010]
+FaultId=012010
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Transformer oil pressure too low
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer oil flow.;Check connection.
+
+[EventId 012013]
+FaultId=012013
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=1
+FaultDescription=Transformer Oil temperature too high
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer oil level.;Check Main Transformer.;Check connection.
+
+[EventId 012015]
+FaultId=012015
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=VCB opened by AC overcurrent car T2
+FaultComponent=T2
+OperatorGuidance=No maintenance actions required.
+
+[EventId 012016]
+FaultId=012016
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=VCB opened by MTr protection car T2
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer protection.
+
+[EventId 012018]
+FaultId=012018
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=VCB opened by APS car T2
+FaultComponent=T2
+OperatorGuidance=Check APS protection.
+
+[EventId 012022]
+FaultId=012022
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph lowering failure car T2
+FaultComponent=T2
+OperatorGuidance=Check pantograph operation.
+
+[EventId 150500]
+FaultId=150500
+FaultVehicleId=0
+FaultSystem=FDS
+FaultLevel=1
+FaultDescription=Internal Fire Alarm TL active
+FaultComponent=TCMS
+OperatorGuidance=Inform to OCC.
+
+[EventId 150502]
+FaultId=150502
+FaultVehicleId=0
+FaultSystem=FDS
+FaultLevel=3
+FaultDescription=FDU Fault Alarm TL Active
+FaultComponent=TCMS
+OperatorGuidance=Inform to OCC.
+
+[EventId 151004]
+FaultId=151004
+FaultVehicleId=1
+FaultSystem=FDS
+FaultLevel=1
+FaultDescription=Smoke alarm DM1 (CAB Area)
+FaultComponent=FDU_DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 151021]
+FaultId=151021
+FaultVehicleId=1
+FaultSystem=FDS
+FaultLevel=1
+FaultDescription=Heat alarm DM1 (EDB)
+FaultComponent=FDU_DM1
+OperatorGuidance=Inform to OCC.
+
+[EventId 101001]
+FaultId=101001
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=MCB Door Group tripped car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Try to close MCB,;Check MCB circuit.;Replace MCB.
+
+[EventId 101004]
+FaultId=101004
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Detrainment door open in DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance="Close detrainment door if not necessary.;If detrainment door is closed, chech RIODM-UDI1 channel 8.
+
+[EventId 101005]
+FaultId=101005
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Emergency door mechanical unlocked in DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=No maintenance action required.
+
+[EventId 101006]
+FaultId=101006
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Cab Saloon Partition Door open in DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=No maintenance action required.
+
+[EventId 101007]
+FaultId=101007
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Emergency door cover removed in DM1
+FaultComponent=ER_DM1
+OperatorGuidance=No maintenance action required.
+
+[EventId 101008]
+FaultId=101008
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door loop bypass active in DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Remove Door loop bypass.
+
+[EventId 101101]
+FaultId=101101
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 - Major fault (wired)
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check DCU power circuit.
+
+[EventId 101103]
+FaultId=101103
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 DCU failure
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Replace the DCU.
+
+[EventId 101104]
+FaultId=101104
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 motor circuit failure
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check the motor, DCU and motor cable.
+
+[EventId 101106]
+FaultId=101106
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 DLSR failure
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check the right door locked switch.
+
+[EventId 101107]
+FaultId=101107
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 DCSL failure
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check the left door closed switch.
+
+[EventId 101109]
+FaultId=101109
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 Unexpected Unlocking
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check door mechanism.
+
+[EventId 101110]
+FaultId=101110
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 Failed to lock
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check door mechanism.
+
+[EventId 101116]
+FaultId=101116
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 DM1 Failed to unlock
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check door mechanism.
+
+[EventId 101118]
+FaultId=101118
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 Emerg. handle activation (wire)
+FaultComponent=DCU_DM1_1
+OperatorGuidance=No maintenance action required.
+
+[EventId 101120]
+FaultId=101120
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 DM1 Isolated (wire)
+FaultComponent=DCU_DM1_1
+OperatorGuidance=No maintenance action required.
+
+[EventId 241001]
+FaultId=241001
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=1
+FaultDescription=CI Failure car DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check diagnostic detailed event.
+
+[EventId 241003]
+FaultId=241003
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=2
+FaultDescription=CI isolated car DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Traction Converter isolated.;If not necessary, remove isolation.
+
+[EventId 241110]
+FaultId=241110
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=OHL High Voltage 3 in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the High Voltage, CLU.
+
+[EventId 241116]
+FaultId=241116
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Dynamic Brake Cut Out
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the BCU.
+
+[EventId 241120]
+FaultId=241120
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=OHL Low Voltage 2 in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the High Voltage, CLU.
+
+[EventId 241123]
+FaultId=241123
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Line Converter Over Current 2 in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the ACCT, MTr secondary and CLU.
+
+[EventId 241124]
+FaultId=241124
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=DC-Link Over Voltage 1 in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the DCPT, Filter Capacitor, and CLU.
+
+[EventId 241126]
+FaultId=241126
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=DC-Link Low Voltage 1 in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the DCPT, Filter Capacitor, and CLU.
+
+[EventId 241130]
+FaultId=241130
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Line Converter IGBT Failure in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the CONV PU IGBT, CLU.
+
+[EventId 241131]
+FaultId=241131
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=DC110V Low Voltage
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the DC110V.
+
+[EventId 241139]
+FaultId=241139
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Microprocessor Abnormal
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the CLU.
+
+[EventId 241141]
+FaultId=241141
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Local Communication Failure in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the CLU.
+
+[EventId 241143]
+FaultId=241143
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Over Temperature of Inverter Power Unit (high) in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the INV PU Thermistor.
+
+[EventId 241145]
+FaultId=241145
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Over Temperature of Converter Power Unit (High) in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the CNV PU Thermistor.
+
+[EventId 241149]
+FaultId=241149
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=AK Open Failure in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check AK,  CLU.
+
+[EventId 241151]
+FaultId=241151
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=K Open Failure in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check K, CLU.
+
+[EventId 241154]
+FaultId=241154
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Main Circuit Earth Fault 2 in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check GCT, Earth fault in main circuit
+
+[EventId 241155]
+FaultId=241155
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Heavy Wheel Slip in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check wheel slip.
+
+[EventId 241156]
+FaultId=241156
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Brake Demand Signal Failure in DM1
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the current loop between BCU and CLU.
+
+[EventId 241157]
+FaultId=241157
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Reverse Motion in Forward Command
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check train roll back.
+
+[EventId 241159]
+FaultId=241159
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=Gate Signal Abnormal
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check the CLU, Gate drives.
+
+[EventId 241163]
+FaultId=241163
+FaultVehicleId=1
+FaultSystem=PROPULSION
+FaultLevel=3
+FaultDescription=TCMS Communication Failure
+FaultComponent=DM1 Car Underframe
+OperatorGuidance=Check, TCMS, CLU communication.
+
+[EventId 091008]
+FaultId=091008
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU1 DM1 - Axle locked of wheel set 1
+FaultComponent=BCU_SEGM1
+OperatorGuidance=Check wheel set.;Check wiring.;Check speed sensor.;Check LAD05A.
+
+[EventId 091016]
+FaultId=091016
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 DM1: Service brake failure
+FaultComponent=BCU_DM1
+OperatorGuidance=Check Service Brake.
+
+[EventId 091018]
+FaultId=091018
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU1 DM1: Emergency Brake Failure
+FaultComponent=BCU_DM1
+OperatorGuidance=Check cabling/connector of LAD06B.;Check/exchange emergency brake valve and wiring.
+
+[EventId 091038]
+FaultId=091038
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=Air suspension bogie 1 deflated car DM1
+FaultComponent=TCMS
+OperatorGuidance=Check auxiliary contact, suspension pressure switch and related cabling.
+
+[EventId 091040]
+FaultId=091040
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=3
+FaultDescription=WSP active bogie 1 car DM1
+FaultComponent=TCMS
+OperatorGuidance=No maintenance action are required
+
+[EventId 091042]
+FaultId=091042
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=3
+FaultDescription=MCB Brake Group tripped car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Try to close MCB.;Check MCB circuit.;Replace MCB.
+
+[EventId 091048]
+FaultId=091048
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=Parking Brake application failure car DM1
+FaultComponent=TCMS
+OperatorGuidance=Parking Brake application failure car DM1.
+
+[EventId 091049]
+FaultId=091049
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=Parking Brake release failure car DM1
+FaultComponent=TCMS
+OperatorGuidance=Parking Brake release failure car DM1.
+
+[EventId 091050]
+FaultId=091050
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU DM1 Major Fault
+FaultComponent=BCU_DM1
+OperatorGuidance=Reset BCU.
+
+[EventId 261001]
+FaultId=261001
+FaultVehicleId=1
+FaultSystem=BOGIE
+FaultLevel=2
+FaultDescription=WFL failure car in DM1
+FaultComponent=WFL_DM1
+OperatorGuidance=Check WFL  System and related cabling.
+
+[EventId 001001]
+FaultId=001001
+FaultVehicleId=1
+FaultSystem=BOGIE
+FaultLevel=2
+FaultDescription=ODD failure in DM1
+FaultComponent=ODD_DM1
+OperatorGuidance=Check ODD operation and related cabling.
+
+[EventId 120003]
+FaultId=120003
+FaultVehicleId=0
+FaultSystem=ATC
+FaultLevel=1
+FaultDescription=Unexpected Door Opening detected by CC
+FaultComponent=ATC_MASTER
+OperatorGuidance=Inform to OCC.
+
+[EventId 121004]
+FaultId=121004
+FaultVehicleId=1
+FaultSystem=ATC
+FaultLevel=3
+FaultDescription=MCB Signaling group tripped in DM1
+FaultComponent=ATC_MASTER
+OperatorGuidance=Inform to OCC.
+
+[EventId 232001]
+FaultId=232001
+FaultVehicleId=2
+FaultSystem=APS
+FaultLevel=1
+FaultDescription=APS MCB Group tripped in T2
+FaultComponent=RIO_MASTER_T2
+OperatorGuidance=Try to close MCB.;Check MCB and cabling.
+
+[EventId 232158]
+FaultId=232158
+FaultVehicleId=2
+FaultSystem=APS
+FaultLevel=3
+FaultDescription=APS Circuit breaker tripped in car T2
+FaultComponent=APS_T2
+OperatorGuidance=Check APS Circuit breaker.
+
+[EventId 002014]
+FaultId=000014
+FaultVehicleId=2
+FaultSystem=VEHICLE
+FaultLevel=3
+FaultDescription=Shutdown failure - VCB opening
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 004014]
+FaultId=000014
+FaultVehicleId=4
+FaultSystem=VEHICLE
+FaultLevel=3
+FaultDescription=Shutdown failure - VCB opening
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 005014]
+FaultId=000014
+FaultVehicleId=5
+FaultSystem=VEHICLE
+FaultLevel=3
+FaultDescription=Shutdown failure - VCB opening
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 007014]
+FaultId=000014
+FaultVehicleId=7
+FaultSystem=VEHICLE
+FaultLevel=3
+FaultDescription=Shutdown failure - VCB opening
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 111002]
+FaultId=111002
+FaultVehicleId=1
+FaultSystem=LIGHTS
+FaultLevel=2
+FaultDescription=MCB Light Group (Saloon) tripped in car DM1
+FaultComponent=RIO_MASTER_DM1
+OperatorGuidance=Try to close MCB.;Check MCB circuit.;Replace MCB.
+
+[EventId 112003]
+FaultId=112003
+FaultVehicleId=2
+FaultSystem=LIGHTS
+FaultLevel=2
+FaultDescription=Exterior Light 1 CB tripped in car T2
+FaultComponent=RIO_MASTER_T2
+OperatorGuidance=Try to close ELCB1.;Check ELCB1 circuit.;Replace ELCB1.
+
+[EventId 113004]
+FaultId=113004
+FaultVehicleId=3
+FaultSystem=LIGHTS
+FaultLevel=2
+FaultDescription=Exterior Light 2 CB tripped in car M3
+FaultComponent=RIO_MASTER_M3
+OperatorGuidance=Try to close ELCB2.;Check ELCB2 circuit.;Replace ELCB2.
+
+[EventId 112005]
+FaultId=112005
+FaultVehicleId=2
+FaultSystem=LIGHTS
+FaultLevel=2
+FaultDescription=Interior Light 1 CB tripped in car T2
+FaultComponent=RIO_MASTER_T2
+OperatorGuidance=Try to close ILCB1.;Check ILCB1 circuit.;Replace ILCB1.
+
+[EventId 113006]
+FaultId=113006
+FaultVehicleId=3
+FaultSystem=LIGHTS
+FaultLevel=2
+FaultDescription=Interior Light 2 CB tripped in car M3
+FaultComponent=RIO_MASTER_M3
+OperatorGuidance=Try to close ILCB2.;Check ILCB2 circuit.;Replace ILCB2
+
+[EventId 021001]
+FaultId=021001
+FaultVehicleId=1
+FaultSystem=MV
+FaultLevel=2
+FaultDescription=Main compressor manually isolated in DM1
+FaultComponent=DM1
+OperatorGuidance=Check maintenance diagnostic events for details
+
+[EventId 021004]
+FaultId=021004
+FaultVehicleId=1
+FaultSystem=MV
+FaultLevel=2
+FaultDescription=CMC contactor activation failure
+FaultComponent=DM1
+OperatorGuidance=Check CMC contactor and related cabling
+
+[EventId 021003]
+FaultId=021003
+FaultVehicleId=1
+FaultSystem=MV
+FaultLevel=2
+FaultDescription=CMC contactor deactivation failure
+FaultComponent=TCMS_DM1
+OperatorGuidance=Check CMC contactor and related cabling
+
+[EventId 101105]
+FaultId=101105
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 DLSL failure
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check the left door locked switch
+
+[EventId 101108]
+FaultId=101108
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 DCSR failure
+FaultComponent=DCU_DM1_1
+OperatorGuidance=Check the right door closed switch
+
+[EventId 101119]
+FaultId=101119
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=Door A1 DM1 Emerg. handle activation (bus)
+FaultComponent=DCU_DM1_1
+OperatorGuidance=No maintenance action required
+
+[EventId 101121]
+FaultId=101121
+FaultVehicleId=1
+FaultSystem=DOORS
+FaultLevel=2
+FaultDescription=Door A1 DM1 Isolated (bus)
+FaultComponent=DCU_DM1_1
+OperatorGuidance=No maintenance action required
+
+[EventId 232002]
+FaultId=232002
+FaultVehicleId=2
+FaultSystem=APS
+FaultLevel=2
+FaultDescription=APS Group 1 failure
+FaultComponent=TCMS
+OperatorGuidance=Check maintenance diagnostic events for details
+
+[EventId 232004]
+FaultId=232004
+FaultVehicleId=2
+FaultSystem=APS
+FaultLevel=2
+FaultDescription=APS Group 1 isolated
+FaultComponent=APS_T2
+OperatorGuidance=Check maintenance diagnostic events for details.
+
+[EventId 223001]
+FaultId=223001
+FaultVehicleId=3
+FaultSystem=BCG
+FaultLevel=2
+FaultDescription=BCG Group 1 failure
+FaultComponent=BCG_M3
+OperatorGuidance=Check maintenance diagnostic events for details
+
+[EventId 223003]
+FaultId=223003
+FaultVehicleId=3
+FaultSystem=BCG
+FaultLevel=2
+FaultDescription=BCG Group 1 isolation failure
+FaultComponent=BCG_M3
+OperatorGuidance=Check maintenance diagnostic events for details
+
+[EventId 223005]
+FaultId=223005
+FaultVehicleId=3
+FaultSystem=BCG
+FaultLevel=2
+FaultDescription=BCG Group 1 isolated
+FaultComponent=BCG_M3
+OperatorGuidance=Check maintenance diagnostic events for details
+
+[EventId 176001]
+FaultId=171001
+FaultVehicleId=6
+FaultSystem=TR
+FaultLevel=2
+FaultDescription=Train Radio failure in DM6
+FaultComponent=TR_MASTER
+OperatorGuidance=Inform OCC
+
+[EventId 178001]
+FaultId=171001
+FaultVehicleId=8
+FaultSystem=TR
+FaultLevel=2
+FaultDescription=Train Radio failure in DM8
+FaultComponent=TR_MASTER
+OperatorGuidance=Inform OCC
+
+[EventId 133002]
+FaultId=133002
+FaultVehicleId=3
+FaultSystem=PAPIS
+FaultLevel=1
+FaultDescription=PEA 2 alarm active in car M3
+FaultComponent=PAPIS_CU_MASTER
+OperatorGuidance=No maintenance action required
+
+[EventId 131011]
+FaultId=131011
+FaultVehicleId=1
+FaultSystem=PAPIS
+FaultLevel=3
+FaultDescription=PEA 2 failure in car DM1
+FaultComponent=PAPIS_CU_MASTER
+OperatorGuidance=Check that the power and ethernet wiring is correct and connected to the device.;Check that the Ethernet cabling is correctly connected to the switch according to the on-board connection scheme and that the switch is powered and working.;If the anomaly persists, replace the PECU.;Then contact personnel for testing new equipment.
+
+[EventId 133012]
+FaultId=131012
+FaultVehicleId=3
+FaultSystem=PAPIS
+FaultLevel=3
+FaultDescription=PEA 3 failure in car M3
+FaultComponent=PAPIS_CU_MASTER
+OperatorGuidance=Check that the power and ethernet wiring is correct and connected to the device.;Check that the Ethernet cabling is correctly connected to the switch according to the on-board connection scheme and that the switch is powered and working.;If the anomaly persists, replace the PECU. Then contact personnel for testing new equipment.
+
+[EventId 132009]
+FaultId=132009
+FaultVehicleId=2
+FaultSystem=PAPIS
+FaultLevel=3
+FaultDescription=SCU2 failure
+FaultComponent=PAPIS_CU_MASTER_T2
+OperatorGuidance=Check that the power and ethernet wiring is correct and connected to the device.;Check that the Ethernet cabling is correctly connected to the switch according to the on-board connection scheme and that the switch is powered and working.;If the anomaly persists, replace the apparatus.;Then contact personnel for testing new equipment.
+
+[EventId 126004]
+FaultId=121004
+FaultVehicleId=6
+FaultSystem=ATC
+FaultLevel=3
+FaultDescription=MCB Signaling group tripped in DM6
+FaultComponent=ATC_MASTER
+OperatorGuidance=Try to close MCB.;Check MCB and cabling.
+
+[EventId 091001]
+FaultId=091001
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 DM1 missing on segment
+FaultComponent=BCU_SEGM1
+OperatorGuidance=Check the CAN connection of the missing unit.;Check power supply of the missing unit.;Check the missing unit.
+
+[EventId 091004]
+FaultId=091004
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU DM1 - Low R pressure
+FaultComponent=BCU_SEGM1
+OperatorGuidance=Check isolation cock for R-pressure.;Check piping.;Check air supply.
+
+[EventId 091005]
+FaultId=091005
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU1 DM1 - Failure in all speed sensors
+FaultComponent=BCU_SEGM1
+OperatorGuidance=Check speed sensor.;Check wiring
+
+[EventId 091012]
+FaultId=091012
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 DM1: Load pressure low
+FaultComponent=BCU_DM1
+OperatorGuidance=Check maintenance events for details.
+
+[EventId 091014]
+FaultId=091014
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 DM1: Car load pressure low
+FaultComponent=BCU_DM1
+OperatorGuidance=Check maintenance events for details.
+
+[EventId 091020]
+FaultId=091020
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 DM1: Brake not applied
+FaultComponent=BCU_DM1
+OperatorGuidance=This diagnostic state is a driver message.;Investigate maintenance messages to resolve this problem.
+
+[EventId 091023]
+FaultId=091023
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=3
+FaultDescription=BECU2 DM1: Minor fault
+FaultComponent=BCU_DM1
+OperatorGuidance=Reset BCU
+
+[EventId 091052]
+FaultId=091052
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU DM1: PWR and BRK cmd at same time
+FaultComponent=BCU_SEGM1
+OperatorGuidance=Check train lines Braking1/2.;Check train line Powering.;Check hardware inputs of LAD01B.;Correct signalling for the transition between Braking and Powering must be demonstrated.
+
+[EventId 091053]
+FaultId=091053
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 DM1: Brake not released
+FaultComponent=BCU_DM1
+OperatorGuidance=This diagnostic state is a driver message.;Investigate maintenance messages to resolve this problem.
+
+[EventId 092004]
+FaultId=091004
+FaultVehicleId=2
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU T2 - Low R pressure
+FaultComponent=BCU_SEGM1
+OperatorGuidance=Check isolation cock for R-pressure.;Check piping.;Check air supply.
+
+[EventId 092009]
+FaultId=092009
+FaultVehicleId=2
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU2 T2 - Axle locked of wheel set 2
+FaultComponent=BCU_SEGM1
+OperatorGuidance=Axle locked of wheel set indicated.;Check wheel set.;Check wiring.;Check speed sensor.;Check LAD05A.
+
+[EventId 092014]
+FaultId=091014
+FaultVehicleId=2
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 T2: Car load pressure low
+FaultComponent=BCU_T2
+OperatorGuidance=Check maintenance events for details.
+
+[EventId 092015]
+FaultId=091015
+FaultVehicleId=2
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU2 T2: Car load pressure low
+FaultComponent=BCU_T2
+OperatorGuidance=Check maintenance events for details.
+
+[EventId 092016]
+FaultId=091016
+FaultVehicleId=2
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 T2: Service brake failure
+FaultComponent=BCU_T2
+OperatorGuidance=This diagnostic state is a driver message. Investigate maintenance messages to resolve this problem.
+
+[EventId 092019]
+FaultId=091019
+FaultVehicleId=2
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU2 T2: Emergency Brake Failure
+FaultComponent=BCU_T2
+OperatorGuidance=Check cabling/connector of LAD06B.;Check/exchange emergency brake valve and wiring.
+
+[EventId 092020]
+FaultId=091020
+FaultVehicleId=2
+FaultSystem=BRAKES
+FaultLevel=2
+FaultDescription=BECU1 T2: Brake not applied
+FaultComponent=BCU_T2
+OperatorGuidance=This diagnostic state is a driver message. Investigate maintenance messages to resolve this problem.
+
+[EventId 041001]
+FaultId=041001
+FaultVehicleId=1
+FaultSystem=TCMS
+FaultLevel=1
+FaultDescription=RIO DM1 mastership error
+FaultComponent=MDCU_MASTER
+OperatorGuidance=Check CAN connection between two RIO.;Check mastership information in TCMS STATUS page.;Check RIO Board.
+
+[EventId 241006]
+FaultId=241006
+FaultVehicleId=1
+FaultSystem=TCMS
+FaultLevel=2
+FaultDescription=Neutral Zone VCB backup function activated
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 012008]
+FaultId=012008
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Transformer Oil Level low
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer oil level.
+
+[EventId 012009]
+FaultId=012009
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Transformer Oil Level too low
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer oil level.
+
+[EventId 012011]
+FaultId=012011
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Transformer oil flow warning
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer oil flow.;Check connection.
+
+[EventId 012012]
+FaultId=012012
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Transformer oil pressure warning
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer oil flow.;Check connection.
+
+[EventId 012019]
+FaultId=012019
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph rising missing car T2
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 012020]
+FaultId=012020
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Pantograph lowering missing car T2
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 012023]
+FaultId=012023
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=3
+FaultDescription=Pantograph T2 rising inhibited
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 012024]
+FaultId=012024
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=VCB missing closing car T2
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 012025]
+FaultId=012025
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=VCB missing opening car T2
+FaultComponent=TCMS
+OperatorGuidance=Inform OCC.
+
+[EventId 012026]
+FaultId=012026
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=2
+FaultDescription=Transformer Oil temperature high
+FaultComponent=T2
+OperatorGuidance=Check Main Transformer oil level.;Check Main Transformer.;Check connection.
+
+[EventId 012103]
+FaultId=012103
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=3
+FaultDescription=ORD cutout operated in car T2
+FaultComponent=TCMS_T2
+OperatorGuidance=ORD cutout operated in car T2.
+
+[EventId 012104]
+FaultId=012104
+FaultVehicleId=2
+FaultSystem=HV
+FaultLevel=3
+FaultDescription=ADD cutout operated in car T2
+FaultComponent=TCMS_T2
+OperatorGuidance=ADD cutout operated in car T2.
+
+[EventId 033006]
+FaultId=033006
+FaultVehicleId=3
+FaultSystem=LV
+FaultLevel=1
+FaultDescription=Battery Circuit not powered (circuit breaker)
+FaultComponent=M3
+OperatorGuidance=Close Battery Circuit breaker.
+
+[EventId 021005]
+FaultId=021005
+FaultVehicleId=1
+FaultSystem=MV
+FaultLevel=2
+FaultDescription=Air Dryer changeover failure in DM1
+FaultComponent=DM1
+OperatorGuidance=Check air driver magnetic valve and related cabling.
+
+[EventId 021007]
+FaultId=021007
+FaultVehicleId=1
+FaultSystem=MV
+FaultLevel=1
+FaultDescription=MCB 415AC GROUP open in DM1
+FaultComponent=DM1
+OperatorGuidance=Try to close MCB.;Check MCB and related cabling.
+
+[EventId 021008]
+FaultId=021008
+FaultVehicleId=1
+FaultSystem=MV
+FaultLevel=3
+FaultDescription=MCB 230AC GROUP open in DM1
+FaultComponent=DM1
+OperatorGuidance=Try to close MCB.;Check MCB and related cabling.
+
+[EventId 136015]
+FaultId=136015
+FaultVehicleId=6
+FaultSystem=PAPIS
+FaultLevel=3
+FaultDescription=MCB PA GROUP open in DM6
+FaultComponent=RIO_MASTER_DM6
+OperatorGuidance=Try to close MCB.;Check MCB and related cabling.
+
+[EventId 120121]
+FaultId=120121
+FaultVehicleId=0
+FaultSystem=DOORS
+FaultLevel=1
+FaultDescription=CC detect Detrainment door is detected open
+FaultComponent=ATC
+OperatorGuidance=Inform to OCC.
+
+[EventId 031104]
+FaultId=031104
+FaultVehicleId=1
+FaultSystem=LV
+FaultLevel=3
+FaultDescription=Master controller and train line incongruence car DM1
+FaultComponent=DM1
+OperatorGuidance=Check Master controller and related auxiliary contact.
+
+[EventId 091051]
+FaultId=091051
+FaultVehicleId=1
+FaultSystem=BRAKES
+FaultLevel=1
+FaultDescription=BECU DM1 Major Fault (wired).
+FaultComponent=BCU_DM1
+OperatorGuidance=Reset BCU.
+
+
+
+
+
+## --------------------------------------------------------------------------------------------
+## --------------------------------------------------------------------------------------------
+## Events
+## Thu Jul 25 10:03:05 2024
+
+
+[EventId 1009]
+FaultComponent=0
+FaultDescription=Horn manually isolated in DM1
+FaultId=1009
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 102118]
+FaultComponent=0
+FaultDescription=Door A1 T2 Emerg. handle activation (wire)
+FaultId=101118
+FaultLevel=1
+FaultSystem=DCU_T2_1
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 103118]
+FaultComponent=0
+FaultDescription=Door A1 M3 Emerg. handle activation (wire)
+FaultId=101118
+FaultLevel=1
+FaultSystem=DCU_M3_1
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 104118]
+FaultComponent=0
+FaultDescription=Door A1 M4 Emerg. handle activation (wire)
+FaultId=101118
+FaultLevel=1
+FaultSystem=DCU_M4_1
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 105118]
+FaultComponent=0
+FaultDescription=Door A1 T5 Emerg. handle activation (wire)
+FaultId=101118
+FaultLevel=1
+FaultSystem=DCU_T5_1
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 106004]
+FaultComponent=0
+FaultDescription=Detrainment door open in DM6
+FaultId=101004
+FaultLevel=1
+FaultSystem=RIO_MASTER_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 106005]
+FaultComponent=0
+FaultDescription=Emergency door mechanical unlocked in DM6
+FaultId=101005
+FaultLevel=1
+FaultSystem=RIO_MASTER_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 106006]
+FaultComponent=0
+FaultDescription=Cab Saloon Partition Door open in DM6
+FaultId=101006
+FaultLevel=1
+FaultSystem=RIO_MASTER_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 106007]
+FaultComponent=0
+FaultDescription=Emergency door cover removed in DM6
+FaultId=101007
+FaultLevel=1
+FaultSystem=ER_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 106008]
+FaultComponent=0
+FaultDescription=Door loop bypass active in DM6
+FaultId=101008
+FaultLevel=2
+FaultSystem=RIO_MASTER_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 106118]
+FaultComponent=0
+FaultDescription=Door A1 DM6 Emerg. handle activation (wire)
+FaultId=101118
+FaultLevel=1
+FaultSystem=DCU_DM6_1
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 107118]
+FaultComponent=0
+FaultDescription=Door A1 M7 Emerg. handle activation (wire)
+FaultId=101118
+FaultLevel=1
+FaultSystem=DCU_M7_1
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 108118]
+FaultComponent=0
+FaultDescription=Door A1 T8 Emerg. handle activation (wire)
+FaultId=101118
+FaultLevel=1
+FaultSystem=DCU_T8_1
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 12007]
+FaultComponent=0
+FaultDescription=Pantograph isolated
+FaultId=12007
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 12014]
+FaultComponent=0
+FaultDescription=VCB Isolated
+FaultId=12014
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 12103]
+FaultComponent=0
+FaultDescription=ORD cutout operated in car T2
+FaultId=12103
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 12104]
+FaultComponent=0
+FaultDescription=ADD cutout operated in car T2
+FaultId=12104
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 132001]
+FaultComponent=0
+FaultDescription=PEA 1 alarm active in car T2
+FaultId=131001
+FaultLevel=1
+FaultSystem=PAPIS_CU_MASTER
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 13301]
+FaultComponent=0
+FaultDescription=PEA 1 alarm active in car M3
+FaultId=131001
+FaultLevel=1
+FaultSystem=PAPIS_CU_MASTER
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 134001]
+FaultComponent=0
+FaultDescription=PEA 1 alarm active in car M4
+FaultId=131001
+FaultLevel=1
+FaultSystem=PAPIS_CU_MASTER
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 135001]
+FaultComponent=0
+FaultDescription=PEA 1 alarm active in car T5
+FaultId=131001
+FaultLevel=1
+FaultSystem=PAPIS_CU_MASTER
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 136001]
+FaultComponent=0
+FaultDescription=PEA 1 alarm active in car DM6
+FaultId=131001
+FaultLevel=1
+FaultSystem=PAPIS_CU_MASTER
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 137001]
+FaultComponent=0
+FaultDescription=PEA 1 alarm active in car M7
+FaultId=131001
+FaultLevel=1
+FaultSystem=PAPIS_CU_MASTER
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 138001]
+FaultComponent=0
+FaultDescription=PEA 1 alarm active in car T8
+FaultId=131001
+FaultLevel=1
+FaultSystem=PAPIS_CU_MASTER
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 15007]
+FaultComponent=0
+FaultDescription=Pantograph isolated
+FaultId=12007
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 15014]
+FaultComponent=0
+FaultDescription=VCB Isolated
+FaultId=12014
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 15103]
+FaultComponent=0
+FaultDescription=ORD cutout operated in car T5
+FaultId=12103
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 15104]
+FaultComponent=0
+FaultDescription=ADD cutout operated in car T5
+FaultId=12104
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 151061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151062]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (ATC CUB)
+FaultId=151062
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151063]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (Auxiliary desk)
+FaultId=151063
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151064]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (CUB Area)
+FaultId=151064
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151065]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (EDB spare box)
+FaultId=151065
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151066]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (EDB)
+FaultId=151066
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM1 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151077]
+FaultComponent=0
+FaultDescription=LHD Disabled DM1 (Driver Main Desk)
+FaultId=151077
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151078]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm DM1 (CI)
+FaultId=151078
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm DM1 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151089]
+FaultComponent=0
+FaultDescription=LHD Disabled DM1 (CI)
+FaultId=151089
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 151090]
+FaultComponent=0
+FaultDescription=LHD Disabled DM1 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 152061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T2 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 152066]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T2 (EDB)
+FaultId=151066
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 152067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T2 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 152068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T2 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 152079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm T2 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 152090]
+FaultComponent=0
+FaultDescription=LHD Disabled T2 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 153061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M3 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 153067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M3 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 153068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M3 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 153078]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm M3 (CI)
+FaultId=151078
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 153079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm M3 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 153089]
+FaultComponent=0
+FaultDescription=LHD Disabled M3 (CI)
+FaultId=151089
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 153090]
+FaultComponent=0
+FaultDescription=LHD Disabled M3 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 154061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M4 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 154066]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M4 (EDB)
+FaultId=151066
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 154067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M4 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 154068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M4 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 154078]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm M4 (CI)
+FaultId=151078
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 154079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm M4 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 154089]
+FaultComponent=0
+FaultDescription=LHD Disabled M4 (CI)
+FaultId=151089
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 154090]
+FaultComponent=0
+FaultDescription=LHD Disabled M4 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 155061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T5 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 155066]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T5 (EDB)
+FaultId=151066
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 155067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T5 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 155068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T5 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 155079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm T5 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 155090]
+FaultComponent=0
+FaultDescription=LHD Disabled T5 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 156061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156062]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (ATC CUB)
+FaultId=151062
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156063]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (Auxiliary desk)
+FaultId=151063
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156064]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (CUB Area)
+FaultId=151064
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156065]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (EDB spare box)
+FaultId=151065
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156066]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (EDB)
+FaultId=151066
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled DM6 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156077]
+FaultComponent=0
+FaultDescription=LHD Disabled DM6 (Driver Main Desk)
+FaultId=151077
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156078]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm DM6 (CI)
+FaultId=151078
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm DM6 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156089]
+FaultComponent=0
+FaultDescription=LHD Disabled DM6 (CI)
+FaultId=151089
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 156090]
+FaultComponent=0
+FaultDescription=LHD Disabled DM6 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 157061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M7 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 157066]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M7 (EDB)
+FaultId=151066
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 157067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M7 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 157068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled M7 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 157078]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm M7 (CI)
+FaultId=151078
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 157079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm M7 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 157089]
+FaultComponent=0
+FaultDescription=LHD Disabled M7 (CI)
+FaultId=151089
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 157090]
+FaultComponent=0
+FaultDescription=LHD Disabled M7 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 158061]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T8 (BECU PIS CUB)
+FaultId=151061
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 158066]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T8 (EDB)
+FaultId=151066
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 158067]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T8 (Saloon R1)
+FaultId=151067
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 158068]
+FaultComponent=0
+FaultDescription=Fire sensor disabled T8 (Saloon R2)
+FaultId=151068
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 158079]
+FaultComponent=0
+FaultDescription=LHD Heat Alarm T8 (LTJB1)
+FaultId=151079
+FaultLevel=1
+FaultSystem=FDU
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 158090]
+FaultComponent=0
+FaultDescription=LHD Disabled T8 (LTJB1)
+FaultId=151090
+FaultLevel=3
+FaultSystem=FDU
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 18007]
+FaultComponent=0
+FaultDescription=Pantograph isolated
+FaultId=12007
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 18014]
+FaultComponent=0
+FaultDescription=VCB Isolated
+FaultId=12014
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 18103]
+FaultComponent=0
+FaultDescription=ORD cutout operated in car T8
+FaultId=12103
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 18104]
+FaultComponent=0
+FaultDescription=ADD cutout operated in car T8
+FaultId=12104
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 232005]
+FaultComponent=0
+FaultDescription=APS Group 2 isolated
+FaultId=232005
+FaultLevel=2
+FaultSystem=APS_T2
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 235004]
+FaultComponent=0
+FaultDescription=APS Group 1 isolated
+FaultId=235004
+FaultLevel=2
+FaultSystem=APS_T5
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 235005]
+FaultComponent=0
+FaultDescription=APS Group 2 isolated
+FaultId=235005
+FaultLevel=2
+FaultSystem=APS_T5
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 238004]
+FaultComponent=0
+FaultDescription=APS Group 1 isolated
+FaultId=237004
+FaultLevel=2
+FaultSystem=APS_T7
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 238005]
+FaultComponent=0
+FaultDescription=APS Group 2 isolated
+FaultId=237005
+FaultLevel=2
+FaultSystem=APS_T7
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 243003]
+FaultComponent=0
+FaultDescription=CI isolated car M3
+FaultId=241003
+FaultLevel=2
+FaultSystem=PCU_M3
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 244003]
+FaultComponent=0
+FaultDescription=CI isolated car M4
+FaultId=241003
+FaultLevel=2
+FaultSystem=PCU_M4
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 246003]
+FaultComponent=0
+FaultDescription=CI isolated car DM6
+FaultId=241003
+FaultLevel=2
+FaultSystem=PCU_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 247003]
+FaultComponent=0
+FaultDescription=CI isolated car M7
+FaultId=241003
+FaultLevel=2
+FaultSystem=PCU_M7
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 261006]
+FaultComponent=0
+FaultDescription=WFL  isolated by VDU in car DM1
+FaultId=261006
+FaultLevel=2
+FaultSystem=WFL_DM1
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 266006]
+FaultComponent=0
+FaultDescription=WFL  isolated by VDU in car DM6
+FaultId=261006
+FaultLevel=2
+FaultSystem=WFL_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 30035]
+FaultComponent=0
+FaultDescription=PABOR bypassed by VDU
+FaultId=30035
+FaultLevel=1
+FaultSystem=TCMS
+FaultVehicleId=0
+OperatorGuidance=0
+
+[EventId 3006]
+FaultComponent=0
+FaultDescription=Hostler Mode activated in M3
+FaultId=3006
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 4006]
+FaultComponent=0
+FaultDescription=Hostler Mode activated in M4
+FaultId=3006
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 6008]
+FaultComponent=0
+FaultDescription=Dead Man bypassed in DM6
+FaultId=1008
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 6009]
+FaultComponent=0
+FaultDescription=Horn manually isolated in DM6
+FaultId=1009
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 6010]
+FaultComponent=0
+FaultDescription=Horn isolated by VDU in DM6
+FaultId=1010
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 7006]
+FaultComponent=0
+FaultDescription=Hostler Mode activated in M7
+FaultId=3006
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 888888]
+FaultComponent=0
+FaultDescription=Too many boogie isolated
+FaultId=888888
+FaultLevel=100
+FaultSystem=VEHICLE
+FaultVehicleId=0
+OperatorGuidance=0
+
+[EventId 91022]
+FaultComponent=0
+FaultDescription=BLCOS (Brake loop cut out) activated in DM1
+FaultId=91022
+FaultLevel=3
+FaultSystem=ER_DM1
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car DM1
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 91037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car DM1
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=1
+OperatorGuidance=0
+
+[EventId 92026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car T2
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 92037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car T2
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=2
+OperatorGuidance=0
+
+[EventId 93026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car M3
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car M3
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 93055]
+FaultComponent=0
+FaultDescription=Brake Loop CB tripped car M3
+FaultId=93055
+FaultLevel=2
+FaultSystem=RIO_MASTER_M3
+FaultVehicleId=3
+OperatorGuidance=0
+
+[EventId 94026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car M4
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car M4
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 94055]
+FaultComponent=0
+FaultDescription=Brake Loop CB tripped car M4
+FaultId=93055
+FaultLevel=2
+FaultSystem=RIO_MASTER_M3
+FaultVehicleId=4
+OperatorGuidance=0
+
+[EventId 95026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car T5
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 95037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car T5
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=5
+OperatorGuidance=0
+
+[EventId 96022]
+FaultComponent=0
+FaultDescription=BLCOS (Brake loop cut out) activated in DM6
+FaultId=91022
+FaultLevel=3
+FaultSystem=ER_DM6
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car DM6
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car DM6
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 96045]
+FaultComponent=0
+FaultDescription=Emergency brake due to EB push button  in DM6
+FaultId=91044
+FaultLevel=1
+FaultSystem=ER_DM1
+FaultVehicleId=6
+OperatorGuidance=0
+
+[EventId 97026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car M7
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car M7
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 97055]
+FaultComponent=0
+FaultDescription=Brake Loop CB tripped car M7
+FaultId=93055
+FaultLevel=2
+FaultSystem=RIO_MASTER_M3
+FaultVehicleId=7
+OperatorGuidance=0
+
+[EventId 98026]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated inside car
+FaultId=91026
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98027]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated inside car
+FaultId=91027
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98028]
+FaultComponent=0
+FaultDescription=Bogie 1 manually isolated outside car
+FaultId=91028
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98029]
+FaultComponent=0
+FaultDescription=Bogie 2 manually isolated outside car
+FaultId=91029
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98030]
+FaultComponent=0
+FaultDescription=Parking brake bogie 1 manually isolated
+FaultId=91030
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98031]
+FaultComponent=0
+FaultDescription=Parking brake bogie 2 manually isolated
+FaultId=91031
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98032]
+FaultComponent=0
+FaultDescription=Air suspension bogie 1 manually isolated
+FaultId=91032
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98033]
+FaultComponent=0
+FaultDescription=Air suspension bogie 2 manually isolated
+FaultId=91033
+FaultLevel=2
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98036]
+FaultComponent=0
+FaultDescription=Remote bogie 1 isolation car T8
+FaultId=91036
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 98037]
+FaultComponent=0
+FaultDescription=Remote bogie 2 isolation car T8
+FaultId=91037
+FaultLevel=3
+FaultSystem=TCMS
+FaultVehicleId=8
+OperatorGuidance=0
+
+[EventId 999999]
+FaultComponent=0
+FaultDescription=Too many EPIC cut out
+FaultId=999999
+FaultLevel=100
+FaultSystem=VEHICLE
+FaultVehicleId=0
+OperatorGuidance=0

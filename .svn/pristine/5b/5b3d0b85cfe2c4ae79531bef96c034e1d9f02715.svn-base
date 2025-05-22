@@ -1,0 +1,28 @@
+# Root Project Build Properties File
+
+# Path for our complete release artefact 
+deploy.dir=deploy
+install.dir=install
+
+build.log.dir=Build/Logs
+
+# Name of our release artefact at the site
+sync.destination.name.devrig=MMRBEMTrainSim
+# Syncing details for our devrig NAS
+sync.location.devrig=user@10.129.40.42::Simulators/
+sync.password.devrig=devrig
+sync.destination.devrig=${sync.location.devrig}/${sync.destination.name.devrig}
+
+# Syncing details for our production via Simple Help
+sync.location.simplehelp=superuser@127.0.0.1
+sync.password.production=MMRBEMTrainSim
+sync.destination.name.production=StagingArea
+sync.destination.simplehelp=${sync.location.simplehelp}::${sync.destination.name.production}
+
+relnotes.src=relnotes.rn
+relnotes.out=CoreReleaseNotes
+relnotes.pre=ReleaseNotes
+jira.url=https://adl-atlassian.simu.lan/jira
+jira.user=svc.ADL.Build.Notes
+jira.pass=Nm04qfwuAMVzZwY3cL1O
+relnotes.jira.product=MMRBEM

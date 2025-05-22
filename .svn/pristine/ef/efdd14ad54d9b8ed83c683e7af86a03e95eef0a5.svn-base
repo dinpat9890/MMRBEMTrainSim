@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1512430189" name="kite">
+		<mesh_name>../features/obstruction_features/graphics/kite.mesh</mesh_name>
+		<surface name="kite" max_visible_distance="800" max_fade_distance="10" material="413901fcd572d776f2581bc360a0981cef6ba244" property="surface_base"/>
+		<transform>0.999999880791 2.49800180541e-016 -2.77555756156e-016 0.0 2.22044604925e-016 0.999999880791 5.55111512313e-017 0.0 -5.55111512313e-017 -5.55111512313e-017 0.999999940395 0.0 3.63797880709e-012 -7.27595761418e-012 1.09139364213e-011 1.0</transform>
+	</node>
+</nodes>

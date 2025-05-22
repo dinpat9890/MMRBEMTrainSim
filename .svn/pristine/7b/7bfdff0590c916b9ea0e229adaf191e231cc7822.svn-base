@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1906479106" name="damaged_track04">
+		<mesh_name>../features/obstruction_features/graphics/damaged_track04.mesh</mesh_name>
+		<surface name="damaged_track04_trackbed_alb" max_visible_distance="1500" material="7571533ecc6d3986fc747ecbb90a51d63d5ca243" property="surface_base"/>
+		<surface name="damaged_track04_trackrail_alb" max_visible_distance="1500" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

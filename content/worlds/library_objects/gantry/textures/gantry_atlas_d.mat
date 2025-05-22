@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="gantry_atlas_d" guid="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" base_material="mesh_base">
+	<options two_sided="1"/>
+	<state name="workflow">0</state>
+	<texture name="diffuse">fgw_150/graphics/textures/sr_center_overhead_support.dds</texture>
+	<texture name="albedo">../worlds/library_objects/gantry/textures/gantry_atlas_d.dds</texture>
+	<texture name="shading">../worlds/library_objects/gantry/textures/gantry_atlas_met.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="albedo_color">0.717647076 0.717647076 0.717647076 1</parameter>
+	<parameter name="metalness">0</parameter>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0.388999999</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

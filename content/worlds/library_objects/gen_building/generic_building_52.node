@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="913469348" name="generic_building_52">
+		<mesh_name>../worlds/library_objects/gen_building/generic_building_52.mesh</mesh_name>
+		<surface name="generic_building_52_generic_building_52" max_visible_distance="2000" max_fade_distance="10" material="aff293c575ac9e60e71ef2c0900b2057de2d9f80" property="surface_base"/>
+		<surface name="generic_building_52_generic_building_52_railing" max_visible_distance="1000" max_fade_distance="10" material="59b027b1e9c962f0b9773c4e73f4446244ffc875" property="surface_base"/>
+		<transform>0.999999940395 2.08166817117e-017 0 0.0 -2.08166817117e-017 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

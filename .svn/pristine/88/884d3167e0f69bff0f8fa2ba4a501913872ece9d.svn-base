@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="175324429" name="MA_casual_indian_03">
+		<mesh_name>../worlds/library_objects/characters/MA_casual_indian_03.mesh</mesh_name>
+		<surface name="MA_casual_in_LP" min_visible_distance="20" max_visible_distance="800" min_fade_distance="1" material="a8d7bb3107da431d8411c496bdba2cf6d61b82eb" property="surface_base"/>
+		<surface name="MA_casual_in_MP" max_visible_distance="20" max_fade_distance="1" material="a8d7bb3107da431d8411c496bdba2cf6d61b82eb" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.84217094304e-014 0 0 1.0</transform>
+	</node>
+</nodes>

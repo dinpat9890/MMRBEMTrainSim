@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1749815672" name="atc_begin">
+		<mesh_name>../worlds/library_objects/features/atc_begin.mesh</mesh_name>
+		<surface name="atc_begin" material="ea856d531419511cf936d1051b509eafc56f0e15" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

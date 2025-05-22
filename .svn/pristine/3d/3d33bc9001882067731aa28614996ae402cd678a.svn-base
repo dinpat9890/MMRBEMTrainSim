@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="divider" guid="dbda2de1c934750e5d191b6f2c2981c1ea07c9fd" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/divider.dds</texture>
+	<parameter name="roughness">0.805000007</parameter>
+	<parameter name="specular">0</parameter>
+</material>

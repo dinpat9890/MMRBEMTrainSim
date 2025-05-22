@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{de3e85a8-8ffa-4a63-ab1c-3bacaa51206c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{e0163aa1-70f7-451f-b25d-fb1d35fb3ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\COMMS Interfaces">
+      <UniqueIdentifier>{0b5e1f82-4a4b-4008-8694-d479abe3daf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Configuration">
+      <UniqueIdentifier>{c4defce0-01cc-4347-8360-6eec31878bf3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\UnitDLL.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LMAUnit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LMAProperties.cpp">
+      <Filter>Source\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Project\Include\Project\Utilities\ScenarioTrainLengthService.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.cc">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\include\feature_interfaces\FeatureRegion.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LMAFeatures.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\include\feature_interfaces\StoppingPointFeature.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\project\include\project\Utilities\MappableObject.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\LMAUnit.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LMAProperties.h">
+      <Filter>Source\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Project\Include\Project\Utilities\ScenarioTrainLengthService.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\CBTCOnboard.pb.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\include\cbtc_common\FeatureProperties.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MappedCBTCOnboardInputs.h">
+      <Filter>Source\COMMS Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\include\feature_interfaces\FeatureRegion.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LMAFeatures.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\include\feature_interfaces\StoppingPointFeature.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\project\include\project\Utilities\MappableObject.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MappedCBTCOnboardOutputs.h">
+      <Filter>Source\COMMS Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

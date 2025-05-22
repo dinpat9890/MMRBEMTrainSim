@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="linden_tree_shadow" guid="2e9b42c127c771145f10892cdfe47ea81ba303f5" parent="3a1dc21df92abecdfd383c310fdda515b1acebd3" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<state name="noise_2d">0</state>
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/linden_imposter.dds</texture>
+</material>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1438428085" name="electric_engines_stop_board">
+		<mesh_name>../worlds/library_objects/features/electric_engines_stop_board.mesh</mesh_name>
+		<surface name="electric_engines_stop_board " max_visible_distance="1000" max_fade_distance="10" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

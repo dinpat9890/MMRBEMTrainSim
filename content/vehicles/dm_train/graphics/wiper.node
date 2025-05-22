@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1916791026" name="wper">
+		<mesh_name>../vehicles/dm_train/graphics/wper.mesh</mesh_name>
+		<surface name="wper" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="388748704" name="UG_station_light">
+		<transform>0.999999403953 4.13590306277e-025 0 0.0 -2.06795153138e-025 0.999999403953 -7.96545955566e-059 0.0 0 1.59309191113e-058 1.00004571888 0.0 -1.42108547152e-014 2.84217094304e-014 -3.5527136788e-015 1.0</transform>
+		<node type="LightProj" id="961039699" name="UG_projected_light">
+			<penumbra>1</penumbra>
+			<attenuation_distance>25</attenuation_distance>
+			<shape>2 1 0.200000003</shape>
+			<shape_type>-1</shape_type>
+			<fov>140</fov>
+			<znear>0.100000001</znear>
+			<color>0.839215755 0.776470661 0.568627477 1</color>
+			<intensity>1.25</intensity>
+			<attenuation_power>0.699999988</attenuation_power>
+			<shadow>0</shadow>
+			<shadow_bias>1</shadow_bias>
+			<shadow_softness>1.17299998</shadow_softness>
+			<visible_distance>200</visible_distance>
+			<fade_distance>50</fade_distance>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 4.3 1.0</transform>
+		</node>
+	</node>
+</nodes>

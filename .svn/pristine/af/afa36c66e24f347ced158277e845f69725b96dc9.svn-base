@@ -1,0 +1,67 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+
+[System.1]
+Module Name=CBTC Trackside Units
+
+[Simulator]
+Hub Name=Driver's Cab
+# Session Time Limit is in minutes.
+Session Time Limit=60.0
+
+[Unit Plugins]
+PlatformControlUnit
+PlatformDoorControlUnit
+PSDFaultsAndEventsUnit
+BeaconUnit
+LMAUnit
+TrackEventsUnit
+GradientProfileUnit
+
+[Module Resource Plugins]
+train_data_access_resources
+
+[Scenario Resource Plugins]
+world_access_resources
+
+[Session Resource Plugins]
+all_vehicles_watcher_resources
+points_watcher_resources
+modelled_train_selector_resources
+scenario_train_path_watcher_resources
+
+[OnBoard Configuration]
+# On ETCS Reset, the Onboard will come back up after these seconds
+# TargetDistanceIncrement=10.0
+
+# Change the Logging Level of the Train Model
+[Logging]
+# Valid Values are :
+# ERR or ERROR
+# WARN or WARNING
+# INFO - This is the Default Logging Level
+# VERBOSE
+Level=INFO
+#Maximum Log Size= 
+#Backup Log Count=
+
+[Gradient Profile Configuration]
+# Calculate gradient of each position after this distance in meters
+Step Distance=25.0
+# Minimum length of a gradient stretch to be considered as a gradient profile
+Min Gradient Distance=200.0
+# Minimum required change in two consecutive gradients(in per-mille) to be considered different
+Min Acceptable Change=2.0
+
+[Platform Controller]
+Docking Tolerance=1
+PSD Open Time=3.0
+PSD Close Time=3.0
+Train Door Open Time=5.3
+Train Door Close Time=5.3
+Close Warning Time=2.5
+Max Door Closing Time=5.8
+Max Door Closed and Locked Time=2.5
+Max Train Doors Unlocking Time=3.0
+Overshoot Distance=10.0

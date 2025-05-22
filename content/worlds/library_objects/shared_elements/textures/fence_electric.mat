@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="fence_electric" guid="87421911dd70d1c235dd9800cf65d2ce450629a0" base_material="mesh_base">
+	<options transparent="1"/>
+	<state name="workflow">0</state>
+	<texture name="diffuse">fgw_150/graphics/textures/wiresupport_3.dds</texture>
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/fence_electric.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="albedo_color">0.686274529 0.686274529 0.686274529 1</parameter>
+	<parameter name="metalness">0</parameter>
+	<parameter name="specular">0.508000016</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

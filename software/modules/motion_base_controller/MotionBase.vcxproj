@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\CRC8.cpp" />
+    <ClCompile Include="Source\DataConnectionFactory.cpp" />
+    <ClCompile Include="Source\GenIIICommands.cpp" />
+    <ClCompile Include="Source\GenIIIResponses.cpp" />
+    <ClCompile Include="Source\MotionBaseControllerFactory.cpp" />
+    <ClCompile Include="Source\MotionBaseDataConnectionFactory.cpp" />
+    <ClCompile Include="Source\MotionBaseJournal.cpp" />
+    <ClCompile Include="Source\MotionBaseParameters.cpp" />
+    <ClCompile Include="Source\SerialDeviceConnection.cpp" />
+    <ClCompile Include="Source\UDPSocketClientConnection.cpp" />
+    <ClCompile Include="Source\GenIIIClient.cpp" />
+    <ClCompile Include="Source\MotionBaseApplication.cpp" />
+    <ClCompile Include="Source\MotionBaseMain.cpp" />
+    <ClCompile Include="Source\MotionBaseProperties.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\CoordinateMapper.h" />
+    <ClInclude Include="Source\CRC8.h" />
+    <ClInclude Include="Source\DataConnectionFactory.h" />
+    <ClInclude Include="Source\DataConnection.h" />
+    <ClInclude Include="Source\GenIIICommands.h" />
+    <ClInclude Include="Source\GenIIIProtocolConstants.h" />
+    <ClInclude Include="Source\GenIIIResponses.h" />
+    <ClInclude Include="Source\JournalEntryBase.h" />
+    <ClInclude Include="Source\MotionBaseControllerFactory.h" />
+    <ClInclude Include="Source\MotionBaseDataConnectionFactory.h" />
+    <ClInclude Include="Source\MotionBaseJournal.h" />
+    <ClInclude Include="Source\MotionBaseParameters.h" />
+    <ClInclude Include="Source\SerialDeviceConnection.h" />
+    <ClInclude Include="Source\GenIIIClient.h" />
+    <ClInclude Include="Source\MotionBaseApplication.h" />
+    <ClInclude Include="Source\MotionBaseController.h" />
+    <ClInclude Include="Source\MotionBaseExceptions.h" />
+    <ClInclude Include="Source\MotionBaseProperties.h" />
+    <ClInclude Include="Source\UDPSocketClientConnection.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{70DC0C24-B19B-4778-A71A-97ECBCB0A031}</ProjectGuid>
+    <RootNamespace>MotionBase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props" />
+  <Import Project="Sydac.Debug.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectIncludeRoot)\Include;$(CoreTrainSimConfigRoot)\train_comms_structure\Include;$(CoreTrainSimIncludeRoot)\train_data_access\include;$(CoreSimConfigRoot)\core_comms_structure\Include;$(CoreSimIncludeRoot)\core_data_access\Include;$(CoreSimIncludeRoot)\core_properties\include;$(CoreSimIncludeRoot)\core_types\include;$(CoreSimIncludeRoot)\file_access\include;$(CoreSimIncludeRoot)\utility\Include;$(CommonIncludeRoot)\comms\Include;$(CommonIncludeRoot)\network_definition\Include;$(CommonIncludeRoot)\common\Include;$(ProjectCOTSRoot)\glm\include;$(CommonIncludeRoot)\sim_comms\Include;$(ProjectConfigRoot)\project_comms_structure\include;$(CommonIncludeRoot)\sim_common\Include;$(SimFreightConfigRoot)\freight_comms_structure\include;$(ProjectCOTSRoot)\vmmlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_VARIADIC_MAX=10;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(CoreTrainSimIncludeRoot)\train_data_access\lib;$(CoreSimIncludeRoot)\config_file_access\lib;$(CoreSimIncludeRoot)\core_data_access\lib;$(CoreSimIncludeRoot)\core_properties\lib;$(CoreSimIncludeRoot)\file_access\lib;$(CoreSimIncludeRoot)\utility\lib;$(CommonIncludeRoot)\comms\lib;$(CommonIncludeRoot)\network_definition\lib;$(CommonIncludeRoot)\oracle_access\lib;$(CommonIncludeRoot)\sim_comms\lib;$(CommonIncludeRoot)\common\lib;$(COTSIncludeRoot)/xerces/xerces/Lib/$(Platform);$(COTSIncludeRoot)/zlib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>train_data_access$(LibType);config_file_access$(LibType);core_data_access$(LibType);core_properties$(LibType);file_access$(LibType);utility$(LibType);comms$(LibType);network_definition$(LibType);oracle_access$(LibType);sim_comms$(LibType);common$(LibType);zlib$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

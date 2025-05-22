@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="outer_tree_billboards" guid="da0f7fb8d9cd7fa323777e635c893176b61de976" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<options cast_world_shadow="0"/>
+	<texture name="diffuse">../worlds/library_objects/vegetation/outer_tree_billboard.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/outer_tree_billboard_n.dds</texture>
+	<parameter name="translucent_scale">1</parameter>
+</material>

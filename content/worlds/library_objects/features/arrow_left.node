@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="738754299" name="arrow_left">
+		<mesh_name>../worlds/library_objects/features/arrow_left.mesh</mesh_name>
+		<surface name="arrow_left_feature_signal" max_visible_distance="800" max_fade_distance="10" material="e75e4bfcb84b9f74b9046814df3b62b9db8b5d17" property="surface_base"/>
+		<surface name="arrow_left_mumbai_track_signs" max_visible_distance="800" max_fade_distance="10" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+		<transform>1.00000002226 5.52904934059e-008 -1.26217744835e-029 0.0 -5.52904933782e-008 1.00000002226 -1.89326617253e-029 0.0 -4.41762106924e-029 -2.8398992588e-029 1 0.0 2.18278728426e-011 -7.27595761418e-012 -1.50253352379e-015 1.0</transform>
+	</node>
+</nodes>

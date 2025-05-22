@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<project name="RootCommon">
+  <!-- Set up some properties that point to where we will fetch our ivy settions -->
+  <!-- We check up a directory to see if we have an ivyoptions.xml there, and use that if we can.
+       Otherwise we use ${user.home} and look for ivyoptions.xml there. Of course, a project can
+       also override this property first (or here) too. -->
+  <property name="ivy.external.options.dir" location="${path.root}\.." />
+  <available file="${ivy.external.options.dir}\ivyoptions.xml" property="ivy.external.options.available" />
+  <condition property="ivy.settings.home" value="${ivy.external.options.dir}" else="${user.home}">
+    <isset property="ivy.external.options.available"/>
+  </condition>
+
+  <!-- Some reused strings -->
+  <property name="deps" value="dependencies" />
+
+  <dirname property="dir.root" file="${ant.file.RootCommon}"/>
+
+  <!-- Common directories -->
+  <property name="dir.db" value="${dir.root}${file.separator}database" />
+  <property name="dir.db.project" value="${dir.db}${file.separator}project" />
+  
+  <property name="dir.deps" value="${dir.root}${file.separator}${deps}" />
+  <property name="dir.deps.cots" value="${dir.deps}${file.separator}cots${file.separator}oksygen${file.separator}cots" />
+  <property name="dir.deps.db" value="${dir.deps}${file.separator}database" />
+  <property name="dir.deps.software" value="${dir.deps}${file.separator}software" />
+  <property name="dir.deps.processes" value="${dir.deps.software}${file.separator}oksygen${file.separator}sim${file.separator}core${file.separator}processes" />
+  <property name="dir.deps.libraries" value="${dir.deps.software}${file.separator}oksygen${file.separator}sim${file.separator}train${file.separator}libraries" />
+  
+  <property name="dir.config" value="${dir.root}${file.separator}config" />
+  <property name="dir.config.database" value="${dir.config}${file.separator}database" />
+  <property name="dir.config.runtime" value="${dir.config}${file.separator}runtime" />
+  <property name="dir.config.source" value="${dir.config}${file.separator}source" />
+  <property name="dir.config.source.comms" value="${dir.config.source}${file.separator}comms" />
+  <property name="dir.config.source.trains" value="${dir.config.source}${file.separator}trains" />
+  
+  <property name="dir.content" value="${dir.root}${file.separator}content" />
+  <property name="dir.content.deps" value="${dir.content}${file.separator}${deps}" />
+  <property name="dir.content.deps.cots" value="${dir.content}${file.separator}${deps}/cots/oksygen/cots" />
+  <property name="dir.content.deps.worlds" value="${dir.content.deps}${file.separator}worlds" />
+  <property name="dir.content.project.features" value="${dir.content}${file.separator}features" />
+  <property name="dir.content.project.worlds" value="${dir.content}${file.separator}worlds" />
+  <property name="dir.content.unigine_scripts" value="${dir.content}${file.separator}unigine" />
+  
+  <property name="dir.cots" value="${dir.deps}${file.separator}cots${file.separator}oksygen${file.separator}cots"/>
+  
+  <property name="dir.deploy" value="${dir.root}${file.separator}deploy" />
+  <property name="dir.deploy.bin" value="${dir.deploy}${file.separator}bin" />
+  <property name="dir.deploy.cots" value="${dir.deploy}${file.separator}cots" />
+  <property name="dir.deploy.data" value="${dir.deploy}${file.separator}data" />
+  <property name="dir.deploy.jar" value="${dir.deploy}${file.separator}jar" />
+  <property name="dir.deploy.vision" value="${dir.deploy.data}${file.separator}/vision" />
+  <property name="dir.deploy.vision.autogen" value="${dir.deploy.vision}/oksygen/sim/extra/scripts/auto_gen" />
+  
+  <property name="dir.install" value="${dir.root}${file.separator}install" />
+  <property name="dir.install.bin" value="${dir.install}${file.separator}bin" />
+  <property name="dir.install.cots" value="${dir.install}${file.separator}cots" />
+  <property name="dir.install.db" value="${dir.install}${file.separator}database" />
+  <property name="dir.install.db.population" value="${dir.install.db}${file.separator}population" />
+  <property name="dir.install.db.data" value="${dir.install.db.population}${file.separator}data" />
+  <property name="dir.install.db.features" value="${dir.install.db.population}${file.separator}features" />
+  <property name="dir.install.db.scenarios" value="${dir.install.db.population}${file.separator}scenarios" />
+  <property name="dir.install.db.tracks" value="${dir.install.db.population}${file.separator}tracks" />
+  <property name="dir.install.worlds" value="${dir.install.db}${file.separator}worlds" />
+  
+  <property name="dir.patches" value="${dir.root}${file.separator}patches" />
+  <property name="dir.patches.deploy" value="${dir.patches}${file.separator}deploy" />
+  <property name="dir.patches.install" value="${dir.patches}${file.separator}install" />
+
+  <property name="dir.software" value="${dir.root}${file.separator}software" />
+  <property name="dir.software.deps" value="${dir.software}${file.separator}${deps}" />
+  <property name="dir.software.model_dlls" value="${dir.software}${file.separator}model_dlls" />
+  <property name="dir.software.models" value="${dir.software}${file.separator}models" />
+  <property name="dir.software.plugins" value="${dir.software}${file.separator}plugins" />
+  <property name="dir.software.project_config" value="${dir.software}${file.separator}config${file.separator}project_comms_structure" />
+  
+  <!-- modules and libraries have been added -->
+  <property name="dir.software.modules" value="${dir.software}${file.separator}modules" />
+  <property name="dir.software.libraries" value="${dir.software}${file.separator}libraries" />
+  
+  <property name="dir.tools.comms_data_generator" value="${dir.deps}/software/oksygen/sim/core/tools/comms_data_generator/bin" />
+  <property name="dir.tools.import_export_features" value="${dir.content.deps}/software/oksygen/sim/core/tools/import_export_features/bin" />
+  <property name="dir.tools.xml2db" value="${dir.deps}/software/oksygen/sim/core/tools/xml2db/bin" />
+  <property name="dir.tools.xml2db.mapping" value="${dir.deps}/database/oksygen/sim/core/tools/xml2db/db_mapping_mapping.xml" />
+  <property name="dir.tools.sim_setup.bin" value="${dir.deps}/software/oksygen/sim/core/tools/sim_setup/bin" />
+  
+  <property name="file.vision.unigine_scripts" value="${dir.deploy.vision}/unigine_scripts.zip"/>
+  <property name="file.vision.sydac_scripts" value="${dir.deploy.vision}/oksygen/sim/project/sydac_scripts.zip"/>
+  
+  <property name="file.features.feature_type_groups" value="${dir.config.source}/features/FeatureTypeGroups.xml"/>
+  
+  <property name="file.tracks.track_skins_list" value="${dir.config.source}/tracks/tracks.txt"/>
+  
+ </project>

@@ -1,0 +1,17 @@
+# 
+# Domain : Peer Application Manager  (pam)
+# 
+applicationManager.logFile=../Logs/radio-be.log
+
+# The class name that implements extends PeerApplication
+pam.applicationClass=com.sydac.mmrbem.radio.backend.app.RadioBackendModule
+
+
+# This key determines whether the application should be visible only during a session, or all the time
+pam.applicationVisible.sessionOnly=true
+pam.connectToDatabase=true
+pam.showSplashScreen=false
+
+# This key allows the application to ignore a shutdown message, which will normally cause the application
+# to exit gracefully.
+pam.ignoreShutdown=false

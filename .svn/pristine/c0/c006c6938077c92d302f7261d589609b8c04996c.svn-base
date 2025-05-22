@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="rowan_leaves_summer_0" guid="0f1a7cad65dd368bbe86532be225879227c82989" parent="d08965ea13c92ed6883d879a82703570ceadfc25" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1"/>
+	<texture name="albedo">rowan/textures/rowan_leaves_summer_alb.dds</texture>
+	<texture name="normal">rowan/textures/rowan_leaves_summer_n.dds</texture>
+	<parameter name="albedo_color">0.498039246 0.474509835 0.454901993 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="noise_2d_scale">0.100000001</parameter>
+	<parameter name="noise_2d_uv_transform">vec3(0.01,0.01,0.0f)</parameter>
+</material>

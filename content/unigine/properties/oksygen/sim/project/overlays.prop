@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties version="1.00">
+	<property name="Overlay">
+		<parameter name="texture" type="string"></parameter>
+		<parameter name="top" type="double">0</parameter>
+		<parameter name="right" type="double">1</parameter>
+		<parameter name="bottom" type="double">1</parameter>
+		<parameter name="left" type="double">0</parameter>
+		<parameter name="scaling" type="switch" items="None,Fit,Fill,Stretch">2</parameter>
+	</property>
+	<property name="Overlay/SydacTrainCollision" parent="Overlay">
+		<parameter name="texture">general/graphics/overlays/TrainCollision.png</parameter>
+	</property>
+	<property name="Overlay/SydacTrainDerailment" parent="Overlay">
+		<parameter name="texture">general/graphics/overlays/TrainDerailment.png</parameter>
+	</property>
+	<property name="Overlay/WhiteOut" parent="Overlay">
+		<parameter name="texture">general/graphics/overlays/Whiteout.png</parameter>
+		<parameter name="scaling">3</parameter>
+	</property>
+	<property name="Overlay/BlackOut" parent="Overlay">
+		<parameter name="texture">general/graphics/overlays/Blackout.png</parameter>
+		<parameter name="scaling">3</parameter>
+	</property>
+	<property name="Overlay/OPOScreenNotUsed" parent="Overlay">
+		<parameter name="texture">general/graphics/overlays/OPOScreenNotUsed.png</parameter>
+	</property>
+	<property name="Overlay/CouplingSuccessful" parent="Overlay">
+        <parameter name="texture">graphics/overlays/CouplingSuccessful.png</parameter>
+    </property>
+	<property name="Overlay/CouplerDamaged" parent="Overlay">
+        <parameter name="texture">graphics/overlays/CouplerDamaged.png</parameter>
+    </property>
+</properties>

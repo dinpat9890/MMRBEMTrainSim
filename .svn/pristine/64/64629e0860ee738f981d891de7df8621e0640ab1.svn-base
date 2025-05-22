@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1812388453" name="NS_Start_Sign">
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1060408977" name="Pole">
+			<mesh_name>../features/signs/graphics/SIL_Pole.mesh</mesh_name>
+			<surface name="Pole" enabled="0" max_visible_distance="500" max_fade_distance="10" material="52aed2e1eb3e38acecadda7af650a32274d2706d" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="968042196" name="Head">
+				<mesh_name>../features/signs/graphics/NS_Start_Sign.mesh</mesh_name>
+				<surface name="NS_Start_Sign" max_visible_distance="1000" max_fade_distance="10" material="880fecffd18549004e918294fe4a550600632a1e" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

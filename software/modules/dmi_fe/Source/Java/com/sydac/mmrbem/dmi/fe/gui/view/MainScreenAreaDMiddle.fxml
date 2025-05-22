@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="330.0" stylesheets="@dmi-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.dmi.fe.gui.presenter.MainScreenAreaDMiddleController">
+
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="1.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="31.5" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="1.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="31.5" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="1.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="31.5" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" percentWidth="2.0" />
+         </columnConstraints>
+         <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="6.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="7.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" percentHeight="6.5" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="areaD2Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="main-screen-label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="areaD3Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="departure-order-no-order" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="areaD4Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="docking-status-unknown" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label fx:id="areaD5Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="main-screen-label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="areaD6Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="main-screen-label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="areaD7Label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="main-screen-label" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Label fx:id="areaD5FlashLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="train-door-status-warning-flash" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="areaD6FlashLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" styleClass="train-door-status-warning-flash" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label fx:id="remTimeLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" style="-fx-text-fill: -fx-light-gray-color;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font></Label>
+         </children>
+      </GridPane>

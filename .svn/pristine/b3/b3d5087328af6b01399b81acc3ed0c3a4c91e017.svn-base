@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1519261381" name="generic_warehouse_11_d">
+		<mesh_name>../worlds/library_objects/gen_building/generic_warehouse_11_d.mesh</mesh_name>
+		<surface name="generic_warehouse_11_d_generic_industrial_buildings_d" max_visible_distance="2000" max_fade_distance="10" material="114917af549170216359479747c255fb791fc083" property="surface_base"/>
+		<surface name="generic_warehouse_11_d_generic_warehouse_11_d" max_visible_distance="1000" max_fade_distance="10" material="c97385eb810cfea6885d7dff9f0240e8c284d006" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

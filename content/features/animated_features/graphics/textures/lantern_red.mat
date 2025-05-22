@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="lantern_red" guid="7bb605488a32eb28393c38501ee0ed01ba996e88" base_material="mesh_base">
+	<state name="emission">1</state>
+	<texture name="albedo">../features/animated_features/graphics/textures/lantern.dds</texture>
+	<texture name="emission">../features/animated_features/graphics/textures/lantern_e.dds</texture>
+	<parameter name="emission_color">1 0 0 1</parameter>
+	<parameter name="emission_scale">3</parameter>
+</material>

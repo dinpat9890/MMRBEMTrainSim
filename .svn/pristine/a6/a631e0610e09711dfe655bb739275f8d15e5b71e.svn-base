@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/peer_module/jar/peermodule.jar"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_APPEND_TO_FILE" value="true"/>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_51"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.sydac.peer.application.PeerApplicationManager"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="../Environment/Database.ini&#13;&#10;../Environment/ApplicationManager.properties&#13;&#10;../Environment/PT.properties&#13;&#10;../Environment/PTHub.properties&#13;&#10;../Environment/PTApplicationManager.properties&#13;&#10;../Environment/PTApplicationManagerSim.properties&#13;&#10;../Environment/GMI.properties&#13;&#10;../Environment/Hub.properties"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MMRBEM-Libraries-GraphicalModelInterfaceConfig"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ms256m -mx512m -Djava.library.path=../Bin -enableassertions -Dcom.sun.management.jmxremote -XX:-HeapDumpOnOutOfMemoryError  -DrunInEclipse=true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:MMRBEM-Libraries-GraphicalModelInterfaceConfig}/../../../Deploy/Startup"/>
+</launchConfiguration>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectConstants.h" />
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectDefinition.h" />
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\SaloonCCTVProtos.pb.h" />
+    <ClInclude Include="Source\AlarmFourViewController.h" />
+    <ClInclude Include="Source\AlarmViewController.h" />
+    <ClInclude Include="Source\AutoRotateFourViewController.h" />
+    <ClInclude Include="Source\AutoRotateSingleViewController.h" />
+    <ClInclude Include="Source\CanvasViewManager.h" />
+    <ClInclude Include="Source\CCTVBackendUnitImpl.h" />
+    <ClInclude Include="Source\CCTVCommsInterface.h" />
+    <ClInclude Include="Source\CCTVState.h" />
+    <ClInclude Include="Source\CCTVTrainInterface.h" />
+    <ClInclude Include="Source\CCTVViewController.h" />
+    <ClInclude Include="Source\CCTVVisionManager.h" />
+    <ClInclude Include="Source\CommsInterface.h" />
+    <ClInclude Include="Source\ExternalCamTypeViewcontroller.h" />
+    <ClInclude Include="Source\ICCTVProperties.h" />
+    <ClInclude Include="Source\ICommsInterface.h" />
+    <ClInclude Include="Source\ITrainInterface.h" />
+    <ClInclude Include="Source\IVisionInterface.h" />
+    <ClInclude Include="Source\PowerUpViewController.h" />
+    <ClInclude Include="Source\CCTVProperties.h" />
+    <ClInclude Include="Source\SelectedCameraViewController.h" />
+    <ClInclude Include="Source\ShutdownViewController.h" />
+    <ClInclude Include="Source\StaticFourViewController.h" />
+    <ClInclude Include="Source\StaticSingleViewController.h" />
+    <ClInclude Include="Source\VehicleModuleViewcontroller.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CCTVUnit.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\SaloonCCTVProtos.pb.cc" />
+    <ClCompile Include="Source\AlarmFourViewController.cpp" />
+    <ClCompile Include="Source\AlarmViewController.cpp" />
+    <ClCompile Include="Source\AutoRotateFourViewController.cpp" />
+    <ClCompile Include="Source\AutoRotateSingleViewController.cpp" />
+    <ClCompile Include="Source\CanvasViewManager.cpp" />
+    <ClCompile Include="Source\CCTVBackendUnitImpl.cpp" />
+    <ClCompile Include="Source\CCTVCommsInterface.cpp" />
+    <ClCompile Include="Source\CCTVProperties.cpp" />
+    <ClCompile Include="Source\CCTVState.cpp" />
+    <ClCompile Include="Source\CCTVTrainInterface.cpp" />
+    <ClCompile Include="Source\CCTVViewController.cpp" />
+    <ClCompile Include="Source\CCTVVisionManager.cpp" />
+    <ClCompile Include="Source\CommsInterface.cpp" />
+    <ClCompile Include="Source\ExternalCamTypeViewcontroller.cpp" />
+    <ClCompile Include="Source\ICCTVProperties.cpp" />
+    <ClCompile Include="Source\ICommsInterface .cpp" />
+    <ClCompile Include="Source\PowerUpViewController.cpp" />
+    <ClCompile Include="Source\SelectedCameraViewController.cpp" />
+    <ClCompile Include="Source\ShutdownViewController.cpp" />
+    <ClCompile Include="Source\StaticFourViewController.cpp" />
+    <ClCompile Include="Source\StaticSingleViewController.cpp" />
+    <ClCompile Include="Source\UnitDLL.cpp" />
+    <ClCompile Include="Source\VehicleModuleViewcontroller.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2EA5048C-F6A8-40D1-9B95-E6B2353479B4}</ProjectGuid>
+    <RootNamespace>PlatformCCTVUnit</RootNamespace>
+    <ProjectName>SaloonCCTVUnit</ProjectName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="../../project.cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectConfigRoot)/project_comms_structure/include;$(COTSIncludeRoot)/protobuf/include;$(ProjectLibrariesRoot)/Serialisation/Source/Cpp;$(CoreTrainSimConfigRoot)/train_comms_structure/include;$(CoreSimConfigRoot)core_comms_structure/include;$(CoreSimIncludeRoot)core_data_access/include;$(CoreSimIncludeRoot)core_types/include;$(CoreSimIncludeRoot)utility/include;$(CommonIncludeRoot)comms/include;$(CommonIncludeRoot)sim_common/include;$(CommonIncludeRoot)sim_comms/include;$(CommonIncludeRoot)common/include;$(CoreTrainSimIncludeRoot)train_data_access/include;$(CoreTrainSimIncludeRoot)world_api/include;$(CommonIncludeRoot)network_definition/include;$(CoreSimIncludeRoot)core_properties/include;$(CoreSimIncludeRoot)core_services/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNIT_DLL_EXPORTS;WIN32;_LIB;_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectConfigRoot)project_comms_structure/lib;$(COTSIncludeRoot)/protobuf/lib;$(CommonIncludeRoot)comms/lib;$(CommonIncludeRoot)sim_comms/lib;$(CommonIncludeRoot)common/lib;$(CoreSimIncludeRoot)core_services/lib;$(CoreSimIncludeRoot)core_data_access/lib;$(CoreTrainSimIncludeRoot)world_api/lib;$(CommonIncludeRoot)network_definition/lib;$(CoreSimIncludeRoot)config_file_access/lib;$(CoreSimIncludeRoot)core_properties/lib;$(CoreSimIncludeRoot)core_serialisation/lib;$(ProjectDir)bin;$(ProjectDir)lib;$(CoreSimIncludeRoot)core_types/lib;$(CoreTrainSimIncludeRoot)train_data_access/lib;$(CoreSimConfigRoot)core_comms_structure/lib;.\Build\Win32\Release DLL;.\Build\x64\Release DLL;%(AdditionalLibraryDirectories</AdditionalLibraryDirectories>
+      <AdditionalDependencies>comms$(LibType);sim_comms$(LibType);common$(LibType);core_services$(LibType);core_data_access$(LibType);world_api$(LibType);network_definition$(LibType);core_types$(LibType);train_data_access$(LibType);core_comms_structure$(LibType);libprotobuf$(LibType);core_properties$(LibType);project_comms_structure$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug DLL' or '$(Configuration)'=='Debug'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release DLL' or '$(Configuration)'=='Release'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

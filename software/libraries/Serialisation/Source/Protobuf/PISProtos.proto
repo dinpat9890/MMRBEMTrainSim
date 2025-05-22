@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+package dva;
+
+option java_package = "com.sydac.pis.dva.proto";
+option java_outer_classname = "DvaProtos";
+
+message DvaPlayList
+{
+
+  required string     pid_text    = 1;
+  required bool       loop        = 2;
+  repeated int32      message_ids = 3;
+
+}
+
+/**
+  * proto for Station Announcement Setting screen
+ **/
+ message StationListDetails
+  {
+    message StationList
+    {
+        required int32 stationId           = 1;
+        required string stationName        = 2;
+        required bool isStationSkip        = 3;
+    }
+    repeated StationList stationList = 1;
+  }

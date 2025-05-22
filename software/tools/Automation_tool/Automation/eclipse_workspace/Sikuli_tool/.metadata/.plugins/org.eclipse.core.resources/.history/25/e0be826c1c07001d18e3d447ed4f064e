@@ -1,0 +1,145 @@
+package Mumbai_Metro;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Screen;
+import java.io.IOException; // Import the IOException class to handle errors
+
+public class Pt {
+
+	Screen S, S1;
+	int i;
+	String sessionName, mode;
+
+	public Pt() throws IOException {
+
+		S = new Screen();
+		S1 = new Screen(1);
+		i = 0;
+		sessionName = null;
+		mode = null;
+	}
+
+	private void pt() throws IOException {
+
+		try {
+			S.find(FilePathConstant.PT + "PT.PNG");
+			S.click(FilePathConstant.PT + "PT.PNG");
+			S.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "PTInstructor.PNG");
+			S1.click(FilePathConstant.PT + "PTInstructor.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "Train1.PNG");
+			S1.click(FilePathConstant.PT + "Train1.PNG");
+			S1.wait(2.0);
+
+			/*
+			 * S.find(FilePathConstant.PT + "SoftPLC.PNG"); S.rightClick(FilePathConstant.PT
+			 * + "SoftPLC.PNG"); S.wait(1.0);
+			 * 
+			 * S.find(FilePathConstant.PT + "CloseWindow.PNG"); S.click(FilePathConstant.PT
+			 * + "CloseWindow.PNG"); S.wait(2.0);
+			 */
+
+			S1.find(FilePathConstant.PT + "DriverDesk.PNG");
+			S1.click(FilePathConstant.PT + "DriverDesk.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "masterController.PNG");
+			S1.click(FilePathConstant.PT + "masterController.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "masterController1.PNG");
+			S1.click(FilePathConstant.PT + "masterController1.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "OnKey.PNG");
+			S1.click(FilePathConstant.PT + "OnKey.PNG");
+			S1.wait(3.0);
+
+			S1.find(FilePathConstant.PT + "back.PNG");
+			S1.click(FilePathConstant.PT + "back.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "panel1.PNG");
+			S1.click(FilePathConstant.PT + "panel1.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "ParkingBrakeOff.PNG");
+			S1.click(FilePathConstant.PT + "ParkingBrakeOff.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "back.PNG");
+			S1.click(FilePathConstant.PT + "back.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "back.PNG");
+			S1.click(FilePathConstant.PT + "back.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "OperatingPanel2.PNG");
+			S1.click(FilePathConstant.PT + "OperatingPanel2.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "panel2.PNG");
+			S1.click(FilePathConstant.PT + "panel2.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "PowerOn.PNG");
+			S1.click(FilePathConstant.PT + "PowerOn.PNG");
+			S1.wait(3.0);
+
+			S1.find(FilePathConstant.PT + "vcbClose.PNG");
+			S1.click(FilePathConstant.PT + "vcbClose.PNG");
+			S1.wait(3.0);
+
+			S1.find(FilePathConstant.PT + "back.PNG");
+			S1.click(FilePathConstant.PT + "back.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "back.PNG");
+			S1.click(FilePathConstant.PT + "back.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "masterController.PNG");
+			S1.click(FilePathConstant.PT + "masterController.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "masterController1.PNG");
+			S1.click(FilePathConstant.PT + "masterController1.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "Deadman.PNG");
+			S1.click(FilePathConstant.PT + "Deadman.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.PT + "UpClick.PNG");
+			S1.click(FilePathConstant.PT + "UpClick.PNG");
+			S1.wait(3.0);
+
+			S1.find(FilePathConstant.PT + "Pmax.PNG");
+			S1.click(FilePathConstant.PT + "Pmax.PNG");
+			S1.wait(3.0);
+			
+			S.find(FilePathConstant.PT + "vision.PNG");
+			S.click(FilePathConstant.PT + "vision.PNG");
+			S.wait(3.0);
+
+			System.out.println("**** PT All Test Cases Passed successfully****");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) throws FindFailed {
+		try {
+			Pt obj = new Pt();
+			obj.pt();
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+}

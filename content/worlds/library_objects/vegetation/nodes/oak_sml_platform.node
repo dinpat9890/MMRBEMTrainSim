@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="72569401" name="oak_sml_platform">
+		<mesh_name>../worlds/library_objects/vegetation/meshes/oak_sml_platform.mesh</mesh_name>
+		<surface name="oak_sml_platform_concrete_wall_pillers" max_visible_distance="500" material="b8f6ddc6e5ac745ba121a2eeb7f19bcec0ef02ec" property="surface_base"/>
+		<surface name="oak_sml_platform_oak_leaves" max_visible_distance="1000" material="17a262a5f6d8fda9cb2ecda513dcfd3c26a34b92" property="surface_base"/>
+		<surface name="oak_sml_platform_oak_trunk" max_visible_distance="1000" material="f8d1b92326b02e25847eaa488a3589c737aba6b9" property="surface_base"/>
+		<transform>0.999999790608 -8.17478062465e-008 0 0.0 4.98369203683e-008 0.999999717824 0 0.0 0 0 0.999999841054 0.0 1.99997521122e-006 0 0 1.0</transform>
+	</node>
+</nodes>

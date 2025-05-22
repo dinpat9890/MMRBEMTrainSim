@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="883288594" folded="1" name="gantry_type01_pull">
+		<mesh_name>../worlds/library_objects/gantry/gantry_type01_pull.mesh</mesh_name>
+		<surface name="gantry_type01_pull" max_visible_distance="1000" max_fade_distance="10" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<surface name="label_body" max_visible_distance="1000" max_fade_distance="10" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+		<transform>0.999999940395 0 2.10550335984e-018 0.0 -6.38378239159e-016 0.999999940395 -3.46944695195e-018 0.0 7.3137897351e-018 -8.67361737988e-018 0.999999940395 0.0 -1.22781784739e-011 3.27418092638e-011 -2.77555756156e-014 1.0</transform>
+		<node type="NodeDummy" id="1050201340" name="Connection_conductor">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 5.4 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="280146970" name="Connection_catenary">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.02 0 6.75 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1233354010" name="caution_25000_volts_board">
+			<mesh_name>../worlds/library_objects/features/caution_25000_volts_board.mesh</mesh_name>
+			<surface name="caution_25000_volts_board" max_visible_distance="600" max_fade_distance="50" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+			<transform>-1.81993673495 -0.0152089296526 3.77911656075e-018 0.0 0.0141225453059 -1.68994035691 -5.89289383812e-018 0.0 -1.33110928539e-017 1.57859783375e-017 1.81999928117 0.0 -2.26478886809 0.0870332487648 3.0686274225 1.0</transform>
+		</node>
+	</node>
+</nodes>

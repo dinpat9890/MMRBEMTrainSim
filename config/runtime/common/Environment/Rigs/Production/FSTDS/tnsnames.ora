@@ -1,0 +1,17 @@
+XE = 
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = MMRBEM-FC-DB)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+  
+LOCAL =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = MMRBEM-DB)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )

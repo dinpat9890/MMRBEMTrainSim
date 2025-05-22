@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_palm_tall" guid="5cfde5b075a882d8ccac698c91273715bbe92b40" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<options cast_world_shadow="0"/>
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/imposter_palm_tall.dds</texture>
+</material>

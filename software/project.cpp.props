@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- http://blogs.msdn.com/b/visualstudio/archive/2010/05/14/a-guide-to-vcxproj-and-props-file-structure.aspx -->
+  
+  <!-- Define the software path and the dependencies path for the core properties to use -->
+  <PropertyGroup>
+    <SoftwareDir>$(MSBuildThisFileDirectory)</SoftwareDir>
+    <RootDir>$(SoftwareDir)../</RootDir>
+    <DependenciesDir>$(SoftwareDir)dependencies/</DependenciesDir>
+  </PropertyGroup>
+  
+  <Import Project="$(RootDir)dependencies/software/oksygen/sim/core/processes/builder/oksygen.cpp.props" />
+  <PropertyGroup>
+    <DepSwRoot>$(DependenciesDir)/Software/</DepSwRoot>
+    <cotsroot>$(DependenciesDir)cots/oksygen/cots/</cotsroot>
+    <commondatabaseroot>$(DepSwRoot)oksygen/common/database/</commondatabaseroot>
+    <commonlibrariesroot>$(DepSwRoot)oksygen/common/libraries/</commonlibrariesroot>
+    <commontoolsroot>$(DepSwRoot)oksygen/common/tools/</commontoolsroot>
+    <simcoreconfigroot>$(DepSwRoot)oksygen/sim/core/config/</simcoreconfigroot>
+    <simcoredatabaseroot>$(DepSwRoot)oksygen/sim/core/database/</simcoredatabaseroot>
+    <simcorelibrariesroot>$(DepSwRoot)oksygen/sim/core/libraries/</simcorelibrariesroot>
+    <simcoremodulesroot>$(DepSwRoot)oksygen/sim/core/modules/</simcoremodulesroot>
+    <simcorepackagesroot>$(DepSwRoot)oksygen/sim/core/packages/</simcorepackagesroot>
+    <simcoreprimitivesroot>$(DepSwRoot)oksygen/sim/core/primitives/</simcoreprimitivesroot>
+    <simcoreprocessesroot>$(DepSwRoot)oksygen/sim/core/processes/</simcoreprocessesroot>
+    <simcoresubsystemsroot>$(DepSwRoot)oksygen/sim/core/subsystems/</simcoresubsystemsroot>
+    <simcoretoolsroot>$(DepSwRoot)oksygen/sim/core/tools/</simcoretoolsroot>
+    <simcoreunigineroot>$(DepSwRoot)oksygen/sim/core/unigine/</simcoreunigineroot>
+    <simcoreunigine_pluginsroot>$(DepSwRoot)oksygen/sim/core/unigine_plugins/</simcoreunigine_pluginsroot>
+    <simcoreunitsroot>$(DepSwRoot)oksygen/sim/core/units/</simcoreunitsroot>
+    <simfreightconfigroot>$(DepSwRoot)sydac/sim/freight/config/</simfreightconfigroot>
+    <simfreightlibrariesroot>$(DepSwRoot)sydac/sim/freight/libraries/</simfreightlibrariesroot>
+    <simfreightmodulesroot>$(DepSwRoot)sydac/sim/freight/modules/</simfreightmodulesroot>
+    <simtrainconfigroot>$(DepSwRoot)oksygen/sim/train/config/</simtrainconfigroot>
+    <simtraindatabaseroot>$(DepSwRoot)oksygen/sim/train/database/</simtraindatabaseroot>
+    <simtrainlibrariesroot>$(DepSwRoot)oksygen/sim/train/libraries/</simtrainlibrariesroot>
+    <simtrainmodulesroot>$(DepSwRoot)oksygen/sim/train/modules/</simtrainmodulesroot>
+    <simtrainpackagesroot>$(DepSwRoot)oksygen/sim/train/packages/</simtrainpackagesroot>
+    <simtrainprimitivesroot>$(DepSwRoot)oksygen/sim/train/primitives/</simtrainprimitivesroot>
+    <simtrainresourcesroot>$(DepSwRoot)oksygen/sim/train/resources/</simtrainresourcesroot>
+    <simtrainsubsystemsroot>$(DepSwRoot)oksygen/sim/train/subsystems/</simtrainsubsystemsroot>
+    <simtraintestingroot>$(DepSwRoot)oksygen/sim/train/testing/</simtraintestingroot>
+    <simtraintoolsroot>$(DepSwRoot)oksygen/sim/train/tools/</simtraintoolsroot>
+    <simtrainunigineroot>$(DepSwRoot)oksygen/sim/train/unigine/</simtrainunigineroot>
+    <simtrainunitsroot>$(DepSwRoot)oksygen/sim/train/units/</simtrainunitsroot>
+    <toolsReleaseNoteGenroot>$(DepSwRoot)oksygen/tools/releasenotegen/</toolsReleaseNoteGenroot>
+  </PropertyGroup>
+
+  <!-- Ensure all project-side code is C++17 compliant. -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+</Project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1271343098" name="track_cable_suppor_side">
+		<mesh_name>../worlds/library_objects/gantry/track_cable_suppor_side.mesh</mesh_name>
+		<surface name="track_cable_suppor_side_gantry_atlas_d" max_visible_distance="350" max_fade_distance="5" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

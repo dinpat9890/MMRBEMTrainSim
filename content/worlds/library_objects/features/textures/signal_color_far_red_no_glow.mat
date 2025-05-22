@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="signal_color_far_red_no_glow" guid="e5306c3512c8f0e79959d35d38b2efed8d2c7816" parent="4a20be2f3790a111692560dba28a46587293b6c8" base_material="mesh_base">
+	<parameter name="emission_scale">0.5</parameter>
+</material>

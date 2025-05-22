@@ -1,0 +1,76 @@
+(!
+  @file AutoTrains.script
+  @author Brett Stawinski
+
+  Creates the AutoTrain and AutoVehicle objects for a session. This allows us
+  to add any number properties required for sim properties, and also lets us add
+  some constants to the objects, representing immutable properties (e.g. the
+  maximum speed for each train type).  No control should be done here.
+  It should be in the auto_train_control.script
+
+  @copyright Copyright: SYDAC Pty Ltd, 2018
+)
+
+(! This is included in the WorldModel Scripting section, but that does not used in the code that runs this script)
+(include "CoreObjectConstants.scr")
+(include "auto_train_lookups.script")
+
+(! AutoTrain Creation)
+(create-all-auto-trains $scenario_train_id $train_object_id
+  (symbol $train_type_name (train-type-name (get-train-type $scenario_train_id))
+    (symbol $max_speed (get-max-speed-for-train-type-name $train_type_name)
+      (symbol $automated_target_velocity 999
+        (define-constant $train_object_id "Maximum Speed" $max_speed)
+        (define-number   $train_object_id "Target Velocity Request" $automated_target_velocity 0.01)
+        (define-number   $train_object_id "Auto Train Coupling" 0.0 0.5)
+        (define-number   $train_object_id "Auto Train Release Parking Brakes" 0.0 0.5)
+		(define-number $train_object_id "Auto Train Headlights" 0.0 0.5)
+		(define-number $train_object_id "Auto Train Marker Lights" 0.0 0.5)
+		(define-number $train_object_id "Auto Train Flood Light" 0.0 0.5)
+		(define-number $train_object_id "Auto Train Flasher Light" 0.0 0.5)		
+		(define-number $train_object_id "Auto Train UTO RM Lights" 0.0 0.5)
+		(define-number $train_object_id "Auto Train COLPB" 0.0 0.5)
+        (create-all-auto-vehicles $vehicle_index $vehicle_object_id $train_object_id $scenario_train_id          
+		  (define-number $vehicle_object_id "Car Headlights" 0.0 0.5)		  
+		  (define-number $vehicle_object_id "Car Marker Lights" 0.0 0.5)
+		  (define-number $vehicle_object_id "Car Flood Light" 0.0 0.5)
+		  (define-number $vehicle_object_id "Car Flasher Light" 0.0 0.5)
+		  (define-number $vehicle_object_id "Car UTO RM Lights" 0.0 0.5)
+		  (! cyborg Lights are always on) 
+		  (define-number $vehicle_object_id "Car Cyborg Lights" (or (== $vehicle_index 0) (== $vehicle_index 4) (== $vehicle_index 5) (== $vehicle_index 9)) 0.5)	
+		  (define-number $vehicle_object_id "Car Position Lights" 0.0 0.5)		  
+          (! log "Train Type Name :" $train_type_name) 	
+		  
+				(! Coupling unit/interface setup)
+			(enable-if (has-autocoupler $train_type_name)
+				(! Add a var to count the number of veh)
+				
+				(! Coupling unit/interface setup)
+				(create-end-couplings $coupling_object_id $vehicle_object_id $scenario_train_id $vehicle_index
+					(create-coupling-inputs-outputs $coupling_io_object_id $coupling_object_id
+						(define-number $coupling_io_object_id "Coupler Type" 1.0 0.5)
+						(define-number $coupling_io_object_id "Ready To Couple" 0.0 0.5)
+						(define-number $coupling_io_object_id "Mechanically Coupled" 0.0 0.5)
+						(define-number $coupling_io_object_id "Electrically Coupled" 0.0 0.5)
+						(define-number $coupling_io_object_id "Pneumatically Coupled" 0.0 0.5)
+					)
+					(create-mimic-inputs-outputs $mimic_io_object_id $coupling_object_id
+						(define-number $mimic_io_object_id "Mass" 0 0.5)
+						(define-number $mimic_io_object_id "Time" 0.0 0.5)
+						(define-number $mimic_io_object_id "Position" 0.0 0.5)
+						(define-number $mimic_io_object_id "Velocity" 0.0 0.5)
+						(define-number $mimic_io_object_id "Gradient" 0.0 0.5)
+						(define-number $mimic_io_object_id "Radius" 0.0 0.5)
+						(define-number $mimic_io_object_id "Tractive Force" 0.0 0.5)
+						(define-number $mimic_io_object_id "Braking Force" 0.0 0.5)
+						(define-number $mimic_io_object_id "Other Coupler Force" 0.0 0.5)
+						(define-number $mimic_io_object_id "Other Coupler Force Rate" 0.0 0.5)
+					)
+				)
+			)
+					
+        )
+      )
+    )
+  )
+)

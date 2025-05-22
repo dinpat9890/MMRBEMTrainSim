@@ -1,0 +1,66 @@
+# Common properties for apps that use the GMI
+
+
+# Comms class information
+
+# The class name of a suitable class that implements ICommonObjects
+gmi.runtimedata.class = com.sydac.project.runtimedata.ProjectObjects
+
+# The class that contains the Comms names of properties
+gmi.objectconstants.class = com.sydac.project.runtimedata.ProjectObjectConstants
+
+# A prefix for the classes that contains the Comms names of properties the GMI is interested in
+gmi.screen.class = Vehicle
+
+
+# GMI Configuration (the XML and images)
+gmi.config.package = com.sydac.project.gmiconfig
+
+
+# GMI Behaviour
+
+# Set to true to treat a mouse entering a hotspot as a press,
+# as a workaround for touchscreen driver behaviour.
+#
+#
+#################   This flag should not be used in most cases   #################
+# Where possible, applications should use TouchCaptureWindows instead of setting this flag.
+# Core applications have properties of the form xxx.touchcapture.enable
+# for enhanced touchscreen compatibility.
+#
+#
+# Some touchscreen drivers (such as the Windows 7 stock driver)
+# do not report a mouse press until some other action has occurred (move or release).
+# This will result in momentary controls not responding if the user presses 
+# the screen without moving their finger.
+#
+# Typically, even dodgy drivers move the mouse pointer immediately; only the press is suppressed.
+# This flag tells the GMI to listen for such events.
+# If the pointer does not move with the initial touch, this flag will not help you.
+#
+# Note that this solution does not respond correctly to the user pressing on the same location twice in a row.
+# This should be relatively difficult to do on high-PPI screens;
+# if you are using a low-PPI screen, be sure to test the behaviour of momentary controls.
+#
+# The preferred solution is to use a better driver, if one can be found.
+# http://www.touch-base.com/ has a driver which covers most touchscreens.
+#
+# No matter which driver is used you should switch off funky options.
+# This is usually things like:
+# - flick gestures
+# - long press gets reinterpreted as a right click
+gmi.mouse.treatenteraspress = false
+
+
+# Label configuration
+
+# Set to true to see debugging output - MUST BE FALSE ON A DEPLOYED SIM!
+gmi.labels.debug = false
+
+# Font defaults to Arial 12
+gmi.labels.font.name = Arial
+gmi.labels.font.size = 12
+
+# Sets the maximum width of a label before wrapping is required.
+# By default they are limited to 1/3 of the screen width. Usually that will be sufficient.
+#gmi.labels.maxwidth = 1000

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Work Zone" group="CBTC" constant_name="FETY_WORK_ZONE" modifiable="1" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="10" name="10 kph" value="2.7778"  user_selectable="1" />
+        <feature_type_state state_id="20" name="20 kph" value="5.5556"  user_selectable="1" />
+        <feature_type_state state_id="30" name="30 kph" value="8.3333"  user_selectable="1" />
+        <feature_type_state state_id="40" name="40 kph" value="11.1111" user_selectable="1" />
+        <feature_type_state state_id="50" name="50 kph" value="13.8889" user_selectable="1" />
+        <feature_type_state state_id="60" name="60 kph" value="16.6667" user_selectable="1" />
+        <feature_type_state state_id="70" name="70 kph" value="19.4444" user_selectable="1" />
+    </feature_type_state_type>
+
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="40 kph" />
+    </object_parameters>
+
+    <feature_type_icon icon_code="WorkZone" small_icon="Icons/work_zone_begin.zip#work_zone_begin_10-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_40-big.png">
+        <feature_type_state_icon state_id="10" icon_code="10_kph" small_icon="Icons/work_zone_begin.zip#work_zone_begin_10-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_10-big.png" />
+        <feature_type_state_icon state_id="20" icon_code="20_kph" small_icon="Icons/work_zone_begin.zip#work_zone_begin_20-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_20-big.png" />
+        <feature_type_state_icon state_id="30" icon_code="30_kph" small_icon="Icons/work_zone_begin.zip#work_zone_begin_30-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_30-big.png" />
+        <feature_type_state_icon state_id="40" icon_code="40_kph" small_icon="Icons/work_zone_begin.zip#work_zone_begin_40-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_40-big.png" />
+        <feature_type_state_icon state_id="50" icon_code="50_kph" small_icon="Icons/work_zone_begin.zip#work_zone_begin_50-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_50-big.png" />
+        <feature_type_state_icon state_id="60" icon_code="60_kph" small_icon="Icons/work_zone_begin.zip#work_zone_begin_60-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_60-big.png" />
+        <feature_type_state_icon state_id="70" icon_code="70_kph" small_icon="Icons/work_zone_begin.zip#work_zone_begin_70-small.png" big_icon="Icons/work_zone_begin.zip#work_zone_begin_70-big.png" />
+    </feature_type_icon>
+
+</feature_type>

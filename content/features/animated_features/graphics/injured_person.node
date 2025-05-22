@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="859194392" name="injured_person">
+		<mesh_name>../features/animated_features/graphics/injured_person.mesh</mesh_name>
+		<anim_name>../features/animated_features/graphics/animations/injured_person.anim</anim_name>
+		<loop>1</loop>
+		<time>58.1128807</time>
+		<speed>20</speed>
+		<playing>1</playing>
+		<surface name="MA_cman0323_LOD_0_body" max_visible_distance="1000" material="e837590868569e511ca8f9f6d189dceb88419842" property="surface_base"/>
+		<surface name="MA_cman0323_LOD_0_head" max_visible_distance="1000" material="e20c355c37fa1bb196c685954ae37fedd91ca27d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 2.27373675443e-013 -1.81898940355e-012 0 1.0</transform>
+	</node>
+</nodes>

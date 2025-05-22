@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B3E486E8-1CB3-45F0-BCAD-AB42E123A308}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TPWSUpdaterUnit</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="../../../Software/project.cpp.props" />
+  <PropertyGroup>
+    <CoreTrainSimIncludeRoot>../$(CoreTrainSimIncludeRoot)</CoreTrainSimIncludeRoot>
+    <CommonIncludeRoot>../$(CommonIncludeRoot)</CommonIncludeRoot>
+    <CoreTrainSimRoot>../$(CoreTrainSimRoot)</CoreTrainSimRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(simtrainlibrariesroot)train_types/include;$(simtrainlibrariesroot)world_api/include;$(simtrainlibrariesroot)train_data_access/include;$(simcorelibrariesroot)core_types/include;$(simcorelibrariesroot)core_data_access/include;$(commonlibrariesroot)sim_comms/include;$(commonlibrariesroot)common/include;$(commonlibrariesroot)sim_common/include;$(commonlibrariesroot)comms/include;$(commonlibrariesroot)network_definition/include;$(simcoreconfigroot)core_comms_structure/include;$(simcorelibrariesroot)utility/include;../../Project/Include;$(ProjectConfigRoot)/project_features/include;../common/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(ClPreprocessorDefinitions);_WINDOWS;STRICT;WIN32;_USRDLL;UNIT_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0c09</Culture>
+      <PreprocessorDefinitions>$(ResourcePreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);$(COTSIncludeRoot)WTL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(simtrainlibrariesroot)train_data_access/$(LibOutDir);$(simcorelibrariesroot)utility/$(LibOutDir);$(simtrainlibrariesroot)world_api/$(LibOutDir);$(commonlibrariesroot)network_definition/$(LibOutDir);$(commonlibrariesroot)common/$(LibOutDir);$(commonlibrariesroot)sim_comms/$(LibOutDir);$(commonlibrariesroot)comms/$(LibOutDir);$(simcorelibrariesroot)core_types/$(LibOutDir);$(simcoreconfigroot)core_comms_structure/$(LibOutDir);$(simcorelibrariesroot)core_data_access/$(LibOutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>train_data_access$(LibType);utility$(LibType);world_api$(LibType);sim_comms$(LibType);network_definition$(LibType);core_types$(LibType);common$(LibType);comms$(LibType);core_data_access$(LibType);core_comms_structure$(LibType);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug' or $(BaseConfiguration)=='Debug DLL'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release' or $(BaseConfiguration)=='Release DLL' or $(BaseConfiguration)=='Develop' or $(BaseConfiguration)=='Develop DLL'">
+    <ClCompile>
+      <BasicRuntimeChecks />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Debug' or $(BaseConfiguration)=='Debug DLL' or $(BaseConfiguration)=='Develop' or $(BaseConfiguration)=='Develop DLL'">
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="$(BaseConfiguration)=='Release' or $(BaseConfiguration)=='Release DLL'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DebugInformationFormat />
+      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Debug DLL'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="$(BaseConfiguration)=='Release DLL' or $(BaseConfiguration)=='Develop DLL'">MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\PlatformDoorControlUnit.cpp" />
+    <ClCompile Include="Source\UnitDLL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\PlatformDoorControlUnit.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

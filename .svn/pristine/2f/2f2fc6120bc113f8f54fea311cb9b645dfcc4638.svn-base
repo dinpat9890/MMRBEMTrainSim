@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="CBTC Beacon" group="CBTC" constant_name="FETY_CBTC_BEACON" modifiable="0" available="1" user_feature="0" version="2.0">
+    
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="2" name="Normal"   user_selectable="1" />
+        <feature_type_state state_id="3" name="Faulty"   user_selectable="1" />
+    </feature_type_state_type>
+    
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="Normal" />
+        <!-- Feature Properties -->
+		<key name="MountType"    type="string" default="Track" description="Track, TrackTunnel, GRP, GRPTunnel" />
+        <key name="BeaconType"   type="double" default="1000"  description="Beacon Type. See design page for values" />
+    </object_parameters>
+    
+   <feature_type_icon icon_code="Beacon" small_icon="Icons/CBTC_Beacon.zip#CBTC_Beacon-Active-SMALL.png" big_icon="Icons/CBTC_Beacon.zip#CBTC_Beacon-Active-BIG.png">
+        <feature_type_state_icon state_id="2" icon_code="Normal" small_icon="Icons/CBTC_Beacon.zip#CBTC_Beacon-Active-SMALL.png" big_icon="Icons/CBTC_Beacon.zip#CBTC_Beacon-Active-BIG.png" />
+        <feature_type_state_icon state_id="3" icon_code="Faulty" small_icon="Icons/CBTC_Beacon.zip#CBTC_Beacon-Faulty-SMALL.png" big_icon="Icons/CBTC_Beacon.zip#CBTC_Beacon-Faulty-BIG.png" />
+    </feature_type_icon>
+   
+   <feature_type_vision class="BaliseFeature" raycast_type="RaycastGround" node_file="feature_design_cbtc_beacons.node">
+       <scripting>
+           <script script_path="scripts/BaliseFeature.us.cpp" />
+       </scripting>
+  </feature_type_vision>
+   
+</feature_type>

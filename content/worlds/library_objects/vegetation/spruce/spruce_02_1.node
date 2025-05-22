@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="288985240" name="spruce_02_1">
+		<mesh_name>spruce/spruce_02_1.mesh</mesh_name>
+		<surface name="spruce_02_1_leaves_lod_0_spruce_leaves_02_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="a8a0082ccf5be0dbfa88a8b70891a85ce2496b58" property="surface_base"/>
+		<surface name="spruce_02_1_leaves_lod_2_spruce_leaves_02_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="a8a0082ccf5be0dbfa88a8b70891a85ce2496b58" property="surface_base"/>
+		<surface name="spruce_02_1_tree_lod_2_spruce_trunk_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="9b8dfb23787fa1bd3d0f147885edc2a060f09898" property="surface_base"/>
+		<surface name="spruce_02_1_tree_lod_1_spruce_trunk_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="9b8dfb23787fa1bd3d0f147885edc2a060f09898" property="surface_base"/>
+		<surface name="spruce_02_1_leaves_lod_1_spruce_leaves_02_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="a8a0082ccf5be0dbfa88a8b70891a85ce2496b58" property="surface_base"/>
+		<surface name="spruce_02_1_tree_lod_0_spruce_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="9b8dfb23787fa1bd3d0f147885edc2a060f09898" property="surface_base"/>
+		<transform>0.99999988 -5.42101086243e-020 -1.73472347598e-017 0.0 -1.08420217249e-019 0.99999988 -1.04083408559e-017 0.0 6.93889390391e-018 3.46944695195e-018 0.99999988 0.0 -7.27595761418e-012 3.63797880709e-012 -2.27373675443e-013 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,829 @@
+ObjectType,Name,InputVarBase,StateVar,OutputVar,StateMachine,States,RequestVar,InhibitVar,InitVal,MinVal,MaxVal,Template,PTStates
+Tier 1,Cab Control
+Tier 2,Driver Desk
+Tier 3,Operating Panel 1
+Component,Emergency Brake PB,EmergencyBrakePB,InputStates.EmergencyBrakePB,0,Toggle,"Off
+On",IRQ_EmergencyBrakePB,INH_EmergencyBrakePB,0,0,1,I,"[0,1]"
+Component,Horn PB,HornPB,InputStates.HornPB,0,Momentary,"Off
+On",IRQ_HornPB,INH_HornPB,0,0,1,I,"[0,1]"
+Component,Horn PB Lamp,0,0,OutputStates.OutputControlStates.HornPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Cab Console Light PB,CabConsoleLightPB,InputStates.CabConsoleLightPB,0,Toggle,"Off
+On",IRQ_CabConsoleLightPB,INH_CabConsoleLightPB,0,0,1,I,"[0,1]"
+Component,Cab Console Light PB Lamp,0,0,OutputStates.OutputControlStates.CabConsoleLight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Cab Console Light,0,0,OutputStates.OutputControlStates.CabConsoleLight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Door Proven Loop Cutout PB,DoorProvenLoopCutoutPB,InputStates.DoorProvenLoopCutoutPB,0,Momentary,"Off
+On",IRQ_DoorProvenLoopCutoutPB,INH_DoorProvenLoopCutoutPB,0,0,1,I,"[0,1]"
+Component,Left Door Close PB Operating Panel 1,LeftDoorClosePBOperatingPanel1,InputStates.LeftDoorClosePBOperatingPanel1,0,Momentary,"Off
+On",IRQ_LeftDoorClosePBOperatingPanel1,INH_LeftDoorClosePBOperatingPanel1,0,0,1,I,"[0,1]"
+Component,Left Door Close PB Operating Panel 1 Lamp,0,0,OutputStates.OutputControlStates.LeftDoorClosePBOperatingPanel1Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Right Door Close PB Operating Panel 1,RightDoorClosePBOperatingPanel1,InputStates.RightDoorClosePBOperatingPanel1,0,Momentary,"Off
+On",IRQ_RightDoorClosePBOperatingPanel1,INH_RightDoorClosePBOperatingPanel1,0,0,1,I,"[0,1]"
+Component,Right Door Close PB Operating Panel 1 Lamp,0,0,OutputStates.OutputControlStates.RightDoorClosePBOperatingPanel1Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Left Door Open PB Operating Panel 1,LeftDoorOpenPBOperatingPanel1,InputStates.LeftDoorOpenPBOperatingPanel1,0,Momentary,"Off
+On",IRQ_LeftDoorOpenPBOperatingPanel1,INH_LeftDoorOpenPBOperatingPanel1,0,0,1,I,"[0,1]"
+Component,Left Door Open PB Operating Panel 1 Lamp,0,0,OutputStates.OutputControlStates.LeftDoorOpenPBOperatingPanel1Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Right Door Open PB Operating Panel 1,RightDoorOpenPBOperatingPanel1,InputStates.RightDoorOpenPBOperatingPanel1,0,Momentary,"Off
+On",IRQ_RightDoorOpenPBOperatingPanel1,INH_RightDoorOpenPBOperatingPanel1,0,0,1,I,"[0,1]"
+Component,Right Door Open PB Operating Panel 1 Lamp,0,0,OutputStates.OutputControlStates.RightDoorOpenPBOperatingPanel1Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Cab Main Light PB,CabMainLightPB,InputStates.CabMainLightPB,0,Toggle,"Off
+On",IRQ_CabMainLightPB,INH_CabMainLightPB,0,0,1,I,"[0,1]"
+Component,Cab Main Light PB Lamp,0,0,OutputStates.OutputControlStates.CabMainLight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Cab Main Light,0,0,OutputStates.OutputControlStates.CabMainLight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Parking Brake On Switch,ParkingBrakeOnSwitch,InputStates.ParkingBrakeOnSwitch,0,Momentary,"Off
+On",IRQ_ParkingBrakeOnSwitch,INH_ParkingBrakeOnSwitch,0,0,1,I,"[0,1]"
+Component,Parking Brake On Switch Lamp,0,0,OutputStates.OutputControlStates.ParkBrakeOnPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Parking Brake Off Switch,ParkingBrakeOffSwitch,InputStates.ParkingBrakeOffSwitch,0,Momentary,"Off
+On",IRQ_ParkingBrakeOffSwitch,INH_ParkingBrakeOffSwitch,0,0,1,I,"[0,1]"
+Component,Parking Brake Off Switch Lamp,0,0,OutputStates.OutputControlStates.ParkBrakeOffPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Door Close Announcement PB,DoorCloseAnnouncementPB,InputStates.DoorCloseAnnouncementPB,0,Momentary,"Off
+On",IRQ_DoorCloseAnnouncementPB,INH_DoorCloseAnnouncementPB,0,0,1,I,"[0,1]"
+Component,Door Close Announcement PB Lamp,0,0,OutputStates.OutputControlStates.DoorCloseAnnouncementLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Tier 3,Operating Panel 3
+Component,ROS PB,ROSPB,InputStates.ROSPB,0,Momentary,"Off
+On",IRQ_ROSPB,INH_ROSPB,0,0,1,I,"[0,1]"
+Component,ROS PB Lamp,0,0,OutputStates.OutputControlStates.ROSPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,UTO PB,UTOPB,InputStates.UTOPB,0,Momentary,"Off
+On",IRQ_UTOPB,INH_UTOPB,0,0,1,I,"[0,1]"
+Component,UTO PB Lamp,0,0,OutputStates.OutputControlStates.UTOPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,ATO Start PB,ATOStartPB,InputStates.ATOStartPB,0,Momentary,"Off
+On",IRQ_ATOStartPB,INH_ATOStartPB,0,0,1,I,"[0,1]"
+Component,ATO Start PB Lamp,0,0,OutputStates.OutputControlStates.ATOStartPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Emergency Brake Reset PB,EmergencyBrakeResetPB,InputStates.EmergencyBrakeResetPB,0,Momentary,"Off
+On",IRQ_EmergencyBrakeResetPB,INH_EmergencyBrakeResetPB,0,0,1,I,"[0,1]"
+Component,Emergency Brake Reset PB Lamp,0,0,OutputStates.OutputControlStates.EBResetPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Tier 3,Gauges
+Component,MR Air Gauge MR Pressure,0,0,OutputStates.PressureGauges.MainReservoirPressureGauge,0,0,0,0,0,0,1200000,O,"[0,1]"
+Component,BC SR Dual Pressure Gauge BC Pressure,0,0,OutputStates.PressureGauges.Bogie[0].BrakeCylinderPressureGauge,0,0,0,0,0,0,1000000,O,"[0,1]"
+Component,BC SR Dual Pressure Gauge SR Pressure,0,0,OutputStates.PressureGauges.SRPressureGauge,0,0,0,0,0,0,1000000,O,"[0,1]"
+Tier 3,Master Controller
+Component,Control Key,ControlKey,InputStates.ControlKey,0,Toggle,"Off
+On",IRQ_ControlKey,INH_ControlKey,0,0,1,I,"[0,1]"
+Component,Mode Selector,ModeSelector,InputStates.ModeSelector,0,Increment,"Off UTO
+Reverse
+Standby
+Forword
+ATP
+ATO",IRQ_ModeSelector,INH_ModeSelector,0,0,5,I,"[0,1,2,3,4,5]"
+Component,Master Controller Handle,MasterControllerHandle,InputStates.MasterControllerHandle,0,Increment,"EB
+Bmax
+Bmin
+Off
+Pmin
+Pmin",IRQ_MasterControllerHandle,INH_MasterControllerHandle,-100,-101,100,I,"[-101,-100,-90,-80,-70,-60,-50,-40,-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100]"
+Component,Deadman Safety Device,DeadmanSafetyDevice,InputStates.DeadmanSafetyDevice,0,Toggle,"Off
+On",IRQ_DeadmanSafetyDevice,INH_DeadmanSafetyDevice,0,0,1,I,"[0,1]"
+Tier 2,Driver Desk Left
+Tier 3,Operating Panel 2
+Component,Call On Light PB,CallOnLightPB,InputStates.CallOnLightPB,0,Toggle,"Off
+On",IRQ_CallOnLightPB,INH_CallOnLightPB,0,0,1,I,"[0,1]"
+Component,Call On Light PB Lamp,0,0,OutputStates.OutputControlStates.CallOnLightPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,VCB Open PB,VCBOpenPB,InputStates.VCBOpenPB,0,Momentary,"Off
+On",IRQ_VCBOpenPB,INH_VCBOpenPB,0,0,1,I,"[0,1]"
+Component,VCB Open PB Lamp,0,0,OutputStates.OutputControlStates.VCBOpenPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Wiper Selection Switch,WiperSelectionSwitch,InputStates.WiperSelectionSwitch,0,Increment,"All
+Left
+Middle
+Right",IRQ_WiperSelectionSwitch,INH_WiperSelectionSwitch,0,0,3,I,"[0,1,2,3]"
+Component,Wiper Pump,WiperPump,InputStates.WiperPump,0,Momentary,"Off
+On",IRQ_WiperPump,INH_WiperPump,0,0,1,I,"[0,1]"
+Component,LIMP Home PB,LIMPHomePB,InputStates.LIMPHomePB,0,Toggle,"Off
+On",IRQ_LIMPHomePB,INH_LIMPHomePB,0,0,1,I,"[0,1]"
+Component,LIMP Home PB Lamp,0,0,OutputStates.OutputControlStates.LIMPHomePBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Power Off PB,PowerOffPB,InputStates.PowerOffPB,0,Momentary,"Off
+On",IRQ_PowerOffPB,INH_PowerOffPB,0,0,1,I,"[0,1]"
+Component,Power Off PB Lamp,0,0,OutputStates.OutputControlStates.PowerOFFPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Panto Down PB,PantoDownPB,InputStates.PantoDownPB,0,Momentary,"Off
+On",IRQ_PantoDownPB,INH_PantoDownPB,0,0,1,I,"[0,1]"
+Component,Panto Down PB Lamp,0,0,OutputStates.OutputControlStates.PantoDownPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,VCB Close PB,VCBClosePB,InputStates.VCBClosePB,0,Momentary,"Off
+On",IRQ_VCBClosePB,INH_VCBClosePB,0,0,1,I,"[0,1]"
+Component,VCB Close PB Lamp,0,0,OutputStates.OutputControlStates.VCBClosePBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Left Door Open PB Operating Panel 2,LeftDoorOpenPBOperatingPanel2,InputStates.LeftDoorOpenPBOperatingPanel2,0,Momentary,"Off
+On",IRQ_LeftDoorOpenPBOperatingPanel2,INH_LeftDoorOpenPBOperatingPanel2,0,0,1,I,"[0,1]"
+Component,Left Door Open PB Operating Panel 2 Lamp,0,0,OutputStates.OutputControlStates.LeftDoorOpenPBOperatingPanel2Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Left Door Open PB 1 Operating Panel 2,LeftDoorOpenPB1OperatingPanel2,InputStates.LeftDoorOpenPB1OperatingPanel2,0,Momentary,"Off
+On",IRQ_LeftDoorOpenPB1OperatingPanel2,INH_LeftDoorOpenPB1OperatingPanel2,0,0,1,I,"[0,1]"
+Component,Left Door Open PB 1 Operating Panel 2 Lamp,0,0,OutputStates.OutputControlStates.LeftDoorOpenPB1OperatingPanel2Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Left Door Close PB Operating Panel 2,LeftDoorClosePBOperatingPanel2,InputStates.LeftDoorClosePBOperatingPanel2,0,Momentary,"Off
+On",IRQ_LeftDoorClosePBOperatingPanel2,INH_LeftDoorClosePBOperatingPanel2,0,0,1,I,"[0,1]"
+Component,Left Door Close PB Operating Panel 2 Lamp,0,0,OutputStates.OutputControlStates.LeftDoorClosePBOperatingPanel2Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Panto Up PB,PantoUpPB,InputStates.PantoUpPB,0,Momentary,"Off
+On",IRQ_PantoUpPB,INH_PantoUpPB,0,0,1,I,"[0,1]"
+Component,Panto Up PB Lamp,0,0,OutputStates.OutputControlStates.PantoUpPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Safety Cutout SS,SafetyCutoutSS,InputStates.SafetyCutoutSS,0,Toggle,"Normal
+Cutout",IRQ_SafetyCutoutSS,INH_SafetyCutoutSS,0,0,1,I,"[0,1]"
+Component,Brake Loop Cutout SS,BrakeLoopCutoutSS,InputStates.BrakeLoopCutoutSS,0,Toggle,"Normal
+Cutout",IRQ_BrakeLoopCutoutSS,INH_BrakeLoopCutoutSS,0,0,1,I,"[0,1]"
+Component,Panto Selector,PantoSelector,InputStates.PantoSelector,0,Increment,"Unit All
+Unit 3
+Unit 2
+Unit 1",IRQ_PantoSelector,INH_PantoSelector,0,0,3,I,"[0,1,2,3]"
+Component,Deadman Bypass Switch,DeadmanBypassSwitch,InputStates.DeadmanBypassSwitch,0,Toggle,"Normal
+Cutout",IRQ_DeadmanBypassSwitch,INH_DeadmanBypassSwitch,0,0,1,I,"[0,1]"
+Component,Head Light Switch,HeadLightSwitch,InputStates.HeadLightSwitch,0,Increment,"Off
+Low
+High",IRQ_HeadLightSwitch,INH_HeadLightSwitch,0,0,2,I,"[0,1,2]"
+Tier 3,Operating Panel 4
+Component,APS Fault Indicator,0,0,OutputStates.OutputControlStates.APSFaultIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Power Fault Indicator,0,0,OutputStates.OutputControlStates.PowerFaultIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Emergency Brake Indicator,0,0,OutputStates.OutputControlStates.EmergencyBrakeIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,VCB Trip Indicator,0,0,OutputStates.OutputControlStates.VCBTripIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Line Voltage Indicator,0,0,OutputStates.OutputControlStates.LineVoltageIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Other Cab Occupied Indicator,0,0,OutputStates.OutputControlStates.OtherCabOccupiedIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Parking Brake Indicator,0,0,OutputStates.OutputControlStates.ParkBrakeApplyPBLight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,All Door Close Indicator,0,0,OutputStates.OutputControlStates.AllDoorsClosedLight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,HVAC Fault Indicator,0,0,OutputStates.OutputControlStates.HVACFaultIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Saloon Door Close Indicator,0,0,OutputStates.OutputControlStates.SaloonDoorCloseIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Tier 2,Driver Desk Right
+Tier 3,Operating Panel 5
+Component,Uncouple PB,UncouplePB,InputStates.UncouplePB,0,Momentary,"Off
+On",IRQ_UncouplePB,INH_UncouplePB,0,0,1,I,"[0,1]"
+Component,Uncouple PB Lamp,0,0,OutputStates.OutputControlStates.UncouplePBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Flasher Light PB,FlasherLightPB,InputStates.FlasherLightPB,0,Toggle,"Off
+On",IRQ_FlasherLightPB,INH_FlasherLightPB,0,0,1,I,"[0,1]"
+Component,Flasher Light PB Lamp,0,0,OutputStates.OutputControlStates.FlasherLightPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Flood Light PB,FloodLightPB,InputStates.FloodLightPB,0,Toggle,"Off
+On",IRQ_FloodLightPB,INH_FloodLightPB,0,0,1,I,"[0,1]"
+Component,Flood Light PB Lamp,0,0,OutputStates.OutputControlStates.FloodLightPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Battery Reset PB,BatteryResetPB,InputStates.BatteryResetPB,0,Momentary,"Off
+On",IRQ_BatteryResetPB,INH_BatteryResetPB,0,0,1,I,"[0,1]"
+Component,Battery Reset PB Lamp,0,0,OutputStates.OutputControlStates.BatteryResetPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Right Door Open PB Operating Panel 5,RightDoorOpenPBOperatingPanel5,InputStates.RightDoorOpenPBOperatingPanel5,0,Momentary,"Off
+On",IRQ_RightDoorOpenPBOperatingPanel5,INH_RightDoorOpenPBOperatingPanel5,0,0,1,I,"[0,1]"
+Component,Right Door Open PB Operating Panel 5 Lamp,0,0,OutputStates.OutputControlStates.RightDoorOpenPBOperatingPanel5Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Right Door Open PB 1 Operating Panel 5,RightDoorOpenPB1OperatingPanel5,InputStates.RightDoorOpenPB1OperatingPanel5,0,Momentary,"Off
+On",IRQ_RightDoorOpenPB1OperatingPanel5,INH_RightDoorOpenPB1OperatingPanel5,0,0,1,I,"[0,1]"
+Component,Right Door Open PB 1 Operating Panel 5 Lamp,0,0,OutputStates.OutputControlStates.RightDoorOpenPB1OperatingPanel5Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Right Door Close PB Operating Panel 5,RightDoorClosePBOperatingPanel5,InputStates.RightDoorClosePBOperatingPanel5,0,Momentary,"Off
+On",IRQ_RightDoorClosePBOperatingPanel5,INH_RightDoorClosePBOperatingPanel5,0,0,1,I,"[0,1]"
+Component,Right Door Close PB Operating Panel 5 Lamp,0,0,OutputStates.OutputControlStates.RightDoorClosePBOperatingPanel5Lamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Door Proven Loop Output Switch,DoorProvenLoopOutputSwitch,InputStates.DoorProvenLoopOutputSwitch,0,Toggle,"Normal
+Cutout",IRQ_DoorProvenLoopOutputSwitch,INH_DoorProvenLoopOutputSwitch,0,0,1,I,"[0,1]"
+Component,Lamp Test PB,LampTestPB,InputStates.LampTestPB,0,Toggle,"Off
+On",IRQ_LampTestPB,INH_LampTestPB,0,0,1,I,"[0,1]"
+Component,Lamp Test PB Lamp,0,0,OutputStates.OutputControlStates.LampTestPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,WFL Test PB,WFLTestPB,InputStates.WFLTestPB,0,Toggle,"Off
+On",IRQ_WFLTestPB,INH_WFLTestPB,0,0,1,I,"[0,1]"
+Component,WFL Test PB Lamp,0,0,OutputStates.OutputControlStates.WFLTestPBLamp,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Wiper Control Switch,WiperControlSwitch,InputStates.WiperControlSwitch,0,Increment,"
+Park
+Off
+Low Speed
+High Speed",IRQ_WiperControlSwitch,INH_WiperControlSwitch,0,-1,2,I,"[-1,0,1,2]"
+Component,Emergency Stop PB,EmergencyStopPB,InputStates.EmergencyStopPB,0,Toggle,"Off
+On",IRQ_EmergencyStopPB,INH_EmergencyStopPB,0,0,1,I,"[0,1]"
+Component,Hold Door Close Bypass SS,HoldDoorCloseBypassSS,InputStates.HoldDoorCloseBypassSS,0,Increment,"Normal
+HDCB Left
+HDCB Right",IRQ_HoldDoorCloseBypassSS,INH_HoldDoorCloseBypassSS,0,0,2,I,"[0,1,2]"
+Component,Cab Booster Fan SS,CabBoosterFanSS,InputStates.CabBoosterFanSS,0,Increment,"Off
+Low Speed
+High Speed",IRQ_CabBoosterFanSS,INH_CabBoosterFanSS,0,0,2,I,"[0,1,2]"
+Component,Emergency Brake PB Bypass SS,EmergencyBrakePBBypassSS,InputStates.EmergencyBrakePBBypassSS,0,Toggle,"Normal
+Bypass",IRQ_EmergencyBrakePBBypassSS,INH_EmergencyBrakePBBypassSS,0,0,1,I,"[0,1]"
+Tier 2,Drivers Side Coving Panel
+Component,Cab EED Left,CabEEDLeft,InputStates.CabEEDLeft,0,Momentary,"Normal
+Unlock",IRQ_CabEEDLeft,INH_CabEEDLeft,0,0,1,I,"[0,1]"
+Tier 2,Non-drivers Side Coving Panel
+Component,Cab EED Right,CabEEDRight,InputStates.CabEEDRight,0,Momentary,"Normal
+Unlock",IRQ_CabEEDRight,INH_CabEEDRight,0,0,1,I,"[0,1]"
+Tier 2,Emergency Door
+Component,Safety Cover,SafetyCover,InputStates.SafetyCover,0,Toggle,"Normal
+Broken",IRQ_SafetyCover,INH_SafetyCover,0,0,1,I,"[0,1]"
+Component,Dummy Cover,DummyCover,InputStates.DummyCover,0,Toggle,"Applied
+Removed",IRQ_DummyCover,INH_DummyCover,0,0,1,I,"[0,1]"
+Component,Door Indicator,0,0,OutputStates.EmergencyDoor.LockingLeverUnlockAuth,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Ramp Cover Locking Lever,RampCoverLockingLever,InputStates.RampCoverLockingLever,0,Toggle,"Close
+Open",IRQ_RampCoverLockingLever,INH_RampCoverLockingLever,0,0,1,I,"[0,1]"
+Component,Ramp Cover,RampCover,InputStates.RampCover,0,Toggle,"Closed
+Open",IRQ_RampCover,INH_RampCover,0,0,1,I,"[0,1]"
+Component,Ramp Handle,RampHandle,InputStates.RampHandle,0,Toggle,"Not Pushed
+Pushed",IRQ_RampHandle,INH_RampHandle,0,0,1,I,"[0,1]"
+Component,Ramp,0,0,OutputStates.EmergencyDoor.Ramp,0,"Folded
+Unfolded",0,0,0,0,1,O,"[0,1]"
+Component,Emergency Door,0,0,OutputStates.EmergencyDoor.EmergencyDoorOpen,0,"Closed
+Open",0,0,0,0,1,O,"[0,1]"
+Component,Ramp End Support,RampEndSupport,InputStates.RampEndSupport,0,Toggle,"Closed
+Open",IRQ_RampEndSupport,INH_RampEndSupport,0,0,1,I,"[0,1]"
+Component,Ramp Middle Support,RampMiddleSupport,InputStates.RampMiddleSupport,0,Toggle,"Closed
+Open",IRQ_RampMiddleSupport,INH_RampMiddleSupport,0,0,1,I,"[0,1]"
+Component,Winder Handles Access Cover,WinderHandlesAccessCover,InputStates.WinderHandlesAccessCover,0,Toggle,"Closed
+Open",IRQ_WinderHandlesAccessCover,INH_WinderHandlesAccessCover,0,0,1,I,"[0,1]"
+Component,Large Handle,LargeHandle,InputStates.LargeHandle,0,Toggle,"Stowed
+Applied",IRQ_LargeHandle,INH_LargeHandle,0,0,1,I,"[0,1]"
+Component,Ramp Winder,RampWinder,InputStates.RampWinder,0,Rotary,"Do Nothing
+int1
+int2
+int3
+int4
+int5
+int6
+int7
+int8
+int9
+int10
+int11
+Wind",IRQ_RampWinder,INH_RampWinder,0,0,12,I,"[0,1,2,3,4,5,6,7,8,9,10,11,12]"
+Component,Small Handle,SmallHandle,InputStates.SmallHandle,0,Toggle,"Stowed
+Applied",IRQ_SmallHandle,INH_SmallHandle,0,0,1,I,"[0,1]"
+Component,Emergency Door Gas Spring,EmergencyDoorGasSpring,InputStates.EmergencyDoorGasSpring,0,Toggle,"Locked
+unlocked",IRQ_EmergencyDoorGasSpring,INH_EmergencyDoorGasSpring,0,0,1,I,"[0,1]"
+Component,Door Winder,DoorWinder,InputStates.DoorWinder,0,Rotary,"Do Nothing
+int1
+int2
+int3
+int4
+int5
+int6
+int7
+int8
+int9
+int10
+int11
+Wind",IRQ_DoorWinder,INH_DoorWinder,0,0,12,I,"[0,1,2,3,4,5,6,7,8,9,10,11,12]"
+Component,Ramp Support Down,0,0,OutputStates.EmergencyDoor.RampSupportDown,0,"Folded
+Unfolded",0,0,0,0,1,O,"[0,1]"
+Component,Gas Spring Locked,0,0,OutputStates.EmergencyDoor.GasSpringLocked,0,"Closed
+Open",0,0,0,0,1,O,"[0,1]"
+Tier 1,Non-Cab Control
+Tier 2,Circuit Breakers of EDB
+Component,EBLR2CB,EBLR2CB,InputStates.EBLR2CB,MCBTripStates.EBLR2CB,MCB,"Tripped
+Set",IRQ_EBLR2CB,INH_EBLR2CB,1,0,1,M,"[0,1]"
+Component,EBMVCB,EBMVCB,InputStates.EBMVCB,MCBTripStates.EBMVCB,MCB,"Tripped
+Set",IRQ_EBMVCB,INH_EBMVCB,1,0,1,M,"[0,1]"
+Component,EDCB,EDCB,InputStates.EDCB,MCBTripStates.EDCB,MCB,"Tripped
+Set",IRQ_EDCB,INH_EDCB,1,0,1,M,"[0,1]"
+Component,ELCB1,ELCB1,InputStates.ELCB1,MCBTripStates.ELCB1,MCB,"Tripped
+Set",IRQ_ELCB1,INH_ELCB1,1,0,1,M,"[0,1]"
+Component,ELCB2,ELCB2,InputStates.ELCB2,MCBTripStates.ELCB2,MCB,"Tripped
+Set",IRQ_ELCB2,INH_ELCB2,1,0,1,M,"[0,1]"
+Component,ERCB,ERCB,InputStates.ERCB,MCBTripStates.ERCB,MCB,"Tripped
+Set",IRQ_ERCB,INH_ERCB,1,0,1,M,"[0,1]"
+Component,HCB,HCB,InputStates.HCB,MCBTripStates.HCB,MCB,"Tripped
+Set",IRQ_HCB,INH_HCB,1,0,1,M,"[0,1]"
+Component,HLLCB,HLLCB,InputStates.HLLCB,MCBTripStates.HLLCB,MCB,"Tripped
+Set",IRQ_HLLCB,INH_HLLCB,1,0,1,M,"[0,1]"
+Component,HLRCB,HLRCB,InputStates.HLRCB,MCBTripStates.HLRCB,MCB,"Tripped
+Set",IRQ_HLRCB,INH_HLRCB,1,0,1,M,"[0,1]"
+Component,ILCB1,ILCB1,InputStates.ILCB1,MCBTripStates.ILCB1,MCB,"Tripped
+Set",IRQ_ILCB1,INH_ILCB1,1,0,1,M,"[0,1]"
+Component,ILCB2,ILCB2,InputStates.ILCB2,MCBTripStates.ILCB2,MCB,"Tripped
+Set",IRQ_ILCB2,INH_ILCB2,1,0,1,M,"[0,1]"
+Component,LDICB,LDICB,InputStates.LDICB,MCBTripStates.LDICB,MCB,"Tripped
+Set",IRQ_LDICB,INH_LDICB,1,0,1,M,"[0,1]"
+Component,LDLCB,LDLCB,InputStates.LDLCB,MCBTripStates.LDLCB,MCB,"Tripped
+Set",IRQ_LDLCB,INH_LDLCB,1,0,1,M,"[0,1]"
+Component,LDRCB,LDRCB,InputStates.LDRCB,MCBTripStates.LDRCB,MCB,"Tripped
+Set",IRQ_LDRCB,INH_LDRCB,1,0,1,M,"[0,1]"
+Component,MLCB,MLCB,InputStates.MLCB,MCBTripStates.MLCB,MCB,"Tripped
+Set",IRQ_MLCB,INH_MLCB,1,0,1,M,"[0,1]"
+Component,MMCB,MMCB,InputStates.MMCB,MCBTripStates.MMCB,MCB,"Tripped
+Set",IRQ_MMCB,INH_MMCB,1,0,1,M,"[0,1]"
+Component,NBCB,NBCB,InputStates.NBCB,MCBTripStates.NBCB,MCB,"Tripped
+Set",IRQ_NBCB,INH_NBCB,1,0,1,M,"[0,1]"
+Component,NVICB,NVICB,InputStates.NVICB,MCBTripStates.NVICB,MCB,"Tripped
+Set",IRQ_NVICB,INH_NVICB,1,0,1,M,"[0,1]"
+Component,OCCB1,OCCB1,InputStates.OCCB1,MCBTripStates.OCCB1,MCB,"Tripped
+Set",IRQ_OCCB1,INH_OCCB1,1,0,1,M,"[0,1]"
+Component,OCCB2,OCCB2,InputStates.OCCB2,MCBTripStates.OCCB2,MCB,"Tripped
+Set",IRQ_OCCB2,INH_OCCB2,1,0,1,M,"[0,1]"
+Component,ODDCB,ODDCB,InputStates.ODDCB,MCBTripStates.ODDCB,MCB,"Tripped
+Set",IRQ_ODDCB,INH_ODDCB,1,0,1,M,"[0,1]"
+Component,PBCB,PBCB,InputStates.PBCB,MCBTripStates.PBCB,MCB,"Tripped
+Set",IRQ_PBCB,INH_PBCB,1,0,1,M,"[0,1]"
+Component,PISCB1,PISCB1,InputStates.PISCB1,MCBTripStates.PISCB1,MCB,"Tripped
+Set",IRQ_PISCB1,INH_PISCB1,1,0,1,M,"[0,1]"
+Component,PISCB2,PISCB2,InputStates.PISCB2,MCBTripStates.PISCB2,MCB,"Tripped
+Set",IRQ_PISCB2,INH_PISCB2,1,0,1,M,"[0,1]"
+Component,POCB,POCB,InputStates.POCB,MCBTripStates.POCB,MCB,"Tripped
+Set",IRQ_POCB,INH_POCB,1,0,1,M,"[0,1]"
+Component,PPU1CB,PPU1CB,InputStates.PPU1CB,MCBTripStates.PPU1CB,MCB,"Tripped
+Set",IRQ_PPU1CB,INH_PPU1CB,1,0,1,M,"[0,1]"
+Component,PPU2CB,PPU2CB,InputStates.PPU2CB,MCBTripStates.PPU2CB,MCB,"Tripped
+Set",IRQ_PPU2CB,INH_PPU2CB,1,0,1,M,"[0,1]"
+Component,PPU3CB,PPU3CB,InputStates.PPU3CB,MCBTripStates.PPU3CB,MCB,"Tripped
+Set",IRQ_PPU3CB,INH_PPU3CB,1,0,1,M,"[0,1]"
+Component,RIO1CB,RIO1CB,InputStates.RIO1CB,MCBTripStates.RIO1CB,MCB,"Tripped
+Set",IRQ_RIO1CB,INH_RIO1CB,1,0,1,M,"[0,1]"
+Component,RIO2CB,RIO2CB,InputStates.RIO2CB,MCBTripStates.RIO2CB,MCB,"Tripped
+Set",IRQ_RIO2CB,INH_RIO2CB,1,0,1,M,"[0,1]"
+Component,SIOCB1,SIOCB1,InputStates.SIOCB1,MCBTripStates.SIOCB1,MCB,"Tripped
+Set",IRQ_SIOCB1,INH_SIOCB1,1,0,1,M,"[0,1]"
+Component,SIOCB2,SIOCB2,InputStates.SIOCB2,MCBTripStates.SIOCB2,MCB,"Tripped
+Set",IRQ_SIOCB2,INH_SIOCB2,1,0,1,M,"[0,1]"
+Component,SSICB,SSICB,InputStates.SSICB,MCBTripStates.SSICB,MCB,"Tripped
+Set",IRQ_SSICB,INH_SSICB,1,0,1,M,"[0,1]"
+Component,TBCCB1,TBCCB1,InputStates.TBCCB1,MCBTripStates.TBCCB1,MCB,"Tripped
+Set",IRQ_TBCCB1,INH_TBCCB1,1,0,1,M,"[0,1]"
+Component,TBCCB2,TBCCB2,InputStates.TBCCB2,MCBTripStates.TBCCB2,MCB,"Tripped
+Set",IRQ_TBCCB2,INH_TBCCB2,1,0,1,M,"[0,1]"
+Component,TBNCB,TBNCB,InputStates.TBNCB,MCBTripStates.TBNCB,MCB,"Tripped
+Set",IRQ_TBNCB,INH_TBNCB,1,0,1,M,"[0,1]"
+Component,TDICB,TDICB,InputStates.TDICB,MCBTripStates.TDICB,MCB,"Tripped
+Set",IRQ_TDICB,INH_TDICB,1,0,1,M,"[0,1]"
+Component,TLLCB,TLLCB,InputStates.TLLCB,MCBTripStates.TLLCB,MCB,"Tripped
+Set",IRQ_TLLCB,INH_TLLCB,1,0,1,M,"[0,1]"
+Component,TLRCB,TLRCB,InputStates.TLRCB,MCBTripStates.TLRCB,MCB,"Tripped
+Set",IRQ_TLRCB,INH_TLRCB,1,0,1,M,"[0,1]"
+Component,TRIVCB,TRIVCB,InputStates.TRIVCB,MCBTripStates.TRIVCB,MCB,"Tripped
+Set",IRQ_TRIVCB,INH_TRIVCB,1,0,1,M,"[0,1]"
+Component,TVDUCB,TVDUCB,InputStates.TVDUCB,MCBTripStates.TVDUCB,MCB,"Tripped
+Set",IRQ_TVDUCB,INH_TVDUCB,1,0,1,M,"[0,1]"
+Component,TWVCB,TWVCB,InputStates.TWVCB,MCBTripStates.TWVCB,MCB,"Tripped
+Set",IRQ_TWVCB,INH_TWVCB,1,0,1,M,"[0,1]"
+Component,VCCB Or UCCB,VCCBOrUCCB,InputStates.VCCBOrUCCB,MCBTripStates.VCCBOrUCCB,MCB,"Tripped
+Set",IRQ_VCCBOrUCCB,INH_VCCBOrUCCB,1,0,1,M,"[0,1]"
+Component,VCBCCB,VCBCCB,InputStates.VCBCCB,MCBTripStates.VCBCCB,MCB,"Tripped
+Set",IRQ_VCBCCB,INH_VCBCCB,1,0,1,M,"[0,1]"
+Component,VIO1CB,VIO1CB,InputStates.VIO1CB,MCBTripStates.VIO1CB,MCB,"Tripped
+Set",IRQ_VIO1CB,INH_VIO1CB,1,0,1,M,"[0,1]"
+Component,VIO2CB,VIO2CB,InputStates.VIO2CB,MCBTripStates.VIO2CB,MCB,"Tripped
+Set",IRQ_VIO2CB,INH_VIO2CB,1,0,1,M,"[0,1]"
+Component,WFLCB,WFLCB,InputStates.WFLCB,MCBTripStates.WFLCB,MCB,"Tripped
+Set",IRQ_WFLCB,INH_WFLCB,1,0,1,M,"[0,1]"
+Component,WIFICB,WIFICB,InputStates.WIFICB,MCBTripStates.WIFICB,MCB,"Tripped
+Set",IRQ_WIFICB,INH_WIFICB,1,0,1,M,"[0,1]"
+Component,WWCB,WWCB,InputStates.WWCB,MCBTripStates.WWCB,MCB,"Tripped
+Set",IRQ_WWCB,INH_WWCB,1,0,1,M,"[0,1]"
+Component,BECUCB1,BECUCB1,InputStates.BECUCB1,MCBTripStates.BECUCB1,MCB,"Tripped
+Set",IRQ_BECUCB1,INH_BECUCB1,1,0,1,M,"[0,1]"
+Component,BECUCB2,BECUCB2,InputStates.BECUCB2,MCBTripStates.BECUCB2,MCB,"Tripped
+Set",IRQ_BECUCB2,INH_BECUCB2,1,0,1,M,"[0,1]"
+Component,BECUCB3,BECUCB3,InputStates.BECUCB3,MCBTripStates.BECUCB3,MCB,"Tripped
+Set",IRQ_BECUCB3,INH_BECUCB3,1,0,1,M,"[0,1]"
+Component,RSACB,RSACB,InputStates.RSACB,MCBTripStates.RSACB,MCB,"Tripped
+Set",IRQ_RSACB,INH_RSACB,1,0,1,M,"[0,1]"
+Component,CMCCB,CMCCB,InputStates.CMCCB,MCBTripStates.CMCCB,MCB,"Tripped
+Set",IRQ_CMCCB,INH_CMCCB,1,0,1,M,"[0,1]"
+Component,CILCB,CILCB,InputStates.CILCB,MCBTripStates.CILCB,MCB,"Tripped
+Set",IRQ_CILCB,INH_CILCB,1,0,1,M,"[0,1]"
+Component,CICB,CICB,InputStates.CICB,MCBTripStates.CICB,MCB,"Tripped
+Set",IRQ_CICB,INH_CICB,1,0,1,M,"[0,1]"
+Component,CELCB,CELCB,InputStates.CELCB,MCBTripStates.CELCB,MCB,"Tripped
+Set",IRQ_CELCB,INH_CELCB,1,0,1,M,"[0,1]"
+Component,CECB,CECB,InputStates.CECB,MCBTripStates.CECB,MCB,"Tripped
+Set",IRQ_CECB,INH_CECB,1,0,1,M,"[0,1]"
+Component,CDUCB,CDUCB,InputStates.CDUCB,MCBTripStates.CDUCB,MCB,"Tripped
+Set",IRQ_CDUCB,INH_CDUCB,1,0,1,M,"[0,1]"
+Component,CCNVIO1CB,CCNVIO1CB,InputStates.CCNVIO1CB,MCBTripStates.CCNVIO1CB,MCB,"Tripped
+Set",IRQ_CCNVIO1CB,INH_CCNVIO1CB,1,0,1,M,"[0,1]"
+Component,CBTCCB1,CBTCCB1,InputStates.CBTCCB1,MCBTripStates.CBTCCB1,MCB,"Tripped
+Set",IRQ_CBTCCB1,INH_CBTCCB1,1,0,1,M,"[0,1]"
+Component,CBFCCB,CBFCCB,InputStates.CBFCCB,MCBTripStates.CBFCCB,MCB,"Tripped
+Set",IRQ_CBFCCB,INH_CBFCCB,1,0,1,M,"[0,1]"
+Component,CBFCB,CBFCB,InputStates.CBFCB,MCBTripStates.CBFCB,MCB,"Tripped
+Set",IRQ_CBFCB,INH_CBFCB,1,0,1,M,"[0,1]"
+Component,C1CB,C1CB,InputStates.C1CB,MCBTripStates.C1CB,MCB,"Tripped
+Set",IRQ_C1CB,INH_C1CB,1,0,1,M,"[0,1]"
+Component,BLCB,BLCB,InputStates.BLCB,MCBTripStates.BLCB,MCB,"Tripped
+Set",IRQ_BLCB,INH_BLCB,1,0,1,M,"[0,1]"
+Component,ZVBACB,ZVBACB,InputStates.ZVBACB,MCBTripStates.ZVBACB,MCB,"Tripped
+Set",IRQ_ZVBACB,INH_ZVBACB,1,0,1,M,"[0,1]"
+Component,EBLR1CB,EBLR1CB,InputStates.EBLR1CB,MCBTripStates.EBLR1CB,MCB,"Tripped
+Set",IRQ_EBLR1CB,INH_EBLR1CB,1,0,1,M,"[0,1]"
+Component,DRCB,DRCB,InputStates.DRCB,MCBTripStates.DRCB,MCB,"Tripped
+Set",IRQ_DRCB,INH_DRCB,1,0,1,M,"[0,1]"
+Component,DPLCB,DPLCB,InputStates.DPLCB,MCBTripStates.DPLCB,MCB,"Tripped
+Set",IRQ_DPLCB,INH_DPLCB,1,0,1,M,"[0,1]"
+Component,DMICB,DMICB,InputStates.DMICB,MCBTripStates.DMICB,MCB,"Tripped
+Set",IRQ_DMICB,INH_DMICB,1,0,1,M,"[0,1]"
+Component,DLCB,DLCB,InputStates.DLCB,MCBTripStates.DLCB,MCB,"Tripped
+Set",IRQ_DLCB,INH_DLCB,1,0,1,M,"[0,1]"
+Component,DIOCB2,DIOCB2,InputStates.DIOCB2,MCBTripStates.DIOCB2,MCB,"Tripped
+Set",IRQ_DIOCB2,INH_DIOCB2,1,0,1,M,"[0,1]"
+Component,DIOCB1,DIOCB1,InputStates.DIOCB1,MCBTripStates.DIOCB1,MCB,"Tripped
+Set",IRQ_DIOCB1,INH_DIOCB1,1,0,1,M,"[0,1]"
+Component,CSCCB,CSCCB,InputStates.CSCCB,MCBTripStates.CSCCB,MCB,"Tripped
+Set",IRQ_CSCCB,INH_CSCCB,1,0,1,M,"[0,1]"
+Component,CSBCB,CSBCB,InputStates.CSBCB,MCBTripStates.CSBCB,MCB,"Tripped
+Set",IRQ_CSBCB,INH_CSBCB,1,0,1,M,"[0,1]"
+Component,CSACB,CSACB,InputStates.CSACB,MCBTripStates.CSACB,MCB,"Tripped
+Set",IRQ_CSACB,INH_CSACB,1,0,1,M,"[0,1]"
+Component,CRSBCB,CRSBCB,InputStates.CRSBCB,MCBTripStates.CRSBCB,MCB,"Tripped
+Set",IRQ_CRSBCB,INH_CRSBCB,1,0,1,M,"[0,1]"
+Component,SOCB2,SOCB2,InputStates.SOCB2,MCBTripStates.SOCB2,MCB,"Tripped
+Set",IRQ_SOCB2,INH_SOCB2,1,0,1,M,"[0,1]"
+Component,SOCB1,SOCB1,InputStates.SOCB1,MCBTripStates.SOCB1,MCB,"Tripped
+Set",IRQ_SOCB1,INH_SOCB1,1,0,1,M,"[0,1]"
+Component,MSOCB5,MSOCB5,InputStates.MSOCB5,MCBTripStates.MSOCB5,MCB,"Tripped
+Set",IRQ_MSOCB5,INH_MSOCB5,1,0,1,M,"[0,1]"
+Component,MSOCB4,MSOCB4,InputStates.MSOCB4,MCBTripStates.MSOCB4,MCB,"Tripped
+Set",IRQ_MSOCB4,INH_MSOCB4,1,0,1,M,"[0,1]"
+Component,MSOCB3,MSOCB3,InputStates.MSOCB3,MCBTripStates.MSOCB3,MCB,"Tripped
+Set",IRQ_MSOCB3,INH_MSOCB3,1,0,1,M,"[0,1]"
+Component,MSOCB2,MSOCB2,InputStates.MSOCB2,MCBTripStates.MSOCB2,MCB,"Tripped
+Set",IRQ_MSOCB2,INH_MSOCB2,1,0,1,M,"[0,1]"
+Component,MSOCB1,MSOCB1,InputStates.MSOCB1,MCBTripStates.MSOCB1,MCB,"Tripped
+Set",IRQ_MSOCB1,INH_MSOCB1,1,0,1,M,"[0,1]"
+Component,HVAC1,HVAC1,InputStates.HVAC1,MCBTripStates.HVAC1,MCB,"Tripped
+Set",IRQ_HVAC1,INH_HVAC1,1,0,1,M,"[0,1]"
+Component,SAC2CCB,SAC2CCB,InputStates.SAC2CCB,MCBTripStates.SAC2CCB,MCB,"Tripped
+Set",IRQ_SAC2CCB,INH_SAC2CCB,1,0,1,M,"[0,1]"
+Component,HVAC2,HVAC2,InputStates.HVAC2,MCBTripStates.HVAC2,MCB,"Tripped
+Set",IRQ_HVAC2,INH_HVAC2,1,0,1,M,"[0,1]"
+Component,SAC1CCB,SAC1CCB,InputStates.SAC1CCB,MCBTripStates.SAC1CCB,MCB,"Tripped
+Set",IRQ_SAC1CCB,INH_SAC1CCB,1,0,1,M,"[0,1]"
+Component,CMCB,CMCB,InputStates.CMCB,MCBTripStates.CMCB,MCB,"Tripped
+Set",IRQ_CMCB,INH_CMCB,1,0,1,M,"[0,1]"
+Component,AC2CB,AC2CB,InputStates.AC2CB,MCBTripStates.AC2CB,MCB,"Tripped
+Set",IRQ_AC2CB,INH_AC2CB,1,0,1,M,"[0,1]"
+Component,AC1CB,AC1CB,InputStates.AC1CB,MCBTripStates.AC1CB,MCB,"Tripped
+Set",IRQ_AC1CB,INH_AC1CB,1,0,1,M,"[0,1]"
+Component,FDSCB,FDSCB,InputStates.FDSCB,MCBTripStates.FDSCB,MCB,"Tripped
+Set",IRQ_FDSCB,INH_FDSCB,1,0,1,M,"[0,1]"
+Component,BCBCB,BCBCB,InputStates.BCBCB,MCBTripStates.BCBCB,MCB,"Tripped
+Set",IRQ_BCBCB,INH_BCBCB,1,0,1,M,"[0,1]"
+Component,ERVRCB1,ERVRCB1,InputStates.ERVRCB1,MCBTripStates.ERVRCB1,MCB,"Tripped
+Set",IRQ_ERVRCB1,INH_ERVRCB1,1,0,1,M,"[0,1]"
+Component,ERVRCB2,ERVRCB2,InputStates.ERVRCB2,MCBTripStates.ERVRCB2,MCB,"Tripped
+Set",IRQ_ERVRCB2,INH_ERVRCB2,1,0,1,M,"[0,1]"
+Component,ESKCB,ESKCB,InputStates.ESKCB,MCBTripStates.ESKCB,MCB,"Tripped
+Set",IRQ_ESKCB,INH_ESKCB,1,0,1,M,"[0,1]"
+Component,HMCB,HMCB,InputStates.HMCB,MCBTripStates.HMCB,MCB,"Tripped
+Set",IRQ_HMCB,INH_HMCB,1,0,1,M,"[0,1]"
+Component,SP1CB,SP1CB,InputStates.SP1CB,MCBTripStates.SP1CB,MCB,"Tripped
+Set",IRQ_SP1CB,INH_SP1CB,1,0,1,M,"[0,1]"
+Component,SP2CB,SP2CB,InputStates.SP2CB,MCBTripStates.SP2CB,MCB,"Tripped
+Set",IRQ_SP2CB,INH_SP2CB,1,0,1,M,"[0,1]"
+Component,SP3CB,SP3CB,InputStates.SP3CB,MCBTripStates.SP3CB,MCB,"Tripped
+Set",IRQ_SP3CB,INH_SP3CB,1,0,1,M,"[0,1]"
+Component,SP4CB,SP4CB,InputStates.SP4CB,MCBTripStates.SP4CB,MCB,"Tripped
+Set",IRQ_SP4CB,INH_SP4CB,1,0,1,M,"[0,1]"
+Component,SP5CB,SP5CB,InputStates.SP5CB,MCBTripStates.SP5CB,MCB,"Tripped
+Set",IRQ_SP5CB,INH_SP5CB,1,0,1,M,"[0,1]"
+Component,SPCB6,SPCB6,InputStates.SPCB6,MCBTripStates.SPCB6,MCB,"Tripped
+Set",IRQ_SPCB6,INH_SPCB6,1,0,1,M,"[0,1]"
+Component,SPCB7,SPCB7,InputStates.SPCB7,MCBTripStates.SPCB7,MCB,"Tripped
+Set",IRQ_SPCB7,INH_SPCB7,1,0,1,M,"[0,1]"
+Component,SPCB8,SPCB8,InputStates.SPCB8,MCBTripStates.SPCB8,MCB,"Tripped
+Set",IRQ_SPCB8,INH_SPCB8,1,0,1,M,"[0,1]"
+Component,RPTCB,RPTCB,InputStates.RPTCB,MCBTripStates.RPTCB,MCB,"Tripped
+Set",IRQ_RPTCB,INH_RPTCB,1,0,1,M,"[0,1]"
+Component,TERCB1,TERCB1,InputStates.TERCB1,MCBTripStates.TERCB1,MCB,"Tripped
+Set",IRQ_TERCB1,INH_TERCB1,1,0,1,M,"[0,1]"
+Component,TERCB2,TERCB2,InputStates.TERCB2,MCBTripStates.TERCB2,MCB,"Tripped
+Set",IRQ_TERCB2,INH_TERCB2,1,0,1,M,"[0,1]"
+Component,SPSW,SPSW,InputStates.SPSW,0,Toggle,"Normal
+Cutout",IRQ_SPSW,INH_SPSW,0,0,1,I,"[0,1]"
+Component,SPPB,SPPB,InputStates.SPPB,0,Momentary,"Off
+On",IRQ_SPPB,INH_SPPB,0,0,1,I,"[0,1]"
+Component,APSCB,APSCB,InputStates.APSCB,MCBTripStates.APSCB,MCB,"Tripped
+Set",IRQ_APSCB,INH_APSCB,1,0,1,M,"[0,1]"
+Component,APSICB,APSICB,InputStates.APSICB,MCBTripStates.APSICB,MCB,"Tripped
+Set",IRQ_APSICB,INH_APSICB,1,0,1,M,"[0,1]"
+Component,BCGCB,BCGCB,InputStates.BCGCB,MCBTripStates.BCGCB,MCB,"Tripped
+Set",IRQ_BCGCB,INH_BCGCB,1,0,1,M,"[0,1]"
+Component,DSCB,DSCB,InputStates.DSCB,MCBTripStates.DSCB,MCB,"Tripped
+Set",IRQ_DSCB,INH_DSCB,1,0,1,M,"[0,1]"
+Component,MTBMCCB,MTBMCCB,InputStates.MTBMCCB,MCBTripStates.MTBMCCB,MCB,"Tripped
+Set",IRQ_MTBMCCB,INH_MTBMCCB,1,0,1,M,"[0,1]"
+Component,PADCB,PADCB,InputStates.PADCB,MCBTripStates.PADCB,MCB,"Tripped
+Set",IRQ_PADCB,INH_PADCB,1,0,1,M,"[0,1]"
+Component,PANCB,PANCB,InputStates.PANCB,MCBTripStates.PANCB,MCB,"Tripped
+Set",IRQ_PANCB,INH_PANCB,1,0,1,M,"[0,1]"
+Component,SSCB,SSCB,InputStates.SSCB,MCBTripStates.SSCB,MCB,"Tripped
+Set",IRQ_SSCB,INH_SSCB,1,0,1,M,"[0,1]"
+Component,PTCB,PTCB,InputStates.PTCB,MCBTripStates.PTCB,MCB,"Tripped
+Set",IRQ_PTCB,INH_PTCB,1,0,1,M,"[0,1]"
+Component,VCBCB,VCBCB,InputStates.VCBCB,MCBTripStates.VCBCB,MCB,"Tripped
+Set",IRQ_VCBCB,INH_VCBCB,1,0,1,M,"[0,1]"
+Component,SP12CB,SP12CB,InputStates.SP12CB,MCBTripStates.SP12CB,MCB,"Tripped
+Set",IRQ_SP12CB,INH_SP12CB,1,0,1,M,"[0,1]"
+Component,MTBM1CB,MTBM1CB,InputStates.MTBM1CB,MCBTripStates.MTBM1CB,MCB,"Tripped
+Set",IRQ_MTBM1CB,INH_MTBM1CB,1,0,1,M,"[0,1]"
+Component,MTBM2CB,MTBM2CB,InputStates.MTBM2CB,MCBTripStates.MTBM2CB,MCB,"Tripped
+Set",IRQ_MTBM2CB,INH_MTBM2CB,1,0,1,M,"[0,1]"
+Component,SP11CB,SP11CB,InputStates.SP11CB,MCBTripStates.SP11CB,MCB,"Tripped
+Set",IRQ_SP11CB,INH_SP11CB,1,0,1,M,"[0,1]"
+Component,SP6CB,SP6CB,InputStates.SP6CB,MCBTripStates.SP6CB,MCB,"Tripped
+Set",IRQ_SP6CB,INH_SP6CB,1,0,1,M,"[0,1]"
+Component,MTOPCB,MTOPCB,InputStates.MTOPCB,MCBTripStates.MTOPCB,MCB,"Tripped
+Set",IRQ_MTOPCB,INH_MTOPCB,1,0,1,M,"[0,1]"
+Component,ORDCOS,ORDCOS,InputStates.ORDCOS,0,Toggle,"Normal
+Cutout",IRQ_ORDCOS,INH_ORDCOS,0,0,1,I,"[0,1]"
+Component,ADDCOS,ADDCOS,InputStates.ADDCOS,0,Toggle,"Normal
+Cutout",IRQ_ADDCOS,INH_ADDCOS,0,0,1,I,"[0,1]"
+Tier 2,Interior Door Controls
+Component,Left Door 1 DCUCB,LeftDoor1DCUCB,InputStates.LeftDoor1DCUCB,MCBTripStates.LeftDoor1DCUCB,MCB,"Tripped
+Set",IRQ_LeftDoor1DCUCB,INH_LeftDoor1DCUCB,1,0,1,M,"[0,1]"
+Component,Left Door 2 DCUCB,LeftDoor2DCUCB,InputStates.LeftDoor2DCUCB,MCBTripStates.LeftDoor2DCUCB,MCB,"Tripped
+Set",IRQ_LeftDoor2DCUCB,INH_LeftDoor2DCUCB,1,0,1,M,"[0,1]"
+Component,Left Door 3 DCUCB,LeftDoor3DCUCB,InputStates.LeftDoor3DCUCB,MCBTripStates.LeftDoor3DCUCB,MCB,"Tripped
+Set",IRQ_LeftDoor3DCUCB,INH_LeftDoor3DCUCB,1,0,1,M,"[0,1]"
+Component,Left Door 4 DCUCB,LeftDoor4DCUCB,InputStates.LeftDoor4DCUCB,MCBTripStates.LeftDoor4DCUCB,MCB,"Tripped
+Set",IRQ_LeftDoor4DCUCB,INH_LeftDoor4DCUCB,1,0,1,M,"[0,1]"
+Component,Right Door 1 DCUCB,RightDoor1DCUCB,InputStates.RightDoor1DCUCB,MCBTripStates.RightDoor1DCUCB,MCB,"Tripped
+Set",IRQ_RightDoor1DCUCB,INH_RightDoor1DCUCB,1,0,1,M,"[0,1]"
+Component,Right Door 2 DCUCB,RightDoor2DCUCB,InputStates.RightDoor2DCUCB,MCBTripStates.RightDoor2DCUCB,MCB,"Tripped
+Set",IRQ_RightDoor2DCUCB,INH_RightDoor2DCUCB,1,0,1,M,"[0,1]"
+Component,Right Door 3 DCUCB,RightDoor3DCUCB,InputStates.RightDoor3DCUCB,MCBTripStates.RightDoor3DCUCB,MCB,"Tripped
+Set",IRQ_RightDoor3DCUCB,INH_RightDoor3DCUCB,1,0,1,M,"[0,1]"
+Component,Right Door 4 DCUCB,RightDoor4DCUCB,InputStates.RightDoor4DCUCB,MCBTripStates.RightDoor4DCUCB,MCB,"Tripped
+Set",IRQ_RightDoor4DCUCB,INH_RightDoor4DCUCB,1,0,1,M,"[0,1]"
+Component,Left Door 1 Coving,LeftDoor1Coving,InputStates.LeftDoor1Coving,0,Toggle,"Closed
+Open",IRQ_LeftDoor1Coving,INH_LeftDoor1Coving,0,0,1,I,"[0,1]"
+Component,Left Door 2 Coving,LeftDoor2Coving,InputStates.LeftDoor2Coving,0,Toggle,"Closed
+Open",IRQ_LeftDoor2Coving,INH_LeftDoor2Coving,0,0,1,I,"[0,1]"
+Component,Left Door 3 Coving,LeftDoor3Coving,InputStates.LeftDoor3Coving,0,Toggle,"Closed
+Open",IRQ_LeftDoor3Coving,INH_LeftDoor3Coving,0,0,1,I,"[0,1]"
+Component,Left Door 4 Coving,LeftDoor4Coving,InputStates.LeftDoor4Coving,0,Toggle,"Closed
+Open",IRQ_LeftDoor4Coving,INH_LeftDoor4Coving,0,0,1,I,"[0,1]"
+Component,Right Door 1 Coving,RightDoor1Coving,InputStates.RightDoor1Coving,0,Toggle,"Closed
+Open",IRQ_RightDoor1Coving,INH_RightDoor1Coving,0,0,1,I,"[0,1]"
+Component,Right Door 2 Coving,RightDoor2Coving,InputStates.RightDoor2Coving,0,Toggle,"Closed
+Open",IRQ_RightDoor2Coving,INH_RightDoor2Coving,0,0,1,I,"[0,1]"
+Component,Right Door 3 Coving,RightDoor3Coving,InputStates.RightDoor3Coving,0,Toggle,"Closed
+Open",IRQ_RightDoor3Coving,INH_RightDoor3Coving,0,0,1,I,"[0,1]"
+Component,Right Door 4 Coving,RightDoor4Coving,InputStates.RightDoor4Coving,0,Toggle,"Closed
+Open",IRQ_RightDoor4Coving,INH_RightDoor4Coving,0,0,1,I,"[0,1]"
+Component,Left Door 1 EED,LeftDoor1EED,InputStates.LeftDoor1EED,0,Momentary,"Reset
+Operated",IRQ_LeftDoor1EED,INH_LeftDoor1EED,0,0,1,I,"[0,1]"
+Component,Left Door 2 EED,LeftDoor2EED,InputStates.LeftDoor2EED,0,Momentary,"Reset
+Operated",IRQ_LeftDoor2EED,INH_LeftDoor2EED,0,0,1,I,"[0,1]"
+Component,Left Door 3 EED,LeftDoor3EED,InputStates.LeftDoor3EED,0,Momentary,"Reset
+Operated",IRQ_LeftDoor3EED,INH_LeftDoor3EED,0,0,1,I,"[0,1]"
+Component,Left Door 4 EED,LeftDoor4EED,InputStates.LeftDoor4EED,0,Momentary,"Reset
+Operated",IRQ_LeftDoor4EED,INH_LeftDoor4EED,0,0,1,I,"[0,1]"
+Component,Right Door 1 EED,RightDoor1EED,InputStates.RightDoor1EED,0,Momentary,"Reset
+Operated",IRQ_RightDoor1EED,INH_RightDoor1EED,0,0,1,I,"[0,1]"
+Component,Right Door 2 EED,RightDoor2EED,InputStates.RightDoor2EED,0,Momentary,"Reset
+Operated",IRQ_RightDoor2EED,INH_RightDoor2EED,0,0,1,I,"[0,1]"
+Component,Right Door 3 EED,RightDoor3EED,InputStates.RightDoor3EED,0,Momentary,"Reset
+Operated",IRQ_RightDoor3EED,INH_RightDoor3EED,0,0,1,I,"[0,1]"
+Component,Right Door 4 EED,RightDoor4EED,InputStates.RightDoor4EED,0,Momentary,"Reset
+Operated",IRQ_RightDoor4EED,INH_RightDoor4EED,0,0,1,I,"[0,1]"
+Component,Left Door 1 Manual Close,LeftDoor1ManualClose,InputStates.LeftDoor1ManualClose,0,Momentary,"Close
+Open",IRQ_LeftDoor1ManualClose,INH_LeftDoor1ManualClose,0,0,1,I,"[0,1]"
+Component,Left Door 2 Manual Close,LeftDoor2ManualClose,InputStates.LeftDoor2ManualClose,0,Momentary,"Close
+Open",IRQ_LeftDoor2ManualClose,INH_LeftDoor2ManualClose,0,0,1,I,"[0,1]"
+Component,Left Door 3 Manual Close,LeftDoor3ManualClose,InputStates.LeftDoor3ManualClose,0,Momentary,"Close
+Open",IRQ_LeftDoor3ManualClose,INH_LeftDoor3ManualClose,0,0,1,I,"[0,1]"
+Component,Left Door 4 Manual Close,LeftDoor4ManualClose,InputStates.LeftDoor4ManualClose,0,Momentary,"Close
+Open",IRQ_LeftDoor4ManualClose,INH_LeftDoor4ManualClose,0,0,1,I,"[0,1]"
+Component,Right Door 1 Manual Close,RightDoor1ManualClose,InputStates.RightDoor1ManualClose,0,Momentary,"Close
+Open",IRQ_RightDoor1ManualClose,INH_RightDoor1ManualClose,0,0,1,I,"[0,1]"
+Component,Right Door 2 Manual Close,RightDoor2ManualClose,InputStates.RightDoor2ManualClose,0,Momentary,"Close
+Open",IRQ_RightDoor2ManualClose,INH_RightDoor2ManualClose,0,0,1,I,"[0,1]"
+Component,Right Door 3 Manual Close,RightDoor3ManualClose,InputStates.RightDoor3ManualClose,0,Momentary,"Close
+Open",IRQ_RightDoor3ManualClose,INH_RightDoor3ManualClose,0,0,1,I,"[0,1]"
+Component,Right Door 4 Manual Close,RightDoor4ManualClose,InputStates.RightDoor4ManualClose,0,Momentary,"Close
+Open",IRQ_RightDoor4ManualClose,INH_RightDoor4ManualClose,0,0,1,I,"[0,1]"
+Component,Left Door 1 Manual Open,LeftDoor1ManualOpen,InputStates.LeftDoor1ManualOpen,0,Momentary,"Close
+Open",IRQ_LeftDoor1ManualOpen,INH_LeftDoor1ManualOpen,0,0,1,I,"[0,1]"
+Component,Left Door 2 Manual Open,LeftDoor2ManualOpen,InputStates.LeftDoor2ManualOpen,0,Momentary,"Close
+Open",IRQ_LeftDoor2ManualOpen,INH_LeftDoor2ManualOpen,0,0,1,I,"[0,1]"
+Component,Left Door 3 Manual Open,LeftDoor3ManualOpen,InputStates.LeftDoor3ManualOpen,0,Momentary,"Close
+Open",IRQ_LeftDoor3ManualOpen,INH_LeftDoor3ManualOpen,0,0,1,I,"[0,1]"
+Component,Left Door 4 Manual Open,LeftDoor4ManualOpen,InputStates.LeftDoor4ManualOpen,0,Momentary,"Close
+Open",IRQ_LeftDoor4ManualOpen,INH_LeftDoor4ManualOpen,0,0,1,I,"[0,1]"
+Component,Right Door 1 Manual Open,RightDoor1ManualOpen,InputStates.RightDoor1ManualOpen,0,Momentary,"Close
+Open",IRQ_RightDoor1ManualOpen,INH_RightDoor1ManualOpen,0,0,1,I,"[0,1]"
+Component,Right Door 2 Manual Open,RightDoor2ManualOpen,InputStates.RightDoor2ManualOpen,0,Momentary,"Close
+Open",IRQ_RightDoor2ManualOpen,INH_RightDoor2ManualOpen,0,0,1,I,"[0,1]"
+Component,Right Door 3 Manual Open,RightDoor3ManualOpen,InputStates.RightDoor3ManualOpen,0,Momentary,"Close
+Open",IRQ_RightDoor3ManualOpen,INH_RightDoor3ManualOpen,0,0,1,I,"[0,1]"
+Component,Right Door 4 Manual Open,RightDoor4ManualOpen,InputStates.RightDoor4ManualOpen,0,Momentary,"Close
+Open",IRQ_RightDoor4ManualOpen,INH_RightDoor4ManualOpen,0,0,1,I,"[0,1]"
+Component,Left Door 1 Lockout,LeftDoor1Lockout,InputStates.LeftDoor1Lockout,0,Toggle,"Unlocked
+Locked",IRQ_LeftDoor1Lockout,INH_LeftDoor1Lockout,0,0,1,I,"[0,1]"
+Component,Left Door 2 Lockout,LeftDoor2Lockout,InputStates.LeftDoor2Lockout,0,Toggle,"Unlocked
+Locked",IRQ_LeftDoor2Lockout,INH_LeftDoor2Lockout,0,0,1,I,"[0,1]"
+Component,Left Door 3 Lockout,LeftDoor3Lockout,InputStates.LeftDoor3Lockout,0,Toggle,"Unlocked
+Locked",IRQ_LeftDoor3Lockout,INH_LeftDoor3Lockout,0,0,1,I,"[0,1]"
+Component,Left Door 4 Lockout,LeftDoor4Lockout,InputStates.LeftDoor4Lockout,0,Toggle,"Unlocked
+Locked",IRQ_LeftDoor4Lockout,INH_LeftDoor4Lockout,0,0,1,I,"[0,1]"
+Component,Right Door 1 Lockout,RightDoor1Lockout,InputStates.RightDoor1Lockout,0,Toggle,"Unlocked
+Locked",IRQ_RightDoor1Lockout,INH_RightDoor1Lockout,0,0,1,I,"[0,1]"
+Component,Right Door 2 Lockout,RightDoor2Lockout,InputStates.RightDoor2Lockout,0,Toggle,"Unlocked
+Locked",IRQ_RightDoor2Lockout,INH_RightDoor2Lockout,0,0,1,I,"[0,1]"
+Component,Right Door 3 Lockout,RightDoor3Lockout,InputStates.RightDoor3Lockout,0,Toggle,"Unlocked
+Locked",IRQ_RightDoor3Lockout,INH_RightDoor3Lockout,0,0,1,I,"[0,1]"
+Component,Right Door 4 Lockout,RightDoor4Lockout,InputStates.RightDoor4Lockout,0,Toggle,"Unlocked
+Locked",IRQ_RightDoor4Lockout,INH_RightDoor4Lockout,0,0,1,I,"[0,1]"
+Component,Left Door 1 Position,0,0,OutputStates.Doors[0].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Left Door 2 Position,0,0,OutputStates.Doors[2].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Left Door 3 Position,0,0,OutputStates.Doors[4].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Left Door 4 Position,0,0,OutputStates.Doors[6].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Right Door 1 Position,0,0,OutputStates.Doors[8].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Right Door 2 Position,0,0,OutputStates.Doors[10].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Right Door 3 Position,0,0,OutputStates.Doors[12].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Right Door 4 Position,0,0,OutputStates.Doors[14].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Left Door 1a Position,0,0,OutputStates.Doors[1].OutputControlStates.DoorPosition,0,"Closed
+Open",0,0,0,0,1,O,0
+Component,Left Door 1 Inside Lamp,0,0,OutputStates.Doors[0].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Left Door 2 Inside Lamp,0,0,OutputStates.Doors[2].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Left Door 3 Inside Lamp,0,0,OutputStates.Doors[4].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Left Door 4 Inside Lamp,0,0,OutputStates.Doors[6].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 1 Inside Lamp,0,0,OutputStates.Doors[8].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 2 Inside Lamp,0,0,OutputStates.Doors[10].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 3 Inside Lamp,0,0,OutputStates.Doors[12].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 4 Inside Lamp,0,0,OutputStates.Doors[14].OutputControlStates.DoorInsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Tier 2,Exterior Door Controls
+Component,Left Door EAD Cover,LeftDoorEADCover,InputStates.LeftDoorEADCover,0,Toggle,"Closed
+Open",IRQ_LeftDoorEADCover,INH_LeftDoorEADCover,0,0,1,I,"[0,1]"
+Component,Right Door EAD Cover,RightDoorEADCover,InputStates.RightDoorEADCover,0,Toggle,"Closed
+Open",IRQ_RightDoorEADCover,INH_RightDoorEADCover,0,0,1,I,"[0,1]"
+Component,Left Door EAD,LeftDoorEAD,InputStates.LeftDoorEAD,0,Momentary,"Reset
+Unlock",IRQ_LeftDoorEAD,INH_LeftDoorEAD,0,0,1,I,"[0,1]"
+Component,Right Door EAD,RightDoorEAD,InputStates.RightDoorEAD,0,Momentary,"Reset
+Unlock",IRQ_RightDoorEAD,INH_RightDoorEAD,0,0,1,I,"[0,1]"
+Component,Left Door 1 Outside Lamp,0,0,OutputStates.Doors[0].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Left Door 2 Outside Lamp,0,0,OutputStates.Doors[2].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Left Door 3 Outside Lamp,0,0,OutputStates.Doors[4].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Left Door 4 Outside Lamp,0,0,OutputStates.Doors[6].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 1 Outside Lamp,0,0,OutputStates.Doors[8].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 2 Outside Lamp,0,0,OutputStates.Doors[10].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 3 Outside Lamp,0,0,OutputStates.Doors[12].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Component,Right Door 4 Outside Lamp,0,0,OutputStates.Doors[14].OutputControlStates.DoorOutsideLamp,0,"OFF
+Red On
+Amber Flashing
+Yellow On",0,0,0,0,3,O,0
+Tier 2,Exterior Lights
+Component,Flood Light,0,0,OutputStates.OutputControlStates.FloodLight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Flasher Light,0,0,OutputStates.OutputControlStates.FlasherLight,0,"Off
+Flashing",0,0,0,0,1,O,"[0,1]"
+Component,UTO Or RM Light,0,0,OutputStates.OutputControlStates.UTOOrRMLight,0,"Off
+On
+Flashing",0,0,0,0,1,O,"[0,1,2]"
+Component,Marker Or Tail Light,0,0,OutputStates.OutputControlStates.MarkerOrTailLight,0,"Off
+White
+Red",0,0,0,0,1,O,"[0,1,2]"
+Component,Head Light,0,0,OutputStates.OutputControlStates.HeadLight,0,"Off
+Low
+High",0,0,0,0,1,O,"[0,1,2]"
+Tier 2,Pneumatic Controls
+Component,Park Brake Isolation Cock Bogie 1,ParkBrakeIsolationCockBogie1,InputStates.ParkBrakeIsolationCockBogie1,0,Toggle,"Isolated
+Normal",IRQ_ParkBrakeIsolationCockBogie1,INH_ParkBrakeIsolationCockBogie1,1,0,1,I,"[0,1]"
+Component,Park Brake Isolation Cock Bogie 2,ParkBrakeIsolationCockBogie2,InputStates.ParkBrakeIsolationCockBogie2,0,Toggle,"Isolated
+Normal",IRQ_ParkBrakeIsolationCockBogie2,INH_ParkBrakeIsolationCockBogie2,1,0,1,I,"[0,1]"
+Component,MR Isolation Cock,MRIsolationCock,InputStates.MRIsolationCock,0,Toggle,"Isolated
+Normal",IRQ_MRIsolationCock,INH_MRIsolationCock,1,0,1,I,"[0,1]"
+Component,Uncoupling Cock,UncouplingCock,InputStates.UncouplingCock,0,Toggle,"Isolated
+Normal",IRQ_UncouplingCock,INH_UncouplingCock,1,0,1,I,"[0,1]"
+Component,Horn 1 Isolation Cock,Horn1IsolationCock,InputStates.Horn1IsolationCock,0,Toggle,"Isolated
+Normal",IRQ_Horn1IsolationCock,INH_Horn1IsolationCock,1,0,1,I,"[0,1]"
+Component,Horn 2 Isolation Cock,Horn2IsolationCock,InputStates.Horn2IsolationCock,0,Toggle,"Isolated
+Normal",IRQ_Horn2IsolationCock,INH_Horn2IsolationCock,1,0,1,I,"[0,1]"
+Component,MREP Isolation Cock End 1,MREPIsolationCockEnd1,InputStates.MREPIsolationCockEnd1,0,Toggle,"Isolated
+Normal",IRQ_MREPIsolationCockEnd1,INH_MREPIsolationCockEnd1,1,0,1,I,"[0,1]"
+Component,BIC 1 Inside,BIC1Inside,InputStates.BIC1Inside,0,Toggle,"Isolated
+Normal",IRQ_BIC1Inside,INH_BIC1Inside,1,0,1,I,"[0,1]"
+Component,BIC 1 Outside,BIC1Outside,InputStates.BIC1Outside,0,Toggle,"Isolated
+Normal",IRQ_BIC1Outside,INH_BIC1Outside,1,0,1,I,"[0,1]"
+Component,BIC 2 Inside,BIC2Inside,InputStates.BIC2Inside,0,Toggle,"Isolated
+Normal",IRQ_BIC2Inside,INH_BIC2Inside,1,0,1,I,"[0,1]"
+Component,BIC 2 Outside,BIC2Outside,InputStates.BIC2Outside,0,Toggle,"Isolated
+Normal",IRQ_BIC2Outside,INH_BIC2Outside,1,0,1,I,"[0,1]"
+Component,MREP Isolation Cock End 2,MREPIsolationCockEnd2,InputStates.MREPIsolationCockEnd2,0,Toggle,"Isolated
+Normal",IRQ_MREPIsolationCockEnd2,INH_MREPIsolationCockEnd2,1,0,1,I,"[0,1]"
+Component,EPIC,EPIC,InputStates.EPIC,0,Toggle,"Isolated
+Normal",IRQ_EPIC,INH_EPIC,1,0,1,I,"[0,1]"
+Component,ASCO End 1,ASCOEnd1,InputStates.ASCOEnd1,0,Toggle,"Isolated
+Normal",IRQ_ASCOEnd1,INH_ASCOEnd1,1,0,1,I,"[0,1]"
+Component,ASCO End 2,ASCOEnd2,InputStates.ASCOEnd2,0,Toggle,"Isolated
+Normal",IRQ_ASCOEnd2,INH_ASCOEnd2,1,0,1,I,"[0,1]"
+Component,AS Isolation Cock,ASIsolationCock,InputStates.ASIsolationCock,0,Toggle,"Isolated
+Normal",IRQ_ASIsolationCock,INH_ASIsolationCock,1,0,1,I,"[0,1]"
+Component,SR,SR,InputStates.SR,0,Toggle,"Isolated
+Normal",IRQ_SR,INH_SR,1,0,1,I,"[0,1]"
+Component,Parking Brake Manual Release Bogie 1 Handle 1,ParkingBrakeManualReleaseBogie1Handle1,InputStates.ParkingBrakeManualReleaseBogie1Handle1,0,Toggle,"Normal
+Pulled",IRQ_ParkingBrakeManualReleaseBogie1Handle1,INH_ParkingBrakeManualReleaseBogie1Handle1,0,0,1,I,"[0,1]"
+Component,Parking Brake Manual Release Bogie 1 Handle 2,ParkingBrakeManualReleaseBogie1Handle2,InputStates.ParkingBrakeManualReleaseBogie1Handle2,0,Toggle,"Normal
+Pulled",IRQ_ParkingBrakeManualReleaseBogie1Handle2,INH_ParkingBrakeManualReleaseBogie1Handle2,0,0,1,I,"[0,1]"
+Component,Parking Brake Manual Release Bogie 2 Handle 1,ParkingBrakeManualReleaseBogie2Handle1,InputStates.ParkingBrakeManualReleaseBogie2Handle1,0,Toggle,"Normal
+Pulled",IRQ_ParkingBrakeManualReleaseBogie2Handle1,INH_ParkingBrakeManualReleaseBogie2Handle1,0,0,1,I,"[0,1]"
+Component,Parking Brake Manual Release Bogie 2 Handle 2,ParkingBrakeManualReleaseBogie2Handle2,InputStates.ParkingBrakeManualReleaseBogie2Handle2,0,Toggle,"Normal
+Pulled",IRQ_ParkingBrakeManualReleaseBogie2Handle2,INH_ParkingBrakeManualReleaseBogie2Handle2,0,0,1,I,"[0,1]"
+Tier 2,Passenger Emergency Control Unit
+Component,PECU Push Button,PECUPushButton,InputStates.PECUPushButton,0,Momentary,"Release
+Push",IRQ_PECUPushButton,INH_PECUPushButton,0,0,1,I,"[0,1]"
+Component,Wait Indicator,0,0,OutputStates.WaitIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Call Indicator,0,0,OutputStates.CallIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Talk Indicator,0,0,OutputStates.TalkIndicator,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Microphone,Microphone,InputStates.Microphone,0,Momentary,"Release
+Push",IRQ_Microphone,INH_Microphone,0,0,1,I,"[0,1]"
+Component,Pantograph Position,0,0,OutputStates.PantographPosition,0,"Fully Lowered
+Fully Raised",0,0,0,0,1,O,"[0,1]"
+Component,Wiper Position Left,0,0,OutputStates.OutputControlStates.WiperPositionLeft,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Wiper Position Center,0,0,OutputStates.OutputControlStates.WiperPositionCenter,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Wiper Position Right,0,0,OutputStates.OutputControlStates.WiperPositionRight,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Wiper Wash,0,0,OutputStates.OutputControlStates.WiperWash,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Drivers Back Door,DriversBackDoor,InputStates.DriversBackDoor,0,Toggle,"Off
+On",IRQ_DriversBackDoor,INH_DriversBackDoor,0,0,1,I,"[0,1]"
+Component,Vehicle Derailed,0,0,OutputStates.TractionControl.TCMS.VehicleDerailed,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Component,Vehicle Bogie Derailed,0,0,OutputStates.TractionControl.TCMS.VehicleBogieDerailed,0,"Off
+On",0,0,0,0,1,O,"[0,1]"
+Tier 2,EDB Panel
+Component,Pantograph Isolation Cock,PantographIsolationCock,InputStates.PantographIsolationCock,0,Toggle,"Isolated
+Normal",IRQ_PantographIsolationCock,INH_PantographIsolationCock,1,0,1,I,"[0,1]"
+Component,VCB Isolation Cock,VCBIsolationCock,InputStates.VCBIsolationCock,0,Toggle,"Isolated
+Normal",IRQ_VCBIsolationCock,INH_VCBIsolationCock,1,0,1,I,"[0,1]"
+Component,ORD Plunger,ORDPlunger,InputStates.ORDPlunger,0,Toggle,"Normal
+Pulled",IRQ_ORDPlunger,INH_ORDPlunger,0,0,1,I,"[0,1]"

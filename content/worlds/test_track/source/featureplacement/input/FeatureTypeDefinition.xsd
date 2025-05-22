@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.sydac.com.au/FeatureTypeDefinition/1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   xmlns="http://www.sydac.com.au/FeatureTypeDefinition/1.0/" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      FeatureTypeDefinition 1.0 XML Schema
+      XML Schema for http://www.sydac.com.au/FeatureTypeDefinition/1.0/ namespace
+
+      Created 2018-02-06
+
+      Created by
+
+      Andy Cooper (andy.cooper@sydac.com.au)
+
+      This schema declares XML elements for the feature_type elements from the
+      http://www.sydac.com.au/FeatureTypeDefinition/1.0/ namespace.
+      
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:simpleType name="parameterType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="State"/>
+      <xs:enumeration value="double"/>
+      <xs:enumeration value="string"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:element name="feature_type">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="feature_type_state_type">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="feature_type_state">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="properties">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="property">
+                            <xs:complexType>
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                              <xs:attribute name="value" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="state_id" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="user_selectable" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="object_parameters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="key">
+                <xs:complexType>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="type" type="parameterType" use="required" />
+                  <xs:attribute name="default" type="xs:string" use="optional" />
+                  <xs:attribute name="description" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="feature_type_icon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="feature_type_state_icon">
+                <xs:complexType>
+                  <xs:attribute name="state_id" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="icon_code" type="xs:string" use="required" />
+                  <xs:attribute name="small_icon" type="xs:string" use="required" />
+                  <xs:attribute name="big_icon" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="icon_code" type="xs:string" use="required" />
+            <xs:attribute name="small_icon" type="xs:string" use="required" />
+            <xs:attribute name="big_icon" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="feature_type_vision">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="scripting">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="script">
+                      <xs:complexType>
+                        <xs:attribute name="script_path" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="model_parts">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="model_part">
+                      <xs:complexType>
+                        <xs:attribute name="model_part_id" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="model_state_parts">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="model_state_part">
+                      <xs:complexType>
+                        <xs:attribute name="state_id" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="part_id" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="flashing" type="xs:unsignedByte" use="optional" />
+                        <xs:attribute name="pulse_delay" type="xs:unsignedByte" use="optional" />
+                        <xs:attribute name="pulse_on_time" type="xs:decimal" use="optional" />
+                        <xs:attribute name="pulse_off_time" type="xs:decimal" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="class" type="xs:string" use="required" />
+            <xs:attribute name="raycast_type" type="xs:string" use="required" />
+            <xs:attribute name="node_file" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="group" type="xs:string" use="required" />
+      <xs:attribute name="constant_name" type="xs:string" use="required" />
+      <xs:attribute name="modifiable" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="available" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="user_feature" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="version" type="xs:decimal" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

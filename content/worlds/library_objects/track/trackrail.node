@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node id="171091726" type="ObjectMeshDynamic" name="rail">
+		<object_surface name="dynamic" begin="0" end="18"/>
+		<vertex type="float" num_vertex="12" offset="0" size="3">0.0375000015 2.5 0.150000006 0.0375000015 2.5 0.150000006 0.0375000015 2.5 0 0.0375000015 0 0.150000006 0.0375000015 0 0.150000006 0.0375000015 0 0 -0.0375000015 2.5 0.150000006 -0.0375000015 2.5 0.150000006 -0.0375000015 2.5 0 -0.0375000015 0 0.150000006 -0.0375000015 0 0.150000006 -0.0375000015 0 0</vertex>
+		<vertex type="float" num_vertex="12" offset="16" size="4">0.609375 1 0 0 0.609375 1 0 0 1 1 0 0 0.609375 0 0 0 0.609375 0 0 0 1 0 0 0 0.390625 1 0 0 0.390625 1 0 0 0 1 0 0 0.390625 0 0 0 0.390625 0 0 0 0 0 0 0</vertex>
+		<vertex type="float" num_vertex="12" offset="32" size="4">0 0.707106769 0 0.707106769 0 0 0 1 0 0.707106769 0 0.707106769 0 0.707106769 0 0.707106769 0 0 0 1 0 0.707106769 0 0.707106769 0 0 0 1 0 -0.707106769 0 0.707106769 0 -0.707106769 0 0.707106769 0 0 0 1 0 -0.707106769 0 0.707106769 0 -0.707106769 0 0.707106769</vertex>
+		<vertex type="float" num_vertex="12" offset="48" size="4">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vertex>
+		<indices num_indices="18">1 6 9 9 4 1 7 8 11 11 10 7 2 0 3 3 5 2</indices>
+		<surface name="dynamic" folded="1" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node id="454910138" type="ObjectMeshDynamic" name="begin">
+			<object_surface name="End" begin="0" end="6"/>
+			<vertex type="float" num_vertex="4" offset="0" size="3">0.0375005007 0 0.150000006 0.0375005007 0 0 -0.0375005007 0 0.150000006 -0.0375005007 0 0</vertex>
+			<vertex type="float" num_vertex="4" offset="16" size="4">0.38680312 0.578329802 0 0 2.98023224e-008 0.578329802 0 0 0.38680312 0.399999976 0 0 2.98023224e-008 0.399999976 0 0</vertex>
+			<vertex type="float" num_vertex="4" offset="32" size="4">-0.5 0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5</vertex>
+			<vertex type="float" num_vertex="4" offset="48" size="4">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vertex>
+			<indices num_indices="6">0 2 3 3 1 0</indices>
+			<surface name="End" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshDynamic" id="275628578" name="end">
+			<reference>454910138</reference>
+			<surface name="End" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+			<transform>-0.999999940395 -8.74227675734e-008 0 0.0 8.74227675734e-008 -0.999999940395 0 0.0 0 0 1 0.0 -5.04184069317e-023 2.5 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

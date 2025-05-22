@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+    <layer name="Project">
+
+        <!-- INTERCOM object for CPP PISIntercomUnit-->
+        <object_class class="Intercom" constant_name="INTERCOM">
+            <object_tag name="Intercom" constant_name="INTERCOM" />
+        </object_class>
+
+        <!-- OHPInputs object for CPP PISIntercomUnit -->
+        <object_class class="OHPInputs"          constant_name="OHP_INPUTS">
+            <object_number  name="Vehicle ID"    constant_name="VEHICLE_ID"    default="0"     delta="0.5"/>
+            <object_number  name="OHP ID"        constant_name="OHP_ID"        default="0"     delta="0.5"/>
+            <object_number  name="OHP Button"    constant_name="OHP_BUTTON"    default="0"     delta="0.5"/>
+            <object_number  name="PECU Isolate Req"           constant_name="PECU_ISOLATE_REQ"        default="0"     delta="0.5"/>
+            <object_number  name="PECU De Isolate Req"        constant_name="PECU_DE_ISOLATE_REQ"     default="0"     delta="0.5"/>
+        </object_class>
+
+        <!-- OHPOutputs object for CPP PISIntercomUnit -->
+        <object_class class="OHPOutputs" constant_name="OHP_OUTPUTS">
+            <object_number  name="Vehicle ID"                constant_name="VEHICLE_ID"              default="0"     delta="0.5"/>
+            <object_number  name="OHP ID"                    constant_name="OHP_ID"                  default="0"     delta="0.5"/>
+            <object_number  name="Status"                    constant_name="STATUS"                  default="0"     delta="0.5"/>
+            <object_number  name="WaitIndicator"             constant_name="WAIT_INDICATOR"          default="0"     delta="0.5"/>
+            <object_number  name="SpeakIndicator"            constant_name="SPEAK_INDICATOR"         default="0"     delta="0.5"/>
+            <object_number  name="ListenIndicator"           constant_name="LISTEN_INDICATOR"        default="0"     delta="0.5"/>
+            <object_number  name="Passenger emergency Alarm ID"           constant_name="PE_ID"      default="0"     delta="0.5"/>
+            <object_raw     name="Isolation Deisolation list"             constant_name="ISOLATION_DEISOLATION_LIST" />
+        </object_class>
+
+        <!-- EmergencyBrakeLeverInputs object for CPP PISIntercomUnit -->
+        <object_class class="EmergencyBrakeLeverInputs" constant_name="EMERGENCY_BRAKE_LEVER_INPUTS">
+            <object_number  name="Vehicle ID"                constant_name="VEHICLE_ID"              default="0"     delta="0.5"/>
+            <object_number  name="Leaver ID"                 constant_name="LEAVER_ID"               default="0"     delta="0.5"/>
+            <object_number  name="Status"                    constant_name="STATUS"                  default="0"     delta="0.5"/>
+            <object_number  name="OHP ID"                    constant_name="OHP_ID"                  default="0"     delta="0.5"/>
+        </object_class>
+
+        <!-- IntercomInputs object for CPP PISIntercomUnit -->
+        <object_class class="IntercomInputs" constant_name="INTERCOM_INPUTS">
+            <object_number  name="Cab In PA Button"            constant_name="CAB_IN_PA_BUTTON"            default="0"     delta="0.5"/>
+            <object_number  name="Cab Out PA Button"           constant_name="CAB_OUT_PA_BUTTON"           default="0"     delta="0.5"/>
+            <object_number  name="Cab Intercom Button"         constant_name="CAB_INTERCOM_BUTTON"         default="0"     delta="0.5"/>
+            <object_number  name="Cab Cancel Button"           constant_name="CAB_CANCEL_BUTTON"           default="0"     delta="0.5"/>
+            <object_number  name="SCC Intercom Button"         constant_name="SCC_INTERCOM_BUTTON"         default="0"     delta="0.5"/>
+            <object_number  name="SCC Intercom Cancel Button"  constant_name="SCC_INTERCOM_CANCEL_BUTTON"  default="0"     delta="0.5"/>
+        </object_class>
+
+        <!-- IntercomOutputs object for CPP PISIntercomUnit -->
+        <object_class class="IntercomOutputs" constant_name="INTERCOM_OUTPUTS">
+            <object_number  name="Public Address"      constant_name="PUBLIC_ADDRESS"   default="0"     delta="0.5"/>
+            <object_number  name="Intercom"            constant_name="INTERCOM"         default="0"     delta="0.5"/>
+            <object_number  name="Active Call Type"    constant_name="ACTIVE_CALL_TYPE" default="0"     delta="0.5"/>
+            <object_number  name="In PA Light"         constant_name="IN_PA_LIGHT"      default="0"     delta="0.5"/>
+            <object_number  name="Out PA Light"        constant_name="OUT_PA_LIGHT"     default="0"     delta="0.5"/>
+            <object_number  name="Intercom Light"      constant_name="INTERCOM_LIGHT"   default="0"     delta="0.5"/>
+            <object_number  name="OHP Chime"           constant_name="OHP_CHIME"        default="0"     delta="0.5"/>
+			<object_number  name="PABR Bypass Req" 	   constant_name="PABR_BYPASS_REQ" 	default="0.0"   delta="0.5"  />
+        </object_class>
+
+        <!-- SCCFaultEventsIntercomInputs object for CPP PISIntercomUnit -->
+        <object_class class="SCCFaultEventsIntercomInputs" constant_name="SCC_FAULT_EVENTS_INTERCOM_INPUTS">
+            <object_number  name="Vehicle ID"         constant_name="VEHICLE_ID"        default="0"     delta="0.5"/>
+            <object_number  name="OHP ID"             constant_name="OHP_ID"            default="0"     delta="0.5"/>
+            <object_number  name="EDR Activated"      constant_name="EDR_ACTIVATED"     default="0"     delta="0.5"/>
+        </object_class>
+
+
+        <!-- CONSTANT DEFINED -->
+
+        <!-- Constant defined for OHPOutputs 'Status' -->
+        <number_type name="StatusConstant">
+            <number_type_value name="Normal"    constant_name="NORMAL"      value="0"/>
+            <number_type_value name="Fault"     constant_name="FAULT"       value="1"/>
+            <number_type_value name="Calling"   constant_name="CALLING"     value="2"/>
+            <number_type_value name="Talking"   constant_name="TALKING"     value="3"/>
+        </number_type>
+
+        <!-- Constant defined for OHPOutputs 'Wait Indicator' -->
+        <number_type name="WaitIndicatorConstant">
+            <number_type_value name="Off"    constant_name="OFF"      value="0"/>
+            <number_type_value name="On"     constant_name="ON"       value="1"/>
+        </number_type>
+
+        <!-- Constant defined for OHPOutputs 'Speaker Indicator' -->
+        <number_type name="SpeakerIndicatorConstant">
+            <number_type_value name="Off"    constant_name="OFF"      value="0"/>
+            <number_type_value name="On"     constant_name="ON"       value="1"/>
+        </number_type>
+
+        <!-- Constant defined for OHPOutputs 'Listen Indicator' -->
+        <number_type name="ListenIndicatorConstant">
+            <number_type_value name="Off"    constant_name="OFF"      value="0"/>
+            <number_type_value name="On"     constant_name="ON"       value="1"/>
+        </number_type>
+
+        <!-- Constant defined for EmergencyBrakeLeverInputs 'Status' -->
+        <number_type name="EmergencyBrakeStatusConstant">
+            <number_type_value name="Inactive"    constant_name="INACTIVE"      value="0"/>
+            <number_type_value name="Activated"   constant_name="ACTIVATED"     value="1"/>
+        </number_type>
+
+        <!-- Constant defined for IntercomOutputs 'Public Address' -->
+        <number_type name="PublicAddressConstant">
+            <number_type_value name="Inactive"    constant_name="INACTIVE"      value="0"/>
+            <number_type_value name="Active"      constant_name="ACTIVE"        value="1"/>
+        </number_type>
+
+        <!-- Constant defined for IntercomOutputs 'Intercom' -->
+        <number_type name="IntercomConstant">
+            <number_type_value name="Inactive"      constant_name="INACTIVE"        value="0"/>
+            <number_type_value name="Call Request"  constant_name="CALL_REQUEST"    value="1"/>
+            <number_type_value name="Active"        constant_name="ACTIVE"          value="2"/>
+            <number_type_value name="Isolated"      constant_name="ISOLATED"        value="3"/>
+            <number_type_value name="Deisolated"    constant_name="DEISOLATED"      value="4"/>
+        </number_type>
+
+        <number_type name="ActiveCallTypeConstant">
+            <number_type_value name="Inactive"      constant_name="INACTIVE"    value="0"/>
+            <number_type_value name="Cab To Cab"    constant_name="CAB_TO_CAB"  value="1"/>
+            <number_type_value name="OHP"           constant_name="OHP"         value="2"/>
+        </number_type>
+
+
+        <!-- Constant defined for IntercomOutputs 'In PA Light' -->
+        <number_type name="InPALightConstant">
+            <number_type_value name="Off"    constant_name="OFF"      value="0"/>
+            <number_type_value name="On"     constant_name="ON"       value="1"/>
+        </number_type>
+
+        <!-- Constant defined for IntercomOutputs 'Out PA Light' -->
+        <number_type name="OutPALightConstant">
+            <number_type_value name="Off"    constant_name="OFF"      value="0"/>
+            <number_type_value name="On"     constant_name="ON"       value="1"/>
+        </number_type>
+
+        <!-- Constant defined for IntercomOutputs 'Intercom Light' -->
+        <number_type name="IntercomLightConstant">
+            <number_type_value name="Off"    constant_name="OFF"      value="0"/>
+            <number_type_value name="On"     constant_name="ON"       value="1"/>
+        </number_type>
+
+        <!-- Constant defined for IntercomOutputs 'OHP Chime' -->
+        <number_type name="OHPChimeConstant">
+            <number_type_value name="Inactive"    constant_name="INACTIVE"      value="0"/>
+            <number_type_value name="Active"      constant_name="ACTIVE"        value="1"/>
+        </number_type>
+
+        <!-- Constant defined for Intercom In PA constant -->
+        <number_type name="PAButtonState">
+            <number_type_value name="Released"      constant_name="RELEASED"        value="0"/>
+            <number_type_value name="Pressed"        constant_name="PRESSED"          value="1"/>
+        </number_type>
+
+     </layer>
+
+    <!-- Parent-child relationship mapping -->
+    <relationship parent="Train"    child="Intercom" />
+    <relationship parent="Intercom" child="IntercomInputs" />
+    <relationship parent="Intercom" child="IntercomOutputs" />
+    <relationship parent="IntercomInputs" child="OHPInputs" />
+    <relationship parent="IntercomInputs" child="EmergencyBrakeLeverInputs" />
+    <relationship parent="IntercomInputs" child="SCCFaultEventsIntercomInputs" />
+    <relationship parent="IntercomOutputs" child="OHPOutputs" />
+
+    <!-- Class ID declarations -->
+    <class_ids>
+        <class_id class_name="Intercom"                     class_id="701" />
+        <class_id class_name="OHPInputs"                    class_id="702" />
+        <class_id class_name="OHPOutputs"                   class_id="703" />
+        <class_id class_name="EmergencyBrakeLeverInputs"    class_id="704" />
+        <class_id class_name="IntercomInputs"               class_id="705" />
+        <class_id class_name="IntercomOutputs"              class_id="706" />
+        <class_id class_name="SCCFaultEventsIntercomInputs" class_id="707" />
+    </class_ids>
+
+</comms_config>

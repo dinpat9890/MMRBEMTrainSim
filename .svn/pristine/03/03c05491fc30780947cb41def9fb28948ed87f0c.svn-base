@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="horse_brown_opacity" guid="714621f17d817e310d8e25af0d6f36fbb64b2b29" parent="30ac7634815508730994eb284f09c1ded1ed095b" base_material="mesh_base">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options transparent="2" depth_mask="1" two_sided="0" cast_shadow="0" cast_world_shadow="1" overlap="0"/>
+	<state name="material_ssao">1</state>
+	<texture name="albedo">../features/obstruction_features/graphics/textures/horse_brown_opacity_d.dds</texture>
+	<parameter name="transparent">0.800000012</parameter>
+</material>

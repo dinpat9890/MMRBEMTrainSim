@@ -1,0 +1,124 @@
+
+x	java:S116
+"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯Hæ‰RMINORZ
+CODE_SMELL
+y	java:S116
+"MRename this field "S1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯Hç‰RMINORZ
+CODE_SMELL
+M
+java:S1659
+" Declare "S1" on a separate line.(ÕÊ²¯Hè‰RMINORZ
+CODE_SMELL
+O
+java:S1659""Declare "mode" on a separate line.(ËùŸÁHê‰RMINORZ
+CODE_SMELL
+™
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(”éÉçHì‰RMINORZ
+CODE_SMELL
+e	java:S106-"9Replace this use of System.out or System.err by a logger.(ËùïHî‰RMAJORZ
+CODE_SMELL
+
+java:S11304"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ˆîä÷ùÿÿÿÿHï‰RMINORZ
+CODE_SMELL
+f	java:S106Î"9Replace this use of System.out or System.err by a logger.(èçê—Hñ‰RMAJORZ
+CODE_SMELL
+š
+java:S1130Õ"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(åøÃHò‰RMINORZ
+CODE_SMELL
+k	java:S106Š"9Replace this use of System.out or System.err by a logger.(»É¶æüÿÿÿÿHô‰RMAJORZ
+CODE_SMELL
+Ÿ
+java:S1130‘"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(èÁ£ƒúÿÿÿÿHõ‰RMINORZ
+CODE_SMELL
+k	java:S106¤"9Replace this use of System.out or System.err by a logger.(§ËåÿÿÿÿÿH÷‰RMAJORZ
+CODE_SMELL
+š
+java:S1130«"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¸ÓºHø‰RMINORZ
+CODE_SMELL
+f	java:S106Ä"9Replace this use of System.out or System.err by a logger.(±Òš½Hú‰RMAJORZ
+CODE_SMELL
+š
+java:S1130Ë"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Îâ ›Hû‰RMINORZ
+CODE_SMELL
+f	java:S106ô"9Replace this use of System.out or System.err by a logger.(şïÅªHı‰RMAJORZ
+CODE_SMELL
+™
+java:S1130û"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(§ÇäHş‰RMINORZ
+CODE_SMELL
+f	java:S106Ï"9Replace this use of System.out or System.err by a logger.(†ìÊÅH€ŠRMAJORZ
+CODE_SMELL
+š
+java:S1130Ö"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(·ÖˆHŠRMINORZ
+CODE_SMELL
+k	java:S106ë"9Replace this use of System.out or System.err by a logger.(Ñ¹Ş¶şÿÿÿÿHƒŠRMAJORZ
+CODE_SMELL
+š
+java:S1130ò"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ï›ñ”H„ŠRMINORZ
+CODE_SMELL
+k	java:S106¦"9Replace this use of System.out or System.err by a logger.(•Á™ÖÿÿÿÿÿH†ŠRMAJORZ
+CODE_SMELL
+Ÿ
+java:S1130­"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ÆÒµöøÿÿÿÿH‡ŠRMINORZ
+CODE_SMELL
+k	java:S106‡"9Replace this use of System.out or System.err by a logger.(·µÅ×ıÿÿÿÿH‰ŠRMAJORZ
+CODE_SMELL
+k	java:S106‘"9Replace this use of System.out or System.err by a logger.(ÙƒƒŒúÿÿÿÿHŠŠRMAJORZ
+CODE_SMELL
+¢
+java:S1130˜"uRemove the declaration of thrown exception 'org.sikuli.script.FindFailed', as it cannot be thrown from method's body.(û³IH‹ŠRMINORZ
+CODE_SMELL
+f	java:S106©"9Replace this use of System.out or System.err by a logger.(Àûå HŠRMAJORZ
+CODE_SMELL
+
+java:S1192Z"JDefine a constant instead of duplicating this literal "Edit.PNG" 10 times.(ºİ…‚üÿÿÿÿHŠRCRITICALZ
+CODE_SMELL
+‚
+java:S1192¸"QDefine a constant instead of duplicating this literal "DeleteButton.PNG" 4 times.(Âó¹H™ŠRCRITICALZ
+CODE_SMELL
+ˆ
+java:S1192–"RDefine a constant instead of duplicating this literal "trackOkButton.PNG" 6 times.(±õö¡şÿÿÿÿHŠRCRITICALZ
+CODE_SMELL
+„
+java:S1192ì"NDefine a constant instead of duplicating this literal "saveAsNew.PNG" 6 times.(ú•¨ÄüÿÿÿÿH¥ŠRCRITICALZ
+CODE_SMELL
+
+java:S1192¼"NDefine a constant instead of duplicating this literal "yes_buton.PNG" 6 times.(˜¶ ıH¬ŠRCRITICALZ
+CODE_SMELL
+”
+java:S1192ø"^Define a constant instead of duplicating this literal "Copy_Scenerio_save_as_new.PNG" 4 times.(‚¹è½ûÿÿÿÿH³ŠRCRITICALZ
+CODE_SMELL
+‡
+java:S1192@"RDefine a constant instead of duplicating this literal "motor_car_1_2.PNG" 8 times.(Ø™çúúÿÿÿÿH¸ŠRCRITICALZ
+CODE_SMELL
+‰
+java:S1192F"TDefine a constant instead of duplicating this literal "trailer_car_1_2.PNG" 4 times.(ûú¸ùÿÿÿÿHÁŠRCRITICALZ
+CODE_SMELL
+
+java:S1192à"KDefine a constant instead of duplicating this literal "Group1.PNG" 4 times.(¢„ØÄûÿÿÿÿHÆŠRCRITICALZ
+CODE_SMELL
+~
+java:S1192^"NDefine a constant instead of duplicating this literal "FullLoad.PNG" 10 times.(³‰–ÚHËŠRCRITICALZ
+CODE_SMELL
+‹
+java:S1192 "ZDefine a constant instead of duplicating this literal "doneScenerioOkButton.PNG" 10 times.(²¢ÄùHÖŠRCRITICALZ
+CODE_SMELL
+
+java:S1192Æ"IDefine a constant instead of duplicating this literal "save.PNG" 8 times.(Á¯ëùÿÿÿÿHáŠRCRITICALZ
+CODE_SMELL
+‹
+java:S1192Â"ZDefine a constant instead of duplicating this literal "SceneraioDeletedPopup.PNG" 4 times.(…¬¾¾HêŠRCRITICALZ
+CODE_SMELL
+
+java:S1192b"ODefine a constant instead of duplicating this literal "okButton1.PNG" 14 times.(ó‡š¡HïŠRCRITICALZ
+CODE_SMELL
+‚
+java:S1192*"MDefine a constant instead of duplicating this literal "okbutton.PNG" 6 times.(“ÕôÌşÿÿÿÿHşŠRCRITICALZ
+CODE_SMELL
+
+java:S1192´"YDefine a constant instead of duplicating this literal "trainConsistOkButton.PNG" 6 times.(À¿¾ÀüÿÿÿÿH…‹RCRITICALZ
+CODE_SMELL
+‘
+java:S1192²"[Define a constant instead of duplicating this literal "scenerioGroupOkButton.PNG" 12 times.(½ÜÿÓúÿÿÿÿHŒ‹RCRITICALZ
+CODE_SMELL
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒáÂ‘øÿÿÿÿH™‹RMINORZ
+CODE_SMELL

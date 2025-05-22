@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="ns_signs_yellow" guid="880fecffd18549004e918294fe4a550600632a1e" base_material="mesh_base">
+	<texture name="albedo">../features/signs/graphics/ns_signs_yellow.dds</texture>
+	<parameter name="albedo_color">0.776470661 0.776470661 0.776470661 1</parameter>
+	<parameter name="emission_scale">0.800000012</parameter>
+</material>

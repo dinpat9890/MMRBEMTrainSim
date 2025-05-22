@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<world_definition xmlns="http://www.sydac.com.au/WorldDefinition/1.0/" version="1.0">
+	<description>
+		<title>Test Bare Track</title>
+	</description>
+	<track_segments>
+		<track_segment segment_id="14" name="LEV" />
+		<track_segment segment_id="2" name="CLM_1" />
+		<track_segment segment_id="3" name="CRV_1" />
+		<track_segment segment_id="7" name="LEV1_main" />
+		<track_segment segment_id="5" name="START_to_LEV1" />
+		<track_segment segment_id="9" name="LEV1_LOOP" />
+		<track_segment segment_id="13" name="LEV2_main" />
+		<track_segment segment_id="11" name="LEV1_to_LEV2" />
+		<track_segment segment_id="15" name="LEV2_loop" />
+	</track_segments>
+	<track_connectivity>
+		<connection connection_id="1" from="5" from_alpha="0" to="7" to_alpha="1" />
+		<connection connection_id="2" from="7" from_alpha="1" to="5" to_alpha="0" />
+		<connection connection_id="3" from="5" from_alpha="0" to="9" to_alpha="1" />
+		<connection connection_id="4" from="9" from_alpha="1" to="5" to_alpha="0" />
+		<connection connection_id="5" from="11" from_alpha="1" to="7" to_alpha="0" />
+		<connection connection_id="6" from="7" from_alpha="0" to="11" to_alpha="1" />
+		<connection connection_id="7" from="11" from_alpha="1" to="9" to_alpha="0" />
+		<connection connection_id="8" from="9" from_alpha="0" to="11" to_alpha="1" />
+		<connection connection_id="9" from="14" from_alpha="1" to="13" to_alpha="0" />
+		<connection connection_id="10" from="13" from_alpha="0" to="14" to_alpha="1" />
+		<connection connection_id="11" from="14" from_alpha="1" to="15" to_alpha="0" />
+		<connection connection_id="12" from="15" from_alpha="0" to="14" to_alpha="1" />
+		<connection connection_id="13" from="11" from_alpha="0" to="13" to_alpha="1" />
+		<connection connection_id="14" from="13" from_alpha="1" to="11" to_alpha="0" />
+		<connection connection_id="15" from="11" from_alpha="0" to="15" to_alpha="1" />
+		<connection connection_id="16" from="15" from_alpha="1" to="11" to_alpha="0" />
+	</track_connectivity>
+	<objects>
+		<object object_id="1" type="Point" name="Point_S1">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="1" />
+			<property name="Facing Segment ID" value="5" />
+			<property name="Facing Segment At Alpha" value="0" />
+			<property name="Trailing Segment ID" value="7" />
+			<property name="Trailing Segment At Alpha" value="1" />
+			<property name="Branch Segment ID" value="9" />
+			<property name="Branch Segment At Alpha" value="1" />
+		</object>
+		<object object_id="2" type="Point" name="Point_S2">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="0" />
+			<property name="Facing Segment ID" value="11" />
+			<property name="Facing Segment At Alpha" value="1" />
+			<property name="Trailing Segment ID" value="7" />
+			<property name="Trailing Segment At Alpha" value="0" />
+			<property name="Branch Segment ID" value="9" />
+			<property name="Branch Segment At Alpha" value="0" />
+		</object>
+		<object object_id="3" type="Point" name="Point_LEV2_North">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="1" />
+			<property name="Facing Segment ID" value="14" />
+			<property name="Facing Segment At Alpha" value="1" />
+			<property name="Trailing Segment ID" value="13" />
+			<property name="Trailing Segment At Alpha" value="0" />
+			<property name="Branch Segment ID" value="15" />
+			<property name="Branch Segment At Alpha" value="0" />
+		</object>
+		<object object_id="4" type="Point" name="Point_LEV2_South">
+			<property name="Initial State" value="Main Line" />
+			<property name="Is Left Branch" value="0" />
+			<property name="Facing Segment ID" value="11" />
+			<property name="Facing Segment At Alpha" value="0" />
+			<property name="Trailing Segment ID" value="13" />
+			<property name="Trailing Segment At Alpha" value="1" />
+			<property name="Branch Segment ID" value="15" />
+			<property name="Branch Segment At Alpha" value="1" />
+		</object>
+	</objects>
+	<points_behaviour>
+		<point_behaviour object_id="1">
+			<state state_id="Main Line">
+				<active_connection connection_id="1" />
+				<active_connection connection_id="2" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="3" />
+				<active_connection connection_id="4" />
+			</state>
+		</point_behaviour>
+		<point_behaviour object_id="2">
+			<state state_id="Main Line">
+				<active_connection connection_id="5" />
+				<active_connection connection_id="6" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="7" />
+				<active_connection connection_id="8" />
+			</state>
+		</point_behaviour>
+		<point_behaviour object_id="3">
+			<state state_id="Main Line">
+				<active_connection connection_id="9" />
+				<active_connection connection_id="10" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="11" />
+				<active_connection connection_id="12" />
+			</state>
+		</point_behaviour>
+		<point_behaviour object_id="4">
+			<state state_id="Main Line">
+				<active_connection connection_id="13" />
+				<active_connection connection_id="14" />
+			</state>
+			<state state_id="Branch Line">
+				<active_connection connection_id="15" />
+				<active_connection connection_id="16" />
+			</state>
+		</point_behaviour>
+	</points_behaviour>
+	<track_geometry>
+		<segment_geometry segment_id="14">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="5200.00000542" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="10000" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="20000" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="2">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="0" y="500" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="9999.995" y="500" z="10.999995" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="19999.99" y="500" z="20.99999" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="3">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="0" y="1000" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="5000" y="1000" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-1000" />
+				</transition>
+			</point>
+			<point x="5783.32690963" y="1378.39003173" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="5845.48790645" y="1456.72272269" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="1000" />
+				</transition>
+			</point>
+			<point x="6628.81481608" y="1835.11275442" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="6728.81481608" y="1835.11275442" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="1000" />
+				</transition>
+			</point>
+			<point x="7512.14172571" y="1456.72272269" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="7574.30272254" y="1378.39003173" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-1000" />
+				</transition>
+			</point>
+			<point x="8357.62963216" y="1000" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="9457.62963216" y="1000" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="100" />
+				</transition>
+			</point>
+			<point x="9541.77673064" y="954.030230587" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="9595.80696123" y="869.883132106" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-100" />
+				</transition>
+			</point>
+			<point x="9679.95405971" y="823.913362693" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="10779.9540597" y="823.913362693" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="-100" />
+				</transition>
+			</point>
+			<point x="10864.1011582" y="869.883132106" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="10918.1313888" y="954.030230587" z="1" e="0">
+				<transition type="CURVE">
+					<arg name="r" value="100" />
+				</transition>
+			</point>
+			<point x="11002.2784873" y="1000" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="19302.2784873" y="1000" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="7">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="2100.00000894" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="3099.99999578" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="5">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="0" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="2100.00000894" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="9">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="2100.00000894" y="10" z="1" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-669.831686387" />
+					<arg name="rb" value="-493.443560218" />
+					<arg name="re" value="-5735.51370057" />
+				</transition>
+			</point>
+			<point x="2101.42172502" y="10.0017133642" z="0.999823790404" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-493.443560218" />
+					<arg name="rb" value="-2842.05286722" />
+					<arg name="re" value="3224.76220082" />
+				</transition>
+			</point>
+			<point x="2101.99999654" y="10.0034157095" z="0.999732296062" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-2842.05286722" />
+					<arg name="rb" value="1950.99203828" />
+					<arg name="re" value="10079.8889959" />
+				</transition>
+			</point>
+			<point x="2102.35687663" y="10.0045642805" z="0.999714146625" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1950.99203828" />
+					<arg name="rb" value="-136.798023089" />
+					<arg name="re" value="1353.9653687" />
+				</transition>
+			</point>
+			<point x="2103.45712676" y="10.0093292946" z="1.00012471742" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-136.798023089" />
+					<arg name="rb" value="-1445.01491685" />
+					<arg name="re" value="-96.4613840796" />
+				</transition>
+			</point>
+			<point x="2103.50931217" y="10.0096972598" z="1.0001512785" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1445.01491685" />
+					<arg name="rb" value="-480.449004184" />
+					<arg name="re" value="-15980.014083" />
+				</transition>
+			</point>
+			<point x="2114.47938286" y="10.1573994266" z="0.99900127113" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-480.449004184" />
+					<arg name="rb" value="1559.84830077" />
+					<arg name="re" value="-1185.3598001" />
+				</transition>
+			</point>
+			<point x="2115.38842532" y="10.1781966204" z="0.998245073025" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1559.84830077" />
+					<arg name="rb" value="-636.258373821" />
+					<arg name="re" value="205.010127106" />
+				</transition>
+			</point>
+			<point x="2115.68828126" y="10.1850974431" z="0.998100001069" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-636.258373821" />
+					<arg name="rb" value="-697.369615198" />
+					<arg name="re" value="-72110.7084998" />
+				</transition>
+			</point>
+			<point x="2137.7223322" y="11.0660150704" z="1.00019340068" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-697.369615198" />
+					<arg name="rb" value="-577.056917437" />
+					<arg name="re" value="-9347.21633086" />
+				</transition>
+			</point>
+			<point x="2141.8438713" y="11.3112968725" z="0.99904211614" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-577.056917437" />
+					<arg name="rb" value="-5262.94089023" />
+					<arg name="re" value="216.4564908" />
+				</transition>
+			</point>
+			<point x="2142.26644012" y="11.3379844564" z="0.999244654816" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-5262.94089023" />
+					<arg name="rb" value="-836.160416673" />
+					<arg name="re" value="-67.6356309884" />
+				</transition>
+			</point>
+			<point x="2142.35206578" y="11.3434069511" z="0.999315192123" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-836.160416673" />
+					<arg name="rb" value="672.339054141" />
+					<arg name="re" value="-64052.3863483" />
+				</transition>
+			</point>
+			<point x="2159.24382984" y="12.4570426445" z="1.00025870549" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="672.339054141" />
+					<arg name="rb" value="654.112961102" />
+					<arg name="re" value="374087.687437" />
+				</transition>
+			</point>
+			<point x="2189.94279748" y="13.6165847418" z="0.999172770448" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="654.112961102" />
+					<arg name="rb" value="-13310685.531" />
+					<arg name="re" value="-4981256.63163" />
+				</transition>
+			</point>
+			<point x="2208.92622789" y="13.7078357812" z="0.999245173328" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-13310685.531" />
+					<arg name="rb" value="-13263006.8222" />
+					<arg name="re" value="713327757.648" />
+				</transition>
+			</point>
+			<point x="2990.01708676" y="13.7075428728" z="1.00116337001" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-13263006.8222" />
+					<arg name="rb" value="734.813989143" />
+					<arg name="re" value="-207645.331335" />
+				</transition>
+			</point>
+			<point x="3009.98473087" y="13.6176986609" z="1.00026323766" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="734.813989143" />
+					<arg name="rb" value="577.199294915" />
+					<arg name="re" value="-8995.31141728" />
+				</transition>
+			</point>
+			<point x="3010.52021662" y="13.610225543" z="1.00019740487" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="577.199294915" />
+					<arg name="rb" value="695.923308007" />
+					<arg name="re" value="45657.7131272" />
+				</transition>
+			</point>
+			<point x="3023.77154041" y="13.2760163549" z="1.00009757289" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="695.923308007" />
+					<arg name="rb" value="568.02099583" />
+					<arg name="re" value="-33325.8439797" />
+				</transition>
+			</point>
+			<point x="3027.47386726" y="13.1343180538" z="1.00040155469" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="568.02099583" />
+					<arg name="rb" value="1274.78113964" />
+					<arg name="re" value="12693.9240481" />
+				</transition>
+			</point>
+			<point x="3030.10057527" y="13.0207676339" z="1.00074339089" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1274.78113964" />
+					<arg name="rb" value="357.730185944" />
+					<arg name="re" value="-2954.13925818" />
+				</transition>
+			</point>
+			<point x="3034.1614389" y="12.8272496877" z="0.998895540345" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="357.730185944" />
+					<arg name="rb" value="1093.6495771" />
+					<arg name="re" value="121.824550001" />
+				</transition>
+			</point>
+			<point x="3034.33359853" y="12.8182677286" z="0.998820536695" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1093.6495771" />
+					<arg name="rb" value="587.065356029" />
+					<arg name="re" value="-140484.923426" />
+				</transition>
+			</point>
+			<point x="3039.78856006" y="12.5153478716" z="1.00020295065" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="587.065356029" />
+					<arg name="rb" value="-11976.5408114" />
+					<arg name="re" value="-14878.9700306" />
+				</transition>
+			</point>
+			<point x="3050.11760948" y="11.8415395826" z="0.999020315388" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-11976.5408114" />
+					<arg name="rb" value="-1454.66605077" />
+					<arg name="re" value="4022.75957754" />
+				</transition>
+			</point>
+			<point x="3055.0467477" y="11.5103514942" z="0.999770955407" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1454.66605077" />
+					<arg name="rb" value="-511.458457446" />
+					<arg name="re" value="-3902.50557696" />
+				</transition>
+			</point>
+			<point x="3061.21293021" y="11.1247149483" z="0.999612835957" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-511.458457446" />
+					<arg name="rb" value="-956.231465267" />
+					<arg name="re" value="1669.0578248" />
+				</transition>
+			</point>
+			<point x="3063.81188481" y="10.9801300102" z="0.999515501421" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-956.231465267" />
+					<arg name="rb" value="-583.852057609" />
+					<arg name="re" value="-4162.68574848" />
+				</transition>
+			</point>
+			<point x="3068.63702233" y="10.735016019" z="1.00029847998" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-583.852057609" />
+					<arg name="rb" value="-761.336169938" />
+					<arg name="re" value="11486.2888588" />
+				</transition>
+			</point>
+			<point x="3078.56807813" y="10.3444716172" z="1.00044141577" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-761.336169938" />
+					<arg name="rb" value="-580.289872314" />
+					<arg name="re" value="-4912.43128907" />
+				</transition>
+			</point>
+			<point x="3083.82513624" y="10.1956383034" z="0.99997717442" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-580.289872314" />
+					<arg name="rb" value="-946.825182626" />
+					<arg name="re" value="5333.40911124" />
+				</transition>
+			</point>
+			<point x="3090.49535969" y="10.0680570496" z="0.999989688587" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-946.825182626" />
+					<arg name="rb" value="-323.709951562" />
+					<arg name="re" value="-20824.3005985" />
+				</transition>
+			</point>
+			<point x="3092.65015772" y="10.040061169" z="1.00123004211" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-323.709951562" />
+					<arg name="rb" value="-3880.16415723" />
+					<arg name="re" value="-1831.13690113" />
+				</transition>
+			</point>
+			<point x="3094.12272369" y="10.0270822591" z="1.00140929956" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-3880.16415723" />
+					<arg name="rb" value="-914.028042556" />
+					<arg name="re" value="70067.299889" />
+				</transition>
+			</point>
+			<point x="3096.00003231" y="10.0131424878" z="1.00090807639" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-914.028042556" />
+					<arg name="rb" value="-528.055278899" />
+					<arg name="re" value="-3455.89071179" />
+				</transition>
+			</point>
+			<point x="3096.56826532" y="10.0095776898" z="1.00071726002" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-528.055278899" />
+					<arg name="rb" value="-669.83168438" />
+					<arg name="re" value="8209.66456251" />
+				</transition>
+			</point>
+			<point x="3099.99999578" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="13">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="4199.99999465" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="5200.00000542" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="11">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="3099.99999578" y="10" z="1" e="0">
+				<transition type="STRAIGHT" />
+			</point>
+			<point x="4199.99999465" y="10" z="1" e="0" />
+		</segment_geometry>
+		<segment_geometry segment_id="15">
+			<widths>
+				<width value="1.676" />
+			</widths>
+			<point x="4199.99999465" y="10" z="1" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="399.81812966" />
+					<arg name="rb" value="414.422575202" />
+					<arg name="re" value="-9425.94048498" />
+				</transition>
+			</point>
+			<point x="4201.92870853" y="9.99540243807" z="0.999802674049" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="414.422575202" />
+					<arg name="rb" value="258.413629448" />
+					<arg name="re" value="5600.52368705" />
+				</transition>
+			</point>
+			<point x="4204.99985541" y="9.96717698118" z="1.00001636853" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="258.413629448" />
+					<arg name="rb" value="-2012.8118349" />
+					<arg name="re" value="-1439.90019473" />
+				</transition>
+			</point>
+			<point x="4206.46390379" y="9.94352370624" z="0.999775241599" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-2012.8118349" />
+					<arg name="rb" value="265.746567435" />
+					<arg name="re" value="2167.37791462" />
+				</transition>
+			</point>
+			<point x="4208.63087652" y="9.90482416882" z="0.999399986408" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="265.746567435" />
+					<arg name="rb" value="483.817412251" />
+					<arg name="re" value="85026.8775798" />
+				</transition>
+			</point>
+			<point x="4211.78802204" y="9.82447229936" z="1.00049087104" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="483.817412251" />
+					<arg name="rb" value="329.306159511" />
+					<arg name="re" value="-4296.09753584" />
+				</transition>
+			</point>
+			<point x="4217.46011094" y="9.61800210342" z="0.998807400024" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="329.306159511" />
+					<arg name="rb" value="415.823184362" />
+					<arg name="re" value="80.0402448962" />
+				</transition>
+			</point>
+			<point x="4217.55955708" y="9.6136011051" z="0.998774017769" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="415.823184362" />
+					<arg name="rb" value="387.114990958" />
+					<arg name="re" value="-45570.7672805" />
+				</transition>
+			</point>
+			<point x="4238.27203964" y="8.16254377541" z="0.999991746963" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="387.114990958" />
+					<arg name="rb" value="867.597822764" />
+					<arg name="re" value="355.610045814" />
+				</transition>
+			</point>
+			<point x="4238.96417969" y="8.09527940325" z="1.00055402124" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="867.597822764" />
+					<arg name="rb" value="270.368451216" />
+					<arg name="re" value="-510.267064591" />
+				</transition>
+			</point>
+			<point x="4240.62362297" y="7.93026425833" z="1.0008079078" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="270.368451216" />
+					<arg name="rb" value="602.389198215" />
+					<arg name="re" value="1351.35428624" />
+				</transition>
+			</point>
+			<point x="4243.84957955" y="7.58576024618" z="0.999894832872" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="602.389198215" />
+					<arg name="rb" value="392.758711677" />
+					<arg name="re" value="-1524.75791467" />
+				</transition>
+			</point>
+			<point x="4246.12582596" y="7.32877450229" z="1.00027917237" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="392.758711677" />
+					<arg name="rb" value="357.443312606" />
+					<arg name="re" value="3220.42953505" />
+				</transition>
+			</point>
+			<point x="4248.63137491" y="7.03093002006" z="0.999795623434" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="357.443312606" />
+					<arg name="rb" value="470.083349608" />
+					<arg name="re" value="-18874.1518261" />
+				</transition>
+			</point>
+			<point x="4257.27377896" y="5.87496971131" z="0.999526321671" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="470.083349608" />
+					<arg name="rb" value="265.716170113" />
+					<arg name="re" value="-15889.1849224" />
+				</transition>
+			</point>
+			<point x="4258.19049114" y="5.7416201019" z="0.99925672572" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="265.716170113" />
+					<arg name="rb" value="530.885316657" />
+					<arg name="re" value="288.598435561" />
+				</transition>
+			</point>
+			<point x="4258.70977112" y="5.66485563445" z="0.999566041123" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="530.885316657" />
+					<arg name="rb" value="323.207938098" />
+					<arg name="re" value="-1743.69973654" />
+				</transition>
+			</point>
+			<point x="4261.71788227" y="5.20744218893" z="1.00147141064" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="323.207938098" />
+					<arg name="rb" value="-8230.80015021" />
+					<arg name="re" value="-1216280.66329" />
+				</transition>
+			</point>
+			<point x="4271.92355989" y="3.50324057557" z="0.998879191596" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-8230.80015021" />
+					<arg name="rb" value="-37664.6679947" />
+					<arg name="re" value="11922.2942467" />
+				</transition>
+			</point>
+			<point x="4280.02484364" y="2.11254717401" z="0.999618506975" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-37664.6679947" />
+					<arg name="rb" value="-401.710996555" />
+					<arg name="re" value="-10132.5019481" />
+				</transition>
+			</point>
+			<point x="4284.9334499" y="1.28178353582" z="1.00055943201" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-401.710996555" />
+					<arg name="rb" value="-399.018179914" />
+					<arg name="re" value="35190.1669869" />
+				</transition>
+			</point>
+			<point x="4294.76281383" y="-0.21485065162" z="1.00140068887" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-399.018179914" />
+					<arg name="rb" value="-329.145838971" />
+					<arg name="re" value="-51.5006054312" />
+				</transition>
+			</point>
+			<point x="4294.81294226" y="-0.221843373591" z="1.0013872505" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-329.145838971" />
+					<arg name="rb" value="-507.686557362" />
+					<arg name="re" value="5648.10492641" />
+				</transition>
+			</point>
+			<point x="4299.08358426" y="-0.792131397221" z="0.999769464313" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-507.686557362" />
+					<arg name="rb" value="-383.993589841" />
+					<arg name="re" value="17197.8786394" />
+				</transition>
+			</point>
+			<point x="4300.78805688" y="-1.00780868026" z="0.999865481132" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-383.993589841" />
+					<arg name="rb" value="-415.434706553" />
+					<arg name="re" value="-72413.8151029" />
+				</transition>
+			</point>
+			<point x="4318.45645387" y="-2.80320521178" z="0.9995671365" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-415.434706553" />
+					<arg name="rb" value="-285.087928574" />
+					<arg name="re" value="4023.80553497" />
+				</transition>
+			</point>
+			<point x="4322.79135095" y="-3.12143785179" z="1.00130871809" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-285.087928574" />
+					<arg name="rb" value="488.034619989" />
+					<arg name="re" value="-1130.75749271" />
+				</transition>
+			</point>
+			<point x="4324.1093495" y="-3.20770659725" z="1.00177991424" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="488.034619989" />
+					<arg name="rb" value="-381.889972933" />
+					<arg name="re" value="-92.8391041251" />
+				</transition>
+			</point>
+			<point x="4324.16223577" y="-3.21117583091" z="1.00175273926" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-381.889972933" />
+					<arg name="rb" value="-387.373970224" />
+					<arg name="re" value="10223.4014035" />
+				</transition>
+			</point>
+			<point x="4339.41633613" y="-3.90688478802" z="1.00096914431" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-387.373970224" />
+					<arg name="rb" value="160.660867297" />
+					<arg name="re" value="46.5053979827" />
+				</transition>
+			</point>
+			<point x="4339.48118147" y="-3.90855704382" z="1.00105950158" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="160.660867297" />
+					<arg name="rb" value="-364.837126009" />
+					<arg name="re" value="-84.0784942901" />
+				</transition>
+			</point>
+			<point x="4339.70750466" y="-3.91450066979" z="1.00122794588" e="-0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-364.837126009" />
+					<arg name="rb" value="-444.385244807" />
+					<arg name="re" value="9124.89352716" />
+				</transition>
+			</point>
+			<point x="4347.71611692" y="-4.04234072629" z="0.999918631073" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-444.385244807" />
+					<arg name="rb" value="-301.600011684" />
+					<arg name="re" value="-4455.92848419" />
+				</transition>
+			</point>
+			<point x="4349.93706829" y="-4.04989423582" z="0.999976857518" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-301.600011684" />
+					<arg name="rb" value="-95717.0359045" />
+					<arg name="re" value="159.525080623" />
+				</transition>
+			</point>
+			<point x="4349.97341156" y="-4.04989689456" z="0.999972892925" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-95717.0359045" />
+					<arg name="rb" value="88526686.0406" />
+					<arg name="re" value="-2126541.4484" />
+				</transition>
+			</point>
+			<point x="4359.98008005" y="-4.05007818415" z="0.999997615814" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="88526686.0406" />
+					<arg name="rb" value="17498412.5417" />
+					<arg name="re" value="1934143830.4" />
+				</transition>
+			</point>
+			<point x="5040.00119409" y="-4.0567206311" z="1.00019717216" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="17498412.5417" />
+					<arg name="rb" value="-1861.94102167" />
+					<arg name="re" value="-281509.299786" />
+				</transition>
+			</point>
+			<point x="5050.00046824" y="-4.04801259966" z="1.00002427737" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1861.94102167" />
+					<arg name="rb" value="-700.961018583" />
+					<arg name="re" value="-154525.827494" />
+				</transition>
+			</point>
+			<point x="5052.70876502" y="-4.03774892492" z="0.999905614764" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-700.961018583" />
+					<arg name="rb" value="-216.863314993" />
+					<arg name="re" value="16049.3170592" />
+				</transition>
+			</point>
+			<point x="5055.99898251" y="-4.00677557175" z="1.00006990603" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-216.863314993" />
+					<arg name="rb" value="-168.179614301" />
+					<arg name="re" value="19118.9203798" />
+				</transition>
+			</point>
+			<point x="5057.27666448" y="-3.98315620888" z="1.00030741577" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-168.179614301" />
+					<arg name="rb" value="922.16050104" />
+					<arg name="re" value="-204.873901627" />
+				</transition>
+			</point>
+			<point x="5057.32689229" y="-3.98204652524" z="1.00031227231" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="922.16050104" />
+					<arg name="rb" value="-180.862383375" />
+					<arg name="re" value="-28448.1879942" />
+				</transition>
+			</point>
+			<point x="5062.43817528" y="-3.85431720798" z="0.999720151233" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-180.862383375" />
+					<arg name="rb" value="206.09828603" />
+					<arg name="re" value="407.548627547" />
+				</transition>
+			</point>
+			<point x="5062.64654523" y="-3.84729263652" z="0.999730598745" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="206.09828603" />
+					<arg name="rb" value="-385.074314801" />
+					<arg name="re" value="-2451.98277685" />
+				</transition>
+			</point>
+			<point x="5063.3480466" y="-3.82432936188" z="0.999844843087" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-385.074314801" />
+					<arg name="rb" value="-411.375832773" />
+					<arg name="re" value="3125883.55947" />
+				</transition>
+			</point>
+			<point x="5093.79190494" y="-1.64207201338" z="1.00059369043" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-411.375832773" />
+					<arg name="rb" value="-661.493401067" />
+					<arg name="re" value="-40.0274195013" />
+				</transition>
+			</point>
+			<point x="5093.84311224" y="-1.63643892726" z="1.00056205436" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-661.493401067" />
+					<arg name="rb" value="-339.798845162" />
+					<arg name="re" value="575.740269836" />
+				</transition>
+			</point>
+			<point x="5094.74484974" y="-1.53637659783" z="1.00013591525" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-339.798845162" />
+					<arg name="rb" value="-469.939408917" />
+					<arg name="re" value="-6065.52707472" />
+				</transition>
+			</point>
+			<point x="5100.58017499" y="-0.835820581971" z="0.999158777702" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-469.939408917" />
+					<arg name="rb" value="-349.518653975" />
+					<arg name="re" value="5264.75647953" />
+				</transition>
+			</point>
+			<point x="5102.57739341" y="-0.576897344786" z="0.998233428725" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-349.518653975" />
+					<arg name="rb" value="-459.647904048" />
+					<arg name="re" value="6713.99688848" />
+				</transition>
+			</point>
+			<point x="5109.92779691" y="0.468912160682" z="1.00034724592" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-459.647904048" />
+					<arg name="rb" value="-286.918342188" />
+					<arg name="re" value="-45.5040974256" />
+				</transition>
+			</point>
+			<point x="5109.97958961" y="0.476757006266" z="1.00036097203" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-286.918342188" />
+					<arg name="rb" value="-1202.70094476" />
+					<arg name="re" value="29836.2367208" />
+				</transition>
+			</point>
+			<point x="5114.04988212" y="1.11592787289" z="0.999353536705" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1202.70094476" />
+					<arg name="rb" value="-137.263459871" />
+					<arg name="re" value="1023.91756857" />
+				</transition>
+			</point>
+			<point x="5115.4287147" y="1.34039567208" z="1.00006140551" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-137.263459871" />
+					<arg name="rb" value="-1542.69411275" />
+					<arg name="re" value="-465.317839971" />
+				</transition>
+			</point>
+			<point x="5116.02159395" y="1.44002687651" z="1.00038778478" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="-1542.69411275" />
+					<arg name="rb" value="1968.14135945" />
+					<arg name="re" value="129501.719595" />
+				</transition>
+			</point>
+			<point x="5132.46334113" y="4.25461953332" z="0.999742050416" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1968.14135945" />
+					<arg name="rb" value="371.957030131" />
+					<arg name="re" value="-22216.4134908" />
+				</transition>
+			</point>
+			<point x="5132.91847094" y="4.33191862191" z="0.999749115224" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="371.957030131" />
+					<arg name="rb" value="610.037506772" />
+					<arg name="re" value="10978.1188879" />
+				</transition>
+			</point>
+			<point x="5136.93581403" y="4.9926922894" z="1.00052406609" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="610.037506772" />
+					<arg name="rb" value="361.411338619" />
+					<arg name="re" value="-1239.83821412" />
+				</transition>
+			</point>
+			<point x="5137.69508465" y="5.113818769" z="1.00057458361" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="361.411338619" />
+					<arg name="rb" value="451.644751345" />
+					<arg name="re" value="31277.0367978" />
+				</transition>
+			</point>
+			<point x="5154.41839883" y="7.39347715077" z="1.00100446696" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="451.644751345" />
+					<arg name="rb" value="209.430231295" />
+					<arg name="re" value="-1037.81196499" />
+				</transition>
+			</point>
+			<point x="5156.27930692" y="7.60346664087" z="0.999867831471" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="209.430231295" />
+					<arg name="rb" value="576.699981766" />
+					<arg name="re" value="515.603123748" />
+				</transition>
+			</point>
+			<point x="5157.24214297" y="7.70676265168" z="0.999315738349" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="576.699981766" />
+					<arg name="rb" value="340.241184294" />
+					<arg name="re" value="-13365.097965" />
+				</transition>
+			</point>
+			<point x="5165.70803201" y="8.52593553209" z="0.999747184837" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="340.241184294" />
+					<arg name="rb" value="507.946752085" />
+					<arg name="re" value="6215.94644729" />
+				</transition>
+			</point>
+			<point x="5169.01060534" y="8.79515020536" z="0.999744068818" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="507.946752085" />
+					<arg name="rb" value="388.66973128" />
+					<arg name="re" value="-3451.08331913" />
+				</transition>
+			</point>
+			<point x="5169.51618787" y="8.83415158127" z="0.999841493609" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="388.66973128" />
+					<arg name="rb" value="429.307962822" />
+					<arg name="re" value="-30085.3071787" />
+				</transition>
+			</point>
+			<point x="5177.82532048" y="9.38346072259" z="0.99967713704" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="429.307962822" />
+					<arg name="rb" value="269.608670736" />
+					<arg name="re" value="11774.6811997" />
+				</transition>
+			</point>
+			<point x="5181.0482262" y="9.54950855873" z="0.999609062661" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="269.608670736" />
+					<arg name="rb" value="1780.24239578" />
+					<arg name="re" value="2935.18404748" />
+				</transition>
+			</point>
+			<point x="5181.21544175" y="9.55720760984" z="0.999633244268" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="1780.24239578" />
+					<arg name="rb" value="305.714857212" />
+					<arg name="re" value="-102674.19463" />
+				</transition>
+			</point>
+			<point x="5184.33224454" y="9.69315641863" z="1.00012548992" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="305.714857212" />
+					<arg name="rb" value="488.507575245" />
+					<arg name="re" value="-14161.3606732" />
+				</transition>
+			</point>
+			<point x="5190.3619244" y="9.88171059323" z="0.999700738704" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="488.507575245" />
+					<arg name="rb" value="382.494754458" />
+					<arg name="re" value="4237.6036614" />
+				</transition>
+			</point>
+			<point x="5194.38617299" y="9.95961068397" z="1.00047157016" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="382.494754458" />
+					<arg name="rb" value="388.008879814" />
+					<arg name="re" value="-3760.55043557" />
+				</transition>
+			</point>
+			<point x="5198.00001451" y="9.99492781551" z="1.0011434482" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="388.008879814" />
+					<arg name="rb" value="397.229126636" />
+					<arg name="re" value="-3472.26178939" />
+				</transition>
+			</point>
+			<point x="5199.95000543" y="9.99999686139" z="1.00002140509" e="0">
+				<transition type="SPIRAL">
+					<arg name="ra" value="397.229126636" />
+					<arg name="rb" value="399.8227111" />
+					<arg name="re" value="58.3973261547" />
+				</transition>
+			</point>
+			<point x="5200.00000542" y="10" z="1" e="0" />
+		</segment_geometry>
+	</track_geometry>
+	<object_geometries>
+		<object_geometry object_id="1" x="2100.00000894" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="2" x="3099.99999578" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="3" x="5200.00000542" y="10" z="1" heading="0" pitch="0" roll="0" />
+		<object_geometry object_id="4" x="4199.99999465" y="10" z="1" heading="0" pitch="0" roll="0" />
+	</object_geometries>
+</world_definition>

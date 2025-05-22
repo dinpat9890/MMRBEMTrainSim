@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="aspen_leaves_summer" guid="6799ff6237bd275ee4a5c7adb67e89c86689c124" parent="3ad9a7d35f3087fb70621c64b30285f3ebd99be7" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1" two_sided="1"/>
+	<texture name="albedo">../worlds/library_objects/vegetation/aspen/textures/aspen_leaf_alb.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/aspen/textures/aspen_leaf_n.dds</texture>
+</material>

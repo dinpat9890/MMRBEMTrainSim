@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shanty_concrete" guid="5b6655270e055f853e820b5b10b42a5679249171" base_material="mesh_base">
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/library_objects/building_library/textures/shanty_concrete.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

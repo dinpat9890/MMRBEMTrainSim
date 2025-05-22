@@ -1,0 +1,70 @@
+<ivysettings>
+  <!-- Set the default conflict management to strict, for safety. Possibly we
+       can do latest-compatible one day. -->
+  <!-- The default resolver must be included in this settings file -->
+  <settings defaultConflictManager="latest-compatible" defaultLatestStrategy="latest-time" defaultResolver="all-repos"/>
+
+  <!-- Allow the options file to be specified -->
+  <property name="ivy.settings.home" value="${user.home}" override="false" />
+  <property name="ivy.options.file" value="${ivy.settings.home}/ivyoptions.xml" override="false" />
+
+  <!-- Include any further settings from a user settings file -->
+  <include file="${ivy.options.file}" />
+
+  <statuses default="integration">
+    <status name="release"     integration="false"/>
+    <status name="milestone"   integration="false"/>
+    <status name="preview"     integration="false"/>
+    <status name="integration" integration="true"/>
+  </statuses>
+
+  <!-- We could include special user credentials too, or just use the read-only account -->
+  <!--include file="${user.home}/ivycredentials.xml" /-->
+  <property name="nexus.username" value="nexus.read.service"/>
+  <property name="nexus.password" value="C8SF82Xt6kwQBP09woI9"/>
+  <credentials host="nexus-global.simu.lan" realm="Sonatype Nexus Repository Manager" username="${nexus.username}" passwd="${nexus.password}" login-url="http://nexus-global.simu.lan/nexus/service/local/authentication/login" session-cache="${ivy.settings.home}/nexus.properties"/>
+  
+  <!-- Define a default property for the status, so that modules that use this
+       in their dependency revisions have a default in case it was not
+       specified. -->
+  <property name="ivy.status.target" value="integration" override="false" />
+  <property name="ivy.status.latest" value="latest.${ivy.status.target}" />
+
+  <property name="nexus-releases"         value="http://nexus-global.simu.lan/nexus/content/repositories/releases" />
+  <property name="nexus-milestones"       value="http://nexus-global.simu.lan/nexus/content/repositories/milestones"/>
+  <property name="nexus-previews"         value="http://nexus-global.simu.lan/nexus/content/repositories/previews"/>
+  <property name="nexus-central"          value="http://nexus-global.simu.lan/nexus/content/repositories/central"/>
+  <property name="ivy.integration.root"   value="${ivy.default.ivy.user.dir}/integration" override="false"/>
+  
+  <property name="ivy.ivy.pattern.default"      value="[organisation]/[module]/([branch]/)[revision]/[module]-ivy-[revision](-[branch]).xml" />
+  <property name="ivy.artifact.pattern.default" value="[organisation]/[module]/([branch]/)[revision]/[module]-[artifact]-[revision](-[branch]).[ext]" />
+  
+  <property name="maven.ivy.pattern.default"      value="[organisation]/[module]/[revision]/[artifact]-[revision].[ext]" />
+  <property name="maven.artifact.pattern.default" value="[organisation]/[module]/[revision]/[artifact]-[revision].[ext]" />
+  
+  <!-- Our resolvers, which is just to go to nexus releases for the moment -->
+  <resolvers>
+    <chain name="all-repos">
+      <url name="release" m2compatible="true">
+        <ivy pattern="${nexus-releases}/${ivy.ivy.pattern.default}" />
+        <artifact pattern="${nexus-releases}/${ivy.artifact.pattern.default}" />
+      </url>
+      <url name="milestone" m2compatible="true">
+        <ivy pattern="${nexus-milestones}/${ivy.ivy.pattern.default}" />
+        <artifact pattern="${nexus-milestones}/${ivy.artifact.pattern.default}" />
+      </url>
+      <url name="preview" m2compatible="true">
+        <ivy pattern="${nexus-previews}/${ivy.ivy.pattern.default}" />
+        <artifact pattern="${nexus-previews}/${ivy.artifact.pattern.default}" />
+      </url>
+      <url name="central" m2compatible="true">
+        <ivy pattern="${nexus-central}/${maven.ivy.pattern.default}" />
+        <artifact pattern="${nexus-central}/${maven.artifact.pattern.default}" />
+      </url>
+      <filesystem name="integration" m2compatible="true" local="true" >
+        <ivy pattern="${ivy.integration.root}/${ivy.ivy.pattern.default}" />
+        <artifact pattern="${ivy.integration.root}/${ivy.artifact.pattern.default}" />
+      </filesystem>
+    </chain>
+  </resolvers>
+</ivysettings>

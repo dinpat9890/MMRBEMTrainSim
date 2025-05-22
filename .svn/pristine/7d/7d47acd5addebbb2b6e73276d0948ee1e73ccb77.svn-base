@@ -1,0 +1,10 @@
+# The way the CCTV Frontend names itself in the different systems
+pam.module.name.driver=FC-05-CCTV Frontend
+
+# 
+# Domain : Peer Application Manager  (pam)
+# 
+# Properties that are specific to a particular system type
+# 
+# The particular comms systems that this CCTV Frontend should listen to/join/drive.
+pam.systems=driver

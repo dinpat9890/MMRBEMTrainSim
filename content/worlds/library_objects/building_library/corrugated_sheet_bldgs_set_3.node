@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1996862691" name="corrugated_sheet_bldgs_set_3">
+		<mesh_name>../worlds/library_objects/gen_building/corrugated_sheet_bldgs_set_03.mesh</mesh_name>
+		<surface name="corrugated_sheet_bldgs_set_03_Corrugated_Sheet_Bldgs_set" max_visible_distance="800" max_fade_distance="10" material="a6823a4362292ef199f8d065e444688df4468f01" property="surface_base"/>
+		<transform>1.1999998778 1.29368468993e-008 0 0.0 -2.25185143587e-008 1.19999992461 0 0.0 0 0 1.20000002384 0.0 -2.27373675443e-012 -7.27595761418e-012 -3.5527136788e-015 1.0</transform>
+	</node>
+</nodes>

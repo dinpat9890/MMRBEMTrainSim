@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+  <layer name="Project"> 
+
+  <object_class class="Train">
+    <!--Lead Loco Outputs -->
+    <object_number name="Lead Car Acceleration" constant_name="LLO_LEAD_LOCO_ACCELERATION" default="0" delta="0.001" />
+    <object_number name="Lead Car Jerk" constant_name="LLO_LEAD_LOCO_JERK" default="0.0" delta="1.0E-5"/>
+    <object_number name="Lead Car Derailment Status" constant_name="LLO_DERAILMENT" default="0" delta="0.001" />
+    <object_number name="Lead Car Collision Status" constant_name="LLO_COLLISION" default="0" delta="0.001" />
+    <object_number name="Track Height" constant_name="LLO_TRACK_HEIGHT" default="0" delta="0.001" />
+    <object_number name="Track Gradient" constant_name="LLO_TRACK_GRADIENT" default="0" delta="0.001" />
+    <object_number name="Track Radius" constant_name="LLO_TRACK_RADIUS" default="0" delta="0.001" />
+    <object_number name="Length" constant_name="LENGTH" default="0" delta="0.001" />
+    <object_number name="Mass" constant_name="MASS" default="0" delta="1" />
+  </object_class>
+  <object_class class="TrainDebug" constant_name="TrainDebug" />
+  <object_class class="VehicleDebug" constant_name="VehicleDebug" />
+    <object_class class="CBTCVehicleInputs" constant_name="CBTC_VEHICLE_INPUTS" />
+    <object_class class="CBTCVehicleOutputs" constant_name="CBTC_VEHICLE_OUTPUTS" />
+    <object_class class="CBTCTrainInputs" constant_name="CBTC_TRAIN_INPUTS" />
+	<object_class class="DMIVehicleOutputs" constant_name="DMI_VEHICLE_OUTPUTS" />
+	<object_class class="TCMSVehicleInputs" constant_name="TCMS_VEHICLE_INPUTS" />
+    <object_class class="TCMSVehicleOutputs" constant_name="TCMS_VEHICLE_OUTPUTS" />
+	<object_class class="PAPISVehicleOutputs" constant_name="PAPIS_VEHICLE_OUTPUTS" />
+  <object_class class="TCMSMessage" constant_name="TCMS_MESSAGE" instance_number="Index">
+    <object_number name="Index" constant_name="INDEX" default="0.0" delta="0.5"/>
+  </object_class>
+  
+  <object_class class="TCMSMessages" constant_name="TCMS_MESSAGES">
+  </object_class>
+	
+  </layer>
+
+  <!-- Parent-child relationship mapping -->
+  <relationship parent="Vehicle" child="VehicleDebug"/>
+  <relationship parent="Train" child="TrainDebug"/>
+  
+  <relationship parent="Train" child="CBTCTrainInputs" />
+  <relationship parent="Vehicle" child="CBTCVehicleInputs" />
+  <relationship parent="Vehicle" child="CBTCVehicleOutputs" />
+  <relationship parent="Vehicle" child="DMIVehicleOutputs" />
+  <relationship parent="Vehicle" child="TCMSVehicleInputs" />
+  <relationship parent="Vehicle" child="TCMSVehicleOutputs" />
+  <relationship parent="Vehicle" child="PAPISVehicleOutputs" />
+  <relationship parent="TCMSVehicleOutputs" child="TCMSMessages" />
+  <relationship parent="TCMSMessages" child="TCMSMessage" />
+  <!-- Class ID declerations -->  
+  <class_ids>
+    <class_id class_name="VehicleDebug" class_id="1000"/>
+    <class_id class_name="TrainDebug" class_id="1001"/>
+    <class_id class_name="CBTCVehicleInputs" class_id="1011"/>
+    <class_id class_name="CBTCVehicleOutputs" class_id="1012"/>
+	<class_id class_name="CBTCTrainInputs" class_id="1013"/>
+	<class_id class_name="DMIVehicleOutputs" class_id="1014"/>
+	<class_id class_name="TCMSVehicleInputs" class_id="1015"/>
+    <class_id class_name="TCMSVehicleOutputs" class_id="1016"/>
+	<class_id class_name="PAPISVehicleOutputs" class_id="1019"/>
+	<class_id class_name="TCMSMessages" class_id="1017"/>
+	<class_id class_name="TCMSMessage" class_id="1018"/>
+  </class_ids>
+</comms_config>
+

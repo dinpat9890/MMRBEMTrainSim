@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshClutter" id="291626020" name="ObjectMeshClutter_aspen_04">
+		<mesh_name>aspen/aspen_04.mesh</mesh_name>
+		<intersection>1</intersection>
+		<visible_distance>200</visible_distance>
+		<fade_distance>50</fade_distance>
+		<seed>123</seed>
+		<size_x>4097</size_x>
+		<size_y>4097</size_y>
+		<step>100</step>
+		<density>0.00499999989</density>
+		<threshold>0.5</threshold>
+		<angle>0</angle>
+		<min_scale_mean>1</min_scale_mean>
+		<min_scale_spread>0</min_scale_spread>
+		<max_scale_mean>1.50800002</max_scale_mean>
+		<max_scale_spread>0.508000016</max_scale_spread>
+		<offset_mean>-1</offset_mean>
+		<offset_spread>0</offset_spread>
+		<rotation_mean>0 0 0</rotation_mean>
+		<rotation_spread>0 0 0</rotation_spread>
+		<mask_flip_y>1</mask_flip_y>
+		<surface name="aspen_04_trunk_lod_0_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<surface name="aspen_04_trunk_lod_1_trunk_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<surface name="aspen_04_trunk_lod_2_trunk_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<surface name="aspen_04_leaf_lod_2_leaves_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="6bc1b6c6c03ce27931cf7d2817946eec2dfc1f63" property="surface_base"/>
+		<surface name="aspen_04_leaf_lod_0_leaves_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="6bc1b6c6c03ce27931cf7d2817946eec2dfc1f63" property="surface_base"/>
+		<surface name="aspen_04_leaf_lod_1_leaves_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="6bc1b6c6c03ce27931cf7d2817946eec2dfc1f63" property="surface_base"/>
+		<surface name="aspen_04_twigs_lod_0_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+		<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectGrass" id="1911599558" collider="0" folded="1" name="ObjectGrass_aspen_04">
+			<thinning>1</thinning>
+			<variation>1</variation>
+			<orientation>0</orientation>
+			<intersection>1</intersection>
+			<num_textures>1</num_textures>
+			<seed>123</seed>
+			<size_x>4097</size_x>
+			<size_y>4097</size_y>
+			<step>1600</step>
+			<subdivision>16</subdivision>
+			<density>0.00499999989</density>
+			<threshold>0.5</threshold>
+			<angle>0</angle>
+			<probability>1 1 1 1</probability>
+			<min_bend_mean>0 0 0 0</min_bend_mean>
+			<min_bend_spread>0 0 0 0</min_bend_spread>
+			<max_bend_mean>0 0 0 0</max_bend_mean>
+			<max_bend_spread>0 0 0 0</max_bend_spread>
+			<min_height_mean>1 1 1 1</min_height_mean>
+			<min_height_spread>0 0 0 0</min_height_spread>
+			<max_height_mean>25.0079994 25.0079994 25.0079994 25.0079994</max_height_mean>
+			<max_height_spread>7.0079999 7.0079999 7.0079999 7.0079999</max_height_spread>
+			<aspect_mean>1 1 1 1</aspect_mean>
+			<aspect_spread>0.100000001 0.100000001 0.100000001 0.100000001</aspect_spread>
+			<offset_mean>-2 -2 -2 -2</offset_mean>
+			<offset_spread>0 0 0 0</offset_spread>
+			<mask_flip_y>1</mask_flip_y>
+			<surface name="grass" min_visible_distance="150" max_visible_distance="1000" min_fade_distance="50" max_fade_distance="100" material="56580693258e5f6a431a0f62ee52a4436f2b3ddf" property="surface_base"/>
+			<transform>0.999999940391 0 0 0.0 0 0.999999940391 0 0.0 0 0 1 0.0 2.84217094304e-014 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

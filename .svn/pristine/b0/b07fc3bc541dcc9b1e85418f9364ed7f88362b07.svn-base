@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="639735149" name="shirt">
+		<mesh_name>../features/obstruction_features/graphics/shirt.mesh</mesh_name>
+		<surface name="shirt" max_visible_distance="800" max_fade_distance="10" material="7f0c5e61448d2560e7c9d08b42b518d00b01adf2" property="surface_base"/>
+		<transform>0.999999940395 5.55111512313e-017 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 -3.63797880709e-012 0 1.0</transform>
+	</node>
+</nodes>

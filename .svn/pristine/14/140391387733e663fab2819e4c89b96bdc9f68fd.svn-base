@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Automatic Region" group="CBTC" constant_name="FETY_AUTOMATIC_REGION" modifiable="0" available="1" user_feature="0">
+  <feature_type_icon icon_code="AutomaticRegion" small_icon="Icons/AutomaticRegion.zip#AutomaticRegion-SMALL.jpg" big_icon="Icons/AutomaticRegion.zip#AutomaticRegion-BIG.jpg" />
+</feature_type>

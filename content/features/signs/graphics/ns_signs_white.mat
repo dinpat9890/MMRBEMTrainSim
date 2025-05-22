@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="ns_signs_white" guid="deff7d69cb8bd59c1da91ad0a4013398c2d88e8f" base_material="mesh_base">
+	<texture name="albedo">../features/signs/graphics/ns_signs_white.dds</texture>
+	<parameter name="albedo_color">0.909803987 0.909803987 0.909803987 1</parameter>
+	<parameter name="emission_scale">0.800000012</parameter>
+</material>

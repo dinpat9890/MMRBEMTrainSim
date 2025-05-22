@@ -1,0 +1,10 @@
+# The way the TCMS Backend names itself in the different systems
+pam.module.name.driver=PSD Backend
+
+# 
+# Domain : Peer Application Manager  (pam)
+# 
+# Properties that are specific to a particular system type
+# 
+# The particular comms systems that this TCMS Backend should listen to/join/drive.
+pam.systems=driver

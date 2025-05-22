@@ -1,0 +1,14 @@
+﻿(! Explodes all detonators in the active state when any bogie crosses over them)
+(for-all-features-of-type "Detonator" $feature
+  (for-all-trains $train
+    (for-all-vehicles $train $vehicle
+      (for-all-bogies $train $vehicle $bogie
+        (for-track-association-crossed (bogie-track-position $train $vehicle $bogie) (initial-feature-track-association $feature) $position $exploded
+          (set-feature-state-if (and $exploded (== (get-feature-state $feature) (feature-state-id $feature "Active")))
+                                $feature
+                                (feature-state-id $feature "Exploded"))
+        )
+      )
+    )
+  )
+)

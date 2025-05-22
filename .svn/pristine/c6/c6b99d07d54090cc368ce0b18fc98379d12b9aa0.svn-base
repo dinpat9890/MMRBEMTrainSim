@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <LocalDebuggerCommand>$(SolutionDir)..\..\dependencies\software\oksygen\sim\core\modules\plugin_module\bin\plugin_module_d.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>CBTCUnits_d.ini</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)..\..\Deploy\cots\xerces\Bin\$(Platform);$(SolutionDir)..\..\Deploy\cots\python\bin;$(SolutionDir)..\..\Deploy\cots\oci\$(Platform)\bin;$(SolutionDir)..\..\Deploy\cots\vc_redist\$(PlatformTarget)\crt;$(COTSDir)xerces/bin/Win32;%PATH%
+PYTHONHOME=$(SolutionDir)..\..\Deploy\cots\python
+PYTHONPATH=$(SolutionDir)..\..\Deploy\cots\python\python_lib.zip
+TNS_ADMIN=$(SolutionDir)..\..\Deploy\Environment\</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <LocalDebuggerCommand>$(SolutionDir)..\..\dependencies\software\oksygen\sim\core\modules\plugin_module\bin\plugin_module64_d.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>"$(SolutionDir)CBTCUnits_d.ini"</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)..\..\Deploy\cots\xerces\Bin\$(Platform);$(SolutionDir)..\..\Deploy\cots\python\bin;$(SolutionDir)..\..\Deploy\cots\oci\$(Platform)\bin;$(SolutionDir)..\..\Deploy\cots\vc_redist\$(PlatformTarget)\crt;%PATH%
+PYTHONHOME=$(SolutionDir)..\..\Deploy\cots\python
+PYTHONPATH=$(SolutionDir)..\..\Deploy\cots\python\python_lib.zip</LocalDebuggerEnvironment>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="platform_lights" guid="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" parent="74de717c488e1384c0a179ba0f7519c6733d1fe5" base_material="mesh_base">
+	<options two_sided="0"/>
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/platform_lights.dds</texture>
+	<texture name="emission">../worlds/library_objects/shared_elements/textures/platform_lights_e.dds</texture>
+</material>

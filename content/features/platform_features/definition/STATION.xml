@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- DO NOT ASSOCIATE TRACK, CHAINAGE AND X OFFSETS TO THIS FEATURE IN THE FEATURE PLACEMENT SPREADSHEET
+     AS THEY WILL UNIQUELY DEFINE A POINT AND HENCE THE STATION REGION DEFINED AS A CONVEX POLYGON
+     WILL NOT BE DISPLAYED AS A POLYGON IN SCC TRACKMAP-->
+
+<feature_type name="Station" group="Location" constant_name="FETY_STATION" modifiable="0" available="1" user_feature="0">
+    <feature_type_icon icon_code="STATION" small_icon="icons/STATION.zip#STATION-SMALL.jpg" big_icon="icons/STATION.zip#STATION-BIG.jpg" />
+</feature_type>

@@ -1,0 +1,9 @@
+
+[Defaults]
+System=System.ini
+Database=Database.ini
+Logging=Logging.ini
+
+[System.1]
+Module Name=Hub
+Request All Objects=0

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="43552217" name="line_2a_depot_building_2">
+		<mesh_name>../worlds/mmrbem/graphics/depot/line_2a_depot_building_2.mesh</mesh_name>
+		<surface name="line_2a_depot_building_2_depot_01" max_visible_distance="1000" max_fade_distance="10" material="a7168e711aeb0e66ee12c58696e2d9cd428be9e8" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_depot_02" max_visible_distance="1000" max_fade_distance="10" material="10c234ab03a84330b2c4da398b5512b1d2ae9265" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_depot_name_board" max_visible_distance="1000" max_fade_distance="10" material="28e9e51a8c163127b247e3030354afe0a9084a13" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_depot_rough concrete" max_visible_distance="1000" max_fade_distance="10" material="68420a2261aaa870139bdadba92297c9bc0a8bfe" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_depot_rough concrete_green" max_visible_distance="1000" max_fade_distance="10" material="716909574b5a52a7bab3aa179b4399bfb16cdeca" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_depot_rough concrete_red" max_visible_distance="1000" max_fade_distance="10" material="805445940cdacd606f9daf4bf34166666a8315d0" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_feature_signal_mumbai" max_visible_distance="1000" max_fade_distance="10" material="c90f075103b255107eac4758fecb69359dc381df" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_fence_electric" max_visible_distance="1000" max_fade_distance="10" material="87421911dd70d1c235dd9800cf65d2ce450629a0" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_fence_metal_square" max_visible_distance="1000" max_fade_distance="10" material="54f4f30996fa6fd8ea7734da4a3cd7e8ae8b810b" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_fence_metal_white_v1" max_visible_distance="1000" max_fade_distance="10" material="1eae52cb2e82c5439c0d2a6054d56b1469d1ca59" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_gantry_atlas_d" max_visible_distance="1000" max_fade_distance="10" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_generic_metal" max_visible_distance="1000" max_fade_distance="10" material="31392cb040148a4ea61d8c3bec465635ec98ffbf" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_metal_roof_pattern" max_visible_distance="1000" max_fade_distance="10" material="e999a24d85297bdf7ea4d18cefc015d50e190348" property="surface_base"/>
+		<surface name="line_2a_depot_building_2_wire_black" max_visible_distance="1000" max_fade_distance="10" material="cc3b524f458f343206fa252f36963d995a1086e8" property="surface_base"/>
+		<transform>1.00000005013 -4.39082597503e-008 7.57306469012e-029 0.0 2.88334242315e-008 0.999999992463 -1.00974195868e-028 0.0 9.46633086265e-029 1.26217744835e-028 1 0.0 -7.27595761418e-012 -7.27595761418e-012 -1.57071277624e-014 1.0</transform>
+	</node>
+</nodes>

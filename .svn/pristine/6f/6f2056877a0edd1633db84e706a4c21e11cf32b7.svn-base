@@ -1,0 +1,15 @@
+#
+# Domain : Peer Application Manager  (pam)
+#
+# Properties that are specific to a particular system type
+#
+# The way the HMI Backend names itself in the different systems
+pam.systems=driver,integrated
+# 
+# Domain : Peer Application Manager  (pam)
+# 
+# Properties that are specific to a particular system type
+# 
+# The particular comms systems that this HMI Backend should listen to/join/drive.
+pam.module.name.driver=OWS-03-GCP Driver Desk Control Panel Observer
+pam.module.name.integrated=GCP Driver Desk Control Panel

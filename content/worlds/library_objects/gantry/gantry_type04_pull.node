@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2098625992" name="gantry_type04_pull">
+		<mesh_name>../worlds/library_objects/gantry/gantry_type04_pull.mesh</mesh_name>
+		<surface name="gantry_type04_pull_fence_electric" max_visible_distance="1000" material="48094474559869b5f217bae90dd93f663d90a28a" property="surface_base"/>
+		<surface name="gantry_type04_pull_gantry_atlas_d" max_visible_distance="1000" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<transform>0.999999880791 1.52655665886e-016 0 0.0 -8.32667268469e-017 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -7.27595761418e-012 0 -1.7763568394e-015 1.0</transform>
+		<node type="NodeDummy" id="741514517" name="Connection_conductor">
+			<transform>0.999999940395 -1.32353427796e-023 0 0.0 1.32353427796e-023 0.999999940395 0 0.0 0 0 1 0.0 -1.61558713389e-027 -8.07793566946e-028 5.4 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="2129587999" name="Connection_catenary">
+			<transform>0.999999940395 -1.32353427796e-023 0 0.0 1.32353427796e-023 0.999999940395 0 0.0 0 0 1 0.0 -0.02 -1.61558713389e-027 6.75 1.0</transform>
+		</node>
+	</node>
+</nodes>

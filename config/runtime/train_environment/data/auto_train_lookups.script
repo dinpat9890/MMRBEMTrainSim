@@ -1,0 +1,34 @@
+(!
+  @file AutoTrains.script
+  @author Brett Stawinski
+
+  Stores look ups for auto train properties, right now this is only for coupler types
+  but could be expanded in future
+
+  @copyright Copyright: SYDAC Pty Ltd, 2018
+)
+
+(define kph-to-ms $kph (* $kph 0.2778))
+
+(define default-max-speed (kph-to-ms 80.0))
+
+(define get-max-speed-for-train-type-name $train_type_name
+  (case
+    (== $train_type_name "BEML_EMU") (kph-to-ms 80.0)
+    (default-max-speed)
+  )
+)
+
+(! Autotrains coupling params)
+(! Add your train types here)
+( define has-autocoupler $train_type_name (== $train_type_name "BEML_EMU") )
+
+(define default-coupler-type 1.0)
+
+(! Need to add other train types later simplifying where all couplers on auto train are same type)
+(define get-coupler-type-for-train-type-name $train_type_name
+  (case
+    (== $train_type_name "BEML_EMU") 1
+    (default-coupler-type)
+  )
+)

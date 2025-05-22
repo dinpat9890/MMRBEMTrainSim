@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><ivy-module xmlns:e="http://ant.apache.org/ivy/extra" version="2.4">
+    <info e:svn_revision="1878" organisation="sydac.sim.freight.libraries" module="session_data_access" branch="sfts_2_8" revision="3.3.1-alpha2" status="preview" publication="20220520102541" e:version.major="3" e:version.minor="3" e:release_version="3.3.0" e:release_branch="sfts_2_8"/>
+    <configurations>
+        <conf name="release" description="Provides a package of artifacts to deploy or release" visibility="public" extends="runtime"/>
+        <conf name="develop" description="Provides a package of artifacts to use for development" visibility="public" extends="runtime"/>
+        <conf name="runtime" description="Provides artifacts required to use at runtime" visibility="public"/>
+        <conf name="compile" description="Provides artifacts to compile against" visibility="public"/>
+        <conf name="link" description="Provides artifacts to link against" visibility="public" extends="compile"/>
+        <conf name="doc" description="Produces documentation artifacts" visibility="public"/>
+        <conf name="rn" description="Produces release notes source artifacts" visibility="public"/>
+        <conf name="build" description="Fetches dependencies and builds all artifacts." visibility="private"/>
+        <conf name="test" description="Fetches dependencies for building additional test suites" visibility="private" extends="build"/>
+    </configurations>
+    <publications defaultconf="build">
+        <artifact name="include" type="cpp-headers" ext="zip" e:root="software" conf="compile" packaging="zip"/>
+        <artifact name="lib" type="cpp-libraries" ext="zip" e:root="software" conf="link" packaging="zip"/>
+        <!--artifact name="doc"            type="doc"                  ext="zip"  e:root="software" conf="doc"     packaging="zip" /-->
+        <artifact name="relnotes" type="release-notes" ext="rn" e:root="software" conf="rn"/>
+        <artifact name="release_notes" type="release-notes-output" ext="html" e:root="software"/>
+    </publications>
+    <dependencies defaultconfmapping="build-&gt;compile,rn;test-&gt;runtime,link;%-&gt;#">
+        <dependency org="oksygen.sim.train.packages" name="core_train_sim" rev="4.0.1-rc6" branchConstraint="core_4_0" revConstraint="4.0.1-rc6" branch="core_4_0" conf="*"/>
+    </dependencies>
+</ivy-module>

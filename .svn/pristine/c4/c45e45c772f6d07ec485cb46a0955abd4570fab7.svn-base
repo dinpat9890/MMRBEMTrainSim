@@ -1,0 +1,416 @@
+package Mumbai_Metro_SMC;
+
+import org.sikuli.script.Button;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Mouse;
+import org.sikuli.script.Screen;
+import java.io.File;  // Import the File class
+import java.io.IOException;  // Import the IOException class to handle errors
+import java.io.FileWriter;
+
+
+
+public class dummy {
+	
+	Screen S, S1;
+	static FileWriter output;
+	int i;
+	String sessionName, mode;
+	
+	public dummy()throws IOException {
+		// TODO Auto-generated constructor stub
+		output = new FileWriter(FilePathConstant.IMAGE_PATH +"Automation.log");
+		S = new Screen();
+		S1 = new Screen(1);
+		i=0;
+		sessionName=null;
+		mode=null;
+	}
+	
+	private void startSimulator() throws IOException
+	{
+		try {
+			writeFile("**** Launching the simulator ****");
+			S.doubleClick(FilePathConstant.IMAGE_PATH +"ImageSimulatorRun.png");
+			S.wait(FilePathConstant.IMAGE_PATH +"LoginToSSC.png",120);
+			writeFile("**** Simulator Lauched successfully****");
+		} catch (FindFailed e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void simulatorLogin() throws IOException
+	{
+		try {
+			writeFile("**** Logging into the simulator ****");
+			S.find(FilePathConstant.IMAGE_PATH +"Image1.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image1.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image2.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image3.png");
+			S.type("password");
+			S.click(FilePathConstant.IMAGE_PATH +"Image4.png");
+			writeFile("**** User Logged in into the simulator ****");
+		} catch (FindFailed e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void  checkModulesState() throws IOException
+	{
+		try {
+			writeFile("**** Checking required modules are running fine ****");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image4_1.png",100);
+			if(S.exists(FilePathConstant.IMAGE_PATH +"Image4_1.png") != null)
+			{
+				S.click(FilePathConstant.IMAGE_PATH +"Image4_1.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image4_3.png", 60);
+				writeFile("**** All the required modules are running fine ****");
+			}
+			else
+			{
+				S.click(FilePathConstant.IMAGE_PATH +"Image4_11.png");
+				writeFile("**** One or modules are failed to start, please start the failed module  ****");
+			}
+			
+		} catch (FindFailed e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void PrepareSession(String sessionImage, Boolean updatetime) throws IOException
+	{ 
+		try {
+			writeFile("**** Start preparing a session with scenario - " + sessionName +" ****");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image4_2.png",10);
+			S.click(FilePathConstant.IMAGE_PATH +"Image4_2.png");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image5.png",3);
+			S.click(FilePathConstant.IMAGE_PATH +"Image5.png");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image6.png",3);
+			S.click(FilePathConstant.IMAGE_PATH +"Image6.png");
+			writeFile("**** Selecting a scenario ****");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image6_1.png",3);
+			S.click(FilePathConstant.IMAGE_PATH +"Image6_1.png");
+			S.wait(sessionImage,3);
+			S.click(sessionImage);
+			S.wait(FilePathConstant.IMAGE_PATH +"Image8.png",2);
+			S.click(FilePathConstant.IMAGE_PATH +"Image8.png");
+			writeFile("**** Selecting a Driving Cab ****");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image9_1.png",3);
+			S.click(FilePathConstant.IMAGE_PATH +"Image9_1.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image9.png");
+			
+			writeFile("**** Selecting a Trainee ****");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image10_1.png",3);
+			S.click(FilePathConstant.IMAGE_PATH +"Image10_1.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image10.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image11.png");
+			
+			writeFile("**** Selecting a train starting position ****");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image12_1.png",3);
+			S.click(FilePathConstant.IMAGE_PATH +"Image12_1.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image13.png");
+			writeFile("**** Checking Session summary and updating session timings ****");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image14.png",3);
+			if(updatetime == true)
+			{
+				S.click(FilePathConstant.IMAGE_PATH +"Image15.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image16.png",1);
+				S.click(FilePathConstant.IMAGE_PATH +"Image16.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image16_1.png",1);
+				S.click(FilePathConstant.IMAGE_PATH +"Image16_1.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image16_2.png",1);
+				S.click(FilePathConstant.IMAGE_PATH +"Image16_2.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image16_3.png",1);
+				S.click(FilePathConstant.IMAGE_PATH +"Image16_3.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image16_4.png",1);
+				S.click(FilePathConstant.IMAGE_PATH +"Image16_4.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image16_5.png",1);
+				S.click(FilePathConstant.IMAGE_PATH +"Image16_5.png");
+				S.click(FilePathConstant.IMAGE_PATH +"Image17.png");
+			}
+			
+		} catch (FindFailed e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void startSession(String sessionImage) throws IOException
+	{ 
+		try {
+			writeFile("**** Starting a new session - " + sessionName +" ****");
+			S.find(FilePathConstant.IMAGE_PATH +"Image18.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image18.png");
+			S.wait(2.0);
+			if(S.exists(FilePathConstant.IMAGE_PATH +"Image68.png") != null)
+			{
+				S.click(FilePathConstant.IMAGE_PATH +"Image69.png");
+			}
+			S.wait(FilePathConstant.IMAGE_PATH +"Image63.png",10);
+			S.click(sessionImage);
+			S.wait(16.0);
+			writeFile("**** Session started successfully ****");
+		} catch (FindFailed e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void startPlayingSession(String sessionImage) throws IOException
+	{
+		try {
+			
+			S.click(sessionImage);
+			
+			S.wait(FilePathConstant.IMAGE_PATH +"Image22.png",200);
+			if(S.exists(FilePathConstant.IMAGE_PATH +"Image22.png") != null)
+			{
+				writeFile("**** Playing the session : " + sessionName + " ****");
+				S.click(FilePathConstant.IMAGE_PATH +"Image22.png");
+				S.wait(FilePathConstant.IMAGE_PATH +"Image22_1.png",200);
+				S.click(FilePathConstant.IMAGE_PATH +"Image48_1.png");
+				S.click(FilePathConstant.IMAGE_PATH +"Image48_2.png");
+			}
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void loggingIntoTCMS(String image) throws IOException
+	{
+		try {
+			writeFile("**** Logging into TCMS ****");
+			S1.find(FilePathConstant.IMAGE_PATH +image);
+			while(i<6)
+			{
+				S1.click(FilePathConstant.IMAGE_PATH +image);
+				i++;
+			}
+			
+			S1.click(FilePathConstant.IMAGE_PATH +"TCMSLoginButton.png");
+			S1.wait(FilePathConstant.IMAGE_PATH +"TCMSLoginYes",3);
+			S1.click(FilePathConstant.IMAGE_PATH +"TCMSLoginYes.png");
+			writeFile("**** TCMS Login successful ****");
+			i=0;
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+			
+	private void prepareTrainForDriving() throws IOException
+	{
+		try {
+			writeFile("**** Prepairing train for driving ****");
+			S.find(FilePathConstant.IMAGE_PATH +"SoftPLC.png");
+			S.click(FilePathConstant.IMAGE_PATH +"SoftPLC.png");
+			S.wait(2.0);
+			//S.wait(FilePathConstant.IMAGE_PATH +"BatteryOn.png", 3);
+			S.find(FilePathConstant.IMAGE_PATH +"BatteryOn.png");
+			S.click(FilePathConstant.IMAGE_PATH +"BatteryOn.png");
+			S.click(FilePathConstant.IMAGE_PATH +"KeySwitchOn.png");
+			writeFile("**** Waiting for DMI screen to initialise ****");
+			S1.wait(FilePathConstant.IMAGE_PATH +"DMIInitial.png",30);
+			
+			if(S.exists(FilePathConstant.IMAGE_PATH +"PantoStatus.png") == null)
+			{
+				S.click(FilePathConstant.IMAGE_PATH +"PantoUP.png");
+			}
+			writeFile("**** See Panto status on TCMS ****");
+			S1.hover(FilePathConstant.IMAGE_PATH +"PantoHover");
+			S1.wait(3.0);	
+			
+			if(mode == "RMF")
+			{
+				S.click(FilePathConstant.IMAGE_PATH +"ModeSelectorOFF.png");
+				S.wheel(Mouse.WHEEL_DOWN, 1);
+				writeFile("**** See mode selected on DMI ****");
+				S1.hover(FilePathConstant.IMAGE_PATH +"RMFModeSelected");
+				S1.wait(3.0);
+			}
+			else
+			{
+				S.click(FilePathConstant.IMAGE_PATH +"ModeSelectorOFF.png");
+				S.wheel(Mouse.WHEEL_UP, 1);
+				writeFile("**** See mode updates on DMI ****");
+				S1.hover(FilePathConstant.IMAGE_PATH +"CMMode");
+				S1.wait(3.0);
+			}
+				
+			S.click(FilePathConstant.IMAGE_PATH +"HSCBClose.png");
+			S.click(FilePathConstant.IMAGE_PATH +"HSCBClose.png");
+			S.click(FilePathConstant.IMAGE_PATH +"HSCBClose.png");
+			S.click(FilePathConstant.IMAGE_PATH +"HSCBClose.png");
+			writeFile("**** See HSCB status on TCMS ****");
+			S1.hover(FilePathConstant.IMAGE_PATH +"HSCBHover");
+			writeFile("**** Train is ready to drive in selected mode - " + mode + " ****");
+			S1.wait(3.0);
+			
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void driveTrain() throws IOException
+	{
+		try
+		{
+			if(mode == "RMF" || mode == "CM")
+			{
+				writeFile("**** Started driving train in " + mode + " mode ****");
+				S.click(FilePathConstant.IMAGE_PATH +"Deadman.png");
+				S.click(FilePathConstant.IMAGE_PATH +"TractionCoast.png");
+				S.wheel(Mouse.WHEEL_UP, 20);
+			}
+			if(mode == "AM")
+			{
+				writeFile("**** Started driving train in AM mode ****");
+				S.click(FilePathConstant.IMAGE_PATH +"Coast.png");
+				S.click(FilePathConstant.IMAGE_PATH +"Image67.png");
+				S.click(FilePathConstant.IMAGE_PATH +"Image67.png");
+				S.click(FilePathConstant.IMAGE_PATH +"Image67.png");
+				S.click(FilePathConstant.IMAGE_PATH +"Image67.png");
+				writeFile("**** See mode updates on DMI ****");
+				S1.hover(FilePathConstant.IMAGE_PATH +"AMMode");
+				S1.wait(3.0);	
+			}
+			S.click(FilePathConstant.IMAGE_PATH +"Image69.png");
+			writeFile("**** Train started running in selected mode - " + mode + " ****");
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void resetBraking() throws IOException
+	{
+		try
+		{
+			writeFile("**** Resetting emergency brakes applied by CBTC to restart driving ****");
+			S.wait(2.0);
+			S.click(FilePathConstant.IMAGE_PATH +"Coast.png");
+			S.click(FilePathConstant.IMAGE_PATH +"ATCSBRestButton.png");
+			S.click(FilePathConstant.IMAGE_PATH +"ATCSBRestButton.png");
+			S.click(FilePathConstant.IMAGE_PATH +"ATCSBRestButton.png");
+			S.click(FilePathConstant.IMAGE_PATH +"HSCBClose.png");
+			S.click(FilePathConstant.IMAGE_PATH +"HSCBClose.png");
+			S.click(FilePathConstant.IMAGE_PATH +"HSCBClose.png");
+			S.click(FilePathConstant.IMAGE_PATH +"TractionCoast.png");
+			S.wheel(Mouse.WHEEL_UP, 20);
+			S.wait(5.0);
+			
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void endSession() throws IOException
+	{
+		try
+		{
+			S.click(FilePathConstant.IMAGE_PATH +"Image22_1.png");
+			S.click(FilePathConstant.IMAGE_PATH +"Image29.png");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image61.png", 5);
+			S.click(FilePathConstant.IMAGE_PATH +"Image62.png");
+			S.wait(FilePathConstant.IMAGE_PATH +"Image63.png", 5);
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void writeFile(String message)throws IOException {
+		
+		 output.write(message + "\n");
+	     System.out.println(message);
+	}
+	
+	public static void main(String [] args) throws FindFailed {
+		try {
+			// create a file
+		      File myObj = new File(FilePathConstant.IMAGE_PATH +"Automation.log");
+		      if (myObj.createNewFile()) 
+		        System.out.println("Detailed log in saved in " + myObj.getAbsolutePath());
+		       else 
+		        System.out.println("Detailed log in saved in " + myObj.getAbsolutePath());
+		      
+		      	
+				dummy obj = new dummy();
+				obj.writeFile("Welcome to OKTAL SYDAC");
+				obj.startSimulator();
+				obj.simulatorLogin();
+				obj.checkModulesState();
+				obj.sessionName = "Generic Test Scenario";
+				// Starting new session to demonstrate RMF mode
+				obj.PrepareSession(FilePathConstant.IMAGE_PATH +"Image7.png", true);
+				obj.startSession(FilePathConstant.IMAGE_PATH +"Image20.png");
+				if(obj.S.exists(FilePathConstant.IMAGE_PATH +"Image20_1.png") != null)
+				{
+					//obj.checkModulesState();
+					obj.startPlayingSession(FilePathConstant.IMAGE_PATH +"Image20.png");
+					
+					obj.loggingIntoTCMS("TCMSLogin0.png");
+					obj.mode = "RMF";
+					obj.prepareTrainForDriving();
+					obj.driveTrain();
+					
+					obj.writeFile("**** Wait till CBTC applies brakes ****");
+					obj.S.wait(16.0);
+					obj.S.find(FilePathConstant.IMAGE_PATH +"SoftPLC.png");
+					obj.S.click(FilePathConstant.IMAGE_PATH +"SoftPLC.png");
+					//obj.S.wait(FilePathConstant.IMAGE_PATH +"ATCSBResetOn",3);
+					obj.S.wait(2.0);
+					if(obj.S.exists(FilePathConstant.IMAGE_PATH +"ATCSBResetOn") != null)
+						obj.resetBraking();
+					obj.writeFile("**** Ending a running session ****");
+					obj.endSession();
+				}
+				
+				obj.checkModulesState();
+				obj.sessionName = "CBTC Driving CM/AM mode";
+				// Starting new session to demonstrate CM/AM mode
+				obj.PrepareSession(FilePathConstant.IMAGE_PATH +"Image64.png", false);
+				obj.startSession(FilePathConstant.IMAGE_PATH +"Image65.png");
+				obj.S.wait(5.0);
+				if(obj.S.exists(FilePathConstant.IMAGE_PATH +"Image20_3.png") != null)
+				{
+					obj.checkModulesState();
+					obj.startPlayingSession(FilePathConstant.IMAGE_PATH +"Image65.png");
+					obj.S1.wait(5.0);
+					obj.loggingIntoTCMS("TCMSLogin00.png");
+					obj.mode = "CM";
+					obj.prepareTrainForDriving();
+					obj.driveTrain();
+					obj.S.wait(50.0);
+					obj.mode = "AM";
+					obj.S.find(FilePathConstant.IMAGE_PATH +"SoftPLC.png");
+					obj.S.click(FilePathConstant.IMAGE_PATH +"SoftPLC.png");
+					//obj.S.wait(FilePathConstant.IMAGE_PATH +"MaxBrake.png",3);
+					obj.S.wait(2.0);
+					obj.S.click(FilePathConstant.IMAGE_PATH +"MaxBrake.png");
+					obj.S.wait(26.0);
+					obj.driveTrain();
+					obj.writeFile("**** Check whether train is running with maximum permissible speed ****");
+				}
+				
+				obj.S.wait(50.0);
+				obj.writeFile("**** Ending a running session ****");
+				obj.endSession();
+				obj.S.wait(2.0);
+				obj.writeFile("**** Shutting douwn the simulator ****");
+				obj.S.click(FilePathConstant.IMAGE_PATH +"SSCExit.png");
+				obj.S.find(FilePathConstant.IMAGE_PATH +"ExitSimulator.png");
+				obj.S.click(FilePathConstant.IMAGE_PATH +"ExitSimulator.png");
+				obj.S.wait(FilePathConstant.IMAGE_PATH +"End.png", 2.0);
+				obj.S.click(FilePathConstant.IMAGE_PATH +"End.png");
+				
+				obj.writeFile("All Tests Executed.");
+			     // Closes the writer
+				output.close();
+								
+		    } catch (IOException e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    } 
+	}
+}

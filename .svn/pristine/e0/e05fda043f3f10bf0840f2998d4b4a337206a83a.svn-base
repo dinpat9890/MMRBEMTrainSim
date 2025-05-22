@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1615634953" name="goregaon_east_to_aarey">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/goregaon_east_to_aarey.mesh</mesh_name>
+		<surface name="goregaon_east_to_aarey_gantry_poles_numbers_03" material="b81aa68c0a9fdf373c6b6fc62c186e6ebf72a009" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

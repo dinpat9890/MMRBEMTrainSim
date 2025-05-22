@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="work_zone" guid="5f309901841513d379e242513dbb01276c26d931" base_material="mesh_base">
+	<options two_sided="0"/>
+	<state name="specular_map">1</state>
+	<texture name="albedo">work_zone/graphics/work_zone_sign.dds</texture>
+	<texture name="emission">tel_aviv/graphics/tram/textures/tel_aviv_exterior_E.dds</texture>
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0.5</parameter>
+	<parameter name="color"/>
+	<parameter name="shading"/>
+	<parameter name="emission_scale">0.699999988</parameter>
+</material>

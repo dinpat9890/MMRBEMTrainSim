@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info>
+    <MetadataNode>
+        <path value="ProjectData:type:Info">
+            <node name="Info">
+                <entry value="CommonTrain" key="Name" />
+            </node>
+        </path>
+        <path value="Root:type:Categories">
+            <path value="FileClassCategory:type:Category">
+                <node name="Info">
+                    <entry value="None" key="DataType" />
+                    <entry value="Classification" key="Name" />
+                    <entry value="1" key="ReadOnly" />
+                    <entry value="1" key="SingleValued" />
+                </node>
+                <path value="artifact:type:Label">
+                    <node name="Info">
+                        <entry value="Artifact" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="convenience:type:Label">
+                    <node name="Info">
+                        <entry value="Convenience" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="derived:type:Label">
+                    <node name="Info">
+                        <entry value="Derived" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="design:type:Label">
+                    <node name="Info">
+                        <entry value="Design" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="none:type:Label">
+                    <node name="Info">
+                        <entry value="None" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="other:type:Label">
+                    <node name="Info">
+                        <entry value="Other" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+            </path>
+            <path value="ReviewCategory:type:Category">
+                <node name="Info">
+                    <entry value="String" key="DataType" />
+                    <entry value="Review" key="Name" />
+                    <entry value="1" key="ReadOnly" />
+                    <entry value="1" key="SingleValued" />
+                </node>
+                <path value="approved:type:Label">
+                    <node name="Info">
+                        <entry value="Approved" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="needMoreInfo:type:Label">
+                    <node name="Info">
+                        <entry value="More Information Required" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="rejected:type:Label">
+                    <node name="Info">
+                        <entry value="Rejected" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="toReview:type:Label">
+                    <node name="Info">
+                        <entry value="To Review" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:EntryPoints">
+            <path value="351b86c0-b5d5-4077-8388-13cbc843c47b:type:EntryPoint">
+                <node name="Info">
+                    <entry value="utilities/set_up_project.m" key="File" />
+                    <entry value="Set Up Project" key="Name" />
+                    <entry value="StartUp" key="Type" />
+                </node>
+            </path>
+            <path value="4c6305f6-0ae3-4880-8020-8925b9e3b2f5:type:EntryPoint">
+                <node name="Info">
+                    <entry value="utilities/clean_up_project.m" key="File" />
+                    <entry value="Clean Up Project" key="Name" />
+                    <entry value="Shutdown" key="Type" />
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:Extensions" />
+        <path value="Root:type:Files">
+            <path value="data:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="bus:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="CommonTrain_Cfg_Vehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CommonTrain_In_Train.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CommonTrain_In_Train_CollisionAndDerailment.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CommonTrain_In_Vehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CommonTrain_In_Vehicle_Adjacencies.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CommonTrain_In_Vehicle_CollisionAndDerailment.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CommonTrain_Out_LeadVehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CommonTrain_Out_ModelStatus.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+                <path value="config:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="ConfigSet_CommonTrain.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="ConfigSet_CommonTrain_Reference.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+                <path value="enum:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="VehicleType.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+                <path value="parameter:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="Def_Base_TrainFramework.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+            </path>
+            <path value="libraries:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="CommonConfigLib.slx:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+            </path>
+            <path value="models:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+            </path>
+            <path value="utilities:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="clean_up_project.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_bus_names.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_clear.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_load.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_save.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_configurations_clear.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_configurations_load.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_data_names.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="set_up_project.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:ProjectData" />
+        <path value="Root:type:ProjectPath">
+            <path value="01b63d91-e02c-4a01-b47b-e64f2b0e26ab:type:Reference">
+                <node name="Info">
+                    <entry value="data/enum" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="3230a214-286b-41be-ae81-1a690e1e8827:type:Reference">
+                <node name="Info">
+                    <entry value="data/bus" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="774ef5a7-f847-4a0b-817b-19774b6dfcab:type:Reference">
+                <node name="Info">
+                    <entry value="models" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="7fcea2d4-60ac-4183-a2ef-feb0a540ad2f:type:Reference">
+                <node name="Info">
+                    <entry value="libraries" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="92ddab64-fafc-488a-bfef-0e0b86d30060:type:Reference">
+                <node name="Info">
+                    <entry value="data/config" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="a2d8ab99-e2e5-4843-8b03-309f44d56c43:type:Reference">
+                <node name="Info">
+                    <entry value="utilities" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="bf2daf94-b1c1-4518-aa85-fe1e1576ddef:type:Reference">
+                <node name="Info">
+                    <entry value="data/parameter" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="c69b4231-e181-49ac-a242-a6fbef4db007:type:Reference">
+                <node name="Info">
+                    <entry value="data" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:References">
+            <path value="d03cb025-40e7-49d6-8a40-12c9245116bb:type:Reference">
+                <node name="Info">
+                    <entry value="../../dependencies/framework" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+        </path>
+    </MetadataNode>
+    <Files>
+        <File path="CommonTrain.prj" value="2c34c186" />
+        <File path="CommonTrain.version" value="497fb59b" />
+        <File path="data/bus/CommonTrain_Cfg_Vehicle.m" value="bafe2fd6" />
+        <File path="data/bus/CommonTrain_In_Train.m" value="8e639d0a" />
+        <File path="data/bus/CommonTrain_In_Train_CollisionAndDerailment.m" value="5b59e5ea" />
+        <File path="data/bus/CommonTrain_In_Vehicle.m" value="8fd27d06" />
+        <File path="data/bus/CommonTrain_In_Vehicle_Adjacencies.m" value="2706c2a" />
+        <File path="data/bus/CommonTrain_In_Vehicle_CollisionAndDerailment.m" value="8257d81d" />
+        <File path="data/bus/CommonTrain_Out_LeadVehicle.m" value="ff12a3d3" />
+        <File path="data/bus/CommonTrain_Out_ModelStatus.m" value="e282ca4c" />
+        <File path="data/bus/CommonTrain_SimulatorData.m" value="7bc75e95" />
+        <File path="data/bus" value="-1" />
+        <File path="data/config/ConfigSet_CommonTrain.m" value="4a90444c" />
+        <File path="data/config/ConfigSet_CommonTrain_Reference.m" value="6a0a67e4" />
+        <File path="data/config" value="-1" />
+        <File path="data/enum/VehicleType.m" value="573ea77b" />
+        <File path="data/enum" value="-1" />
+        <File path="data/parameter/Def_Base_TrainFramework.m" value="42605af" />
+        <File path="data/parameter" value="-1" />
+        <File path="data" value="-1" />
+        <File path="libraries/CommonConfigLib.slx" value="6b8de19" />
+        <File path="libraries" value="-1" />
+        <File path="models" value="-1" />
+        <File path="utilities/clean_up_project.m" value="556540dd" />
+        <File path="utilities/prj_bus_names.m" value="27e9d151" />
+        <File path="utilities/prj_buses_clear.m" value="e0559700" />
+        <File path="utilities/prj_buses_load.m" value="1ce5bf81" />
+        <File path="utilities/prj_buses_save.m" value="bd8efca" />
+        <File path="utilities/prj_configurations_clear.m" value="aab0cc2" />
+        <File path="utilities/prj_configurations_load.m" value="e31fae10" />
+        <File path="utilities/prj_data_names.m" value="c3a4c6f7" />
+        <File path="utilities/set_up_project.m" value="bcc2c253" />
+        <File path="utilities" value="-1" />
+        <File path="work" value="-1" />
+    </Files>
+    <Date value="2 December 2019 4:06:22 PM" />
+</Info>

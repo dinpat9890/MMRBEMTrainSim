@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Unauthorised Personnel on the Track" group="Handsignaller" constant_name="FETY_CIVILIAN" modifiable="1" available="1" user_feature="0" version="2.0">
+
+  <feature_type_state_type name="State">
+    <feature_type_state state_id="1" name="Not Visible" user_selectable="1" />
+    <feature_type_state state_id="2" name="Idle" user_selectable="1" />
+    <feature_type_state state_id="3" name="Idle Red Flag" user_selectable="1" />
+    <feature_type_state state_id="4" name="Waving Red Flag" user_selectable="1" />
+  </feature_type_state_type>
+
+  <object_parameters>
+    <key name="Initial State" type="State" default="Idle" description="Initial State" />
+  </object_parameters>
+
+  <feature_type_icon icon_code="Civilian" small_icon="Icons/Civilian.zip#Civilian_Idle_SMALL.png" big_icon="Icons/Civilian.zip#Civilian_Idle_BIG.png">
+    <feature_type_state_icon state_id="1" icon_code="Not Visible" small_icon="Icons/Civilian.zip#Civilian_Not_Visible_SMALL.png" big_icon="Icons/Civilian.zip#Civilian_Not_Visible_BIG.png" />
+    <feature_type_state_icon state_id="2" icon_code="Idle" small_icon="Icons/Civilian.zip#Civilian_Idle_SMALL.png" big_icon="Icons/Civilian.zip#Civilian_Idle_BIG.png" />
+    <feature_type_state_icon state_id="3" icon_code="Idle Red Flag" small_icon="Icons/Civilian.zip#Civilian_Holding_Red_Flag_SMALL.png" big_icon="Icons/Civilian.zip#Civilian_Holding_Red_Flag_BIG.png" />
+    <feature_type_state_icon state_id="4" icon_code="Waving Red Flag" small_icon="Icons/Civilian.zip#Civilian_Waving_Red_Flag_SMALL.png" big_icon="Icons/Civilian.zip#Civilian_Waving_Red_Flag_BIG.png" />
+  </feature_type_icon>
+
+  <feature_type_geometry>
+    <object_boundary type="Parallelepiped" x="-1.5" y="0" z="-1" heading="0" pitch="0" roll="0">
+      <arg name="a.x" value="3.0" />
+      <arg name="a.y" value="0" />
+      <arg name="a.z" value="0" />
+      <arg name="b.x" value="0" />
+      <arg name="b.y" value="2.0" />
+      <arg name="b.z" value="0" />
+      <arg name="c.x" value="0" />
+      <arg name="c.y" value="0" />
+      <arg name="c.z" value="2.0" />
+    </object_boundary>
+  </feature_type_geometry>
+  
+   <feature_type_vision class="CivillianHandSignalFeature" raycast_type="RaycastGround" node_file="civillian_signaller.node">
+    <scripting>
+      <script script_path="Scripts/CivillianHandSignal.us.cpp"/>
+    </scripting>
+  </feature_type_vision>  
+   
+</feature_type>

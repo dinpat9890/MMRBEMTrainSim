@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="453445430" name="generic_structure_22">
+		<mesh_name>../worlds/library_objects/gen_building/generic_structure_22.mesh</mesh_name>
+		<surface name="generic_structure_22_generic_structure_22" max_visible_distance="1500" max_fade_distance="10" material="696fa8a0e58c44863374c9ed122cc8d5b84afca2" property="surface_base"/>
+		<transform>0.999999940395 5.55111512313e-017 0 0.0 2.77555756156e-017 0.999999940395 0 0.0 0 0 0.999999940395 0.0 1.36424205266e-012 -7.27595761418e-012 0 1.0</transform>
+	</node>
+</nodes>

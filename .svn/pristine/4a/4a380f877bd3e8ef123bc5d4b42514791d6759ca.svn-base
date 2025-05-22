@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Neutral Section" group="TrainProtection" constant_name="FETY_NEUTRAL_SECTION" modifiable="0" available="1" user_feature="0" version="2.0">
+  
+  <object_parameters>
+    <key name="Length" type="double" default="35" description="Length of Neutral Section" />
+  </object_parameters>
+  
+  <feature_type_icon icon_code="Neutral_Section" small_icon="icons/neutral_section.zip#Neutral_Section-SMALL.png" big_icon="icons/neutral_section.zip#Neutral_Section-BIG.png" />
+</feature_type>

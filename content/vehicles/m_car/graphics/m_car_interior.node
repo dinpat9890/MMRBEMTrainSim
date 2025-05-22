@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1683991328" name="m_car_interior">
+		<mesh_name>../vehicles/m_car/graphics/m_car_interior.mesh</mesh_name>
+		<surface name="m_car_interior_m_car" max_visible_distance="200" max_fade_distance="5" material="38b69e845ccb4978425c280a64aaddb3b71a5f83" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

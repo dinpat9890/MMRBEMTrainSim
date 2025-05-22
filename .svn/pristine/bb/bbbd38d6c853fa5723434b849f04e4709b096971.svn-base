@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2082995423" name="work_zone_begin">
+		<mesh_name>work_zone/graphics/work_zone_begin.mesh</mesh_name>
+		<surface name="10" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<surface name="20" enabled="0" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<surface name="30" enabled="0" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<surface name="40" enabled="0" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<surface name="50" enabled="0" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<surface name="60" enabled="0" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<surface name="70" enabled="0" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<surface name="work_zone_begin" material="5f309901841513d379e242513dbb01276c26d931" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

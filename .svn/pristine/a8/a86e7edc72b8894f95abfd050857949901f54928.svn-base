@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.sydac.com.au/GMI/1.0/"
+           xmlns="http://www.sydac.com.au/GMI/1.0/"
+           elementFormDefault="qualified">
+  <xs:include schemaLocation="common.xsd"/>
+  <xs:element name="gmi_screen_navigation" type="gmi_screen_navigation"/>
+  <xs:complexType name="gmi_screen_navigation">
+    <xs:annotation>
+      <xs:documentation>Comment describing your root element</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="screen" type="screen" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehicle">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Screen for a Vehicle with a certain orientation.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="nav_hotspot" type="nav_hotspot" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="screen" abstract="true">
+    <xs:annotation>
+      <xs:documentation>
+        The base definition for screens in navigation.
+        A screen is referenced by its name.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="vehicle_screen">
+    <xs:annotation>
+      <xs:documentation>
+        The definition for vehicles.
+        A vehicle is referenced by its name.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="screen">
+        <xs:sequence>
+          <xs:element name="orientation_1-2" type="vehicle" minOccurs="1" maxOccurs="1"/>
+          <xs:element name="orientation_2-1" type="vehicle" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="location_based_screen" abstract="true">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Location Based Screen.
+        These are the screens that allow panning style navigation.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="screen">
+        <xs:sequence>
+          <xs:element name="pan_up"    type="pan_button" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="pan_down"  type="pan_button" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="pan_left"  type="pan_button" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="pan_right" type="pan_button" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="pan_button">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a pan button for directional navigation.
+        The target is the name of the screen that we wish to go to. This is type
+        independent, the PT will update the appropriate screen area.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="target" type="xs:string" use="required"/>
+    <xs:attribute name="text" type="xs:string" use="optional"/>
+    <xs:attribute name="display" type="pan_button_display_types" default="text" use="optional"/>
+  </xs:complexType>
+  <xs:simpleType name="pan_button_display_types">
+    <xs:annotation>
+      <xs:documentation>
+        Types of text to display in pan buttons.
+        default means generic text eg "Move up," "Move left," etc.
+        target means the name of the target screen.
+        text means the text used in the button element.
+        text is the default, if it is not defined target is used instead.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="default"/>
+      <xs:enumeration value="target"/>
+      <xs:enumeration value="text"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="main_screen">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Main Screen.
+        These are the screens that show the user some graphics.
+        Adding navigation to these screens is like having a "zoom in" or "travel to" functionality.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="location_based_screen">
+        <xs:sequence>
+          <xs:element name="nav_hotspot" type="nav_hotspot" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="nav_hotspot">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a hotspot for navigation.
+        The target is the name of the screen that we wish to go to. This is type
+        independent, the PT will update the appropriate screen area.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="region" type="region_2d" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="target" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="button_screen">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Button Screen.
+        These are the screens that offer the user choices through buttons.
+        There can be a maximum of five buttons per screen.
+        There should be at least 2 buttons on a screen as buttons are a
+        mechanism for resolving a one to many relationship. Having one button is
+        pointless indirection.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="screen">
+        <xs:sequence>
+          <xs:element name="button" type="nav_button" minOccurs="2" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="nav_button">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a button for navigation.
+        The target is the name of the screen that we wish to go to. This is type
+        independent, the PT will update the appropriate screen area.
+        If you don't supply specific text, the target will be used.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="target" type="xs:string" use="required"/>
+    <xs:attribute name="text" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="plugin_screen">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a Plugin Screen.
+        These are the screens that are custom made per project.
+        Generally they will be smarter than your average GMI screen.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="location_based_screen">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

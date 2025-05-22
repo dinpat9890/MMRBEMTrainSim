@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestScreens>
+ 
+	<SystemTestScreen>
+		<System ID ="1" Name ="DOORS" Status="PASSED" />
+		<System ID ="2" Name ="BRAKES" Status="PASSED" />
+		<System ID ="3" Name ="ATC" Status="PASSED" />
+	
+	</SystemTestScreen>
+
+	<BrakeTestScreen>
+		<Brake ID ="1" CarId ="DM1" Component ="BCU_DM1" Status="Test DCL passed" />
+		<Brake ID ="2" CarId ="DM6" Component ="BCU_DM6" Status="Test WSP passed" />
+		<Brake ID ="3" CarId ="DM6" Component ="BCU_DM6" Status="Test DCL passed" />
+		<Brake ID ="4" CarId ="DM1" Component ="BCU_DM1" Status="Test WSP passed" />
+		
+	</BrakeTestScreen>
+	<FireTestScreen>
+		<Fire ID ="1" CarId ="VEHICLE" Component ="FDU" Status="PASSED" />
+	</FireTestScreen>
+	
+	<BatteryTestScreen>
+		<Battery ID ="1" CarId ="M4" Component ="BCG_M4" Status="PASSED" />
+		<Battery ID ="2" CarId ="M3" Component ="BCG_M3" Status="PASSED" />
+	</BatteryTestScreen>
+	<PisTestScreen>
+		<Pis ID ="1" CarId ="VEHICLE" Component ="PAPIS_CCTV" Status="PAPIS PCU Test passed" />
+		<Pis ID ="2" CarId ="VEHICLE" Component ="PAPIS_CCTV" Status="PAPIS SCU Test passed" />
+		<Pis ID ="3" CarId ="VEHICLE" Component ="PAPIS_CCTV" Status="PAPIS MOP Test passed" />
+		<Pis ID ="4" CarId ="VEHICLE" Component ="PAPIS_CCTV" Status="PAPIS PECU Test passed" />
+		<Pis ID ="5" CarId ="VEHICLE" Component ="PAPIS_CCTV" Status="PAPIS CAMERA Test passed" />
+	</PisTestScreen>
+	<HvacTestScreen>
+		<Hvac ID ="1" CarId ="DM1" Component ="HVAC1_DM1" Status="HVAC1DM1-HV Test Result Ok" />
+		<Hvac ID ="2"  CarId ="T2" Component ="HVAC1_T2" Status="HVAC1T2-HV Test Result Ok" />
+		<Hvac ID ="3" CarId ="DM6" Component ="HVAC1_DM6" Status="HVAC1DM6-HV Test Result Ok" />
+		<Hvac ID ="4" CarId ="DM1" Component ="HVAC2_DM1" Status="HVAC2DM1-HV Test Result Ok" />
+		<Hvac ID ="5"  CarId ="T2" Component ="HVAC2_T2" Status="HVAC2T2-HV Test Result Ok" />
+		<Hvac ID ="6" CarId ="DM6" Component ="HVAC2_DM6" Status="HVAC2DM6-HV Test Result Ok" />
+		<Hvac ID ="7" CarId ="DM1" Component ="HVAC1_DM1" Status="HVAC1DM1-HV Test Result Ok" />
+		<Hvac ID ="8"  CarId ="T2" Component ="HVAC1_T2" Status="HVAC1T2-HV Test Result Ok" />
+		<Hvac ID ="9" CarId ="DM6" Component ="HVAC1_DM6" Status="HVAC1DM6-HV Test Result Ok" />
+	</HvacTestScreen>
+	<DoorTestScreen>
+		<Door ID ="1" CarId ="T5" Component ="DOOR_T5_A1" Status="Door A1 T5- Test Result Ok" />
+		<Door ID ="2" CarId ="T5" Component ="DOOR_T5_A2" Status="Door A2 T5- Test Result Ok" />
+		<Door ID ="3" CarId ="T5" Component ="DOOR_T5_A3" Status="Door A3 T5- Test Result Ok" />
+		<Door ID ="4" CarId ="T5" Component ="DOOR_T5_A4" Status="Door A4 T5- Test Result Ok" />
+		<Door ID ="1" CarId ="T5" Component ="DOOR_T5_B1" Status="Door B1 T5- Test Result Ok" />
+		<Door ID ="2" CarId ="T5" Component ="DOOR_T5_B2" Status="Door B2 T5- Test Result Ok" />
+		<Door ID ="3" CarId ="T5" Component ="DOOR_T5_B3" Status="Door B3 T5- Test Result Ok" />
+		<Door ID ="4" CarId ="T5" Component ="DOOR_T5_B4" Status="Door B4 T5- Test Result Ok" />
+	</DoorTestScreen>
+	<EnergyConsumptionScreen>
+		<Energy ID ="1"   Component ="APS_T2_Energy_Cons_group1_Powering" Description="Energy Consumption APS 1 in T2 When Powering"  Value="0" />
+		<Energy ID ="2"   Component ="APS_T2_Energy_Cons_group2_Powering" Description="Energy Consumption APS 2 in T2 When Powering"  Value="0" />
+		<Energy ID ="3"   Component ="APS_T5_Energy_Cons_group1_Powering" Description="Energy Consumption APS 1 in T5 When Powering"  Value="0" />
+		<Energy ID ="4"   Component ="APS_T5_Energy_Cons_group2_Powering" Description="Energy Consumption APS 2 in T5 When Powering"  Value="0" />
+		<Energy ID ="5"   Component ="APS_T8_Energy_Cons_group1_Powering" Description="Energy Consumption APS 1 in T8 When Powering"  Value="0" />
+		<Energy ID ="6"   Component ="APS_T8_Energy_Cons_group2_Powering" Description="Energy Consumption APS 2 in T8 When Powering"  Value="0" />
+		<Energy ID ="7"   Component ="APS_T2_Energy_Cons_group1_Braking"  Description="Energy Consumption APS 1 in T2 When Braking"   Value="0" />
+		<Energy ID ="8"   Component ="APS_T2_Energy_Cons_group2_Braking"  Description="Energy Consumption APS 2 in T2 When Braking"   Value="0" />
+		<Energy ID ="9"   Component ="APS_T5_Energy_Cons_group1_Braking"  Description="Energy Consumption APS 1 in T5 When Braking"   Value="0" />
+		<Energy ID ="10"  Component ="APS_T5_Energy_Cons_group2_Braking"  Description="Energy Consumption APS 2 in T5 When Braking"   Value="0" />
+	</EnergyConsumptionScreen>
+
+</TestScreens> 

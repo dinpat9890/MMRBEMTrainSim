@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_bush" guid="b965d3a6e235a04bc32df0c307ded91ccc02e835" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/imposter_bush.dds</texture>
+	<texture name="normal">elm_rought/textures/elm_01_imposter_n.dds</texture>
+	<parameter name="translucent_scale">1</parameter>
+</material>

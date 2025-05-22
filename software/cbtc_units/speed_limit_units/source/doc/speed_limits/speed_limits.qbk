@@ -1,0 +1,417 @@
+[article Working with Speed Limits
+    [quickbook 1.7]
+    [id speed_limits]
+    [version 1.0]
+    [copyright 2015 Sydac]
+    [authors [Errington, Luke]]
+]
+
+[section Introduction]
+
+When a train is travelling on track within the simulator’s virtual world it can be useful to understand what speed limit the train is subject to. This can be extended to the profile of speed limits on the train’s path. Knowing this will allow:
+
+* Displaying of the speed limit to the user, such as on the Train Display.
+* Allow automatic trains to drive around the system in accordance with these limits.
+* Allow an automatic driver to drive simulated trains based on these limits.
+* To score the performance of the trainee and determine infractions based on these limits.
+
+Speed Limits are calculated in a central location and exposed within the Comms layer for use by all interested modules. The default behaviour is configurable by a project and may even be completely replaced when the framework supplied is insufficient for the project’s needs.
+
+This document details the understanding that is required by a project of how to work with the speed limit functionality, how to configure it, and how to extend it.
+
+[endsect]
+
+[#speed_limits.summary]
+[section Summary of Functionality]
+
+The purpose of the speed limit functionality is to determine the speed limit characteristics for /each *train*/ in the simulator. This is done once, in a central location, and then published to Comms for use by any module that is interested.
+Generally the logic for determine the speed limits will be equal for all trains, although a project is able to write their own implementation does distinguish between train type, and whether the train is simulated or not.
+
+The speed limit information consists of three elements:
+
+# The *maximum allowable speed* which is what is typically used by speeding infractions, as it holds the maximum speed that a train is allowed to travel at /at this particular moment/.
+# The *speed limit* which is the speed limit /at that location on the track/, regardless of what signals have been seen or passed. This may be referred to as the 'line limit'. This is typically used by the Train Display and driver displays. If a project wishes this to also consider the allowable speed due to signals past, and so forth, then this can be done by appropriate configuration.
+# The *speed limit profile* which is the maximum allowable speed /ahead/ of the train (in the forward direction). This contains the points where the maximum allowable speed changes, and the distances that the changes occur at. (A speed is considered to apply from the distance that it is paired with up until the next speed entry. This profile is thus presumed to be sorted.) This is typically used by automatic drivers.
+
+In all cases the speeds are expressed in metres per second.
+
+The speed limits subsystem is designed so that a project can easily configure its own speed limit requirements and the business of composing these individual requirements to generate a profile for each train can be left to a core Unit. A long with the provided information, this core Unit will apply historical information of previous speed limits of the train in order to determine the current and future ones. It also supports a reversing train, creating sensible speed limits in that situation. Furthermore, the core speed limit functionality supports the option of applying speed limits to just the driver, or to the entire train, ensuring that the whole train has cleared a lower-speed section before increasing its maximum allowable speed.
+
+[endsect]
+
+[section Design]
+
+[section Comms Hierarchy]
+
+The structure and properties in Comms are quite simple and relate directly to the speed limits being calculated, as can be seen in the following diagram.
+
+[$ images/speed_limits_interface.png]
+
+Each train must have a speed limit profile. This is represented within a Comms object that is available to all interested modules. The Comms object itself must be created and populated by a single module. This has the benefit of centralizing the knowledge of how to calculate speed limit profiles, rather than having multiple modules all calculate their own profiles.
+
+The following table describes the objects and their properties:
+[table Comms Properties Related to Speed Limits
+    [[Object]     [Property]             [Comment]]
+    [[Train]      []                     [The standard train object, which may also be an auto-train, or anything with the Train tag.]]
+    [[SpeedLimit] [Max Allowable Speed]  [The train's maximum allowable speed at this moment. This will generally correspond tot he value of the speed limit profile at the current position. See the [link speed_limits.summary summary] for more information.]]
+    [[]           [Speed Limit]          [The train's speed limit at this moment. See the [link speed_limits.summary summary] for more information.]]
+    [[]           [Speed Limit Profile]  [The train's forward speed profile at this current moment. This is a profile of the forward maximum allowable speeds, with distances with respect to the current location of the train. See the [link speed_limits.summary summary] for more information.]]
+]
+
+Note that there should be only one Speed Limit object under each train. In the current implementation this is to apply to the forward movement of the train (as defined by its orientation within the Track Position object of its lead vehicle). It will generally also have considered the history of the train, and the signals and signs that it has passed.
+
+[endsect]
+
+[section Module Design]
+
+The following diagram shows the module structure for implementing the speed limits functionality, along with the data flow between the modules.
+
+[$ images/speed_limits_modules.png]
+
+The important components are discussed in the following table. The green components are those related to producing the speed limits, while the yellow components are the core components that will consume the speed limit information. It is quite possible for a project to develop a new module that also uses the information in this object.
+[table Speed Limits Sub-System Components
+    [[Component]         [Comment]]
+    [[SpeedLimitUnit]    [Creates, populates and regularly updates the SpeedLimit objects. ("Regularly updated"" does not mean "frequently"". The update rate is 1 Hz, which should be satisfactory for speed limit profiles.) This does not, however, contain the knowledge of how to calculate the speed limit profiles. ]]
+    [[SpeedLimitTracker] [Provides the necessary information for the SpeedLimitUnit to be able to determine the speed limits. This is released as sample code and so is freely modifiable by the project. It is produced and provided to the SpeedLimitUnit as a plug-in Resource. Thus, by a project modifying (or replacing) this they can control what appears in the resultant Speed Limit object. If the SpeedLimitTracker’s interface is insufficient to meet the requirements of the project then the project has the capability to not run the core SpeedLimitsUnit at all but instead run their own. ]]
+]
+
+[endsect]
+
+[section Speed Limit Profile]
+
+The speed limit profile is stored within a Raw. It has thus been serialised into a byte array. This serialisation (and any deserialization required) is performed using Google’s Protobuf library. The definition of the profile can be seen from the source proto file, shown below.
+
+[teletype]
+``
+package Core;
+
+option java_package = "com.sydac.speedlimits.proto";
+option java_outer_classname = "SpeedLimitsProtos";
+
+message SpeedLimitList
+{
+  message SpeedLimit
+  {
+    required double distance = 1;
+    required double speed    = 2;
+  }
+
+  required double     start_speed  = 1;
+  repeated SpeedLimit speed_limits = 2;
+
+  required int32      start_segment = 3;
+  required double     start_offset  = 4;
+  required bool       start_heading = 5;
+}
+``
+
+It can be seen that the profile consists of a start speed limit, and then a set of speed limits off into the distance, each paired with a corresponding location. In addition the track position of the lead vehicle is also stored. This allows modules using this data to calculate the effects of the train having have moved since the profile was calculated. (It is not anticipated that this should be necessary though.)
+As with elsewhere through this design, speed is specified in the SI unit of metres per second.
+
+The serialisation code is released with a core release in the Serialisation library. It is necessary for any code that wishes to deserialise the Raw to use the functions available in the header /speed_limits.pb.h/, and to link to both the serialisation library (which can be found in /Common/Serialisation/Lib/) and to the protobuf library (which can be found in /COTS/protobuf/lib/), taking care to select the library that is compatible with the build configuration. It should not be necessary to link to these libraries unless specifically serialising or deserialising the speed limit profile.
+
+[endsect]
+
+[endsect]
+
+[section Customising Speed Limit Functionality]
+
+There are two major options that a project must consider in achieving their desired speed limit functionality:
+
+# Provide their own SpeedLimitTracker as a resource plugin for the core SpeedLimitUnits plugin. The SpeedLimitUnits plugin can also be configured.
+# Write a new project-specific Unit, or Units, to create the SpeedLimit objects for all trains and instantiate them within modules as desired, most probably as a plugin into the WorldModel. While undesirable as this does not benefit from reuse and adds project burden, this approach may be necessary if there are requirements which are beyond the interface supported by the SpeedLimitTracker.
+
+[section Using the Core SpeedLimitUnits]
+
+This primarily boils down to a project writing its own SpeedLimitTracker according to the rules of its track system and the features that it is using. There is a small amount of configuration available, though.
+
+[section Configuring]
+
+The SpeedLimitUnits plugin can be configured through the properties of the host plugin module.
+
+[table SpeedLimitUnits Plugin Configuration Properties
+    [[Section]      [Properties]]
+    [[Speed Limits] [
+                        [variablelist
+                            [[Maximum Speed Limit]  [
+                                                        The speed limit to use when there are no other speed limits on path. This defaults to 120 km/h, or 33.33 m/s.).
+                                                    ]]
+                        ]
+                    ]]
+]
+
+[endsect]
+
+[section Writing a Custom SpeedLimitTracker]
+
+The easiest approach to implementing a project-specific SpeedLimitTracker is to start with the core SpeedLimitTracker and modify it, which is relatively self-apparent.
+
+[heading Derive from SpeedLimitConfig]
+[c++]
+
+The base resource type that needs to be derived from, and then added to the `Resources` bundle is `Core::SpeedLimits::SpeedLimitConfig` which can be found in /Interfaces/SpeedLimitTypes.h/.
+
+```
+namespace Core
+{
+    namespace SpeedLimits
+    {
+        /// The interface that likely will need to be supplied to a SpeedLimitUnit on construction.
+        /// It provides a way to create all of the SpeedLimitType interfaces for use.
+
+        class SpeedLimitConfig
+        {
+        public:
+            /// Queried to determine all of the speed limit types that we need to track.
+            ///
+            /// @return All of the speed limit types as shared pointers to the SpeedLimitType
+            ///         interface, which allows us to use them to also determine profile points and
+            ///         adjustments for their type.
+
+            virtual std::vector<std::shared_ptr<const SpeedLimitType>> GetSpeedLimitTypes() = 0;
+        };
+    }
+}
+```
+
+It may be added to the resource bundle in the resource DLL plug-in as shown. Please consider the sample code for the core SpeedLimitTracker for wider context.
+```
+RESOURCE_DLL_API void CreateResources(Sydac::Resources &resources)
+{
+    assert(resources.Exists<Comms::Gateway>());
+    assert(resources.Exists<DataAccess::SimulatorData>());
+    assert(resources.Exists<WorldAPI::WorldAccess>());
+    assert(resources.Exists<WorldAPI::PointsWatcher>());
+
+    // Prepare for an error in doing this, such as a version mismatch
+    try
+    {
+        // Create the resource and add it directly
+        Sydac::AddResource(resources, std::unique_ptr<Core::SpeedLimits::SpeedLimitConfig>(new SpeedLimitTracker(resources.Get<Comms::Gateway>(),
+                                                                                                                 resources.Get<DataAccess::SimulatorData>(),
+                                                                                                                 resources.Get<WorldAPI::WorldAccess>(),
+                                                                                                                 resources.Get<WorldAPI::PointsWatcher>(),
+                                                                                                                 SPEED_LIMIT_REQUEST_FREQ)));
+    }
+    catch(std::exception &e)
+    {
+        Trace::GetLogger().STAMP(Trace::ERR) << "Could not create speed limit tracker resources:\n    " << e.what() << Trace::EndLog();
+    }
+}
+```
+
+Deriving from `Core::SpeedLimits::SpeedLimitConfig` essentially involves implementing one function which must return a `Core::SpeedLimits::SpeedLimitType` for each type of speed limit that may contribute to the final speed limit profile.
+
+```
+namespace Core
+{
+    namespace SpeedLimits
+    {
+        /// The base class for an individual type of speed limit, which the SpeedLimitUnit will
+        /// likely deal with and extract profile and adjustment information for that type.
+
+        class SpeedLimitType
+        {
+        public:
+            /// Queried to determine what the change points are on the path ahead, generally
+            /// relating to where the speed limits change for this speed limit type.
+            ///
+            /// @param path The current path, where the train is at the origin
+            ///
+            /// @return The set of points to make changes at, and the changes to make
+
+            virtual std::vector<ChangePoint> GetProfilePoints(const WorldAPI::SegmentPath &path) const = 0;
+
+            /// Queried to determine what changes should be made to the current element stack for
+            /// this speed limit type. This generally relates to looking back for a previous
+            /// mainline speed limit, or clearing a signal's stop state when the signal behind us is
+            /// no longer at stop.
+            ///
+            /// @param path     The current path, where the train is at the origin
+            /// @param elements The current element stack (for the closest change point prior to the
+            ///                 train's current location) that may need modification.
+            ///
+            /// @return The actions to be taken on the current element stack for this speed limit
+            ///         type
+
+            virtual std::vector<Action>      GetAdjustments(const WorldAPI::SegmentPath &path, const Elements &elements) const = 0;
+
+            /// Queried to determine if this speed limit type contributes towards the line limit
+            ///
+            /// @return True if any speed limit restriction imposed by this type should contribute
+            ///         to the line limit.
+
+            virtual bool                     IsLineLimit() const = 0;
+        };
+    }
+}
+```
+
+Whilst a different type may be defined for each speed limit type, it is likely easiest to use the adaptor class provided, `Core::SpeedLimits::SpeedLimitTypeDelegator`, which allows the interface functions for all types to be written within a single class. Furthermore, this could be the config class, which we nominally call 'SpeedLimitTracker' to maintain consistency with legacy implementations.
+
+[heading Implement the interface for each speed limit type]
+
+For the best example of how this can be done, it is wise to consult the sample code for the core speed limit tracker. There are three main functions that need to be implemented for each type:
+
+# *GetProfilePoints* - Given the forward path, this should specify the distances at which a speed limit of this type changes. This should be the distance that the speed limit is encountered, and not necessarily where it applies to (which may need to consider the length of the train but this is handled by the `SpeedLimitUnit`). The changes are specified as a sequence of stack operations.
+# *GetAdjustments* - Given the current history for a specific speed limit types, this needs to specify what changes should be made, if any. Again, the changes are specified as a sequence of stack operations.
+# *IsLineLimit* - Very simply returns whether the speed limit associated with this speed limit type should be factored into the line limit, which is ultimately published in the /Speed Limit/ Number.
+
+Sample implementations for these can again be seen in the sample core SpeedLimitTracker, but seeing how this works for mainline signals can be illuminating:
+
+```
+std::vector<ChangePoint> SpeedLimitTracker::GetMainlineProfilePoints(const WorldAPI::SegmentPath &path)
+{
+    std::vector<ChangePoint> ret;
+
+    // Add each mainline speed limit into the profile
+    const auto mainline_limits = m_world_access.GetPathFeatures(path, m_mainline_limit_watcher.GetMap(), 0.0);
+    for(const auto &limit : mainline_limits)
+    {
+        if(IsActive(limit.second))
+        {
+            ChangePoint point(limit.first);
+            point.actions.push_back(Action(Action::Type::CLEAR));
+            point.actions.push_back(Action(Action::Type::PUSH, GetSpeedLimit(limit.second)));
+            ret.push_back(point);
+        }
+    }
+
+    return ret;
+}
+
+std::vector<Action> SpeedLimitTracker::GetMainlineAdjustments(const WorldAPI::SegmentPath &path, const Elements &elements)
+{
+    std::vector<Action> ret;
+
+    // If we do not have any elements then possibly there was a main line limit behind us. If
+    // there was, regardless of how far it was behind us, then set it as our mainline limit.
+    if(elements.empty())
+    {
+        const auto mainline_limits = m_world_access.GetPathFeatures(path, m_mainline_limit_watcher.GetMap(), -std::numeric_limits<double>::max(), 0.0);
+        if(!mainline_limits.empty())
+            ret.push_back(Action(Action::Type::PUSH, GetSpeedLimit(mainline_limits.back().second)));
+    }
+
+    return ret;
+}
+```
+
+[heading Understanding how the stack operations work]
+
+A key to implementing speed limit types is understanding how to specify the required changes using the stack operations. This is seen by example in the code above. However, it may be more illuminating to consider the structures involved. A changing profile is specified as a set of change points, each associated with a distance. A change point specifies a sequence of stack operations, as shown.
+
+```
+namespace Core
+{
+    namespace SpeedLimits
+    {
+        /// Represents a point, or position, at which changes should be made. More accurately, it
+        /// reflects a point at which it became clear that changes may be required, although they
+        /// may actually apply to a different location on the track. The actions to take may be a
+        /// series of actions.
+
+        struct ChangePoint
+        {
+            /// The manner in which this changes should be applied. They may apply to the location
+            /// of the driver (which is generally an immediate speed limit change) or to the
+            /// location of the train (in which case the entire train must be in the higher speed
+            /// limit, where transitioning, before it is allowed to speed up).
+
+            enum class Application
+            {
+                DRIVER,
+                TRAIN
+            } application;
+
+            /// The position at which the actions should be taken
+            double              position;
+
+            /// The actions to take on the element stack for a particular type of speed limit
+            std::vector<Action> actions;
+        };
+    }
+}
+```
+
+A change point can thus be specified to apply to just the driver (which signals typically are) or to the whole train (which the clearance of points generally does). Each project may have a different requirement for how to interpret mainline speed limits.
+
+A change point is otherwise just a set of actions associated with a distance ... but what is in an action?
+
+```
+namespace Core
+{
+    namespace SpeedLimits
+    {
+        /// An action to take on a stack of Elements, thereby most likely modifying the speed limit
+        /// required by a particular speed limit type.
+
+        struct Action
+        {
+            /// An action may push on a new limit, pop off the last, pop off up to and including an
+            /// element with a particular ID, or clear all current elements.
+
+            enum class Type
+            {
+                PUSH,
+                POP,
+                POP_ID,
+                CLEAR
+            };
+
+            /// The type of action to take on the element stack
+            Type    type;
+
+            /// The data associated with this action - generally the new limit to apply if adding,
+            /// or the ID to pop off if popping
+            Element data;
+        };
+    }
+}
+```
+
+An action thus specifies the stack operation. For the most part all that is required is to =PUSH= or to =CLEAR=, which effectively sets a speed limit or clears it. To replace a speed limit with a new one, one would =CLEAR= and then =PUSH= at the same change point. The =POP= and =POP_ID= operations are generally for limit types that are potentially nested, or use IDs to refer to the corresponding speed limit that they are clearing. The following table describes each, technically.
+
+[table Action types
+    [[Type]     [Operation]]
+    [[=PUSH=]   [Pushes an `Element` on to the memory stack for this speed limit type. The speed of the `Element` is remembered, and becomes the applicable speed limit for this type.]]
+    [[=POP=]    [Pops the top `Element` off of the memory stack, if there is one, thereby setting the speed limit back to the previous entry on the stack. If the stack is now empty then this type will not contribute to the speed limit (at this location).]]
+    [[=POP_ID=] [Continually pops `Element`s off of the memory stack until one is found with the ID specified, which is also popped off to. This thus unwinds the stack until the effect of the most recent element with this ID has been removed. If the stack is now empty then this type will not contribute to the speed limit (at this location).]]
+    [[=CLEAR=]  [Clears the memory stack, so that this speed limit type will not contribute to the speed limit (at this location).]]
+]
+
+What is an element? Just a pairing of a speed and ID, which is what is stored on the memory stack. Generally only the speed is applicable - the ID being used just for the =POP_ID= action.
+
+```
+namespace Core
+{
+    namespace SpeedLimits
+    {
+        /// Represents a single speed limit element, most likely corresponding to a change in limit
+        /// speed for a particular speed limit type - often due to the passing of a feature. It also
+        /// allows the association of an optional ID, perhaps a feature ID, or limit ID, so that it
+        /// can be selectively disabled at a later point in time (by the POP_ID action type).
+
+        struct Element
+        {
+            /// The speed that this element is limiting the train to
+            double speed;
+
+            /// An optional ID to help with removal/cancellation of the limit
+            int    id;
+        };
+    }
+}
+```
+
+[endsect]
+
+[endsect]
+
+[section Replacing the Core SpeedLimitUnits]
+
+With this approach the project has complete flexibility in writing its own Comms module to perform the speed limit calculations. All that is necessary is that it creates the SpeedLimit object under the necessary trains and populates it appropriately.
+
+[endsect]
+
+[endsect]

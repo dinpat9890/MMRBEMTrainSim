@@ -1,0 +1,23 @@
+## SimSetup
+## Mon Jun 12 14:11:03 2023
+
+# 
+# Domain : Application Manager  (pam)
+# 
+applicationManager.logFile=../Logs/pt.log
+# The class name that implements IApplication
+pam.applicationClass=com.sydac.proceduraltrainer.common.PTPeerApplication
+# This key determines whether the application should be visible only during a session, or all the time
+pam.applicationVisible.sessionOnly=true
+pam.connectToDatabase=true
+# This key allows the application to ignore a shutdown message, which will
+# normally cause the application to exit gracefully.
+pam.ignoreShutdown=false
+pam.screen.height=1000
+pam.screen.width=1152
+# The following define the position and size of the application, which is used
+# to place the application on the correct screen and to load the correct
+# splash screen image
+pam.screen.xPosition=768
+pam.screen.yPosition=0
+pam.showSplashScreen=true

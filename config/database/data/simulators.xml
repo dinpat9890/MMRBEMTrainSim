@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <simulators>
+        <scenario_types>
+            <scenario_type name="Driver Scenario"/>
+        </scenario_types>
+
+        <hub_modes>
+            <hub_mode name="Driver">
+                <role_map role_name="Driver" />
+            </hub_mode>
+            <hub_mode name="Driver's Instructor">
+                <role_map role_name="Instructor" />
+            </hub_mode>
+            <hub_mode name="Observer">
+                <role_map role_name="Observer" />
+            </hub_mode>
+        </hub_modes>
+
+        <hub_types>
+            <hub_type name="Driver's Cab">
+                <hub_type_mode mode="Driver" />
+            </hub_type>
+            <hub_type name="Driver's Instructor Desk">
+                <hub_type_mode mode="Driver's Instructor" />	
+            </hub_type>
+            <hub_type name="Observer Station">
+                <hub_type_mode mode="Observer" />
+            </hub_type>
+        </hub_types>
+
+        <simulator name="Fixed Set Driver's Cab" description="Fixed Set Driver's Cab" has_cab="1">
+            <physical_hub hub_id="1" name="Driver's Cab" type="Driver's Cab">
+                <display_channel mode="Normal" name="Main Display" />
+
+                <vision_engine name="Vision" properties="
+                  [Vision Engine Role 1]
+                  Hub Mode=Driver
+                  Vision Engine Mode=Normal
+                "/>
+				<vision_engine name="FSTDSVision1" properties="
+                  [Vision Engine Role 1]
+                  Hub Mode=Driver
+                  Vision Engine Mode=VisionPC1
+                "/>
+				<vision_engine name="FSTDSVision2" properties="
+                  [Vision Engine Role 1]
+                  Hub Mode=Driver
+                  Vision Engine Mode=VisionPC2
+                "/>
+				<vision_engine name="FSTDSSide" properties="
+                  [Vision Engine Role 1]
+                  Hub Mode=Driver
+                  Vision Engine Mode=Side
+                "/>
+				<vision_engine name="InstructorVision" properties="
+                  [Vision Engine Role 1]
+                  Hub Mode=Driver
+                  Vision Engine Mode=Forward
+                "/>
+				<vision_engine name="Saloon_CCTV" properties="
+                  [Vision Engine Role 1]
+                  Hub Mode=Driver
+                  Vision Engine Mode=FourView
+                "/>
+				<vision_engine name="Saloon_CCTV_Inst" properties="
+                  [Vision Engine Role 1]
+                  Hub Mode=Driver
+                  Vision Engine Mode=FourView
+                "/>
+            </physical_hub>
+            <physical_hub hub_id="2" name="Driver's Instructor" type="Driver's Instructor Desk" />
+            <physical_hub hub_id="3" name="Observer" type="Observer Station" />
+        </simulator>
+    </simulators>
+</config>

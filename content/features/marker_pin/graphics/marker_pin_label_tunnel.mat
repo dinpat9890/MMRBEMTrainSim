@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="marker_pin_label_tunnel" guid="9b22faafdaed81404d8a7d37df2ed7d11e1b2f1f" parent="5879ca96b927549e818b04ebca1ddba171f55e9c" base_material="mesh_base">
+	<state name="lightmap">1</state>
+	<texture name="lightmap">core/textures/common/black.dds</texture>
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+</material>

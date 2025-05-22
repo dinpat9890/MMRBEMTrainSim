@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1565220842" name="track_side_light">
+		<mesh_name>../worlds/library_objects/gantry/track_side_light.mesh</mesh_name>
+		<surface name="track_side_light_gantry_atlas_d" max_visible_distance="400" max_fade_distance="10" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<surface name="track_side_light_platform_lights" max_visible_distance="400" max_fade_distance="10" material="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" property="surface_base"/>
+		<transform>0.999999940395 -8.32667231942e-017 1.10705736698e-019 0.0 -2.2204440196e-016 0.999999940395 3.3949080526e-018 0.0 1.52462341576e-020 3.38813178902e-020 0.999999940395 0.0 9.09494701773e-013 1.81898940355e-011 -4.2965631053e-014 1.0</transform>
+	</node>
+</nodes>

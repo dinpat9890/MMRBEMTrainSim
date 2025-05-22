@@ -1,0 +1,62 @@
+package smc_scenario_groups;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
+import org.sikuli.script.Screen;
+
+public class train_builder {
+
+	public static void main(String[] args) throws FindFailed {
+
+		Screen screen = new Screen(1);
+		Screen screen1 = new Screen();
+
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\smc_1.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\smc_1.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\password.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\password.PNG");
+		screen.type("password");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+		screen.wait(2.0);
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\train.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\train.PNG");
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_1_2.PNG");
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\rear_button.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\rear_button.PNG");
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trailer_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\trailer_car_1_2.PNG");
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_2_1.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_2_1.PNG");
+		screen.wait(1.0);
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsTrainBuilder.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsTrainBuilder.PNG");
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainBuildername.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainBuildername.PNG");
+		screen.type("simTrain2");
+		screen.wait(1.0);
+		
+		screen1.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\okButton1.PNG");
+		screen1.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\okButton1.PNG");
+		
+}
+}

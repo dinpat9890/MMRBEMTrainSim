@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2080046434" name="track_cable_support">
+		<mesh_name>../worlds/library_objects/gantry/track_cable_support.mesh</mesh_name>
+		<surface name="track_cable_support_gantry_atlas_d" cast_shadow="0" max_visible_distance="200" max_fade_distance="5" material="8277e6bab8e9951b10513f1aaa0f306d6bd7a869" property="surface_base"/>
+		<transform>0.999999880791 -8.71882909328e-017 3.31492071487e-018 0.0 -2.975870727e-016 0.999999880791 6.07153216592e-018 0.0 8.40456861385e-021 1.60461921528e-017 0.999999940395 0.0 -1.1823431123e-011 -1.45519152284e-011 6.67910171614e-013 1.0</transform>
+		<node type="NodeDummy" id="1109851942" name="Connection_catenary_0">
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1.00000005961 0.0 -2.16526812359 0 0.945902053992 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1435646199" name="Connection_catenary_1">
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1.00000005961 0.0 -2.08225211885 0 0.95059105426 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1016008487" name="Connection_catenary_2">
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1.00000005961 0.0 -2.10532012017 0 0.725723041425 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="2015164866" name="Connection_catenary_3">
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1.00000005961 0.0 -2.05868811751 0 0.725723041425 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1123643335" name="Connection_catenary_4">
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1.00000005961 0.0 -2.00407911439 0 0.725723041425 1.0</transform>
+		</node>
+	</node>
+</nodes>

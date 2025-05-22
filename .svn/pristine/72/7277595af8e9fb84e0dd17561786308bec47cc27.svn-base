@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <LocalDebuggerCommand>..\..\..\dependencies\software\oksygen\sim\core\modules\plugin_module\bin\plugin_module_d.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>DVAUnit.ini</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=..\..\..\dependencies\cots\oksygen\cots\xerces\Bin\Win32;%PATH%
+PATH=$(COTSDir)xerces/bin/Win32;%PATH%
+TNS_ADMIN=..\..\..\Deploy\Environment\
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+</Project>

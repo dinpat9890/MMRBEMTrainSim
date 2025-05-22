@@ -1,0 +1,642 @@
+# Translations for feature types.
+# Copyright (C) 2022 Sydac Pty Ltd
+# This file is distributed under the same license as the Feature Types package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Feature Types ${version.number}\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-15 13:17+0530\n"
+"PO-Revision-Date: 2022-11-15 13:17+0530\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_AU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Screen Doors"
+msgstr "Platform Screen Doors"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Work Zone End"
+msgstr "Work Zone End"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Cow"
+msgstr "Obstruction - Cow"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Radio Area Code"
+msgstr "Radio Area Code"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform"
+msgstr "Platform"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Route_Indicator"
+msgstr "Route_Indicator"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "ObstructionWateronTrack"
+msgstr "ObstructionWateronTrack"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "ATC_Begins_Marker_Board"
+msgstr "ATC_Begins_Marker_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "NS_End_Sign"
+msgstr "NS_End_Sign"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Fouling_Mark_FM"
+msgstr "Fouling_Mark_FM"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "NS_Start_Sign"
+msgstr "NS_Start_Sign"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Depot_Exit_Board"
+msgstr "Depot_Exit_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Broken Rail"
+msgstr "Broken Rail"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "LT_Board"
+msgstr "LT_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Sleeper"
+msgstr "Obstruction - Sleeper"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Neutral_Section_Warning_Board_White"
+msgstr "Neutral_Section_Warning_Board_White"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Marker Pin"
+msgstr "Marker Pin"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Shirt"
+msgstr "Obstruction - Shirt"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Route"
+msgstr "Route"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Track Circuit"
+msgstr "Track Circuit"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Transponder"
+msgstr "Transponder"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Route Control"
+msgstr "Route Control"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Station"
+msgstr "Station"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "L7_Board"
+msgstr "L7_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Restricted_Manual_Mode_Marker_Board"
+msgstr "Restricted_Manual_Mode_Marker_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "2A_Board"
+msgstr "2A_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Main_Line_Signal_Long"
+msgstr "Main_Line_Signal_Long"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Work Zone"
+msgstr "Work Zone"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Main_Line_Signal_Short"
+msgstr "Main_Line_Signal_Short"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Virtual_Signal_Marker_Board"
+msgstr "Virtual_Signal_Marker_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Radio Blackspot"
+msgstr "Radio Blackspot"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Rope"
+msgstr "Obstruction - Rope"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Passenger - Wheelchair"
+msgstr "Platform Passenger - Wheelchair"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Position Marker"
+msgstr "Position Marker"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Stopping Point"
+msgstr "Stopping Point"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Shunt_Signal"
+msgstr "Shunt_Signal"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Neutral_Section_Warning_Board_Blue"
+msgstr "Neutral_Section_Warning_Board_Blue"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Camera"
+msgstr "Platform Camera"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Normal_Stopping_Marker_Board"
+msgstr "Normal_Stopping_Marker_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Passenger - Arriving"
+msgstr "Platform Passenger - Arriving"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Neutral Section"
+msgstr "Neutral Section"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "2B_Board"
+msgstr "2B_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Kite"
+msgstr "Obstruction - Kite"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Stopping_Reverse_Marker_Board"
+msgstr "Stopping_Reverse_Marker_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Passenger - Alighting"
+msgstr "Platform Passenger - Alighting"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Buffer_Stop"
+msgstr "Buffer_Stop"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "CBTC Beacon"
+msgstr "CBTC Beacon"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Unauthorised Personnel on the Track"
+msgstr "Unauthorised Personnel on the Track"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Passenger - Boarding"
+msgstr "Platform Passenger - Boarding"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Point"
+msgstr "Point"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Horse"
+msgstr "Obstruction - Horse"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Passenger - Pram"
+msgstr "Platform Passenger - Pram"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Passenger - Intoxicated"
+msgstr "Platform Passenger - Intoxicated"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Tree"
+msgstr "Obstruction - Tree"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Sheep"
+msgstr "Obstruction - Sheep"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Shunt_Signal_Attach"
+msgstr "Shunt_Signal_Attach"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Platform Unbalanced Loading"
+msgstr "Platform Unbalanced Loading"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Fire"
+msgstr "Fire"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Speed_Restriction_Marker_Board"
+msgstr "Speed_Restriction_Marker_Board"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Obstruction - Car"
+msgstr "Obstruction - Car"
+
+#. This is a type of Feature, an object that can exist in the simulated world.
+msgid "Fouling_Mark"
+msgstr "Fouling_Mark"
+
+#. This is the state of a Feature.
+msgid "500m"
+msgstr "500m"
+
+#. This is the state of a Feature.
+msgid "15 km/h"
+msgstr "15 km/h"
+
+#. This is the state of a Feature.
+msgid "Start"
+msgstr "Start"
+
+#. This is the state of a Feature.
+msgid "Front"
+msgstr "Front"
+
+#. This is the state of a Feature.
+msgid "Main Line"
+msgstr "Main Line"
+
+#. This is the state of a Feature.
+msgid "8C"
+msgstr "8C"
+
+#. This is the state of a Feature.
+msgid "Immediate Departure"
+msgstr "Immediate Departure"
+
+#. This is the state of a Feature.
+msgid "Small Break"
+msgstr "Small Break"
+
+#. This is the state of a Feature.
+msgid "40 kph"
+msgstr "40 kph"
+
+#. This is the state of a Feature.
+msgid "On Track"
+msgstr "On Track"
+
+#. This is the state of a Feature.
+msgid "45 km/h"
+msgstr "45 km/h"
+
+#. This is the state of a Feature.
+msgid "Idle Green Flag"
+msgstr "Idle Green Flag"
+
+#. This is the state of a Feature.
+msgid "Degraded"
+msgstr "Degraded"
+
+#. This is the state of a Feature.
+msgid "60 Sec"
+msgstr "60 Sec"
+
+#. This is the state of a Feature.
+msgid "25 Sec"
+msgstr "25 Sec"
+
+#. This is the state of a Feature.
+msgid "80 km/h"
+msgstr "80 km/h"
+
+#. This is the state of a Feature.
+msgid "Off Track"
+msgstr "Off Track"
+
+#. This is the state of a Feature.
+msgid "Even"
+msgstr "Even"
+
+#. This is the state of a Feature.
+msgid "75 km/h"
+msgstr "75 km/h"
+
+#. This is the state of a Feature.
+msgid "Violet"
+msgstr "Violet"
+
+#. This is the state of a Feature.
+msgid "Automated"
+msgstr "Automated"
+
+#. This is the state of a Feature.
+msgid "45 Sec"
+msgstr "45 Sec"
+
+#. This is the state of a Feature.
+msgid "Occupied"
+msgstr "Occupied"
+
+#. This is the state of a Feature.
+msgid "05 km/h"
+msgstr "05 km/h"
+
+#. This is the state of a Feature.
+msgid "Low Density"
+msgstr "Low Density"
+
+#. This is the state of a Feature.
+msgid "15 Sec"
+msgstr "15 Sec"
+
+#. This is the state of a Feature.
+msgid "Med"
+msgstr "Med"
+
+#. This is the state of a Feature.
+msgid "Functional"
+msgstr "Functional"
+
+#. This is the state of a Feature.
+msgid "1"
+msgstr "1"
+
+#. This is the state of a Feature.
+msgid "Active"
+msgstr "Active"
+
+#. This is the state of a Feature.
+msgid "3"
+msgstr "3"
+
+#. This is the state of a Feature.
+msgid "10 km/h"
+msgstr "10 km/h"
+
+#. This is the state of a Feature.
+msgid "Low"
+msgstr "Low"
+
+#. This is the state of a Feature.
+msgid "70 km/h"
+msgstr "70 km/h"
+
+#. This is the state of a Feature.
+msgid "Faulty"
+msgstr "Faulty"
+
+#. This is the state of a Feature.
+msgid "Skip"
+msgstr "Skip"
+
+#. This is the state of a Feature.
+msgid "End"
+msgstr "End"
+
+#. This is the state of a Feature.
+msgid "35 km/h"
+msgstr "35 km/h"
+
+#. This is the state of a Feature.
+msgid "50 kph"
+msgstr "50 kph"
+
+#. This is the state of a Feature.
+msgid "5 Sec"
+msgstr "5 Sec"
+
+#. This is the state of a Feature.
+msgid "Med Density"
+msgstr "Med Density"
+
+#. This is the state of a Feature.
+msgid "40 km/h"
+msgstr "40 km/h"
+
+#. This is the state of a Feature.
+msgid "Not Active"
+msgstr "Not Active"
+
+#. This is the state of a Feature.
+msgid "Set"
+msgstr "Set"
+
+#. This is the state of a Feature.
+msgid "D"
+msgstr "D"
+
+#. This is the state of a Feature.
+msgid "90 km/h"
+msgstr "90 km/h"
+
+#. This is the state of a Feature.
+msgid "20 kph"
+msgstr "20 kph"
+
+#. This is the state of a Feature.
+msgid "20 km/h"
+msgstr "20 km/h"
+
+#. This is the state of a Feature.
+msgid "20 Sec"
+msgstr "20 Sec"
+
+#. This is the state of a Feature.
+msgid "65 km/h"
+msgstr "65 km/h"
+
+#. This is the state of a Feature.
+msgid "6C"
+msgstr "6C"
+
+#. This is the state of a Feature.
+msgid "M"
+msgstr "M"
+
+#. This is the state of a Feature.
+msgid "Off"
+msgstr "Off"
+
+#. This is the state of a Feature.
+msgid "Clear"
+msgstr "Clear"
+
+#. This is the state of a Feature.
+msgid "60 km/h"
+msgstr "60 km/h"
+
+#. This is the state of a Feature.
+msgid "Open"
+msgstr "Open"
+
+#. This is the state of a Feature.
+msgid "90 Sec"
+msgstr "90 Sec"
+
+#. This is the state of a Feature.
+msgid "S"
+msgstr "S"
+
+#. This is the state of a Feature.
+msgid "70 kph"
+msgstr "70 kph"
+
+#. This is the state of a Feature.
+msgid "T"
+msgstr "T"
+
+#. This is the state of a Feature.
+msgid "30 Sec"
+msgstr "30 Sec"
+
+#. This is the state of a Feature.
+msgid "95 km/h"
+msgstr "95 km/h"
+
+#. This is the state of a Feature.
+msgid "Idle"
+msgstr "Idle"
+
+#. This is the state of a Feature.
+msgid "250m"
+msgstr "250m"
+
+#. This is the state of a Feature.
+msgid "Tail"
+msgstr "Tail"
+
+#. This is the state of a Feature.
+msgid "Visible"
+msgstr "Visible"
+
+#. This is the state of a Feature.
+msgid "Inactive"
+msgstr "Inactive"
+
+#. This is the state of a Feature.
+msgid "30 kph"
+msgstr "30 kph"
+
+#. This is the state of a Feature.
+msgid "Not Visible"
+msgstr "Not Visible"
+
+#. This is the state of a Feature.
+msgid "High"
+msgstr "High"
+
+#. This is the state of a Feature.
+msgid "10 Sec"
+msgstr "10 Sec"
+
+#. This is the state of a Feature.
+msgid "High Density"
+msgstr "High Density"
+
+#. This is the state of a Feature.
+msgid "Turnback"
+msgstr "Turnback"
+
+#. This is the state of a Feature.
+msgid "Blue"
+msgstr "Blue"
+
+#. This is the state of a Feature.
+msgid "25 km/h"
+msgstr "25 km/h"
+
+#. This is the state of a Feature.
+msgid "30 km/h"
+msgstr "30 km/h"
+
+#. This is the state of a Feature.
+msgid "60 kph"
+msgstr "60 kph"
+
+#. This is the state of a Feature.
+msgid "Waving Green Flag"
+msgstr "Waving Green Flag"
+
+#. This is the state of a Feature.
+msgid "Whiteout"
+msgstr "Whiteout"
+
+#. This is the state of a Feature.
+msgid "50 km/h"
+msgstr "50 km/h"
+
+#. This is the state of a Feature.
+msgid "Severe Break"
+msgstr "Severe Break"
+
+#. This is the state of a Feature.
+msgid "55 km/h"
+msgstr "55 km/h"
+
+#. This is the state of a Feature.
+msgid "Normal"
+msgstr "Normal"
+
+#. This is the state of a Feature.
+msgid "Middle"
+msgstr "Middle"
+
+#. This is the state of a Feature.
+msgid "Broken"
+msgstr "Broken"
+
+#. This is the state of a Feature.
+msgid "Red"
+msgstr "Red"
+
+#. This is the state of a Feature.
+msgid "10 kph"
+msgstr "10 kph"
+
+#. This is the state of a Feature.
+msgid "Branch Line"
+msgstr "Branch Line"
+
+#. This is the state of a Feature.
+msgid "Closed"
+msgstr "Closed"
+
+#. This is the state of a Feature.
+msgid "Emergency"
+msgstr "Emergency"
+
+#. This is the state of a Feature.
+msgid "None"
+msgstr "None"
+
+#. This is the state of a Feature.
+msgid "Hold"
+msgstr "Hold"
+
+#. This is the state of a Feature.
+msgid "85 km/h"
+msgstr "85 km/h"
+
+#. This is the state of a Feature.
+msgid "Green"
+msgstr "Green"
+
+#. This is the state of a Feature.
+msgid "On"
+msgstr "On"

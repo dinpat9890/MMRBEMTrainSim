@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<project name="Master" default="build.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+ <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+    <import file="ant.common_properties.xml" />
+    <import file="build.sync.xml"/>
+    <import file="build.versioning.xml"/>
+    <property file="build.properties"/>
+
+    <!-- Now import all of the other scripts, so that we have a single entry point, if desired -->
+    <import file="ant.build.xml" />
+    <import file="ant.maintain.xml" />
+    <import file="ant.package.xml" />
+    <import file="ant.prepare.xml" />  
+	<import file="ant.release.xml" /> 
+    <target name="build.release" description="Performs all steps necessary for getting a release" depends="prepare.all,generate.version.development,clean.all, build.all, update.version.properties, deploy.all, generate.world_types, install.all">
+        <!--
+            Force the patching targets to be called, now that everything is finished.
+            Simply adding them to the end of this target's dependencies doesn't
+            work, as Ant figures out they've already been called as part of
+            install.all and ignores them. 
+        -->
+        <ant target="deploy.patches" />
+    </target>
+    <target name="rsync.devrig" description="Synchronises the Deploy and DBA Install folder with devrig">
+        <rsync source="${deploy.dir}/" destination="${sync.destination.devrig}" password="${sync.password.devrig}"/>
+        <rsync source="${install.dir}/" destination="${sync.destination.devrig}/install" password="${sync.password.devrig}"/>
+    </target>
+    
+	
+	<!-- ======================================================================= -->
+    <!-- For some reason the sim_setup.exe is not getting copied 
+         - so copy if from \dependencies\software\oksygen\sim\core\tools\sim_setup\bin -->
+    <!-- ======================================================================= -->
+    <target name="deploy.sim.setup.exe" extensionOf="deploy.all" description="Copies sim_setup.exe from oksygen core dependencies folder to deploy/system/bin folder">
+      <copy file="${dir.tools.sim_setup.bin}/sim_setup.exe" todir="${dir.deploy}/system/bin"/>
+    </target>
+	
+ 
+</project>

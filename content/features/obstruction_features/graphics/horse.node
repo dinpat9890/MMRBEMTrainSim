@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="750552971" name="horse">
+		<mesh_name>obstruction_features/graphics/horse.mesh</mesh_name>
+		<surface name="MESH_horse_brown_4188_main" max_visible_distance="800" material="54bbadaf0ae979eb16b48fb140d3a665a26349cf" property="surface_base"/>
+		<surface name="MESH_horse_brown_4188_opacity" max_visible_distance="200" material="714621f17d817e310d8e25af0d6f36fbb64b2b29" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

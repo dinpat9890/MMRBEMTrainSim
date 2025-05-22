@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1820466773" name="ballast_pile">
+		<mesh_name>obstruction_features/graphics/ballast_pile.mesh</mesh_name>
+		<surface name="ballast" max_visible_distance="800" material="2a3bdef29a9384784f3bf61f9a4bdaadab8d811b" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,83 @@
+(! This script is here for Inter trains coupling, a Simulated train will be coupled with an Automatic train.
+   It will check the train types, if the Automatic train is stopped, etc...)
+   
+(define vehicle-abs-speed $train $vehicle (abs (get-vehicle-speed $train $vehicle)))
+
+(! For auto trains)
+(for-all-trains $scenario_train_id 
+	(enable-if-auto-train $scenario_train_id
+		(for-all-vehicles $scenario_train_id $vehicle_index
+			(nest
+				(
+					(symbol $coupled (get-number (number-id $coupling_object "Coupled") 0))	
+					(symbol $coupling_object (child-object-id (vehicle-object $scenario_train_id $vehicle_index) (class-coupling)))	
+				)				
+
+(! During coupling Process)
+	(! This bit publishes that we're ready to couple if the autotrain is stopped for Autocoupler type trains only)					
+						(set-number-if (get-number (number-id (child-object-id $coupling_object (class-coupling-inputs)) "Ready To Couple") 0)
+							(number-id (child-object-id $coupling_object (class-coupling-outputs)) "Ready To Couple") 1.0
+						)
+			
+						(set-number-if (and 											
+											(> (get-number (number-id $coupling_object "Separation") 0) 0.0)
+											(< (get-number (number-id $coupling_object "Separation") 0) 0.1)										
+											(< (get-number (number-id $coupling_object "Separation Rate") 0) 0.0)
+										)
+							(number-id (child-object-id $coupling_object (class-coupling-outputs)) "Mechanically Coupled") (delay 1.0 2)
+						)
+						(set-number-if (get-number (number-id (child-object-id $coupling_object (class-coupling-outputs)) "Mechanically Coupled") 0) 
+							(number-id (child-object-id $coupling_object (class-coupling-inputs)) "Mechanically Coupled")  (delay 1.0 100)
+						)
+						(set-number-if 	(and
+											(get-number (number-id (child-object-id $coupling_object (class-coupling-inputs)) "Mechanically Coupled") 0)
+											(get-number (number-id (child-object-id $coupling_object (class-coupling-outputs)) "Mechanically Coupled") 0)
+										)
+							(number-id $coupling_object "Coupled") (delay 1.0 100)
+						)
+						(! set-number-if  $coupled 
+							(number-id (train-object $scenario_train_id) "Auto Driver Release Brakes") 1.0
+						)
+						(! TURN OFF LIGHTS AFTER COUPLED)
+						(set-number-if
+							(get-number (number-id (child-object-id $coupling_object (class-coupling-inputs)) "Mechanically Coupled") 0)
+							(number-id (vehicle-object $scenario_train_id $vehicle_index) "Car Headlights")
+							0.0
+						)						
+
+
+(! During uncoupling Process)
+
+						(set-number-if (not (get-number (number-id (child-object-id $coupling_object (class-coupling-inputs)) "Mechanically Coupled") 0))
+							(number-id (child-object-id $coupling_object (class-coupling-outputs)) "Mechanically Coupled") 0.0
+						)
+						
+						(set-number-if (not (get-number (number-id (child-object-id $coupling_object (class-coupling-outputs)) "Mechanically Coupled") 0))
+							(number-id $coupling_object "Coupled") 0.0
+						)
+					
+						(! set-number-if (not $coupled) 
+							(number-id (train-object $scenario_train_id) "Auto Driver Release Brakes") 0.0
+						)				
+			)
+		)
+	)
+)
+
+
+(! For simulated train)
+(for-all-trains $scenario_train_id
+	(enable-if-simulated-train $scenario_train_id
+		(for-all-vehicles $scenario_train_id $vehicle_index
+			(symbol $train_type_name (train-type-name (get-train-type $scenario_train_id))
+				(symbol $coupling_object (child-object-id (vehicle-object $scenario_train_id $vehicle_index) (class-coupling))
+					(enable-if (has-autocoupler $train_type_name)	
+						(set-number (number-id (vehicle-object $scenario_train_id $vehicle_index) "Coupled Overlay") (get-number (number-id $coupling_object "Coupled") 0) )
+						(set-number (number-id (vehicle-object $scenario_train_id $vehicle_index) "Coupler Damaged Overlay") (get-number (number-id $coupling_object "Coupler Damaged") 0) )
+					)					
+				)
+			)
+			
+		)
+	)
+)

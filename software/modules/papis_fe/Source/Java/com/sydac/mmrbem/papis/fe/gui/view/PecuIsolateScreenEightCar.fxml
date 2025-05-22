@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="570.0" styleClass="common-bg" stylesheets="@papis-application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="570.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="425.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="570.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="374.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="570.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="15.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="540.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="15.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="308.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="8.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="8.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="540.0" styleClass="inner-border-line" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="540.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="308.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="540.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="210.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="120.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="210.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="backBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBackButtonAction" prefHeight="40.0" prefWidth="120.0" styleClass="pecu-isolate-screen-button" text="BACK" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="eightCarGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="540.0" GridPane.columnIndex="1" GridPane.rowSpan="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="540.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="293.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="540.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="220.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="220.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" styleClass="sub-headings-label" text="PECU Isolate" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="eightCarGrid1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="540.0" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="3.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="31.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="5.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="car1Pecu1Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car1 Pecu1" GridPane.columnIndex="1" />
+                              <Button fx:id="car1Pecu2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car1 Pecu2" GridPane.columnIndex="3" />
+                              <Button fx:id="car1Pecu3Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car1 Pecu3" GridPane.columnIndex="5" />
+                              <Button fx:id="car1Pecu4Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car1 Pecu4" GridPane.columnIndex="7" />
+                              <Button fx:id="car2Pecu1Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car2 Pecu1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Button fx:id="car2Pecu2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car2 Pecu2" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Button fx:id="car2Pecu3Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car2 Pecu3" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <Button fx:id="car2Pecu4Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car2 Pecu4" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                              <Button fx:id="car3Pecu1Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car3 Pecu1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Button fx:id="car3Pecu2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car3 Pecu2" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <Button fx:id="car3Pecu3Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car3 Pecu3" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                              <Button fx:id="car3Pecu4Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car3 Pecu4" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                              <Button fx:id="car4Pecu1Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car4 Pecu1" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Button fx:id="car4Pecu2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car4 Pecu2" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                              <Button fx:id="car4Pecu3Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car4 Pecu3" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                              <Button fx:id="car4Pecu4Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car4 Pecu4" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                              <Button fx:id="car5Pecu1Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car5 Pecu1" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <Button fx:id="car5Pecu2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car5 Pecu2" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                              <Button fx:id="car5Pecu3Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car5 Pecu3" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                              <Button fx:id="car5Pecu4Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car5 Pecu4" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                              <Button fx:id="car6Pecu1Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car6 Pecu1" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                              <Button fx:id="car6Pecu2Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car6 Pecu2" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                              <Button fx:id="car6Pecu3Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car6 Pecu3" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                              <Button fx:id="car6Pecu4Btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car6 Pecu4" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+                              <Button fx:id="car7Pecu1Btn1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car7 Pecu1" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                              <Button fx:id="car7Pecu2Btn2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car7 Pecu2" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                              <Button fx:id="car7Pecu3Btn3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car7 Pecu3" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+                              <Button fx:id="car7Pecu4Btn4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car7 Pecu4" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+                              <Button fx:id="car8Pecu1Btn1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car8 Pecu1" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                              <Button fx:id="car8Pecu2Btn2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car8 Pecu2" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                              <Button fx:id="car8Pecu3Btn3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car8 Pecu3" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+                              <Button fx:id="car8Pecu4Btn4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPecuIsolateButtonAction" prefHeight="31.0" prefWidth="115.0" styleClass="pecu-isolate-screen-button" text="Car8 Pecu4" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="31.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="5.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="header-title-label" text="Mumbai Metro" textAlignment="JUSTIFY" GridPane.columnIndex="1" />
+                  <Label fx:id="timeLbl" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="date-time-label" GridPane.columnIndex="3" />
+                  <Label fx:id="dateLbl" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="date-time-label" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

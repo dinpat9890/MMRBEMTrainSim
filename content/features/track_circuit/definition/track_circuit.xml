@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<feature_type name="Track Circuit" group="TrackCircuit" constant_name="FETY_TRACK_CIRCUIT" modifiable="0" available="1" user_feature="0">
+
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="1" name="Automated" user_selectable="1" />
+        <feature_type_state state_id="2" name="Occupied" user_selectable="1" />
+        <feature_type_state state_id="3" name="Clear" user_selectable="1" />
+    </feature_type_state_type>
+    
+    <object_parameters>
+        <key name="Initial State" type="State" default="Clear" description="Initial State" />
+        <key name="User State" type="State" default="Automated" description="User selected state" />
+        <key name="Time Occupied" type="double" default="0" description="Time the Track circuit has been occupied (Seconds)" />
+    </object_parameters>
+    
+    <feature_type_icon icon_code="TRACKCIRCUIT" small_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Clear-SMALL.png" big_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Clear-BIG.png" >
+        <feature_type_state_icon state_id="1" icon_code="Automated" small_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Automated-SMALL.png" big_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Automated-BIG.png" />
+        <feature_type_state_icon state_id="2" icon_code="Occupied" small_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Occupied-SMALL.png" big_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Occupied-BIG.png" />
+        <feature_type_state_icon state_id="3" icon_code="Clear" small_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Clear-SMALL.png" big_icon="Icons/TRACKCIRCUIT.zip#TRACKCIRCUIT-Clear-BIG.png" />
+    </feature_type_icon>
+    
+    <feature_type_vision />
+    
+</feature_type>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties version="2.5.0.2">
+	<property name="environment">
+		<parameter name="year_time" type="double" max="364">175</parameter>
+		<parameter name="start_time" type="double" max="86400">20000</parameter>
+		<parameter name="utc_offset" type="double" min="-12" max="14">7</parameter>
+		<parameter name="latitude" type="double" min="-90" max="90">15.870000000000001</parameter>
+		<parameter name="longitude" type="double" min="-180" max="180">100.98999999999999</parameter>
+		<parameter name="update_period" type="double" min="1">5</parameter>
+		<parameter name="cloud_level" type="double" max="100">0</parameter>
+		<parameter name="rain_level" type="double" max="100">0</parameter>
+		<parameter name="snow_level" type="double" max="100">0</parameter>
+		<parameter name="wind_level" type="double" max="100">0</parameter>
+		<parameter name="wind_dir" type="double" max="100">0</parameter>
+		<parameter name="fog_level" type="double" max="100">0</parameter>
+		<parameter name="haze_level" type="double" max="100">0</parameter>
+		<parameter name="cutoff_angle" type="double" min="-10" max="0">-3</parameter>
+		<parameter name="sunglare_level" type="double" min="10" max="100">0</parameter>
+		<parameter name="min_hdr_shaftlength" type="double" max="0.80000000000000004">0.80000000000000004</parameter>
+		<parameter name="enable_stars">1</parameter>
+		<parameter name="sun_pitch" type="double">0.78218498189797692</parameter>
+		<parameter name="lightning_percentage" type="double" max="100">0</parameter>
+		<parameter name="enable_rain_intersect_check">1</parameter>
+		<parameter name="enable_snow_intersect_check">1</parameter>
+		<parameter name="enable_rain_intersect_splash_fx">0</parameter>
+	</property>
+	<property name="moon">
+		<parameter name="moon_distance" type="double" min="100" max="5000">3000</parameter>
+	</property>
+	<property name="wind">
+		<parameter name="animation_leaf_scale" type="double">40</parameter>
+		<parameter name="animation_stem_scale" type="double">50</parameter>
+	</property>
+	<property name="precipitation">
+		<parameter name="rain_level_scale" type="double" min="10">240</parameter>
+		<parameter name="rain_system_radius" type="double" min="10">25</parameter>
+		<parameter name="snow_level_scale" type="double" min="10">680</parameter>
+		<parameter name="snow_system_radius" type="double" min="10">42</parameter>
+		<parameter name="shared_system_capture_radius" type="double" min="10">10</parameter>
+		<parameter name="shared_system_velocity_capture_radius" type="double" min="10">10</parameter>
+		<parameter name="shared_system_tilt_angle_scale" type="double">0.30000000000000016</parameter>
+		<parameter name="shared_system_max_tilt_angle" type="double">30</parameter>
+		<parameter name="shared_system_height_adjust" type="double">20</parameter>
+		<parameter name="shared_system_move_ahead" type="double">1</parameter>
+		<parameter name="shared_system_snow_move_ahead" type="double">2</parameter>
+	</property>
+</properties>

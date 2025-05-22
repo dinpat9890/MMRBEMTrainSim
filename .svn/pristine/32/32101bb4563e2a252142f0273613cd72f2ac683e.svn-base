@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project name="DatabasePaths" >
+  <import file="${dir.root}/ant.paths.xml" />
+  
+  <path id="install.database.mappings">
+    <!-- Pull in all of the mappings from the dependencies, and also any that the project may have -->
+    <fileset dir="${dir.deps.db}">
+      <include name="**/db_mapping.xml" />
+    </fileset>
+
+    <fileset dir="${dir.db}">
+      <include name="**/db_mapping.xml" />
+    </fileset>
+  </path>
+  
+  <path id="install.database.data">
+    <!-- Pull in all of the project's data, both from the database config source, and also any that
+         is built (such as train data). Since there will be a build within database, that should be
+         fine -->
+    <fileset dir="${dir.config.database}/data">
+      <include name="**/*.xml"/>
+    </fileset>
+    <fileset dir="${dir.config.database}/trains">
+      <include name="**/*.xml"/>
+    </fileset>
+  </path>
+  
+  <path id="install.database.scenarios">
+    <!-- Pull in all of the project's data, both from the database config source, and also any that
+         is built (such as train data). Since there will be a build within database, that should be
+         fine -->
+    <fileset dir="${dir.config.database}/scenarios">
+      <include name="**/*.xml"/>
+    </fileset>
+  </path>
+  
+  <path id="install.database.world_definition">
+    <pathelement path="${dir.content}/features/world_types.xml"/>
+    <pathelement path="${dir.content.deps}/software/oksygen/common/libraries/network_definition/world_types.xsd"/>
+    <pathelement path="${dir.content.deps}/software/oksygen/common/libraries/network_definition/world_definition.xsd"/>
+  </path>
+</project>

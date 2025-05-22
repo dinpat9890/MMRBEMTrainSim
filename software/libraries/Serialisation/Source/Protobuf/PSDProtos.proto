@@ -1,0 +1,26 @@
+//
+// Protobuf that defines the psd data messages that are sent via Raw Comms Data signals
+//
+syntax = "proto2";
+
+package PSD.Protos;
+
+option java_package = "com.sydac.mmrbem.psd.common.protos";
+option java_outer_classname = "PSDProtos";
+
+
+message TrainDockingInfo
+{
+	enum TrainDockingStatus
+	{
+		UNKNOWN           = 0;
+		CORRECTLY_DOCKED  = 1;
+		SHORT_STOP        = 2;
+		LONG_STOP         = 3;
+		TOO_LONG_STOP     = 4;
+		OPERATIONAL_SERVICE_STOPPING_DISTANCE = 5;
+	}
+
+	required TrainDockingStatus trainDockingStatus    = 1;
+	
+}

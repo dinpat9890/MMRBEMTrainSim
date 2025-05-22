@@ -1,0 +1,1121 @@
+/*
+ * ==================================================================
+ *
+ * (C) Copyright 2022 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *
+ * ==================================================================
+ */
+.root {
+	-fx-background-color: -fx-black-color;
+}
+/** Gray Color used in various state **/
+* {
+    -fx-light-gray-color: rgb(192.0, 192.0, 192.0);
+}
+
+/** Light blue color**/
+* {
+    -fx-light-blue-color: rgb(0.0, 122.0, 255.0);
+}
+
+/** -fx-white-color Color used in various state **/
+* {
+    -fx-white-color: rgb(255.0, 255.0, 255.0);
+}
+
+/** Black Color used in various state **/
+* {
+    -fx-black-color: rgb(0.0, 0.0, 0.0);
+}
+
+/** green Color used in various state **/
+* {
+    -fx-green-color: rgb(0.0, 255.0, 0.0);
+}
+
+/** Yellow Color used in various state **/
+* {
+    -fx-yellow-color: rgb(255.0, 255.0, 0.0);
+}
+
+/** red Color used in various state **/
+* {
+    -fx-red-color: rgb(255.0, 0.0, 0.0);
+}
+
+.table-view {
+    -fx-base: -fx-black-color;
+    -fx-control-inner-background:-fx-black-color;
+    -fx-background-color: -fx-black-color;
+    -fx-focus-color: -fx-white-color;
+    -fx-focus-traversable: false;
+    -fx-padding: 0.0;
+    -fx-insets: 0.0;
+    -fx-border-insets: 0.0;
+    -fx-wrap-text: true;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-black-color;
+    -fx-border-color: -fx-white-color;
+    -fx-table-cell-border-color: -fx-white-color;
+    -fx-padding: 0.0;
+    -fx-insets: 0.0;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center;
+    -fx-border-insets: 0.0;
+    -fx-border-width: 1.0 1.0 0.0 1.0;
+    -fx-font-weight:bold;
+}
+
+.table-row-cell:last-row {
+    -fx-border-width: 1.0 1.0 1.0 1.0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -fx-light-blue-color;
+    -fx-text-fill: -fx-white-color;
+}
+
+/** CSS styles for all the components is given here **/
+.common-bg {
+    -fx-background-color: -fx-black-color;
+    -fx-background-radius: 10.0px;
+}
+
+.common-grid-backround {
+    -fx-background-image: url('./images/radio_background_image.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: 100.0%;
+}
+
+/** CSS styles for all the components is given here **/
+.grid-background {
+    -fx-background-color: -fx-black-color;
+
+}
+
+/** Startup Screen **/
+.startup-screen-1 {
+    -fx-background-image: url('./images/startup_screen_1.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: 100.0%;
+}
+
+
+.startup-screen-2 {
+    -fx-background-image: url('./images/startup_screen_2.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: 100.0%;
+}
+
+.startup-screen-3 {
+    -fx-background-image: url('./images/startup_screen_3.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Common Panel                                                       *
+ *                                                                             *
+ ******************************************************************************/
+.common-panel-bg {
+    -fx-background-image: url('../images/pa_pis.png');
+    -fx-background-color: -fx-black-color;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                              Radio Layout                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.border-radio {
+    -fx-background-color: -fx-black-color;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                              Power Menu and Navigation Panel                *
+ *                                                                             *
+ ******************************************************************************/
+.emgy-state,
+.emgy-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/emgy_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.emgy-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/emgy_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.power-state,
+.power-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/power_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.power-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/power_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.stat-msg-state,
+.stat-msg-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/stat_msg_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.stat-msg-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/stat_msg_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.menu-state,
+.menu-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/menu_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.menu-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/menu_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.volume-navigation {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/volume_navigation.png');
+    -fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *                         KeyPad Panel                                        *
+ *                                                                             *
+ ******************************************************************************/
+
+.button-1-state,
+.button-1-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_1_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-1-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_1_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-2-state,
+.button-2-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_2abc_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-2-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_2abc_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-3-state,
+.button-3-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_3def_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-3-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_3def_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-4-state,
+.button-4-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_4ghi_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-4-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_4ghi_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-5-state,
+.button-5-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_5jkl_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-5-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_5jkl_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-6-state,
+.button-6-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_6mno_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-6-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_6mno_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-7-state,
+.button-7-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_7pqrs_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-7-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_7pqrs_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-8-state,
+.button-8-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_8tuv_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-8-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_8tuv_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-9-state,
+.button-9-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_9wxyz_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-9-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_9wxyz_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-0-state,
+.button-0-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_0_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.button-0-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/button_0_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.asterisk-state,
+.asterisk-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/star_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.asterisk-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/star_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.hash-state,
+.hash-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/hash_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.hash-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/hash_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.up-arrow-state,
+.up-arrow-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/up_arrow_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.up-arrow-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/up_arrow_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.down-arrow-state,
+.down-arrow-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/down_arrow_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.down-arrow-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/down_arrow_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.left-arrow-state,
+.left-arrow-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/left_arrow_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.left-arrow-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/left_arrow_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.right-arrow-state,
+.right-arrow-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/right_arrow_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.right-arrow-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/right_arrow_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.enter-button-state,
+.enter-button-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/enter_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.enter-button-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/enter_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.space-button-state,
+.space-button-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/space_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.space-button-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/space_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+
+.signal-state,
+.signal-state:in-active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/circle_red.png');
+    -fx-background-size: 100.0%;
+}
+
+.signal-state:active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/circle_green.png');
+    -fx-background-size: 100.0%;
+}
+
+
+.main-screen-text-label {
+    -fx-text-fill: -fx-white-color;
+    -fx-font-size: 16.0px;
+    -fx-font-weight: bold;
+}
+
+.ssi-label-val {
+    -fx-border-width: 0.0 0.0 1.0 1.0;
+    -fx-border-color: -fx-white-color;
+}
+
+
+.border-label {
+    -fx-border-width: 0.0 0.0 0.0 1.0;
+    -fx-border-color: -fx-white-color;
+}
+
+
+.ssi-label-txt {
+    -fx-border-width: 0.0 0.0 1.0 0.0;
+    -fx-border-color: -fx-white-color;
+}
+
+.tid-label-txt {
+    -fx-border-width: 0.0 0.0 0.0 1.0;
+    -fx-border-color: -fx-white-color;
+    -fx-border-insets: 0.0, 0.0, 0.0, 0.0;
+    -fx-padding: 1.0 0.0 0.0 0.0;
+}
+
+
+.comen-border {
+    -fx-border-width: 1.0 1.0 1.0 1.0;
+    -fx-border-color: -fx-white-color;
+}
+
+.group-border {
+    -fx-border-width: 0.0 0.0 0.0 1.0;
+    -fx-border-color: -fx-white-color;
+
+}
+
+
+.occpa-status {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/circle_yellow.png');
+    -fx-background-size: 100.0%;
+}
+
+.group-status {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/group.png');
+    -fx-background-size: 100.0%;
+}
+
+.train-status {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/train.png');
+    -fx-background-size: 100.0%;
+
+}
+
+.message-count {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/message_count.png');
+    -fx-background-size: 50.0%;
+    -fx-text-fill: -fx-red-color;
+    -fx-font-size: 16.0px;
+    -fx-font-weight: bold;
+    -fx-alignment: bottom-right;
+
+}
+
+.i-panel {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/l.png');
+    -fx-background-size: 100.0%;
+}
+
+.t-panel {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/t.png');
+    -fx-background-size: 100.0%;
+}
+
+
+.radio-signal-1,
+.radio-signal-1:in-active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/radio_signal_no_signal.png');
+    -fx-background-size: 100.0%;
+}
+
+.radio-signal-1:active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/radio_signal_signal.png');
+    -fx-background-size: 100.0%;
+}
+
+.radio-signal-2,
+.radio-signal-2:in-active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/tick_no_signal.png');
+    -fx-background-size: 100.0%;
+}
+
+.radio-signal-2:active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/tick_signal.png');
+    -fx-background-size: 100.0%;
+}
+
+.radio-signal-3,
+.radio-signal-3:in-active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/link_no_signal.png');
+    -fx-background-size: 100.0%;
+}
+
+.radio-signal-3:active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/link_signal.png');
+    -fx-background-size: 100.0%;
+}
+
+.logon-state,
+.logon-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/logon_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.logon-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/logon_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.main-state,
+.main-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/main_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.main-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/main_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.depot-state,
+.depot-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/depot_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.depot-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/depot_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.shunt-state,
+.shunt-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/shunt_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.shunt-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/shunt_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.train-state,
+.train-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/train_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.train-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/train_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.rtt-state,
+.rtt-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/rtt_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.rtt-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/rtt_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.pa-state,
+.pa-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/pa_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.pa-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/pa_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.msg-state,
+.msg-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/msg_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.msg-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/msg_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.alarm-state,
+.alarm-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/alarm_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.alarm-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/alarm_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.trrear-state,
+.trrear-state:unpressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/tr_rear_unpushed.png');
+    -fx-background-size: 100.0%;
+}
+
+.trrear-state:pressed {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/tr_rear_pushed.png');
+    -fx-background-size: 100.0%;
+}
+
+
+.radio-call: active {
+    -fx-background-color: none;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('./images/calling.png');
+    -fx-background-size: 100.0%;
+}
+
+
+.call-state {
+    -fx-text-fill: -fx-green-color;
+    -fx-font-size: 16.0px;
+    -fx-font-weight: bold;
+}
+
+
+/******************************************************************************
+ *                                                                             *
+ *                         Alarm Screen Panel                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.alarm-text-label {
+    -fx-text-fill: -fx-white-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+}
+
+.alarm-text-left-border {
+    -fx-border-width: 0.0 1.0 1.0 0.0px;
+    -fx-border-color: -fx-white-color;
+}
+
+.alarm-text-border {
+    -fx-border-width: 0.0 1.0 1.0 1.0;
+    -fx-border-color: -fx-white-color;
+}
+
+
+.alarm-rake-validity-border{
+	-fx-border-width: 0.0 3.0 0.0 0.0px;
+	-fx-border-color: -fx-white-color; 
+}
+.alarm-text-right-border {
+    -fx-border-width: 0.0 1.0 0.0 0.0px;
+    -fx-border-color: -fx-white-color;
+}
+.alarm-right-side-border{
+	-fx-border-width:0.0 1.0 3.0 1.0;
+    -fx-border-color:-fx-white-color;
+}
+
+
+/******************************************************************************
+ *                                                                             *
+ *                         Message Screen Panel                                  *
+ *                                                                             *
+ ******************************************************************************/
+.message-button-label,
+.message-button-label: default{
+    -fx-text-fill: -fx-white-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;	
+    -fx-background-color: transparent;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center-left;
+}
+
+.message-button-label: selected{
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;	
+    -fx-background-color:  -fx-white-color;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center-left;
+}
+
+.message-text-label {
+    -fx-text-fill: -fx-white-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+}
+
+
+.alarm-text-right-border {
+    -fx-border-width: 3.0 3.0 3.0 3.0px;
+    -fx-border-color: -fx-white-color;
+}
+
+.message-label {
+    -fx-text-fill: -fx-white-color;
+    -fx-font-size: 12.0px;
+    -fx-font-weight: bold;
+}
+
+.message-compose-label {
+    -fx-text-fill: -fx-light-gray-color;
+    -fx-font-size: 18.0px;
+    -fx-font-weight: bold;
+}
+
+.message-send-label {
+    -fx-text-fill: -fx-green-color;
+    -fx-font-size:14.0px;
+    -fx-font-weight:bold;
+}
+
+.message-text-bg {
+    -fx-background-color:-fx-light-gray-color;
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size:14.0px;
+    -fx-font-weight:bold;
+}
+
+.message-text-top-border {
+    -fx-border-width: 3.0 0.0 0.0 0.0px;
+    -fx-border-color: -fx-white-color;
+}
+
+.message-header-label{
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size: 16.0px;
+    -fx-font-weight :bold;
+    -fx-background-color: -fx-light-gray-color;
+    -fx-border-width: 1.0 1.0 0.0 0.0;
+    -fx-border-color: -fx-white-color;
+}
+
+.message-header-label-left-border{
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size: 16.0px;
+    -fx-font-weight :bold;
+    -fx-background-color: -fx-light-gray-color;
+    -fx-border-width: 1.0 1.0 0.0 1.0;
+    -fx-border-color: -fx-white-color;
+}
+
+.message-grid-top-border {
+    -fx-border-width:  1 0 0 0px;
+    -fx-border-color: -fx-white-color;
+    -fx-border-insets: 1 0 0 0px;
+}
+
+
+.contact-button-label,
+.contact-button-label: default{
+    -fx-text-fill: -fx-white-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;	
+    -fx-background-color: -fx-black-color;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center;
+    -fx-border-width:  0 1 0 0px;
+    -fx-border-color: -fx-white-color;
+}
+
+.contact-button-label: selected{
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;	
+    -fx-background-color:  -fx-light-gray-color;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center;
+    -fx-border-width:  0 1 0 0px;
+    -fx-border-color: -fx-white-color;
+}
+
+.contact-first-button-label,
+.contact-first-button-label: default{
+    -fx-text-fill: -fx-white-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;	
+    -fx-background-color: -fx-black-color;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center;
+    -fx-border-width:  0 1 0 1px;
+    -fx-border-color: -fx-white-color;
+}
+
+.contact-first-button-label: selected{
+    -fx-text-fill: -fx-black-color;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;	
+    -fx-background-color:  -fx-light-blue-color;
+    -fx-background-insets: 0.0;
+    -fx-alignment: center;
+    -fx-border-width:  0 1 0 1px;
+    -fx-border-color: -fx-white-color;
+}
+.ringindicator{
+	-fx-ring-width: 5.0;
+	-fx-inner-radius: 60.0;
+}
+.ringindicator-inner-circle {
+	-fx-opacity: 0.55;
+	-fx-stroke: circleindicator-color; 
+	-fx-stroke-width: 8.0px;
+	-fx-fill: -fx-background;
+}
+.ringindicator-filler {
+	-fx-stroke: circleindicator-color; 
+	-fx-fill: -fx-background;
+	-fx-stroke-line-cap: butt;
+}
+.ringindicator-outer-circle-secondary {
+	-fx-opacity: 0.1;
+	-fx-stroke: circleindicator-color; 
+	-fx-stroke-width: 2.0px;
+	-fx-fill: -fx-background;
+}
+.indeterminate {
+	-fx-opacity: 0.55;
+	-fx-stroke: linear-gradient(from 0.0% 0.0% to 70.0% 70.0%, circleindicator-color 70.0%, white 75.0%, white);
+}
+.fillindicator{
+	-fx-inner-radius: 77.0;
+}
+.fillindicator-border-circle {
+	-fx-opacity: 0.6;
+	-fx-stroke:  circleindicator-color; 
+	-fx-stroke-width: 1.0px;
+	-fx-fill: -fx-background;
+}
+.fillindicator-filler-circle {
+	-fx-opacity: 0.25;
+	-fx-stroke-width: 0.0px;
+	-fx-fill:  white;
+}
+.fillindicator-filler-cover {
+	-fx-fill: white;
+}
+.circleindicator-container  {	
+	circleindicator-color: black;
+	-fx-padding: 5.0;
+	-fx-background-color: white;
+}
+.circleindicator-container > .circleindicator-label {
+	-fx-font-weight: bold; 
+ 	-fx-font-size: 50;
+	-fx-text-fill: circleindicator-color;
+	-fx-padding: 5.0;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+  <layer name="Project">
+    <object_class class="MotionBase" constant_name="MOTION_BASE">
+    </object_class>
+
+    <object_class class="MotionBaseTuning" constant_name="MOTION_BASE_TUNING">
+    </object_class>
+  </layer>
+
+  <!-- Parent-child relationship mapping -->
+  <relationship parent="Vehicle" child="MotionBase"/>
+  <relationship parent="MotionBase" child="MotionBaseTuning"/>
+
+  <!-- Class ID declarations -->
+  <class_ids>
+    <class_id class_name="MotionBase" class_id="1200"/>
+    <class_id class_name="MotionBaseTuning" class_id="1201"/>
+  </class_ids>
+</comms_config>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<world_types xmlns="http://www.sydac.com.au/TrackIcons">
+  <object_icon name="2A_Board" iconcode="2A_Board" />
+  <object_icon name="2B_Board" iconcode="2B_Board" />
+  <object_icon name="ATC_Begins_Marker_Board" iconcode="ATC_Begins_Marker_Board" />
+  <object_icon name="Automatic Region" iconcode="AutomaticRegion" />
+  <object_icon name="Broken Rail" iconcode="BROKENRAIL" />
+  <object_icon name="Buffer_Stop" iconcode="Buffer" />
+  <object_icon name="CBTC Beacon" iconcode="Beacon" />
+  <object_icon name="CBTC Beacon Depot" iconcode="Beacon" />
+  <object_icon name="Unauthorised Personnel on the Track" iconcode="Civilian" />
+  <object_icon name="Depot_Exit_Board" iconcode="Depot_Exit_Board" />
+  <object_icon name="Depot Region" iconcode="LOCATION" />
+  <object_icon name="Fire" iconcode="FIRE" />
+  <object_icon name="Fouling_Mark" iconcode="Fouling_Mark" />
+  <object_icon name="Fouling_Mark_FM" iconcode="Fouling_Mark_FM" />
+  <object_icon name="L7_Board" iconcode="L7_Board" />
+  <object_icon name="LT_Board" iconcode="LT_Board" />
+  <object_icon name="Main_Line_Signal_Long" iconcode="Main_Line_Signal_Long" />
+  <object_icon name="Main_Line_Signal_Short" iconcode="Main_Line_Signal_Short" />
+  <object_icon name="Marker Pin" iconcode="MARKER_PIN" />
+  <object_icon name="Neutral Section" iconcode="Neutral_Section" />
+  <object_icon name="Neutral_Section_Warning_Board_Blue" iconcode="Neutral_Section_Warning_Board_Blue" />
+  <object_icon name="Neutral_Section_Warning_Board_White" iconcode="Neutral_Section_Warning_Board_White" />
+  <object_icon name="Neutral_Section_Warning_Board_Yellow" iconcode="neutral_section_warning_board_yellow" />
+  <object_icon name="Non ATC Region" iconcode="LOCATION" />
+  <object_icon name="Normal_Stopping_Marker_Board" iconcode="Normal_Stopping_Marker_Board" />
+  <object_icon name="NS_End_Sign" iconcode="NS_End_Sign" />
+  <object_icon name="NS_End_Sign_White" iconcode="NS_End_Sign" />
+  <object_icon name="NS_End_Sign_Yellow" iconcode="NS_End_Sign" />
+  <object_icon name="NS_Start_Sign" iconcode="NS_Start_Sign" />
+  <object_icon name="NS_Start_Sign_White" iconcode="NS_Start_Sign" />
+  <object_icon name="NS_Start_Sign_Yellow" iconcode="NS_Start_Sign" />
+  <object_icon name="ObstructionWateronTrack" iconcode="Water" />
+  <object_icon name="Obstruction - Banner_Flag" iconcode="Obstruction_Banner_Flag" />
+  <object_icon name="Obstruction - Car" iconcode="Obstruction_Car" />
+  <object_icon name="Obstruction - Cow" iconcode="Obstruction_Cow" />
+  <object_icon name="Obstruction - Dog" iconcode="Obstruction_Dog" />
+  <object_icon name="Obstruction Fixed OLE" iconcode="OLE" />
+  <object_icon name="Obstruction - Horse" iconcode="Obstruction_Horse" />
+  <object_icon name="Obstruction - Kite" iconcode="Obstruction_Kite" />
+  <object_icon name="Obstruction - Rope" iconcode="Obstruction_Rope" />
+  <object_icon name="Obstruction - Sheep" iconcode="Obstruction_Sheep" />
+  <object_icon name="Obstruction - Shirt" iconcode="Obstruction_Shirt" />
+  <object_icon name="Obstruction - Sleeper" iconcode="Obstruction_Sleeper" />
+  <object_icon name="Obstruction - Tree" iconcode="Obstruction_Tree" />
+  <object_icon name="Platform" iconcode="PLATFORMLHS" />
+  <object_icon name="Platform Camera" iconcode="PLATFORMCAM" />
+  <object_icon name="Platform Passenger - Boarding" iconcode="PLATFORM_PASSENGER" />
+  <object_icon name="Platform Passenger - Alighting" iconcode="PLATFORM_PASSENGER_ALIGHTING" />
+  <object_icon name="Platform Passenger - Arriving" iconcode="PLATFORM_PASSENGER_ARRIVING" />
+  <object_icon name="Platform Passenger - Intoxicated" iconcode="PLATFORM_PASSENGER_INTOXICATED" />
+  <object_icon name="Platform Passenger - Pram" iconcode="PLATFORM_PASSENGER_PRAM" />
+  <object_icon name="Platform Unbalanced Loading" iconcode="PLATFORM_UNBALANCED_LOADING" />
+  <object_icon name="Platform Passenger - Wheelchair" iconcode="PLATFORM_PASSENGER_WHEELCHAIR" />
+  <object_icon name="Platform Screen Doors" iconcode="Platform_Screen_Doors" />
+  <object_icon name="Point" iconcode="POINTLBF" />
+  <object_icon name="Restricted_Manual_Mode_Marker_Board" iconcode="Restricted_Manual_Mode_Marker_Board" />
+  <object_icon name="Route Control" iconcode="ROUTE" />
+  <object_icon name="Route_Indicator" iconcode="Route_Indicator" />
+  <object_icon name="Shunt_Signal" iconcode="Shunt_Signal" />
+  <object_icon name="Shunt_Signal_Attach" iconcode="Shunt_Signal_Attach" />
+  <object_icon name="Smoke" iconcode="SMOKE" />
+  <object_icon name="Speed_Restriction_Marker_Board" iconcode="Speed_Restriction_Marker_Board" />
+  <object_icon name="Station" iconcode="STATION" />
+  <object_icon name="Stopping Point" iconcode="StoppingPoint" />
+  <object_icon name="Stopping_Reverse_Marker_Board" iconcode="Stopping_Reverse_Marker_Board" />
+  <object_icon name="Track Circuit" iconcode="TRACKCIRCUIT" />
+  <object_icon name="Track Workers" iconcode="TRACKWORKERS" />
+  <object_icon name="Virtual_Signal_Marker_Board" iconcode="Virtual_Signal_Marker_Board" />
+  <object_icon name="Work Zone" iconcode="WorkZone" />
+  <object_icon name="Work Zone End" iconcode="WorkZoneEnd" />
+</world_types>

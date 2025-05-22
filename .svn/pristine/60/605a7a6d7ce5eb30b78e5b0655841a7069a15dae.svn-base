@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="generic_metal" guid="1592e9b50d50ce280b2b5aaa0851fb05fa36a9dd" base_material="mesh_base">
+	<options two_sided="1"/>
+	<state name="emission">0</state>
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/generic_metal.dds</texture>
+	<parameter name="albedo_color">0.752941251 0.898039281 0.894117713 1</parameter>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">0.75</parameter>
+	<parameter name="color"/>
+	<parameter name="emission_color">0.698039234 0.650980413 0.564705908 1</parameter>
+</material>

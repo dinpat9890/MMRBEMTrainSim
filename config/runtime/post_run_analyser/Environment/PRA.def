@@ -1,0 +1,154 @@
+#########################################################################################################################################
+##
+## This is the definition file for the PRA.exe or Post Run Analyser. It defines a number of Graphs that the PRA is expected to draw and
+## names the Database Queries that need to be used to populate the graphs.
+##
+## Notes (In no particular order of importance)
+##
+## 1/ This is A Sydac Properties file so Comments are welcome as long as they start with a #
+## 2/ Some of the Graphs below MUST EXIST IN A PARTICULAR FORMAT WITH A HARD CODED NAME. These are marked below with the appropriate
+##    comments.
+## 3/ The SQL field usually includes the name of a pre-defined query that must exist in the Access Database. It may also include extra SQL
+##    statements to further refine the query. i.e the Track features Query gets all Features from the Signal Feature Type Group.
+##
+## PRA Parameters
+##
+## TickInterval         = Default = 0
+## ShowInformationPanel = Default = 0 If set this shows an information panel at the Top. It includes Session information such as
+##                                     Driver Name Scenario and Track name etc.
+##
+## Graph Parameters (Document as we find out what they do)
+##
+## ChartType        = Can be one of Image (Feature Icons), Symbol (Infraction Dots), Line (X-Y plot along position axis), or Tick (WT?)
+## DisplayName      = The name displayed at the left side of the chart
+## ForcePrimary     = (For Icon Type only) Y - use Primary Data Set
+## ForceSecondary   = (For Icon Type only) Y - use Overlay Data Set
+## XFieldName       = Set to the name of the X axis column returned by the SQL query
+## YFieldName       = Set to the name of the Y axis column returned by the SQL query (Line Graph only)
+## LabelFieldName   = Has no effect?
+## SQL              = The SQL Query to get the data set.
+## Parameter        = Replace :XXXXX in SQL with this value
+## Stairs           = (Line type only)
+## YFieldLabel      = Displayed under the Display Name on Left (Y Axis Label usually set to display units)
+## DefaultHeight    = The height of the graph in pixels. A Graphs height can be changed by Right clicking in the area and setting a new height.
+## InfractionSeries =
+## LabelFormat      =
+##
+#########################################################################################################################################
+[PRA]
+ShowInformationPanel=1
+TickInterval=0
+
+[LeadCarPosition]
+ChartType=Line
+DisplayName=Lead Car Position
+XFieldName=X
+YFieldName=ElapsedTime
+LabelFieldName=
+SQL=select * from PRA_LeadCarPosition
+YFieldLabel=seconds
+DefaultHeight=60
+
+[TrackFeature]
+ChartType=Image
+DisplayName=Track Features Primary File (Blue plots)
+ForcePrimary=Y
+XFieldName=X
+YFieldName=
+LabelFieldName=Description
+#SQL=SELECT * from PRA_FeatureStartingInfo where (FeatureTypeName <> 'Mile Post Yellow' and FeatureTypeName <> 'Mile Post Blue')
+SQL=SELECT * from PRA_FeatureStartingInfo
+YFieldLabel=
+DefaultHeight=85
+
+[TrackFeature2]
+ChartType=Image
+DisplayName=Track Features Overlay File (Red plots)
+ForceSecondary=Y
+XFieldName=X
+YFieldName=
+LabelFieldName=Description
+#SQL=SELECT * from PRA_FeatureStartingInfo where (FeatureTypeName <> 'Mile Post Yellow' FeatureTypeName <> 'Mile Post Blue')
+SQL=SELECT * from PRA_FeatureStartingInfo
+YFieldLabel=
+DefaultHeight=85
+
+[LeedCarSpeed]
+ChartType=Line
+DisplayName=Lead Car Speed
+XFieldName=X
+YFieldName=Speed
+LabelFieldName=Label
+SQL=select * from PRA_Speed
+YFieldLabel=kph
+DefaultHeight=160
+LabelFormat=0.0
+
+[LeadCarAcceleration]
+ChartType=Line
+DisplayName=Lead Car Acceleration
+XFieldName=X
+YFieldName=Acceleration
+LabelFieldName=Label
+SQL=select * from PRA_Acceleration
+YFieldLabel=kph/min
+DefaultHeight=60
+LabelFormat=0.0
+
+[Infraction]
+ChartType=Symbol
+DisplayName=Infractions
+XFieldName=X
+YFieldName=
+LabelFieldName=DescriptionShort
+SQL=Select * from PRA_Infraction
+YFieldLabel=
+DefaultHeight=75
+InfractionSeries=1
+
+[Mode Selector]
+ChartType=Line
+Stairs=1
+DisplayName=Mode Selector
+XFieldName=X
+YFieldName=Mode Selector
+LabelFieldName=
+SQL=Select * from PRA_ModeSelector
+YFieldLabel=
+DefaultHeight=60
+LabelFormat=0
+
+[TBC]
+ChartType=Line
+DisplayName=Traction Brake Controller
+XFieldName=X
+YFieldName=Traction Brake Controller
+LabelFieldName=
+SQL=Select * from PRA_TractionBrakeController
+YFieldLabel=
+DefaultHeight=60
+LabelFormat=0
+
+[Horn Activation]
+ChartType=Line
+Stairs=1
+DisplayName=Horn Activation
+XFieldName=X
+YFieldName=Horn
+LabelFieldName=
+SQL=Select * from PRA_Horn
+YFieldLabel=
+DefaultHeight=60
+LabelFormat=0
+
+[Total Energy Consumption]
+ChartType=Line
+Stairs=1
+DisplayName=Total Energy Consumption
+XFieldName=X
+YFieldName=TotalEnergyConsumedCumulative
+LabelFieldName=
+SQL=Select * from PRA_TotalEnergyConsumed
+YFieldLabel=MJoules
+DefaultHeight=60
+LabelFormat=0

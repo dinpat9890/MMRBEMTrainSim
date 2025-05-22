@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<project name="Package Software" default="package.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+  
+  <!-- Import core packaging scripts -->
+  <import file="${dir.deps.processes}/packager/packager.software.subbuild.xml" as="software_packager" />
+  
+  <!-- Extend targets that we want to add to, but with targets that can be called locally -->
+  <!-- The base example is just to copy the environment files (and not generate them), which we can
+       do in a standard fashion -->
+  <target name="deploy.software" description="Copies build software artefacts to the deploy folder being prepared" extensionOf="deploy.all" >
+    <!-- We want to copy anything in the customary output folders to the deploy folder that is
+         being created.
+         However, we don't have a list of all of our modules, units, etc. - this is a list that is
+         managed in each of the child subdirectories. -->
+    <antcall target="software_packager.deploy.all" />
+  </target>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scenario xmlns="http://www.sydac.com.au/Scenario/1.3/">
+  <base_info type="Driver Scenario" version="1" scenario_description="EMU 6 CAR Scenario - Cutout Mode" scenario_start_time="2022-11-07T15:39:05Z" scenario_is_core="0" tracknetwork_name="Mumbai_Metro_L2_L7_Track_Cutout_Mode" tracknetwork_skin_name="Summer">
+    <history>
+      <history_log type="Created" author_first_name="Super" author_last_name="User" scenario_name="EMU 6 CAR Scenario - Cutout Mode" scenario_version="1" timestamp="2022-11-07T11:40:31Z" />
+    </history>
+  </base_info>
+
+  <train description="BEML_EMU 6 Car" train_type_name="BEML_EMU">
+    <car description="DM 1-2" loading="0" serial_number="1" />
+    <car description="T 1-2" loading="0" serial_number="2" />
+    <car description="M 1-2" loading="0" serial_number="3" />
+    <car description="M 2-1" loading="0" serial_number="4" />
+    <car description="T 2-1" loading="0" serial_number="5" />
+    <car description="DM 2-1" loading="0" serial_number="6" />
+  </train>
+
+  <scenario_train id="1" name="6 Car - Simulated Train" train_description="BEML_EMU 6 Car" start_segment_name="Track_10_4" start_offset="203.516415815" is_heading_alpha="1" is_simulated="1" trip_number="----" />
+
+  <virtual_location_vehicle location_type="Vehicle" description="Driver 1-2" hub_mode="Driver" x_offset="0" y_offset="0" z_offset="0" heading_offset="0" pitch_offset="0" roll_offset="0" scenario_train_name="6 Car - Simulated Train" location_name="Driver 1-2" vehicle_index="0" />
+</scenario>

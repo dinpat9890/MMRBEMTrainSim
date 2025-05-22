@@ -1,0 +1,12 @@
+%---------------------------------------------------------------------------
+%  MATLAB function for configuration set generated on 03-Jun-2015 11:26:56
+%  MATLAB version: 8.3.0.532 (R2014a)
+%---------------------------------------------------------------------------
+
+function cs=ConfigSet_SimIntegration_Reference()
+
+cs = ConfigSet_CommonTrain_Reference;
+ 
+cs.set_param('Name', 'ConfigSet_SimIntegration_Reference');  % Name
+
+assignin('base', cs.get_param('Name'), cs);

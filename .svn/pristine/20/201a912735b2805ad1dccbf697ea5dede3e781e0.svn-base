@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="WorldExpression" id="1041292721" name="DoorController_5" property="DoorControl">
+		<expression>{
+#include &lt;mmrbem/graphics/expressions/DoorControl.h&gt;
+}</expression>
+		<property>	
+			<parameter name="MaxDistance">1.01</parameter>
+		</property>
+		<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+	</node>
+</nodes>

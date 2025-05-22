@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="feature_singal_mumbai_dark" guid="e75e4bfcb84b9f74b9046814df3b62b9db8b5d17" parent="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" base_material="mesh_base">
+	<parameter name="albedo_color">0.82745105 0.82745105 0.82745105 1</parameter>
+</material>

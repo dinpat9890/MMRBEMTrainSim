@@ -1,0 +1,5782 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<control_table>
+  <!-- ****************************************** -->
+  <!-- *       ROUTE DEFINITIONS                * -->
+  <!-- ****************************************** -->
+  <!-- 2ARS4401-M -->
+  <route name="2ARS4401-M">
+    <point_requirement>
+      <normal name="2AP4401" />
+      <normal name="2AP4402" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4402-D -->
+  <route name="2ARS4402-D">
+    <point_requirement>
+      <reverse name="2AP4403" />
+      <reverse name="2AP4404" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4402-M -->
+  <route name="2ARS4402-M">
+    <point_requirement>
+      <normal name="2AP4404" />
+      <normal name="2AP4403" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4403-D -->
+  <route name="2ARS4403-D">
+    <point_requirement>
+      <reverse name="2AP4403" />
+      <reverse name="2AP4404" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4403-M -->
+  <route name="2ARS4403-M">
+    <point_requirement>
+      <normal name="2AP4403" />
+      <normal name="2AP4404" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4404-M -->
+  <route name="2ARS4404-M">
+    <point_requirement>
+      <normal name="2AP4402" />
+      <normal name="2AP4401" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4405-D -->
+  <route name="2ARS4405-D">
+    <point_requirement>
+      <reverse name="2AP4401" />
+      <reverse name="2AP4402" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4405-M -->
+  <route name="2ARS4405-M">
+    <point_requirement>
+      <normal name="2AP4402" />
+      <normal name="2AP4401" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4406-M -->
+  <route name="2ARS4406-M">
+    <point_requirement>
+      <normal name="2AP4403" />
+      <normal name="2AP4404" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4407-M -->
+  <route name="2ARS4407-M">
+    <point_requirement>
+      <normal name="2AP4404" />
+      <normal name="2AP4403" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4408-D -->
+  <route name="2ARS4408-D">
+    <point_requirement>
+      <reverse name="2AP4401" />
+      <reverse name="2AP4402" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS4408-M -->
+  <route name="2ARS4408-M">
+    <point_requirement>
+      <normal name="2AP4402" />
+      <normal name="2AP4401" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5201-D -->
+  <route name="2ARS5201-D">
+    <point_requirement>
+      <normal name="2AP5204" />
+      <normal name="2AP5206" />
+
+      <reverse name="2AP5201" />
+      <reverse name="2AP5202" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5201-M -->
+  <route name="2ARS5201-M">
+    <point_requirement>
+      <normal name="2AP5201" />
+      <normal name="2AP5202" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5201-S -->
+  <route name="2ARS5201-S">
+    <point_requirement>
+      <reverse name="2AP5201" />
+      <reverse name="2AP5202" />
+      <reverse name="2AP5204" />
+      <reverse name="2AP5206" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5202-M -->
+  <route name="2ARS5202-M">
+    <point_requirement>
+      <normal name="2AP5214" />
+      <normal name="2AP5205" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5203-D -->
+  <route name="2ARS5203-D">
+    <point_requirement>
+      <reverse name="2AP5203" />
+      <reverse name="2AP5210" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5203-M -->
+  <route name="2ARS5203-M">
+    <point_requirement>
+      <normal name="2AP5203" />
+      <normal name="2AP5210" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5204-D -->
+  <route name="2ARS5204-D">
+    <point_requirement>
+      <reverse name="2AP5210" />
+      <reverse name="2AP5203" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5204-M -->
+  <route name="2ARS5204-M">
+    <point_requirement>
+      <normal name="2AP5210" />
+      <normal name="2AP5203" />
+      <normal name="2AP5208" />
+      <normal name="2AP5212" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5205-D -->
+  <route name="2ARS5205-D">
+    <point_requirement>
+      <normal name="2AP5201" />
+      <normal name="2AP5202" />
+
+      <reverse name="2AP5204" />
+      <reverse name="2AP5206" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5205-M -->
+  <route name="2ARS5205-M">
+    <point_requirement>
+      <normal name="2AP5204" />
+      <normal name="2AP5206" />
+      <normal name="2AP5201" />
+      <normal name="2AP5202" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5206-D -->
+  <route name="2ARS5206-D">
+    <point_requirement>
+      <normal name="2AP5204" />
+      <normal name="2AP5206" />
+
+      <reverse name="2AP5202" />
+      <reverse name="2AP5201" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5206-M -->
+  <route name="2ARS5206-M">
+    <point_requirement>
+      <normal name="2AP5202" />
+      <normal name="2AP5201" />
+      <normal name="2AP5204" />
+      <normal name="2AP5206" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5207-D -->
+  <route name="2ARS5207-D">
+    <point_requirement>
+      <reverse name="2AP5208" />
+      <reverse name="2AP5212" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5207-M -->
+  <route name="2ARS5207-M">
+    <point_requirement>
+      <normal name="2AP5208" />
+      <normal name="2AP5212" />
+      <normal name="2AP5210" />
+      <normal name="2AP5203" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5208-M -->
+  <route name="2ARS5208-M">
+    <point_requirement>
+      <normal name="2AP5203" />
+      <normal name="2AP5210" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5209-D -->
+  <route name="2ARS5209-D">
+    <point_requirement>
+      <normal name="2AP5207" />
+      <normal name="2AP5216" />
+
+      <reverse name="2AP5214" />
+      <reverse name="2AP5205" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5209-M -->
+  <route name="2ARS5209-M">
+    <point_requirement>
+      <normal name="2AP5214" />
+      <normal name="2AP5205" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5209-S -->
+  <route name="2ARS5209-S">
+    <point_requirement>
+      <reverse name="2AP5214" />
+      <reverse name="2AP5205" />
+      <reverse name="2AP5207" />
+      <reverse name="2AP5216" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5210-M -->
+  <route name="2ARS5210-M">
+    <point_requirement>
+      <normal name="2AP5201" />
+      <normal name="2AP5202" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5211-M -->
+  <route name="2ARS5211-M">
+    <point_requirement>
+      <normal name="2AP5208" />
+      <normal name="2AP5212" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5213-M -->
+  <route name="2ARS5213-M">
+    <point_requirement>
+      <normal name="2AP5216" />
+      <normal name="2AP5207" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5214-D -->
+  <route name="2ARS5214-D">
+    <point_requirement>
+      <normal name="2AP5205" />
+      <normal name="2AP5214" />
+
+      <reverse name="2AP5216" />
+      <reverse name="2AP5207" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5214-M -->
+  <route name="2ARS5214-M">
+    <point_requirement>
+      <normal name="2AP5207" />
+      <normal name="2AP5216" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5214-S -->
+  <route name="2ARS5214-S">
+    <point_requirement>
+      <reverse name="2AP5216" />
+      <reverse name="2AP5207" />
+      <reverse name="2AP5205" />
+      <reverse name="2AP5214" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5216-D -->
+  <route name="2ARS5216-D">
+    <point_requirement>
+      <reverse name="2AP5212" />
+      <reverse name="2AP5208" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5216-M -->
+  <route name="2ARS5216-M">
+    <point_requirement>
+      <normal name="2AP5212" />
+      <normal name="2AP5208" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5218-D -->
+  <route name="2ARS5218-D">
+    <point_requirement>
+      <normal name="2AP5202" />
+      <normal name="2AP5201" />
+
+      <reverse name="2AP5206" />
+      <reverse name="2AP5204" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5218-M -->
+  <route name="2ARS5218-M">
+    <point_requirement>
+      <normal name="2AP5206" />
+      <normal name="2AP5204" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5218-S -->
+  <route name="2ARS5218-S">
+    <point_requirement>
+      <reverse name="2AP5206" />
+      <reverse name="2AP5204" />
+      <reverse name="2AP5202" />
+      <reverse name="2AP5201" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5222-D -->
+  <route name="2ARS5222-D">
+    <point_requirement>
+      <normal name="2AP5207" />
+      <normal name="2AP5216" />
+
+      <reverse name="2AP5205" />
+      <reverse name="2AP5214" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5222-M -->
+  <route name="2ARS5222-M">
+    <point_requirement>
+      <normal name="2AP5207" />
+      <normal name="2AP5216" />
+      <normal name="2AP5205" />
+      <normal name="2AP5214" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS5222-S -->
+  <route name="2ARS5222-S">
+    <point_requirement>
+      <normal name="2AP5207" />
+      <normal name="2AP5216" />
+
+      <reverse name="2AP5205" />
+      <reverse name="2AP5214" />
+      <reverse name="2AP5210" />
+      <reverse name="2AP5203" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6001-D -->
+  <route name="2ARS6001-D">
+    <point_requirement>
+      <reverse name="2AP6001" />
+      <reverse name="2AP6002" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6001-M -->
+  <route name="2ARS6001-M">
+    <point_requirement>
+      <normal name="2AP6001" />
+      <normal name="2AP6002" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6002-M -->
+  <route name="2ARS6002-M">
+    <point_requirement>
+      <normal name="2AP6004" />
+      <normal name="2AP6003" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6003-M -->
+  <route name="2ARS6003-M">
+    <point_requirement>
+      <normal name="2AP6003" />
+      <normal name="2AP6004" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6004-D -->
+  <route name="2ARS6004-D">
+    <point_requirement>
+      <reverse name="2AP6002" />
+      <reverse name="2AP6001" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6004-M -->
+  <route name="2ARS6004-M">
+    <point_requirement>
+      <normal name="2AP6002" />
+      <normal name="2AP6001" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6005-M -->
+  <route name="2ARS6005-M">
+    <point_requirement>
+      <normal name="2AP6002" />
+      <normal name="2AP6001" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6006-D -->
+  <route name="2ARS6006-D">
+    <point_requirement>
+      <reverse name="2AP6004" />
+      <reverse name="2AP6003" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6006-M -->
+  <route name="2ARS6006-M">
+    <point_requirement>
+      <normal name="2AP6003" />
+      <normal name="2AP6004" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6007-D -->
+  <route name="2ARS6007-D">
+    <point_requirement>
+      <reverse name="2AP6004" />
+      <reverse name="2AP6003" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6007-M -->
+  <route name="2ARS6007-M">
+    <point_requirement>
+      <normal name="2AP6004" />
+      <normal name="2AP6003" />
+    </point_requirement>
+  </route>
+  <!-- 2ARS6008-M -->
+  <route name="2ARS6008-M">
+    <point_requirement>
+      <normal name="2AP6002" />
+      <normal name="2AP6001" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3101-D -->
+  <route name="7RS3101-D">
+    <point_requirement>
+      <reverse name="7P3101" />
+      <reverse name="7P3104" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3101-M -->
+  <route name="7RS3101-M">
+    <point_requirement>
+      <normal name="7P3101" />
+      <normal name="7P3103" />
+      <normal name="7P3104" />
+      <normal name="7P3102" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3102-D -->
+  <route name="7RS3102-D">
+    <point_requirement>
+      <reverse name="7P3106" />
+      <reverse name="7P3105" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3102-M -->
+  <route name="7RS3102-M">
+    <point_requirement>
+      <normal name="7P3106" />
+      <normal name="7P3105" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3103-D -->
+  <route name="7RS3103-D">
+    <point_requirement>
+      <reverse name="7P3105" />
+      <reverse name="7P3106" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3103-M -->
+  <route name="7RS3103-M">
+    <point_requirement>
+      <normal name="7P3105" />
+      <normal name="7P3106" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3104-D -->
+  <route name="7RS3104-D">
+    <point_requirement>
+      <reverse name="7P3104" />
+      <reverse name="7P3101" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3104-M -->
+  <route name="7RS3104-M">
+    <point_requirement>
+      <normal name="7P3104" />
+      <normal name="7P3101" />
+      <normal name="7P3102" />
+      <normal name="7P3103" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3105-D -->
+  <route name="7RS3105-D">
+    <point_requirement>
+      <reverse name="7P3102" />
+      <reverse name="7P3103" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3105-M -->
+  <route name="7RS3105-M">
+    <point_requirement>
+      <normal name="7P3102" />
+      <normal name="7P3103" />
+      <normal name="7P3104" />
+      <normal name="7P3101" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3106-M -->
+  <route name="7RS3106-M">
+    <point_requirement>
+      <normal name="7P3105" />
+      <normal name="7P3106" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3107-M -->
+  <route name="7RS3107-M">
+    <point_requirement>
+      <normal name="7P3106" />
+      <normal name="7P3105" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3108-D -->
+  <route name="7RS3108-D">
+    <point_requirement>
+      <reverse name="7P3103" />
+      <reverse name="7P3102" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3108-M -->
+  <route name="7RS3108-M">
+    <point_requirement>
+      <normal name="7P3103" />
+      <normal name="7P3102" />
+      <normal name="7P3101" />
+      <normal name="7P3104" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3501-M -->
+  <route name="7RS3501-M">
+    <point_requirement>
+      <normal name="7P3501" />
+      <normal name="7P3502" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3502-D -->
+  <route name="7RS3502-D">
+    <point_requirement>
+      <reverse name="7P3504" />
+      <reverse name="7P3503" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3502-M -->
+  <route name="7RS3502-M">
+    <point_requirement>
+      <normal name="7P3504" />
+      <normal name="7P3503" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3503-D -->
+  <route name="7RS3503-D">
+    <point_requirement>
+      <reverse name="7P3503" />
+      <reverse name="7P3503" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3503-M -->
+  <route name="7RS3503-M">
+    <point_requirement>
+      <normal name="7P3503" />
+      <normal name="7P3504" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3504-M -->
+  <route name="7RS3504-M">
+    <point_requirement>
+      <normal name="7P3502" />
+      <normal name="7P3501" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3505-D -->
+  <route name="7RS3505-D">
+    <point_requirement>
+      <reverse name="7P3502" />
+      <reverse name="7P3501" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3505-M -->
+  <route name="7RS3505-M">
+    <point_requirement>
+      <normal name="7P3502" />
+      <normal name="7P3501" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3506-M -->
+  <route name="7RS3506-M">
+    <point_requirement>
+      <normal name="7P3503" />
+      <normal name="7P3504" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3507-M -->
+  <route name="7RS3507-M">
+    <point_requirement>
+      <normal name="7P3504" />
+      <normal name="7P3503" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3508-D -->
+  <route name="7RS3508-D">
+    <point_requirement>
+      <reverse name="7P3501" />
+      <reverse name="7P3502" />
+    </point_requirement>
+  </route>
+  <!-- 7RS3508-M -->
+  <route name="7RS3508-M">
+    <point_requirement>
+      <normal name="7P3501" />
+      <normal name="7P3502" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4301-D -->
+  <route name="7RS4301-D">
+    <point_requirement>
+      <reverse name="7P4301" />
+      <reverse name="7P4304" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4301-M -->
+  <route name="7RS4301-M">
+    <point_requirement>
+      <normal name="7P4301" />
+      <normal name="7P4304" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4302-D -->
+  <route name="7RS4302-D">
+    <point_requirement>
+      <reverse name="7P4304" />
+      <reverse name="7P4301" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4302-M -->
+  <route name="7RS4302-M">
+    <point_requirement>
+      <normal name="7P4306" />
+      <normal name="7P4304" />
+      <normal name="7P4301" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4303-D -->
+  <route name="7RS4303-D">
+    <point_requirement>
+      <reverse name="7P4302" />
+      <reverse name="7P4308" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4303-M -->
+  <route name="7RS4303-M">
+    <point_requirement>
+      <normal name="7P4302" />
+      <normal name="7P4308" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4303-S -->
+  <route name="7RS4303-S">
+    <point_requirement>
+      <normal name="7P4302" />
+      <normal name="7P4308" />
+
+      <reverse name="7P4306" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4304-M -->
+  <route name="7RS4304-M">
+    <point_requirement>
+      <normal name="7P4301" />
+      <normal name="7P4304" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4306-D -->
+  <route name="7RS4306-D">
+    <point_requirement>
+      <reverse name="7P4308" />
+      <reverse name="7P4302" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4306-M -->
+  <route name="7RS4306-M">
+    <point_requirement>
+      <normal name="7P4308" />
+      <normal name="7P4302" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4308-D -->
+  <route name="7RS4308-D">
+    <point_requirement>
+      <reverse name="7P4306" />
+      <reverse name="7P4304" />
+      <reverse name="7P4301" />
+    </point_requirement>
+  </route>
+  <!-- 7RS4308-M -->
+  <route name="7RS4308-M">
+    <point_requirement>
+      <normal name="7P4306" />
+      <normal name="7P4304" />
+      <normal name="7P4301" />
+      <normal name="7P4302" />
+      <normal name="7P4308" />
+    </point_requirement>
+  </route>
+
+  <!-- ****************************************** -->
+  <!-- *            HOME SIGNALS                * -->
+  <!-- ****************************************** -->
+  <!-- 2ARS4401_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4401_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4401-M -->
+    <route_case name="2ARS4401-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4401_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4401_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4401" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4401_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4401" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4403" />
+          <track_circuit_clear name="2AT4405" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS4402_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4402_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS4402_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4402-M -->
+    <route_case name="2ARS4402-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4402_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4402_Signal" state="V" />
+
+          <state feature="2ARS4402_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4410" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4402_Signal" state="G" />
+
+          <state feature="2ARS4402_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4410" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4408" />
+          <track_circuit_clear name="2AT4406" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS4402-D -->
+    <route_case name="2ARS4402-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4402_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4402_Signal" state="V" />
+
+          <state feature="2ARS4402_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4410" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4402_Signal" state="G" />
+
+          <state feature="2ARS4402_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4410" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4408" />
+          <track_circuit_clear name="2AT4407" />
+          <track_circuit_clear name="2AT4405" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS4403_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4403_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS4403_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4403-M -->
+    <route_case name="2ARS4403-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4403_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4403_Signal" state="V" />
+
+          <state feature="2ARS4403_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4407" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4403_Signal" state="G" />
+
+          <state feature="2ARS4403_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4407" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4409" />
+          <track_circuit_clear name="2AT4411" />
+          <track_circuit_clear name="2AT4501" />
+          <track_circuit_clear name="2AT4503" />
+          <track_circuit_clear name="2AT4601" />
+          <track_circuit_clear name="2AT4603" />
+          <track_circuit_clear name="2AT4701" />
+          <track_circuit_clear name="2AT4703" />
+          <track_circuit_clear name="2AT4801" />
+          <track_circuit_clear name="2AT4803" />
+          <track_circuit_clear name="2AT4901" />
+          <track_circuit_clear name="2AT4903" />
+          <track_circuit_clear name="2AT5001" />
+          <track_circuit_clear name="2AT5003" />
+          <track_circuit_clear name="2AT5101" />
+          <track_circuit_clear name="2AT5103" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS4403-D -->
+    <route_case name="2ARS4403-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4403_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4403_Signal" state="V" />
+
+          <state feature="2ARS4403_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4407" />
+          <track_circuit_clear name="2AT4408" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4403_Signal" state="G" />
+
+          <state feature="2ARS4403_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4407" />
+          <track_circuit_clear name="2AT4408" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4410" />
+          <track_circuit_clear name="2AT4412" />
+          <track_circuit_clear name="2AT4502" />
+          <track_circuit_clear name="2AT4504" />
+          <track_circuit_clear name="2AT4602" />
+          <track_circuit_clear name="2AT4604" />
+          <track_circuit_clear name="2AT4702" />
+          <track_circuit_clear name="2AT4704" />
+          <track_circuit_clear name="2AT4802" />
+          <track_circuit_clear name="2AT4804" />
+          <track_circuit_clear name="2AT4902" />
+          <track_circuit_clear name="2AT4904" />
+          <track_circuit_clear name="2AT5002" />
+          <track_circuit_clear name="2AT5004" />
+          <track_circuit_clear name="2AT5102" />
+          <track_circuit_clear name="2AT5104" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS4404_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4404_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4404-M -->
+    <route_case name="2ARS4404-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4404_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4404_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4404" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4404_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4404" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4402" />
+          <track_circuit_clear name="7T4310" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS4405_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4405_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS4405_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4405-M -->
+    <route_case name="2ARS4405-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4405_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4405_Signal" state="V" />
+
+          <state feature="2ARS4405_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4402" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4405_Signal" state="G" />
+
+          <state feature="2ARS4405_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4402" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4404" />
+          <track_circuit_clear name="2AT4406" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS4405-D -->
+    <route_case name="2ARS4405-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4405_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4405_Signal" state="V" />
+
+          <state feature="2ARS4405_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4402" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4405_Signal" state="G" />
+
+          <state feature="2ARS4405_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4402" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4404" />
+          <track_circuit_clear name="2AT4403" />
+          <track_circuit_clear name="2AT4405" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS4406_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4406_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4406-M -->
+    <route_case name="2ARS4406-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4406_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4406_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4409" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4406_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4409" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4407" />
+          <track_circuit_clear name="2AT4405" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS4407_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4407_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4407-M -->
+    <route_case name="2ARS4407-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4407_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4407_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4408" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4407_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4408" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4410" />
+          <track_circuit_clear name="2AT4412" />
+          <track_circuit_clear name="2AT4502" />
+          <track_circuit_clear name="2AT4504" />
+          <track_circuit_clear name="2AT4602" />
+          <track_circuit_clear name="2AT4604" />
+          <track_circuit_clear name="2AT4702" />
+          <track_circuit_clear name="2AT4704" />
+          <track_circuit_clear name="2AT4802" />
+          <track_circuit_clear name="2AT4804" />
+          <track_circuit_clear name="2AT4902" />
+          <track_circuit_clear name="2AT4904" />
+          <track_circuit_clear name="2AT5002" />
+          <track_circuit_clear name="2AT5004" />
+          <track_circuit_clear name="2AT5102" />
+          <track_circuit_clear name="2AT5104" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS4408_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS4408_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS4408_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS4408-M -->
+    <route_case name="2ARS4408-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4408_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4408_Signal" state="V" />
+
+          <state feature="2ARS4408_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4403" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4408_Signal" state="G" />
+
+          <state feature="2ARS4408_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4403" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4401" />
+          <track_circuit_clear name="7T4307" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS4408-D -->
+    <route_case name="2ARS4408-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4408_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4408_Signal" state="V" />
+
+          <state feature="2ARS4408_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4403" />
+          <track_circuit_clear name="2AT4404" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS4408_Signal" state="G" />
+
+          <state feature="2ARS4408_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4403" />
+          <track_circuit_clear name="2AT4404" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT4402" />
+          <track_circuit_clear name="7T4310" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5201_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5201_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5201_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5201-M -->
+    <route_case name="2ARS5201-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="V" />
+
+          <state feature="2ARS5201_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5201" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="G" />
+
+          <state feature="2ARS5201_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5201" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5203" />
+          <track_circuit_clear name="2AT5203" />
+          <track_circuit_clear name="2AT5205" />
+          <track_circuit_clear name="2AT5207" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5201-D -->
+    <route_case name="2ARS5201-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="V" />
+
+          <state feature="2ARS5201_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5201" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="G" />
+
+          <state feature="2ARS5201_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5201" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5203" />
+          <track_circuit_clear name="2AT5202" />
+          <track_circuit_clear name="2AT5204" />
+          <track_circuit_clear name="2AT5206" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5201-S -->
+    <route_case name="2ARS5201-S">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="V" />
+
+          <state feature="2ARS5201_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5201" />
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5201_Signal" state="G" />
+
+          <state feature="2ARS5201_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5201" />
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5220" />
+          <track_circuit_clear name="2AT5222" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5202_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5202_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5202-M -->
+    <route_case name="2ARS5202-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5202_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5202_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5216" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5202_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5216" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5212" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5203_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5203_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5203_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5203-M -->
+    <route_case name="2ARS5203-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5203_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5203_Signal" state="V" />
+
+          <state feature="2ARS5203_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5209" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5203_Signal" state="G" />
+
+          <state feature="2ARS5203_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5209" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5211" />
+          <track_circuit_clear name="2AT5213" />
+          <track_circuit_clear name="2AT5301" />
+          <track_circuit_clear name="2AT5303" />
+          <track_circuit_clear name="2AT5401" />
+          <track_circuit_clear name="2AT5403" />
+          <track_circuit_clear name="2AT5501" />
+          <track_circuit_clear name="2AT5503" />
+          <track_circuit_clear name="2AT5601" />
+          <track_circuit_clear name="2AT5603" />
+          <track_circuit_clear name="2AT5701" />
+          <track_circuit_clear name="2AT5703" />
+          <track_circuit_clear name="2AT5801" />
+          <track_circuit_clear name="2AT5803" />
+          <track_circuit_clear name="2AT5901" />
+          <track_circuit_clear name="2AT5903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5203-D -->
+    <route_case name="2ARS5203-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5203_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5203_Signal" state="V" />
+
+          <state feature="2ARS5203_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5209" />
+          <track_circuit_clear name="2AT5210" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5203_Signal" state="G" />
+
+          <state feature="2ARS5203_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5209" />
+          <track_circuit_clear name="2AT5210" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5212" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5204_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5204_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5204_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5204-M -->
+    <route_case name="2ARS5204-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5204_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5204_Signal" state="V" />
+
+          <state feature="2ARS5204_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5210" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5204_Signal" state="G" />
+
+          <state feature="2ARS5204_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5210" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5208" />
+          <track_circuit_clear name="2AT5206" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5204-D -->
+    <route_case name="2ARS5204-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5204_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5204_Signal" state="V" />
+
+          <state feature="2ARS5204_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5210" />
+          <track_circuit_clear name="2AT5209" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5204_Signal" state="G" />
+
+          <state feature="2ARS5204_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5210" />
+          <track_circuit_clear name="2AT5209" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5207" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5205_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5205_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5205_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5205-M -->
+    <route_case name="2ARS5205-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5205_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5205_Signal" state="V" />
+
+          <state feature="2ARS5205_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5205_Signal" state="G" />
+
+          <state feature="2ARS5205_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5204" />
+          <track_circuit_clear name="2AT5206" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5205-D -->
+    <route_case name="2ARS5205-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5205_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5205_Signal" state="V" />
+
+          <state feature="2ARS5205_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5202" />
+          <track_circuit_clear name="2AT5220" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5205_Signal" state="G" />
+
+          <state feature="2ARS5205_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5202" />
+          <track_circuit_clear name="2AT5220" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5222" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5206_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5206_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5206_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5206-M -->
+    <route_case name="2ARS5206-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5206_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5206_Signal" state="V" />
+
+          <state feature="2ARS5206_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5204" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5206_Signal" state="G" />
+
+          <state feature="2ARS5206_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5204" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5202" />
+          <track_circuit_clear name="2AT5104" />
+          <track_circuit_clear name="2AT5102" />
+          <track_circuit_clear name="2AT5004" />
+          <track_circuit_clear name="2AT5002" />
+          <track_circuit_clear name="2AT4904" />
+          <track_circuit_clear name="2AT4902" />
+          <track_circuit_clear name="2AT4804" />
+          <track_circuit_clear name="2AT4802" />
+          <track_circuit_clear name="2AT4704" />
+          <track_circuit_clear name="2AT4702" />
+          <track_circuit_clear name="2AT4604" />
+          <track_circuit_clear name="2AT4602" />
+          <track_circuit_clear name="2AT4504" />
+          <track_circuit_clear name="2AT4502" />
+          <track_circuit_clear name="2AT4412" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5206-D -->
+    <route_case name="2ARS5206-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5206_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5206_Signal" state="V" />
+
+          <state feature="2ARS5206_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5204" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5206_Signal" state="G" />
+
+          <state feature="2ARS5206_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5204" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5202" />
+          <track_circuit_clear name="2AT5203" />
+          <track_circuit_clear name="2AT5201" />
+          <track_circuit_clear name="2AT5103" />
+          <track_circuit_clear name="2AT5101" />
+          <track_circuit_clear name="2AT5003" />
+          <track_circuit_clear name="2AT5001" />
+          <track_circuit_clear name="2AT4903" />
+          <track_circuit_clear name="2AT4901" />
+          <track_circuit_clear name="2AT4803" />
+          <track_circuit_clear name="2AT4801" />
+          <track_circuit_clear name="2AT4703" />
+          <track_circuit_clear name="2AT4701" />
+          <track_circuit_clear name="2AT4603" />
+          <track_circuit_clear name="2AT4601" />
+          <track_circuit_clear name="2AT4503" />
+          <track_circuit_clear name="2AT4501" />
+          <track_circuit_clear name="2AT4411" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5207_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5207_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5207_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5207-M -->
+    <route_case name="2ARS5207-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5207_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5207_Signal" state="V" />
+
+          <state feature="2ARS5207_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5208" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5207_Signal" state="G" />
+
+          <state feature="2ARS5207_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5208" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5210" />
+          <track_circuit_clear name="2AT5212" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5207-D -->
+    <route_case name="2ARS5207-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5207_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5207_Signal" state="V" />
+
+          <state feature="2ARS5207_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5208" />
+          <track_circuit_clear name="2AT5226" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5207_Signal" state="G" />
+
+          <state feature="2ARS5207_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5208" />
+          <track_circuit_clear name="2AT5226" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5228" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5208_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5208_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5208-M -->
+    <route_case name="2ARS5208-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5208_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5208_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5211" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5208_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5211" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5209" />
+          <track_circuit_clear name="2AT5207" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5209_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5209_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5209_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5209-M -->
+    <route_case name="2ARS5209-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="V" />
+
+          <state feature="2ARS5209_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5214" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="G" />
+
+          <state feature="2ARS5209_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5214" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5216" />
+          <track_circuit_clear name="2AT5218" />
+          <track_circuit_clear name="2AT5302" />
+          <track_circuit_clear name="2AT5304" />
+          <track_circuit_clear name="2AT5502" />
+          <track_circuit_clear name="2AT5504" />
+          <track_circuit_clear name="2AT5602" />
+          <track_circuit_clear name="2AT5604" />
+          <track_circuit_clear name="2AT5702" />
+          <track_circuit_clear name="2AT5704" />
+          <track_circuit_clear name="2AT5802" />
+          <track_circuit_clear name="2AT5804" />
+          <track_circuit_clear name="2AT5902" />
+          <track_circuit_clear name="2AT5904" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5209-D -->
+    <route_case name="2ARS5209-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="V" />
+
+          <state feature="2ARS5209_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5215" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="G" />
+
+          <state feature="2ARS5209_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5215" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5217" />
+          <track_circuit_clear name="2AT5219" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5209-S -->
+    <route_case name="2ARS5209-S">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="V" />
+
+          <state feature="2ARS5209_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5215" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5209_Signal" state="G" />
+
+          <state feature="2ARS5209_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5215" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5230" />
+          <track_circuit_clear name="2AT5232" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5210_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5210_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5210-M -->
+    <route_case name="2ARS5210-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5210_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5210_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5205" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5210_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5205" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5203" />
+          <track_circuit_clear name="2AT5201" />
+          <track_circuit_clear name="2AT5103" />
+          <track_circuit_clear name="2AT5101" />
+          <track_circuit_clear name="2AT5003" />
+          <track_circuit_clear name="2AT5001" />
+          <track_circuit_clear name="2AT4903" />
+          <track_circuit_clear name="2AT4901" />
+          <track_circuit_clear name="2AT4803" />
+          <track_circuit_clear name="2AT4801" />
+          <track_circuit_clear name="2AT4703" />
+          <track_circuit_clear name="2AT4701" />
+          <track_circuit_clear name="2AT4603" />
+          <track_circuit_clear name="2AT4601" />
+          <track_circuit_clear name="2AT4503" />
+          <track_circuit_clear name="2AT4501" />
+          <track_circuit_clear name="2AT4411" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5211_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5211_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5211-M -->
+    <route_case name="2ARS5211-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5211_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5211_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5224" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5211_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5224" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5226" />
+          <track_circuit_clear name="2AT5228" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5213_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5213_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5213-M -->
+    <route_case name="2ARS5213-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5213_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5213_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5230" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5213_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5230" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5232" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5214_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5214_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5214_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5214-M -->
+    <route_case name="2ARS5214-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="V" />
+
+          <state feature="2ARS5214_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5232" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="G" />
+
+          <state feature="2ARS5214_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5232" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5230" />
+          <track_circuit_clear name="2AT5228" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5214-D -->
+    <route_case name="2ARS5214-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="V" />
+
+          <state feature="2ARS5214_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5232" />
+          <track_circuit_clear name="2AT5230" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="G" />
+
+          <state feature="2ARS5214_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5232" />
+          <track_circuit_clear name="2AT5230" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5215" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5214-S -->
+    <route_case name="2ARS5214-S">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="V" />
+
+          <state feature="2ARS5214_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5232" />
+          <track_circuit_clear name="2AT5230" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5214_Signal" state="G" />
+
+          <state feature="2ARS5214_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5232" />
+          <track_circuit_clear name="2AT5230" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5215" />
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5212" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5216_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5216_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5216_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5216-M -->
+    <route_case name="2ARS5216-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5216_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5216_Signal" state="V" />
+
+          <state feature="2ARS5216_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5226" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5216_Signal" state="G" />
+
+          <state feature="2ARS5216_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5226" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5224" />
+          <track_circuit_clear name="2AT5222" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5216-D -->
+    <route_case name="2ARS5216-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5216_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5216_Signal" state="V" />
+
+          <state feature="2ARS5216_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5226" />
+          <track_circuit_clear name="2AT5208" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5216_Signal" state="G" />
+
+          <state feature="2ARS5216_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5226" />
+          <track_circuit_clear name="2AT5208" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5206" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5218_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5218_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5218_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5218-M -->
+    <route_case name="2ARS5218-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="G" />
+
+          <state feature="2ARS5218_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5220" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5218-D -->
+    <route_case name="2ARS5218-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="V" />
+
+          <state feature="2ARS5218_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5220" />
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="G" />
+
+          <state feature="2ARS5218_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5220" />
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5104" />
+          <track_circuit_clear name="2AT5102" />
+          <track_circuit_clear name="2AT5004" />
+          <track_circuit_clear name="2AT5002" />
+          <track_circuit_clear name="2AT4904" />
+          <track_circuit_clear name="2AT4902" />
+          <track_circuit_clear name="2AT4804" />
+          <track_circuit_clear name="2AT4802" />
+          <track_circuit_clear name="2AT4704" />
+          <track_circuit_clear name="2AT4702" />
+          <track_circuit_clear name="2AT4604" />
+          <track_circuit_clear name="2AT4602" />
+          <track_circuit_clear name="2AT4504" />
+          <track_circuit_clear name="2AT4502" />
+          <track_circuit_clear name="2AT4412" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5218-S -->
+    <route_case name="2ARS5218-S">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="V" />
+
+          <state feature="2ARS5218_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5220" />
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5218_Signal" state="G" />
+
+          <state feature="2ARS5218_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5220" />
+          <track_circuit_clear name="2AT5202" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5203" />
+          <track_circuit_clear name="2AT5201" />
+          <track_circuit_clear name="2AT5103" />
+          <track_circuit_clear name="2AT5101" />
+          <track_circuit_clear name="2AT5003" />
+          <track_circuit_clear name="2AT5001" />
+          <track_circuit_clear name="2AT4903" />
+          <track_circuit_clear name="2AT4901" />
+          <track_circuit_clear name="2AT4803" />
+          <track_circuit_clear name="2AT4801" />
+          <track_circuit_clear name="2AT4703" />
+          <track_circuit_clear name="2AT4701" />
+          <track_circuit_clear name="2AT4603" />
+          <track_circuit_clear name="2AT4601" />
+          <track_circuit_clear name="2AT4503" />
+          <track_circuit_clear name="2AT4501" />
+          <track_circuit_clear name="2AT4411" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5222_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5222_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS5222_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5222-M -->
+    <route_case name="2ARS5222-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="V" />
+
+          <state feature="2ARS5222_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5217" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="G" />
+
+          <state feature="2ARS5222_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5217" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5215" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5222-D -->
+    <route_case name="2ARS5222-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="V" />
+
+          <state feature="2ARS5222_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5217" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="G" />
+
+          <state feature="2ARS5222_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5217" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5215" />
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5212" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS5222-S -->
+    <route_case name="2ARS5222-S">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="V" />
+
+          <state feature="2ARS5222_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5217" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5222_Signal" state="G" />
+
+          <state feature="2ARS5222_RI" state="S" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5217" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5215" />
+          <track_circuit_clear name="2AT5214" />
+          <track_circuit_clear name="2AT5212" />
+          <track_circuit_clear name="2AT5210" />
+          <track_circuit_clear name="2AT5209" />
+          <track_circuit_clear name="2AT5207" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6001_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6001_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS6001_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6001-M -->
+    <route_case name="2ARS6001-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6001_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6001_Signal" state="V" />
+
+          <state feature="2ARS6001_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6001" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6001_Signal" state="G" />
+
+          <state feature="2ARS6001_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6001" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6003" />
+          <track_circuit_clear name="2AT6005" />
+          <track_circuit_clear name="2AT6007" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS6001-D -->
+    <route_case name="2ARS6001-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6001_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6001_Signal" state="V" />
+
+          <state feature="2ARS6001_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6001" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6001_Signal" state="G" />
+
+          <state feature="2ARS6001_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6001" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6003" />
+          <track_circuit_clear name="2AT6004" />
+          <track_circuit_clear name="2AT6006" />
+          <track_circuit_clear name="2AT6008" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6002_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6002_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6002-M -->
+    <route_case name="2ARS6002-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6002_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6002_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6012" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6002_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6012" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6010" />
+          <track_circuit_clear name="2AT6008" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6003_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6003_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6003-M -->
+    <route_case name="2ARS6003-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6003_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6003_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6009" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6003_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6009" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6011" />
+          <track_circuit_clear name="2AT6013" />
+          <track_circuit_clear name="2AT6012" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6004_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6004_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS6004_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6004-M -->
+    <route_case name="2ARS6004-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6004_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6004_Signal" state="V" />
+
+          <state feature="2ARS6004_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6006" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6004_Signal" state="G" />
+
+          <state feature="2ARS6004_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6006" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6004" />
+          <track_circuit_clear name="2AT6003" />
+          <track_circuit_clear name="2AT6002" />
+          <track_circuit_clear name="2AT5904" />
+          <track_circuit_clear name="2AT5902" />
+          <track_circuit_clear name="2AT5804" />
+          <track_circuit_clear name="2AT5802" />
+          <track_circuit_clear name="2AT5704" />
+          <track_circuit_clear name="2AT5702" />
+          <track_circuit_clear name="2AT5604" />
+          <track_circuit_clear name="2AT5602" />
+          <track_circuit_clear name="2AT5504" />
+          <track_circuit_clear name="2AT5502" />
+          <track_circuit_clear name="2AT5404" />
+          <track_circuit_clear name="2AT5402" />
+          <track_circuit_clear name="2AT5304" />
+          <track_circuit_clear name="2AT5302" />
+          <track_circuit_clear name="2AT5218" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS6004-D -->
+    <route_case name="2ARS6004-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6004_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6004_Signal" state="V" />
+
+          <state feature="2ARS6004_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6006" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6004_Signal" state="G" />
+
+          <state feature="2ARS6004_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6006" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6004" />
+          <track_circuit_clear name="2AT6003" />
+          <track_circuit_clear name="2AT6001" />
+          <track_circuit_clear name="2AT5903" />
+          <track_circuit_clear name="2AT5901" />
+          <track_circuit_clear name="2AT5803" />
+          <track_circuit_clear name="2AT5801" />
+          <track_circuit_clear name="2AT5703" />
+          <track_circuit_clear name="2AT5701" />
+          <track_circuit_clear name="2AT5603" />
+          <track_circuit_clear name="2AT5601" />
+          <track_circuit_clear name="2AT5503" />
+          <track_circuit_clear name="2AT5501" />
+          <track_circuit_clear name="2AT5403" />
+          <track_circuit_clear name="2AT5401" />
+          <track_circuit_clear name="2AT5303" />
+          <track_circuit_clear name="2AT5301" />
+          <track_circuit_clear name="2AT5213" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6005_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6005_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6005-M -->
+    <route_case name="2ARS6005-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6005_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6005_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6002" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6005_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6002" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6004" />
+          <track_circuit_clear name="2AT6006" />
+          <track_circuit_clear name="2AT6008" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6006_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6006_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS6006_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6006-M -->
+    <route_case name="2ARS6006-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6006_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6006_Signal" state="V" />
+
+          <state feature="2ARS6006_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6011" />
+          <track_circuit_clear name="2AT6012" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6006_Signal" state="G" />
+
+          <state feature="2ARS6006_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6011" />
+          <track_circuit_clear name="2AT6012" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6009" />
+          <track_circuit_clear name="2AT6007" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS6006-D -->
+    <route_case name="2ARS6006-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6006_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6006_Signal" state="V" />
+
+          <state feature="2ARS6006_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6011" />
+          <track_circuit_clear name="2AT6012" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6006_Signal" state="G" />
+
+          <state feature="2ARS6006_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6011" />
+          <track_circuit_clear name="2AT6012" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6010" />
+          <track_circuit_clear name="2AT6008" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6007_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6007_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="2ARS6007_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6007-M -->
+    <route_case name="2ARS6007-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6007_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6007_Signal" state="V" />
+
+          <state feature="2ARS6007_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6010" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6007_Signal" state="G" />
+
+          <state feature="2ARS6007_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6010" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6012" />
+          <track_circuit_clear name="2AT6014" />
+          <track_circuit_clear name="2AT6011" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 2ARS6007-D -->
+    <route_case name="2ARS6007-D">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6007_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6007_Signal" state="V" />
+
+          <state feature="2ARS6007_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6010" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6007_Signal" state="G" />
+
+          <state feature="2ARS6007_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6010" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6012" />
+          <track_circuit_clear name="2AT6011" />
+          <track_circuit_clear name="2AT6013" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS6008_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS6008_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS6008-M -->
+    <route_case name="2ARS6008-M">
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6008_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6008_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6005" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS6008_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6005" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT6003" />
+          <track_circuit_clear name="2AT6001" />
+          <track_circuit_clear name="2AT5903" />
+          <track_circuit_clear name="2AT5901" />
+          <track_circuit_clear name="2AT5803" />
+          <track_circuit_clear name="2AT5801" />
+          <track_circuit_clear name="2AT5703" />
+          <track_circuit_clear name="2AT5701" />
+          <track_circuit_clear name="2AT5603" />
+          <track_circuit_clear name="2AT5601" />
+          <track_circuit_clear name="2AT5503" />
+          <track_circuit_clear name="2AT5501" />
+          <track_circuit_clear name="2AT5403" />
+          <track_circuit_clear name="2AT5401" />
+          <track_circuit_clear name="2AT5303" />
+          <track_circuit_clear name="2AT5301" />
+          <track_circuit_clear name="2AT5213" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3101_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3101_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3101_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3101-M -->
+    <route_case name="7RS3101-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3101_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3101_Signal" state="V" />
+
+          <state feature="7RS3101_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3103" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3101_Signal" state="G" />
+
+          <state feature="7RS3101_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3103" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3105" />
+          <track_circuit_clear name="7T3107" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3101-D -->
+    <route_case name="7RS3101-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3101_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3101_Signal" state="V" />
+
+          <state feature="7RS3101_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3103" />
+          <track_circuit_clear name="7T3104" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3101_Signal" state="G" />
+
+          <state feature="7RS3101_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3103" />
+          <track_circuit_clear name="7T3104" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3106" />
+          <track_circuit_clear name="7T3108" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3102_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3102_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3102_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3102-M -->
+    <route_case name="7RS3102-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3102_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3102_Signal" state="V" />
+
+          <state feature="7RS3102_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3114" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3102_Signal" state="G" />
+
+          <state feature="7RS3102_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3114" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3112" />
+          <track_circuit_clear name="7T3110" />
+          <track_circuit_clear name="7T3108" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3102-D -->
+    <route_case name="7RS3102-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3102_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3102_Signal" state="V" />
+
+          <state feature="7RS3102_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3114" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3102_Signal" state="G" />
+
+          <state feature="7RS3102_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3114" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3112" />
+          <track_circuit_clear name="7T3111" />
+          <track_circuit_clear name="7T3109" />
+          <track_circuit_clear name="7T3107" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3103_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3103_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3103_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3103-M -->
+    <route_case name="7RS3103-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3103_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3103_Signal" state="V" />
+
+          <state feature="7RS3103_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3109" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3103_Signal" state="G" />
+
+          <state feature="7RS3103_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3109" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3111" />
+          <track_circuit_clear name="7T3113" />
+          <track_circuit_clear name="7T3201" />
+          <track_circuit_clear name="7T3203" />
+          <track_circuit_clear name="7T3301" />
+          <track_circuit_clear name="7T3301A" />
+          <track_circuit_clear name="7T3401" />
+          <track_circuit_clear name="7T3403" />
+          <track_circuit_clear name="7T3405" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3103-D -->
+    <route_case name="7RS3103-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3103_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3103_Signal" state="V" />
+
+          <state feature="7RS3103_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3109" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3103_Signal" state="G" />
+
+          <state feature="7RS3103_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3109" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3111" />
+          <track_circuit_clear name="7T3112" />
+          <track_circuit_clear name="7T3114" />
+          <track_circuit_clear name="7T3116" />
+          <track_circuit_clear name="7T3202" />
+          <track_circuit_clear name="7T3204" />
+          <track_circuit_clear name="7T3302" />
+          <track_circuit_clear name="7T3302A" />
+          <track_circuit_clear name="7T3402" />
+          <track_circuit_clear name="7T3404" />
+          <track_circuit_clear name="7T3406" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3104_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3104_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3104_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3104-M -->
+    <route_case name="7RS3104-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3104_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3104_Signal" state="V" />
+
+          <state feature="7RS3104_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3106" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3104_Signal" state="G" />
+
+          <state feature="7RS3104_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3106" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3104" />
+          <track_circuit_clear name="7T3102" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3104-D -->
+    <route_case name="7RS3104-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3104_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3104_Signal" state="V" />
+
+          <state feature="7RS3104_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3106" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3104_Signal" state="G" />
+
+          <state feature="7RS3104_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3106" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3104" />
+          <track_circuit_clear name="7T3103" />
+          <track_circuit_clear name="7T3101" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3105_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3105_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3105_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3105-M -->
+    <route_case name="7RS3105-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3105_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3105_Signal" state="V" />
+
+          <state feature="7RS3105_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3104" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3105_Signal" state="G" />
+
+          <state feature="7RS3105_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3104" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3106" />
+          <track_circuit_clear name="7T3108" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3105-D -->
+    <route_case name="7RS3105-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3105_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3105_Signal" state="V" />
+
+          <state feature="7RS3105_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3104" />
+          <track_circuit_clear name="7T3103" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3105_Signal" state="G" />
+
+          <state feature="7RS3105_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3104" />
+          <track_circuit_clear name="7T3103" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3105" />
+          <track_circuit_clear name="7T3107" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3106_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3106_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 7RS3106-M -->
+    <route_case name="7RS3106-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3106_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3106_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3111" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3106_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3111" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3109" />
+          <track_circuit_clear name="7T3107" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3107_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3107_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 7RS3107-M -->
+    <route_case name="7RS3107-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3107_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3107_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3110" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3107_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3110" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3112" />
+          <track_circuit_clear name="7T3114" />
+          <track_circuit_clear name="7T3116" />
+          <track_circuit_clear name="7T3202" />
+          <track_circuit_clear name="7T3204" />
+          <track_circuit_clear name="7T3302" />
+          <track_circuit_clear name="7T3402" />
+          <track_circuit_clear name="7T3404" />
+          <track_circuit_clear name="7T3406" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3108_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3108_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3108_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3108-M -->
+    <route_case name="7RS3108-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3108_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3108_Signal" state="V" />
+
+          <state feature="7RS3108_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3105" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3108_Signal" state="G" />
+
+          <state feature="7RS3108_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3105" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3103" />
+          <track_circuit_clear name="7T3101" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3108-D -->
+    <route_case name="7RS3108-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3108_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3108_Signal" state="V" />
+
+          <state feature="7RS3108_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3105" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3108_Signal" state="G" />
+
+          <state feature="7RS3108_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3105" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3103" />
+          <track_circuit_clear name="7T3104" />
+          <track_circuit_clear name="7T3102" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3501_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3501_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 7RS3501-M -->
+    <route_case name="7RS3501-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3501_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3501_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3501" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3501_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3501" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3503" />
+          <track_circuit_clear name="7T3505" />
+          <track_circuit_clear name="7T3507" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3502_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3502_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3502_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3502-M -->
+    <route_case name="7RS3502-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3502_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3502_Signal" state="V" />
+
+          <state feature="7RS3502_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3510" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3502_Signal" state="G" />
+
+          <state feature="7RS3502_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3510" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3508" />
+          <track_circuit_clear name="7T3506" />
+          <track_circuit_clear name="7T3504" />
+          <track_circuit_clear name="7T3502" />
+          <track_circuit_clear name="7T3406" />
+          <track_circuit_clear name="7T3406" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3502-D -->
+    <route_case name="7RS3502-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3502_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3502_Signal" state="V" />
+
+          <state feature="7RS3502_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3510" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3502_Signal" state="G" />
+
+          <state feature="7RS3502_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3510" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3508" />
+          <track_circuit_clear name="7T3507" />
+          <track_circuit_clear name="7T3505" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3503_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3503_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3503_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3503-M -->
+    <route_case name="7RS3503-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3503_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3503_Signal" state="V" />
+
+          <state feature="7RS3503_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3507" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3503_Signal" state="G" />
+
+          <state feature="7RS3503_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3507" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3509" />
+          <track_circuit_clear name="7T3511" />
+          <track_circuit_clear name="7T3601" />
+          <track_circuit_clear name="7T3603" />
+          <track_circuit_clear name="7T3701" />
+          <track_circuit_clear name="7T3801" />
+          <track_circuit_clear name="7T3803" />
+          <track_circuit_clear name="7T3805" />
+          <track_circuit_clear name="7T3901" />
+          <track_circuit_clear name="7T3903" />
+          <track_circuit_clear name="7T4001" />
+          <track_circuit_clear name="7T4003" />
+          <track_circuit_clear name="7T4101" />
+          <track_circuit_clear name="7T4201" />
+          <track_circuit_clear name="7T4203" />
+          <track_circuit_clear name="7T4205" />
+          <track_circuit_clear name="7T4301" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3503-D -->
+    <route_case name="7RS3503-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3503_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3503_Signal" state="V" />
+
+          <state feature="7RS3503_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3507" />
+          <track_circuit_clear name="7T3508" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3503_Signal" state="G" />
+
+          <state feature="7RS3503_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3507" />
+          <track_circuit_clear name="7T3508" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3510" />
+          <track_circuit_clear name="7T3512" />
+          <track_circuit_clear name="7T3602" />
+          <track_circuit_clear name="7T3604" />
+          <track_circuit_clear name="7T3702" />
+          <track_circuit_clear name="7T3802" />
+          <track_circuit_clear name="7T3804" />
+          <track_circuit_clear name="7T3806" />
+          <track_circuit_clear name="7T3902" />
+          <track_circuit_clear name="7T3904" />
+          <track_circuit_clear name="7T4002" />
+          <track_circuit_clear name="7T4004" />
+          <track_circuit_clear name="7T4102" />
+          <track_circuit_clear name="7T4202" />
+          <track_circuit_clear name="7T4204" />
+          <track_circuit_clear name="7T4206" />
+          <track_circuit_clear name="7T4302" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3504_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3504_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 7RS3504-M -->
+    <route_case name="7RS3504-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3504_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3504_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3504" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3504_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3504" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3502" />
+          <track_circuit_clear name="7T3406" />
+          <track_circuit_clear name="7T3404" />
+          <track_circuit_clear name="7T3402" />
+          <track_circuit_clear name="7T3302" />
+          <track_circuit_clear name="7T3204" />
+          <track_circuit_clear name="7T3202" />
+          <track_circuit_clear name="7T3116" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3505_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3505_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3505_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3505-M -->
+    <route_case name="7RS3505-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3505_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3505_Signal" state="V" />
+
+          <state feature="7RS3505_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3502" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3505_Signal" state="G" />
+
+          <state feature="7RS3505_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3502" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3504" />
+          <track_circuit_clear name="7T3506" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3505-D -->
+    <route_case name="7RS3505-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3505_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3505_Signal" state="V" />
+
+          <state feature="7RS3505_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3502" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3505_Signal" state="G" />
+
+          <state feature="7RS3505_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3502" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3504" />
+          <track_circuit_clear name="7T3503" />
+          <track_circuit_clear name="7T3505" />
+          <track_circuit_clear name="7T3507" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3506_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3506_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 7RS3506-M -->
+    <route_case name="7RS3506-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3506_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3506_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3509" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3506_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3509" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3507" />
+          <track_circuit_clear name="7T3505" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3507_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3507_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 7RS3507-M -->
+    <route_case name="7RS3507-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3507_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3507_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3508" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3507_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3508" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3510" />
+          <track_circuit_clear name="7T3512" />
+          <track_circuit_clear name="7T3602" />
+          <track_circuit_clear name="7T3604" />
+          <track_circuit_clear name="7T3702" />
+          <track_circuit_clear name="7T3802" />
+          <track_circuit_clear name="7T3804" />
+          <track_circuit_clear name="7T3806" />
+          <track_circuit_clear name="7T3902" />
+          <track_circuit_clear name="7T3904" />
+          <track_circuit_clear name="7T4002" />
+          <track_circuit_clear name="7T4004" />
+          <track_circuit_clear name="7T4102" />
+          <track_circuit_clear name="7T4202" />
+          <track_circuit_clear name="7T4204" />
+          <track_circuit_clear name="7T4206" />
+          <track_circuit_clear name="7T4302" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS3508_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS3508_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS3508_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS3508-M -->
+    <route_case name="7RS3508-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3508_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3508_Signal" state="V" />
+
+          <state feature="7RS3508_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3503" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3508_Signal" state="G" />
+
+          <state feature="7RS3508_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3503" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3501" />
+          <track_circuit_clear name="7T3405" />
+          <track_circuit_clear name="7T3403" />
+          <track_circuit_clear name="7T3401" />
+          <track_circuit_clear name="7T3301" />
+          <track_circuit_clear name="7T3203" />
+          <track_circuit_clear name="7T3201" />
+          <track_circuit_clear name="7T3113" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS3508-D -->
+    <route_case name="7RS3508-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS3508_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3508_Signal" state="V" />
+
+          <state feature="7RS3508_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3503" />
+          <track_circuit_clear name="7T3504" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS3508_Signal" state="G" />
+
+          <state feature="7RS3508_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3503" />
+          <track_circuit_clear name="7T3504" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T3502" />
+          <track_circuit_clear name="7T3406" />
+          <track_circuit_clear name="7T3404" />
+          <track_circuit_clear name="7T3402" />
+          <track_circuit_clear name="7T3302" />
+          <track_circuit_clear name="7T3204" />
+          <track_circuit_clear name="7T3202" />
+          <track_circuit_clear name="7T3116" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS4301_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS4301_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS4301_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS4301-M -->
+    <route_case name="7RS4301-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4301_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4301_Signal" state="V" />
+
+          <state feature="7RS4301_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4303" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4301_Signal" state="G" />
+
+          <state feature="7RS4301_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4303" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4305" />
+          <track_circuit_clear name="7T4307" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS4301-D -->
+    <route_case name="7RS4301-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4301_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4301_Signal" state="V" />
+
+          <state feature="7RS4301_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4303" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4301_Signal" state="G" />
+
+          <state feature="7RS4301_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4303" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4305" />
+          <track_circuit_clear name="7T4308" />
+          <track_circuit_clear name="7T4310" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS4302_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS4302_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS4302_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS4302-M -->
+    <route_case name="7RS4302-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4302_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4302_Signal" state="V" />
+
+          <state feature="7RS4302_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4302_Signal" state="G" />
+
+          <state feature="7RS4302_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4306" />
+          <track_circuit_clear name="7T4304" />
+          <track_circuit_clear name="7T4302" />
+          <track_circuit_clear name="7T4206" />
+          <track_circuit_clear name="7T4204" />
+          <track_circuit_clear name="7T4202" />
+          <track_circuit_clear name="7T4102" />
+          <track_circuit_clear name="7T4004" />
+          <track_circuit_clear name="7T4002" />
+          <track_circuit_clear name="7T3904" />
+          <track_circuit_clear name="7T3902" />
+          <track_circuit_clear name="7T3806" />
+          <track_circuit_clear name="7T3804" />
+          <track_circuit_clear name="7T3802" />
+          <track_circuit_clear name="7T3702" />
+          <track_circuit_clear name="7T3604" />
+          <track_circuit_clear name="7T3602" />
+          <track_circuit_clear name="7T3512" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS4302-D -->
+    <route_case name="7RS4302-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4302_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4302_Signal" state="V" />
+
+          <state feature="7RS4302_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+          <track_circuit_clear name="7T4305" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4302_Signal" state="G" />
+
+          <state feature="7RS4302_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+          <track_circuit_clear name="7T4305" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4303" />
+          <track_circuit_clear name="7T4301" />
+          <track_circuit_clear name="7T4205" />
+          <track_circuit_clear name="7T4203" />
+          <track_circuit_clear name="7T4201" />
+          <track_circuit_clear name="7T4101" />
+          <track_circuit_clear name="7T4003" />
+          <track_circuit_clear name="7T4001" />
+          <track_circuit_clear name="7T3903" />
+          <track_circuit_clear name="7T3901" />
+          <track_circuit_clear name="7T3805" />
+          <track_circuit_clear name="7T3803" />
+          <track_circuit_clear name="7T3801" />
+          <track_circuit_clear name="7T3701" />
+          <track_circuit_clear name="7T3603" />
+          <track_circuit_clear name="7T3601" />
+          <track_circuit_clear name="7T3511" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS4303_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS4303_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS4303_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS4303-M -->
+    <route_case name="7RS4303-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="V" />
+
+          <state feature="7RS4303_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4304" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="G" />
+
+          <state feature="7RS4303_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4304" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4306" />
+          <track_circuit_clear name="7T4308" />
+          <track_circuit_clear name="7T4310" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS4303-D -->
+    <route_case name="7RS4303-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="V" />
+
+          <state feature="7RS4303_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4304" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="G" />
+
+          <state feature="7RS4303_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4304" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4306" />
+          <track_circuit_clear name="7T4308" />
+          <track_circuit_clear name="7T4310" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS4303-S -->
+    <route_case name="7RS4303-S">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="V" />
+
+          <state feature="7RS4303_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4304" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4303_Signal" state="G" />
+
+          <state feature="7RS4303_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4304" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4306" />
+          <track_circuit_clear name="7T4308" />
+          <track_circuit_clear name="7T4321" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS4304_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS4304_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 7RS4304-M -->
+    <route_case name="7RS4304-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4304_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4304_Signal" state="V" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4305" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4304_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4305" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4303" />
+          <track_circuit_clear name="7T4301" />
+          <track_circuit_clear name="7T4205" />
+          <track_circuit_clear name="7T4203" />
+          <track_circuit_clear name="7T4201" />
+          <track_circuit_clear name="7T4101" />
+          <track_circuit_clear name="7T4003" />
+          <track_circuit_clear name="7T4001" />
+          <track_circuit_clear name="7T3903" />
+          <track_circuit_clear name="7T3901" />
+          <track_circuit_clear name="7T3805" />
+          <track_circuit_clear name="7T3803" />
+          <track_circuit_clear name="7T3801" />
+          <track_circuit_clear name="7T3701" />
+          <track_circuit_clear name="7T3603" />
+          <track_circuit_clear name="7T3601" />
+          <track_circuit_clear name="7T3511" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS4306_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS4306_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS4306_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS4306-M -->
+    <route_case name="7RS4306-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4306_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4306_Signal" state="V" />
+
+          <state feature="7RS4306_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4322" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4306_Signal" state="G" />
+
+          <state feature="7RS4306_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4322" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4320" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS4306-D -->
+    <route_case name="7RS4306-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4306_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4306_Signal" state="V" />
+
+          <state feature="7RS4306_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4322" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4306_Signal" state="G" />
+
+          <state feature="7RS4306_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4322" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4320" />
+          <track_circuit_clear name="7T4306" />
+          <track_circuit_clear name="7T4304" />
+          <track_circuit_clear name="7T4302" />
+          <track_circuit_clear name="7T4206" />
+          <track_circuit_clear name="7T4204" />
+          <track_circuit_clear name="7T4202" />
+          <track_circuit_clear name="7T4102" />
+          <track_circuit_clear name="7T4004" />
+          <track_circuit_clear name="7T4002" />
+          <track_circuit_clear name="7T3904" />
+          <track_circuit_clear name="7T3902" />
+          <track_circuit_clear name="7T3806" />
+          <track_circuit_clear name="7T3804" />
+          <track_circuit_clear name="7T3802" />
+          <track_circuit_clear name="7T3702" />
+          <track_circuit_clear name="7T3604" />
+          <track_circuit_clear name="7T3602" />
+          <track_circuit_clear name="7T3512" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 7RS4308_Signal -->
+  <!-- From Spreadsheet : Line7_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="7RS4308_Signal">
+        <mapped_state default="R" />
+      </feature>
+      <feature name="7RS4308_RI">
+        <state default="Off" />
+      </feature>
+    </features>
+
+    <!-- 7RS4308-M -->
+    <route_case name="7RS4308-M">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4308_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4308_Signal" state="V" />
+
+          <state feature="7RS4308_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4308_Signal" state="G" />
+
+          <state feature="7RS4308_RI" state="M" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4306" />
+          <track_circuit_clear name="7T4304" />
+          <track_circuit_clear name="7T4302" />
+          <track_circuit_clear name="7T4206" />
+          <track_circuit_clear name="7T4204" />
+          <track_circuit_clear name="7T4202" />
+          <track_circuit_clear name="7T4102" />
+          <track_circuit_clear name="7T4004" />
+          <track_circuit_clear name="7T4002" />
+          <track_circuit_clear name="7T3904" />
+          <track_circuit_clear name="7T3902" />
+          <track_circuit_clear name="7T3806" />
+          <track_circuit_clear name="7T3804" />
+          <track_circuit_clear name="7T3802" />
+          <track_circuit_clear name="7T3702" />
+          <track_circuit_clear name="7T3604" />
+          <track_circuit_clear name="7T3602" />
+          <track_circuit_clear name="7T3512" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+    <!-- 7RS4308-D -->
+    <route_case name="7RS4308-D">
+      <case>
+        <actions>
+          <mapped_state feature="7RS4308_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4308_Signal" state="V" />
+
+          <state feature="7RS4308_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+        </track_circuit_requirement>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="7RS4308_Signal" state="G" />
+
+          <state feature="7RS4308_RI" state="D" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4308" />
+        </track_circuit_requirement>
+        <track_circuit_requirement>
+          <track_circuit_clear name="7T4305" />
+          <track_circuit_clear name="7T4303" />
+          <track_circuit_clear name="7T4301" />
+          <track_circuit_clear name="7T4205" />
+          <track_circuit_clear name="7T4203" />
+          <track_circuit_clear name="7T4201" />
+          <track_circuit_clear name="7T4101" />
+          <track_circuit_clear name="7T4003" />
+          <track_circuit_clear name="7T4001" />
+          <track_circuit_clear name="7T3903" />
+          <track_circuit_clear name="7T3901" />
+          <track_circuit_clear name="7T3805" />
+          <track_circuit_clear name="7T3803" />
+          <track_circuit_clear name="7T3801" />
+          <track_circuit_clear name="7T3701" />
+          <track_circuit_clear name="7T3603" />
+          <track_circuit_clear name="7T3601" />
+          <track_circuit_clear name="7T3511" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- ****************************************** -->
+  <!-- *            AUTO SIGNALS                * -->
+  <!-- ****************************************** -->
+  <!-- 2ARS5212_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5212_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5212-M -->
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5212_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5212_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5234" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS5220_Signal -->
+  <!-- From Spreadsheet : Line_2A_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS5220_Signal">
+        <mapped_state default="R" />
+      </feature>
+    </features>
+
+    <!-- 2ARS5220-M -->
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5220_Signal" state="R" />
+        </actions>
+      </case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS5220_Signal" state="G" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT5219" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ARS9101_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ARS9101_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ARS9101_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9002_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9002_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9002_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9902_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9902_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9902_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9904_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9904_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9904_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9904" />
+          <track_circuit_clear name="2AT9902A" />
+          <track_circuit_clear name="2AT9902" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9905_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9905_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9905_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9903" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9939" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9906_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9906_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9906_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+          <track_circuit_clear name="2AT9901A" />
+          <track_circuit_clear name="2AT9901" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9907_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9907_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9907_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9902A" />
+          <track_circuit_clear name="2AT9904" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9908" />
+          <track_circuit_clear name="2AT9934" />
+          <track_circuit_clear name="2AT9931" />
+          <track_circuit_clear name="2AT9909" />
+          <track_circuit_clear name="2AT9920" />
+          <track_circuit_clear name="2AT9926" />
+          <track_circuit_clear name="2AT9929" />
+          <track_circuit_clear name="2AT9932" />
+          <track_circuit_clear name="2AT9933" />
+          <track_circuit_clear name="2AT9935" />
+          <track_circuit_clear name="2AT9936" />
+          <track_circuit_clear name="2AT9938" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9909_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9909_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9909_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9956" />
+          <track_circuit_clear name="2AT9941" />
+          <track_circuit_clear name="2AT9942" />
+          <track_circuit_clear name="2AT9943" />
+          <track_circuit_clear name="2AT9944" />
+          <track_circuit_clear name="2AT9945" />
+          <track_circuit_clear name="2AT9946" />
+          <track_circuit_clear name="2AT9947" />
+          <track_circuit_clear name="2AT9948" />
+          <track_circuit_clear name="2AT9957" />
+          <track_circuit_clear name="2AT9958" />
+          <track_circuit_clear name="2AT9950" />
+          <track_circuit_clear name="2AT9951" />
+          <track_circuit_clear name="2AT9952" />
+          <track_circuit_clear name="2AT9953" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9912_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9912_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9912_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9914_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9914_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9914_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9916_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9916_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9916_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9918_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9918_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9918_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9920_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9920_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9920_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9922_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9922_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9922_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9924_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9924_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9924_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9926_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9926_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9926_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9928_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9928_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9928_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9930" />
+          <track_circuit_clear name="2AT9929" />
+          <track_circuit_clear name="2AT9920" />
+          <track_circuit_clear name="2AT9908" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9904" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9930_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9930_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9930_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9932" />
+          <track_circuit_clear name="2AT9931" />
+          <track_circuit_clear name="2AT9908" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9904" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9932_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9932_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9932_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9933" />
+          <track_circuit_clear name="2AT9931" />
+          <track_circuit_clear name="2AT9908" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9904" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9934_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9934_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9934_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9935" />
+          <track_circuit_clear name="2AT9934" />
+          <track_circuit_clear name="2AT9908" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9904" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9936_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9936_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9936_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9936" />
+          <track_circuit_clear name="2AT9934" />
+          <track_circuit_clear name="2AT9908" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9904" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9938_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9938_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9938_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9938" />
+          <track_circuit_clear name="2AT9934" />
+          <track_circuit_clear name="2AT9908" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9906" />
+          <track_circuit_clear name="2AT9904" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9940_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9940_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9940_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9941" />
+          <track_circuit_clear name="2AT9956" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9942_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9942_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9942_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9942" />
+          <track_circuit_clear name="2AT9956" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9944_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9944_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9944_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9943" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9946_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9946_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9946_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9944" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9948_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9948_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9948_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9945" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9950_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9950_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9950_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9947" />
+          <track_circuit_clear name="2AT9946" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9952_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9952_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9952_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9948" />
+          <track_circuit_clear name="2AT9957" />
+          <track_circuit_clear name="2AT9958" />
+          <track_circuit_clear name="2AT9946" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9954_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9954_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9954_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9949" />
+          <track_circuit_clear name="2AT9958" />
+          <track_circuit_clear name="2AT9946" />
+          <track_circuit_clear name="2AT9940" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9956_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9956_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9956_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9956" />
+          <track_circuit_clear name="2AT9950" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9958_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9958_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9958_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9952" />
+          <track_circuit_clear name="2AT9950" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9960_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9960_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9960_Signal" state="Off" />
+        </actions>
+
+        <track_circuit_requirement>
+          <track_circuit_clear name="2AT9953" />
+          <track_circuit_clear name="2AT9950" />
+          <track_circuit_clear name="2AT9939" />
+          <track_circuit_clear name="2AT9907" />
+          <track_circuit_clear name="2AT9905" />
+          <track_circuit_clear name="2AT9903" />
+        </track_circuit_requirement>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9962_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9962_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9962_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+  <!-- 2ASH9964_Signal -->
+  <!-- From Spreadsheet : Charkop_Depot_Control_Table.xlsx -->
+  <feature_control>
+    <features>
+      <feature name="2ASH9964_Signal">
+        <mapped_state default="Off" />
+      </feature>
+    </features>
+
+    <route_case>
+      <case>
+        <actions>
+          <mapped_state feature="2ASH9964_Signal" state="Off" />
+        </actions>
+      </case>
+    </route_case>
+  </feature_control>
+</control_table>

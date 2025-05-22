@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="Font_Base " guid="cd0c4d5545709cc7df748ee3f62ce09ae79016c2" base_material="mesh_base">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options offset="256" transparent="2" cast_shadow="0" cast_world_shadow="0"/>
+	<state name="workflow">1</state>
+	<state name="emission">1</state>
+	<state name="geometry_inflation">1</state>
+	<state name="material_motion_blur">1</state>
+	<texture name="albedo">../worlds/library_objects/features/textures/signal_color_far.dds</texture>
+	<parameter name="albedo_color">1 0 0 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="diffuse_color">0 0 0 1</parameter>
+	<parameter name="emission_color">0 0 0 1</parameter>
+	<parameter name="emission_scale">0.200000003</parameter>
+	<parameter name="vertex_balloon">4</parameter>
+</material>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Speed Limit Tracker Resources                                           -->
+<!-- ======================================================================= -->
+<project name="Speed Limit Tracker Resources" default="build.dlls" >
+  <!-- Import all of our targets -->
+  <!-- Set up the path to get to the root (although the default works for us) -->
+  <property name="path.root" value="../../.." />
+  <import file="${path.root}/builder.plugin.cpp.xml" as="builder" />  
+</project>

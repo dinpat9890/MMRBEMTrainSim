@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1387796931" name="generic_bldg_res_10">
+		<mesh_name>../worlds/library_objects/gen_building/generic_bldg_res_10.mesh</mesh_name>
+		<surface name="generic_bldg_res_10_generic_bldg_res_10_type01_d" max_visible_distance="2000" max_fade_distance="10" material="c4cda6844985c55704335f5629bbcd6e8eb70ce9" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -1.81898940355e-012 0 0 1.0</transform>
+	</node>
+</nodes>

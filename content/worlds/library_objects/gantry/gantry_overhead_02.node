@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="760274842" name="gantry_overhead_5">
+		<mesh_name>../worlds/library_objects/gantry/gantry_overhead_02.mesh</mesh_name>
+		<surface name="gantry_overhead_02_fence_electric" material="87421911dd70d1c235dd9800cf65d2ce450629a0" property="surface_base"/>
+		<surface name="gantry_overhead_02_gantry_atlas_d" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

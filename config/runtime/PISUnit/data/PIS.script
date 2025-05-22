@@ -1,0 +1,35 @@
+(!
+  Map the inputs and outputs for PIS (backend) and DCP (frontend).
+
+  @copyright Copyright: OktalSydac Pty Ltd, 2022
+)
+
+(define pis-inputs-object $train-id $vehicle-id 
+    (child-object-id (child-object-id (vehicle-object $train-id $vehicle-id) (class-pis)) (class-pis-inputs))
+)
+
+(for-all-trains $t
+    (enable-if-simulated-train $t
+        (for-all-vehicles $t $v
+            (enable-if (is-front-vehicle $t $v)
+                (! Pulse PIS Inputs numbers. )
+                (set-number
+                    (number-id (pis-inputs-object $t $v) "Start Emergency Announcement")
+                    (rising-edge (get-number (number-id (pis-inputs-object $t $v) "Start Emergency Announcement")))
+                )
+                (set-number
+                    (number-id (pis-inputs-object $t $v) "Stop Emergency Announcement")
+                    (rising-edge (get-number (number-id (pis-inputs-object $t $v) "Stop Emergency Announcement")))
+                )
+                (set-number
+                    (number-id (pis-inputs-object $t $v) "Start Manual Trigger")
+                    (rising-edge (get-number (number-id (pis-inputs-object $t $v) "Start Manual Trigger")))
+                )
+                (set-number
+                    (number-id (pis-inputs-object $t $v) "Stop Manual Trigger")
+                    (rising-edge (get-number (number-id (pis-inputs-object $t $v) "Stop Manual Trigger")))
+                )
+            )
+        ) 
+    )
+)

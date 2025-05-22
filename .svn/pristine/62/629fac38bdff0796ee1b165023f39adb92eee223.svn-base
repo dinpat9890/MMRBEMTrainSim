@@ -1,0 +1,16 @@
+#
+# Units properties that are common for all applications.
+#
+
+# All sections in this file can have the following format:
+#   units.<Type>=<Local unit type, a standard unit abbreviation (Required)>
+#   digits.<Type>=<An integer value, the number of decimal places to include (Optional)>
+#   label.<Type>=<Localised label name, if not supplied one is automatically given (Optional)>
+
+# Used for formatting segment position offsets
+units.offset=m
+digits.offset=1
+
+# The following sets of properties are used for formatting distances
+units.longdistance=km
+units.shortdistance=m

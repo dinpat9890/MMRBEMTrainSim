@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control_table xmlns="http://www.sydac.com.au/FeatureControl/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="feature_control.xsd">
+<!--
+  columns: where group is actually a/b/c/d/e
+  Feature\tGroup\tControlled\tMissing\tError - can attach line number
+  
+  ??? could get feature importer to apply this too...
+  
+  feat -> map of feat -> group(s), then group(s) have properties ?
+  -->
+  
+  <!-- Use this to Overide the Output Track network title -->
+  <world_description name="title" value="Mumbai_Metro_L2_L7_Track_Cutout_Mode"/>
+  <world_description name="description" value="Mumbai_Metro_L2_L7_Track_Cutout_Mode"/>
+  
+  <!-- Exclude TC's - they are automated by a Unit-->
+  <feature_group name="TrackCircuit" controlled="false">
+    <includes feature_type="Track Circuit"/>
+  </feature_group>
+
+  <!-- Exclude Stopping Points - they are automated by a Unit-->
+  <feature_group name="StoppingPoint" controlled="false">
+    <includes feature_type="Stopping Point"/>
+  </feature_group>
+  
+  <!-- Exclude PSDs - they are automated by a Unit-->
+  <feature_group name="PSDs" controlled="false">
+    <includes feature_type="Platform Screen Doors"/>
+  </feature_group>
+  
+  <feature_group name="Route" type="Route" controlled="false">
+    <includes feature_type="Route Control"/>
+    <feature_insertion feature_type="Route Control" placement_group="Signals"/>
+    <script>
+<![CDATA[
+(set-route-if
+  (==
+    (get-feature-user-state $feature_name) (feature-state-id $feature_name "Set")
+  )
+  $feature_name
+)
+(! Resets if requirements are not met and there has been a delay since the route state was set and we aren't within a small window after the route has been set
+   We should only ever set to Clear if in the Set state - ie if set to Automated then it would do nothing. It means if we are paused and set the feature state that
+   it will not clear until time starts)
+(set-feature-user-state-if
+  (and
+    (not (route-requirements-met $feature_name))
+    (== (get-feature-user-state $feature_name) (feature-state-id $feature_name "Set"))
+    (not (sustain (rising-edge (== (get-feature-user-state $feature_name) (feature-state-id $feature_name "Set"))) 0.5))
+  )
+   $feature_name (feature-state-id $feature_name "Clear")
+)]]>
+    </script>
+  </feature_group>
+
+  <!-- Other features will be proxied if missing and this is enabled -->
+  <!--
+  <feature_insertion proxy="true"/>
+  -->
+  
+  <feature_group name="Signals">
+    <includes feature="*_Signal"/>
+  </feature_group>
+  
+  <feature_group name="Other Signals">
+    <includes feature_type_group="Signal"/>
+    
+    <!-- The Mapped States used for Signals, Distant Signals and Warning Signals are: -->
+    <mapped_feature_state mapped_state="R" state="Red"/>
+    <mapped_feature_state mapped_state="V" state="Green"/>
+    <mapped_feature_state mapped_state="G" state="Green"/>
+  </feature_group>
+
+  <!--
+  <feature_group name="Excluded Features" exclude="true">
+    <includes list="excluded_signals.txt"/>
+  </feature_group>
+  -->
+  
+  <!-- Enforce all automated signals are controlled, otherwise the feature type must be excluded from this filter -->
+  <feature_group error="Initial State must not be Automated">
+    <includes>
+      <has_state state="Automated"/>
+      <property property="Initial State" value="Automated"/>
+    </includes>
+  </feature_group>
+
+  <feature_group name="Fixed" controlled="false">
+    <includes>
+      <has_state state="Automated"/>
+    </includes>
+    <excludes>
+      <property property="User State" value="Automated"/>
+    </excludes>
+  </feature_group>
+  
+  <feature_group name="Should Be Scripted" controlled="true">
+    <includes>
+      <has_state state="Automated"/>
+      <property property="User State"/>
+    </includes>
+  </feature_group>
+</control_table>

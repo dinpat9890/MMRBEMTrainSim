@@ -1,0 +1,86 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+Simulator=Simulator.ini
+Hub=Hub.ini
+
+[System.1]
+Module Name=CCTV Unit
+
+[Simulator]
+Hub Name=Driver's Cab
+
+[Unit Plugins]
+SaloonCCTVUnit
+
+[Module Resource Plugins]
+train_data_access_resources
+
+[Scenario Resource Plugins]
+world_access_resources
+
+[Session Resource Plugins]
+points_watcher_resources
+scenario_train_path_watcher_resources
+modelled_train_selector_resources
+
+# Change the Logging Level of the Train Model
+[Logging]
+# Valid Values are :
+# ERR or ERROR
+# WARN or WARNING
+# INFO_This is the Default Logging Level
+# VERBOSE
+# uncomment below, to see more verbose log for debugging
+Level=VERBOSE
+
+[CCTV]
+# Minimum required delay to consider second PEA
+Saloon CCTV Powerup Time=10.0
+Saloon CCTV Initialization Time=30.0
+Auto Rotation Time=10.0
+Canvas X=14.0
+Canvas Y=40.0
+Canvas Length=636.0
+Canvas Height=482.0
+Debug = 1
+
+[CCTV Button Sequence]
+#This sequence represents the creation order of buttons on DMI and it should contain all the buttons.
+InternalSequence=DMC-8 DMC-9 DMC-10 DMC-11 TC-1 TC-2 TC-3 TC-4 MC-1 MC-2 MC-3 MC-4
+ExternalSequence=DMC-1 DMC-2 DMC-3 DMC-4 DMC-5 DMC-6 TC-5 MC-5 MC-6
+EventSequence=DMC-7
+
+[CCTV Cam Map]
+#ButtonName=VehicleIndex_CameraName
+#All the buttons are present as keys and
+#vehicle number starts from 1 for better understanding of user
+#Button names & count mentioned in this section must match with the count & name of section '[Saloon CCTV Button Sequence]'
+#---------------------------------------
+DMC-1=Driver's Forward View
+DMC-2=DMC Driver's Track Camera
+DMC-3=DMC Driver's Left Exterior Camera
+DMC-4=DMC Driver's Right Exterior Camera
+DMC-5=DMC Detrainment Camera
+DMC-6=DMC ODD Camera
+DMC-7=DMC CCTV Cab Camera
+DMC-8=DMC Saloon CCTV Camera 1
+DMC-9=DMC Saloon CCTV Camera 2
+DMC-10=DMC Saloon CCTV Camera 3
+DMC-11=DMC Saloon CCTV Camera 4
+TC-1=TC Saloon CCTV Camera 1
+TC-2=TC Saloon CCTV Camera 2
+TC-3=TC Saloon CCTV Camera 3
+TC-4=TC Saloon CCTV Camera 4
+TC-5=TC Pantograph Camera
+MC-1=MC Saloon CCTV Camera 1
+MC-2=MC Saloon CCTV Camera 2
+MC-3=MC Saloon CCTV Camera 3
+MC-4=MC Saloon CCTV Camera 4
+MC-5=MC Driver's Left Exterior Camera
+MC-6=MC Driver's Right Exterior Camera
+
+
+[CCTV Platform]
+Distance To STP Point=160
+Distance From STP Point=40

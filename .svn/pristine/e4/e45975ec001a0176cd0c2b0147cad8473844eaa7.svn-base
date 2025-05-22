@@ -1,0 +1,137 @@
+## Domain : Signal Track Viewer  (stv)
+## Default STV properties
+
+## GUI Options
+# Filtering features based on their source (Track or Scenario)
+stv.featureFilter.sourceFiltering=true
+
+## Location features rendering hints
+# Maximum, and default, font size for location labels
+stv.location.font.size=20
+# Minimum font size for location labels (for views that scale them)
+# Set this to the same size as the default to disable scaling.
+stv.location.font.minSize=15
+
+# These properties affect how locations' labels and icons are drawn on the map view.
+#
+# These properties are the square root of an area;
+# if you think of the areas as being square, the values of these properties are the lengths of the sides.
+# E.g. if you set the value to 200, then the area described is 200x200.
+# Hopefully this is somewhat easier to visualise than an area of 40000 pixels.
+#
+# The minimum size a location's area needs to be to render its name (at the minimum font size; defaults to 10). 
+stv.map.location.minAreaSqrtForMinFont=10
+# The minimum size a location's area needs to be to render its name at the maximum font size (defaults to 200).
+stv.map.location.minAreaSqrtForMaxFont=200
+# The minimum size a location's area needs to be to render its icon (defaults to 55).
+stv.map.location.minAreaSqrtForIcon=55
+
+## Icon Sizes
+stv.icons.minSize=0.4
+stv.icons.medSize=0.7
+stv.icons.maxSize=1.0
+
+## Icon visibility tuning
+#
+# The STV's map view can be configured to hide/show icons based on zoom level.
+# This is useful for reducing clutter (by hiding low priority icons when zoomed out)
+# or hiding "logical" features that the user is not interested in.
+#
+# This is configured in two steps:
+# 1. Create a set of "icon levels" which describe a threshold where icons will be hidden.
+# 2. Assign feature types to icon levels.
+#
+# Icon levels' zooming thresholds are described in terms of (minimum) pixels per meter (PPM).
+# For comparison:
+# * The zoom level where icons are first rendered when the user has auto on/off selected is 0.25 PPM.
+#   Typically you would not use thresholds smaller than this.
+# * At 1 PPM each pixel represents a meter; this scale on a typical monitor that means between 1-2km of area is visible.
+# It is suggested to start with a value of 0.25 and double it until you get desirable hiding behaviour,
+# then tune further if required.
+#
+# The thresholds are assigned to levels using properties of the form
+#   stv.map.icons.level.n = {always|never|<value in ppm>}
+# where n >= 1 and increase by one for each group.
+# Note the special settings:
+# * "always" means always visible (subject to the user-selected icon setting).
+# * "never" means never visible. If icons are never visible, no association dot will be drawn.
+# WARNING: If there is a gap in the sequence, the levels after the gap are ignored!
+#
+# There is a default level, which is used for all unassigned icons.
+# The default setting of the default level is "always".
+#
+# Feature types are assigned to levels using properties of the form
+#   stv.map.icons.level.n.featureTypes = {feature type names}
+# these properties must be defined for all n levels.
+#
+# The feature type names used here are the non-localised ones (as defined in the XML);
+# the names that appear on the screen may not match!
+# The types for a level must be defined on a single line and separated by semicolons ";".
+# This can be followed by a space to improve readability.
+# If the feature type name contains a semicolon ";", you need to escape it with TWO backslashes ("foo;bar" becomes "foo\\;bar")
+# If the feature type name contains a backslash "\", you need to escape it with another backslash ("foo\bar" becomes "foo\\bar")
+stv.map.icons.level.default=always
+#stv.map.icons.level.n=0.5
+#stv.map.icons.level.n.featureTypes=Feature Type 1; Feature Type 2; Feature Type 3
+
+
+## Behaviour tuning
+# These measures tell the STV when to consider cars as being decoupled and to render accordingly.
+# At high zoom levels the pixel distance is used, at low zoom levels the meter distance is used.
+stv.decoupling.distanceMeters=2.0
+stv.decoupling.distancePixels=5.0
+
+## Performance
+# The frequency to use for updating train positions.
+# The default value of 20 is generally fast enough to render nicely,
+# but if you have a lot of trains or an underpowered machine, you may want to decrease this.
+#
+# Valid values are > 0 and < ~100 (unless you have a superfast monitor)
+stv.performance.trainUpdateFrequency=20
+
+# Allows you to force the rendering thread to sleep on full repaint to prevent
+# starvation of the Comms thread. This is only expected to be useful on old,
+# single core machines; in modern machines the different threads can run on
+# different cores. The value is in milliseconds.
+#
+# Set to -1 to disable the delay (may cause issues on under-spec machines) This is the default.
+# Set to 0 to allow waiting threads to execute (may degrade rendering performance)
+# Set to > 0 to give other threads a larger window of opportunity to start (definately degrades rendering performance)
+#
+# To mimic legacy systems' values, set this to 50.
+stv.performance.renderingThreadSleep=-1
+
+## Train Following
+stv.following.enabled = true
+
+# The maximum zoom level, in pixels per metre, that is allowed when automatically following the train.
+stv.following.maxZoomLevel = 1.8
+
+# Controls how close the front of the train can get to the edge of the screen before the view is re-centered.
+# This is expressed as a percentage of the viewable area, in the range [0, 1] such that:
+#
+# 0 means the view is re-centered once the train reaches the edge of the screen
+# 1 means the view is re-centered continuously
+stv.following.distanceBeforeRecentering = 0.2
+
+# The initial zoom level, in pixels per metre, that is set when you start following the train.
+stv.following.initialZoomLevel = 1.0
+
+
+# Configuration for scrolling in STV popup menus.
+# If the total number of states for a feature exceeds the xxxScrollThreshold,
+# then a scrollable area will be used, which shows n xxxScrollItemsShown at a time.
+# The xxxScrollThreshold should be at least 3 items greater than xxxScrollItemsShown,
+# since the scrollable menu adds two components for the up and down arrows.
+stv.feature.stateMenuScrollThreshold = 20
+stv.feature.stateMenuScrollItemsShown = 15
+stv.location.findMenuScrollThreshold = 35
+stv.location.findMenuScrollItemsShown = 30
+
+
+# Tunes the validation applied to train placement checks that ensure the train will fit on the tracks.
+# Valid values are: 
+#   NONE (disable all checks)
+#   OPTIMISTIC (ensures at least one path exists that the train can fit on; warns the user if any short paths are encountered) 
+#   STRICT (the default; ensures the train can fit on all possible paths, assumes points will not be disabled)
+stv.selection.trainPlacementTest=STRICT

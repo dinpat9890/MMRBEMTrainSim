@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="black_tiles" guid="2759619d4923e74156f3e09eba41f1b3535e31e8" base_material="mesh_base">
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/black_tiles.dds</texture>
+	<texture name="shading">../worlds/mmrbem/graphics/stations/texture/black_tiles_met.dds</texture>
+	<texture name="normal">../worlds/mmrbem/graphics/stations/texture/black_tiles_n.dds</texture>
+	<parameter name="albedo_color">1 1 1 1</parameter>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0.5</parameter>
+</material>

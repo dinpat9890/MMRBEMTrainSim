@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="878770916" name="line_2a_poi_7">
+		<mesh_name>../worlds/library_objects/building_library/line_2a_poi_07.mesh</mesh_name>
+		<surface name="line_2a_poi_07_line_2a_poi_06_07_08" max_visible_distance="2000" max_fade_distance="10" material="7dafa5763bfa05b9152c63443576350057551aaf" property="surface_base"/>
+		<transform>0.999999940395 -2.17698581011e-027 1.57772181044e-029 0.0 4.01593556182e-028 0.999999940395 -3.78653234506e-029 0.0 1.73549399149e-029 -5.04870979341e-029 0.999999940395 0.0 1.45519152284e-011 -7.27595761418e-012 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,165 @@
+# Translations for trains.
+# Copyright (C) 2022 Sydac Pty Ltd
+# This file is distributed under the same license as the Trains package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Trains ${version.number}\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-15 13:17+0530\n"
+"PO-Revision-Date: 2022-11-15 13:17+0530\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. This describes a combination of Train Cars that make up a Train Consist.
+msgid "BEML_EMU 8 Car"
+msgstr ""
+
+#. This describes a combination of Train Cars that make up a Train Consist.
+msgid "BEML_EMU 6 Car"
+msgstr ""
+
+#. This is the name of a Train Type.
+msgid "BEML_EMU"
+msgstr ""
+
+#. This is the Class of Train Car.
+msgid "Motor Car"
+msgstr ""
+
+#. This is the Class of Train Car.
+msgid "Driving Motor Car"
+msgstr ""
+
+#. This is the Class of Train Car.
+msgid "Trailer Car"
+msgstr ""
+
+#. This describes a Train Car Class in a certain orientation.
+msgid "Driving Motor Car 1-2"
+msgstr ""
+
+#. This describes a Train Car Class in a certain orientation.
+msgid "Driving Motor Car 2-1"
+msgstr ""
+
+#. This describes a Train Car Class in a certain orientation.
+msgid "Motor Car 1-2"
+msgstr ""
+
+#. This describes a Train Car Class in a certain orientation.
+msgid "Motor Car 2-1"
+msgstr ""
+
+#. This describes a Train Car Class in a certain orientation.
+msgid "Trailer Car 1-2"
+msgstr ""
+
+#. This describes a Train Car Class in a certain orientation.
+msgid "Trailer Car 2-1"
+msgstr ""
+
+#. This identifies a Location on a Train Car.
+msgid "Driver 1-2"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Saloon CCTV Camera 2"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Saloon CCTV Camera 1"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "TC Saloon CCTV Camera 4"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Driver's Right Exterior Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Saloon CCTV Camera 4"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "MC Driver's Left Exterior Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Saloon CCTV Camera 3"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC ODD Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "Driver's Forward View"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "TC Saloon CCTV Camera 1"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "MC Driver's Right Exterior Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "TC Saloon CCTV Camera 2"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Driver's Track Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Detrainment Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "TC Saloon CCTV Camera 3"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "TC Pantograph Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "Driver's Side View"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "Instructor's Forward View"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "MC Saloon CCTV Camera 2"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "MC Saloon CCTV Camera 1"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC Driver's Left Exterior Camera"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "MC Saloon CCTV Camera 4"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "MC Saloon CCTV Camera 3"
+msgstr ""
+
+#. This describes a Camera associated with a Train Car. Display Channels show the view from Cameras during simulation.
+msgid "DMC CCTV Cab Camera"
+msgstr ""

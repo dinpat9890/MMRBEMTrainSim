@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin name="extruder_plugin" version="1.0">
+	<text>Extruder Plugin</text>
+	<description>Extruder plugin</description>
+	<source>unigine2_extruder.cpp</source>
+</plugin>

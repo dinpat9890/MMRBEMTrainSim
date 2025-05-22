@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<project name="Tools" default="build.all">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../../ant.common_properties.xml" />
+
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+
+  <!-- Import the sub-building functionality -->
+  <import file="${dir.deps.processes}/builder/builder.software.subbuild.xml" as="builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.subbuild.xml" as="unit_packager" />
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<project name="Config" default="build.all">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../ant.common_properties.xml" />
+
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+
+  <!-- Import paths to modules -->
+  <import file="${dir.deps.processes}/builder/builder.config.subbuild.xml" as="config_builder" />
+  
+  <!-- Extend the global build.all target, using this subbuild -->
+  <target name="build.config" extensionOf="build.all">
+    <antcall target="config_builder.build.all" />
+  </target>
+  
+  <target name="clean.config" extensionOf="clean.all">
+    <antcall target="config_builder.clean.all" />
+  </target>
+</project>

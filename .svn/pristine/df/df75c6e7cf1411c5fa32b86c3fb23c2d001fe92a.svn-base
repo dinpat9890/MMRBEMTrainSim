@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1833185613" name="pahadi_eksar_to_kandivali_west">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/pahadi_eksar_to_kandivali_west.mesh</mesh_name>
+		<surface name="pahadi_eksar_to_kandivali_west_gantry_poles_numbers_02" material="ed8031e9523e11543c9e52ad867cbb625231de0d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

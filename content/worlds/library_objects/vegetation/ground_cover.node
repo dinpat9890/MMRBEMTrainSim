@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1945462128" name="ground_cover">
+		<mesh_name>shared/graphics/vegetation/ground_cover.mesh</mesh_name>
+		<surface name="Sphere001" material="624db96d1328cd5c489f55181c45d9f85151b2d1" property="surface_base"/>
+		<transform>2.99999976158 0 0 0.0 0 3 0 0.0 0 0 2.99999976158 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

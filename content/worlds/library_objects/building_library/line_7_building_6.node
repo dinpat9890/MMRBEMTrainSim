@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1247539931" name="line_7_building_6">
+		<mesh_name>../worlds/library_objects/building_library/line_7_building_06.mesh</mesh_name>
+		<surface name="line_7_building_06_line_7_building_06" max_visible_distance="2500" max_fade_distance="10" material="65f5a7fcc1552fe2bbde600fa9be94f2fb80a1bd" property="surface_base"/>
+		<transform>0.999999940395 -2.77555756156e-017 3.15544362088e-030 0.0 2.77555756156e-017 0.999999940395 -5.52202633655e-030 0.0 2.36658271566e-030 -9.86076131526e-031 0.999999940395 0.0 0 -4.54747350886e-013 9.35626944545e-015 1.0</transform>
+	</node>
+</nodes>

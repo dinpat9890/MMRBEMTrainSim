@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshClutter" id="1560840942" name="ObjectMeshClutter_spruce_03_1">
+		<mesh_name>spruce/spruce_03_1.mesh</mesh_name>
+		<intersection>1</intersection>
+		<visible_distance>200</visible_distance>
+		<fade_distance>50</fade_distance>
+		<seed>123</seed>
+		<size_x>4097</size_x>
+		<size_y>4097</size_y>
+		<step>100</step>
+		<density>0.0500000007</density>
+		<threshold>0.5</threshold>
+		<angle>0</angle>
+		<min_scale_mean>1</min_scale_mean>
+		<min_scale_spread>0</min_scale_spread>
+		<max_scale_mean>1.54700005</max_scale_mean>
+		<max_scale_spread>0.546999991</max_scale_spread>
+		<offset_mean>-1</offset_mean>
+		<offset_spread>-1</offset_spread>
+		<rotation_mean>0 0 0</rotation_mean>
+		<rotation_spread>0 0 0</rotation_spread>
+		<mask_flip_y>1</mask_flip_y>
+		<surface name="spruce_03_1_leaves_lod_1_spruce_leaves_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="a8a0082ccf5be0dbfa88a8b70891a85ce2496b58" property="surface_base"/>
+		<surface name="spruce_03_1_tree_lod_2_spruce_trunk_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="9b8dfb23787fa1bd3d0f147885edc2a060f09898" property="surface_base"/>
+		<surface name="spruce_03_1_leaves_lod_2_spruce_leaves_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="a8a0082ccf5be0dbfa88a8b70891a85ce2496b58" property="surface_base"/>
+		<surface name="spruce_03_1_tree_lod_1_spruce_trunk_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="9b8dfb23787fa1bd3d0f147885edc2a060f09898" property="surface_base"/>
+		<surface name="spruce_03_1_leaves_lod_0_spruce_leaves_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="a8a0082ccf5be0dbfa88a8b70891a85ce2496b58" property="surface_base"/>
+		<surface name="spruce_03_1_tree_lod_0_spruce_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="9b8dfb23787fa1bd3d0f147885edc2a060f09898" property="surface_base"/>
+		<transform>0.9999999404 0 0 0.0 0 0.9999999404 0 0.0 0 0 1 0.0 0 -1.70530256582e-013 0 1.0</transform>
+		<node type="ObjectGrass" id="1009039656" collider="0" folded="1" name="ObjectGrass_spruce_03_1">
+			<thinning>1</thinning>
+			<variation>1</variation>
+			<orientation>0</orientation>
+			<intersection>1</intersection>
+			<num_textures>1</num_textures>
+			<seed>123</seed>
+			<size_x>4097</size_x>
+			<size_y>4097</size_y>
+			<step>1600</step>
+			<subdivision>16</subdivision>
+			<density>0.0500000007</density>
+			<threshold>0.5</threshold>
+			<angle>0</angle>
+			<probability>1 1 1 1</probability>
+			<min_bend_mean>0 0 0 0</min_bend_mean>
+			<min_bend_spread>0 0 0 0</min_bend_spread>
+			<max_bend_mean>0 0 0 0</max_bend_mean>
+			<max_bend_spread>0 0 0 0</max_bend_spread>
+			<min_height_mean>1 1 1 1</min_height_mean>
+			<min_height_spread>0 0 0 0</min_height_spread>
+			<max_height_mean>25.0480003 25.0480003 25.0480003 25.0480003</max_height_mean>
+			<max_height_spread>12.0480003 12.0480003 12.0480003 12.0480003</max_height_spread>
+			<aspect_mean>1 1 1 1</aspect_mean>
+			<aspect_spread>0.100000001 0.100000001 0.100000001 0.100000001</aspect_spread>
+			<offset_mean>-2 -2 -2 -2</offset_mean>
+			<offset_spread>0 0 0 0</offset_spread>
+			<mask_flip_y>1</mask_flip_y>
+			<surface name="grass" min_visible_distance="150" max_visible_distance="1000" min_fade_distance="50" max_fade_distance="100" material="b6a4831d9ba5045da3d6fe4e4b384c2d47c0bb71" property="surface_base"/>
+			<transform>0.999999940391 0 0 0.0 0 0.999999940391 0 0.0 0 0 1 0.0 2.84217094304e-014 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="depot_skyblue_base" guid="003c655fb7c8e32a8bbdbfc5f8bef72cc4d23ece" base_material="mesh_base">
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/mmrbem/graphics/depot/textures/depot_skyblue_base.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

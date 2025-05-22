@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Track Workers" group="Handsignaller" constant_name="FETY_WORKCREW" modifiable="1" available="1" user_feature="0" version="2.0">
+
+  <feature_type_state_type name="State">
+    <feature_type_state state_id="1" name="Idle" user_selectable="1" />
+    <feature_type_state state_id="2" name="Working" user_selectable="1" />
+    <feature_type_state state_id="3" name="Acknowledge" user_selectable="1" />
+  </feature_type_state_type>
+  <object_parameters>
+    <key name="Initial State" type="State" default="Idle" description="Initial State" />
+    <key name="Collider" type="double" default="1" description="Collidable Object" />
+  </object_parameters>
+  <feature_type_icon icon_code="TRACKWORKERS" small_icon="Icons/WORKCREW.zip#WORKCREW-SMALL.gif" big_icon="Icons/WORKCREW.zip#WORKCREW-BIG.gif">
+    <feature_type_state_icon state_id="1" icon_code="Idle" small_icon="Icons/WORKCREW.zip#WORKCREW-Off_Track-SMALL.gif" big_icon="Icons/WORKCREW.zip#WORKCREW-Off_Track-BIG.gif" />
+    <feature_type_state_icon state_id="2" icon_code="Working" small_icon="Icons/WORKCREW.zip#WORKCREW-On_Track-SMALL.gif" big_icon="Icons/WORKCREW.zip#WORKCREW-On_Track-BIG.gif" />
+    <feature_type_state_icon state_id="3" icon_code="Acknowledge" small_icon="Icons/WORKCREW.zip#WORKCREW-SMALL.gif" big_icon="Icons/WORKCREW.zip#WORKCREW-BIG.gif" />
+  </feature_type_icon>
+
+  <feature_type_geometry>
+    <object_boundary type="Parallelepiped" x="-2.1" y="1.9" z="-1" heading="0" pitch="0" roll="0">
+      <arg name="a.x" value="2.2" />
+      <arg name="a.y" value="0" />
+      <arg name="a.z" value="0" />
+      <arg name="b.x" value="0" />
+      <arg name="b.y" value="-3.0" />
+      <arg name="b.z" value="0" />
+      <arg name="c.x" value="0" />
+      <arg name="c.y" value="0" />
+      <arg name="c.z" value="2.0" />
+    </object_boundary>
+  </feature_type_geometry>
+  <feature_type_vision class="TrackSideWorkers" raycast_type="RaycastGround" node_file="Core_Dummy_Feature.node">
+    <scripting>
+      <script script_path="Scripts/TrackSideWorkers.us.cpp"/>
+    </scripting>
+  </feature_type_vision>
+</feature_type>

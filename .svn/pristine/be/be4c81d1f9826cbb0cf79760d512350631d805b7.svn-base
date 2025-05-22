@@ -1,0 +1,80 @@
+(! CBTC Audio Script
+   Project: Mumbai L2 and L7
+   © Copyright SYDAC Pty Ltd, 2022
+)
+
+(define get-cbtc-vehicle-audio-output-number $train $vehicle $number_name $default_value
+  (get-number (number-id (child-object-id (vehicle-object $train $vehicle) (class-cbtc-vehicle-inputs)) $number_name) $default_value)
+)
+
+(define get-cbtc-platform-output-number $train $vehicle $number_name $default_value
+  (get-number (number-id (child-object-id (vehicle-object $train $vehicle) (class-cbtc-platform-outputs)) $number_name) $default_value)
+)
+
+(for-all-trains $train 
+(enable-if-simulated-train $train 
+  (for-all-vehicles $train $vehicle 
+    (enable-if-observer-vehicle $train $vehicle 
+      (! CBTC Sounds)
+      (nest
+        (
+          (symbol $ACKNOWLEGE_POSITION (position 0.0 0.0 0.0))
+          (symbol $ACKNOWLEGE_VOLUME 80.0)
+          (symbol $HIGH_PRIORITY_TEXT_ALERT_POSITION (position 0.0 0.0 0.0))
+          (symbol $HIGH_PRIORITY_TEXT_ALERT_VOLUME 80.0)
+          (symbol $DEPARTURE_ORDER_POSITION (position 0.0 0.0 0.0))
+          (symbol $DEPARTURE_ORDER_VOLUME 80.0)
+          (symbol $SAFETY_BRAKE_ALARM_POSITION (position 0.0 0.0 0.0))
+          (symbol $SAFETY_BRAKE_ALARM_VOLUME 80.0)
+          (symbol $TARGET_SPEED_POSITION (position 0.0 0.0 0.0))
+          (symbol $TARGET_SPEED_VOLUME 80.0)
+          (symbol $WARNING_ALARM_POSITION (position 0.0 0.0 0.0))
+          (symbol $WARNING_ALARM_VOLUME 80.0)
+        )
+        (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_eb.wav" (inactivation) (no-loop) 0 0
+          (set-vehicle-sound-position $sound $SAFETY_BRAKE_ALARM_POSITION)
+          (set-sound-volume           $sound $SAFETY_BRAKE_ALARM_VOLUME)
+          (set-sound-state            $sound (get-cbtc-vehicle-audio-output-number $train $vehicle "Audio Safety Brake Alarm" 0))
+        )  
+        (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_warning.wav" (inactivation) (loop) 0 0
+          (set-vehicle-sound-position $sound $WARNING_ALARM_POSITION)
+          (set-sound-volume           $sound $WARNING_ALARM_VOLUME)
+          (set-sound-state            $sound (get-cbtc-vehicle-audio-output-number $train $vehicle "Audio Warning Alarm" 0))
+        )  
+        (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_departure.wav" (to-completion) (no-loop) 0 0
+          (set-vehicle-sound-position $sound $DEPARTURE_ORDER_POSITION)
+          (set-sound-volume           $sound $DEPARTURE_ORDER_VOLUME)
+          (set-sound-state            $sound (get-cbtc-platform-output-number $train $vehicle "Departure Order" 0))
+        )  
+        (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_target.wav" (to-completion) (no-loop) 0 0
+          (set-vehicle-sound-position $sound $TARGET_SPEED_POSITION)
+          (set-sound-volume           $sound $TARGET_SPEED_VOLUME)
+          (set-sound-state            $sound (get-cbtc-vehicle-audio-output-number $train $vehicle "Audio Target Speed" 0))
+        )  
+        (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_high_message.wav" (to-completion) (no-loop) 0 0
+          (set-vehicle-sound-position $sound $HIGH_PRIORITY_TEXT_ALERT_POSITION)
+          (set-sound-volume           $sound $HIGH_PRIORITY_TEXT_ALERT_VOLUME)
+          (set-sound-state            $sound (get-cbtc-vehicle-audio-output-number $train $vehicle "Audio High Priority Text Alert" 0))
+        )
+        (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_high_message.wav" (to-completion) (no-loop) 0 0
+          (set-vehicle-sound-position $sound $HIGH_PRIORITY_TEXT_ALERT_POSITION)
+          (set-sound-volume           $sound $HIGH_PRIORITY_TEXT_ALERT_VOLUME)
+          (set-sound-state            $sound (get-cbtc-vehicle-audio-output-number $train $vehicle "Audio TCMS High Priority Fault" 0))
+        )
+		(! Low Message)
+        (define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_low_message.wav" (to-completion) (no-loop) 0 0
+          (set-vehicle-sound-position $sound $ACKNOWLEGE_POSITION)
+          (set-sound-volume           $sound $ACKNOWLEGE_VOLUME)
+          (set-sound-state            $sound (get-cbtc-vehicle-audio-output-number $train $vehicle "Audio Acknowledge" 0))
+        )  
+		(! Dwell Timer)
+		(define-vehicle-sound $sound $train $vehicle "sound\CBTC\s_default.wav" (to-completion) (no-loop) 0 0
+          (set-vehicle-sound-position $sound $ACKNOWLEGE_POSITION)
+          (set-sound-volume           $sound $ACKNOWLEGE_VOLUME)
+          (set-sound-state            $sound (get-cbtc-vehicle-audio-output-number $train $vehicle "Audio Departure Order" 0))
+        ) 
+     )
+    )
+  )
+)
+)

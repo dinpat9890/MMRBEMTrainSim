@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="dm_train_exterior" guid="c87d8de21a6551626418e04f56fd328916bd966f" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1"/>
+	<state name="workflow">0</state>
+	<texture name="diffuse">../vehicles/dm_train/graphics/textures/dm_train.dds</texture>
+	<texture name="albedo">../vehicles/dm_train/graphics/textures/dm_train.dds</texture>
+	<texture name="emission">../vehicles/dm_train/graphics/textures/dm_train_e.dds</texture>
+	<parameter name="albedo_color">1 1 1 1</parameter>
+	<parameter name="metalness">0.815999985</parameter>
+	<parameter name="roughness">0.38499999</parameter>
+	<parameter name="gloss">0.25</parameter>
+	<parameter name="color"/>
+	<parameter name="shading"/>
+	<parameter name="emission_scale">0.600000024</parameter>
+</material>

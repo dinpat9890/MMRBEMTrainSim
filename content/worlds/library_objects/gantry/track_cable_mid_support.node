@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1515215536" name="track_cable_mid_support">
+		<mesh_name>../worlds/library_objects/gantry/track_cable_mid_support.mesh</mesh_name>
+		<surface name="track_cable_mid_support_gantry_atlas_d" cast_shadow="0" max_visible_distance="200" max_fade_distance="5" material="8277e6bab8e9951b10513f1aaa0f306d6bd7a869" property="surface_base"/>
+		<transform>0.999999940395 1.53326295911e-016 -4.40593948246e-018 0.0 4.30611908497e-016 0.999999940395 4.98732999343e-017 0.0 -3.93125847582e-018 1.88651178012e-017 0.999999940395 0.0 4.54747350886e-012 0 5.18696197105e-013 1.0</transform>
+	</node>
+</nodes>

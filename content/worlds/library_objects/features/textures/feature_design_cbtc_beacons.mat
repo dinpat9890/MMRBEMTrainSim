@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="feature_design_cbtc_beacons" guid="52c0af055b0ca948078fef730a28246b7fb7aa3a" base_material="mesh_base">
+	<state name="emission">1</state>
+	<texture name="albedo">../worlds/library_objects/features/textures/feature_design_cbtc_beacons.dds</texture>
+	<texture name="emission">../worlds/library_objects/features/textures/feature_design_cbtc_beacons_e.dds</texture>
+	<parameter name="emission_scale">0.800000012</parameter>
+</material>

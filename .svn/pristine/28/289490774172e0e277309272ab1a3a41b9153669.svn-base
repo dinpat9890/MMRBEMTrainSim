@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="392450483" name="jogeshwari_east_to_goregaon_east">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/jogeshwari_east_to_goregaon_east.mesh</mesh_name>
+		<surface name="jogeshwari_east_to_goregaon_east_gantry_poles_numbers_03" material="b81aa68c0a9fdf373c6b6fc62c186e6ebf72a009" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

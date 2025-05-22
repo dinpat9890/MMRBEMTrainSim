@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="generic_metal_gray" guid="31392cb040148a4ea61d8c3bec465635ec98ffbf" parent="1592e9b50d50ce280b2b5aaa0851fb05fa36a9dd" base_material="mesh_base">
+	<parameter name="albedo_color">0.898039281 0.898039281 0.898039281 1</parameter>
+</material>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties version="2.5.0.2">
+	<property name="Label" parent="surface_base">
+		<parameter name="parameter" type="string">label</parameter>
+		<parameter name="text" type="string">example</parameter>
+		<parameter name="font size" type="double" min="0.01" max="10">1</parameter>
+		<parameter name="text align" type="switch" items="left,center,right">0</parameter>
+		<parameter name="vertical align" type="switch" items="top,middle,bottom">0</parameter>
+		<parameter name="letter spacing" type="double" max="10">0</parameter>
+		<parameter name="line spacing" type="double" max="10">0</parameter>
+		<parameter name="clip text" type="switch" items="false,true">1</parameter>
+	</property>
+</properties>

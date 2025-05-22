@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!--
+   Provides some targets for managing the version.properties file, which
+   includes the project version, as well as a "build manifest, which includes
+   details of the build environment.
+-->
+<project name="versioning" default="update.version.properties" basedir="." xmlns:ac="antlib:net.sf.antcontrib">
+  <property file="${basedir}/core_version.properties"/>
+  <property file="${basedir}/database_version.properties"/>
+  <property name="file.properties.version" value="${basedir}/deploy/version.properties"/>
+  <property name="version.prompt" value="true"/>
+
+  <import file="svn.xml" />
+
+  <target name="update.version.manifest" description="Writes the details of the current build environment to the version file.">
+    <touch file="${file.properties.version}" mkdirs="true"/>
+
+    <exec executable="javac" outputproperty="version.javac">
+      <arg line="-version"/>
+    </exec>
+
+    <!--
+      There doesn't appear to be a way to get Visual Studio to simply output
+      a version number, so instead I've elected to grab the first line
+      when you call msbuild.exe (without args). This seems pretty volatile, so
+      I apologize for whenever it fails in the future.
+    -->
+    <exec executable="msbuild.exe" outputproperty="msbuild.output"/>
+    <loadresource property="version.msbuild">
+      <propertyresource name="msbuild.output"/>
+      <filterchain>
+        <headfilter lines="1" />
+        <striplinebreaks/>
+      </filterchain>
+    </loadresource>
+
+    <propertyfile file="${file.properties.version}">
+      <entry key="version.core" value="${version.core}"/>      
+      <entry key="version.javac" value="${version.javac}"/>
+      <entry key="version.ant" value="${ant.version}"/>
+      <entry key="version.msbuild" value="${version.msbuild}"/>
+    </propertyfile>
+  </target>
+
+  <target name="update.version.number" description="Writes the project version to the version file.">
+    <touch file="${file.properties.version}" mkdirs="true"/>
+    <propertyfile file="${file.properties.version}">
+      <entry key="version" value="${new.version.number}"/>
+      <entry key="author"  value="${user.name}"/>
+    </propertyfile>
+  </target>
+
+  <target name="update.database.number" description="Writes the project database version to the version file.">
+    <touch file="${file.properties.version}" mkdirs="true"/>
+    <propertyfile file="${file.properties.version}">
+      <entry key="version.database" value="${database.number}"/>
+    </propertyfile>
+  </target>
+
+  <target name="update.version.properties" description="Updates the version file." depends="update.version.manifest,update.database.number,update.version.number"/>
+
+  <target name="generate.version.release">
+    <property file="${basedir}/ProjectVersion.properties"/>
+
+    <ac:if>
+      <equals arg1="${version.prompt}" arg2="true"/>
+      <then>
+        <echo message="Suggested version is ${version.number}"/>
+        <input message="Enter a new version number of press enter to accept the current version [${version.number}]" addproperty="new.version.number" defaultvalue="${version.number}"/>
+      </then>
+      <else>
+        <property name="new.version.number" value="${version.number}"/>
+      </else>
+    </ac:if>
+  </target>
+
+  <target name="generate.version.development">
+    <svn_get_root_revision property="build.current.revision" path="${basedir}" fail_property="fail" />
+    <svn_get_url property="svn.url" path="${basedir}" fail_property="fail" />
+    <ac:propertyregex property="build.current.branch" input="${svn.url}" regexp=".*\/([^\/]+)$" replace="\1" global="true" />
+    <property name="version.number" value="${build.current.branch}.${build.current.revision}"/>
+
+    <ac:if>
+      <equals arg1="${version.prompt}" arg2="true"/>
+      <then>
+        <echo message="Suggested version is ${version.number}"/>
+        <input message="Enter a new version number or press enter to accept the current version [${version.number}]" addproperty="new.version.number" defaultvalue="${version.number}"/>
+      </then>
+      <else>
+        <property name="new.version.number" value="${version.number}"/>
+      </else>
+    </ac:if>
+  </target>
+
+</project>

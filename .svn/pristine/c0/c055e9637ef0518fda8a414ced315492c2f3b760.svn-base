@@ -1,0 +1,76 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+Logging=Logging.ini
+Simulator=Simulator.ini
+Hub=Hub.ini
+
+[System.1]
+Module Name=PIS Unit
+
+[Simulator]
+Hub Name=Driver's Cab
+
+[Unit Plugins]
+PISUnit
+PISIntercomUnit
+
+[Unit Properties]
+PISIntercomUnit=..\Environment\PISIntercom.ini
+
+[Module Resource Plugins]
+train_data_access_resources
+db_data_access_resources
+
+[Scenario Resource Plugins]
+world_access_resources
+
+[Session Resource Plugins]
+points_watcher_resources
+scenario_train_path_watcher_resources
+modelled_train_selector_resources
+
+
+[Logging]
+# Valid Values are :
+# ERR or ERROR
+# WARN or WARNING
+# INFO_This is the Default Logging Level
+# VERBOSE
+# uncomment below, to see more verbose log for debugging
+Level=VERBOSE
+
+[PIS]
+Audio Engine ID=1
+Speaker X Position=0.0
+Speaker Y Position=0.0
+Speaker Z Position=0.0
+Speaker Volume=100.0
+
+Powerup Time=0.0
+
+WAV Files Path=sound\PIS\
+
+Broadcast Auto Description=Auto
+Broadcast Semiauto Description=SemiAuto
+Broadcast Manual Description=Manual
+Debug = 1
+
+####[PIS]
+Wave ID Offset = 10000
+Maximum Message Duration = 300.0
+Minimum Message Gap = 2.0
+DVA = 1
+Platform Announcement Range = 25
+Train Backward Announcement Distace = 101
+Train Forward Announcement Distace = 102
+Station List File = PIS_Station_List.xml
+ATP forward announcement = 11
+ATP backward announcement = 11
+
+[DVA]
+Station List File=PIS_Station_List.xml
+#Emergency Broadcast Directory=Sound\\line_16_DKZ93\\Announcements\\Emergency
+
+[Debug]
+DVA=1

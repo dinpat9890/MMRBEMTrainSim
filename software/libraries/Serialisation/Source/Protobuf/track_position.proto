@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package core;
+
+message track_position
+{
+  int32  segment = 1;
+  double offset  = 2;
+  bool   heading = 3;
+}

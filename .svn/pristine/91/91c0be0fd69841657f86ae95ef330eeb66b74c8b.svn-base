@@ -1,0 +1,1130 @@
+/*
+ * ==================================================================
+ *
+ * (C) Copyright 2022 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *
+ * ==================================================================
+ */
+
+/** CSS styles for all the components is given here **/
+.common-bg {
+	-fx-background-color: rgb(34.0, 42.0, 55.0);
+	-fx-background-radius: 10.0px;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Common Panel			                   						*
+ *                                                                             *
+ ******************************************************************************/
+.common-panel-bg {
+	-fx-background-image: url('../images/pa_pis.png');
+	-fx-background-color: black;
+}
+
+.physical-button-chchg-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/ch_chg_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-chchg-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/ch_chg_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-up-arrow-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/up_arrow_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-up-arrow-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/up_arrow_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-pc-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/pc_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-pc-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/pc_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-cc-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/cc_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-cc-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/cc_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-mute-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/sound_off_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-mute-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/sound_off_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-v-plus-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/v+_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-v-plus-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/v+_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-left-arrow-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/left_direction_arrow_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-left-arrow-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/left_direction_arrow_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-down-arrow-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/down_arrow_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-down-arrow-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/down_arrow_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-right-arrow-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image:
+		url('../images/right_direction_arrow_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-right-arrow-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/right_direction_arrow_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-en-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/en_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-en-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/en_pressed.png');
+	-fx-background-size: 100.0%;
+	-fx-background-color: transparent;
+}
+
+.physical-button-back-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/enter_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-back-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/enter_pressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-v-minus-image {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/v-_unpressed.png');
+	-fx-background-color: transparent;
+}
+
+.physical-button-v-minus-image:armed {
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/v-_pressed.png');
+	-fx-background-color: transparent;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Common Header css                  								*
+ *                                                                             *
+ ******************************************************************************/
+.header-title-label {
+	-fx-text-fill: rgb(218.0, 192.0, 71.0);
+	-fx-font-size: 26.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: Bold;
+	-fx-alignment: center-left;
+}
+
+.header-status-label {
+    -fx-text-fill: white;
+    -fx-font-size: 20.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-alignment: center;
+}
+
+.date-time-label {
+	-fx-text-fill: #ffffff;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+}
+
+.inner-border-line {
+	-fx-border-color: rgb(255.0, 201.0, 57.0);
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 12.0px;
+}
+
+.sub-headings-label {
+	-fx-text-fill: rgb(218.0, 192.0, 71.0);
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: Bold;
+	-fx-alignment: center;
+	-fx-background-color: rgb(34.0, 42.0, 55.0);
+}
+
+.button-default {
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-family: "Arial";
+	-fx-text-alignment: center;
+	-fx-background-radius: 6.0px;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 0.0;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Main Interface Screen                   						*
+ *                                                                             *
+ ******************************************************************************/
+.main-interface-screen-display-area-label-1 {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+	-fx-background-color: rgb(255.0, 91.0, 80.0);
+}
+
+.main-interface-screen-mult-audio-text {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+}
+
+.main-interface-red-background-grid {
+	-fx-background-color: rgb(255.0, 91.0, 80.0);
+}
+
+.main-interface-screen-common-bg {
+	-fx-background-color: rgb(34.0, 42.0, 55.0);
+}
+
+.main-interface-screen-left-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+	-fx-alignment: center-right;
+}
+
+.main-interface-screen-textbox-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+	-fx-border-color: white;
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 5.0px;
+}
+
+.button.main-interface-button-1, .button.main-interface-button-1:unselected
+	{
+	-fx-background-color: rgb(127.0, 127.0, 127.0);
+	-fx-font-family: "Arial";
+	-fx-text-alignment: center;
+	-fx-background-radius: 6.0px;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 0.0;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+}
+
+.button.main-interface-button-1:armed {
+	-fx-text-fill: white;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-size: 15.0px;
+	-fx-font-family: "Arial";
+	-fx-font-weight: bold;
+	-fx-border-width: 4.0px;
+	-fx-border-color: white;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              System Settings Screen                   						*
+ *                                                                             *
+ ******************************************************************************/
+.footer-options-button {
+	-fx-text-fill: white;
+	-fx-font-size: 15.0px;
+}
+
+.mode-setting-label {
+	-fx-text-fill: white;
+	-fx-font-size: 17.0;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+	-fx-alignment: center-left;
+}
+
+.train-number-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: white;
+}
+
+.route-setting-label {
+	-fx-text-fill: rgb(218.0, 192.0, 71.0);
+	-fx-font-size: 16.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: Bold;
+	-fx-alignment: center-left;
+}
+
+.route-setting-textbox-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center-left;
+	-fx-background-color: white;
+}
+
+.mode-unselected-label {
+	-fx-background-image: url('../images/mode_setting_transparent.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 60.0%;	
+}
+
+.mode-auto-selected, .mode-semi-auto-selected, .mode-manual-selected {
+	-fx-background-image: url('../images/mode_setting_select.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 60.0%;	
+}
+
+.unavailable-button-label {
+    -fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+    -fx-background-radius: 6.0px;
+    -fx-border-radius: 4.0px;
+    -fx-font-size: 14.0px;
+    -fx-font-family: "Arial";
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100.0%;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-padding: 0.0;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Route Setting Screen                   							*
+ *                                                                             *
+ ******************************************************************************/
+.line-name-textbox-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: white;
+}
+
+.line-direction-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+	-fx-alignment: center-left;
+}
+
+.line-options-label {
+	-fx-text-fill: white;
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+}
+
+.line-options-label-selected{
+	-fx-text-fill: white;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-border-width: 2.0px;
+	-fx-border-color: white;
+}
+
+.train-direction-selected {
+	-fx-background-image: url('../images/mode_setting_select.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 60.0%;
+}
+
+.train-direction-unselected {
+	-fx-background-image: url('../images/mode_setting_transparent.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 60.0%;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Start/ Terminal/ Next Station Selection Screen                  *
+ *                                                                             *
+ ******************************************************************************/
+.station-selection-display-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: white;
+}
+
+.station-options-label {
+	-fx-text-fill: white;
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+}
+
+.station-options-label-selected {
+	-fx-text-fill: white;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-border-width: 2.0px;
+	-fx-border-color: white;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Skip Station Setting Screen                 					*
+ *                                                                             *
+ ******************************************************************************/
+ .skip-screen-list-grid-border {
+	-fx-border-color: white;
+	-fx-border-radius: 2.0px; 
+ }
+ 
+ .button.skip-list-buttons, .button.skip-list-buttons:unselected {
+ 	-fx-background-color: transparent;
+	-fx-font-family: "Arial";
+	-fx-text-alignment: center;
+	-fx-background-radius: 6.0px;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+	-fx-padding: 0.0;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px 0.0px 1.0px 0.0px;
+	-fx-border-insets: 0.0px 0.0px 0.0px 0.0px;
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+ }
+ 
+ .button.skip-list-buttons:selected {
+ 	-fx-border-color: white;
+	-fx-border-width: 2.0px 1.0px 2.0px 1.0px;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+ }
+ 
+ .skip-options-unselected {
+	 -fx-text-fill: white;
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: transparent;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px 0.0px 1.0px 0.0px;
+ }
+ 
+ .skip-options-selected {
+	 -fx-text-fill: white;
+	-fx-font-size: 20.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-border-color: white;
+	-fx-border-width: 2.0px 1.0px 2.0px 1.0px;
+ }
+ 
+ .skip-screen-up-arrow {
+ 	-fx-background-image: url('../images/arrow_up.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 24.0%;
+	-fx-background-color: rgb(255.0, 91.0, 80.0);
+ }
+ 
+.skip-screen-down-arrow {
+ 	-fx-background-image: url('../images/arrow_down.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 24.0%;
+	-fx-background-color: rgb(255.0, 91.0, 80.0);
+ }
+ 
+ .skip-screen-right-arrow {
+ 	-fx-background-image: url('../images/arrow_right.png');
+ 	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-background-radius: 6.0px;
+ }
+  .skip-screen-right-arrow-selected{
+    -fx-background-image: url('../images/arrow_right.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-background-radius: 6.0px;
+    -fx-border-radius: 4.0px;
+    -fx-border-width: 2.0px;
+    -fx-border-color: white;
+    -fx-background-size: 100.0%;
+    -fx-alignment: center;
+     }
+  .skip-screen-left-arrow-btn {
+ 	-fx-background-image: url('../images/arrow_left.png');
+ 	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-background-radius: 6.0px;
+ }
+  .skip-screen-left-arrow-btn-selected{
+    -fx-background-image: url('../images/arrow_left.png');
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-background-radius: 6.0px;
+    -fx-border-radius: 4.0px;
+    -fx-border-width: 2.0px;
+    -fx-border-color: white;
+    -fx-background-size: 100.0%;
+    -fx-alignment: center;
+ }
+/******************************************************************************
+ *                                                                             *
+ *              Manual Mode Setting Screen                 						 *
+ *                                                                             *
+ ******************************************************************************/
+.manual-mode-labels {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: Bold;
+	-fx-alignment: center-right;
+}
+
+.manual-mode-text-box-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-border-color: white;
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 5.0px;
+}
+
+.button.manual-door-opening-side-button,.button.manual-door-opening-side-button:unselected{
+	-fx-text-alignment: center;
+	-fx-font-family: "Arial";
+	-fx-text-fill: white;
+	-fx-background-radius: 6.0px;
+	-fx-alignment: center;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	
+}
+.button.manual-door-opening-side-button:selected{
+	-fx-text-alignment: center;
+	-fx-font-family: "Arial";
+	-fx-text-fill: white;
+	-fx-background-radius: 6.0px;
+	-fx-alignment: center;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-background-color: rgb(255.0, 91.0, 80.0);
+}
+.button.manual-message-button,.button.manual-message-button:unselected{
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-family: "Arial";
+	-fx-text-alignment: center;
+	-fx-background-radius: 6.0px;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+    -fx-background-size: 100.0%;
+	
+}
+.button.manual-message-button:selected{
+	-fx-text-fill: white;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Arial";
+	-fx-alignment: center;
+	-fx-border-width: 2.0px;
+	-fx-border-color: white;
+    -fx-background-size: 100.0%;
+}
+/******************************************************************************
+ *                                                                             *
+ *              Passenger Alarm Screen											*
+ *                                                                             *
+ ******************************************************************************/
+.passenger-alarm-iiner-border {
+	-fx-border-color: white;
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 12.0px;
+}
+
+.current-alarm-display-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-alignment: center;
+}
+
+.passenger-alarm-display-label, .passenger-alarm-display-label:default {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+}
+
+.passenger-alarm-display-label:unselected {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 0 1 1 1;
+}
+
+.passenger-alarm-display-label:selected {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 1 1 1 1;
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+}
+
+.alarm-location-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Special Information & Emergency Information Setting Screen      *
+ *                                                                             *
+ ******************************************************************************/
+.spc-emg-display-textbox-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-color: white;
+}
+
+.spc-emg-no-of-times-label {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: Bold;
+	-fx-alignment: center-left;
+}
+
+.spc-emg-display-no-of-times-textbox-label {
+	-fx-text-fill: black;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center-left;
+	-fx-background-color: white;
+}
+
+.spc-emg-drop-down-arrow-icon {
+	-fx-background-image: url('../images/blue_arrow.png');
+ 	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 30.0%;
+	-fx-background-color: rgb(220.0, 220.0, 220.0);
+	-fx-background-insets: 0.0 0.0 0.0 0.0;
+	-fx-border-color: rgb(20.0, 20.0, 20.0);
+	-fx-border-width: 0.0 1.5 1.5 0.0;
+	-fx-border-insets: 0.0 2.0 2.0 0.0;
+}
+
+.spc-no-of-times-options-lbl {
+	-fx-text-fill: black;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Calibri";
+	-fx-alignment: center;
+	-fx-background-color: white;
+	-fx-border-color: rgb(20.0, 20.0, 20.0);
+	-fx-border-width: 0.5 0.0 0.0 0.0;
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Passenger Alarm Screen      								   *
+ *                                                                             *
+ ******************************************************************************/
+ 
+ .passenger-alarm-options-grid-border {
+ 	-fx-border-color: white;
+ 	-fx-border-width: 1.0px;
+ }
+ .button-default-selected {
+ 	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-radius: 6.0px;
+	-fx-border-radius: 4.0px;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Arial";
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-wrap-text: true;
+	-fx-text-alignment: center;
+	-fx-padding: 0.0;
+	-fx-text-fill: white;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-border-width: 2.0px;
+	-fx-border-color: white;
+    -fx-background-size: 100.0%;
+}
+ .button {
+	-fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+	-fx-background-radius: 6.0px;
+	-fx-border-radius: 4.0px;
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Arial";
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100.0%;
+	-fx-wrap-text: true;
+	-fx-text-alignment: center;
+	-fx-padding: 0.0;
+}
+ .button.footer-button, .button.footer-button:unselected {
+   	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-family: "Arial";
+	-fx-text-alignment: center;
+	-fx-background-radius: 6.0px;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+    -fx-background-size: 100.0%;
+}
+
+.button.footer-button:armed, .button.footer-button:selected {
+    -fx-text-fill: white;
+	-fx-background-color: rgb(11.0, 211.0, 138.0);
+	-fx-font-size: 14.0px;
+	-fx-font-family: "Arial";
+	-fx-alignment: center;
+	-fx-border-width: 2.0px;
+	-fx-border-color: white;
+    -fx-background-size: 100.0%;
+}
+
+.button.footer-button:connected {
+	-fx-background-color: rgb(255.0, 91.0, 80.0);
+}
+
+.button.footer-button:disconnected {
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+}
+
+.flash-on {
+	-fx-text-alignment: center;
+	-fx-font-family: "Arial";
+	-fx-text-fill: white;
+	-fx-background-radius: 6.0px;
+	-fx-alignment: center;
+	-fx-font-size: 14.0px;
+	-fx-font-weight: bold;
+	-fx-background-color: rgb(255.0, 91.0, 80.0);
+}
+
+.gray-button{
+    -fx-background-color: rgb(127.0, 127.0, 127.0);
+    -fx-font-family: "Arial";
+    -fx-text-alignment: center;
+    -fx-background-radius: 6.0px;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+    -fx-padding: 0.0;
+    -fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100.0%;
+}
+
+.gray-button, .gray-button:unselected{
+  -fx-border-width: 0px;
+    -fx-border-color: transparent;  
+} 
+
+.gray-button:selected{
+    -fx-border-width: 4.0px;
+    -fx-border-color: white;
+}
+.green-button{
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-font-family: "Arial";
+    -fx-text-alignment: center;
+    -fx-background-radius: 6.0px;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+    -fx-padding: 0.0;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100.0%;
+}
+.green-button, .green-button:unselected, .green-button:flash_off{
+  -fx-border-width: 0px;
+    -fx-border-color: transparent;  
+} 
+
+.green-button:selected{
+    -fx-border-width: 4.0px;
+    -fx-border-color: white;
+}
+.green-button:flash_on{
+    -fx-border-width:5.0px;
+    -fx-background-color: rgb(255.0, 91.0, 80.0); 
+}
+
+.button.passenger-alarm-display-button, .button.passenger-alarm-display-button:default {
+	-fx-text-fill: white;
+	-fx-font-size: 18.0px;
+	-fx-font-family: "Arial Narrow";
+	-fx-alignment: center;
+	-fx-background-radius: 0.0px;
+	-fx-border-radius: 0.0px;
+  -fx-background-color: rgb(34.0, 42.0, 55.0);
+}
+
+ .button.passenger-alarm-display-button, .button.passenger-alarm-display-button:unselected {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 1 1 1 1;
+   -fx-background-color: rgb(34.0, 42.0, 55.0);
+}
+
+ .button.passenger-alarm-display-button, .button.passenger-alarm-display-button:selected {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 1 1 1 1;
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+   
+}
+
+/******************************************************************************
+ *                                                                             *
+ *              Language Settings Screen                                        *
+ *                                                                             *
+ ******************************************************************************/
+ 
+ .language-heading-label {
+    -fx-text-fill: rgb(218.0, 192.0, 71.0);
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-background-color: rgb(34.0, 42.0, 55.0);
+ }
+ 
+ .lang-box-border {
+    -fx-border-color: rgb(255.0, 201.0, 57.0);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 2.0px;
+ }
+ 
+ .lang-options-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 1 1 0 1;
+ }
+ 
+ .lang-option-selected-label {
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 1.5px;
+ }
+ 
+ /******************************************************************************
+ *                                                                             *
+ *              Volume Settings Screen                                         *
+ *                                                                             *
+ ******************************************************************************/
+ 
+ .volume-headings-label {
+    -fx-text-fill: rgb(218.0, 192.0, 71.0);
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: Bold;
+    -fx-alignment: center;
+    -fx-background-color: rgb(34.0, 42.0, 55.0);
+ }
+ 
+ .volume-buttons {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0px;
+    -fx-font-family: "Arial";
+    -fx-alignment: center;
+    -fx-background-color: grey;
+    -fx-background-radius: 10px;
+ }
+ 
+ .volume-value-label {
+    -fx-text-fill: rgb(218.0, 192.0, 71.0);
+    -fx-font-size: 13.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: Bold;
+    -fx-alignment: center;
+    -fx-background-color: rgb(34.0, 42.0, 55.0);
+ }
+ 
+ .volume-blue-button-label {
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-text-fill: white;
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 5px;
+ } 
+ 
+ .brightness-blue-button-label {
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-text-fill: white;
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-color: white;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 1px;
+    -fx-background-radius: 1px;
+ } 
+ 
+ .brightness-bar {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 0.5px;
+    -fx-text-fill: black;
+    -fx-font-size: 12.0px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+ }
+ 
+  /******************************************************************************
+ *                                                                             *
+ *                          Faults Screen                                      *
+ *                                                                             *
+ ******************************************************************************/
+ 
+ .fault-table-header-labels {
+    -fx-background-color: rgb(221.0, 229.0, 244.0);
+    -fx-text-fill: Black;
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+    -fx-border-color: black;
+    -fx-border-width: 0.5px;
+ }
+ 
+ .fault-table-labels {
+    -fx-background-color: white;
+    -fx-text-fill: Black;
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+    -fx-border-color: black;
+    -fx-border-width: 0.5px;
+ }
+ 
+ .button.fault-screen-button, .button.fault-screen-button:unselected {
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-font-family: "Arial";
+    -fx-text-alignment: center;
+    -fx-background-radius: 6.0px;
+    -fx-font-size: 14.0px;
+    -fx-font-weight: normal;
+    -fx-text-fill: white;
+    -fx-background-size: 100.0%;
+}
+
+ .button.fault-screen-button:armed, .button.fault-screen-button:selected {
+    -fx-text-fill: white;
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-font-size: 14.0px;
+    -fx-font-family: "Arial";
+    -fx-alignment: center;
+    -fx-border-width: 2.0px;
+    -fx-border-color: white;
+    -fx-background-size: 100.0%;
+}
+ 
+ /******************************************************************************
+ *                                                                             *
+ *                          PECU Isolate Screen                                *
+ *                                                                             *
+ ******************************************************************************/
+ 
+  .button.pecu-isolate-screen-button, .button.pecu-isolate-screen-button:unselected {
+    -fx-background-color: rgb(11.0, 211.0, 138.0);
+    -fx-font-family: "Arial";
+    -fx-text-alignment: center;
+    -fx-background-radius: 6.0px;
+    -fx-font-size: 15.0px;
+    -fx-font-weight: normal;
+    -fx-text-fill: white;
+    -fx-background-size: 100.0%;
+}
+
+ .button.pecu-isolate-screen-button:armed, .button.pecu-isolate-screen-button:selected {
+    -fx-text-fill: white;
+    -fx-background-color: rgb(255.0, 91.0, 80.0);
+    -fx-font-size: 15.0px;
+    -fx-font-family: "Arial";
+    -fx-alignment: center;
+    -fx-background-size: 100.0%;
+}
+ 
+ 

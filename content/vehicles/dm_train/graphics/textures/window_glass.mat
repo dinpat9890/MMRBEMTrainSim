@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="window_glass" guid="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" base_material="mesh_base">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options transparent="2" two_sided="0"/>
+	<texture name="albedo">../vehicles/dm_train/graphics/textures/dm_train.dds</texture>
+	<parameter name="material_mask">0x00000001</parameter>
+	<parameter name="albedo_color">0.48627454 0.48627454 0.48627454 1</parameter>
+	<parameter name="metalness">0</parameter>
+	<parameter name="roughness">0.150000006</parameter>
+	<parameter name="gloss">0.60206002</parameter>
+	<parameter name="transparent">0.200000003</parameter>
+	<parameter name="transparent_pow">1</parameter>
+</material>

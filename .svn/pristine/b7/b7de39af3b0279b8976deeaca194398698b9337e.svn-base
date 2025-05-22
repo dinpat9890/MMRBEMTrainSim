@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gmi_screen_navigation
+	xmlns="http://www.sydac.com.au/GMI/1.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sydac.com.au/GMI/1.0/ ../navigation.xsd">
+	<screen xsi:type="vehicle_screen" name="DM">
+
+		<orientation_1-2>
+			<nav_hotspot target="Driver Desk">
+				<region xsi:type="rectangle" x="120" y="810" width="60"
+					height="80" />
+			</nav_hotspot>
+
+<!-- 			<nav_hotspot target="Driver Desk Control Panel">
+				<region xsi:type="rectangle" x="10" y="10" width="80"
+					height="80" />
+			</nav_hotspot> -->
+
+			<nav_hotspot target="Back Wall Panel">
+				<region xsi:type="rectangle" x="230" y="660" width="40"
+					height="230" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Parking Brake Release Bogie 01 Handle 01">
+				<region xsi:type="rectangle" x="270" y="413" width="40"
+					height="70" />
+			</nav_hotspot>
+			
+			<nav_hotspot target="Parking Brake Release Bogie 01 Handle 02">
+				<region xsi:type="rectangle" x="275" y="610" width="25"
+					height="50" />
+			</nav_hotspot>
+			
+			<nav_hotspot target="Parking Brake Release Bogie 02 Handle 01">
+				<region xsi:type="rectangle" x="1610" y="413" width="40"
+					height="70" />
+			</nav_hotspot>	
+			
+			<nav_hotspot target="Parking Brake Release Bogie 02 Handle 02">
+				<region xsi:type="rectangle" x="1610" y="610" width="25"
+					height="50" />
+			</nav_hotspot>			
+
+			<nav_hotspot target="Circuit Breaker Panel">
+				<region xsi:type="rectangle" x="1800" y="810" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Exterior Lights">
+				<region xsi:type="rectangle" x="70" y="210" width="80"
+					height="200" />
+			</nav_hotspot>
+
+			<nav_hotspot target="MREP Isolation Cock End 1">
+				<region xsi:type="rectangle" x="185" y="400" width="45"
+					height="45" />
+			</nav_hotspot>
+
+			<nav_hotspot target="MREP Isolation Cock End 2">
+				<region xsi:type="rectangle" x="1750" y="400" width="45"
+					height="45" />
+			</nav_hotspot>
+
+			<nav_hotspot target="BIC1 End 1">
+				<region xsi:type="rectangle" x="540" y="400" width="45"
+					height="45" />
+			</nav_hotspot>
+
+			<nav_hotspot target="BIC2 End 2">
+				<region xsi:type="rectangle" x="1385" y="400" width="45"
+					height="45" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Epic">
+				<region xsi:type="rectangle" x="590" y="600" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="ASCO End 1">
+				<region xsi:type="rectangle" x="530" y="600" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="ASCO End 2">
+				<region xsi:type="rectangle" x="1325" y="600" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="AS Isolation Cock">
+				<region xsi:type="rectangle" x="470" y="600" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="SR">
+				<region xsi:type="rectangle" x="655" y="600" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B1 Saloon Area">
+				<region xsi:type="rectangle" x="275" y="660" width="120"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B2 Saloon Area">
+				<region xsi:type="rectangle" x="680" y="660" width="125"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B3 Saloon Area">
+				<region xsi:type="rectangle" x="1105" y="660" width="125"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B4 Saloon Area">
+				<region xsi:type="rectangle" x="1510" y="660" width="125"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door A1 Saloon Area">
+				<region xsi:type="rectangle" x="275" y="860" width="120"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door A2 Saloon Area">
+				<region xsi:type="rectangle" x="680" y="860" width="130"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door A3 Saloon Area">
+				<region xsi:type="rectangle" x="1105" y="860" width="125"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door A4 Saloon Area">
+				<region xsi:type="rectangle" x="1510" y="860" width="125"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Right Door EAD location">
+				<region xsi:type="rectangle" x="420" y="600" width="40"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Left Door EAD location">
+				<region xsi:type="rectangle" x="430" y="350" width="70"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Emergency Door">
+				<region xsi:type="rectangle" x="40" y="750" width="60"
+					height="80" />
+			</nav_hotspot>
+
+		</orientation_1-2>
+
+		<orientation_2-1>
+			<nav_hotspot target="Driver Desk">
+				<region xsi:type="rectangle" x="1750" y="680" width="60"
+					height="90" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Parking Brake Release Bogie 01 Handle 02">
+				<region xsi:type="rectangle" x="1630" y="413" width="40"
+					height="60" />					
+			</nav_hotspot>
+			
+			<nav_hotspot target="Parking Brake Release Bogie 01 Handle 01">
+				<region xsi:type="rectangle" x="1596" y="610" width="25"
+					height="50" />					
+			</nav_hotspot>
+			
+			<nav_hotspot target="Parking Brake Release Bogie 02 Handle 02">
+				<region xsi:type="rectangle" x="280" y="413" width="40"
+					height="60" />
+			</nav_hotspot>
+			
+			<nav_hotspot target="Parking Brake Release Bogie 02 Handle 01">
+				<region xsi:type="rectangle" x="280" y="610" width="25"
+					height="50" />
+			</nav_hotspot>	
+
+			<nav_hotspot target="Back Wall Panel">
+				<region xsi:type="rectangle" x="1640" y="680" width="50"
+					height="230" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Circuit Breaker Panel">
+				<region xsi:type="rectangle" x="60" y="700" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Exterior Lights">
+				<region xsi:type="rectangle" x="1800" y="200" width="80"
+					height="200" />
+			</nav_hotspot>
+
+			<nav_hotspot target="MREP Isolation Cock End 1">
+				<region xsi:type="rectangle" x="1690" y="680" width="45"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="MREP Isolation Cock End 2">
+				<region xsi:type="rectangle" x="90" y="610" width="45"
+					height="45" />
+			</nav_hotspot>
+
+			<nav_hotspot target="BIC1 End 1">
+				<region xsi:type="rectangle" x="1390" y="596" width="45"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="BIC2 End 2">
+				<region xsi:type="rectangle" x="500" y="596" width="45"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Epic">
+				<region xsi:type="rectangle" x="1230" y="400" width="40"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="ASCO End 1">
+				<region xsi:type="rectangle" x="1400" y="400" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="ASCO End 2">
+				<region xsi:type="rectangle" x="530" y="400" width="50"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="AS Isolation Cock">
+				<region xsi:type="rectangle" x="1300" y="605" width="60"
+					height="50" />
+			</nav_hotspot>
+
+			<nav_hotspot target="SR">
+				<region xsi:type="rectangle" x="1170" y="400" width="40"
+					height="60" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door A1 Saloon Area">
+				<region xsi:type="rectangle" x="1520" y="660" width="110"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door A2 Saloon Area">
+				<region xsi:type="rectangle" x="1120" y="660" width="110"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door A3 Saloon Area">
+				<region xsi:type="rectangle" x="710" y="660" width="110"
+					height="40" />
+			</nav_hotspot>
+			
+			<nav_hotspot target="Door A4 Saloon Area">
+				<region xsi:type="rectangle" x="290" y="660" width="110"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B4 Saloon Area">
+				<region xsi:type="rectangle" x="290" y="860" width="110"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B3 Saloon Area">
+				<region xsi:type="rectangle" x="710" y="860" width="110"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B2 Saloon Area">
+				<region xsi:type="rectangle" x="1120" y="860" width="110"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Door B1 Saloon Area">
+				<region xsi:type="rectangle" x="1520" y="860" width="110"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Right Door EAD location">
+					<region xsi:type="rectangle" x="1420" y="340" width="60"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Left Door EAD location">
+					<region xsi:type="rectangle" x="1450" y="615" width="60"
+					height="40" />
+			</nav_hotspot>
+
+			<nav_hotspot target="Emergency Door">
+				<region xsi:type="rectangle" x="1840" y="740" width="60"
+					height="90" />
+			</nav_hotspot>
+
+		</orientation_2-1>
+	</screen>
+
+<!-- 	<screen xsi:type="main_screen" name="Door B1 Saloon Area">
+		<nav_hotspot target="PECU location">
+			<region xsi:type="polygon">
+				<point x="1577" y="11" />
+				<point x="1912" y="12" />
+				<point x="1909" y="607" />
+				<point x="1580" y="607" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Door B3 Saloon Area">
+		<nav_hotspot target="PECU location">
+			<region xsi:type="polygon">
+				<point x="1577" y="11" />
+				<point x="1912" y="12" />
+				<point x="1909" y="607" />
+				<point x="1580" y="607" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Door A2 Saloon Area">
+		<nav_hotspot target="PECU location">
+			<region xsi:type="polygon">
+				<point x="1577" y="11" />
+				<point x="1912" y="12" />
+				<point x="1909" y="607" />
+				<point x="1580" y="607" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Door A4 Saloon Area">
+		<nav_hotspot target="PECU location">
+			<region xsi:type="polygon">
+				<point x="1577" y="11" />
+				<point x="1912" y="12" />
+				<point x="1909" y="607" />
+				<point x="1580" y="607" />
+			</region>
+		</nav_hotspot>
+	</screen> -->
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 1 Row">
+			<region xsi:type="polygon">
+				<point x="100" y="40" />
+				<point x="1050" y="40" />
+				<point x="1054" y="212" />
+				<point x="100" y="210" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 2 Row">
+			<region xsi:type="polygon">
+				<point x="100" y="230" />
+				<point x="1050" y="230" />
+				<point x="1054" y="423" />
+				<point x="100" y="420" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 3 Row">
+			<region xsi:type="polygon">
+				<point x="100" y="451" />
+				<point x="1050" y="448" />
+				<point x="1054" y="630" />
+				<point x="100" y="632" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 4 Row">
+			<region xsi:type="polygon">
+				<point x="100" y="650" />
+				<point x="1050" y="650" />
+				<point x="1054" y="850" />
+				<point x="100" y="850" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 2 Row 1">
+			<region xsi:type="polygon">
+				<point x="1120" y="34" />
+				<point x="1830" y="33" />
+				<point x="1830" y="198" />
+				<point x="1120" y="198" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 2 Row 2">
+			<region xsi:type="polygon">
+				<point x="1120" y="220" />
+				<point x="1830" y="220" />
+				<point x="1830" y="400" />
+				<point x="1120" y="400" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 2 Row 3">
+			<region xsi:type="polygon">
+				<point x="1120" y="443" />
+				<point x="1830" y="443" />
+				<point x="1830" y="626" />
+				<point x="1120" y="626" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 2 Row 4">
+			<region xsi:type="polygon">
+				<point x="1120" y="642" />
+				<point x="1830" y="642" />
+				<point x="1830" y="806" />
+				<point x="1120" y="806" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel">
+		<nav_hotspot target="DM Car Panel 2 Row 5">
+			<region xsi:type="polygon">
+				<point x="1120" y="850" />
+				<point x="1877" y="850" />
+				<point x="1877" y="1008" />
+				<point x="1120" y="1008" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="driver desk panel">
+		<nav_hotspot target="Operating Panel 1">
+			<region xsi:type="polygon">
+				<point x="390" y="462" />
+				<point x="672" y="446" />
+				<point x="519" y="648" />
+				<point x="225" y="620" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="driver desk panel">
+		<nav_hotspot target="Master Controller">
+			<region xsi:type="polygon">
+				<point x="696" y="439" />
+				<point x="1319" y="483" />
+				<point x="1310" y="725" />
+				<point x="538" y="650" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="driver desk panel">
+		<nav_hotspot target="Operating Panel 3">
+			<region xsi:type="polygon">
+				<point x="1333" y="487" />
+				<point x="1408" y="492" />
+				<point x="1417" y="733" />
+				<point x="1319" y="724" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="operating panel 2 controls">
+		<nav_hotspot target="Operating Panel 2">
+			<region xsi:type="polygon">
+				<point x="582" y="67" />
+				<point x="821" y="98" />
+				<point x="1034" y="919" />
+				<point x="846" y="987" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="operating panel 2 controls">
+		<nav_hotspot target="Operating Panel 4">
+			<region xsi:type="polygon">
+				<point x="913" y="389" />
+				<point x="963" y="390" />
+				<point x="1087" y="924" />
+				<point x="1034" y="909" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="driver desk panel">
+			<region xsi:type="polygon">
+				<point x="285" y="471" />
+				<point x="450" y="455" />
+				<point x="601" y="468" />
+				<point x="604" y="633" />
+				<point x="330" y="633" />
+				<point x="396" y="575" />
+				<point x="297" y="586" />
+
+			</region>
+		</nav_hotspot>
+	</screen>
+
+
+
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="Operating Panel 1">
+			<region xsi:type="polygon">
+				<point x="218" y="636" />
+				<point x="275" y="592" />
+				<point x="385" y="582" />
+				<point x="323" y="633" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="Operating Panel 2">
+			<region xsi:type="polygon">
+				<point x="172" y="64" />
+				<point x="235" y="70" />
+				<point x="342" y="427" />
+				<point x="301" y="460" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="Operating Panel 4">
+			<region xsi:type="polygon">
+				<point x="278" y="197" />
+				<point x="411" y="197" />
+				<point x="474" y="424" />
+				<point x="346" y="424" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="Operating Panel 5">
+			<region xsi:type="polygon">
+				<point x="1652" y="74" />
+				<point x="1744" y="69" />
+				<point x="1623" y="466" />
+				<point x="1542" y="430" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="operating panel 5 controls">
+			<region xsi:type="polygon">
+				<point x="1652" y="74" />
+				<point x="1744" y="69" />
+				<point x="1623" y="466" />
+				<point x="1542" y="430" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Back Wall Panel">
+		<nav_hotspot target="Driver Side Coving panel">
+			<region xsi:type="polygon">
+				<point x="1532" y="0" />
+				<point x="1387" y="0" />
+				<point x="1489" y="81" />
+				<point x="1565" y="22" />			
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Back Wall Panel">
+		<nav_hotspot target="Non-Driver Side Coving panel">
+			<region xsi:type="polygon">
+				<point x="383" y="0" />
+				<point x="535" y="0" />
+				<point x="426" y="81" />
+				<point x="350" y="22" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="operating panel 5 controls">
+		<nav_hotspot target="Operating Panel 5">
+			<region xsi:type="polygon">
+				<point x="1109" y="110" />
+				<point x="1358" y="82" />
+				<point x="1097" y="982" />
+				<point x="903" y="915" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="driver desk panel">
+		<nav_hotspot target="Pressure Guages">
+			<region xsi:type="polygon">
+				<point x="1326" y="127" />
+				<point x="1451" y="137" />
+				<point x="1419" y="481" />
+				<point x="1295" y="472" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Door A2 Saloon Area">
+		<nav_hotspot target="BIC 1 Interior">
+			<region xsi:type="polygon">
+				<point x="1470" y="882" />
+				<point x="1564" y="882" />
+				<point x="1564" y="1003" />
+				<point x="1471" y="1003" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Door A3 Saloon Area">
+		<nav_hotspot target="BIC 2 Interior">
+			<region xsi:type="polygon">
+				<point x="353" y="882" />
+				<point x="447" y="882" />
+				<point x="447" y="1003" />
+				<point x="354" y="1003" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Door B2 Saloon Area">
+		<nav_hotspot target="Park Brake Release 1">
+			<region xsi:type="polygon">
+				<point x="353" y="882" />
+				<point x="447" y="882" />
+				<point x="447" y="1003" />
+				<point x="354" y="1003" />
+			</region>
+		</nav_hotspot>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Door B3 Saloon Area">
+		<nav_hotspot target="Park Brake Release 2">
+			<region xsi:type="polygon">
+			<point x="1470" y="882" />
+				<point x="1564" y="882" />
+				<point x="1564" y="1003" />
+				<point x="1471" y="1003" />
+			</region>
+		</nav_hotspot>
+	</screen>
+	
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="MR Isolation Cock">
+			<region xsi:type="polygon">
+				<point x="380" y="755" />
+				<point x="580" y="755" />
+				<point x="595" y="963" />
+				<point x="380" y="963" />
+			</region>
+		</nav_hotspot>
+	</screen>	
+	
+	<screen xsi:type="main_screen" name="Driver Desk">
+		<nav_hotspot target="Uncoupling and Horn Cock">
+			<region xsi:type="polygon">
+				<point x="1310" y="530" />
+				<point x="1715" y="530" />
+				<point x="1650" y="1020" />
+				<point x="1270" y="1020" />
+			</region>
+		</nav_hotspot>
+	</screen>	
+	
+		<!-- ============== PAN Function start =============================== -->
+
+	<screen xsi:type="main_screen" name="DM Car Panel 1 Row">
+		<pan_down target="DM Car Panel 2 Row" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row">
+		<pan_down target="DM Car Panel 3 Row" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row">
+		<pan_up target="DM Car Panel 1 Row" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 3 Row">
+		<pan_down target="DM Car Panel 4 Row" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 3 Row">
+		<pan_up target="DM Car Panel 2 Row" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 4 Row">
+		<pan_up target="DM Car Panel 3 Row" />
+	</screen>
+
+
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 1">
+		<pan_down target="DM Car Panel 2 Row 2" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 2">
+		<pan_down target="DM Car Panel 2 Row 3" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 2">
+		<pan_up target="DM Car Panel 2 Row 1" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 3">
+		<pan_down target="DM Car Panel 2 Row 4" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 3">
+		<pan_up target="DM Car Panel 2 Row 2" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 4">
+		<pan_down target="DM Car Panel 2 Row 5" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 4">
+		<pan_up target="DM Car Panel 2 Row 3" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="DM Car Panel 2 Row 5">
+		<pan_up target="DM Car Panel 2 Row 4" />
+	</screen>
+
+	<screen xsi:type="main_screen" name="ASCO End 1">
+		<pan_down target="AS Isolation Cock" />
+	</screen>
+	
+	<screen xsi:type="main_screen" name="AS Isolation Cock">
+		<pan_up target="ASCO End 1" />
+	</screen>
+
+	<!-- ============ PAN Function end =================================== -->
+	
+</gmi_screen_navigation>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+    <layer name="Project">
+        <object_class class="Radio"       constant_name="RADIO" />
+
+           <!-- Radio inputs data from UI -->
+           <object_class class="RadioInputs"          constant_name="RADIO_INPUTS">   
+          
+          <!-- Required by the IO Controller -->
+           
+            <object_number name="Class Inputs"                                      constant_name="IO_CONTROLLER_CLASS_INPUTS_TAG"                       default="0.0" delta="0.5" />
+            <object_number name="Class Inputs"                                      constant_name="CLASS_INPUTS"                                         default="0.0" delta="0.5" />
+            
+            <!-- Screen Change  requests -->
+            <object_number name="Screen Change Request"                                constant_name="SCREEN_CHANGE_REQUEST"                                 default="0.0" delta="0.5" />
+            
+            <!-- Power Menu and Navigation Panel -->
+            <object_number name="Emergency Btn Request"                                constant_name="EMERGENCY_BTN_REQUEST"                                  default="0.0" delta="0.5" />
+            <object_number name="Power Btn Request"                                 constant_name="POWER_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+            <object_number name="Start Msg Btn Request"                                constant_name="START_MSG_BTN_REQUEST"                                   default="0.0" delta="0.5" />
+            <object_number name="Menu Btn Request"                                    constant_name="MENU_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+            <object_number name="Contact Btn Request"                                    constant_name="CONTACT_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+
+            <!-- key pad button  requests -->
+            <object_number name="Btn 1 Request"                                    constant_name="BTN_1_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Btn 2 ABC Request"                                constant_name="BTN_2_ABC_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 3 DEF Request"                                constant_name="BTN_3_DEF_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 4 GHI Request"                                constant_name="BTN_4_GHI_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 5 JKL Request"                                constant_name="BTN_5_JKL_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 6 MNO Request"                                constant_name="BTN_6_MNO_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 7 PQRS Request"                            constant_name="BTN_7_PQRS_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 8 TUV Request"                                constant_name="BTN_8_TUV_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 9 WXYZ Request"                            constant_name="BTN_9_WXYZ_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 0 Request"                                    constant_name="BTN_0_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Btn Star Request"                                constant_name="BTN_STAR_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn Hash Request"                                constant_name="BTN_HASH_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Enter Start Call Btn Request"                  constant_name="ENTER_START_CALL_BTN_REQUEST"                     default="0.0" delta="0.5" />
+            <object_number name="End Call Btn Request"                          constant_name="END_CALL_BTN_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Btn Up Arrow Request"                            constant_name="BTN_UP_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Btn Down Arrow Request"                        constant_name="BTN_DOWN_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+
+            <!-- call request and navigation panel button  --> 
+            <object_number name="Logon Btn Request"                                constant_name="LOG_ON_BTN_REQUEST"                         default="0.0" delta="0.5" />
+            <object_number name="Main Group Btn Request"                        constant_name="MAIN_GROUP_BTN_REQUEST"                     default="0.0" delta="0.5" />
+            <object_number name="Depot Group Btn Request"                       constant_name="DEPOT_GROUP_BTN_REQUEST"                    default="0.0" delta="0.5" />
+            <object_number name="Train Group Btn Request"                       constant_name="TRAIN_GROUP_BTN_REQUEST"                    default="0.0" delta="0.5" /> 
+            <object_number name="Shunt Group Btn Request"                       constant_name="SHUNT_GROUP_BTN_REQUEST"                    default="0.0" delta="0.5" />
+            <object_number name="Rtt Btn Request"                                constant_name="RTT_BTN_REQUEST"                               default="0.0" delta="0.5" />
+            <object_number name="Pa Btn Request"                                constant_name="PA_BTN_REQUEST"                               default="0.0" delta="0.5" />
+            <object_number name="Msg Btn Request"                                constant_name="MSG_BTN_REQUEST"                                default="0.0" delta="0.5" />
+            <object_number name="Alarm Btn Request"                                constant_name="ALARM_BTN_REQUEST"                           default="0.0" delta="0.5" />
+            <object_number name="Tr Rear Btn Request"                            constant_name="TR_REAR_BTN_REQUEST"                              default="0.0" delta="0.5" />
+            <object_number name="Inbox Msg List Selected Id"                   constant_name="INBOX_MSG_LIST_SELECTED_ID"                   default="0.0" delta="0.5" />
+            <object_number name="Outbox Msg List Selected Id"                  constant_name="OUTBOX_MSG_LIST_SELECTED_ID"                  default="0.0" delta="0.5" />
+            <object_number name="Message Inbox Btn Request"                   constant_name="MESSAGE_INBOX_BTN_REQUEST"                      default="0.0" delta="0.5" />
+            <object_number name="Message Outbox Btn Request"                   constant_name="MESSAGE_OUTBOX_BTN_REQUEST"                    default="0.0" delta="0.5" />
+
+            <object_number name="SSI Number Selection Request"                 constant_name="SSI_NUMBER_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Status Code Selection Request"                constant_name="STATUS_CODE_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Message Outbox Selection Request"              constant_name="MESSAGE_OUTBOX_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+           <object_number name="Selected Contact List Id"                       constant_name="SELECTED_CONTACT_LIST_ID"                     default="0.0" delta="0.5" />
+
+
+            <!-- contact list screen  --> 
+            <object_number name="Contacts Btn Request"                               constant_name="CONTACTS_BTN_REQUEST"                                   default="0.0" delta="0.5" />
+            <object_number name="Group List Btn Request"                               constant_name="GROUP_LIST_BTN_REQUEST"                              default="0.0" delta="0.5" />
+            
+			  <object_number name="Navigation Up Arrow Request"                            constant_name="NAVIGATION_UP_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Navigation Down Arrow Request"                        constant_name="NAVIGATION_DOWN_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <object_class class="RadioInputsValues"                                       constant_name="RADIO_INPUTS_VALUES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Values"                                       constant_name="IO_CONTROLLER_CLASS_VALUES_TAG"                      default="0.0" delta="0.5" />
+            <object_number name="Class Values"                                       constant_name="CLASS_VALUES"                                        default="0.0" delta="0.5" />
+            
+            <!-- Screen Change request -->
+            
+            <object_number name="Screen Change Request"                                constant_name="SCREEN_CHANGE_REQUEST"                                 default="0.0" delta="0.5" />
+            
+            <!-- Power Menu and Navigation Panel -->
+            <object_number name="Emergency Btn Request"                                constant_name="EMERGENCY_BTN_REQUEST"                              default="0.0" delta="0.5" />
+            <object_number name="Power Btn Request"                                constant_name="POWER_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+            <object_number name="Start Msg Btn Request"                            constant_name="START_MSG_BTN_REQUEST"                                   default="0.0" delta="0.5" />
+            <object_number name="Menu Btn Request"                                constant_name="MENU_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+            <object_number name="Contact Btn Request"                                    constant_name="CONTACT_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+            
+            <!-- key pad button  requests -->
+            <object_number name="Btn 1 Request"                                    constant_name="BTN_1_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Btn 2 ABC Request"                                constant_name="BTN_2_ABC_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 3 DEF Request"                                constant_name="BTN_3_DEF_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 4 GHI Request"                                constant_name="BTN_4_GHI_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 5 JKL Request"                                constant_name="BTN_5_JKL_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 6 MNO Request"                                constant_name="BTN_6_MNO_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 7 PQRS Request"                            constant_name="BTN_7_PQRS_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 8 TUV Request"                                constant_name="BTN_8_TUV_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 9 WXYZ Request"                            constant_name="BTN_9_WXYZ_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 0 Request"                                    constant_name="BTN_0_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Btn Star Request"                                constant_name="BTN_STAR_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn Hash Request"                                constant_name="BTN_HASH_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Enter Start Call Btn Request"                     constant_name="ENTER_START_CALL_BTN_REQUEST"                     default="0.0" delta="0.5" />
+            <object_number name="End Call Btn Request"                            constant_name="END_CALL_BTN_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Btn Up Arrow Request"                            constant_name="BTN_UP_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Btn Down Arrow Request"                        constant_name="BTN_DOWN_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+
+            
+            
+            <!-- call request and navigation panel button  --> 
+            <object_number name="Logon Btn Request"                                constant_name="LOG_ON_BTN_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Main Group Btn Request"                        constant_name="MAIN_GROUP_BTN_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Depot Group Btn Request"                       constant_name="DEPOT_GROUP_BTN_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Train Group Btn Request"                        constant_name="TRAIN_GROUP_BTN_REQUEST"                            default="0.0" delta="0.5" /> 
+            <object_number name="Shunt Group Btn Request"                        constant_name="SHUNT_GROUP_BTN_REQUEST"                         default="0.0" delta="0.5" />
+            <object_number name="Rtt Btn Request"                                constant_name="RTT_BTN_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Pa Btn Request"                                constant_name="PA_BTN_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Msg Btn Request"                                constant_name="MSG_BTN_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Alarm Btn Request"                                constant_name="ALARM_BTN_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Tr Rear Btn Request"                            constant_name="TR_REAR_BTN_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Inbox Msg List Selected Id"                  constant_name="INBOX_MSG_LIST_SELECTED_ID"                  default="0.0" delta="0.5" />
+            <object_number name="Outbox Msg List Selected Id"                  constant_name="OUTBOX_MSG_LIST_SELECTED_ID"                  default="0.0" delta="0.5" />
+            <object_number name="Message Inbox Btn Request"                  constant_name="MESSAGE_INBOX_BTN_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Message Outbox Btn Request"                  constant_name="MESSAGE_OUTBOX_BTN_REQUEST"                  default="0.0" delta="0.5" />
+
+            <object_number name="SSI Number Selection Request"                  constant_name="SSI_NUMBER_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Status Code Selection Request"                  constant_name="STATUS_CODE_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Message Outbox Selection Request"                  constant_name="MESSAGE_OUTBOX_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Selected Contact List Id"                         constant_name="SELECTED_CONTACT_LIST_ID"                  default="0.0" delta="0.5" />
+
+           <!-- contact list screen  --> 
+            <object_number name="Contacts Btn Request"                               constant_name="CONTACTS_BTN_REQUEST"                                   default="0.0" delta="0.5" />
+            <object_number name="Group List Btn Request"                               constant_name="GROUP_LIST_BTN_REQUEST"                              default="0.0" delta="0.5" />
+			
+				  <object_number name="Navigation Up Arrow Request"                            constant_name="NAVIGATION_UP_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Navigation Down Arrow Request"                        constant_name="NAVIGATION__DOWN_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <object_class class="RadioInputsModes"                                        constant_name="RADIO_INPUTS_MODES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Modes"                                        constant_name="IO_CONTROLLER_CLASS_MODES_TAG"                       default="0.0" delta="0.5" />
+            <object_number name="Class Modes"                                        constant_name="CLASS_MODES"                                         default="0.0" delta="0.5" />
+            
+            <!-- Screen Change request -->
+            <object_number name="Screen Change Request"                                constant_name="SCREEN_CHANGE_REQUEST"                                 default="0.0" delta="0.5" />
+            
+            <!-- Power Menu and Navigation Panel -->
+            <object_number name="Emergency Btn Request"                                constant_name="EMERGENCY_BTN_REQUEST"                                  default="0.0" delta="0.5" />
+            <object_number name="Power Btn Request"                                    constant_name="POWER_BTN_REQUEST"                                      default="0.0" delta="0.5" />
+            <object_number name="Start Msg Btn Request"                                constant_name="START_MSG_BTN_REQUEST"                                  default="0.0" delta="0.5" />
+            <object_number name="Menu Btn Request"                                    constant_name="MENU_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+            <object_number name="Contact Btn Request"                                    constant_name="CONTACT_BTN_REQUEST"                                       default="0.0" delta="0.5" />
+            
+            <!-- key pad button  requests -->
+            <object_number name="Btn 1 Request"                                    constant_name="BTN_1_REQUEST"                                    default="0.0" delta="0.5" />
+            <object_number name="Btn 2 ABC Request"                                constant_name="BTN_2_ABC_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 3 DEF Request"                                constant_name="BTN_3_DEF_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 4 GHI Request"                                constant_name="BTN_4_GHI_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 5 JKL Request"                                constant_name="BTN_5_JKL_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 6 MNO Request"                                constant_name="BTN_6_MNO_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 7 PQRS Request"                            constant_name="BTN_7_PQRS_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 8 TUV Request"                                constant_name="BTN_8_TUV_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 9 WXYZ Request"                            constant_name="BTN_9_WXYZ_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn 0 Request"                                    constant_name="BTN_0_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Btn Star Request"                                constant_name="BTN_STAR_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Btn Hash Request"                                constant_name="BTN_HASH_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Enter Start Call Btn Request"                  constant_name="ENTER_START_CALL_BTN_REQUEST"                     default="0.0" delta="0.5" />
+            <object_number name="End Call Btn Request"                            constant_name="END_CALL_BTN_REQUEST"                              default="0.0" delta="0.5" />
+            <object_number name="Btn Up Arrow Request"                            constant_name="BTN_UP_ARROW_REQUEST"                              default="0.0" delta="0.5" />
+           <object_number name="Btn Down Arrow Request"                            constant_name="BTN_DOWN_ARROW_REQUEST"                        default="0.0" delta="0.5" />
+
+         <!-- call request and navigation panel button  --> 
+            <object_number name="Logon Btn Request"                                constant_name="LOG_ON_BTN_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Main Group Btn Request"                        constant_name="MAIN_GROUP_BTN_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Depot Group Btn Request"                       constant_name="DEPOT_GROUP_BTN_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Train Group Btn Request"                       constant_name="TRAIN_GROUP_BTN_REQUEST"                             default="0.0" delta="0.5" /> 
+            <object_number name="Shunt Group Btn Request"                       constant_name="SHUNT_GROUP_BTN_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Rtt Btn Request"                                constant_name="RTT_BTN_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Pa Btn Request"                                constant_name="PA_BTN_REQUEST"                                     default="0.0" delta="0.5" />
+            <object_number name="Msg Btn Request"                                constant_name="MSG_BTN_REQUEST"                                    default="0.0" delta="0.5" />
+            <object_number name="Alarm Btn Request"                                constant_name="ALARM_BTN_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Tr Rear Btn Request"                            constant_name="TR_REAR_BTN_REQUEST"                                 default="0.0" delta="0.5" />
+            <object_number name="Inbox Msg List Selected Id"                  constant_name="INBOX_MSG_LIST_SELECTED_ID"                  default="0.0" delta="0.5" />
+            <object_number name="Outbox Msg List Selected Id"                  constant_name="OUTBOX_MSG_LIST_SELECTED_ID"                  default="0.0" delta="0.5" />
+            <object_number name="Message Inbox Btn Request"                  constant_name="MESSAGE_INBOX_BTN_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Message Outbox Btn Request"                  constant_name="MESSAGE_OUTBOX_BTN_REQUEST"                  default="0.0" delta="0.5" />
+            
+            <object_number name="SSI Number Selection Request"                  constant_name="SSI_NUMBER_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Status Code Selection Request"                  constant_name="STATUS_CODE_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            <object_number name="Message Outbox Selection Request"                  constant_name="MESSAGE_OUTBOX_SELECTION_REQUEST"                  default="0.0" delta="0.5" />
+            
+            <object_number name="Selected Contact List Id"                      constant_name="SELECTED_CONTACT_LIST_ID"                        default="0.0" delta="0.5" />
+            
+            <!-- contact list screen  --> 
+            <object_number name="Contacts Btn Request"                               constant_name="CONTACTS_BTN_REQUEST"                                   default="0.0" delta="0.5" />
+            <object_number name="Group List Btn Request"                               constant_name="GROUP_LIST_BTN_REQUEST"                              default="0.0" delta="0.5" />
+			
+				  <object_number name="Navigation Up Arrow Request"                            constant_name="NAVIGATION_UP_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+            <object_number name="Navigation Down Arrow Request"                        constant_name="NAVIGATION__DOWN_ARROW_REQUEST"                             default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <!-- Radio output data from UI -->
+        <object_class class="RadioOutputs" constant_name="RADIO_OUTPUTS">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Outputs"                           constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"           default="0.0" delta="0.5" />
+            <object_number name="Class Outputs"                           constant_name="CLASS_OUTPUTS"                             default="0.0" delta="0.5" />
+            
+            <object_number name="Current Screen Id"                       constant_name="CURRENT_SCREEN_ID"                         default="0.0" delta="0.5" />
+            
+            <!-- Header Panel -->
+            <object_raw name="Line Name"                              constant_name="LINE_NAME"                        />
+            <object_number name="Message Count"                       constant_name="MESSAGE_COUNT"                         default="0.0" delta="0.5" />
+            <object_number name="Radio Signal"                       constant_name="RADIO_SIGNAL"                         default="0.0" delta="0.5" />
+
+            <!-- cab signal Panel -->
+            <object_number name="Triu A Status"                       constant_name="TRIU_A_STATUS"                         default="0.0" delta="0.5" />
+            <object_number name="Occ Pa Status"                       constant_name="OCC_PA_STATUS"                         default="0.0" delta="0.5" />
+            <object_number name="Triu B Status"                       constant_name="TRIU_B_STATUS"                         default="0.0" delta="0.5" />
+            <object_number name="Tcms A Status"                       constant_name="TCMS_A_STATUS"                         default="0.0" delta="0.5" />
+            <object_number name="Tcms B Status"                       constant_name="TCMS_B_STATUS"                         default="0.0" delta="0.5" />
+            <object_number name="Remote Status"                       constant_name="REMOTE_STATUS"                         default="0.0" delta="0.5" />
+            <object_number name="Cab A Status"                       constant_name="CAB_A_STATUS"                           default="0.0" delta="0.5" />
+            <object_number name="Cab B Status"                       constant_name="CAB_B_STATUS"                           default="0.0" delta="0.5" />
+            <object_number name="Pa Pis A Status"                    constant_name="PA_PIS_A_STATUS"                        default="0.0" delta="0.5" />
+            <object_number name="Pa Pis B Status"                    constant_name="PA_PIS_B_STATUS"                        default="0.0" delta="0.5" />
+            <object_number name="Tr A Status"                       constant_name="TR_A_STATUS"                             default="0.0" delta="0.5" />
+            <object_number name="Tr B Status"                       constant_name="TR_B_STATUS"                             default="0.0" delta="0.5" />
+             
+            <!-- call info Panel -->
+            <object_number name="Call Group Status"                       constant_name="CALL_GROUP_STATUS"                       default="0.0" delta="0.5" />
+            <object_raw name="Call Group Name"                        constant_name="CALL_GROUP_NAME"       />
+            <object_number name="Input Ssi Id"                         constant_name="INPUT_SSI_ID"                                default="0.0" delta="0.5" />
+            <object_number name="Call Ssi Id"                          constant_name="CALL_SSI_ID"                                   default="0.0" delta="0.5" />
+            <object_number name="Inbox Msg List Selected Id"       constant_name="INBOX_MSG_LIST_SELECTED_ID"                  default="0.0" delta="0.5" />
+            <object_number name="Outbox Msg List Selected Id"       constant_name="OUTBOX_MSG_LIST_SELECTED_ID"                  default="0.0" delta="0.5" />
+            <object_number name="Selected Contact List Id"       constant_name="SELECTED_CONTACT_LIST_ID"                  default="0.0" delta="0.5" />
+
+
+            <object_number name="Inbox Outbox Selected Btn"       constant_name="INBOX_OUTBOX_SELECTED_BTN"                  default="0.0" delta="0.5" />
+            <object_raw name="Incoming Call Name"                        constant_name="INCOMING_CALL_NAME"                        />
+
+            <object_raw name="Inbox Message List"                      constant_name="INBOX_MESSAGE_LIST"                        />
+            <object_raw name="Outbox Message List"                         constant_name="OUTBOX_MESSAGE_LIST"                        />
+            <object_raw name="Inbox Message"                         constant_name="INBOX_MESSAGE"                        />
+            <object_raw name="Outbox Message"                         constant_name="OUTBOX_MESSAGE"                        />
+            
+            <object_raw name="Contact List"                         constant_name="CONTACT_LIST"                        />
+
+            <object_number name="Contact Screen Selected Btn"       constant_name="CONTACT_SCREEN_SELECTED_BTN"                  default="0.0" delta="0.5" />
+			<object_number name="Selected Menu Id"       constant_name="SELECTED_MENU_ID"                  default="0.0" delta="0.5" />
+			<object_number name="Incoming Call Type"                          constant_name="INCOMING_CALL_TYPE"            default="0.0" delta="0.5" />
+		 <object_number name="Up Button Value"       constant_name="UP_BUTTON_VALUE"                  default="0.0" delta="0.5" />
+		 <object_number name="Down Button Value"       constant_name="DOWN_BUTTON_VALUE"                  default="0.0" delta="0.5" />
+		 
+		  <object_number name="Depot Indication"                 				constant_name="DEPOT_INDICATION"                				default="0"  delta="0.5"/>
+
+        </object_class>
+    </layer>
+
+    <!-- Parent-child relationship mapping -->
+    <relationship   parent="Vehicle"      child="Radio"/>
+    <relationship   parent="Radio"          child="RadioInputs"/>
+    <relationship   parent="Radio"          child="RadioOutputs"/>
+
+    <!-- Class ID declerations -->
+    <class_ids>
+        <class_id   class_name="Radio"             class_id="7111" />
+        <class_id   class_name="RadioInputs"       class_id="7112" />
+        <class_id   class_name="RadioInputsValues" class_id="7113" />
+        <class_id   class_name="RadioInputsModes"  class_id="7114" />
+        <class_id   class_name="RadioOutputs"      class_id="7115" />
+    </class_ids>
+</comms_config>
+

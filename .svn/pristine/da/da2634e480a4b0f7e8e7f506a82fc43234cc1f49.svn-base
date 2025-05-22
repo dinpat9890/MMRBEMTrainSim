@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="int_bool">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name ="Absolute">
+    <xs:restriction base ="xs:double">
+      <xs:minInclusive value ="0"/>
+    </xs:restriction >
+  </xs:simpleType>
+
+  <xs:simpleType name="length">
+    <xs:annotation>
+      <xs:documentation>
+        The length in SI metres.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:double"/>
+  </xs:simpleType>
+
+  <xs:element name="feature_type" >
+ 
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="feature_type_state_type" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="feature_type_state" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="properties" minOccurs="0" maxOccurs="1" >
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="property" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="name" type="xs:string" use="required" form="unqualified"/>
+                              <xs:attribute name="value" type="xs:string" use="required" form="unqualified"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="state_id" type="xs:positiveInteger" use ="required" form="unqualified"/>
+                  <xs:attribute name="name" type="xs:string" use="required" form="unqualified"/>
+                  <xs:attribute name="value" type="xs:string" use="optional" form="unqualified"/>
+                  <xs:attribute name="user_selectable" type="int_bool" use="required" form="unqualified"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" form="unqualified"/>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="object_parameters" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="key" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="name" type="xs:string" use="required" form="unqualified"/>
+                  <xs:attribute name="type" type="xs:string" use="required" form="unqualified"/>
+                  <xs:attribute name="optional" type="int_bool" use="optional" form="unqualified"/>
+                  <xs:attribute name="default" type="xs:string" use="optional" form="unqualified"/>
+                  <xs:attribute name="description" type="xs:string" use="optional" form="unqualified"/>
+                  <xs:attribute name="units" type="xs:string" use="optional" form="unqualified"/>
+                  <xs:attribute name="min" type="xs:double" use="optional" form="unqualified"/>
+                  <xs:attribute name="max" type="xs:double" use="optional" form="unqualified"/>
+                  <xs:attribute name="displayed" type="xs:boolean" use="optional" default="false" form="unqualified" />
+                </xs:complexType> 
+              </xs:element> 
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="feature_type_icon" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:choice>
+              <xs:element name="feature_type_state_icon" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="state_id"   type="xs:positiveInteger" use="required" form="unqualified"/>
+                  <xs:attribute name="icon_code"  type="xs:string" use="required" form="unqualified"/>
+                  <xs:attribute name="small_icon" type="xs:string" use="required" form="unqualified"/>
+                  <xs:attribute name="big_icon" type="xs:string" use="required" form="unqualified"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute name="icon_code" type="xs:string" use="required" form="unqualified"/>
+            <xs:attribute name="small_icon" type="xs:string" use="optional" form="unqualified"/>
+            <xs:attribute name="big_icon" type="xs:string" use="optional" form="unqualified"/>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="feature_type_geometry" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="object_boundary" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="arg" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="name" type="xs:string" use="required" form="unqualified"/>
+                        <xs:attribute name="value" type="xs:double" use="required" form="unqualified"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="type" type="xs:string" use="required" form="unqualified"/>
+                  <xs:attribute name="x" type="xs:double" use="required" form="unqualified"/>
+                  <xs:attribute name="y" type="xs:double" use="required" form="unqualified"/>
+                  <xs:attribute name="z" type="xs:double" use="required" form="unqualified"/>
+                  <xs:attribute name="heading" type="xs:double" use="required" form="unqualified"/>
+                  <xs:attribute name="pitch" type="xs:double" use="required" form="unqualified"/>
+                  <xs:attribute name="roll" type="xs:double" use="required" form="unqualified"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="feature_type_vision" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+            
+              <xs:element name="scripting" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="script" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="script_path" type="xs:string" use="required" form="unqualified"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element> 
+         
+              <xs:element name="model_parts" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="model_part" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="model_part_id" type="xs:positiveInteger" use="required" form="unqualified"/>
+                        <xs:attribute name="name" type="xs:string" use="required" form="unqualified"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            
+              <xs:element name="model_state_parts" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="model_state_part" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="state_id" type="xs:positiveInteger" use="required" form="unqualified"/>
+                        <xs:attribute name="part_id" type="xs:positiveInteger" use="required" form="unqualified"/>
+                        <xs:attribute name="flashing" type="Absolute" use="optional" form="unqualified"/>
+                        <xs:attribute name="pulse_on_time" type="Absolute" use="optional" form="unqualified"/>
+                        <xs:attribute name="pulse_off_time" type="Absolute" use="optional" form="unqualified"/>
+                        <xs:attribute name="pulse_delay" type="Absolute"  use="optional" form="unqualified"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+           
+            </xs:sequence>
+            <xs:attribute name="class" type="xs:string" use="required" form="unqualified"/>
+            <xs:attribute name="raycast_type" type="xs:string" use="optional" form="unqualified"/>
+            <xs:attribute name="node_file" type="xs:string" use="optional" form="unqualified"/>
+            <xs:attribute name="model" type="xs:string" use="optional" form="unqualified"/>
+          
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    
+      <xs:attribute name="name" type ="xs:string" use="required" form="unqualified"/>
+      <xs:attribute name="group" type="xs:string" use="required" form="unqualified"/>
+      <xs:attribute name="constant_name" type="xs:string" use="required" form="unqualified"/>
+      <xs:attribute name="modifiable" type="int_bool" use="required" form="unqualified"/>
+      <xs:attribute name="available" type="int_bool" use ="required" form="unqualified"/>
+      <xs:attribute name="user_feature" type="int_bool" use="required" form="unqualified"/>
+      <xs:attribute name="version" type="xs:string" use="required" form="unqualified"/>
+   
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

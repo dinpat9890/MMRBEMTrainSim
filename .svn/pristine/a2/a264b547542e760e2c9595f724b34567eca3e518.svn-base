@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>Label.prop</library>
+	</properties>
+	<node type="NodeDummy" id="185774779" name="main_line_signal_long_with_base">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="244411126" name="head">
+			<mesh_name>../worlds/library_objects/features/main_line_signal_long_head.mesh</mesh_name>
+			<surface name="green" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="head" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="red" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<surface name="violet" enabled="0" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="235793823" name="label">
+			<mesh_name>../worlds/library_objects/features/main_line_signal_long_label.mesh</mesh_name>
+			<surface name="label1" enabled="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="dcedb85797b786f21d123bc7dd461feb11a9b16f" property="Label">
+				<property>
+					<parameter name="parameter">label1</parameter>
+					<parameter name="font size">0.90000000000000002</parameter>
+					<parameter name="text align">1</parameter>
+					<parameter name="vertical align">1</parameter>
+				</property>
+			</surface>
+			<surface name="label2" enabled="0" cast_world_shadow="0" max_visible_distance="1000" max_fade_distance="10" material="dcedb85797b786f21d123bc7dd461feb11a9b16f" property="Label">
+				<property>
+					<parameter name="parameter">label2</parameter>
+					<parameter name="font size">0.90000000000000002</parameter>
+					<parameter name="text align">1</parameter>
+					<parameter name="vertical align">1</parameter>
+				</property>
+			</surface>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1116866933" name="pole">
+			<mesh_name>../worlds/library_objects/features/main_line_signal_long_pole_with_base.mesh</mesh_name>
+			<surface name="pole_id_plate" max_visible_distance="1000" max_fade_distance="10" material="29ad5435d971b6cd6a9d8b29cb2842f812d2f480" property="surface_base"/>
+			<surface name="pole_with_base" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="164226453" name="ladder">
+			<mesh_name>../worlds/library_objects/features/main_line_signal_long_ladder.mesh</mesh_name>
+			<surface name="ladder" max_visible_distance="1000" max_fade_distance="10" material="db522cd54b0f0658da68a90d4419ba4bc5f1e8a5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

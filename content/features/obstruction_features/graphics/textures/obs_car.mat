@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="obs_car" guid="658ab8848d29469731b8ad11a36882e9a1c7e711" parent="ed5b6243626c5495704e7b00e18805401bf8b514" base_material="mesh_base">
+	<state name="specular_map">1</state>
+	<texture name="albedo">../features/obstruction_features/graphics/textures/hatchback_vw_red.dds</texture>
+	<texture name="shading">../features/obstruction_features/graphics/textures/hatchback_vw_met.dds</texture>
+</material>

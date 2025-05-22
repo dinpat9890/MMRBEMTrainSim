@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1255838584" name="bush_1">
+		<mesh_name>../worlds/library_objects/vegetation/meshes/bush_1.mesh</mesh_name>
+		<surface name="billboard" min_visible_distance="100" max_visible_distance="1200" min_fade_distance="10" max_fade_distance="50" material="9d9b2f1468efc0e0cbc7321ba89b77d93f2b6bbc" property="surface_base"/>
+		<surface name="leaves" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+		<surface name="leaves_lod_1" max_visible_distance="100" max_fade_distance="10" material="0e7ecbbcede3a0ff1011a4735075a7f2777bcd5f" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

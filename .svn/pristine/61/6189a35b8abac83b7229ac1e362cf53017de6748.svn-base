@@ -1,0 +1,59 @@
+## SimSetup
+## Wed Feb 02 12:59:19 2022
+
+[Autogen]
+Autogen Path=oksygen/sim/extra/scripts/auto_gen/
+Clean Files=0
+Delete Files=0
+Generate Files=1
+
+# Change this to 1 to support Ogre style feature raycast Y offset behaviour
+[Feature]
+Y Raycast Offset=0
+
+[Communications]
+Address=172.16.102.16
+Display Names=Saloon_CCTV
+Engine Name=Saloon_CCTV
+Port=5052
+
+[Defaults]
+Database=Database.ini
+
+[Files]
+Config File=../Environment/Vision.cfg
+Data Path=../data/vision/
+
+[Graphics]
+Anti-aliasing=8
+# Engine options: Direct3D11, Direct3D10, Direct3D9, Open GL
+Engine=Direct3D11
+Gamma=1.0
+Refresh Rate=60
+
+[Windowing]
+# Set to 1 to enable vsync, or 0 to run without it.
+# If unspecified, the default is 1 (vsync is enabled).
+Enable VSync=0
+# If set to true (1), the window is drawn without a frame. Due to
+# restrictions in the Unigine API this will also lock the window to
+# the top-left of the screen. Only used if Full-screen is set to
+# false (0).
+Frameless=1
+Full-screen=0
+Height=768
+# If set to 1, the mouse cursor is shown when the editor is not loaded
+# otherwise when set to 0, cursor is only shown when editor is loaded (default)
+Show Mouse Cursor=1
+Width=1024
+
+[Subsystem Plugins]
+autogen_subsystems
+environment_subsystems
+feature_subsystems
+perspective_subsystems
+train_subsystems
+view_subsystems
+
+[Plugins]
+YYEnforce Compatible=0

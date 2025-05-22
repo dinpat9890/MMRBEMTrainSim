@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <users>
+    <privilege_groups>
+      <privilege_group name="DEFAULT">
+        <privilege_group_assoc privilege="CORE_SCENARIO_EDIT" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_DELETE" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_POST_RUN" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_REPORT" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_SAVE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_DELETE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_NEW" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_SAVE" />
+        <privilege_group_assoc privilege="INSTRUCTOR_MANAGE_ALL" />
+        <privilege_group_assoc privilege="MULTIMEDIA_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SCENARIO_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_SAVE" />
+        <privilege_group_assoc privilege="SCENARIO_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_SAVE" />
+        <privilege_group_assoc privilege="SCORING_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SESSION_LOGS_ALL" />
+        <privilege_group_assoc privilege="TRACK_EDIT_ALL" />
+        <privilege_group_assoc privilege="TRAINEE_DATABASE_TOOL" />
+        <privilege_group_assoc privilege="TRAINEE_MANAGE_ALL" />
+        <privilege_group_assoc privilege="TRAIN_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_NEW" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_SAVE" />
+        <privilege_group_assoc privilege="TRAIN_NEW" />
+        <privilege_group_assoc privilege="TRAIN_SAVE" />
+        <privilege_group_assoc privilege="USER_GROUP_MANAGE_ALL" />
+      </privilege_group>
+      <privilege_group name="INSTRUCTOR">
+        <privilege_group_assoc privilege="DRIVING_RECORDS_DELETE" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_POST_RUN" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_REPORT" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_SAVE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_DELETE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_NEW" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_SAVE" />
+        <privilege_group_assoc privilege="LOGON_AGAIN_ENABLED" />
+        <privilege_group_assoc privilege="MULTIMEDIA_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SCENARIO_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_SAVE" />
+        <privilege_group_assoc privilege="SCENARIO_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_SAVE" />
+        <privilege_group_assoc privilege="SCORING_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SESSION_LOGS_ALL" />
+        <privilege_group_assoc privilege="TRACK_EDIT_ALL" />
+        <privilege_group_assoc privilege="TRAINEE_DATABASE_TOOL" />
+        <privilege_group_assoc privilege="TRAINEE_MANAGE_ALL" />
+        <privilege_group_assoc privilege="TRAIN_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_NEW" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_SAVE" />
+        <privilege_group_assoc privilege="TRAIN_NEW" />
+        <privilege_group_assoc privilege="TRAIN_SAVE" />
+        <privilege_group_assoc privilege="USER_GROUP_MANAGE_ALL" />
+      </privilege_group>
+      <privilege_group name="MAINTAINER">
+        <privilege_group_assoc privilege="DRIVING_RECORDS_DELETE" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_POST_RUN" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_REPORT" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_SAVE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_DELETE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_NEW" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_SAVE" />
+        <privilege_group_assoc privilege="LOGON_AGAIN_ENABLED" />
+        <privilege_group_assoc privilege="MULTIMEDIA_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SCENARIO_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_SAVE" />
+        <privilege_group_assoc privilege="SCENARIO_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_SAVE" />
+        <privilege_group_assoc privilege="SCORING_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SESSION_LOGS_ALL" />
+        <privilege_group_assoc privilege="TRACK_EDIT_ALL" />
+        <privilege_group_assoc privilege="TRAINEE_DATABASE_TOOL" />
+        <privilege_group_assoc privilege="TRAINEE_MANAGE_ALL" />
+        <privilege_group_assoc privilege="TRAIN_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_NEW" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_SAVE" />
+        <privilege_group_assoc privilege="TRAIN_NEW" />
+        <privilege_group_assoc privilege="TRAIN_SAVE" />
+        <privilege_group_assoc privilege="USER_GROUP_MANAGE_ALL" />
+      </privilege_group>
+      <privilege_group name="SUPER_USER">
+        <privilege_group_assoc privilege="CORE_SCENARIO_EDIT" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_DELETE" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_POST_RUN" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_REPORT" />
+        <privilege_group_assoc privilege="DRIVING_RECORDS_SAVE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_DELETE" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_NEW" />
+        <privilege_group_assoc privilege="FEATURE_GROUP_SAVE" />
+        <privilege_group_assoc privilege="INSTRUCTOR_MANAGE_ALL" />
+        <privilege_group_assoc privilege="LOGON_AGAIN_ENABLED" />
+        <privilege_group_assoc privilege="MULTIMEDIA_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SCENARIO_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_DELETE" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_GROUP_SAVE" />
+        <privilege_group_assoc privilege="SCENARIO_NEW" />
+        <privilege_group_assoc privilege="SCENARIO_SAVE" />
+        <privilege_group_assoc privilege="SCORING_MANAGE_ALL" />
+        <privilege_group_assoc privilege="SESSION_LOGS_ALL" />
+        <privilege_group_assoc privilege="TRACK_EDIT_ALL" />
+        <privilege_group_assoc privilege="TRAINEE_DATABASE_TOOL" />
+        <privilege_group_assoc privilege="TRAINEE_MANAGE_ALL" />
+        <privilege_group_assoc privilege="TRAIN_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_DELETE" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_NEW" />
+        <privilege_group_assoc privilege="TRAIN_GROUP_SAVE" />
+        <privilege_group_assoc privilege="TRAIN_NEW" />
+        <privilege_group_assoc privilege="TRAIN_SAVE" />
+        <privilege_group_assoc privilege="USER_GROUP_MANAGE_ALL" />
+      </privilege_group>
+      <privilege_group name="TRAINEE">
+        <privilege_group_assoc privilege="LOGON_AGAIN_ENABLED" />
+        <privilege_group_assoc privilege="SESSION_LOGS_ALL" />
+        <privilege_group_assoc privilege="TRAINEE_DATABASE_TOOL" />
+      </privilege_group>
+    </privilege_groups>
+    <privileges>
+      <privilege name="CORE_SCENARIO_EDIT" />
+      <privilege name="DRIVING_RECORDS_DELETE" />
+      <privilege name="DRIVING_RECORDS_POST_RUN" />
+      <privilege name="DRIVING_RECORDS_REPORT" />
+      <privilege name="DRIVING_RECORDS_SAVE" />
+      <privilege name="FEATURE_GROUP_DELETE" />
+      <privilege name="FEATURE_GROUP_NEW" />
+      <privilege name="FEATURE_GROUP_SAVE" />
+      <privilege name="INSTRUCTOR_MANAGE_ALL" />
+      <privilege name="LOGON_AGAIN_ENABLED" />
+      <privilege name="MULTIMEDIA_MANAGE_ALL" />
+      <privilege name="SCENARIO_DELETE" />
+      <privilege name="SCENARIO_GROUP_DELETE" />
+      <privilege name="SCENARIO_GROUP_NEW" />
+      <privilege name="SCENARIO_GROUP_SAVE" />
+      <privilege name="SCENARIO_NEW" />
+      <privilege name="SCENARIO_SAVE" />
+      <privilege name="SCORING_MANAGE_ALL" />
+      <privilege name="SESSION_LOGS_ALL" />
+      <privilege name="TRACK_EDIT_ALL" />
+      <privilege name="TRAINEE_DATABASE_TOOL" />
+      <privilege name="TRAINEE_MANAGE_ALL" />
+      <privilege name="TRAIN_DELETE" />
+      <privilege name="TRAIN_GROUP_DELETE" />
+      <privilege name="TRAIN_GROUP_NEW" />
+      <privilege name="TRAIN_GROUP_SAVE" />
+      <privilege name="TRAIN_NEW" />
+      <privilege name="TRAIN_SAVE" />
+      <privilege name="USER_GROUP_MANAGE_ALL" />
+    </privileges>
+    <user simuser_id="0" first_name="Default" last_name="Trainee" instructor="0">
+      <trainee driver_number="0" />
+    </user>
+    <user simuser_id="13000" first_name="Default" last_name="Instructor" instructor="1">
+      <instructor privilege_group="TRAINEE" password="password" system_account="1" />
+    </user>
+    <user simuser_id="13001" first_name="Super" last_name="User" instructor="1">
+      <instructor privilege_group="SUPER_USER" password="password" system_account="0" />
+    </user>
+    <user simuser_id="13002" first_name="Default" last_name="Maintainer" instructor="1">
+      <instructor privilege_group="MAINTAINER" password="password" system_account="0" />
+    </user>
+    <user simuser_id="13003" first_name="Default" last_name="SuperUser" instructor="1">
+      <instructor privilege_group="DEFAULT" password="password" system_account="1" />
+    </user>
+    <user simuser_id="13347" first_name="John" last_name="Instructor" instructor="1">
+      <instructor privilege_group="INSTRUCTOR" password="password" system_account="0" />
+    </user>
+    <user simuser_id="2000" first_name="Rick" last_name="O'Shea" instructor="0">
+      <trainee driver_number="14000" />
+    </user>
+    <user simuser_id="2001" first_name="Anna" last_name="Recksiek" instructor="0">
+      <trainee driver_number="14001" />
+    </user>
+    <user simuser_id="2002" first_name="Bill" last_name="Ding" instructor="0">
+      <trainee driver_number="14002" />
+    </user>
+    <user simuser_id="2003" first_name="Carrie" last_name="Oakey" instructor="0">
+      <trainee driver_number="14003" />
+    </user>
+    <user simuser_id="2004" first_name="Candice" last_name="Spencer" instructor="0">
+      <trainee driver_number="14004" />
+    </user>
+    <user simuser_id="2005" first_name="Hugh" last_name="Morris" instructor="0">
+      <trainee driver_number="14005" />
+    </user>
+  </users>
+</config>

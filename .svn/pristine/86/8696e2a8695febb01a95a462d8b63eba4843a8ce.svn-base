@@ -1,0 +1,5 @@
+package Mumbai_Metro_SMC;
+public class FilePathConstant {
+	public static final String IMAGE_PATH = "C:\\Users\\ext-asatis\\Desktop\\SMC\\";
+	
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Speed_Restriction_Marker_Board" group="Sign" constant_name="FETY_SPEED_RESTRICTION_MARKER_BOARD" modifiable="0" available="1" user_feature="0" version="2.0">
+    
+    <!-- State ID = Speed in kp/h -->
+    <feature_type_state_type name="State">
+        <feature_type_state state_id="05" name="05 km/h" value="1.3888888885"  user_selectable="1" />
+        <feature_type_state state_id="10" name="10 km/h" value="2.777777777"   user_selectable="1" />
+        <feature_type_state state_id="15" name="15 km/h" value="4.1666666655"  user_selectable="1" />
+        <feature_type_state state_id="20" name="20 km/h" value="5.555555554"   user_selectable="1" />
+        <feature_type_state state_id="25" name="25 km/h" value="6.9444444425"  user_selectable="1" />
+        <feature_type_state state_id="30" name="30 km/h" value="8.333333331"   user_selectable="1" />
+        <feature_type_state state_id="35" name="35 km/h" value="9.7222222195"  user_selectable="1" />
+        <feature_type_state state_id="40" name="40 km/h" value="11.111111108"  user_selectable="1" />
+        <feature_type_state state_id="45" name="45 km/h" value="12.4999999965" user_selectable="1" />
+        <feature_type_state state_id="50" name="50 km/h" value="13.888888885"  user_selectable="1" />
+        <feature_type_state state_id="55" name="55 km/h" value="15.2777777735" user_selectable="1" />
+        <feature_type_state state_id="60" name="60 km/h" value="16.666666662"  user_selectable="1" />
+        <feature_type_state state_id="65" name="65 km/h" value="18.0555555505" user_selectable="1" />
+        <feature_type_state state_id="70" name="70 km/h" value="19.444444439"  user_selectable="1" />
+        <feature_type_state state_id="75" name="75 km/h" value="20.8333333275" user_selectable="1" />
+        <feature_type_state state_id="80" name="80 km/h" value="22.222222216"  user_selectable="1" />
+        <feature_type_state state_id="85" name="85 km/h" value="23.6111111045" user_selectable="1" />
+        <feature_type_state state_id="90" name="90 km/h" value="24.999999993"  user_selectable="1" />
+        <feature_type_state state_id="95" name="95 km/h" value="26.3888888815" user_selectable="1" />
+    </feature_type_state_type>
+    
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="45 km/h" />
+    </object_parameters>
+    
+    <feature_type_icon icon_code="Speed_Restriction_Marker_Board"  small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_45kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_45kmph-BIG.png">
+        <feature_type_state_icon state_id="05" icon_code="05_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_05kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_05kmph-BIG.png" />
+        <feature_type_state_icon state_id="10" icon_code="10_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_10kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_10kmph-BIG.png" />
+        <feature_type_state_icon state_id="15" icon_code="15_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_15kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_15kmph-BIG.png" />
+        <feature_type_state_icon state_id="20" icon_code="20_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_20kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_20kmph-BIG.png" />
+        <feature_type_state_icon state_id="25" icon_code="25_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_25kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_25kmph-BIG.png" />
+        <feature_type_state_icon state_id="30" icon_code="30_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_30kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_30kmph-BIG.png" />
+        <feature_type_state_icon state_id="35" icon_code="35_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_35kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_35kmph-BIG.png" />
+        <feature_type_state_icon state_id="40" icon_code="40_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_40kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_40kmph-BIG.png" />
+        <feature_type_state_icon state_id="45" icon_code="45_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_45kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_45kmph-BIG.png" />
+        <feature_type_state_icon state_id="50" icon_code="50_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_50kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_50kmph-BIG.png" />
+        <feature_type_state_icon state_id="55" icon_code="55_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_55kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_55kmph-BIG.png" />
+        <feature_type_state_icon state_id="60" icon_code="60_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_60kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_60kmph-BIG.png" />
+        <feature_type_state_icon state_id="65" icon_code="65_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_65kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_65kmph-BIG.png" />
+        <feature_type_state_icon state_id="70" icon_code="70_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_70kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_70kmph-BIG.png" />
+        <feature_type_state_icon state_id="75" icon_code="75_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_75kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_75kmph-BIG.png" />
+        <feature_type_state_icon state_id="80" icon_code="80_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_80kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_80kmph-BIG.png" />
+        <feature_type_state_icon state_id="85" icon_code="85_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_85kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_85kmph-BIG.png" />
+        <feature_type_state_icon state_id="90" icon_code="90_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_90kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_90kmph-BIG.png" />
+        <feature_type_state_icon state_id="95" icon_code="95_km_h" small_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_95kmph-SMALL.png" big_icon="icons/speed_restriction_marker.zip#speed_restriction_marker_95kmph-BIG.png" />
+    </feature_type_icon>
+   
+   <!-- <feature_type_vision class="SpeedFeature" raycast_type="RaycastGround" node_file="speed_restriction_marker_board.node">
+       <scripting>
+           <script script_path="scripts/SpeedFeature.us.cpp" />
+       </scripting>
+  </feature_type_vision> -->
+   
+</feature_type>

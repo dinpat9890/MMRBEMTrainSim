@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="linden_tree_crossplane" guid="6dfd41d2004fe99ab4528e32b33554eb72dc0288" parent="3a1dc21df92abecdfd383c310fdda515b1acebd3" base_material="mesh_base">
+	<options depth_test="1" cast_shadow="1" cast_world_shadow="1"/>
+	<state name="vegetation">0</state>
+	<state name="noise_2d">0</state>
+	<texture name="albedo">oksygen/content/core/graphics/vegetation/graphics/linden/textures/linden_4_imposter.dds</texture>
+	<texture name="normal">oksygen/content/core/graphics/vegetation/graphics/linden/textures/linden_4_imposter_n.dds</texture>
+	<parameter name="normal_scale">3</parameter>
+	<parameter name="transparent">1</parameter>
+	<parameter name="transparent_pow">2</parameter>
+</material>

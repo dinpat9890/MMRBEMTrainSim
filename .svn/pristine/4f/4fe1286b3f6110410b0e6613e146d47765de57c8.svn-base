@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <logging_config>
+    <function_types>
+      <function_type name="AVG" description="The average of the values in a series" />
+      <function_type name="COUNT" description="The number of values in a series" />
+      <function_type name="FIRST" description="The first value in a series" />
+      <function_type name="LAST" description="The last value in a series" />
+      <function_type name="MAX" description="The maximum value in a series" />
+      <function_type name="MIN" description="The minimum value in a series" />
+      <function_type name="SUM" description="The sum of the values in a series" />
+    </function_types>
+    <summary_types>
+      <summary_type name="PERVEHICLE" description="The event values on each vehicle in a session" />
+    </summary_types>
+  </logging_config>
+</config>

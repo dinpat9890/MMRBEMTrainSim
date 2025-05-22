@@ -1,0 +1,70 @@
+(! Thunder triggers on rain level 90-100 )
+(define thunder_enable
+  (> (get-number (number-id (child-object-id (object-id (class-world)) (class-environment)) "Lightning Percentage") 0.0) 0)
+)
+
+(! This matches the length of the lightning effect loop in the Vision Engine. )
+(define thunder_total_time 73.0)
+
+(define get_thunder_time_del
+  (% (time 0.01) (thunder_total_time))
+)
+
+(define thunder_trigger
+  (last
+    (set-var @thunder_trigger_del (get_thunder_time_del))
+    (or
+      (>< 11.151401601357671 (get-var @thunder_trigger_del) 17.56907963351533)
+      (>< 17.76907963351533 (get-var @thunder_trigger_del) 24.662805960724054)
+      (>< 24.862805960724053 (get-var @thunder_trigger_del) 33.89361235725264)
+      (>< 34.093612357252645 (get-var @thunder_trigger_del) 43.827578612308095)
+      (>< 44.0275786123081 (get-var @thunder_trigger_del) 50.04373669632379)
+      (>< 50.24373669632379 (get-var @thunder_trigger_del) 59.80944038257429)
+      (>< 60.00944038257429 (get-var @thunder_trigger_del) 69.06643868498185)
+      (>< 69.26643868498185 (get-var @thunder_trigger_del) 72.47274742974953)
+      (>< 72.67274742974953 (get-var @thunder_trigger_del) 72.8)
+    )
+  )
+)
+
+(define thunder_position
+  (last
+    (set-var @thunder_position_pos (position 0.0 0.0 0.0))
+    (set-var @thunder_position_del (get_thunder_time_del))
+    (set-var-if (>< 11.151401601357671 (get-var @thunder_position_del) 17.76907963351533) @thunder_position_pos (position -0.2472737415060567 0.5431689062129608 0.8023859645364017))
+    (set-var-if (>< 17.76907963351533 (get-var @thunder_position_del) 24.862805960724053) @thunder_position_pos (position 0.7112674160741931 -0.1713594622613274 0.6817144545369781))
+    (set-var-if (>< 24.862805960724053 (get-var @thunder_position_del) 34.093612357252645) @thunder_position_pos (position 0.22358491193535232 -0.6777989663320194 0.7004272613156248))
+    (set-var-if (>< 34.093612357252645 (get-var @thunder_position_del) 44.0275786123081) @thunder_position_pos (position -0.1404935412474844 0.5200239725748876 0.8425180311513659))
+    (set-var-if (>< 44.0275786123081 (get-var @thunder_position_del) 50.24373669632379) @thunder_position_pos (position 0.38284458562548007 0.5484848063912929 0.7433669621493547))
+    (set-var-if (>< 50.24373669632379 (get-var @thunder_position_del) 60.00944038257429) @thunder_position_pos (position 0.6153413875807651 -0.3265053035064821 0.7174602870628582))
+    (set-var-if (>< 60.00944038257429 (get-var @thunder_position_del) 69.26643868498185) @thunder_position_pos (position 0.11064995497512908 -0.8195795202562441 0.5621796843007996))
+    (set-var-if (>< 69.26643868498185 (get-var @thunder_position_del) 72.67274742974953) @thunder_position_pos (position -0.5155130806760961 -0.7176347437892848 0.46823780086439865))
+    (set-var-if (>< 72.67274742974953 (get-var @thunder_position_del) 73.0) @thunder_position_pos (position -0.09529174938829336 0.3997067337476896 0.9116764829122622))
+    (get-var @thunder_position_pos)
+  )
+)
+
+(define thunder_volume
+  (last
+    (set-var @thunder_volume_rv 0.0)
+    (set-var @thunder_volume_del (get_thunder_time_del))
+    (set-var-if (>< 11.151401601357671 (get-var @thunder_volume_del) 17.76907963351533) @thunder_volume_rv 91.41481134188722)
+    (set-var-if (>< 17.76907963351533 (get-var @thunder_volume_del) 24.862805960724053) @thunder_volume_rv 93.89131385563103)
+    (set-var-if (>< 24.862805960724053 (get-var @thunder_volume_del) 34.093612357252645) @thunder_volume_rv 90.47477488058458)
+    (set-var-if (>< 34.093612357252645 (get-var @thunder_volume_del) 44.0275786123081) @thunder_volume_rv 89.61244572045074)
+    (set-var-if (>< 44.0275786123081 (get-var @thunder_volume_del) 50.24373669632379) @thunder_volume_rv 92.9946258794777)
+    (set-var-if (>< 50.24373669632379 (get-var @thunder_volume_del) 60.00944038257429) @thunder_volume_rv 95.77201517056258)
+    (set-var-if (>< 60.00944038257429 (get-var @thunder_volume_del) 69.26643868498185) @thunder_volume_rv 89.42825450064201)
+    (set-var-if (>< 69.26643868498185 (get-var @thunder_volume_del) 72.67274742974953) @thunder_volume_rv 87.07666945280917)
+    (set-var-if (>< 72.67274742974953 (get-var @thunder_volume_del) 73.0) @thunder_volume_rv 94.90773767384717)
+    (get-var @thunder_volume_rv)
+  )
+)
+
+(define thunder_state (and (thunder_enable) (thunder_trigger)))
+
+(define-sound $sound "Environment\Thunder1.wav" (to-completion) (no-loop) 0 0 (relative)
+  (set-sound-position  $sound (thunder_position))
+  (set-sound-volume    $sound (thunder_volume))
+  (set-sound-state     $sound (thunder_state))
+)

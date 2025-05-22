@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1952525123" name="t_car_exterior">
+		<mesh_name>../vehicles/t_car/graphics/t_car_exterior.mesh</mesh_name>
+		<surface name="indicator_l_red_dm_train" enabled="0" max_visible_distance="800" max_fade_distance="5" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_l_white_dm_train" enabled="0" max_visible_distance="800" max_fade_distance="5" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_r_red_dm_train" enabled="0" max_visible_distance="800" max_fade_distance="5" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="indicator_r_white_dm_train" enabled="0" max_visible_distance="800" max_fade_distance="5" material="da107a51465706e52ddd02aaca15fd59d79ffac8" property="surface_base"/>
+		<surface name="pantograph_down_m_car" max_visible_distance="800" max_fade_distance="5" material="38b69e845ccb4978425c280a64aaddb3b71a5f83" property="surface_base"/>
+		<surface name="pantograph_up_m_car" max_visible_distance="800" max_fade_distance="5" material="38b69e845ccb4978425c280a64aaddb3b71a5f83" property="surface_base"/>
+		<surface name="t_car_exterior_dm_train" max_visible_distance="800" max_fade_distance="5" material="4097d46186f50c4413e3938bba4189dd4e080f35" property="surface_base"/>
+		<surface name="t_car_exterior_glass" max_visible_distance="800" max_fade_distance="5" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="1338390481" name="t_car_interior">
+			<reference>../vehicles/m_car/graphics/m_car_interior.node</reference>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="477033867" name="doors">
+			<reference>../vehicles/m_car/graphics/m_car_door.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1779174136" name="passengers">
+			<reference>../vehicles/m_car/graphics/passengers.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1681398640" enabled="0" name="cab_fire">
+			<reference>../features/fire/graphics/cab_fire_small.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1.00000005961 0.0 -1.24873414571 -9.75822313864 1.12282817824 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1487303152" name="headlights_particle">
+			<transform>1.00000005961 0 0 0.0 0 1.00000005961 0 0.0 0 0 1.00000005961 0.0 0 0 4.37905848411e-047 1.0</transform>
+			<node type="ObjectVolumeOmni" id="808781032" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>8.94069266622e-007 -1.32350921755e-023 0.999999344344 0.0 1.32347293971e-023 1 1.32350878065e-023 0.0 -0.999999344349 1.32346346971e-023 8.94069156483e-007 0.0 -1.513 -3.59988442005 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="543373209" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>1.07288293805e-006 -3.97046512904e-023 0.999999284739 0.0 3.97046857036e-023 1 3.97046339052e-023 0.0 -0.999999284745 3.97045409111e-023 1.07288287409e-006 0.0 -1.513 -8.82818103011 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="354984003" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="49ff73251c2b848f629bc8b0122cc00f62e8e99e" property="surface_base"/>
+				<transform>9.11950173333e-006 -5.95565343642e-023 0.999998867507 0.0 5.95576286167e-023 1 5.95560547109e-023 0.0 -0.999998867512 5.95569438491e-023 9.11950118971e-006 0.0 -1.51300973963 -11.4417093351 3.26100973973 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1493972140" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>5.96046447754e-008 3.62155321892e-031 0.999999880786 0.0 -2.65010317214e-031 1 1.57234133737e-033 0.0 -0.999999880791 -8.03713104035e-029 5.96046376697e-008 0.0 -1.513 -14.057 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="670927445" enabled="0" collider="0" name="indicator_LHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>2.56299616552e-006 -9.59520683516e-023 0.999998390669 0.0 1.19114911189e-022 1 9.59519091691e-023 0.0 -0.999998390675 1.19114412592e-022 2.56299578537e-006 0.0 -1.513 -19.2723012488 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1392807925" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>9.29832023644e-006 -1.32309785903e-023 -0.999999403949 0.0 1.32307235609e-023 1 -1.32308610863e-023 0.0 0.999999403954 -1.32305117151e-023 9.29831877267e-006 0.0 1.51303246594 -3.59988442006 3.26103571184 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="1142419576" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>5.96046447754e-008 3.23443328139e-032 -0.999999880786 0.0 -2.65010317214e-031 1 -3.92858087761e-031 0.0 0.999999880791 8.03713103997e-029 5.96046376697e-008 0.0 1.513 -14.057 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="73168320" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="49ff73251c2b848f629bc8b0122cc00f62e8e99e" property="surface_base"/>
+				<transform>5.96046447754e-008 3.23443328139e-032 -0.999999880786 0.0 -2.65010317214e-031 1 -3.92858087761e-031 0.0 0.999999880791 8.03713103997e-029 5.96046376697e-008 0.0 1.513 -11.442 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="604280172" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>-1.72853472265e-005 2.22754258317e-032 -0.999999821181 0.0 5.23850682047e-031 1 -1.18171889894e-030 0.0 0.999999940396 7.83991930626e-029 -1.72853461961e-005 0.0 1.513 -8.82800000001 3.261 1.0</transform>
+			</node>
+			<node type="ObjectVolumeOmni" id="823491554" enabled="0" collider="0" name="indicator_RHS_particle">
+				<width>0.00100000005</width>
+				<height>0.00100000005</height>
+				<radius>0.0500000007</radius>
+				<attenuation>0.100000001</attenuation>
+				<surface name="volume" material="51d42054356d03d326192b95e502c998b153a433" property="surface_base"/>
+				<transform>3.57627365588e-006 -3.30832825294e-023 -0.999998450274 0.0 -1.3235246787e-022 1 -3.30837933497e-023 0.0 0.999998450279 1.32352461989e-022 3.57627321533e-006 0.0 1.51302867824 -19.2723012488 3.2610319242 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

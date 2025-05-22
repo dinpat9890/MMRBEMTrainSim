@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Splashscreens                                                           -->
+<!-- ======================================================================= -->
+<project name="Splashscreens" default="build.jar" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" >
+    <property name="jar.base.name" value="splashscreens" />
+    <property file="build.properties"/>
+
+    <import file="../../../ant.common_properties.xml" />
+
+    <!-- Path of this directory -->
+    <dirname property="this.path" file="${ant.file}"/>
+    <!-- Name of this directory (not a path) -->
+    <basename property="this.dir" file="${this.path}"/>
+    <!-- Name of this module (as published in Ivy) -->
+    <property name="module.name" value="${this.dir}"/>
+
+    <!-- Import Properties from root path.root directory -->
+    <property file="${path.root}/build.properties"/>
+
+    <path id="project.classpath" />
+
+    <!-- As much as possible, this should be standard -->
+    <import file="${dir.deps.processes}/builder/builder.software.jar.xml" as="builder" />
+    <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+
+    <target name="build.all" depends="builder.build.jar" />
+
+    <target name="deploy.all" depends="packager.deploy.all" description="Deploys build artefacts." >
+        <copy todir="${dir.deploy}/Data/Images" flatten="true" overwrite="true">
+            <fileset dir=".">
+                <include name="**/*.jpg"/>
+                <include name="**/*.jpeg"/>
+                <include name="**/*.png"/>
+            </fileset>
+        </copy>
+    </target>
+</project>

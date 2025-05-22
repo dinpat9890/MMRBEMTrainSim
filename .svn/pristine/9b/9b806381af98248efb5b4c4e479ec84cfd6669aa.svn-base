@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+    <layer name="Project">
+        <object_class class="PAPIS"       constant_name="PAPIS" />
+
+        <!-- PAPIS inputs data from UI -->
+        <object_class class="PAPISInputs" constant_name="PAPIS_INPUTS">
+            <!-- PAPIS input data May be not needed let it be here till confirm from front end side-->
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Inputs"                                      constant_name="IO_CONTROLLER_CLASS_INPUTS_TAG"                       default="0.0" delta="0.5" />
+            <object_number name="Class Inputs"                                      constant_name="CLASS_INPUTS"                                         default="0.0" delta="0.5" />
+            
+            <!-- Screen Change  requests -->
+            <object_number name="Screen Change Request"                        		constant_name="SCREEN_CHANGE_REQUEST"                        		 default="0.0" delta="0.5" />
+            
+            <!-- Main interface Screen Buttons -->
+            <object_number name="Language Setting Button"                        	constant_name="LANG_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="System Setting Setting Button"                        constant_name="SYS_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Special Info Screen Button"                        constant_name="SPC_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Emergency Info Screen Button"                        constant_name="EMG_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Self Test and Failure Matrix Screen Button"		constant_name="FAULT_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Cab-to-Cab Intercom Button"                        constant_name="CC_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Hang Up Emergency Intercom Button"            		constant_name="CH_CHG_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Passenger-to-Cab Intercom Button"            		constant_name="PC_BUTTON"                                    		 default="0.0" delta="0.5" />
+
+            <object_number name="Mute Button"                                       constant_name="MUTE_BUTTON"                                    		 default="0.0" delta="0.5" />
+
+            <!-- System Setting Screen Buttons and Requests-->
+            <object_number name="Train Id Setting Screen Button"            		constant_name="TRAIN_ID_SCREEN_BUTTON"                        		 default="0.0" delta="0.5" />            
+            <object_number name="Start Station Setting Screen Button"            	constant_name="START_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Setting Screen Button"            constant_name="TERMINAL_STATION_SCREEN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Next Station Setting Screen Button"            	constant_name="NEXT_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Setting Screen Button"                        constant_name="ROUTE_SCREEN_BUTTON"                        	 		 default="0.0" delta="0.5" />
+            <object_number name="Skip Station Setting Screen Button"            	constant_name="SKIP_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Setting Screen Button"            		constant_name="MANUAL_MODE_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Volume Setting Button"                        		constant_name="VOLUME_SETTING_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="System Screen OK Button"                        	constant_name="SYSTEM_SCREEN_OK_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="System Screen Back Button"                        	constant_name="SYSTEM_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />	
+            <object_number name="Mode Selection Request"                        	constant_name="MODE_SELECTION_REQUEST"                        	 	 default="0.0" delta="0.5" />
+            
+            <!--Train Id Setting Screen Buttons -->
+            <object_number name="Keypad Clear Button"                         		constant_name="KEYPAD_CLEAR_BUTTON"                         		 default="0.0" delta="0.5" />
+            <object_number name="Keypad KB Button"                                     constant_name="KEYPAD_KB_BUTTON"                                      default="0.0" delta="0.5" />
+            <object_number name="Keypad 0 Button"                                     constant_name="KEYPAD_0_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 1 Button"                                     constant_name="KEYPAD_1_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 2 Button"                                     constant_name="KEYPAD_2_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 3 Button"                                     constant_name="KEYPAD_3_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 4 Button"                                     constant_name="KEYPAD_4_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 5 Button"                                     constant_name="KEYPAD_5_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 6 Button"                                     constant_name="KEYPAD_6_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 7 Button"                                     constant_name="KEYPAD_7_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 8 Button"                                     constant_name="KEYPAD_8_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 9 Button"                                     constant_name="KEYPAD_9_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Screen OK Button"                        	constant_name="TRAIN_ID_SCREEN_OK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Screen Back Button"                        constant_name="TRAIN_ID_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Keypad Button Request"            		constant_name="TRAIN_ID_KEYPAD_BUTTON_REQUEST"                         default="0.0" delta="0.5" />	
+            <object_number name="Train Id Change Request"                        	constant_name="TRAIN_ID_CHANGE_REQUEST"                         		 default="0.0" delta="0.5" />            
+            
+            <!--Route Setting Screen Buttons and Request -->
+            <object_number name="Route Screen Back Button"                        	constant_name="ROUTE_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen OK Button"                        	constant_name="ROUTE_SCREEN_OK_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Up Button"                        	constant_name="ROUTE_SCREEN_UP_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Down Button"                        	constant_name="ROUTE_SCREEN_DOWN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Direction Request"            		constant_name="ROUTE_DIRECTION_REQUEST"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Selected Route Id Request"                        	constant_name="SELECTED_ROUTE_ID_REQUEST"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Up Button Pressed"            		constant_name="ROUTE_SCREEN_UP_PRESSED"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Down Button Pressed"            		constant_name="ROUTE_SCREEN_DOWN_PRESSED"                        	 default="0.0" delta="0.5" />
+            
+            <!--Start Station Setting Screen Buttons and Request -->
+            <object_number name="Start Station Screen Back Button"            		constant_name="START_STATION_SCREEN_BACK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen OK Button"            		constant_name="START_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen Up Button"            		constant_name="START_STATION_SCREEN_UP_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen Down Button"            		constant_name="START_STATION_SCREEN_DOWN_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Selected Start Station Id Request"            		constant_name="SELECTED_START_ST_ID_REQUEST"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Station Selection Screen Up Button Pressed"		constant_name="STATION_SELECTION_SCREN_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Station Selection Screen Down Button Pressed"		constant_name="STATION_SELECTION_SCREN_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+
+            <!--Terminal Station Setting Screen Buttons and Request -->
+            <object_number name="Terminal Station Screen Back Button"            	constant_name="TERMINAL_STATION_SCREEN_BACK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen OK Button"            		constant_name="TERMINAL_STATION_SCREEN_OK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen Up Button"            		constant_name="TERMINAL_STATION_SCREEN_UP_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen Down Button"            	constant_name="TERMINAL_STATION_SCREEN_DOWN_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Selected Terminal Station Id Request"            	constant_name="SELECTED_TERMINAL_ST_ID_REQUEST"            		 	 default="0.0" delta="0.5" />
+		
+            <!--Next Station Setting Screen Buttons and Request -->
+            <object_number name="Next Station Screen Back Button"            		constant_name="NEXT_STATION_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen OK Button"                        constant_name="NEXT_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen Up Button"                        constant_name="NEXT_STATION_SCREEN_UP_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen Down Button"            		constant_name="NEXT_STATION_SCREEN_DOWN_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Selected Next Station Id Request"            		constant_name="SELECTED_NEXT_ST_ID_REQUEST"            		 	 	 default="0.0" delta="0.5" />
+            
+            <!-- Skip Station Setting Screen Buttons and Requests -->
+            <object_number name="Skip Station Screen Back Button"            		constant_name="SKIP_STATION_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Station Screen OK Button"                        constant_name="SKIP_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Skip List Add Arrow Button"                        constant_name="SKIP_LIST_ADD_STATION_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip List Remove Arrow Button"                        constant_name="SKIP_LIST_REMOVE_STATION_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station List Up Button Pressed"		constant_name="SKIP_SCREEN_STATION_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station List Down Button Pressed"		constant_name="SKIP_SCREEN_STATION_LIST_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Skip List Up Button Pressed"            constant_name="SKIP_SCREEN_SKIP_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Skip List Down Button Pressed"            constant_name="SKIP_SCREEN_SKIP_LIST_DOWN_PRESSED"            	 	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station Id Added To Skip List"            constant_name="STATION_ID_ADDED_TO_SKIP_LIST"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station Id Removed From Skip List"		constant_name="STATION_ID_REMOVED_FROM_SKIP_LIST"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Ok Button Pressed"                        constant_name="SKIP_SCREEN_OK_BUTTON_PRESSED"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Back Button Pressed"            		constant_name="SKIP_SCREEN_BACK_BUTTON_PRESSED"                         default="0.0" delta="0.5" />
+            
+            <!-- Manual Mode Setting Screen Buttons and Requests -->
+            <object_number name="Manual Mode Back Button"                        	constant_name="MANUAL_MODE_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Door Open Left Button"            		constant_name="MANUAL_MODE_DOOR_OPEN_LEFT_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Door Open Right Button"            	constant_name="MANUAL_MODE_DOOR_OPEN_RIGHT_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Arrival Message Button"            	constant_name="MANUAL_MODE_ARRIVAL_MESSAGE_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Departure Message Button"            	constant_name="MANUAL_MODE_DEPARTURE_MESSAGE_BUTTON"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Station List Up Button Pressed"		constant_name="MANUAL_MODE_STATION_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Station List Down Button Pressed"		constant_name="MANUAL_MODE_STATION_LIST_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Current Station Id"            constant_name="MANUAL_MODE_SELECTED_CURRENT_STATION_ID"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Door Opening Side"            constant_name="MANUAL_MODE_SELECTED_DOOR_OPENING_SIDE"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Message Type"            		constant_name="MANUAL_MODE_SELECTED_MESSAGE_TYPE"            	 	 default="-1.0" delta="0.5" />
+            
+            <!-- Special Information Screen Buttons and Requests -->
+            <object_number name="Spc Info Screen Back Button"                       constant_name="SPC_INFO_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen OK Button"                         constant_name="SPC_INFO_SCREEN_OK_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Stop Button"                       constant_name="SPC_INFO_SCREEN_STOP_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Up Button"                         constant_name="SPC_INFO_SCREEN_UP_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Down Button"                       constant_name="SPC_INFO_SCREEN_DOWN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info ID Request"                               constant_name="SPC_INFO_ID_REQ"                                     default="0.0" delta="0.5" />
+            <object_number name="Spc Info No Of Times Played"                       constant_name="SPC_INFO_NO_OF_TIMES"                                default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen OK Button Pressed"                 constant_name="SPC_INFO_SCREEN_OK_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Stop Button Pressed"               constant_name="SPC_INFO_SCREEN_STOP_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Up Button Pressed"                 constant_name="SPC_INFO_SCREEN_UP_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Down Button Pressed"               constant_name="SPC_INFO_SCREEN_DOWN_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Current Special Message"                           constant_name="CURRENT_SPECIAL_MESSAGE"                             default="0.0" delta="0.5" />
+
+            <!-- Emergency Information Screen Buttons and Requests -->
+            <object_number name="Emg Info Screen Back Button"                       constant_name="EMG_INFO_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen OK Button"                         constant_name="EMG_INFO_SCREEN_OK_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Stop Button"                       constant_name="EMG_INFO_SCREEN_STOP_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Up Button"                         constant_name="EMG_INFO_SCREEN_UP_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Down Button"                       constant_name="EMG_INFO_SCREEN_DOWN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info ID Request"                               constant_name="EMG_INFO_ID_REQ"                                     default="0.0" delta="0.5" />
+            <object_number name="Emg Info No Of Times Played"                       constant_name="EMG_INFO_NO_OF_TIMES"                                default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen OK Button Pressed"                 constant_name="EMG_INFO_SCREEN_OK_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Stop Button Pressed"               constant_name="EMG_INFO_SCREEN_STOP_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Up Button Pressed"                 constant_name="EMG_INFO_SCREEN_UP_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Down Button Pressed"               constant_name="EMG_INFO_SCREEN_DOWN_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Current Emergency Message"                         constant_name="CURRENT_EMERGENCY_MESSAGE"                           default="0.0" delta="0.5" />
+ 
+            <!-- Passenger Alarm Screen Buttons and Requests -->
+            <object_number name="Passenger Alarm Connect Request"                    constant_name="PASSENGER_ALARM_CONNECT_REQUEST"            	         default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Disconnect Request"                constant_name="PASSENGER_ALARM_DISCONNECT_REQUEST"            	     default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Reset Request"                        constant_name="PASSENGER_ALARM_RESET_REQUEST"            	         default="0.0" delta="0.5" />		
+            <object_number name="Passenger Alarm Clear All Request"                    constant_name="PASSENGER_ALARM_CLEAR_ALL_REQUEST"            	     default="0.0" delta="0.5" />
+			<object_number name="Passenger Alarm Connect"                    constant_name="PASSENGER_ALARM_CONNECT"            	         default="0.0" delta="0.5" />
+		
+            <object_number name="Up Arrow Button "            	               constant_name="UP_ARROW_BUTTON"            	           default="0.0" delta="0.5" />
+            <object_number name="Down Arrow Button "            	           constant_name="DOWN_ARROW_BUTTON"                        default="0.0" delta="0.5" />
+                       
+           <object_number name="Start Station Selected"            	           constant_name="START_STATION_SELECTED"                           default="0.0" delta="0.5" />
+           <object_number name="Next Station Selected"            	           constant_name="NEXT_STATION_SELECTED"                               default="0.0" delta="0.5" />
+           <object_number name="Terminal Station Selected"            	       constant_name="TERMINAL_STATION_SELECTED"                           default="0.0" delta="0.5" />
+
+            <!-- Language Setting Screen Buttons -->
+            <object_number name="Lang Screen OK Button"                             constant_name="LANG_SCREEN_OK_BUTTON"                               default="0.0" delta="0.5" />
+            <object_number name="Lang Screen BACK Button"                           constant_name="LANG_SCREEN_BACK_BUTTON"                             default="0.0" delta="0.5" />
+            
+			<!-- Volume Setting Screen Buttons -->
+            <object_number name="Volume Screen OK Button"                           constant_name="VOLUME_SCREEN_OK_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="Volume Screen BACK Button"                         constant_name="VOLUME_SCREEN_BACK_BUTTON"                           default="0.0" delta="0.5" />
+            
+			<!-- Fault Screen Buttons -->
+            <object_number name="Fault Select Test Button"                         constant_name="FAULT_SELECT_TEST_BUTTON"                            default="0.0" delta="0.5" />
+            <object_number name="Fault Screen BACK Button"                         constant_name="FAULT_SCREEN_BACK_BUTTON"                            default="0.0" delta="0.5" />
+			<object_number name="Fault Screen Up Button"                           constant_name="FAULT_SCREEN_UP_BUTTON"                              default="0.0" delta="0.5" />
+            <object_number name="Fault Screen Down Button"                         constant_name="FAULT_SCREEN_DOWN_BUTTON"                            default="0.0" delta="0.5" />
+
+            <!-- PECU Isolate Screen Buttons -->
+            <object_number name="PECU 1 Car 1 Isolate Button"                      constant_name="PECU_1_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 1 Isolate Button"                      constant_name="PECU_2_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 1 Isolate Button"                      constant_name="PECU_3_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 1 Isolate Button"                      constant_name="PECU_4_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 2 Isolate Button"                      constant_name="PECU_1_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 2 Isolate Button"                      constant_name="PECU_2_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 2 Isolate Button"                      constant_name="PECU_3_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 2 Isolate Button"                      constant_name="PECU_4_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 3 Isolate Button"                      constant_name="PECU_1_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 3 Isolate Button"                      constant_name="PECU_2_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 3 Isolate Button"                      constant_name="PECU_3_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 3 Isolate Button"                      constant_name="PECU_4_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 4 Isolate Button"                      constant_name="PECU_1_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 4 Isolate Button"                      constant_name="PECU_2_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 4 Isolate Button"                      constant_name="PECU_3_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 4 Isolate Button"                      constant_name="PECU_4_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 5 Isolate Button"                      constant_name="PECU_1_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 5 Isolate Button"                      constant_name="PECU_2_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 5 Isolate Button"                      constant_name="PECU_3_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 5 Isolate Button"                      constant_name="PECU_4_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 6 Isolate Button"                      constant_name="PECU_1_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 2 Car 6 Isolate Button"                      constant_name="PECU_2_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 6 Isolate Button"                      constant_name="PECU_3_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 6 Isolate Button"                      constant_name="PECU_4_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 7 Isolate Button"                      constant_name="PECU_1_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 2 Car 7 Isolate Button"                      constant_name="PECU_2_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 7 Isolate Button"                      constant_name="PECU_3_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 7 Isolate Button"                      constant_name="PECU_4_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 8 Isolate Button"                      constant_name="PECU_1_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 2 Car 8 Isolate Button"                      constant_name="PECU_2_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 8 Isolate Button"                      constant_name="PECU_3_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 8 Isolate Button"                      constant_name="PECU_4_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+
+            <object_number name="PECU Isolate Screen BACK Button"                  constant_name="PECU_ISOLATE_SCREEN_BACK_BUTTON"                     default="0.0" delta="0.5" />
+
+            <object_number name="PECU Isolate Id Req"                              constant_name="PECU_ISOLATE_ID_REQ"                                 default="0.0" delta="0.5" />
+            <object_number name="PECU De Isolate Id Req"                           constant_name="PECU_DEISOLATE_ID_REQ"                               default="0.0" delta="0.5" />
+			
+			<object_number name="Passenger Alarm Selected Request"                constant_name="PASSENGER_ALARM_SELECTED_REQUEST"            	     default="-1.0" delta="0.5" />
+			
+			<object_number name="Alarm Button 1"                constant_name="ALARM_BUTTON_1"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 2"                constant_name="ALARM_BUTTON_2"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 3"                constant_name="ALARM_BUTTON_3"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 4"                constant_name="ALARM_BUTTON_4"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 5"                constant_name="ALARM_BUTTON_5"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 6"                constant_name="ALARM_BUTTON_6"            	     default="0.0" delta="0.5" />
+			<object_number name="Number Of PECU calls "            	               constant_name="NUMBER_OF_PECU_CALLS"                                     default="0.0" delta="0.5" />
+			 <object_number name="Cab To Cab Call Disconnect Request"                constant_name="CAB_TO_CAB_CAll_DISCONNECT_REQUEST"            	     default="0.0" delta="0.5" />
+			 
+			  <object_number name="System Screen OK Button Req"                        	constant_name="SYSTEM_SCREEN_OK_BUTTON_REQ"                        	 	 default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <object_class class="PAPISInputsValues"                                       constant_name="PAPIS_INPUTS_VALUES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Values"                                       constant_name="IO_CONTROLLER_CLASS_VALUES_TAG"                      default="0.0" delta="0.5" />
+            <object_number name="Class Values"                                       constant_name="CLASS_VALUES"                                        default="0.0" delta="0.5" />
+              
+            <!-- Screen Change request -->
+            <object_number name="Screen Change Request"                        		constant_name="SCREEN_CHANGE_REQUEST"                        		 default="0.0" delta="0.5" />
+            
+            <!-- Main interface Screen Buttons -->
+            <object_number name="Language Setting Button"                        	constant_name="LANG_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="System Setting Setting Button"                        constant_name="SYS_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Special Info Screen Button"                        constant_name="SPC_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Emergency Info Screen Button"                        constant_name="EMG_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Self Test and Failure Matrix Screen Button"		constant_name="FAULT_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Cab-to-Cab Intercom Button"                        constant_name="CC_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Hang Up Emergency Intercom Button"            		constant_name="CH_CHG_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Passenger-to-Cab Intercom Button"            		constant_name="PC_BUTTON"                                    		 default="0.0" delta="0.5" />
+
+            <object_number name="Mute Button"                                       constant_name="MUTE_BUTTON"                                    		 default="0.0" delta="0.5" />
+            
+            <!-- System Setting Screen Buttons and Requests-->
+            <object_number name="Train Id Setting Screen Button"            		constant_name="TRAIN_ID_SCREEN_BUTTON"                        		 default="0.0" delta="0.5" />            
+            <object_number name="Start Station Setting Screen Button"            	constant_name="START_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Setting Screen Button"            constant_name="TERMINAL_STATION_SCREEN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Next Station Setting Screen Button"            	constant_name="NEXT_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Setting Screen Button"                        constant_name="ROUTE_SCREEN_BUTTON"                        	 		 default="0.0" delta="0.5" />
+            <object_number name="Skip Station Setting Screen Button"            	constant_name="SKIP_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Setting Screen Button"            		constant_name="MANUAL_MODE_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Volume Setting Button"                        		constant_name="VOLUME_SETTING_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="System Screen OK Button"                        	constant_name="SYSTEM_SCREEN_OK_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="System Screen Back Button"                        	constant_name="SYSTEM_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />	
+            <object_number name="Mode Selection Request"                        	constant_name="MODE_SELECTION_REQUEST"                        	 	 default="0.0" delta="0.5" />
+            
+            <!--Train Id Setting Screen Buttons -->
+            <object_number name="Keypad Clear Button"                         		constant_name="KEYPAD_CLEAR_BUTTON"                         		 default="0.0" delta="0.5" />
+            <object_number name="Keypad KB Button"                                     constant_name="KEYPAD_KB_BUTTON"                                      default="0.0" delta="0.5" />
+            <object_number name="Keypad 0 Button"                                     constant_name="KEYPAD_0_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 1 Button"                                     constant_name="KEYPAD_1_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 2 Button"                                     constant_name="KEYPAD_2_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 3 Button"                                     constant_name="KEYPAD_3_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 4 Button"                                     constant_name="KEYPAD_4_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 5 Button"                                     constant_name="KEYPAD_5_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 6 Button"                                     constant_name="KEYPAD_6_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 7 Button"                                     constant_name="KEYPAD_7_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 8 Button"                                     constant_name="KEYPAD_8_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 9 Button"                                     constant_name="KEYPAD_9_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Screen OK Button"                        	constant_name="TRAIN_ID_SCREEN_OK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Screen Back Button"                        constant_name="TRAIN_ID_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Keypad Button Request"            		constant_name="TRAIN_ID_KEYPAD_BUTTON_REQUEST"                         default="0.0" delta="0.5" />	
+            <object_number name="Train Id Change Request"                        	constant_name="TRAIN_ID_CHANGE_REQUEST"                         		 default="0.0" delta="0.5" />            
+            
+            <!--Route Setting Screen Buttons and Request -->
+            <object_number name="Route Screen Back Button"                        	constant_name="ROUTE_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen OK Button"                        	constant_name="ROUTE_SCREEN_OK_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Up Button"                        	constant_name="ROUTE_SCREEN_UP_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Down Button"                        	constant_name="ROUTE_SCREEN_DOWN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Direction Request"            		constant_name="ROUTE_DIRECTION_REQUEST"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Selected Route Id Request"                        	constant_name="SELECTED_ROUTE_ID_REQUEST"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Up Button Pressed"            		constant_name="ROUTE_SCREEN_UP_PRESSED"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Down Button Pressed"            		constant_name="ROUTE_SCREEN_DOWN_PRESSED"                        	 default="0.0" delta="0.5" />
+            
+            <!--Start Station Setting Screen Buttons and Request -->
+            <object_number name="Start Station Screen Back Button"            		constant_name="START_STATION_SCREEN_BACK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen OK Button"            		constant_name="START_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen Up Button"            		constant_name="START_STATION_SCREEN_UP_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen Down Button"            		constant_name="START_STATION_SCREEN_DOWN_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Selected Start Station Id Request"            		constant_name="SELECTED_START_ST_ID_REQUEST"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Station Selection Screen Up Button Pressed"		constant_name="STATION_SELECTION_SCREN_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Station Selection Screen Down Button Pressed"		constant_name="STATION_SELECTION_SCREN_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+
+            <!--Terminal Station Setting Screen Buttons and Request -->
+            <object_number name="Terminal Station Screen Back Button"            	constant_name="TERMINAL_STATION_SCREEN_BACK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen OK Button"            		constant_name="TERMINAL_STATION_SCREEN_OK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen Up Button"            		constant_name="TERMINAL_STATION_SCREEN_UP_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen Down Button"            	constant_name="TERMINAL_STATION_SCREEN_DOWN_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Selected Terminal Station Id Request"            	constant_name="SELECTED_TERMINAL_ST_ID_REQUEST"            		 	 default="0.0" delta="0.5" />
+		
+            <!--Next Station Setting Screen Buttons and Request -->
+            <object_number name="Next Station Screen Back Button"            		constant_name="NEXT_STATION_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen OK Button"                        constant_name="NEXT_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen Up Button"                        constant_name="NEXT_STATION_SCREEN_UP_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen Down Button"            		constant_name="NEXT_STATION_SCREEN_DOWN_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Selected Next Station Id Request"            		constant_name="SELECTED_NEXT_ST_ID_REQUEST"            		 	 	 default="0.0" delta="0.5" />
+            
+            <!-- Skip Station Setting Screen Buttons and Requests -->
+            <object_number name="Skip Station Screen Back Button"            		constant_name="SKIP_STATION_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Station Screen OK Button"                        constant_name="SKIP_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Skip List Add Arrow Button"                        constant_name="SKIP_LIST_ADD_STATION_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip List Remove Arrow Button"                        constant_name="SKIP_LIST_REMOVE_STATION_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station List Up Button Pressed"		constant_name="SKIP_SCREEN_STATION_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station List Down Button Pressed"		constant_name="SKIP_SCREEN_STATION_LIST_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Skip List Up Button Pressed"            constant_name="SKIP_SCREEN_SKIP_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Skip List Down Button Pressed"            constant_name="SKIP_SCREEN_SKIP_LIST_DOWN_PRESSED"            	 	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station Id Added To Skip List"            constant_name="STATION_ID_ADDED_TO_SKIP_LIST"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station Id Removed From Skip List"		constant_name="STATION_ID_REMOVED_FROM_SKIP_LIST"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Ok Button Pressed"                        constant_name="SKIP_SCREEN_OK_BUTTON_PRESSED"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Back Button Pressed"            		constant_name="SKIP_SCREEN_BACK_BUTTON_PRESSED"                         default="0.0" delta="0.5" />
+            
+            <!-- Manual Mode Setting Screen Buttons and Requests -->
+            <object_number name="Manual Mode Back Button"                        	constant_name="MANUAL_MODE_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Door Open Left Button"            		constant_name="MANUAL_MODE_DOOR_OPEN_LEFT_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Door Open Right Button"            	constant_name="MANUAL_MODE_DOOR_OPEN_RIGHT_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Arrival Message Button"            	constant_name="MANUAL_MODE_ARRIVAL_MESSAGE_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Departure Message Button"            	constant_name="MANUAL_MODE_DEPARTURE_MESSAGE_BUTTON"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Station List Up Button Pressed"		constant_name="MANUAL_MODE_STATION_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Station List Down Button Pressed"		constant_name="MANUAL_MODE_STATION_LIST_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Current Station Id"            constant_name="MANUAL_MODE_SELECTED_CURRENT_STATION_ID"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Door Opening Side"            constant_name="MANUAL_MODE_SELECTED_DOOR_OPENING_SIDE"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Message Type"            		constant_name="MANUAL_MODE_SELECTED_MESSAGE_TYPE"            	 	 default="-1.0" delta="0.5" />
+            
+            <!-- Special Information Screen Buttons and Requests -->
+            <object_number name="Spc Info Screen Back Button"                       constant_name="SPC_INFO_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen OK Button"                         constant_name="SPC_INFO_SCREEN_OK_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Stop Button"                       constant_name="SPC_INFO_SCREEN_STOP_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Up Button"                         constant_name="SPC_INFO_SCREEN_UP_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Down Button"                       constant_name="SPC_INFO_SCREEN_DOWN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info ID Request"                               constant_name="SPC_INFO_ID_REQ"                                     default="0.0" delta="0.5" />
+            <object_number name="Spc Info No Of Times Played"                       constant_name="SPC_INFO_NO_OF_TIMES"                                default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen OK Button Pressed"                 constant_name="SPC_INFO_SCREEN_OK_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Stop Button Pressed"               constant_name="SPC_INFO_SCREEN_STOP_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Up Button Pressed"                 constant_name="SPC_INFO_SCREEN_UP_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Down Button Pressed"               constant_name="SPC_INFO_SCREEN_DOWN_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Current Special Message"                           constant_name="CURRENT_SPECIAL_MESSAGE"                             default="0.0" delta="0.5" />
+
+            <!-- Emergency Information Screen Buttons and Requests -->
+            <object_number name="Emg Info Screen Back Button"                       constant_name="EMG_INFO_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen OK Button"                         constant_name="EMG_INFO_SCREEN_OK_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Stop Button"                       constant_name="EMG_INFO_SCREEN_STOP_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Up Button"                         constant_name="EMG_INFO_SCREEN_UP_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Down Button"                       constant_name="EMG_INFO_SCREEN_DOWN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info ID Request"                               constant_name="EMG_INFO_ID_REQ"                                     default="0.0" delta="0.5" />
+            <object_number name="Emg Info No Of Times Played"                       constant_name="EMG_INFO_NO_OF_TIMES"                                default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen OK Button Pressed"                 constant_name="EMG_INFO_SCREEN_OK_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Stop Button Pressed"               constant_name="EMG_INFO_SCREEN_STOP_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Up Button Pressed"                 constant_name="EMG_INFO_SCREEN_UP_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Down Button Pressed"               constant_name="EMG_INFO_SCREEN_DOWN_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Current Emergency Message"                         constant_name="CURRENT_EMERGENCY_MESSAGE"                           default="0.0" delta="0.5" />
+
+            <!-- Passenger Alarm Screen Buttons and Requests -->
+        	<object_number name="Passenger Alarm Connect Request"                    constant_name="PASSENGER_ALARM_CONNECT_REQUEST"            	         default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Disconnect Request"                constant_name="PASSENGER_ALARM_DISCONNECT_REQUEST"            	     default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Reset Request"                        constant_name="PASSENGER_ALARM_RESET_REQUEST"            	         default="0.0" delta="0.5" />		
+            <object_number name="Passenger Alarm Clear All Request"                    constant_name="PASSENGER_ALARM_CLEAR_ALL_REQUEST"            	     default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Connect"                    constant_name="PASSENGER_ALARM_CONNECT"            	         default="0.0" delta="0.5" />
+			
+            <object_number name="Up Arrow Button "            	                    constant_name="UP_ARROW_BUTTON"            	                       default="0.0" delta="0.5" />
+            <object_number name="Down Arrow Button "            	                constant_name="DOWN_ARROW_BUTTON"                                 default="0.0" delta="0.5" />
+            
+            <object_number name="Start Station Selected"            	           constant_name="START_STATION_SELECTED"                           default="0.0" delta="0.5" />
+            <object_number name="Next Station Selected"            	           constant_name="NEXT_STATION_SELECTED"                               default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Selected"            	       constant_name="TERMINAL_STATION_SELECTED"                           default="0.0" delta="0.5" />
+            
+            <!-- Language Setting Screen Buttons -->
+            <object_number name="Lang Screen OK Button"                             constant_name="LANG_SCREEN_OK_BUTTON"                               default="0.0" delta="0.5" />
+            <object_number name="Lang Screen BACK Button"                           constant_name="LANG_SCREEN_BACK_BUTTON"                             default="0.0" delta="0.5" />
+            
+			<!-- Volume Setting Screen Buttons -->
+            <object_number name="Volume Screen OK Button"                           constant_name="VOLUME_SCREEN_OK_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="Volume Screen BACK Button"                         constant_name="VOLUME_SCREEN_BACK_BUTTON"                           default="0.0" delta="0.5" />
+       
+			<!-- Fault Screen Buttons -->
+            <object_number name="Fault Select Test Button"                         constant_name="FAULT_SELECT_TEST_BUTTON"                            default="0.0" delta="0.5" />
+            <object_number name="Fault Screen BACK Button"                         constant_name="FAULT_SCREEN_BACK_BUTTON"                            default="0.0" delta="0.5" />
+			<object_number name="Fault Screen Up Button"                           constant_name="FAULT_SCREEN_UP_BUTTON"                              default="0.0" delta="0.5" />
+            <object_number name="Fault Screen Down Button"                         constant_name="FAULT_SCREEN_DOWN_BUTTON"                            default="0.0" delta="0.5" />
+        
+		    <!-- PECU Isolate Screen Buttons -->
+            <object_number name="PECU 1 Car 1 Isolate Button"                      constant_name="PECU_1_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 1 Isolate Button"                      constant_name="PECU_2_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 1 Isolate Button"                      constant_name="PECU_3_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 1 Isolate Button"                      constant_name="PECU_4_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 2 Isolate Button"                      constant_name="PECU_1_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 2 Isolate Button"                      constant_name="PECU_2_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 2 Isolate Button"                      constant_name="PECU_3_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 2 Isolate Button"                      constant_name="PECU_4_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 3 Isolate Button"                      constant_name="PECU_1_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 3 Isolate Button"                      constant_name="PECU_2_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 3 Isolate Button"                      constant_name="PECU_3_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 3 Isolate Button"                      constant_name="PECU_4_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 4 Isolate Button"                      constant_name="PECU_1_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 4 Isolate Button"                      constant_name="PECU_2_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 4 Isolate Button"                      constant_name="PECU_3_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 4 Isolate Button"                      constant_name="PECU_4_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 5 Isolate Button"                      constant_name="PECU_1_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 5 Isolate Button"                      constant_name="PECU_2_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 5 Isolate Button"                      constant_name="PECU_3_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 5 Isolate Button"                      constant_name="PECU_4_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 6 Isolate Button"                      constant_name="PECU_1_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 6 Isolate Button"                      constant_name="PECU_2_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 6 Isolate Button"                      constant_name="PECU_3_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 6 Isolate Button"                      constant_name="PECU_4_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 7 Isolate Button"                      constant_name="PECU_1_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 2 Car 7 Isolate Button"                      constant_name="PECU_2_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 7 Isolate Button"                      constant_name="PECU_3_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 7 Isolate Button"                      constant_name="PECU_4_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 8 Isolate Button"                      constant_name="PECU_1_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 2 Car 8 Isolate Button"                      constant_name="PECU_2_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 8 Isolate Button"                      constant_name="PECU_3_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 8 Isolate Button"                      constant_name="PECU_4_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+
+            <object_number name="PECU Isolate Screen BACK Button"                  constant_name="PECU_ISOLATE_SCREEN_BACK_BUTTON"                     default="0.0" delta="0.5" />
+
+            <object_number name="PECU Isolate Id Req"                              constant_name="PECU_ISOLATE_ID_REQ"                                 default="0.0" delta="0.5" />
+            <object_number name="PECU De Isolate Id Req"                           constant_name="PECU_DEISOLATE_ID_REQ"                               default="0.0" delta="0.5" />
+			
+			<object_number name="Passenger Alarm Selected Request"                constant_name="PASSENGER_ALARM_SELECTED_REQUEST"            	     default="-1.0" delta="0.5" />
+			
+			<object_number name="Alarm Button 1"                constant_name="ALARM_BUTTON_1"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 2"                constant_name="ALARM_BUTTON_2"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 3"                constant_name="ALARM_BUTTON_3"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 4"                constant_name="ALARM_BUTTON_4"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 5"                constant_name="ALARM_BUTTON_5"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 6"                constant_name="ALARM_BUTTON_6"            	     default="0.0" delta="0.5" />
+			<object_number name="Number Of PECU calls "            	               constant_name="NUMBER_OF_PECU_CALLS"                                     default="0.0" delta="0.5" />
+		 <object_number name="Cab To Cab Call Disconnect Request"                constant_name="CAB_TO_CAB_CAll_DISCONNECT_REQUEST"            	     default="0.0" delta="0.5" />
+		 <object_number name="System Screen OK Button Req"                        	constant_name="SYSTEM_SCREEN_OK_BUTTON_REQ"                        	 	 default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <object_class class="PAPISInputsModes"                                        constant_name="PAPIS_INPUTS_MODES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Modes"                                        constant_name="IO_CONTROLLER_CLASS_MODES_TAG"                       default="0.0" delta="0.5" />
+            <object_number name="Class Modes"                                        constant_name="CLASS_MODES"                                         default="0.0" delta="0.5" />
+            
+            <!-- Screen Change request -->
+            <object_number name="Screen Change Request"                        		constant_name="SCREEN_CHANGE_REQUEST"                        		 default="0.0" delta="0.5" />
+            
+            <!-- Main interface Screen Buttons -->
+            <object_number name="Language Setting Button"                        	constant_name="LANG_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="System Setting Setting Button"                        constant_name="SYS_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Special Info Screen Button"                        constant_name="SPC_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Emergency Info Screen Button"                        constant_name="EMG_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Self Test and Failure Matrix Screen Button"		constant_name="FAULT_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Cab-to-Cab Intercom Button"                        constant_name="CC_BUTTON"                                    		 default="0.0" delta="0.5" />
+            <object_number name="Hang Up Emergency Intercom Button"            		constant_name="CH_CHG_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Passenger-to-Cab Intercom Button"            		constant_name="PC_BUTTON"                                    		 default="0.0" delta="0.5" />
+
+            <object_number name="Mute Button"                                       constant_name="MUTE_BUTTON"                                    		 default="0.0" delta="0.5" />
+            
+            <!-- System Setting Screen Buttons and Requests-->
+            <object_number name="Train Id Setting Screen Button"            		constant_name="TRAIN_ID_SCREEN_BUTTON"                        		 default="0.0" delta="0.5" />            
+            <object_number name="Start Station Setting Screen Button"            	constant_name="START_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Setting Screen Button"            constant_name="TERMINAL_STATION_SCREEN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Next Station Setting Screen Button"            	constant_name="NEXT_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Setting Screen Button"                        constant_name="ROUTE_SCREEN_BUTTON"                        	 		 default="0.0" delta="0.5" />
+            <object_number name="Skip Station Setting Screen Button"            	constant_name="SKIP_STATION_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Setting Screen Button"            		constant_name="MANUAL_MODE_SCREEN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Volume Setting Button"                        		constant_name="VOLUME_SETTING_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="System Screen OK Button"                        	constant_name="SYSTEM_SCREEN_OK_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="System Screen Back Button"                        	constant_name="SYSTEM_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />	
+            <object_number name="Mode Selection Request"                        	constant_name="MODE_SELECTION_REQUEST"                        	 	 default="0.0" delta="0.5" />
+            
+            <!--Train Id Setting Screen Buttons -->
+            <object_number name="Keypad Clear Button"                         		constant_name="KEYPAD_CLEAR_BUTTON"                         		 default="0.0" delta="0.5" />
+            <object_number name="Keypad KB Button"                                     constant_name="KEYPAD_KB_BUTTON"                                      default="0.0" delta="0.5" />
+            <object_number name="Keypad 0 Button"                                     constant_name="KEYPAD_0_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 1 Button"                                     constant_name="KEYPAD_1_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 2 Button"                                     constant_name="KEYPAD_2_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 3 Button"                                     constant_name="KEYPAD_3_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 4 Button"                                     constant_name="KEYPAD_4_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 5 Button"                                     constant_name="KEYPAD_5_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 6 Button"                                     constant_name="KEYPAD_6_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 7 Button"                                     constant_name="KEYPAD_7_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 8 Button"                                     constant_name="KEYPAD_8_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Keypad 9 Button"                                     constant_name="KEYPAD_9_BUTTON"                                    	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Screen OK Button"                        	constant_name="TRAIN_ID_SCREEN_OK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Screen Back Button"                        constant_name="TRAIN_ID_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Train Id Keypad Button Request"            		constant_name="TRAIN_ID_KEYPAD_BUTTON_REQUEST"                         default="0.0" delta="0.5" />	
+            <object_number name="Train Id Change Request"                        	constant_name="TRAIN_ID_CHANGE_REQUEST"                         		 default="0.0" delta="0.5" />            
+            
+            <!--Route Setting Screen Buttons and Request -->
+            <object_number name="Route Screen Back Button"                        	constant_name="ROUTE_SCREEN_BACK_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen OK Button"                        	constant_name="ROUTE_SCREEN_OK_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Up Button"                        	constant_name="ROUTE_SCREEN_UP_BUTTON"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Down Button"                        	constant_name="ROUTE_SCREEN_DOWN_BUTTON"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Direction Request"            		constant_name="ROUTE_DIRECTION_REQUEST"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Selected Route Id Request"                        	constant_name="SELECTED_ROUTE_ID_REQUEST"                        	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Up Button Pressed"            		constant_name="ROUTE_SCREEN_UP_PRESSED"                        	 	 default="0.0" delta="0.5" />
+            <object_number name="Route Screen Down Button Pressed"            		constant_name="ROUTE_SCREEN_DOWN_PRESSED"                        	 default="0.0" delta="0.5" />
+            
+            <!--Start Station Setting Screen Buttons and Request -->
+            <object_number name="Start Station Screen Back Button"            		constant_name="START_STATION_SCREEN_BACK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen OK Button"            		constant_name="START_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen Up Button"            		constant_name="START_STATION_SCREEN_UP_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Start Station Screen Down Button"            		constant_name="START_STATION_SCREEN_DOWN_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Selected Start Station Id Request"            		constant_name="SELECTED_START_ST_ID_REQUEST"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Station Selection Screen Up Button Pressed"		constant_name="STATION_SELECTION_SCREN_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Station Selection Screen Down Button Pressed"		constant_name="STATION_SELECTION_SCREN_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+
+            <!--Terminal Station Setting Screen Buttons and Request -->
+            <object_number name="Terminal Station Screen Back Button"            	constant_name="TERMINAL_STATION_SCREEN_BACK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen OK Button"            		constant_name="TERMINAL_STATION_SCREEN_OK_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen Up Button"            		constant_name="TERMINAL_STATION_SCREEN_UP_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Screen Down Button"            	constant_name="TERMINAL_STATION_SCREEN_DOWN_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Selected Terminal Station Id Request"            	constant_name="SELECTED_TERMINAL_ST_ID_REQUEST"            		 	 default="0.0" delta="0.5" />
+		
+            <!--Next Station Setting Screen Buttons and Request -->
+            <object_number name="Next Station Screen Back Button"            		constant_name="NEXT_STATION_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen OK Button"                        constant_name="NEXT_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen Up Button"                        constant_name="NEXT_STATION_SCREEN_UP_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Next Station Screen Down Button"            		constant_name="NEXT_STATION_SCREEN_DOWN_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Selected Next Station Id Request"            		constant_name="SELECTED_NEXT_ST_ID_REQUEST"            		 	 	 default="0.0" delta="0.5" />
+            
+            <!-- Skip Station Setting Screen Buttons and Requests -->
+            <object_number name="Skip Station Screen Back Button"            		constant_name="SKIP_STATION_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Station Screen OK Button"                        constant_name="SKIP_STATION_SCREEN_OK_BUTTON"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Skip List Add Arrow Button"                        constant_name="SKIP_LIST_ADD_STATION_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip List Remove Arrow Button"                        constant_name="SKIP_LIST_REMOVE_STATION_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station List Up Button Pressed"		constant_name="SKIP_SCREEN_STATION_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station List Down Button Pressed"		constant_name="SKIP_SCREEN_STATION_LIST_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Skip List Up Button Pressed"            constant_name="SKIP_SCREEN_SKIP_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Skip List Down Button Pressed"            constant_name="SKIP_SCREEN_SKIP_LIST_DOWN_PRESSED"            	 	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station Id Added To Skip List"            constant_name="STATION_ID_ADDED_TO_SKIP_LIST"            		 	 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Station Id Removed From Skip List"		constant_name="STATION_ID_REMOVED_FROM_SKIP_LIST"            		 default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Ok Button Pressed"                        constant_name="SKIP_SCREEN_OK_BUTTON_PRESSED"                         default="0.0" delta="0.5" />
+            <object_number name="Skip Screen Back Button Pressed"            		constant_name="SKIP_SCREEN_BACK_BUTTON_PRESSED"                         default="0.0" delta="0.5" />
+            
+            <!-- Manual Mode Setting Screen Buttons and Requests -->
+            <object_number name="Manual Mode Back Button"                        	constant_name="MANUAL_MODE_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Door Open Left Button"            		constant_name="MANUAL_MODE_DOOR_OPEN_LEFT_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Door Open Right Button"            	constant_name="MANUAL_MODE_DOOR_OPEN_RIGHT_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Arrival Message Button"            	constant_name="MANUAL_MODE_ARRIVAL_MESSAGE_BUTTON"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Departure Message Button"            	constant_name="MANUAL_MODE_DEPARTURE_MESSAGE_BUTTON"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Station List Up Button Pressed"		constant_name="MANUAL_MODE_STATION_LIST_UP_PRESSED"            		 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Station List Down Button Pressed"		constant_name="MANUAL_MODE_STATION_LIST_DOWN_PRESSED"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Current Station Id"            constant_name="MANUAL_MODE_SELECTED_CURRENT_STATION_ID"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Door Opening Side"            constant_name="MANUAL_MODE_SELECTED_DOOR_OPENING_SIDE"            	 default="0.0" delta="0.5" />
+            <object_number name="Manual Mode Selected Message Type"            		constant_name="MANUAL_MODE_SELECTED_MESSAGE_TYPE"            	 	 default="-1.0" delta="0.5" />
+            
+            <!-- Special Information Screen Buttons and Requests -->
+            <object_number name="Spc Info Screen Back Button"                       constant_name="SPC_INFO_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen OK Button"                         constant_name="SPC_INFO_SCREEN_OK_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Stop Button"                       constant_name="SPC_INFO_SCREEN_STOP_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Up Button"                         constant_name="SPC_INFO_SCREEN_UP_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Down Button"                       constant_name="SPC_INFO_SCREEN_DOWN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Spc Info ID Request"                               constant_name="SPC_INFO_ID_REQ"                                     default="0.0" delta="0.5" />
+            <object_number name="Spc Info No Of Times Played"                       constant_name="SPC_INFO_NO_OF_TIMES"                                default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen OK Button Pressed"                 constant_name="SPC_INFO_SCREEN_OK_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Stop Button Pressed"               constant_name="SPC_INFO_SCREEN_STOP_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Up Button Pressed"                 constant_name="SPC_INFO_SCREEN_UP_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Spc Info Screen Down Button Pressed"               constant_name="SPC_INFO_SCREEN_DOWN_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Current Special Message"                           constant_name="CURRENT_SPECIAL_MESSAGE"                             default="0.0" delta="0.5" />
+
+            <!-- Emergency Information Screen Buttons and Requests -->
+            <object_number name="Emg Info Screen Back Button"                       constant_name="EMG_INFO_SCREEN_BACK_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen OK Button"                         constant_name="EMG_INFO_SCREEN_OK_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Stop Button"                       constant_name="EMG_INFO_SCREEN_STOP_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Up Button"                         constant_name="EMG_INFO_SCREEN_UP_BUTTON"                           default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Down Button"                       constant_name="EMG_INFO_SCREEN_DOWN_BUTTON"                         default="0.0" delta="0.5" />
+            <object_number name="Emg Info ID Request"                               constant_name="EMG_INFO_ID_REQ"                                     default="0.0" delta="0.5" />
+            <object_number name="Emg Info No Of Times Played"                       constant_name="EMG_INFO_NO_OF_TIMES"                                default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen OK Button Pressed"                 constant_name="EMG_INFO_SCREEN_OK_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Stop Button Pressed"               constant_name="EMG_INFO_SCREEN_STOP_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Up Button Pressed"                 constant_name="EMG_INFO_SCREEN_UP_BUTTON_PRESSED"                   default="0.0" delta="0.5" />
+            <object_number name="Emg Info Screen Down Button Pressed"               constant_name="EMG_INFO_SCREEN_DOWN_BUTTON_PRESSED"                 default="0.0" delta="0.5" />
+            <object_number name="Current Emergency Message"                         constant_name="CURRENT_EMERGENCY_MESSAGE"                           default="0.0" delta="0.5" />
+
+            <!-- Passenger Alarm Screen Buttons and Requests -->
+        	<object_number name="Passenger Alarm Connect Request"                  constant_name="PASSENGER_ALARM_CONNECT_REQUEST"            	         default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Disconnect Request"               constant_name="PASSENGER_ALARM_DISCONNECT_REQUEST"            	     default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Reset Request"                    constant_name="PASSENGER_ALARM_RESET_REQUEST"            	         default="0.0" delta="0.5" />		
+            <object_number name="Passenger Alarm Clear All Request"                constant_name="PASSENGER_ALARM_CLEAR_ALL_REQUEST"            	     default="0.0" delta="0.5" />
+            <object_number name="Passenger Alarm Connect"                  constant_name="PASSENGER_ALARM_CONNECT"            	         default="0.0" delta="0.5" />
+             <object_number name="Up Arrow Button "            	                   constant_name="UP_ARROW_BUTTON"            	                         default="0.0" delta="0.5" />
+            <object_number name="Down Arrow Button "            	               constant_name="DOWN_ARROW_BUTTON"                                     default="0.0" delta="0.5" />
+			<object_number name="Number Of PECU calls "            	               constant_name="NUMBER_OF_PECU_CALLS"                                     default="0.0" delta="0.5" />
+            
+             <object_number name="Start Station Selected"            	           constant_name="START_STATION_SELECTED"                              default="0.0" delta="0.5" />
+             <object_number name="Next Station Selected"            	           constant_name="NEXT_STATION_SELECTED"                               default="0.0" delta="0.5" />
+             <object_number name="Terminal Station Selected"            	       constant_name="TERMINAL_STATION_SELECTED"                           default="0.0" delta="0.5" />
+             
+            <!-- Language Setting Screen Buttons -->
+            <object_number name="Lang Screen OK Button"                            constant_name="LANG_SCREEN_OK_BUTTON"                               default="0.0" delta="0.5" />
+            <object_number name="Lang Screen BACK Button"                          constant_name="LANG_SCREEN_BACK_BUTTON"                             default="0.0" delta="0.5" />
+
+            <!-- Volume Setting Screen Buttons -->
+            <object_number name="Volume Screen OK Button"                          constant_name="VOLUME_SCREEN_OK_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="Volume Screen BACK Button"                        constant_name="VOLUME_SCREEN_BACK_BUTTON"                           default="0.0" delta="0.5" />
+            
+			<!-- Fault Screen Buttons -->
+            <object_number name="Fault Select Test Button"                         constant_name="FAULT_SELECT_TEST_BUTTON"                            default="0.0" delta="0.5" />
+            <object_number name="Fault Screen BACK Button"                         constant_name="FAULT_SCREEN_BACK_BUTTON"                            default="0.0" delta="0.5" />
+			<object_number name="Fault Screen Up Button"                           constant_name="FAULT_SCREEN_UP_BUTTON"                              default="0.0" delta="0.5" />
+            <object_number name="Fault Screen Down Button"                         constant_name="FAULT_SCREEN_DOWN_BUTTON"                            default="0.0" delta="0.5" />
+
+            <!-- PECU Isolate Screen Buttons -->
+            <object_number name="PECU 1 Car 1 Isolate Button"                      constant_name="PECU_1_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 1 Isolate Button"                      constant_name="PECU_2_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 1 Isolate Button"                      constant_name="PECU_3_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 1 Isolate Button"                      constant_name="PECU_4_CAR_1_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 2 Isolate Button"                      constant_name="PECU_1_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 2 Isolate Button"                      constant_name="PECU_2_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 2 Isolate Button"                      constant_name="PECU_3_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 2 Isolate Button"                      constant_name="PECU_4_CAR_2_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 3 Isolate Button"                      constant_name="PECU_1_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 3 Isolate Button"                      constant_name="PECU_2_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 3 Isolate Button"                      constant_name="PECU_3_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 3 Isolate Button"                      constant_name="PECU_4_CAR_3_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 4 Isolate Button"                      constant_name="PECU_1_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 4 Isolate Button"                      constant_name="PECU_2_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 4 Isolate Button"                      constant_name="PECU_3_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 4 Isolate Button"                      constant_name="PECU_4_CAR_4_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 5 Isolate Button"                      constant_name="PECU_1_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 5 Isolate Button"                      constant_name="PECU_2_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 5 Isolate Button"                      constant_name="PECU_3_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 5 Isolate Button"                      constant_name="PECU_4_CAR_5_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 6 Isolate Button"                      constant_name="PECU_1_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+            <object_number name="PECU 2 Car 6 Isolate Button"                      constant_name="PECU_2_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 6 Isolate Button"                      constant_name="PECU_3_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 6 Isolate Button"                      constant_name="PECU_4_CAR_6_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 7 Isolate Button"                      constant_name="PECU_1_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 2 Car 7 Isolate Button"                      constant_name="PECU_2_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 7 Isolate Button"                      constant_name="PECU_3_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 7 Isolate Button"                      constant_name="PECU_4_CAR_7_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			
+			<object_number name="PECU 1 Car 8 Isolate Button"                      constant_name="PECU_1_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 2 Car 8 Isolate Button"                      constant_name="PECU_2_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 3 Car 8 Isolate Button"                      constant_name="PECU_3_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+			<object_number name="PECU 4 Car 8 Isolate Button"                      constant_name="PECU_4_CAR_8_ISO_BUTTON"                             default="0.0" delta="0.5" />
+
+            <object_number name="PECU Isolate Screen BACK Button"                  constant_name="PECU_ISOLATE_SCREEN_BACK_BUTTON"                     default="0.0" delta="0.5" />
+
+            <object_number name="PECU Isolate Id Req"                              constant_name="PECU_ISOLATE_ID_REQ"                                 default="0.0" delta="0.5" />
+            <object_number name="PECU De Isolate Id Req"                           constant_name="PECU_DEISOLATE_ID_REQ"                               default="0.0" delta="0.5" />
+			
+			<object_number name="Passenger Alarm Selected Request"                constant_name="PASSENGER_ALARM_SELECTED_REQUEST"            	     default="-1.0" delta="0.5" />
+			
+			<object_number name="Alarm Button 1"                constant_name="ALARM_BUTTON_1"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 2"                constant_name="ALARM_BUTTON_2"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 3"                constant_name="ALARM_BUTTON_3"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 4"                constant_name="ALARM_BUTTON_4"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 5"                constant_name="ALARM_BUTTON_5"            	     default="0.0" delta="0.5" />
+			<object_number name="Alarm Button 6"                constant_name="ALARM_BUTTON_6"            	     default="0.0" delta="0.5" />
+			
+		 <object_number name="Cab To Cab Call Disconnect Request"                constant_name="CAB_TO_CAB_CAll_DISCONNECT_REQUEST"            	     default="0.0" delta="0.5" />
+		 <object_number name="System Screen OK Button Req"                        	constant_name="SYSTEM_SCREEN_OK_BUTTON_REQ"                        	 	 default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <!-- PAPIS output data from UI -->
+        <object_class class="PAPISOutputs" constant_name="PAPIS_OUTPUTS">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Outputs"                           constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"           default="0.0" delta="0.5" />
+            <object_number name="Class Outputs"                           constant_name="CLASS_OUTPUTS"                             default="0.0" delta="0.5" />
+            
+            <object_number name="Current Screen Id"                       constant_name="CURRENT_SCREEN_ID"                         default="1.0" delta="0.5" />
+			
+			<object_number name="Header Panel Status"                     constant_name="HEADER_PANEL_STATUS_LABEL_ID"              default="0.0" delta="0.5" />
+            
+            <!-- Main Interface Screen and System Screen output variables -->
+            <object_number name="Active Mode"                        	  constant_name="ACTIVE_MODE"                        		default="1.0" delta="0.5" />
+            
+            <object_raw name="Start Station Name"                          constant_name="START_STATION_NAME"	/>            
+            <object_raw name="Current Station Name"                          constant_name="CURRENT_STATION_NAME"	/>
+            <object_raw name="Terminal Station Name"            		  constant_name="TERMINAL_STATION_NAME"	/>
+            <object_raw name="Next Station Name"                          constant_name="NEXT_STATION_NAME"		/>
+            <object_raw name="Door Opening Side"                          constant_name="DOOR_OPENING_SIDE"		/>
+            <object_raw name="Current Line Name"                          constant_name="CURRENT_LINE_NAME"		/>
+            <object_raw name="Connection Type Name"                          constant_name="CONNECTION_TYPE_NAME"	/>
+            
+            <!-- Train Id Screen Outputs -->
+            <object_raw name="Train Id"                                       constant_name="TRAIN_ID"            	/>
+            
+            <!-- Route Screeen Outputs -->
+            <object_number name="Route Options Up Btn Enabled"              constant_name="ROUTE_SCREEN_UP_ENABLED"            		default="1.0" delta="0.5" />
+            <object_number name="Route Options Down Btn Enabled"		  constant_name="ROUTE_SCREEN_DOWN_ENABLED"            		default="1.0" delta="0.5" />
+            <object_raw name="Line List"                        		  constant_name="LINE_LIST"            	/>
+            
+            <!-- Start Station, Terminal Station, Next Station Screen Outputs -->
+            <object_number name="Station Up Btn Enabled"            	  constant_name="STATION_OPTIONS_UP_ENABLED"            	default="1.0" delta="0.5" />
+            <object_number name="Station Down Btn Enabled"            	  constant_name="STATION_OPTIONS_DOWN_ENABLED"            	default="1.0" delta="0.5" />
+            <object_raw name="Station List"                        		  constant_name="STATION_LIST"            />
+            
+            <!-- Skip Station Setting Screen Outputs -->
+            <object_raw name="Skip Screen Station List"            		  constant_name="SKIP_SCREEN_STATION_LIST"	/>
+            <object_raw name="Skip Station List"                          constant_name="SKIP_STATION_LIST"            />
+            
+            <!-- Manual Mode Setting Screen Outputs -->
+            <object_raw name="Manual Mode Screen Station List"              constant_name="MANUAL_MODE_SCREEN_STATION_LIST" />
+            <object_raw name="Manual Mode Screen All Station List"          constant_name="MANUAL_MODE_SCREEN_ALL_STATION_LIST" />
+            
+            <!-- Special information Screen Outputs -->
+            <object_raw name="Special Info Screen Station List"              constant_name="SPC_INFO_LIST" />
+            
+            <!-- Emergency information Screen Outputs -->
+            <object_raw name="Emergency Info Screen Station List"		  constant_name="EMG_INFO_LIST" />
+            
+            <object_number name="Door Status"                        	  constant_name="DOOR_STATUS"                        		default="0.0" delta="0.5" />
+            <object_number name="Alarm Status"                        	  constant_name="ALARM_STATUS"                        		default="0.0" delta="0.5" />
+            <object_number name="Flash Status"                        	  constant_name="FLASH_STATUS"                        		default="0.0" delta="0.5" />
+            <object_number name="Intercom Status"                         constant_name="INTERCOM_STATUS"                        	default="0.0" delta="0.5" />
+            <object_number name="Last Station Id"                         constant_name="LAST_STATION_ID"                        	default="0.0" delta="0.5" />
+            <object_number name="Call Type"                               constant_name="CALL_TYPE"                        	        default="0.0" delta="0.5" />
+            <object_number name="Received PECU ID"                        constant_name="RECEIVED_PECU_ID"                        	default="0.0" delta="0.5" />
+			<object_number name="PC Alarm List Up Arrow Pressed"          constant_name="PC_ALARM_LIST_UP_ARROW_PRESSED"            default="0.0" delta="0.5" />
+			<object_number name="PC Alarm List Down Arrow Pressed"        constant_name="PC_ALARM_LIST_DOWN_ARROW_PRESSED"          default="0.0" delta="0.5" />
+            
+            <object_number name="Select Button"            	              constant_name="SELECT_BUTTON"                             default="0.0" delta="0.5" />
+            
+            <object_number name="Start Station Selected Button"           constant_name="START_STATION_SELECTED_BUTTON"             default="0.0" delta="0.5" />
+            <object_number name="Next Station Selected Button"            constant_name="NEXT_STATION_SELECTED_BUTTON"              default="0.0" delta="0.5" />
+            <object_number name="Terminal Station Selected Button"        constant_name="TERMINAL_STATION_SELECTED_BUTTON"          default="0.0" delta="0.5" />
+
+            <object_number name="Special Message Selected"                constant_name="SPECIAL_MESSAGE_SELECTED"                  default="0.0" delta="0.5" />
+            <object_number name="Emergency Message Selected"              constant_name="EMERGENCY_MESSAGE_SELECTED"                default="0.0" delta="0.5" />
+			
+			<object_number name="Passenger Alarm Selected"                constant_name="PASSENGER_ALARM_SELECTED"                  default="0.0" delta="0.5" />
+			<object_number name="Passenger Alarm State"                constant_name="PASSENGER_ALARM_STATE"                  default="0.0" delta="0.5" />
+			<object_raw name="Multiple PECU Call List"                        		  constant_name="MULTIPLE_PECU_CALL_LIST"            	/>
+			<object_number name="PECU Call Count"                        		  constant_name="PECU_CALL_COUNT"     default="0.0" delta="0.5"        	/>
+	<object_number name="Number Of Cars"						  constant_name="NUMBER_OF_CARS"							default="0.0" delta="0.5" />
+        </object_class>
+    </layer>
+
+    <!-- Parent-child relationship mapping -->
+    <relationship   parent="Vehicle"      child="PAPIS"/>
+    <relationship   parent="PAPIS"          child="PAPISInputs"/>
+    <relationship   parent="PAPIS"          child="PAPISOutputs"/>
+
+    <!-- Class ID declerations -->
+    <class_ids>
+        <class_id   class_name="PAPIS"             class_id="2111" />
+        <class_id   class_name="PAPISInputs"       class_id="2112" />
+        <class_id   class_name="PAPISInputsValues" class_id="2113" />
+        <class_id   class_name="PAPISInputsModes"  class_id="2114" />
+        <class_id   class_name="PAPISOutputs"      class_id="2115" />
+    </class_ids>
+</comms_config>
+

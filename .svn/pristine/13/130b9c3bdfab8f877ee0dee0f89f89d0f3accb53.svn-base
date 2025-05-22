@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="platform_sliding_gates" guid="c43da3344d78ea13e72578582891ddf84f0d5c0d" base_material="mesh_base">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options order="-1" transparent="2" depth_mask="1" two_sided="0" overlap="0"/>
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/platform_sliding_gates.dds</texture>
+	<texture name="shading">../worlds/mmrbem/graphics/stations/texture/platform_sliding_gates_met.dds</texture>
+	<parameter name="albedo_color">0.768627524 0.768627524 0.768627524 1</parameter>
+	<parameter name="metalness">0.25</parameter>
+	<parameter name="roughness">0.800000012</parameter>
+	<parameter name="specular">0.300000012</parameter>
+</material>

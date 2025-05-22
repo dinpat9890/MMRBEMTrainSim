@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="560297101" name="blue_oak">
+		<mesh_name>../worlds/shared/graphics/vegetation/blue_oak.mesh</mesh_name>
+		<surface name="tree__leaves_lod2" max_visible_distance="800" material="650a8b76f1b24a6c3a9e5730c8fffa33ac7a2882" property="surface_base"/>
+		<surface name="tree__trunk_lod2" max_visible_distance="800" material="353fb4a35adab49f9a6c5b00abbafc883dc858d7" property="surface_base"/>
+		<transform>0.999999940395 1.66533453694e-016 0 0.0 -2.22044604925e-016 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -1.81898940355e-012 -9.09494701773e-013 -2.84217094304e-014 1.0</transform>
+	</node>
+</nodes>

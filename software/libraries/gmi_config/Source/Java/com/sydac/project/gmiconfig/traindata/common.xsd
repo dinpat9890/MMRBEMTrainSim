@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns="http://www.sydac.com.au/GMI/1.0/"
+           targetNamespace="http://www.sydac.com.au/GMI/1.0/" 
+           elementFormDefault="qualified">
+  <xs:simpleType name="car_number">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a car number. Althouh currently there is a maximum of 12 cars, 
+        we're not going to impose that limit here.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="200000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="direction">
+    <xs:annotation>
+      <xs:documentation>
+        Directions on the screen.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="up"/>
+      <xs:enumeration value="down"/>
+      <xs:enumeration value="left"/>
+      <xs:enumeration value="right"/>
+      <xs:enumeration value="in"/>
+      <xs:enumeration value="out"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="colour" abstract="true">
+    <xs:annotation>
+      <xs:documentation>
+        An element representing colour.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="common_colour">
+    <xs:annotation>
+      <xs:documentation>
+        A commonly used colour type
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="colour">
+        <xs:sequence/>
+        <xs:attribute name="name" type="common_colour_set" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="common_colour_set">
+    <xs:annotation>
+      <xs:documentation>
+        A colour that is commonly used and understood.
+        Generally these map to those used in the Java Color class.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Red"/>
+      <xs:enumeration value="White"/>
+      <xs:enumeration value="Black"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="custom_colour">
+    <xs:annotation>
+      <xs:documentation>
+        A customised colour type
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="colour">
+        <xs:sequence/>
+        <xs:attribute name="red" type="xs:integer" use="required"/>
+        <xs:attribute name="green" type="xs:integer" use="required"/>
+        <xs:attribute name="blue" type="xs:integer" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="coordinate_2d">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a 2D (x, y) coordinate.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="x" type="xs:integer" use="required"/>
+    <xs:attribute name="y" type="xs:integer" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="region_2d" abstract="true">
+    <xs:annotation>
+      <xs:documentation>
+        A region on the screen.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:complexType>
+  <xs:complexType name="rectangle">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a rectangle on a 2D plane (x, y, width, height).
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="region_2d">
+        <xs:attribute name="x" type="xs:integer" use="required"/>
+        <xs:attribute name="y" type="xs:integer" use="required"/>
+        <xs:attribute name="width" type="xs:integer" use="required"/>
+        <xs:attribute name="height" type="xs:integer" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="polygon">
+    <xs:annotation>
+      <xs:documentation>
+        Defines a polygon on a 2D plane.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="region_2d">
+        <xs:sequence>
+          <xs:element name="point" type="coordinate_2d" minOccurs="3" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="property">
+    <xs:annotation>
+      <xs:documentation>
+        An undefined generic property.
+        Basically a name-value pair that causes something magical to happen in 
+        the PT. If the same kind of functionality is used often, it should get
+        promoted to an element in the schema.
+        Unrecognised properties are ignored.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="value" type="xs:string" use="optional"/>
+  </xs:complexType>
+</xs:schema>

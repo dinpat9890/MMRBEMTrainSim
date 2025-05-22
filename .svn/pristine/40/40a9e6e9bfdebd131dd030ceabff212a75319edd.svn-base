@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <scripts>
+    <fsl_trigger_conditions>
+      <fsl_trigger_condition trigger_condition_id="1" name="SCENARIOFSLFEATURETRIGGER" />
+      <fsl_trigger_condition trigger_condition_id="2" name="SCENARIOFSLPOSITIONTRIGGER" />
+      <fsl_trigger_condition trigger_condition_id="3" name="SCENARIOFSLSIMPROPERTYTRIGGER" />
+    </fsl_trigger_conditions>
+  </scripts>
+</config>

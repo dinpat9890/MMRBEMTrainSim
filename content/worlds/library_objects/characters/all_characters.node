@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1229716151" name="all_characters">
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="846122433" name="FA_casual_indian_01">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_01.node</reference>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1564112412" name="FA_casual_indian_02">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_02.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.43324918365 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1293935329" name="FA_casual_indian_03">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_03.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 2.93324936246 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="589144277" name="FA_casual_indian_04">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_04.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 4.43324954128 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="856777478" name="FA_casual_indian_05">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_05.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 5.93324972009 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="53594821" name="FA_casual_indian_06">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_06.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 7.4332498989 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="551989403" name="FA_casual_indian_07">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_07.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 8.93325007772 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="283901544" name="FA_casual_indian_08">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_08.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 10.4332502565 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="142022233" name="FA_casual_indian_09">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_09.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 11.9332504353 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1462532487" name="FA_casual_indian_10">
+			<reference>../worlds/library_objects/characters/FA_casual_indian_10.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 13.4332506142 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="456524801" name="MA_casual_indian_01">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_01.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 14.933250793 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="683333984" name="MA_casual_indian_02">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_02.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 16.4332509718 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="35337104" name="MA_casual_indian_03">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_03.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 17.9332511506 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1026192264" name="MA_casual_indian_04">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_04.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 19.4332513294 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="639795341" name="MA_casual_indian_05">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_05.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 20.9332515082 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1029142218" name="MA_casual_indian_06">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_06.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 22.433251687 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2030487752" name="MA_casual_indian_07">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_07.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 23.9332518659 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="253977265" name="MA_casual_indian_08">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_08.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 25.4332520447 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2013511209" name="MA_casual_indian_09">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_09.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 26.9332522235 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1834792641" name="MA_casual_indian_10">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_10.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 28.4332524023 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1921537880" name="MA_casual_indian_11">
+			<reference>../worlds/library_objects/characters/MA_casual_indian_11.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 29.9332525811 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="283564791" name="MA_indian_crossing_guard_01">
+			<reference>../worlds/library_objects/characters/MA_indian_crossing_guard_01.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 31.4332527599 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="198707470" name="MA_indian_crossing_guard_blue_unfrm">
+			<reference>../worlds/library_objects/characters/MA_indian_crossing_guard_blue_unfrm.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 32.9332529387 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1520147692" name="MA_indian_platform_guard_01">
+			<reference>../worlds/library_objects/characters/MA_indian_platform_guard_01.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 34.4332531176 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="2040013391" name="MA_indian_rail_worker_01">
+			<reference>../worlds/library_objects/characters/MA_indian_rail_worker_01.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 35.9332532964 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1844521858" name="MA_indian_rail_worker_02">
+			<reference>../worlds/library_objects/characters/MA_indian_rail_worker_02.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 37.4332534752 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1184048048" name="MA_indian_rail_worker_03">
+			<reference>../worlds/library_objects/characters/MA_indian_rail_worker_03.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 38.933253654 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1116963129" name="MA_ir_station_master_01">
+			<reference>../worlds/library_objects/characters/MA_ir_station_master_01.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 40.4332538328 0 0 1.0</transform>
+		</node>
+		<node type="NodeReference" id="186763561" name="MA_ir_station_master_02">
+			<reference>../worlds/library_objects/characters/MA_ir_station_master_02.node</reference>
+			<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 41.9332540116 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,12 @@
+
+z
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(öÿÃŞøÿÿÿÿ8Û¬§ƒ¡0HÉÀRMINORZ
+CODE_SMELL
+’	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒáÂ‘øÿÿÿÿ8½Ïù¡0Hì¹RMINORZ
+CODE_SMELL
+n
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(›œÓòHé¹RMINORZ
+CODE_SMELL
+g
+java:S1118":Add a private constructor to hide the implicit public one.(ÂÌ¶Hè¹RMAJORZ
+CODE_SMELL

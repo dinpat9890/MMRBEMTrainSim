@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="594.0" stylesheets="@radio-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.radio.fe.gui.presenter.CabSignalPanelController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="12.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="9.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="12.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="12.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="9.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.3" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="12.3" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.3" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="24.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="22.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="22.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="TRIU-A" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" stylesheets="@radio-application.css" text="PA_PIS-A" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="TR-A" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="TRIU-B" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="PA_PIS-B" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="TR-B" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="TCMS-A" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="CAB-A" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="OCC-PA" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="TCMS-B" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="CAB-B" GridPane.columnIndex="15" GridPane.rowIndex="3" />
+      <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main-screen-text-label" text="REMOTE" GridPane.columnIndex="15" GridPane.rowIndex="5" />
+      <Label fx:id="triuBImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Label fx:id="triuAImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="papisAImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="trAImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label fx:id="papisBImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Label fx:id="trBImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+      <Label fx:id="tcmsAimageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+      <Label fx:id="cabAImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+      <Label fx:id="occPaImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="occpa-status" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+      <Label fx:id="tcmsBImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+      <Label fx:id="cabBImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+      <Label fx:id="remoteImageLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="signal-state" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+   </children>
+</GridPane>

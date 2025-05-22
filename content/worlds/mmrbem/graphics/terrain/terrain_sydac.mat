@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="terrain_sydac" guid="00e2ab85aebe26dee1b4173335cedca5ee480ad3" base_material="terrain_base">
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+</material>

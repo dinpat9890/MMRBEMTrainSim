@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1656500911" name="convex_mirror">
+		<mesh_name>../worlds/library_objects/shared_elements/convex_mirror.mesh</mesh_name>
+		<surface name="convex_mirror_glass" max_visible_distance="500" material="13d256d2650a7b5a22242e4647f5f8d1a2ba4ff2" property="surface_base"/>
+		<surface name="convex_mirror_slding_door" max_visible_distance="500" material="c43da3344d78ea13e72578582891ddf84f0d5c0d" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

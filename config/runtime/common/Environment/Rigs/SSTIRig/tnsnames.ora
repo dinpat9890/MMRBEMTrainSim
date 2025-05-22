@@ -1,0 +1,17 @@
+XE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.61.130)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+ORACLESERVER =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = PUNS2004.simulation.lan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )

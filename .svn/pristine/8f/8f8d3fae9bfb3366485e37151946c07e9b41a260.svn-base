@@ -1,0 +1,10 @@
+# The way the Radio Frontend names itself in the different systems
+pam.module.name.driver=DS-05-Radio Frontend
+
+# 
+# Domain : Peer Application Manager  (pam)
+# 
+# Properties that are specific to a particular system type
+# 
+# The particular comms systems that this Radio Frontend should listen to/join/drive.
+pam.systems=driver

@@ -1,0 +1,128 @@
+[Defaults]
+Database=Database.ini
+System=System.ini
+Logging=Logging.ini
+
+[System.1]
+Module Name=World Model
+
+[Simulator]
+# Session Time Limit is in minutes.
+Session Time Limit=240.0
+
+[Dynamics]
+Max Speed=30.0
+Acceleration=5.0
+Deceleration=10.0
+
+[Automatic Trains]
+Acceleration=0.7
+Braking=1.5
+Create=0
+Script=auto_train_object_definitions.script
+
+[Auto Driver]
+Safety Distance = 150.0
+
+[Scripting]
+Include=CoreObjectConstants.scr
+Include=ProjectObjectConstants.script
+Dump Script=1
+
+[Scripts]
+AutoTrainControl=auto_train_control.script
+Coupling=Coupling.script
+#Displacement=Displacement.script
+Derailment=Derailment.script
+Collision=Collision.script
+#Detonators=Detonators.script
+Controls=Controls.script
+#TrainControls=TrainControls.script
+AutomaticRegion=AutomaticRegion.script
+IntersectionTramSignalControl=IntersectionTramSignalControl.script
+IntersectionControl=IntersectionControl.script
+EnableLive3D=EnableLive3D.script
+
+[Speed Limits]
+Lead Vehicle Only=0
+Maximum Speed Limit=33.33
+
+[Script]
+Script=Kangaroo_control.scr
+
+[Platform Passenger]
+
+# Determines the distance from the platform at which the passengers can be
+# reset, as well as the distance at which the train is deemed to be approaching the platform.
+In Range Threshold=1000.0
+
+# Determines the distance from the platform at which the train is deemed to be parked for boarding
+Parking Threshold=100.0
+
+# Determines the speed at which the train is deemed to be stationary
+Stationary Speed Threshold=0.1
+
+# The default platform length for stopping calculations
+Default Platform Length=200.0
+
+[Unit Plugins]
+automatic_trains_units
+coupling_io_units
+environment_units
+features_units
+perspectives_units
+#radio_areas_units
+scripting_units
+session_status_units
+session_summary_units
+speed_limit_units
+track_circuits_units
+track_position_units
+vision_canvas_units
+#dynamic_features_units
+platform_passengers_units
+world_interaction_units
+
+[Module Resource Plugins]
+train_data_access_resources
+
+[Scenario Resource Plugins]
+world_access_resources
+
+[Session Resource Plugins]
+all_vehicles_watcher_resources
+coupling_watcher_resources
+points_watcher_resources
+speed_limit_tracker_resources
+train_object_definition_resources
+feature_automation_resources
+
+
+[Scripting Plugins]
+displacement_primitives
+train_data_access_primitives
+train_feature_automation_primitives
+world_primitives
+
+[Track Circuits]
+Clear State=Clear
+Feature Name=Track Circuit
+Occupied State=Occupied
+Timer Property=Time Occupied
+
+# Change the Logging Level of the Train Model
+[Logging]
+# Valid Values are :
+# ERR or ERROR
+# WARN or WARNING
+# INFO - This is the Default Logging Level
+# VERBOSE
+Level=INFO
+#Maximum Log Size= 
+#Backup Log Count=
+
+[Derailment]
+# Need to increase Coupling Separation Limit as a workaround to CORE-639
+# Also need to increase Coupling Angle Limit to prevent derailment on the tightest curves of the track
+Coupling Separation Limit=2.0
+Coupling Angle Limit=45

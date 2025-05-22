@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="793824087" name="oak_02_2">
+		<mesh_name>vegetation/meshes/oak_02_02.mesh</mesh_name>
+		<surface name="oak_leaves_02_2_lod_2" max_visible_distance="800" material="17a262a5f6d8fda9cb2ecda513dcfd3c26a34b92" property="surface_base"/>
+		<surface name="oak_tree_02_2_lod_2" max_visible_distance="800" material="f8d1b92326b02e25847eaa488a3589c737aba6b9" property="surface_base"/>
+		<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -1.45519152284e-010 8.52651282912e-014 1.0</transform>
+	</node>
+</nodes>

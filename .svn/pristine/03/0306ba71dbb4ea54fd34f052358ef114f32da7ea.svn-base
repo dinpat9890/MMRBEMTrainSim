@@ -1,0 +1,52 @@
+(!
+    Enable and scale Live3D for Driver's and Observer's Perspective based on Train Speed.
+)
+
+(! Speed at which Live3D becomes fully disabled. Above this speed, Live3D is disabled. Below, we scale it linearly,
+   initially 100% at zero speed, down to 0% at the cutoff.)
+(define live-3d-speed-cutoff 5.0)
+
+(! The speed we act on.)
+(define $lead-car-speed
+    (get-number (number-id (child-object-id (object-id (class-world)) (class-train)) "Lead Car Speed"))
+)
+
+(! Amount to scale by.)
+(define live-3d-linear-scale ( if ( < ($lead-car-speed) (live-3d-speed-cutoff) ) (- 1.0 ( / ($lead-car-speed) (live-3d-speed-cutoff))) 0.0))
+
+(! Correction to dynamic Live3D scaling according to on-site experience)
+(define live-3d-scale-on-site-correction 0.5)
+
+(! Using: f(x) = (x^2)*(3-2x) )
+(define live-3d-scale (* (live-3d-scale-on-site-correction) (* (* (live-3d-linear-scale) (live-3d-linear-scale)) (- 3.0 (* 2.0 (live-3d-linear-scale))))))
+(! define live-3d-scale (live-3d-linear-scale))
+
+(! Whether we should enable or not.)
+(define live-3d-enabled $scenario_train_id 
+    (if 
+        (and 
+            (< ($lead-car-speed) (live-3d-speed-cutoff))
+            (> (get-number (number-id (child-object-id (object-id (class-world)) (class-train) "Scenario Train ID" $scenario_train_id)  "Enable Live3D") 0) 0)
+        ) 
+        1 
+        0
+    ) 
+)
+
+(! log "Live3D Enabled " (live-3d-enabled))
+(! log "Live3D Scale " (live-3d-scale))
+
+(! Set all perspectives.)
+(for-each $name (
+ "Train 1, vehicle 0, camera 1 (Driver's Forward View)"
+ "Train 1, vehicle 0, camera 14 (Driver's Forward Screen1 View)"
+ "Train 1, vehicle 0, camera 15 (Driver's Forward Screen2 View)"
+ "Train 1, vehicle 0, camera 16 (Driver's Forward Screen3 View)"
+ "Train 1, vehicle 0, camera 17 (Driver's Forward Screen4 View)"
+    )
+    
+    (set-number (number-id (named-object-id (class-perspective) $name) "Live3D Enabled") (live-3d-enabled 1))
+    (set-number (number-id (named-object-id (class-perspective) $name) "Live3D Scale X") (live-3d-scale))
+    (set-number (number-id (named-object-id (class-perspective) $name) "Live3D Scale Y") (live-3d-scale))
+    (set-number (number-id (named-object-id (class-perspective) $name) "Live3D Scale Z") (live-3d-scale))
+)

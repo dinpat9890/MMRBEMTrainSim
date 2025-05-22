@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="beacon_tunnel" guid="c7ce73e56b7df373d336d860eb216a3b352ffd85" parent="a5fd3d27176a6771c3e946c4c56aa422d3896a49" base_material="mesh_base">
+	<state name="ao_map">1</state>
+	<texture name="ambient_occlusion">tel_aviv/graphics/stations/textures/tunnel_ao.dds</texture>
+</material>

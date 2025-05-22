@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1416773120" name="akurli_to_poisar">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/akurli_to_poisar.mesh</mesh_name>
+		<surface name="akurli_to_poisar_gantry_poles_numbers_04" material="ff55708f1585842f1a58d88f4bc895994086ed0e" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

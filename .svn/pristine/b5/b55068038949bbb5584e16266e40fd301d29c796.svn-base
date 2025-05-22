@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="FA_casual_indian_07" guid="7bfce0983a5486e4305507f3701913a6d016b8b5" parent="f4a968fecc6da61f97606239b14677d71f6a13cc" base_material="mesh_base">
+	<options two_sided="1"/>
+	<texture name="albedo">../worlds/library_objects/characters/textures/FA_Casual_Indian_07.dds</texture>
+	<parameter name="specular">0.5</parameter>
+</material>

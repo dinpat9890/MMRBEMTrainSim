@@ -1,0 +1,128 @@
+** INFO **    
+22/10/15 16:58:55.941, SimSetupCommandLineProperties.cpp [432]
+Loading properties from D:\src\svncheckout\CoreTrainSimClean\Built\System\Setup.ini
+
+** INFO **    
+22/10/15 16:58:55.951, SimSetup.cpp [863]
+Computer=ADLW0209, Installer=ADLW0209, Master=ADLW0209
+
+** INFO **    
+22/10/15 16:58:55.951, SimSetup.cpp [1565]
+Configuring ADLW0209
+
+** INFO **    
+22/10/15 16:58:55.961, SimSetup.cpp [212]
+Executing: robocopy /s "..\Environment\CoreRig" ..\Environment /NJH /NJS /NP /NFL /R:0
+
+** INFO **    
+22/10/15 16:58:56.271, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\Database.ini, section Database
+
+** INFO **    
+22/10/15 16:58:56.291, SimSetup.cpp [1661]
+CommsShow.ini: Liveliness using 233.0.0.69:2501
+
+** INFO **    
+22/10/15 16:58:56.291, SimSetup.cpp [1661]
+CommsShow.ini: System.1 using 233.0.0.69:2500
+
+** INFO **    
+22/10/15 16:58:56.291, SimSetup.cpp [1661]
+CommsShow.ini: System.2 using 233.0.1.69:2500
+
+** INFO **    
+22/10/15 16:58:56.291, SimSetup.cpp [1661]
+CommsShow.ini: System.3 using 233.0.2.69:2500
+
+** INFO **    
+22/10/15 16:58:56.321, SimSetup.cpp [1661]
+System.ini: Liveliness using 233.0.0.69:2501
+
+** INFO **    
+22/10/15 16:58:56.321, SimSetup.cpp [1661]
+System.ini: System.1 using 233.0.0.69:2500
+
+** INFO **    
+22/10/15 16:58:56.321, SimSetup.cpp [1661]
+System.ini: System.3 using 233.0.2.69:2500
+
+** INFO **    
+22/10/15 16:58:56.331, SimSetup.cpp [1661]
+SystemGuard.ini: Liveliness using 233.0.0.69:2501
+
+** INFO **    
+22/10/15 16:58:56.331, SimSetup.cpp [1661]
+SystemGuard.ini: System.2 using 233.0.1.69:2500
+
+** INFO **    
+22/10/15 16:58:56.331, SimSetup.cpp [1661]
+SystemGuard.ini: System.3 using 233.0.2.69:2500
+
+** INFO **    
+22/10/15 16:58:56.351, SimSetup.cpp [1700]
+ApplicationManager.properties: pam.liveliness.* using 233.0.0.69:2501
+
+** INFO **    
+22/10/15 16:58:56.361, SimSetup.cpp [1700]
+ApplicationManager.properties: pam.*.driver using 233.0.0.69:2500
+
+** INFO **    
+22/10/15 16:58:56.361, SimSetup.cpp [1700]
+ApplicationManager.properties: pam.*.guard using 233.0.1.69:2500
+
+** INFO **    
+22/10/15 16:58:56.371, SimSetup.cpp [1700]
+ApplicationManager.properties: pam.*.integrated using 233.0.2.69:2500
+
+** INFO **    
+22/10/15 16:58:56.391, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\DrivingRecord.ini, section Target
+
+** INFO **    
+22/10/15 16:58:56.391, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\IdealTrainModel.ini, section Paths
+
+** INFO **    
+22/10/15 16:58:56.401, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\IntercomRecorder.ini, section Intercom
+
+** INFO **    
+22/10/15 16:58:56.411, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\LoggingAndReplay.ini, section Paths
+
+** INFO **    
+22/10/15 16:58:56.421, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\PTApplicationManager.properties, section 
+
+** INFO **    
+22/10/15 16:58:56.421, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\PowerMenuApplicationManager.properties, section 
+
+** INFO **    
+22/10/15 16:58:56.431, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\SCC.properties, section 
+
+** INFO **    
+22/10/15 16:58:56.441, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\TrainDisplay.ini, section GUI
+
+** INFO **    
+22/10/15 16:58:56.451, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\TraineeDatabase.ini, section Target
+
+** INFO **    
+22/10/15 16:58:56.451, SimSetupUtilities.cpp [418]
+Modify properties on ..\Environment\Vision.ini, section Communications
+
+** INFO **    
+22/10/15 16:58:56.461, SimSetupUtilities.cpp [806]
+Modifying TNS entry: c:\Progra~2\oracle\instantclient_12_1\tnsnames.ora (CORE)
+
+** ERROR **   
+22/10/15 16:58:56.471, SimSetupUtilities.cpp [814]
+Could not modify TNS entry.
+
+** INFO **    
+22/10/15 16:58:56.471, SimSetup.cpp [212]
+Executing: Scripts\Configure.bat
+

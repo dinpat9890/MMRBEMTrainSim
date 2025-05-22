@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1483537169" name="smoke">
+		<transform>0.99999529 -1.98523347013e-023 0 0.0 1.98523347013e-023 0.99999529 0 0.0 0 0 0.99999529 0.0 -3.81469726563e-006 -6.67572312523e-005 1.78814076435e-007 1.0</transform>
+		<node type="ObjectParticles" id="2101916772" collider="0" name="smoke_low1">
+			<particles_type>2</particles_type>
+			<warming>0</warming>
+			<depth_sort>1</depth_sort>
+			<variation_x>1</variation_x>
+			<spawn_rate>25</spawn_rate>
+			<spawn_threshold>3</spawn_threshold>
+			<physical_mask>0xffffffff</physical_mask>
+			<emitter_type>3</emitter_type>
+			<emitter_enabled>1</emitter_enabled>
+			<emitter_sequence>2</emitter_sequence>
+			<emitter_size>2 1 0.200000003</emitter_size>
+			<emitter_direction>0 0 6</emitter_direction>
+			<emitter_spread>1 1 0</emitter_spread>
+			<life_mean>2</life_mean>
+			<life_spread>0.100000001</life_spread>
+			<velocity_mean>-0.100000001</velocity_mean>
+			<velocity_spread>0.100000001</velocity_spread>
+			<radius_mean>1</radius_mean>
+			<radius_spread>0.200000003</radius_spread>
+			<growth_mean>-0.100000001</growth_mean>
+			<growth_spread>0.200000003</growth_spread>
+			<gravity>0 0 0.5</gravity>
+			<force>
+				<enabled>1</enabled>
+				<attached>1</attached>
+				<transform>1.00002002716 0 0 0.0 0 1.00002002716 0 0.0 0 0 1.00002002716 0.0 0.00502014020458 0.00295258010738 5.10848999023 1.0</transform>
+				<radius>6</radius>
+				<attenuation>2</attenuation>
+				<attractor>-40</attractor>
+				<rotator>1</rotator>
+			</force>
+			<surface name="particles" viewport_mask="0x3" max_visible_distance="350" max_fade_distance="150" material="275ba9a067bf85946dbb1ea0abab1db8a6b607a9" property="surface_base"/>
+			<transform>1.00001847876 1.19211510154e-007 0 0.0 -1.19212341493e-007 1.00002551214 0 0.0 0 0 1.0000190152 0.0 0 0 0.183630497661 1.0</transform>
+		</node>
+		<node type="ObjectParticles" id="881471772" name="smoke_low2">
+			<particles_type>2</particles_type>
+			<warming>0</warming>
+			<variation_x>1</variation_x>
+			<spawn_rate>15</spawn_rate>
+			<physical_mask>0xffffffff</physical_mask>
+			<emitter_enabled>1</emitter_enabled>
+			<emitter_sequence>2</emitter_sequence>
+			<emitter_size>4 2 2</emitter_size>
+			<emitter_direction>0 0 6</emitter_direction>
+			<emitter_spread>2 2 0</emitter_spread>
+			<life_mean>2</life_mean>
+			<life_spread>0.25</life_spread>
+			<velocity_mean>0.5</velocity_mean>
+			<velocity_spread>0.5</velocity_spread>
+			<radius_mean>2</radius_mean>
+			<radius_spread>0.200000003</radius_spread>
+			<growth_mean>-0.100000001</growth_mean>
+			<growth_spread>0.200000003</growth_spread>
+			<gravity>0 0 0.200000003</gravity>
+			<surface name="particles" viewport_mask="0x3" max_visible_distance="350" max_fade_distance="150" material="39051fce3dfd7b7df9d802e9c45d599b206398b9" property="surface_base"/>
+			<transform>0.999943912995 2.1599340155e-019 0 0.0 -3.55245386468e-015 1.00008261366 0 0.0 0 0 1.00015300708 0.0 -1.7763568394e-015 0 1.6 1.0</transform>
+		</node>
+		<node type="ObjectParticles" id="1371012151" name="smoke_low3">
+			<particles_type>1</particles_type>
+			<warming>0</warming>
+			<variation_x>1</variation_x>
+			<spawn_rate>5</spawn_rate>
+			<physical_mask>0xffffffff</physical_mask>
+			<restitution>1</restitution>
+			<emitter_type>3</emitter_type>
+			<emitter_enabled>1</emitter_enabled>
+			<emitter_sequence>2</emitter_sequence>
+			<emitter_size>2 1.20000005 1</emitter_size>
+			<emitter_direction>0 0 6</emitter_direction>
+			<emitter_spread>1 1 0</emitter_spread>
+			<life_mean>1.85000002</life_mean>
+			<life_spread>0.100000001</life_spread>
+			<velocity_mean>0.600000024</velocity_mean>
+			<velocity_spread>0.400000006</velocity_spread>
+			<radius_mean>0.899999976</radius_mean>
+			<radius_spread>0.200000003</radius_spread>
+			<growth_mean>-0.400000006</growth_mean>
+			<growth_spread>0.100000001</growth_spread>
+			<gravity>0 0 0.200000003</gravity>
+			<surface name="particles" viewport_mask="0x3" max_visible_distance="350" max_fade_distance="150" material="e268f3cbeccfcf2113183367f3650a1e6847cbc9" property="surface_base"/>
+			<transform>1.00000399476 2.54109884176e-021 0 0.0 -3.55215908398e-015 1.00016558373 0 0.0 0 0 1.00017565695 0.0 0 1.13686837722e-013 0.183630497661 1.0</transform>
+		</node>
+		<node type="ObjectParticles" id="2050821234" name="smoke_low4">
+			<particles_type>1</particles_type>
+			<warming>0</warming>
+			<variation_x>1</variation_x>
+			<spawn_rate>5</spawn_rate>
+			<physical_mask>0xffffffff</physical_mask>
+			<restitution>1</restitution>
+			<emitter_type>3</emitter_type>
+			<emitter_enabled>1</emitter_enabled>
+			<emitter_sequence>2</emitter_sequence>
+			<emitter_size>1 1 0.300000012</emitter_size>
+			<emitter_direction>0 0 2</emitter_direction>
+			<emitter_spread>1 1 0</emitter_spread>
+			<life_mean>1.85000002</life_mean>
+			<life_spread>0.100000001</life_spread>
+			<velocity_mean>0.600000024</velocity_mean>
+			<velocity_spread>0.400000006</velocity_spread>
+			<radius_mean>0.899999976</radius_mean>
+			<radius_spread>0.200000003</radius_spread>
+			<growth_mean>-0.400000006</growth_mean>
+			<growth_spread>0.100000001</growth_spread>
+			<gravity>0 0 0.200000003</gravity>
+			<surface name="particles" viewport_mask="0x3" max_visible_distance="350" max_fade_distance="150" material="e268f3cbeccfcf2113183367f3650a1e6847cbc9" property="surface_base"/>
+			<transform>1.00000399476 2.54109884176e-021 0 0.0 -3.55215908398e-015 1.00016558373 0 0.0 0 0 1.00017565695 0.0 0 1.13686837722e-013 0.183630497661 1.0</transform>
+		</node>
+		<node type="LightOmni" id="914321858" name="LightOmni_7">
+			<attenuation_distance>15</attenuation_distance>
+			<shape>2 1 0.200000003</shape>
+			<shape_type>-1</shape_type>
+			<color>0.800000072 0.776470661 0.733333349 1</color>
+			<shadow>0</shadow>
+			<shadow_bias>1</shadow_bias>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>5.96046341907e-008 -0.999999882023 0 0.0 0.999999882023 5.96046341907e-008 0 0.0 0 0 0.999999762813 0.0 0 0 0.224 1.0</transform>
+		</node>
+	</node>
+</nodes>

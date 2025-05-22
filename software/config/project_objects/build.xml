@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Project Objectsy                                                        -->
+<!-- ======================================================================= -->
+<project name="ProjectObjects" default="build.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" >
+  <property name="jar.base.name" value="projectobjects" />
+  <property file="build.properties"/>
+  
+  <import file="../../../ant.common_properties.xml" />
+  
+  <!-- Path of this directory -->
+  <dirname property="this.path" file="${ant.file}"/>
+  <!-- Name of this directory (not a path) -->
+  <basename property="this.dir" file="${this.path}"/>
+  <!-- Name of this module (as published in Ivy) -->
+  <property name="module.name" value="${this.dir}"/>
+  
+  <!-- Import Properties from root path.root directory -->
+  <property file="${path.root}/build.properties"/>
+  
+  <path id="project.classpath">
+    <pathelement location="${dir.software.deps}/software/oksygen/common/libraries/java_interface/jar/comms.jar"/>
+    <pathelement location="${dir.software.deps}/software/oksygen/sim/train/libraries/runtime_data/jar/runtimedata.jar" />
+    <pathelement location="${dir.software.deps}/software/oksygen/sim/core/config/core_comms_structure/jar/CoreCommsStructure.jar"/>
+    <pathelement location="${dir.software.deps}/software/oksygen/sim/train/config/train_comms_structure/jar/TrainCommsStructure.jar"/>
+    <pathelement location="${dir.software}/config/project_comms_structure/jar/ProjectCommsStructure.jar"/>
+    <pathelement location="${dir.software}/config/project_features/jar/ProjectFeatures.jar"/>
+  </path>
+
+  <!-- As much as possible, this should be standard -->
+  <import file="${dir.deps.processes}/builder/builder.software.jar.xml" as="builder" />
+  <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+
+  <target name="compile.dependencies">
+    <echo message="Compiling the dependencies of ${ant.file}"/>
+    <property name="depends.cache" value="${module.path}/${depends.cache.file}"/>
+
+    <!-- Compile the dependencies -->
+    <!-- Libraries -->
+    <ant antfile="${dir.software}/config/project_comms_structure/build.xml" inheritAll="false" target="build.all">
+      <property name="depends.cache" value="${depends.cache}"/>
+      <property file="${depends.cache}"/>
+    </ant>
+
+    <ant antfile="${dir.software}/config/project_features/build.xml" inheritAll="false" target="build.all">
+      <property name="depends.cache" value="${depends.cache}"/>
+      <property file="${depends.cache}"/>
+    </ant>
+  </target>
+</project>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@cctv-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.tcms.fe.gui.presenter.CCTVFourFeedScreenController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.8125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="72.65625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="19.53125" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <fx:include source="HeaderPanel.fxml" />
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="transparent-grid" GridPane.rowIndex="1" GridPane.rowSpan="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="transparent-grid">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="50.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="50.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane fx:id="firstFeedViewGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="39.548" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.4971" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="23.4375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="9.7656" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="19.14062" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="43.16418" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label fx:id="dateLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="date" GridPane.columnIndex="1" />
+                                          <Label fx:id="dayLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="day" GridPane.columnIndex="2" />
+                                          <Label fx:id="timeLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="time" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="3">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="37.6953" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="57.8126" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="trainIdLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="trainId" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="5">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="64.4531" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="25.3906" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.1563" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="camIdLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="7">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="3.5156" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="33.5937" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="8.2032" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="cLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="cLbl" GridPane.columnIndex="1" />
+                                          <Label fx:id="nLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="N:" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <AnchorPane fx:id="firstFeedView" onMouseClicked="#onFirstFeedMouseClicked" onMousePressed="#onFourFeedMouseClicked" onTouchPressed="#onFourFeedTouchPressed" prefHeight="200.0" prefWidth="200.0" styleClass="feed-area" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="four-feed-screen-grid1" />
+                              <String fx:value="singleFeedGrid" />
+                           </styleClass>
+                        </GridPane>
+                        <GridPane fx:id="secondFeedViewGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="39.548" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.4971" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="23.4375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="9.7656" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="19.14062" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="43.16418" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="dateLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="date" GridPane.columnIndex="1" />
+                                          <Label fx:id="dayLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="day" GridPane.columnIndex="2" />
+                                          <Label fx:id="timeLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="time" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="3">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="37.6953" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="57.8126" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="trainIdLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="trainId" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="5">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="64.4531" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="25.3906" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.1563" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="camIdLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="camId" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="7">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="3.5156" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="33.5937" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="8.2032" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="cLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="cLbl" GridPane.columnIndex="1" />
+                                          <Label fx:id="nLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="N:" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <AnchorPane fx:id="secondFeedView" onMouseClicked="#onSecondFeedMouseClicked" onMousePressed="#onFourFeedMouseClicked" onTouchPressed="#onFourFeedTouchPressed" prefHeight="200.0" prefWidth="200.0" styleClass="feed-area" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="four-feed-screen-grid2" />
+                              <String fx:value="singleFeedGrid" />
+                           </styleClass>
+                        </GridPane>
+                        <GridPane fx:id="thirdFeedViewGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="39.548" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.4971" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="23.4375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="9.7656" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="19.14062" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="43.16418" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="dateLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="date" GridPane.columnIndex="1" />
+                                          <Label fx:id="dayLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="day" GridPane.columnIndex="2" />
+                                          <Label fx:id="timeLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="time" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="3">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="37.6953" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="57.8126" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="trainIdLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="trainId" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="5">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="64.4531" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="25.3906" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.1563" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="camIdLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="camId" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="7">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="3.5156" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="33.5937" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="8.2032" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="cLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="cLbl" GridPane.columnIndex="1" />
+                                          <Label fx:id="nLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="N:" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <AnchorPane fx:id="thirdFeedView" onMouseClicked="#onThirdFeedMouseClicked" onMousePressed="#onFourFeedMouseClicked" onTouchPressed="#onFourFeedTouchPressed" prefHeight="200.0" prefWidth="200.0" styleClass="feed-area" />
+                              <Button fx:id="previousVehicleBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onPreviousVehicleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="single-feed-screen-previous-icon" translateX="5.0" translateY="-150.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="four-feed-screen-grid3" />
+                              <String fx:value="singleFeedGrid" />
+                           </styleClass>
+                        </GridPane>
+                        <GridPane fx:id="fourthFeedViewGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="39.548" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.4971" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="7.06214" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="23.4375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="9.7656" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="19.14062" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="43.16418" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="dateLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="date" GridPane.columnIndex="1" />
+                                          <Label fx:id="dayLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="day" GridPane.columnIndex="2" />
+                                          <Label fx:id="timeLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="time" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="3">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="4.4921" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="37.6953" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="57.8126" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="trainIdLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="trainId" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="5">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="64.4531" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="25.3906" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.1563" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="camIdLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="camId" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="7">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="3.5156" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="33.5937" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="27.34375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="8.2032" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="cLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="C:" GridPane.columnIndex="1" />
+                                          <Label fx:id="nLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="four-feed-labels" text="nLbl" GridPane.columnIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <AnchorPane fx:id="fourthFeedView" onMouseClicked="#onFourthFeedMouseClicked" onMousePressed="#onFourFeedMouseClicked" onTouchPressed="#onFourFeedTouchPressed" prefHeight="200.0" prefWidth="200.0" styleClass="feed-area" />
+                              <Button fx:id="nextVehicleBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onNextVehicleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="single-feed-screen-next-icon" translateX="457.0" translateY="-150.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="four-feed-screen-grid4" />
+                              <String fx:value="singleFeedGrid" />
+                           </styleClass>
+                        </GridPane>
+                        <GridPane fx:id="eventGrid" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="260.0" prefWidth="1024.0" GridPane.columnSpan="2147483647" GridPane.valignment="TOP">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <fx:include maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="260.0" prefWidth="1024.0" source="CCTVEventsPanel.fxml" GridPane.columnSpan="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="settingsGrid" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="150.0" prefWidth="700.0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <fx:include source="CCTVSettingsPanel.fxml" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="noActiveAlarmLbl" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="54.0" prefWidth="150.0" styleClass="no-active-alarm-text-label" text="There is no active alarm!" translateX="460.0" />
+                  <Label fx:id="noActiveAlarmIconLbl" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="54.0" prefWidth="45.0" styleClass="no-active-alarm-icon-label" translateX="415.0" />
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <fx:include source="CCTVFooterPanel.fxml" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

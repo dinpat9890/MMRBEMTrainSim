@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="maple_trunk" guid="e9db7946d84fd759b42b7868c2a3eb33e82dd5f6" parent="beeebffcbf5325b7972091b203a7bc3de2f4042d" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/tree_bigleafmaple_trunk_alb.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/textures/tree_bigleafmaple_trunk_n.dds</texture>
+</material>

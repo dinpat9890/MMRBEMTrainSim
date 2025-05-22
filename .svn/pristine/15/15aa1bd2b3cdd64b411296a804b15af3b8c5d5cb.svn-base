@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="elm_rought_leaves_summer_0" guid="db14b2bc28a2fb86954f53a676ee096a9640c63e" parent="bb87a0cdf6c15b12e4967a1fe5d9ed606b93bf17" base_material="mesh_base">
+	<texture name="albedo">elm_rought/textures/elm_rought_summer_alb.dds</texture>
+	<texture name="normal">elm_rought/textures/elm_rought_n.dds</texture>
+	<parameter name="albedo_color">0.800000072 0.800000072 0.800000072 1</parameter>
+	<parameter name="roughness">1</parameter>
+</material>

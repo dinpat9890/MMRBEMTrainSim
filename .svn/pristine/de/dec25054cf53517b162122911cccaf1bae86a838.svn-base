@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<project name="Package Config" default="package.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+  
+  <!-- Import core packaging scripts -->
+  <import file="${dir.deps.processes}/packager/packager.config.xml" as="packager" />
+  
+  <!-- Extend targets that we want to add to, but with targets that can be called locally -->
+  <!-- The base example is just to copy the environment files (and not generate them), which we can
+       do in a standard fashion -->
+  <!-- The separate indirection, rather than having deploy.config.runtime forcibly add itself as an
+       extension of deploy.all, is to allow packager.config to be imported while still giving the
+       project the choice of whether to use this target. -->
+  <target name="deploy.config" description="Copies runtime configuration files to the deploy folder being prepared" extensionOf="deploy.all" depends="deploy.config.runtime"/>
+</project>

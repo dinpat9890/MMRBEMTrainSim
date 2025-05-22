@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type_groups>
+  <feature_type_group name="ATCBalise" description="ATC Balise Group" />
+  <feature_type_group name="Buffer" description="Buffer Stop Group" />
+  <feature_type_group name="Building" description="Building Group" />
+  <feature_type_group name="Camera" description="Camera Group" />
+  <feature_type_group name="CBTC" description="CBTC Group" />
+  <feature_type_group name="Children" description="Children Playing Trackside Group" />
+  <feature_type_group name="CrossingMulti" description="Crossing Multi-State Group" />
+  <feature_type_group name="CrossingStatic" description="Crossing Static Group" />
+  <feature_type_group name="Cutting" description="Cutting Group" />
+  <feature_type_group name="Detonator" description="Detonator Group" />
+  <feature_type_group name="Environment" description="Environment" />
+  <feature_type_group name="ETCS" description="ETCS Group" />
+  <feature_type_group name="GSMR" description="GSM-R Features" />
+  <feature_type_group name="Handsignaller" description="Handsignaller Group" />
+  <feature_type_group name="Location" description="Location Group" />
+  <feature_type_group name="Obstruction" description="Obstruction Group" />
+  <feature_type_group name="OverBridge" description="Over Bridge Group" />
+  <feature_type_group name="Platform" description="Platform Group" />
+  <feature_type_group name="PlatformDoors" description="Platform Doors Group" />
+  <feature_type_group name="PlatformMulti" description="Platform with People Group" />
+  <feature_type_group name="PlatformPassenger" description="Platform Passenger Group" />
+  <feature_type_group name="Point" description="Point Group" />
+  <feature_type_group name="RadioArea" description="Radio Area Code Group" />
+  <feature_type_group name="RadioBlackspot" description="Radio Blackspot Group" />
+  <feature_type_group name="Route" description="Route Group" />
+  <feature_type_group name="Sign" description="Sign Group" />
+  <feature_type_group name="Signal" description="Signal Group" />
+  <feature_type_group name="SignAlpha" description="Sign Static Alphanumeric Group" />
+  <feature_type_group name="SignalPlates" description="Signal Plates" />
+  <feature_type_group name="SignMulti" description="Sign Multi State Group" />
+  <feature_type_group name="SignNum" description="Sign Static Numeric Group" />
+  <feature_type_group name="SignStatic" description="Sign Static Group" />
+  <feature_type_group name="SpeedRestriction" description="Speed Restriction Group" />
+  <feature_type_group name="Station" description="Station Group" />
+  <feature_type_group name="TrackCircuit" description="Track Circuit Group" />
+  <feature_type_group name="TrackProperty" description="Track Property Group" />
+  <feature_type_group name="TrackStop" description="Track Stop Group" />
+  <feature_type_group name="TrainGroup" description="Train Feature Group" />
+  <feature_type_group name="TrainProtection" description="Train Protection Group" />
+  <feature_type_group name="Transponder" description="Transponder Group" />
+  <feature_type_group name="Tunnel" description="Tunnel Group" />
+  <feature_type_group name="UnderBridge" description="Under Bridge Group" />
+  <feature_type_group name="UserFeatures" description="User-Defined Features" />
+  <feature_type_group name="WorkCrew" description="Work Crews Trackside Group" />
+  <feature_type_group name="Track builder Set dressing" description="Track builder Set dressing Group" /> 
+  <feature_type_group name="PlatformLights" description="Platform Lights Group" /> 
+  <feature_type_group name="Intersection" description="Intersection Signal Group" /> 
+</feature_type_groups>

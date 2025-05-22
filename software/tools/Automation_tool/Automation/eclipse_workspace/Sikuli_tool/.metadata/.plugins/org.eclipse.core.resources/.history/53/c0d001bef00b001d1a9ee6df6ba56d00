@@ -1,0 +1,1062 @@
+package Mumbai_Metro;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
+import org.sikuli.script.Screen;
+import java.io.IOException; // Import the IOException class to handle errors
+
+/**
+ * Created Automation Script for PowerMenu Starting to load SMC, SCC & PT
+ * Screens using sikuli tool.
+ *
+ * @author ext-asatis
+ */
+
+public class powerMenuStartup {
+
+	Screen center_Screen = new Screen(); // Center
+	Screen right_Screen = new Screen(1); // Right
+	Screen left_Screen = new Screen(2); // Left
+	Screen s = new Screen(); // Center
+
+	private void powerMenu() throws IOException {
+		find_Click_Test(center_Screen, FilePathConstant.POWER_MENU + "powerScreen.PNG", true, "", "PowerMenu Startup",
+				12.0);
+		find_Click_Test(center_Screen, FilePathConstant.POWER_MENU + "StartSim.PNG", false, "", "PowerMenu Startup",
+				17.0);
+	}
+
+	private void smc() throws IOException {
+		find_Click_Test(right_Screen, FilePathConstant.IMAGE_PATH_1 + "DefaultManager.PNG", "", "SMC Login", 1.0);
+		find_Click_Test(right_Screen, FilePathConstant.IMAGE_PATH_1 + "SuperUser.PNG", "", "SMC Login", 1.0);
+		find_Click_Test(right_Screen, FilePathConstant.IMAGE_PATH_1 + "password.PNG", "password", "SMC Login", 1.0);
+		find_Click_Test(right_Screen, FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG", "", "SMC Login", 2.0);
+	}
+
+	private void find_Click_Test(Screen screen, String filepath, boolean isDoubleClick, String type_text, String functionality,
+			double waitTime) {
+		try {
+			screen.find(filepath);
+			if(isDoubleClick)
+				screen.doubleClick(filepath);
+			else
+			screen.click(filepath);
+			
+			if (!type_text.isEmpty())
+				screen.type(type_text);
+			screen.wait(waitTime);
+			if (screen.exists(filepath) != null)
+				System.out.println("\n****Test Case : Test case Passed****\n" + screen.exists(filepath));
+			else
+				System.out.println("\n****Test Case : Test case Failed****\n" + screen.exists(filepath));
+		} catch (FindFailed e) {
+			System.out.println(functionality);
+		}
+	}
+
+	private void trainBuilder() throws IOException {
+		try {
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "train.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "train.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "driving_motor_car_1_2.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "driving_motor_car_1_2.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "rear_button.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "rear_button.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trailer_car_1_2.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "trailer_car_1_2.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trailer_car_1_2.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "trailer_car_1_2.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "motor_car_1_2.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "driving_motor_car_2_1.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "driving_motor_car_2_1.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "firstMotor.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "firstMotor.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "motorCar12.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "motorCar12.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "motorCar21.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "motorCar21.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trailer21.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "trailer21.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "DrivingCar21.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "DrivingCar21.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "Edit.PNG");
+			right_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "FullLoad.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "saveAsTrainBuilder.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "saveAsTrainBuilder.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trainBuildername.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trainBuildername.PNG");
+			right_Screen.type("simTrain1");
+			right_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "openTrain.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "openTrain.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "selectTrain.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "selectTrain.PNG");
+			right_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "editSimTrain1.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH_1 + "editSimTrain1.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH_1 + "okButton1.PNG");
+			center_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG") != null)
+				System.out.println("\n****Test Case 3: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 3: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void userCreate() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Users.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Users.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "newTrainee.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "newTrainee.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "UserLastName.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "UserLastName.PNG");
+			right_Screen.type("Agrawal");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "UserFirstName.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "UserFirstName.PNG");
+			right_Screen.type("Neha");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "EmployeeNumber.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "EmployeeNumber.PNG");
+			right_Screen.type("2022");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "userClassification.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "userClassification.PNG");
+			right_Screen.type("Developer");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "WorkLocation.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "WorkLocation.PNG");
+			right_Screen.type("Pune");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Copy_Scenerio_save_as_new.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Copy_Scenerio_save_as_new.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "editTrainee.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "editTrainee.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Naming1.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Naming1.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG");
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG") != null)
+				System.out.println("\n****Test Case 4: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 4: Test case Failed****\n");
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void userEdit() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "editPune.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "editPune.PNG");
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type("Nagpur");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG") != null)
+				System.out.println("\n****Test Case 5: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 5: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void userDelete() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "DeleteTrainee.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "DeleteTrainee.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "editimage.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "editimage.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "DeleteButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "DeleteButton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "yes_buton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "yes_buton.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG") != null)
+				System.out.println("\n****Test Case 6: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 6: Test case Failed****\n");
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void instructor() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Instructor.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Instructor.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "NewInstructor.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "NewInstructor.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "InstructorLastName.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "InstructorLastName.PNG");
+			right_Screen.type("Agrawal");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "InstructorFirstName.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "InstructorFirstName.PNG");
+			right_Screen.type("Neha");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "SelectPrivilageGroup.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "SelectPrivilageGroup.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "SuperUser1.PNG");
+			right_Screen.doubleClick(FilePathConstant.IMAGE_PATH_1 + "SuperUser1.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Password12.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Password12.PNG");
+			right_Screen.type("12345");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "saveAsNew.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "saveAsNew.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG") != null)
+				System.out.println("\n****Test Case 7: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 7: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void scenario() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Scenarios.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Scenarios.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "NewScenerio.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "NewScenerio.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "ScenerioName.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "ScenerioName.PNG");
+			right_Screen.type("MumbaiMetroTrain");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "up1.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "up1.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "down1.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "down1.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "selectTrack.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "selectTrack.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Feature_track.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Feature_track.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trackOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trackOkButton.PNG");
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Trains.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Trains.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "AddSimulated.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "AddSimulated.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trainName.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trainName.PNG");
+			right_Screen.type("SimTrain");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "TripNumber.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "TripNumber.PNG");
+
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type(Key.BACKSPACE);
+			right_Screen.type("1234");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "selectType.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "selectType.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "EMU_6_car.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "EMU_6_car.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trainConsistOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trainConsistOkButton.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "selectPosition.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "selectPosition.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "map_click.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "map_click.PNG");
+
+			right_Screen.mouseMove(FilePathConstant.IMAGE_PATH_1 + "map_drop.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trackOk.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trackOk.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "TrainOk1.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "TrainOk1.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "saveAsNew.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "saveAsNew.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.wait(2.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG") != null)
+				System.out.println("\n****Test Case 8: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 8: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void copyScenario() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "CopyScenario.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "CopyScenario.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "EMU_6_car_feature_track.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "EMU_6_car_feature_track.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "copy_ok_button.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "copy_ok_button.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Copy_Scenerio_save_as_new.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Copy_Scenerio_save_as_new.PNG");
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG") != null)
+				System.out.println("\n****Test Case 9: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 9: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void editScenario() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Edit_Scenario.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Edit_Scenario.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Mumbai.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Mumbai.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "edit_ok.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "edit_ok.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "ScriptedEvent.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "ScriptedEvent.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "AddInitialCondition.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "AddInitialCondition.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "button_click.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "button_click.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "SelectEvent.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "SelectEvent.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "light.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "light.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trainConsistOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trainConsistOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "selectAnEvent.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "selectAnEvent.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "on.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "on.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trackOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trackOkButton.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.wait(2.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG") != null)
+				System.out.println("\n****Test Case 10: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 10: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void deleteScenario() throws IOException {
+		try {
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "DeleteScenerio.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "DeleteScenerio.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "CopyOfMumbai_Metro.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "CopyOfMumbai_Metro.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "deleteOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "deleteOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "DeleteButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "DeleteButton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "yes_buton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "yes_buton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "SceneraioDeletedPopup.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "SceneraioDeletedPopup.PNG");
+
+			right_Screen.wait(2.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "scenarioGroups.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "scenarioGroups.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "newScenarioGroup.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "newScenarioGroup.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "groupName.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "groupName.PNG");
+			right_Screen.type("Group1");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "addAll.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "addAll.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "saveAsNew.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "saveAsNew.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "doneScenerioOkButton.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "editScenarioGroup.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "editScenarioGroup.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Group1.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Group1.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "trackOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "trackOkButton.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "EMU_6.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "EMU_6.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "remove.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "remove.PNG");
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "save.PNG");
+			right_Screen.wait(1.0);
+
+			right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+			right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG");
+
+			/*
+			 * right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "DeleteScenarioGroup.PNG");
+			 * right_Screen.click(FilePathConstant.IMAGE_PATH_1 +
+			 * "DeleteScenarioGroup.PNG"); right_Screen.wait(1.0);
+			 * 
+			 * right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Group1.PNG");
+			 * right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Group1.PNG");
+			 * 
+			 * right_Screen.find(FilePathConstant.IMAGE_PATH_1 +
+			 * "trainConsistOkButton.PNG"); right_Screen.click(FilePathConstant.IMAGE_PATH_1
+			 * + "trainConsistOkButton.PNG");
+			 * 
+			 * right_Screen.find(FilePathConstant.IMAGE_PATH_1 + "Delete1.PNG");
+			 * right_Screen.click(FilePathConstant.IMAGE_PATH_1 + "Delete1.PNG");
+			 * right_Screen.wait(1.0);
+			 * 
+			 * right_Screen.find(FilePathConstant.IMAGE_PATH_1 +
+			 * "SceneraioDeletedPopup.PNG");
+			 * right_Screen.click(FilePathConstant.IMAGE_PATH_1 +
+			 * "SceneraioDeletedPopup.PNG"); right_Screen.wait(1.0);
+			 */
+
+			if (s.exists(FilePathConstant.IMAGE_PATH_1 + "scenerioGroupOkButton.PNG") != null)
+				System.out.println("\n****Test Case 11: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 11: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void startSimulator() throws IOException {
+		try {
+
+			center_Screen.find(FilePathConstant.PT + "SoftPLC.PNG");
+			center_Screen.rightClick(FilePathConstant.PT + "SoftPLC.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.PT + "CloseWindow.PNG");
+			center_Screen.click(FilePathConstant.PT + "CloseWindow.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SessionSetup.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SessionSetup.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SelectInstructor.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SelectInstructor.PNG");
+			center_Screen.wait(3.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SuperUserDefault.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SuperUserDefault.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SelectScenario.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SelectScenario.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "EMU_8_Car_Track.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "EMU_8_Car_Track.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SelectDriversCabTrainee.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SelectDriversCabTrainee.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "DriverTraineeName.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "DriverTraineeName.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.wait(3.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "StartSession.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "StartSession.PNG");
+			center_Screen.wait(15.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SimulatorStatus.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SimulatorStatus.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "Play.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "Play.PNG");
+			center_Screen.wait(2.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH + "Play.PNG") != null)
+				System.out.println("\n****Test Case 13: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 13: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void environmentControl() throws IOException {
+		try {
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "EnvironmentControl.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "EnvironmentControl.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "Rain.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "Rain.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "Fog.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "Fog.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "WindDirection.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "WindDirection.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "WindVelocity.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "WindVelocity.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "Lightening.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "Lightening.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "ScriptingManegement.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "ScriptingManegement.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "FireImmediateEvent.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "FireImmediateEvent.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SendEvent.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SendEvent.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SelectEvent.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SelectEvent.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "RainIntensityPercentage.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "RainIntensityPercentage.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SelectEventState.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SelectEventState.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "ZeroPercent.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "ZeroPercent.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "FireImmediateEvent.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "FireImmediateEvent.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SendEvent.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SendEvent.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SelectEvent.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SelectEvent.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "Light.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "Light.PNG");
+			center_Screen.wait(1.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.wait(2.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "SelectEventState.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "SelectEventState.PNG");
+			center_Screen.wait(3.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "LighteningOn.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "LighteningOn.PNG");
+			center_Screen.wait(3.0);
+
+			center_Screen.find(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.click(FilePathConstant.IMAGE_PATH + "OkButton.PNG");
+			center_Screen.wait(2.0);
+
+			if (s.exists(FilePathConstant.IMAGE_PATH + "OkButton.PNG") != null)
+				System.out.println("\n****Test Case 14: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 14: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void pt() throws IOException {
+
+		try {
+			left_Screen.find(FilePathConstant.PT + "PT.PNG");
+			left_Screen.click(FilePathConstant.PT + "PT.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "PTInstructor.PNG");
+			left_Screen.click(FilePathConstant.PT + "PTInstructor.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Train1.PNG");
+			left_Screen.click(FilePathConstant.PT + "Train1.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "DriverDesk.PNG");
+			left_Screen.click(FilePathConstant.PT + "DriverDesk.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "masterController.PNG");
+			left_Screen.click(FilePathConstant.PT + "masterController.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "masterController1.PNG");
+			left_Screen.click(FilePathConstant.PT + "masterController1.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "OnKey.PNG");
+			left_Screen.click(FilePathConstant.PT + "OnKey.PNG");
+			left_Screen.wait(3.0);
+
+			left_Screen.find(FilePathConstant.PT + "back.PNG");
+			left_Screen.click(FilePathConstant.PT + "back.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "panel1.PNG");
+			left_Screen.click(FilePathConstant.PT + "panel1.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "ParkingBrakeOff.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "ParkingBrakeOff.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "back.PNG");
+			left_Screen.click(FilePathConstant.PT + "back.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "back.PNG");
+			left_Screen.click(FilePathConstant.PT + "back.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "OperatingPanel2.PNG");
+			left_Screen.click(FilePathConstant.PT + "OperatingPanel2.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "panel2.PNG");
+			left_Screen.click(FilePathConstant.PT + "panel2.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "PowerOn.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "PowerOn.PNG");
+			left_Screen.wait(3.0);
+
+			left_Screen.find(FilePathConstant.PT + "vcbClose.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "vcbClose.PNG");
+			left_Screen.wait(3.0);
+
+			left_Screen.find(FilePathConstant.PT + "back.PNG");
+			left_Screen.click(FilePathConstant.PT + "back.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "back.PNG");
+			left_Screen.click(FilePathConstant.PT + "back.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "masterController.PNG");
+			left_Screen.click(FilePathConstant.PT + "masterController.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "masterController1.PNG");
+			left_Screen.click(FilePathConstant.PT + "masterController1.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Deadman.PNG");
+			left_Screen.click(FilePathConstant.PT + "Deadman.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "UpClick.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			left_Screen.wait(2.0);
+
+			/*
+			 * left_Screen.find(FilePathConstant.PT + "Pmax.PNG");
+			 * left_Screen.doubleClick(FilePathConstant.PT + "Pmax.PNG");
+			 * left_Screen.wait(2.0);
+			 * 
+			 * left_Screen.find(FilePathConstant.PT + "vision.PNG");
+			 * left_Screen.click(FilePathConstant.PT + "vision.PNG"); left_Screen.wait(3.0);
+			 */
+
+			if (s.exists(FilePathConstant.PT + "Pmax.PNG") != null)
+				System.out.println("\n****Test Case 15: Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 15: Test case Failed****\n");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) throws FindFailed {
+		try {
+			powerMenuStartup obj = new powerMenuStartup();
+
+			obj.powerMenu();
+
+			obj.smc();
+//			obj.trainBuilder();
+//			obj.userCreate();
+//			obj.userEdit();
+//			obj.userDelete();
+//			obj.instructor();
+//			obj.scenario();
+//			obj.copyScenario();
+//			obj.editScenario();
+//			obj.deleteScenario();
+//
+//			obj.startSimulator();
+//			obj.environmentControl();
+//
+//			obj.pt();
+
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+}

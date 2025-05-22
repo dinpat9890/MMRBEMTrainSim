@@ -1,0 +1,5 @@
+# Project Database version configuration
+# For more information see 
+
+# For now just match the rev to the database number, for releases match the software version to the database version
+database.number = mmrbem_1_0_0

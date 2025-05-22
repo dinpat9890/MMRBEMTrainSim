@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="MA_bman0103_head" guid="f2d26e986dba40fb2521d7a686fe7631d41a6a1f" base_material="mesh_base">
+	<texture name="albedo">../features/animated_features/graphics/textures/MA_bman0103_head.dds</texture>
+	<texture name="shading">../features/animated_features/graphics/textures/MA_bman0103_head_met.dds</texture>
+	<parameter name="microfiber">0.787999988</parameter>
+	<parameter name="normal_scale">0</parameter>
+</material>

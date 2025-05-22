@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="platform_01" guid="b9f8304a228e95d01f03cacbd9878b76170a8589" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/platform_01.dds</texture>
+	<texture name="shading">../worlds/mmrbem/graphics/stations/texture/platform_01_met.dds</texture>
+	<texture name="normal">../worlds/mmrbem/graphics/stations/texture/platform_01_n.dds</texture>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">1</parameter>
+</material>

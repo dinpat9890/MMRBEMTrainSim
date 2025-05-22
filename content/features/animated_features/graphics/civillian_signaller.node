@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="1680618277" name="civllian_signaller">
+		<mesh_name>../features/animated_features/graphics/civllian_signaller.mesh</mesh_name>
+		<surface name="civillian_signaller_body_LOD_0" max_visible_distance="1000" material="e837590868569e511ca8f9f6d189dceb88419842" property="surface_base"/>
+		<surface name="civillian_signaller_head_LOD_0" max_visible_distance="1000" material="15abc143017a2691fa58518d12610c273c4e522f" property="surface_base"/>
+		<surface name="green_flag" max_visible_distance="1000" material="384a661dfc5896e1169858afdc580350ead9cc20" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

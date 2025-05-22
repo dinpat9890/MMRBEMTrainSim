@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<feature_type available="1" constant_name="FETY_BROKEN_RAIL" group="TrackProperty" modifiable="1" name="Broken Rail" user_feature="0" version="2.0">
+	<feature_type_state_type name="State">
+		<feature_type_state name="Inactive" state_id="1" user_selectable="1"/>
+		<feature_type_state name="Small Break" state_id="2" user_selectable="1"/>
+		<feature_type_state name="Severe Break" state_id="3" user_selectable="1"/>
+	</feature_type_state_type>
+	
+	<object_parameters>
+		<key name="Initial State" type="State" default="Inactive" description=""/>
+		<!-- 0 = Disabled, 1 = Geometry Collision, 2 = Adjacency Collision -->
+		<key name="Derailer" type="double" default="0.0" description="Adjacency Derailment"/>
+	</object_parameters>
+	
+	<feature_type_icon icon_code="BROKENRAIL" big_icon="icons/BROKENRAIL.zip#BROKENRAIL-Inactive-BIG.png"  small_icon="icons/BROKENRAIL.zip#BROKENRAIL-Inactive-SMALL.png">
+		<feature_type_state_icon state_id="1" icon_code="Inactive" big_icon="icons/BROKENRAIL.zip#BROKENRAIL-Inactive-BIG.png"  small_icon="icons/BROKENRAIL.zip#BROKENRAIL-Inactive-SMALL.png" />
+		<feature_type_state_icon state_id="2" icon_code="Small_Break" big_icon="icons/BROKENRAIL.zip#BROKENRAIL-Small_Break-BIG.png"  small_icon="icons/BROKENRAIL.zip#BROKENRAIL-Small_Break-SMALL.png" />
+		<feature_type_state_icon state_id="3" icon_code="Severe_Break" big_icon="icons/BROKENRAIL.zip#BROKENRAIL-Severe_Break-BIG.png"  small_icon="icons/BROKENRAIL.zip#BROKENRAIL-Severe_Break-SMALL.png" />
+	</feature_type_icon> 		
+	<feature_type_vision class="SwitchablePartFeature" raycast_type="NoRaycast" node_file="broken_rail.node">
+		<model_parts>
+			<model_part model_part_id="1" name="small_break"/>
+			<model_part model_part_id="2" name="severe_break"/>
+		</model_parts>
+		<model_state_parts>
+			<model_state_part state_id="2" part_id="1"/>
+			<model_state_part state_id="3" part_id="2"/>
+		</model_state_parts>
+	</feature_type_vision>  
+</feature_type>

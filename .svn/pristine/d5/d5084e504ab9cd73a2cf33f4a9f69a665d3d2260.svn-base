@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1889227799" name="outer_buildings">
+		<mesh_name>../worlds/library_objects/gen_building/outer_buildings.mesh</mesh_name>
+		<surface name="outer_buildings_08_buri_ram_hospital" max_visible_distance="10000" max_fade_distance="10" material="de3fe8ca1213282d387b38fd6bffc9a39566c078" property="surface_base"/>
+		<surface name="outer_buildings_building_apartment_01" max_visible_distance="10000" max_fade_distance="10" material="1e8a0c5f515a3d67aa0802486ccd92bd0ff2b11e" property="surface_base"/>
+		<surface name="outer_buildings_building_apartment_02" max_visible_distance="10000" max_fade_distance="10" material="1ac967fce7b4d9d6a58b9223959a800d74ce83e1" property="surface_base"/>
+		<surface name="outer_buildings_building_highrise_01" max_visible_distance="10000" max_fade_distance="10" material="a6d17d56804df60f695b2c3081076fa6438f8f44" property="surface_base"/>
+		<surface name="outer_buildings_building_highrise_glass_01" max_visible_distance="10000" max_fade_distance="10" material="2f015ad18583d490bcda487eed08361237dc349c" property="surface_base"/>
+		<transform>0.999999880791 -8.32667268469e-017 0 0.0 2.77555756156e-017 0.999999880791 0 0.0 0 0 0.999999940395 0.0 1.81898940355e-012 0 0 1.0</transform>
+	</node>
+</nodes>

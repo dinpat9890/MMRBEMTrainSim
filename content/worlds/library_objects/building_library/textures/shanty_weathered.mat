@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shanty_weathered" guid="7e8da32f4fce5e89808af6e7aa6f92f37092e48a" base_material="mesh_base">
+	<state name="workflow">1</state>
+	<texture name="diffuse">../worlds/library_objects/building_library/textures/shanty_weathered.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+</material>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="flood" guid="6bdd6eae59a342c4715694cce7cae4623872d648" base_material="water_mesh_base">
+	<state name="additional_normals">0</state>
+	<state name="caustics">0</state>
+	<texture name="water_depth_lut">../features/flood/graphics/flood_depth_lut.tga</texture>
+	<parameter name="detail0_uv_transform">vec4(50.0f,50.0f,0.5f,3.0f)</parameter>
+	<parameter name="detail0_intensity">0.5</parameter>
+	<parameter name="detail1_intensity">0.200000003</parameter>
+	<parameter name="foam0_uv_size">3</parameter>
+	<parameter name="foam0_uv_speed">0.00100000005</parameter>
+	<parameter name="foam1_uv_size">1</parameter>
+	<parameter name="foam1_uv_speed">0.00100000005</parameter>
+	<parameter name="coast_foam_intensity">0.282999992</parameter>
+	<parameter name="subsurface_color">0.400000036 0.325490206 0.250980407 1</parameter>
+	<parameter name="ambient_subsurface_intensity">0.800000012</parameter>
+	<parameter name="underwater_fog_transparency">0</parameter>
+	<parameter name="underwater_fog_environment_influence">0</parameter>
+</material>

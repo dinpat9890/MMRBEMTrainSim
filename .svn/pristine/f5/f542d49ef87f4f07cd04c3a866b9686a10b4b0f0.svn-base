@@ -1,0 +1,64 @@
+## Developers Settings
+[Defaults]
+Database=..\..\Deploy\Environment\Database.ini
+System=..\..\Deploy\Environment\System.ini
+
+[System.1]
+Module Name=CBTC Trackside Units (DEBUG)
+
+[Simulator]
+Hub Name=Driver's Cab
+#'
+# Session Time Limit is in minutes.
+Session Time Limit=60.0
+
+[Plugins]
+#Path to the "Resource Plugins" relative to the working folder 
+Resource Path=..\..\dependencies\software\oksygen\sim\train\resources\all_vehicles_watcher_resources\bin;..\..\dependencies\software\oksygen\sim\train\resources\modelled_train_selector_resources\bin;..\..\dependencies\software\oksygen\sim\train\resources\points_watcher_resources\bin;..\..\dependencies\software\oksygen\sim\train\resources\train_data_access_resources\bin;..\..\dependencies\software\oksygen\sim\train\resources\train_object_definition_resources\bin;..\..\dependencies\software\oksygen\sim\train\resources\world_access_resources\bin;;..\..\dependencies\software\oksygen\sim\train\resources\scenario_train_path_watcher_resources\bin
+
+#Path to the "Unit Plugins" relative to the working folder 
+Unit Path=bin
+
+[Unit Plugins]
+PlatformControlUnit
+PlatformDoorControlUnit
+PSDFaultsAndEventsUnit
+BeaconUnit
+LMAUnit
+TrackEventsUnit
+GradientProfileUnit
+
+[Module Resource Plugins]
+train_data_access_resources
+
+[Scenario Resource Plugins]
+world_access_resources
+
+[Session Resource Plugins]
+points_watcher_resources
+all_vehicles_watcher_resources
+scenario_train_path_watcher_resources
+modelled_train_selector_resources
+
+[OnBoard Configuration]
+# On ETCS Reset, the Onboard will come back up after these seconds
+# TargetDistanceIncrement=10.0
+
+# Change the Logging Level of the Train Model
+[Logging]
+# Valid Values are :
+# ERR or ERROR
+# WARN or WARNING
+# INFO - This is the Default Logging Level
+# VERBOSE
+Level=INFO
+#Maximum Log Size= 
+#Backup Log Count=
+
+[Gradient Profile Configuration]
+# Calculate gradient of each position after this distance in meters
+Step Distance=25.0
+# Minimum length of a gradient stretch to be considered as a gradient profile
+Min Gradient Distance=200.0
+# Minimum required change in two consecutive gradients(in per-mille) to be considered different
+Min Acceptable Change=2.0

@@ -1,0 +1,207 @@
+/*
+ * ==================================================================
+ *
+ * (C) Copyright 2017 Sydac Pty Ltd., all rights reserved. This is unpublished
+ * proprietary source code of Sydac. The copyright notice above does not
+ * evidence any actual or intended publication of such source code.
+ *
+ * ==================================================================
+ */
+
+/** CSS styles for all the components is given here **/
+.root {
+	/** Can assign variable to common styles and use same for other components. **/
+	-fx-background-color: transparent;
+}
+
+.app-background {
+	-fx-background-color: rgb(187, 188, 183);
+}
+
+.psd-screen {
+	-fx-background-color: rgb(187, 188, 183);
+}
+
+.line7-right-grid-background {
+	-fx-vgap: 0;
+	-fx-hgap: 0;
+	-fx-border-insets: 0;
+	-fx-padding: 0;
+	/* -fx-background-color: rgb(81,81,81); */
+	-fx-background-image: url('../images/psd_control_panels_7_right.png');
+}
+
+.line7-left-grid-background {
+	-fx-vgap: 0;
+	-fx-hgap: 0;
+	-fx-border-insets: 0;
+	-fx-padding: 0;
+	/* -fx-background-color: rgb(81,81,81); */
+	-fx-background-image: url('../images/psd_control_panels_7_left.png');
+}
+
+.button-pgclose-state, .button-pgclose-state:unpressed {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/red_unpushed.png');
+	-fx-background-size: 100.0%;
+}
+
+.button-pgclose-state:pressed {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/red_pushed.png');
+	-fx-background-size: 100.0%;
+}
+
+.button.button-pse-key, .button.button-pse-key:unselected {
+	-fx-background-image: url('../images/key_off_with_key.png');
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button.button-pse-key:selected {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-image: url('../images/key_on.png');
+}
+
+.button-pgopen-state, .button-pgopen-state:unpressed {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/green_unpushed.png');
+	-fx-background-size: 100.0%;
+}
+
+.button-pgopen-state:pressed {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/green_pushed.png');
+	-fx-background-size: 100.0%;
+}
+
+.button.button-interlock, .button-interlock:unpressed {
+	-fx-background-image: url('../images/interlock_left_45.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+	-fx-background-color: none;
+}
+
+.button.button-interlock:pressed {
+	-fx-background-image: url('../images/interlock_right_45.png');
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100.0%;
+}
+
+.button-lamp-state, .button-lamp-state:unpressed {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/black_unpushed.png');
+	-fx-background-size: 100.0%;
+}
+
+.button-lamp-state:pressed {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/black_pushed.png');
+	-fx-background-size: 100.0%;
+}
+
+.led-indicator, .led-indicator: unlit {
+	-fx-background-insets: 0.0;
+	-fx-background-image: url('../images/green_unlit.png');
+}
+
+.led-indicator: lit {
+	-fx-background-image: url('../images/green_lit.png');
+}
+
+.psl-indicator, .psl-indicator: unlit {
+	-fx-background-insets: 0.0;
+	-fx-background-image: url('../images/red_unlit.png');
+}
+
+.psl-indicator: lit {
+	-fx-background-image: url('../images/red_lit.png');
+}
+
+.all-door-indicator, .all-door-indicator: unlit {
+	-fx-background-insets: 0.0;
+	-fx-background-image: url('../images/orange_unlit.png');
+}
+
+.all-door-indicator: lit {
+	-fx-background-image: url('../images/orange_lit.png');
+}
+
+.line2-right-grid-background {
+	-fx-vgap: 0;
+	-fx-hgap: 0;
+	-fx-border-insets: 0;
+	-fx-padding: 0;
+	/* -fx-background-color: rgb(81,81,81); */
+	-fx-background-image: url('../images/psd_control_panels_2_right.png');
+}
+
+.line2-left-grid-background {
+	-fx-vgap: 0;
+	-fx-hgap: 0;
+	-fx-border-insets: 0;
+	-fx-padding: 0;
+	/* -fx-background-color: rgb(81,81,81); */
+	-fx-background-image: url('../images/psd_control_panels_2_left.png');
+}
+
+.line2-doorleft-background {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/l2_sliding_door_left_right.png');
+	-fx-background-size: 97.0%;
+}
+
+.line2-doorRight-background {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/l2_sliding_door_right_left.png');
+	-fx-background-size: 97.0%;
+}
+.line7-doorleft-background {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/l7_sliding_door_left_right.png');
+	-fx-background-size: 97.0%;
+}
+
+.line7-doorRight-background {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/l7_sliding_door_right_left.png');
+	-fx-background-size: 97.0%;
+}
+
+.blank-screen-image {
+	-fx-background-color: none;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-image: url('../images/768x1024.png');
+	-fx-background-size: 97.0%;
+}
+
+

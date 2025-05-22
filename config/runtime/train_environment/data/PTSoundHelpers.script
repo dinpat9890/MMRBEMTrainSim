@@ -1,0 +1,364 @@
+(! *** CIRCUIT BREAKER HELPERS *************************************************
+   -----------------------------------------------------------------------------
+   
+   The define-cb-sounds function is provided to help automatically set up a
+   generic circuit breaker sound for a number of inputs. To use it, you'll need:
+   
+   * A list of vehicle number names, e.g.
+   
+    ("CB1" "CB2")
+   
+   * A list of screen ids on which these breakers can be heard from, e.g.
+   
+    (100 234 123)
+   
+   * Two .WAV files, one for setting and one for tripping the circuit breaker.
+   
+   For example, using the above with files "MCB_Set.wav" and "MCB_Trip.wav",
+   both to be played at full volume (100.0), your code might look like:
+   
+   (for-all-trains $train
+     (enable-if-simulated-train $train
+       (for-all-vehicles $train $vehicle
+         (define-cb-sounds $train $vehicle 
+                           ("CB1" "CB2")
+                           (100 234 123)
+                           "MCB_Set.wav"  100.0 
+                           "MCB_Trip.wav" 100.0)
+       )
+     )
+   )
+   
+   See the definition of define-cb-sounds for more information.
+)
+
+(! While $input is high, pulses low for $on seconds, high for $off seconds? )
+(define pulse-output $input $on $off
+  (alloc-var-id $output
+    (last
+      (set-var $output 0)
+      (set-var-if (and $input (uninterrupted (== (get-var $output) 0) $on)) 
+                  $output 1)
+      (set-var-if (uninterrupted (== (get-var $output) 1) $off) 
+                  $output 0)
+      (get-var $output)
+    )
+  )
+)
+
+(define pulse-audio-output $input
+  (pulse-output $input 0.1 0.1)
+)
+
+(! *** Circuit Breaker Trigger *************************************************
+
+   Evaluates high if the current PT screen is in $list_of_screen_ids, and at 
+   least one of the Comms Numbers in $list_of_number_names has transitioned from
+   $transition_from to $transition_to
+   ****************************************************************************)
+(define trigger-cb $train 
+                   $vehicle 
+                   $list_of_number_names
+                   $list_of_screen_ids
+                   $transition_from
+                   $transition_to
+  (and 
+    (sustain
+      (or
+        (for-each $cb $list_of_number_names
+          (pulse-on-transition (get-vehicle-input-number $train $vehicle $cb 1)
+                               $transition_from $transition_to)
+        )
+      )
+      0.2
+    )
+    (or
+      (for-each $sc $list_of_screen_ids
+        (== (get-gmi-position-screen (observer-gmi-position)) $sc)
+      )
+    )
+  )
+)
+
+(! *** Define Circuit Breaker Sounds *******************************************
+
+   Assigns two sounds for each circuit breaker named in $list_of_number_names.
+   
+   When the circuit breaker is tripped, the .WAV file $cb_trip_sound_file is
+   played at a volume of $cb_reset_volume (in the range [0, 100]). Conversely,
+   $cb_reset_sound_file and $cb_reset_volume are used when the breaker is reset.
+   
+   Sounds are triggered ONLY IF the current screen ID is in $list_of_screen_ids.
+
+   NOTE: It is currently assumed the sound is played only inside the train, at
+         position (0, 0, 0), and is played to completion with no looping.
+   ****************************************************************************)
+(define define-cb-sounds-outside $list_of_number_names
+                                 $list_of_screen_ids
+                                 $cb_reset_sound_file
+                                 $cb_reset_volume
+                                 $cb_trip_sound_file
+                                 $cb_trip_volume
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train
+        (for-all-vehicles $train $vehicle
+
+          (define-gmi-vehicle-sound $sound $train $vehicle $cb_reset_sound_file 
+                                    (to-completion) (no-loop) 0 0 (relative)
+            (set-sound-position  $sound (position 0 0 0))
+            (set-sound-state     $sound (trigger-cb 
+                                          $train $vehicle 
+                                          $list_of_number_names 
+                                          $list_of_screen_ids 
+                                          0 1
+                                        )
+            )
+            (set-gmi-vehicle-sound-volume-outside-vehicle $sound $cb_reset_volume)
+          )
+          (define-gmi-vehicle-sound $sound $train $vehicle $cb_trip_sound_file 
+                                    (to-completion) (no-loop) 0 0 (relative)
+            (set-sound-position  $sound (position 0 0 0))
+            (set-sound-state     $sound (trigger-cb 
+                                          $train $vehicle 
+                                          $list_of_number_names
+                                          $list_of_screen_ids 
+                                          1 0
+                                        )
+            )
+            (set-gmi-vehicle-sound-volume-outside-vehicle $sound $cb_trip_volume)
+          )
+        )
+      )
+    )
+  )
+)
+(define define-cb-sounds-inside $list_of_number_names
+                                $list_of_screen_ids
+                                $cb_reset_sound_file
+                                $cb_reset_volume
+                                $cb_trip_sound_file
+                                $cb_trip_volume
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train    
+        (for-all-vehicles $train $vehicle
+          (define-gmi-vehicle-sound $sound $train $vehicle $cb_reset_sound_file 
+                                    (to-completion) (no-loop) 0 0 (relative)
+            (set-sound-position  $sound (position 0 0 0))
+            (set-sound-state     $sound (trigger-cb 
+                                          $train $vehicle 
+                                          $list_of_number_names 
+                                          $list_of_screen_ids 
+                                          0 1
+                                        )
+            )
+            (set-gmi-vehicle-sound-volume-inside-vehicle $sound $cb_reset_volume)
+          )
+          (define-gmi-vehicle-sound $sound $train $vehicle $cb_trip_sound_file 
+                                    (to-completion) (no-loop) 0 0 (relative)
+            (set-sound-position  $sound (position 0 0 0))
+            (set-sound-state     $sound (trigger-cb 
+                                          $train $vehicle 
+                                          $list_of_number_names
+                                          $list_of_screen_ids 
+                                          1 0
+                                        )
+            )
+            (set-gmi-vehicle-sound-volume-inside-vehicle $sound $cb_trip_volume)
+          )
+        )
+      )
+    )
+  )
+)
+(! *** TOGGLE SWITCH HELPERS ***************************************************
+   -----------------------------------------------------------------------------
+   
+   Provides a generic "click" sound for toggle switches.
+)
+
+(! *** Toggle Trigger **********************************************************
+   ****************************************************************************)
+(define trigger-toggle $train 
+                       $vehicle 
+                       $list_of_number_names
+                       $list_of_screen_ids
+  (and 
+    (or
+      (for-each $toggle $list_of_number_names
+        (or (pulse-on-transition (get-vehicle-input-number $train $vehicle $toggle 0) 0 1)
+            (pulse-on-transition (get-vehicle-input-number $train $vehicle $toggle 0) 1 0)
+        )
+      )
+    )
+    (or
+      (for-each $sc $list_of_screen_ids
+        (== (get-gmi-position-screen (observer-gmi-position)) $sc)
+      )
+    )
+  )
+)
+
+(! *** Define Toggle Sounds ****************************************************
+   ****************************************************************************)
+(define define-toggle-sounds-outside $list_of_number_names
+                                     $list_of_screen_ids
+                                     $toggle_sound_file
+                                     $toggle_volume
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train    
+        (for-all-vehicles $train $vehicle
+          (define-gmi-vehicle-sound $sound $train $vehicle $toggle_sound_file 
+                                    (to-completion) (no-loop) 0 0 (relative)
+            (set-sound-position  $sound (position 0 0 0))
+            (set-sound-state     $sound (trigger-toggle $train $vehicle 
+                                                        $list_of_number_names 
+                                                        $list_of_screen_ids 
+                                        )
+            )
+            (set-gmi-vehicle-sound-volume-outside-vehicle $sound $toggle_volume)
+          )
+        )
+      )
+    )
+  )
+)
+(define define-toggle-sounds-inside $list_of_number_names
+                                    $list_of_screen_ids
+                                    $toggle_sound_file
+                                    $toggle_volume
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train    
+        (for-all-vehicles $train $vehicle
+          (define-gmi-vehicle-sound $sound $train $vehicle $toggle_sound_file 
+                                    (to-completion) (no-loop) 0 0 (relative)
+            (set-sound-position  $sound (position 0 0 0))
+            (set-sound-state     $sound (trigger-toggle $train $vehicle 
+                                                        $list_of_number_names 
+                                                        $list_of_screen_ids 
+                                        )
+            )
+            (set-gmi-vehicle-sound-volume-inside-vehicle $sound $toggle_volume)
+          )
+        )
+      )
+    )
+  )
+)
+
+(! *** Define Air Leak Sound ***************************************************
+   ****************************************************************************)
+(define define-absolute-outside-sound $sound_file
+                                      $x_position
+                                      $volume
+                                      $output_number_name
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train    
+        (for-all-vehicles $train $vehicle
+          (define-gmi-vehicle-sound $sound $train $vehicle $sound_file
+                                    (inactivation) (loop) 0 0 (absolute)
+            (set-gmi-vehicle-sound-1-end-position $sound (position $x_position 0.0 0.0))
+            (set-gmi-vehicle-sound-volume-outside-vehicle $sound $volume)
+            (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle $output_number_name 0))
+          )
+        )
+      )
+    )
+  )
+)
+
+(define define-relative-outside-sound $sound_file  
+                                      $volume
+                                      $output_number_name
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train    
+        (for-all-vehicles $train $vehicle
+          (define-gmi-vehicle-sound $sound $train $vehicle $sound_file
+                                    (inactivation) (loop) 0 0 (relative)
+            (set-sound-position  $sound (position 0.0 0.0 0.0))
+            (set-gmi-vehicle-sound-volume-outside-vehicle $sound $volume)
+            (set-sound-state $sound (get-vehicle-audio-output-number $train $vehicle $output_number_name 0))
+          )
+        )
+      )
+    )
+  )
+)
+
+(define define-loop-volume-outside-sound $sound_file
+                                         $x_position
+                                         $output_number_name
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train    
+        (for-all-vehicles $train $vehicle
+          (define-gmi-vehicle-sound $sound $train $vehicle $sound_file
+                                    (inactivation) (loop) 0 0 (absolute)
+            (set-gmi-vehicle-sound-1-end-position $sound (position $x_position 0.0 0.0))
+            (set-gmi-vehicle-sound-volume-outside-vehicle $sound (limit 80 100 (+ (* (/ (get-vehicle-audio-output-number $train $vehicle $output_number_name) 100) 20) 80)))
+            (set-sound-state $sound (> (get-vehicle-audio-output-number $train $vehicle $output_number_name) 0.1))
+          )
+        )
+      )
+    )
+  )
+)
+
+
+(! *** Define Door Sound ******************************************************
+
+   Defines a once-off sound played at a given position from the number 1 end
+   of a vehicle.
+   
+   ****************************************************************************)
+(define define-door-sound_old $door_sound_file
+                          $door_position_from_1end
+                          $door_volume
+                          $output_number_name
+                          $low_value
+                          $high_value
+  (for-all-trains $train
+    (enable-if-simulated-train $train
+      (enable-if-observer-train $train    
+        (for-all-vehicles $train $vehicle
+          (define-gmi-vehicle-sound $sound $train $vehicle $door_sound_file
+                                    (to-completion) (no-loop) 0 0 (absolute)
+            (set-gmi-vehicle-sound-1-end-position $sound $door_position_from_1end)
+            (set-gmi-vehicle-sound-volume-inside-vehicle $sound $door_volume)
+            (set-sound-state $sound (>< $low_value (get-vehicle-audio-output-number $train $vehicle $output_number_name 0) $high_value ))
+          )
+        )
+      )
+    )
+  )
+)
+
+(define define-door-sound $train 
+                          $vehicle
+                          $door_sound_file
+                          $door_position_from_1end
+                          $door_volume
+                          $output_number_name
+                          $low_value
+                          $high_value
+   (
+        (define-gmi-vehicle-sound $sound $train $vehicle $door_sound_file
+                                    (to-completion) (no-loop) 0 0 (absolute)
+           (set-gmi-vehicle-sound-1-end-position $sound $door_position_from_1end)
+           (set-gmi-vehicle-sound-volume-inside-vehicle $sound $door_volume)
+           (set-sound-state $sound (>< $low_value (get-vehicle-audio-output-number $train $vehicle $output_number_name 0) $high_value ))
+        )
+    
+        (define-gmi-vehicle-sound $sound $train $vehicle $door_sound_file
+                                    (to-completion) (no-loop) 0 0 (absolute)
+           (set-gmi-vehicle-sound-1-end-position $sound $door_position_from_1end)
+           (set-gmi-vehicle-sound-volume-outside-vehicle $sound $door_volume)
+           (set-sound-state $sound (>< $low_value (get-vehicle-audio-output-number $train $vehicle $output_number_name 0) $high_value ))
+        )
+    )
+)

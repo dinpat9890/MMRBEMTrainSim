@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1360859489" name="oak_01_3">
+		<mesh_name>oak/oak_01_3.mesh</mesh_name>
+		<surface name="oak_leaves_01_3_lod_2_oak_leaves_sum_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="17a262a5f6d8fda9cb2ecda513dcfd3c26a34b92" property="surface_base"/>
+		<surface name="oak_tree_01_3_lod_2_oak_trunk_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="f8d1b92326b02e25847eaa488a3589c737aba6b9" property="surface_base"/>
+		<surface name="oak_tree_01_3_lod_1_oak_trunk_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="f8d1b92326b02e25847eaa488a3589c737aba6b9" property="surface_base"/>
+		<surface name="oak_leaves_01_3_lod_1_oak_leaves_sum_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="17a262a5f6d8fda9cb2ecda513dcfd3c26a34b92" property="surface_base"/>
+		<surface name="oak_leaves_01_3_lod_0_oak_leaves_sum_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="17a262a5f6d8fda9cb2ecda513dcfd3c26a34b92" property="surface_base"/>
+		<surface name="oak_tree_01_3_lod_0_oak_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="f8d1b92326b02e25847eaa488a3589c737aba6b9" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

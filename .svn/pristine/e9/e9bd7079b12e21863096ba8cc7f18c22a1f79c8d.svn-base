@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{e32b2ea0-a4f5-4f00-b344-4768f47d4221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{f3574d75-c1c4-4571-8de0-a8dd4307cfe7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\UnitDLL.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UnitsCommonCode\source\CommsPropertyAccessors.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.cc">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RadioUnit.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProtos.pb.cc">
+      <Filter>External</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\UnitsCommonCode\include\CommsPropertyAccessors.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PAPISProtos.pb.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Serialisation\Source\Cpp\Source\Protobuf\PISProtos.pb.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectConstants.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\config\project_comms_structure\include\project_comms_structure\ProjectObjectDefinition.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RadioUnit.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RadioState.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RadioUnit.ini">
+      <Filter>Sources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

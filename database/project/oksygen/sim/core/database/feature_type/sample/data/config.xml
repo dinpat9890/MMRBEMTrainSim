@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <track>
+    <boundary_types>
+      <boundary_type boundary_type_id="2" name="Box" description="Box like boundary formation" />
+      <boundary_type boundary_type_id="5" name="Convex Polygon" description="Convex polygon with optional extrusion in Z axis. Points are specified in clockwise order." />
+      <boundary_type boundary_type_id="1" name="None" description="No boundary foundation" />
+      <boundary_type boundary_type_id="3" name="Parallelepiped" description="Three dimensional parallelepiped, defining a region by three vectors" />
+      <boundary_type boundary_type_id="4" name="Sphere" description="Spherical boundary formation" />
+    </boundary_types>
+  </track>
+  <usage_contexts>
+    <usage_context context_id="1" name="General Usage" />
+  </usage_contexts>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="83312876" name="birch_tree_8">
+		<mesh_name>birch/birch_tree_8.mesh</mesh_name>
+		<surface name="birch_trunk_lod_0_birch_trunk" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="72fefa1de11c94a87722172c0d08f31f14de164d" property="surface_base"/>
+		<surface name="birch_leaves_lod_0_birch_leaves" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="5966b03e7711467a1a395c6f9c17fe17301c42eb" property="surface_base"/>
+		<surface name="birch_leaves_lod_1_birch_leaves" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="5966b03e7711467a1a395c6f9c17fe17301c42eb" property="surface_base"/>
+		<surface name="birch_leaves_lod_2_birch_leaves" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="5966b03e7711467a1a395c6f9c17fe17301c42eb" property="surface_base"/>
+		<surface name="birch_trunk_lod_1_birch_trunk" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="72fefa1de11c94a87722172c0d08f31f14de164d" property="surface_base"/>
+		<surface name="birch_trunk_lod_2_birch_trunk" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="72fefa1de11c94a87722172c0d08f31f14de164d" property="surface_base"/>
+		<surface name="birch_twigs_birch_trunk" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="72fefa1de11c94a87722172c0d08f31f14de164d" property="surface_base"/>
+		<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999988 0.0 9.53674316406e-007 -1.90734860261e-006 -2.27373680102e-013 1.0</transform>
+	</node>
+</nodes>

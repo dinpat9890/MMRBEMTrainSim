@@ -1,0 +1,413 @@
+package Mumbai_Metro_SMC;
+
+import java.io.File;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
+import org.sikuli.script.Screen;
+
+public class smc {
+
+	public static void main(String[] args) throws FindFailed {
+
+		Screen screen = new Screen(1);
+		Screen screen1 = new Screen();
+
+		screen.find((FilePathConstant.IMAGE_PATH +"\\smc_1.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\smc_1.PNG");
+		screen.wait(2.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\DefaultManager.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\DefaultManager.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\SuperUser.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\SuperUser.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\password.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\password.PNG");
+		screen.type("password");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+		screen.wait(2.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\NewScenerio.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\NewScenerio.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\ScenerioName.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\ScenerioName.PNG");
+		screen.type("MumbaiMetroTrain");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\up1.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\up1.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\down1.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\down1.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectTrack.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectTrack.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Feature_track.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Feature_track.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOkButton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Trains.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Trains.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\AddSimulated.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\AddSimulated.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainName.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainName.PNG");
+		screen.type("SimTrain");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\TripNumber.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\TripNumber.PNG");
+
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type("1234");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectType.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectType.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\EMU_6_car.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\EMU_6_car.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainConsistOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainConsistOkButton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectPosition.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectPosition.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\map_click.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\map_click.PNG");
+
+		screen.mouseMove("C:\\Users\\ext-asatis\\Desktop\\SMC\\map_drop.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOk.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOk.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\TrainOk1.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\TrainOk1.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsNew.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsNew.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.wait(2.0);
+
+		// Copy Scenario
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\CopyScenario.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\CopyScenario.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\EMU_6_car_feature_track.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\EMU_6_car_feature_track.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\copy_ok_button.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\copy_ok_button.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Copy_Scenerio_save_as_new.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Copy_Scenerio_save_as_new.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+
+		// Edit Scenario
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Edit_Scenario.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Edit_Scenario.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Mumbai.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Mumbai.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\edit_ok.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\edit_ok.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\ScriptedEvent.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\ScriptedEvent.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\AddInitialCondition.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\AddInitialCondition.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\button_click.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\button_click.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\SelectEvent.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\SelectEvent.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\light.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\light.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainConsistOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainConsistOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectAnEvent.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\selectAnEvent.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\on.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\on.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOkButton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\save.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\save.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.wait(2.0);
+
+		// Delete Scenario
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteScenerio.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteScenerio.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\CopyOfMumbai_Metro.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\CopyOfMumbai_Metro.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\deleteOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\deleteOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteButton.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\yes_buton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\yes_buton.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\SceneraioDeletedPopup.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\SceneraioDeletedPopup.PNG");
+
+		screen.wait(2.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenarioGroups.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenarioGroups.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\newScenarioGroup.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\newScenarioGroup.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\groupName.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\groupName.PNG");
+		screen.type("Group1");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\addAll.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\addAll.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsNew.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsNew.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\editScenarioGroup.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\editScenarioGroup.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Group1.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Group1.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trackOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\EMU_6.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\EMU_6.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\remove.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\remove.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\save.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\save.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenerioGroupOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenerioGroupOkButton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteScenarioGroup.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteScenarioGroup.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Group1.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Group1.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainConsistOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainConsistOkButton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Delete1.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Delete1.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\SceneraioDeletedPopup.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\SceneraioDeletedPopup.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\train.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\train.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_1_2.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\rear_button.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\rear_button.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\motor_car_1_2.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trailer_car_1_2.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\trailer_car_1_2.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_2_1.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\driving_motor_car_2_1.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsTrainBuilder.PNG");
+		screen.doubleClick("C:\\Users\\ext-asatis\\Desktop\\SMC\\saveAsTrainBuilder.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainBuildername.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\trainBuildername.PNG");
+		screen.type("simTrain2");
+		screen.wait(1.0);
+
+		screen1.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\okButton1.PNG");
+		screen1.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\okButton1.PNG");
+		screen.wait(1.0);
+		
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Users.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Users.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\newTrainee.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\newTrainee.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\UserLastName.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\UserLastName.PNG");
+		screen.type("Asati");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\UserFirstName.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\UserFirstName.PNG");
+		screen.type("Sejal");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\EmployeeNumber.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\EmployeeNumber.PNG");
+		screen.type("2022");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\userClassification.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\userClassification.PNG");
+		screen.type("Developer");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\WorkLocation.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\WorkLocation.PNG");
+		screen.type("Pune");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\Copy_Scenerio_save_as_new.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\Copy_Scenerio_save_as_new.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenerioGroupOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenerioGroupOkButton.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\editTrainee.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\editTrainee.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\editimage.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\editimage.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+
+		// Edit Scenario
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\editPune.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\editPune.PNG");
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type(Key.BACKSPACE);
+		screen.type("Nagpur");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\save.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\save.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\doneScenerioOkButton.PNG");
+		screen.wait(1.0);
+
+		// Delete Scenario
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteTrainee.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteTrainee.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\editimage.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\editimage.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\okbutton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\DeleteButton.PNG");
+		screen.wait(1.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\yes_buton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\yes_buton.PNG");
+		screen.wait(2.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenerioGroupOkButton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\scenerioGroupOkButton.PNG");
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\LogOff.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\LogOff.PNG");
+		screen.wait(2.0);
+
+		screen.find("C:\\Users\\ext-asatis\\Desktop\\SMC\\yes_buton.PNG");
+		screen.click("C:\\Users\\ext-asatis\\Desktop\\SMC\\yes_buton.PNG");
+
+	}
+
+}

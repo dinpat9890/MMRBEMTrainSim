@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<project name="Release" default="build.release" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="./ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+
+  <!-- Import core packaging scripts. Each subdirectory can import their own too -->
+  <import file="${dir.deps.processes}/releaser/releaser.version.xml" as="versioner" />
+  <import file="${dir.deps.processes}/releaser/releaser.rsync.xml" as="syncer" />
+
+
+  <target name="build.release" description="Performs all steps necessary for getting a release."
+           depends="update.version.release, 
+                   prepare.all,
+                   build.all,
+                   generate.world_types,
+                   package.all" />
+
+  <target name="build.development" description="Performs all steps necessary for getting a development build."
+         depends="update.version.development,
+                   prepare.all,
+                   build.all,
+                   generate.world_types,
+                   package.all" />
+
+  <target name="clean.release">
+    <delete dir="${dir.deploy}"/>
+	<delete dir="${dir.install}"/>
+  </target>
+
+  <property name="project_id" value="MMRBEM" />
+  <!-- 
+    Note that this is not using ${dir.deploy} which is absolute as we need a relative path.
+    We also use a trailing slash to indicate we want the contents of the deploy folder.
+  -->
+  <property name="sync.deploy.source" value="deploy/" />
+  <property name="sync.database.source" value="install/" />
+
+  <property name="sync.host.simplehelp"   value="127.0.0.1" />
+  <property name="sync.module.simplehelp" value="StagingArea" /> <!-- this is the name of the module for the rsync server --> 
+
+  <property name="sync.deploy.path.simplehelp"   value="${project_id}/release_staging_area" /> <!-- this is the path to synchronise to, within the rsync module -->
+  <property name="sync.deploy.dest.simplehelp" value="${sync.host.simplehelp}::${sync.module.simplehelp}/${sync.deploy.path.simplehelp}" />
+
+  <property name="sync.database.path.simplehelp"   value="${project_id}/database_staging_area" /> <!-- this is the path to synchronise to, within the rsync module -->
+  <property name="sync.database.dest.simplehelp" value="${sync.host.simplehelp}::${sync.module.simplehelp}/${sync.database.path.simplehelp}" />
+
+  <target name="rsync.simplehelp" description="Synchronises the Deploy and install folder with Rig (via SimpleHelp port redirection)">
+    <echo>
+      Synchronising 
+        ${sync.deploy.source} to 
+        ${sync.deploy.dest.simplehelp}
+    </echo>
+    <rsync source="${sync.deploy.source}" destination="${sync.deploy.dest.simplehelp}"/>
+    <echo>
+      Synchronising 
+        ${sync.database.source} to 
+        ${sync.database.dest.simplehelp}
+    </echo>
+    <rsync source="${sync.database.source}" destination="${sync.database.dest.simplehelp}"/>
+  </target>
+
+</project>

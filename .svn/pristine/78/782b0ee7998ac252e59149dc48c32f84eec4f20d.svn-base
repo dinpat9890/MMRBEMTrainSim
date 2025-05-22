@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="elm_rought_01_crossplane" guid="2cb00948a44167c3cf35be7d64847d585beb1eab" parent="bb87a0cdf6c15b12e4967a1fe5d9ed606b93bf17" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1" depth_mask="0" depth_test="1" cast_shadow="1" cast_world_shadow="1"/>
+	<state name="vegetation">0</state>
+	<state name="noise_2d">0</state>
+	<state name="noise_3d">0</state>
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/elm_imposter.dds</texture>
+	<texture name="normal">oksygen/content/core/graphics/vegetation/graphics/elm_rought/textures/elm_01_imposter_n.dds</texture>
+</material>

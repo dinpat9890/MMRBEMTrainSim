@@ -1,0 +1,32 @@
+
+x	java:S116	"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯HÍ“RMINORZ
+CODE_SMELL
+y	java:S116	"MRename this field "S1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯HÎ“RMINORZ
+CODE_SMELL
+M
+java:S1659	" Declare "S1" on a separate line.(ÕÊ²¯HÏ“RMINORZ
+CODE_SMELL
+O
+java:S1659""Declare "mode" on a separate line.(ËùŸÁHÑ“RMINORZ
+CODE_SMELL
+™
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(×ßø·HÓ“RMINORZ
+CODE_SMELL
+j	java:S106}"9Replace this use of System.out or System.err by a logger.(ú®ÚÿÿÿÿÿHÕ“RMAJORZ
+CODE_SMELL
+¢
+java:S1130„"uRemove the declaration of thrown exception 'org.sikuli.script.FindFailed', as it cannot be thrown from method's body.(û³IHÖ“RMINORZ
+CODE_SMELL
+f	java:S106‰"9Replace this use of System.out or System.err by a logger.(Àûå HØ“RMAJORZ
+CODE_SMELL
+†
+java:S11925"VDefine a constant instead of duplicating this literal "masterController1.PNG" 4 times.(±—°HÙ“RCRITICALZ
+CODE_SMELL
+
+java:S1192="JDefine a constant instead of duplicating this literal "back.PNG" 10 times.(†œîÌùÿÿÿÿHŞ“RCRITICALZ
+CODE_SMELL
+Š
+java:S11921"UDefine a constant instead of duplicating this literal "masterController.PNG" 4 times.(Ÿ×¬ªşÿÿÿÿHé“RCRITICALZ
+CODE_SMELL
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒáÂ‘øÿÿÿÿHî“RMINORZ
+CODE_SMELL

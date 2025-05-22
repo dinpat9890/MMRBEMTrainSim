@@ -1,0 +1,136 @@
+package Mumbai_Metro;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Screen;
+import java.io.IOException; // Import the IOException class to handle errors
+
+public class powerMenuStartup {
+
+	Screen S, S1;
+
+	public powerMenuStartup() throws IOException {
+
+		S = new Screen();
+		S1 = new Screen(1);
+	}
+
+	private void tcms() throws IOException {
+		try {
+			S.find(FilePathConstant.IMAGE_PATH + "SoftPLC.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "SoftPLC.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "controlKey.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "controlKey.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "TCMS.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "TCMS.PNG");
+			S.wait(43.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "Login.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "Login.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "User.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "User.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "1.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "1.PNG");
+			S.wait(1.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "2.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "2.PNG");
+			S.wait(1.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "3.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "3.PNG");
+			S.wait(1.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "4.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "4.PNG");
+			S.wait(1.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "5.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "5.PNG");
+			S.wait(1.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "Enter.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "Enter.PNG");
+			S.wait(3.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "M.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "M.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "brakeButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "brakeButton.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "Door.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "Door.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "APS.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "APS.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "battery.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "battery.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "systemButton.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "fault.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "fault.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "active.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "active.PNG");
+			S.wait(2.0);
+
+			S.find(FilePathConstant.IMAGE_PATH + "operatingButton.PNG");
+			S.click(FilePathConstant.IMAGE_PATH + "operatingButton.PNG");
+			S.wait(2.0);
+
+			System.out.println("**** TCMS All Test Cases Passed successfully****");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) throws FindFailed {
+		try {
+			// create a file
+			powerMenuStartup obj = new powerMenuStartup();
+			obj.tcms();
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+}

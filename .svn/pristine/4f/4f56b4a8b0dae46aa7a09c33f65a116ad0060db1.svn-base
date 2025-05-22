@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="aspen_01_shadow" guid="e46c908e9d9dc2480c1fa59240a488a838b719fb" parent="3ad9a7d35f3087fb70621c64b30285f3ebd99be7" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/aspen_imposter.dds</texture>
+</material>

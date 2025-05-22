@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="688678953" name="rockslide">
+		<mesh_name>../features/obstruction_features/graphics/rockslide.mesh</mesh_name>
+		<surface name="bark" max_visible_distance="1500" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+		<surface name="dirt" max_visible_distance="1500" material="747bfd4cf9730e500abde02ddf0e47f434150320" property="surface_base"/>
+		<surface name="leaves" max_visible_distance="1500" material="e0ae2e32da45d9456fff4fa82a187038097aa5f7" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

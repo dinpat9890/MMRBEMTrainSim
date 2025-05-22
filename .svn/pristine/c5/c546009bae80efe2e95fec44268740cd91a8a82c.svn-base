@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="676871306" name="uppar_dahisar_to_kandarpada">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/uppar_dahisar_to_kandarpada.mesh</mesh_name>
+		<surface name="uppar_dahisar_to_kandarpada_gantry_poles_numbers_01" material="43b1c41a69d7648982190206b8d8e54836349f2c" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -2.72848410532e-012 -1.45519152284e-011 1.7763568394e-015 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gmi_screens xmlns="http://www.sydac.com.au/GMI/1.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sydac.com.au/GMI/1.0/ ../screen.xsd">
+	<!-- Common Internal Screens Here. Internal IDS go from 600 to 700 -->
+	<screen xsi:type="vehicle_screen" name="DM">
+
+
+		<orientation_1-2
+			background_image="vehicle_navigation/dm_12.png">
+
+			<!-- Right Side Front Doors -->
+			<screen_object type="left_door_rear">
+				<position x="265" y="236" />
+				<number name="RIGHT_DOOR_1_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="330" y="235" />
+				<number name="RIGHT_DOOR_1_POSITION" />
+			</screen_object>
+
+			<screen_object type="left_door_rear">
+				<position x="678" y="236" />
+				<number name="RIGHT_DOOR_2_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="746" y="235" />
+				<number name="RIGHT_DOOR_2_POSITION" />
+			</screen_object>
+
+			<screen_object type="left_door_rear">
+				<position x="1094" y="236" />
+				<number name="RIGHT_DOOR_3_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="1162" y="235" />
+				<number name="RIGHT_DOOR_3_POSITION" />
+			</screen_object>
+
+			<screen_object type="left_door_rear">
+				<position x="1511" y="236" />
+				<number name="RIGHT_DOOR_4_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="1579" y="235" />
+				<number name="RIGHT_DOOR_4_POSITION" />
+			</screen_object>
+
+			<screen_object type="static_image">
+				<position x="0" y="0" />
+				<property name="file" value="vehicle_navigation/dm_12.png" />
+			</screen_object>
+
+			<screen_object type="door_left">
+				<position x="261" y="236" />
+				<number name="LEFT_DOOR_1_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="330" y="236" />
+				<number name="LEFT_DOOR_1A_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_left">
+				<position x="677" y="236" />
+				<number name="LEFT_DOOR_2_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="746" y="236" />
+				<number name="LEFT_DOOR_2_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_left">
+				<position x="1094" y="236" />
+				<number name="LEFT_DOOR_3_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="1163" y="236" />
+				<number name="LEFT_DOOR_3_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_left">
+				<position x="1511" y="236" />
+				<number name="LEFT_DOOR_4_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="1580" y="236" />
+				<number name="LEFT_DOOR_4_POSITION" />
+			</screen_object>
+
+		</orientation_1-2>
+
+		<orientation_2-1
+			background_image="vehicle_navigation/dm_21.png">
+			<screen_object type="left_door_rear">
+				<position x="274" y="236" />
+				<number name="LEFT_DOOR_4_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="342" y="235" />
+				<number name="LEFT_DOOR_4_POSITION" />
+			</screen_object>
+			
+			<screen_object type="left_door_rear">
+				<position x="690" y="236" />
+				<number name="LEFT_DOOR_3_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="758" y="235" />
+				<number name="LEFT_DOOR_3_POSITION" />
+			</screen_object>
+			
+			<screen_object type="left_door_rear">
+				<position x="1106" y="236" />
+				<number name="LEFT_DOOR_2_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="1174" y="235" />
+				<number name="LEFT_DOOR_2_POSITION" />
+			</screen_object>
+			
+			<screen_object type="left_door_rear">
+				<position x="1522" y="236" />
+				<number name="LEFT_DOOR_1_POSITION" />
+			</screen_object>
+
+			<screen_object type="right_door_rear">
+				<position x="1590" y="235" />
+				<number name="LEFT_DOOR_1A_POSITION" />
+			</screen_object>
+
+			<screen_object type="static_image">
+				<position x="0" y="0" />
+				<property name="file" value="vehicle_navigation/dm_21.png" />
+			</screen_object>
+			
+			<screen_object type="door_left">
+				<position x="274" y="236" />
+				<number name="RIGHT_DOOR_4_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="342" y="235" />
+				<number name="RIGHT_DOOR_4_POSITION" />
+			</screen_object>
+			
+			<screen_object type="door_left">
+				<position x="690" y="236" />
+				<number name="RIGHT_DOOR_3_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="758" y="235" />
+				<number name="RIGHT_DOOR_3_POSITION" />
+			</screen_object>
+			
+			<screen_object type="door_left">
+				<position x="1106" y="236" />
+				<number name="RIGHT_DOOR_2_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="1174" y="235" />
+				<number name="RIGHT_DOOR_2_POSITION" />
+			</screen_object>
+			
+			<screen_object type="door_left">
+				<position x="1522" y="236" />
+				<number name="RIGHT_DOOR_1_POSITION" />
+			</screen_object>
+
+			<screen_object type="door_right">
+				<position x="1590" y="235" />
+				<number name="RIGHT_DOOR_1_POSITION" />
+			</screen_object>
+			
+		</orientation_2-1>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Exterior Lights" id="600"
+		background_image="dm_car_exterior_lights/exterior_lights_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="flood_light">
+			<position x="914" y="61" />
+			<number name="FLOOD_LIGHT" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="flasher_light">
+			<position x="662" y="121" />
+			<number name="FLASHER_LIGHT" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="head_light_1">
+			<position x="642" y="646" />
+			<number name="HEAD_LIGHT" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="uto_rm_light">
+			<position x="523" y="178" />
+			<number name="UTO_OR_RM_LIGHT" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="marker_tail_light">
+			<position x="586" y="494" />
+			<number name="MARKER_OR_TAIL_LIGHT" variable="light_state" />
+		</screen_object>
+
+	</screen>
+
+
+
+</gmi_screens>

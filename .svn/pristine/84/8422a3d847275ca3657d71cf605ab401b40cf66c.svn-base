@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="Font_Overpass_Regular_Red" guid="0700c8fb72f149e859e62c4c17d05c1aac4a920a" parent="dcedb85797b786f21d123bc7dd461feb11a9b16f" base_material="mesh_base">
+	<parameter name="diffuse_color">0.839215755 0.0980392247 0.309803933 1</parameter>
+	<parameter name="specular_color">0.878431439 0.192156881 0.294117659 1</parameter>
+	<parameter name="emission_color">0.568627477 0.427451015 0.427451015 1</parameter>
+</material>

@@ -1,0 +1,914 @@
+<!-- This is an XML snippet that can be incorporated into project to add a GSMR screen to GMI applications.
+
+     For all train types that will have this screen:
+     * Copy the contents below into your train_type/internal.xml
+     * Copy the image folder (com\sydac\project\gmiconfig\images\gsmr\internal\siemensgsmrcab)
+       to the internal images folder for this train type (com\sydac\project\gmiconfig\images\train_type\internal\siemensgsmrcab)
+     * Set an appropriate screen ID
+     * Sanity check the audio location
+     * For all car types with this screen, in train_type_car_type_navigation.xml:
+       * Add a hotspot to get to the GSMR screen
+       * Possibly also add hotspots to the GSMR screen (e.g. panning buttons)
+     * Test that the screen can be reached and it mimics the hardware display.
+
+     It is also likely that you will need to add a GSMR MCB somewhere in the existing screens.
+     -->
+
+  <screen xsi:type="main_screen" id="### TODO: Add a suitable ID ###" name="GSM-R Cab"
+          background_image="siemensgsmrcab/gsmr_cab_background.png">
+    <audio_location distance_from_no1_end="1" distance_from_middle="1" on_left="true" distance_from_track="5"
+                    heading="180" pitch="0" roll="0" indoors="true"/>
+    <screen_object type="radio_input_emergency">
+      <position x="99" y="237"/>
+      <number name="GSMR_CAB_EMERGENCY_PB" variable="button_state"/>
+      <number name="GSMR_CAB_EMERGENCY_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_urgent_call">
+      <position x="103" y="400"/>
+      <number name="GSMR_CAB_URGENT_PB" variable="button_state"/>
+      <number name="GSMR_CAB_URGENT_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_stop_acknowledge">
+      <position x="261" y="486"/>
+      <number name="GSMR_CAB_STOP_ACKNOWLEDGE_PB" variable="button_state"/>
+      <number name="GSMR_CAB_STOP_ACKNOWLEDGE_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_decrease_brightness">
+      <position x="332" y="486"/>
+      <number name="GSMR_CAB_DECREASE_BRIGHTNESS_PB" variable="button_state"/>
+      <number name="GSMR_CAB_DECREASE_BRIGHTNESS_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_increase_brightness">
+      <position x="404" y="486"/>
+      <number name="GSMR_CAB_INCREASE_BRIGHTNESS_PB" variable="button_state"/>
+      <number name="GSMR_CAB_INCREASE_BRIGHTNESS_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_test">
+      <position x="477" y="486"/>
+      <number name="GSMR_CAB_TEST_PB" variable="button_state"/>
+      <number name="GSMR_CAB_TEST_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_menu">
+      <position x="548" y="486"/>
+      <number name="GSMR_CAB_MENU_PB" variable="button_state"/>
+      <number name="GSMR_CAB_MENU_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_down">
+      <position x="621" y="486"/>
+      <number name="GSMR_CAB_DOWN_PB" variable="button_state"/>
+      <number name="GSMR_CAB_DOWN_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_up">
+      <position x="694" y="486"/>
+      <number name="GSMR_CAB_UP_PB" variable="button_state"/>
+      <number name="GSMR_CAB_UP_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_accept">
+      <position x="782" y="486"/>
+      <number name="GSMR_CAB_ACCEPT_PB" variable="button_state"/>
+      <number name="GSMR_CAB_ACCEPT_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_cancel">
+      <position x="934" y="486"/>
+      <number name="GSMR_CAB_CANCEL_PB" variable="button_state"/>
+      <number name="GSMR_CAB_CANCEL_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_reg_dereg">
+      <position x="1009" y="248"/>
+      <number name="GSMR_CAB_REG_DEREG_PB" variable="button_state"/>
+      <number name="GSMR_CAB_REG_DEREG_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_standing_at_signal">
+      <position x="1009" y="328"/>
+      <number name="GSMR_CAB_STANDING_AT_SIGNAL_PB" variable="button_state"/>
+      <number name="GSMR_CAB_STANDING_AT_SIGNAL_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_phonebook">
+      <position x="1009" y="406"/>
+      <number name="GSMR_CAB_PHONEBOOK_PB" variable="button_state"/>
+      <number name="GSMR_CAB_PHONEBOOK_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_call_signaller">
+      <position x="1009" y="486"/>
+      <number name="GSMR_CAB_CALL_SIGNALLER_PB" variable="button_state"/>
+      <number name="GSMR_CAB_CALL_SIGNALLER_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_0">
+      <position x="857" y="486"/>
+      <number name="GSMR_CAB_0_PB" variable="button_state"/>
+      <number name="GSMR_CAB_0_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_1">
+      <position x="782" y="252"/>
+      <number name="GSMR_CAB_1_PB" variable="button_state"/>
+      <number name="GSMR_CAB_1_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_2">
+      <position x="857" y="252"/>
+      <number name="GSMR_CAB_2_PB" variable="button_state"/>
+      <number name="GSMR_CAB_2_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_3">
+      <position x="934" y="252"/>
+      <number name="GSMR_CAB_3_PB" variable="button_state"/>
+      <number name="GSMR_CAB_3_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_4">
+      <position x="782" y="329"/>
+      <number name="GSMR_CAB_4_PB" variable="button_state"/>
+      <number name="GSMR_CAB_4_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_5">
+      <position x="857" y="329"/>
+      <number name="GSMR_CAB_5_PB" variable="button_state"/>
+      <number name="GSMR_CAB_5_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_6">
+      <position x="934" y="329"/>
+      <number name="GSMR_CAB_6_PB" variable="button_state"/>
+      <number name="GSMR_CAB_6_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_7">
+      <position x="782" y="408"/>
+      <number name="GSMR_CAB_7_PB" variable="button_state"/>
+      <number name="GSMR_CAB_7_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_8">
+      <position x="857" y="408"/>
+      <number name="GSMR_CAB_8_PB" variable="button_state"/>
+      <number name="GSMR_CAB_8_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="radio_input_9">
+      <position x="934" y="408"/>
+      <number name="GSMR_CAB_9_PB" variable="button_state"/>
+      <number name="GSMR_CAB_9_PB_LIGHT" variable="light_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="309" y="321"/>
+      <number name="GSMR_CAB_LCD_01_01" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="329" y="321"/>
+      <number name="GSMR_CAB_LCD_01_02" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="349" y="321"/>
+      <number name="GSMR_CAB_LCD_01_03" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="369" y="321"/>
+      <number name="GSMR_CAB_LCD_01_04" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="389" y="321"/>
+      <number name="GSMR_CAB_LCD_01_05" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="409" y="321"/>
+      <number name="GSMR_CAB_LCD_01_06" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="429" y="321"/>
+      <number name="GSMR_CAB_LCD_01_07" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="449" y="321"/>
+      <number name="GSMR_CAB_LCD_01_08" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="469" y="321"/>
+      <number name="GSMR_CAB_LCD_01_09" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="489" y="321"/>
+      <number name="GSMR_CAB_LCD_01_10" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="509" y="321"/>
+      <number name="GSMR_CAB_LCD_01_11" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="529" y="321"/>
+      <number name="GSMR_CAB_LCD_01_12" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="549" y="321"/>
+      <number name="GSMR_CAB_LCD_01_13" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="569" y="321"/>
+      <number name="GSMR_CAB_LCD_01_14" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="589" y="321"/>
+      <number name="GSMR_CAB_LCD_01_15" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="609" y="321"/>
+      <number name="GSMR_CAB_LCD_01_16" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="629" y="321"/>
+      <number name="GSMR_CAB_LCD_01_17" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="649" y="321"/>
+      <number name="GSMR_CAB_LCD_01_18" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="669" y="321"/>
+      <number name="GSMR_CAB_LCD_01_19" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="689" y="321"/>
+      <number name="GSMR_CAB_LCD_01_20" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="309" y="351"/>
+      <number name="GSMR_CAB_LCD_02_01" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="329" y="351"/>
+      <number name="GSMR_CAB_LCD_02_02" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="349" y="351"/>
+      <number name="GSMR_CAB_LCD_02_03" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="369" y="351"/>
+      <number name="GSMR_CAB_LCD_02_04" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="389" y="351"/>
+      <number name="GSMR_CAB_LCD_02_05" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="409" y="351"/>
+      <number name="GSMR_CAB_LCD_02_06" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="429" y="351"/>
+      <number name="GSMR_CAB_LCD_02_07" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="449" y="351"/>
+      <number name="GSMR_CAB_LCD_02_08" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="469" y="351"/>
+      <number name="GSMR_CAB_LCD_02_09" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="489" y="351"/>
+      <number name="GSMR_CAB_LCD_02_10" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="509" y="351"/>
+      <number name="GSMR_CAB_LCD_02_11" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="529" y="351"/>
+      <number name="GSMR_CAB_LCD_02_12" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="549" y="351"/>
+      <number name="GSMR_CAB_LCD_02_13" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="569" y="351"/>
+      <number name="GSMR_CAB_LCD_02_14" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="589" y="351"/>
+      <number name="GSMR_CAB_LCD_02_15" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="609" y="351"/>
+      <number name="GSMR_CAB_LCD_02_16" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="629" y="351"/>
+      <number name="GSMR_CAB_LCD_02_17" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="649" y="351"/>
+      <number name="GSMR_CAB_LCD_02_18" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="669" y="351"/>
+      <number name="GSMR_CAB_LCD_02_19" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="689" y="351"/>
+      <number name="GSMR_CAB_LCD_02_20" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="309" y="381"/>
+      <number name="GSMR_CAB_LCD_03_01" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="329" y="381"/>
+      <number name="GSMR_CAB_LCD_03_02" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="349" y="381"/>
+      <number name="GSMR_CAB_LCD_03_03" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="369" y="381"/>
+      <number name="GSMR_CAB_LCD_03_04" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="389" y="381"/>
+      <number name="GSMR_CAB_LCD_03_05" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="409" y="381"/>
+      <number name="GSMR_CAB_LCD_03_06" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="429" y="381"/>
+      <number name="GSMR_CAB_LCD_03_07" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="449" y="381"/>
+      <number name="GSMR_CAB_LCD_03_08" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="469" y="381"/>
+      <number name="GSMR_CAB_LCD_03_09" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="489" y="381"/>
+      <number name="GSMR_CAB_LCD_03_10" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="509" y="381"/>
+      <number name="GSMR_CAB_LCD_03_11" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="529" y="381"/>
+      <number name="GSMR_CAB_LCD_03_12" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="549" y="381"/>
+      <number name="GSMR_CAB_LCD_03_13" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="569" y="381"/>
+      <number name="GSMR_CAB_LCD_03_14" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="589" y="381"/>
+      <number name="GSMR_CAB_LCD_03_15" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="609" y="381"/>
+      <number name="GSMR_CAB_LCD_03_16" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="629" y="381"/>
+      <number name="GSMR_CAB_LCD_03_17" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="649" y="381"/>
+      <number name="GSMR_CAB_LCD_03_18" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="669" y="381"/>
+      <number name="GSMR_CAB_LCD_03_19" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="689" y="381"/>
+      <number name="GSMR_CAB_LCD_03_20" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="309" y="411"/>
+      <number name="GSMR_CAB_LCD_04_01" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="329" y="411"/>
+      <number name="GSMR_CAB_LCD_04_02" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="349" y="411"/>
+      <number name="GSMR_CAB_LCD_04_03" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="369" y="411"/>
+      <number name="GSMR_CAB_LCD_04_04" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="389" y="411"/>
+      <number name="GSMR_CAB_LCD_04_05" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="409" y="411"/>
+      <number name="GSMR_CAB_LCD_04_06" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="429" y="411"/>
+      <number name="GSMR_CAB_LCD_04_07" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="449" y="411"/>
+      <number name="GSMR_CAB_LCD_04_08" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="469" y="411"/>
+      <number name="GSMR_CAB_LCD_04_09" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="489" y="411"/>
+      <number name="GSMR_CAB_LCD_04_10" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="509" y="411"/>
+      <number name="GSMR_CAB_LCD_04_11" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="529" y="411"/>
+      <number name="GSMR_CAB_LCD_04_12" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="549" y="411"/>
+      <number name="GSMR_CAB_LCD_04_13" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="569" y="411"/>
+      <number name="GSMR_CAB_LCD_04_14" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="589" y="411"/>
+      <number name="GSMR_CAB_LCD_04_15" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="609" y="411"/>
+      <number name="GSMR_CAB_LCD_04_16" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="629" y="411"/>
+      <number name="GSMR_CAB_LCD_04_17" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="649" y="411"/>
+      <number name="GSMR_CAB_LCD_04_18" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="669" y="411"/>
+      <number name="GSMR_CAB_LCD_04_19" variable="lcd_char_state"/>
+    </screen_object>
+    <screen_object type="lcd">
+      <position x="689" y="411"/>
+      <number name="GSMR_CAB_LCD_04_20" variable="lcd_char_state"/>
+    </screen_object>
+  </screen>
+
+
+  <screen_object_type xsi:type="state_object" name="lcd">
+    <output_variable name="lcd_char_state"/>
+    <state_group name="blank">
+      <state variable="lcd_char_state" value="0"/>
+    </state_group>
+    <state_group name="block">
+      <state variable="lcd_char_state" value="9608"/>
+    </state_group>
+    <state_group name="space">
+      <state variable="lcd_char_state" value="32"/>
+    </state_group>
+    <state_group name="exclamation_mark">
+      <state variable="lcd_char_state" value="33"/>
+    </state_group>
+    <state_group name="double_quote">
+      <state variable="lcd_char_state" value="34"/>
+    </state_group>
+    <state_group name="hash">
+      <state variable="lcd_char_state" value="35"/>
+    </state_group>
+    <state_group name="dollar">
+      <state variable="lcd_char_state" value="36"/>
+    </state_group>
+    <state_group name="percentage">
+      <state variable="lcd_char_state" value="37"/>
+    </state_group>
+    <state_group name="ampersand">
+      <state variable="lcd_char_state" value="38"/>
+    </state_group>
+    <state_group name="single_quote">
+      <state variable="lcd_char_state" value="39"/>
+    </state_group>
+    <state_group name="parenthesis_left">
+      <state variable="lcd_char_state" value="40"/>
+    </state_group>
+    <state_group name="parenthesis_right">
+      <state variable="lcd_char_state" value="41"/>
+    </state_group>
+    <state_group name="asterisk">
+      <state variable="lcd_char_state" value="42"/>
+    </state_group>
+    <state_group name="plus_symbol">
+      <state variable="lcd_char_state" value="43"/>
+    </state_group>
+    <state_group name="comma">
+      <state variable="lcd_char_state" value="44"/>
+    </state_group>
+    <state_group name="dash">
+      <state variable="lcd_char_state" value="45"/>
+    </state_group>
+    <state_group name="full_stop">
+      <state variable="lcd_char_state" value="46"/>
+    </state_group>
+    <state_group name="forward_slash">
+      <state variable="lcd_char_state" value="47"/>
+    </state_group>
+    <state_group name="0">
+      <state variable="lcd_char_state" value="48"/>
+    </state_group>
+    <state_group name="1">
+      <state variable="lcd_char_state" value="49"/>
+    </state_group>
+    <state_group name="2">
+      <state variable="lcd_char_state" value="50"/>
+    </state_group>
+    <state_group name="3">
+      <state variable="lcd_char_state" value="51"/>
+    </state_group>
+    <state_group name="4">
+      <state variable="lcd_char_state" value="52"/>
+    </state_group>
+    <state_group name="5">
+      <state variable="lcd_char_state" value="53"/>
+    </state_group>
+    <state_group name="6">
+      <state variable="lcd_char_state" value="54"/>
+    </state_group>
+    <state_group name="7">
+      <state variable="lcd_char_state" value="55"/>
+    </state_group>
+    <state_group name="8">
+      <state variable="lcd_char_state" value="56"/>
+    </state_group>
+    <state_group name="9">
+      <state variable="lcd_char_state" value="57"/>
+    </state_group>
+    <state_group name="colon">
+      <state variable="lcd_char_state" value="58"/>
+    </state_group>
+    <state_group name="semi_colon">
+      <state variable="lcd_char_state" value="59"/>
+    </state_group>
+    <state_group name="less_than">
+      <state variable="lcd_char_state" value="60"/>
+    </state_group>
+    <state_group name="equals">
+      <state variable="lcd_char_state" value="61"/>
+    </state_group>
+    <state_group name="greater_than">
+      <state variable="lcd_char_state" value="62"/>
+    </state_group>
+    <state_group name="question_mark">
+      <state variable="lcd_char_state" value="63"/>
+    </state_group>
+    <state_group name="at">
+      <state variable="lcd_char_state" value="64"/>
+    </state_group>
+    <state_group name="a_uppercase">
+      <state variable="lcd_char_state" value="65"/>
+    </state_group>
+    <state_group name="b_uppercase">
+      <state variable="lcd_char_state" value="66"/>
+    </state_group>
+    <state_group name="c_uppercase">
+      <state variable="lcd_char_state" value="67"/>
+    </state_group>
+    <state_group name="d_uppercase">
+      <state variable="lcd_char_state" value="68"/>
+    </state_group>
+    <state_group name="e_uppercase">
+      <state variable="lcd_char_state" value="69"/>
+    </state_group>
+    <state_group name="f_uppercase">
+      <state variable="lcd_char_state" value="70"/>
+    </state_group>
+    <state_group name="g_uppercase">
+      <state variable="lcd_char_state" value="71"/>
+    </state_group>
+    <state_group name="h_uppercase">
+      <state variable="lcd_char_state" value="72"/>
+    </state_group>
+    <state_group name="i_uppercase">
+      <state variable="lcd_char_state" value="73"/>
+    </state_group>
+    <state_group name="j_uppercase">
+      <state variable="lcd_char_state" value="74"/>
+    </state_group>
+    <state_group name="k_uppercase">
+      <state variable="lcd_char_state" value="75"/>
+    </state_group>
+    <state_group name="l_uppercase">
+      <state variable="lcd_char_state" value="76"/>
+    </state_group>
+    <state_group name="m_uppercase">
+      <state variable="lcd_char_state" value="77"/>
+    </state_group>
+    <state_group name="n_uppercase">
+      <state variable="lcd_char_state" value="78"/>
+    </state_group>
+    <state_group name="o_uppercase">
+      <state variable="lcd_char_state" value="79"/>
+    </state_group>
+    <state_group name="p_uppercase">
+      <state variable="lcd_char_state" value="80"/>
+    </state_group>
+    <state_group name="q_uppercase">
+      <state variable="lcd_char_state" value="81"/>
+    </state_group>
+    <state_group name="r_uppercase">
+      <state variable="lcd_char_state" value="82"/>
+    </state_group>
+    <state_group name="s_uppercase">
+      <state variable="lcd_char_state" value="83"/>
+    </state_group>
+    <state_group name="t_uppercase">
+      <state variable="lcd_char_state" value="84"/>
+    </state_group>
+    <state_group name="u_uppercase">
+      <state variable="lcd_char_state" value="85"/>
+    </state_group>
+    <state_group name="v_uppercase">
+      <state variable="lcd_char_state" value="86"/>
+    </state_group>
+    <state_group name="w_uppercase">
+      <state variable="lcd_char_state" value="87"/>
+    </state_group>
+    <state_group name="x_uppercase">
+      <state variable="lcd_char_state" value="88"/>
+    </state_group>
+    <state_group name="y_uppercase">
+      <state variable="lcd_char_state" value="89"/>
+    </state_group>
+    <state_group name="z_uppercase">
+      <state variable="lcd_char_state" value="90"/>
+    </state_group>
+    <state_group name="bracket left">
+      <state variable="lcd_char_state" value="91"/>
+    </state_group>
+    <state_group name="back slash">
+      <state variable="lcd_char_state" value="92"/>
+    </state_group>
+    <state_group name="bracket right">
+      <state variable="lcd_char_state" value="93"/>
+    </state_group>
+    <state_group name="caret">
+      <state variable="lcd_char_state" value="94"/>
+    </state_group>
+    <state_group name="underscore">
+      <state variable="lcd_char_state" value="95"/>
+    </state_group>
+    <state_group name="back_quote">
+      <state variable="lcd_char_state" value="96"/>
+    </state_group>
+    <state_group name="a_lowercase">
+      <state variable="lcd_char_state" value="97"/>
+    </state_group>
+    <state_group name="b_lowercase">
+      <state variable="lcd_char_state" value="98"/>
+    </state_group>
+    <state_group name="c_lowercase">
+      <state variable="lcd_char_state" value="99"/>
+    </state_group>
+    <state_group name="d_lowercase">
+      <state variable="lcd_char_state" value="100"/>
+    </state_group>
+    <state_group name="e_lowercase">
+      <state variable="lcd_char_state" value="101"/>
+    </state_group>
+    <state_group name="f_lowercase">
+      <state variable="lcd_char_state" value="102"/>
+    </state_group>
+    <state_group name="g_lowercase">
+      <state variable="lcd_char_state" value="103"/>
+    </state_group>
+    <state_group name="h_lowercase">
+      <state variable="lcd_char_state" value="104"/>
+    </state_group>
+    <state_group name="i_lowercase">
+      <state variable="lcd_char_state" value="105"/>
+    </state_group>
+    <state_group name="j_lowercase">
+      <state variable="lcd_char_state" value="106"/>
+    </state_group>
+    <state_group name="k_lowercase">
+      <state variable="lcd_char_state" value="107"/>
+    </state_group>
+    <state_group name="l_lowercase">
+      <state variable="lcd_char_state" value="108"/>
+    </state_group>
+    <state_group name="m_lowercase">
+      <state variable="lcd_char_state" value="109"/>
+    </state_group>
+    <state_group name="n_lowercase">
+      <state variable="lcd_char_state" value="110"/>
+    </state_group>
+    <state_group name="o_lowercase">
+      <state variable="lcd_char_state" value="111"/>
+    </state_group>
+    <state_group name="p_lowercase">
+      <state variable="lcd_char_state" value="112"/>
+    </state_group>
+    <state_group name="q_lowercase">
+      <state variable="lcd_char_state" value="113"/>
+    </state_group>
+    <state_group name="r_lowercase">
+      <state variable="lcd_char_state" value="114"/>
+    </state_group>
+    <state_group name="s_lowercase">
+      <state variable="lcd_char_state" value="115"/>
+    </state_group>
+    <state_group name="t_lowercase">
+      <state variable="lcd_char_state" value="116"/>
+    </state_group>
+    <state_group name="u_lowercase">
+      <state variable="lcd_char_state" value="117"/>
+    </state_group>
+    <state_group name="v_lowercase">
+      <state variable="lcd_char_state" value="118"/>
+    </state_group>
+    <state_group name="w_lowercase">
+      <state variable="lcd_char_state" value="119"/>
+    </state_group>
+    <state_group name="x_lowercase">
+      <state variable="lcd_char_state" value="120"/>
+    </state_group>
+    <state_group name="y_lowercase">
+      <state variable="lcd_char_state" value="121"/>
+    </state_group>
+    <state_group name="z_lowercase">
+      <state variable="lcd_char_state" value="122"/>
+    </state_group>
+    <state_group name="brace_left">
+      <state variable="lcd_char_state" value="123"/>
+    </state_group>
+    <state_group name="vertical_bar">
+      <state variable="lcd_char_state" value="124"/>
+    </state_group>
+    <state_group name="brace_right">
+      <state variable="lcd_char_state" value="125"/>
+    </state_group>
+    <state_group name="tilde">
+      <state variable="lcd_char_state" value="126"/>
+    </state_group>
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="gsmr_small_button">
+    <output_variable name="light_state"/>
+    <output_variable name="button_state"/>
+    <state_group name="not_pressed_light_off">
+      <state variable="light_state" value="0"/>
+      <state variable="button_state" value="0"/>
+    </state_group>
+    <state_group name="pressed_light_off">
+      <state variable="light_state" value="0"/>
+      <state variable="button_state" value="1"/>
+    </state_group>
+    <state_group name="not_pressed_light_on">
+      <state variable="light_state" value="1"/>
+      <state variable="button_state" value="0"/>
+    </state_group>
+    <state_group name="pressed_light_on">
+      <state variable="light_state" value="1"/>
+      <state variable="button_state" value="1"/>
+    </state_group>
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="gsmr_large_button">
+    <output_variable name="light_state"/>
+    <output_variable name="button_state"/>
+    <state_group name="not_pressed_light_off">
+      <state variable="light_state" value="0"/>
+      <state variable="button_state" value="0"/>
+    </state_group>
+    <state_group name="pressed_light_off">
+      <state variable="light_state" value="0"/>
+      <state variable="button_state" value="1"/>
+    </state_group>
+    <state_group name="not_pressed_dimly_lit">
+      <state variable="light_state" value="1"/>
+      <state variable="button_state" value="0"/>
+    </state_group>
+    <state_group name="pressed_dimly_lit">
+      <state variable="light_state" value="1"/>
+      <state variable="button_state" value="1"/>
+    </state_group>
+    <state_group name="not_pressed_brightly_lit">
+      <state variable="light_state" value="2"/>
+      <state variable="button_state" value="0"/>
+    </state_group>
+    <state_group name="pressed_brightly_lit">
+      <state variable="light_state" value="2"/>
+      <state variable="button_state" value="1"/>
+    </state_group>
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_0" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_1" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_2" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_3" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_4" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_5" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_6" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_7" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_8" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_9" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_accept" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_call_signaller" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_cancel" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_decrease_brightness" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_down" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_increase_brightness" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_menu" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_phonebook"  extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_reg_dereg" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_standing_at_signal" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_stop_acknowledge" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_test" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_up" extends="gsmr_small_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_emergency" extends="gsmr_large_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+
+  <screen_object_type xsi:type="state_object" name="radio_input_urgent_call" extends="gsmr_large_button">
+    <auto_image file_type="png" directory="siemensgsmrcab" />
+  </screen_object_type>
+

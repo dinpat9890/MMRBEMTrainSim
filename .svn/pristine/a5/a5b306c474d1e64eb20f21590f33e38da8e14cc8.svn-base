@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="445.0" stylesheets="@radio-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.radio.fe.gui.presenter.KeyPadPanelController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="12.5" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="18.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="18.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="17.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="11.5" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="11.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="5.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="buttonTwo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-2-state" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button fx:id="buttonOne" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-1-state" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="buttonThree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-3-state" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Button fx:id="buttonFour" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-4-state" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="buttonFive" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-5-state" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button fx:id="buttonSix" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-6-state" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Button fx:id="buttonSeven" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-7-state" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="buttonEight" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-8-state" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Button fx:id="buttonNine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-9-state" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+      <Button fx:id="asteriskButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="asterisk-state" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Button fx:id="buttonZero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="button-0-state" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Button fx:id="hashButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="hash-state" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+      <Button fx:id="leftButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="left-arrow-state" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Button fx:id="spaceButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onEndCallBtnAction" onMousePressed="#onMousePressedAction" onMouseReleased="#onMouseReleasedAction" onTouchPressed="#onTouchPressedAction" onTouchReleased="#onTouchReleasedAction" styleClass="space-button-state" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <Button fx:id="upButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClickUpButtonAction" styleClass="up-arrow-state" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+      <Button fx:id="rightButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClickRightButtonAction" styleClass="right-arrow-state" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+      <Button fx:id="downButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClickDownButtonAction" styleClass="down-arrow-state" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+      <Button fx:id="enterButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClickEnterButtonAction" styleClass="enter-button-state" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+    
+   </children>
+</GridPane>

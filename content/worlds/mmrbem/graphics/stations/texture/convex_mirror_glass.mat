@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="convex_mirror_glass" guid="13d256d2650a7b5a22242e4647f5f8d1a2ba4ff2" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options order="1" depth_mask="1" two_sided="0" cast_shadow="1" overlap="0"/>
+	<state name="refraction">1</state>
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/platform_sliding_gates.dds</texture>
+	<texture name="shading">../worlds/mmrbem/graphics/stations/texture/platform_sliding_gates_met.dds</texture>
+	<parameter name="albedo_color">0.603921592 0.65882355 0.654901981 1</parameter>
+	<parameter name="metalness">0</parameter>
+	<parameter name="roughness">0.296000004</parameter>
+	<parameter name="specular">1</parameter>
+	<parameter name="microfiber">0</parameter>
+	<parameter name="normal_scale">2</parameter>
+	<parameter name="translucent">0</parameter>
+	<parameter name="transparent">1.55700004</parameter>
+	<parameter name="transparent_pow">0</parameter>
+</material>

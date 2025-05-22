@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1796029502" name="m_car_door">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="1982769040" name="door_left_a1">
+			<reference>../vehicles/dm_train/graphics/door_left_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61800009644 -3.60000021458 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1006685633" name="door_left_b1">
+			<reference>../vehicles/dm_train/graphics/door_left_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61800009644 -3.60000021458 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="509451075" name="door_right_a1">
+			<reference>../vehicles/dm_train/graphics/door_right_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -3.60000021458 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="37280340" name="door_right_b1">
+			<reference>../vehicles/dm_train/graphics/door_right_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -3.60000021458 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1676245467" name="door_right_b2">
+			<reference>../vehicles/dm_train/graphics/door_right_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -8.82700052613 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1035154098" name="door_right_a2">
+			<reference>../vehicles/dm_train/graphics/door_right_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -8.82700052613 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1917794542" name="door_right_a3">
+			<reference>../vehicles/dm_train/graphics/door_right_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -14.0630008382 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="879744804" name="door_right_b3">
+			<reference>../vehicles/dm_train/graphics/door_right_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -14.0630008382 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1800217781" name="door_right_b4">
+			<reference>../vehicles/dm_train/graphics/door_right_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -19.2880011497 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="539926292" name="door_right_a4">
+			<reference>../vehicles/dm_train/graphics/door_right_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.61700009638 -19.2880011497 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1676271374" name="door_left_a2">
+			<reference>../vehicles/dm_train/graphics/door_left_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61800009644 -8.82700052613 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="846542099" name="door_left_b2">
+			<reference>../vehicles/dm_train/graphics/door_left_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61800009644 -8.82700052613 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1667980155" name="door_left_a3">
+			<reference>../vehicles/dm_train/graphics/door_left_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61700009638 -14.0630008382 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="210769875" name="door_left_b3">
+			<reference>../vehicles/dm_train/graphics/door_left_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61700009638 -14.0630008382 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1751048992" name="door_left_a4">
+			<reference>../vehicles/dm_train/graphics/door_left_a1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61800009644 -19.2880011497 0.991000059068 1.0</transform>
+		</node>
+		<node type="NodeReference" id="1149998892" name="door_left_b4">
+			<reference>../vehicles/dm_train/graphics/door_left_b1.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.61800009644 -19.2880011497 0.991000059068 1.0</transform>
+		</node>
+	</node>
+</nodes>

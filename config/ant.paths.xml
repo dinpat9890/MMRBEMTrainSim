@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="ConfigPaths" >
+  <path id="all_config">
+    <pathelement path="${dir.config.source.trains}" />
+	<pathelement path="${dir.config.database}" />
+	<pathelement path="${dir.config}/localisation" />
+    <pathelement path="${dir.config.source}/modules/vision_comms" />
+    <!-- pathelement path="${dir.config.source}/soft_plc" / -->
+  </path>
+
+  <path id="train_models_config">
+    <dirset dir="${dir.config.source.trains}">
+      <include name="*"/>
+      <depth max="1"/>
+    </dirset>
+  </path>
+</project>

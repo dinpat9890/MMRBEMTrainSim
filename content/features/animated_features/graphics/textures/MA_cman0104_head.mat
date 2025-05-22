@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="MA_cman0104_head" guid="131728019715d524aa961502148a50d358ead24a" base_material="mesh_base">
+	<texture name="albedo">../features/animated_features/graphics/textures/MA_cman0104_head.dds</texture>
+	<texture name="shading">../features/animated_features/graphics/textures/MA_cman0104_head_met.dds</texture>
+	<parameter name="microfiber">0.787999988</parameter>
+	<parameter name="normal_scale">0</parameter>
+</material>

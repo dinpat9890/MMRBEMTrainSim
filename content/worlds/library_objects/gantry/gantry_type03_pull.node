@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1779103629" name="gantry_type03_pull">
+		<mesh_name>../worlds/library_objects/gantry/gantry_type03_pull.mesh</mesh_name>
+		<surface name="gantry_type03_pull_fence_electric" material="48094474559869b5f217bae90dd93f663d90a28a" property="surface_base"/>
+		<surface name="gantry_type03_pull_gantry_atlas_d" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="1713233077" name="Connection_conductor">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 5.4 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="460800544" name="Connection_catenary">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.02 0 6.75 1.0</transform>
+		</node>
+	</node>
+</nodes>

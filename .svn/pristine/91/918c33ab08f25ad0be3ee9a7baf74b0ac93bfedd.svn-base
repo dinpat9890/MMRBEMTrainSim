@@ -1,0 +1,205 @@
+(log "Configuring using MMRBEM CAB Simulator)")									
+(log "Modified: 22`/08/2022 - Jason Xiao")
+
+(! Helpful interpolation function)									
+(define clamped-interpolate $val $controller_min $controller_max $model_min $model_max									
+  (max (min (interpolate $val $controller_min $controller_max $model_min $model_max) $model_max) $model_min)									
+)									
+	
+(! using (value - input_min)/(input_max - input_min)*(output_max - output_min) + output_min )									
+(define interpolate $val $controller_min $controller_max $model_min $model_max									
+  (+ (* (/ (- $val $controller_min) (- $controller_max $controller_min)) (- $model_max $model_min)) $model_min)									
+)									
+
+(! Allows variables to be set to values of 1,2,3 setting different flashing rates)									
+(define get-led-output $led_output_name									
+  (case									
+    (== 1 (get-output $led_output_name)) 1.0									
+    (== 2 (get-output $led_output_name)) (sustain (pulse (time 1.0)) 0.5)									
+    (== 3 (get-output $led_output_name)) (sustain (pulse (time 0.4)) 0.2) 									
+0									
+  )									
+)									
+
+(define get_tbc_ana_0 (wago-input (wago-analog) 1 0))									
+(define get_tbc_ana_1 (wago-input (wago-analog) 1 1))									
+(define get_tbc_ana_2 (wago-input (wago-analog) 1 2))									
+(define get_tbc_ana_3 (wago-input (wago-analog) 1 3))
+
+
+(! ****************************************)									
+
+(set-input "Horn PB"                                           (log "Horn PB="                                    (wago-input (wago-digital) 1 0)))
+(set-input "Cab Console Light PB"                              (log "Cab Console Light PB="                       (wago-input (wago-digital) 1 2)))
+(set-input "Door Proven Loop Cutout PB"                        (log "Door Proven Loop Cutout PB="                 (wago-input (wago-digital) 1 3)))
+(set-input "Left Door Close PB Operating Panel 1"              (log "Left Door Close PB 1="                       (wago-input (wago-digital) 1 1)))
+(set-input "Right Door Close PB Operating Panel 1"             (log "Right Door Close PB 1="                      (wago-input (wago-digital) 1 4)))
+(set-input "Left Door Open PB Operating Panel 1"               (log "Left Door Open PB 1="                        (wago-input (wago-digital) 1 6)))
+(set-input "Right Door Open PB Operating Panel 1"              (log "Right Door Open PB 1="                       (wago-input (wago-digital) 1 7)))
+(set-input "Cab Main Light PB"                                 (log "Cab Main Light PB="                  		  (wago-input (wago-digital) 1 5)))
+(set-input "Parking Brake On Switch"                           (log "Parking Brake On Switch="            		  (wago-input (wago-digital) 1 8)))
+(set-input "Parking Brake Off Switch"                          (log "Parking Brake Off Switch="           		  (wago-input (wago-digital) 1 10)))
+(set-input "Door Close Announcement PB"                        (log "Door Close Announcement PB="         		  (wago-input (wago-digital) 1 11)))
+(set-input "Emergency Brake PB"                                (log "Emergency Brake PB="                 		  (not (wago-input (wago-digital) 1 9))))
+(set-input "Call On Light PB"                                  (log "Call On Light PB="                   		  (wago-input (wago-digital) 1 12)))
+(set-input "VCB Open PB"                                       (log "VCB Open PB="                        		  (wago-input (wago-digital) 1 14)))
+
+
+(set-input "Wiper Control Switch"                            (log "Wiper Control Switch=" 	  	(case   (and      (wago-input (wago-digital) 1 13)   (not (wago-input (wago-digital) 1 16))(not (wago-input (wago-digital) 1 18)))  2(! Left) 
+                                                                                                        (and (not (wago-input (wago-digital) 1 13))       (wago-input (wago-digital) 1 16) (not (wago-input (wago-digital) 1 18)))  3(! Middle)
+																										(and (not (wago-input (wago-digital) 1 13))  (not (wago-input (wago-digital) 1 16))     (wago-input (wago-digital) 1 18))   0(! Right)
+																																																									1(! All)
+                                                                                          )
+                                                               )
+)
+
+
+(set-input "Wiper Selection Switch"                            (log "Wiper Selection Switch=" 	  (case (and      (wago-input (wago-digital) 1 19)   (not (wago-input (wago-digital) 1 17))(not (wago-input (wago-digital) 1 20)))  1(! Intermittent Speed) 
+                                                                                                        (and (not (wago-input (wago-digital) 1 19))       (wago-input (wago-digital) 1 17) (not (wago-input (wago-digital) 1 20)))  2(! Low Speed)
+																										(and (not (wago-input (wago-digital) 1 19))  (not (wago-input (wago-digital) 1 17))     (wago-input (wago-digital) 1 20))   3(! High Speed)
+																																																									0(! Off)
+                                                                                          )
+                                                               )
+)
+
+
+(set-input "LIMP Home PB"                                       (log "LIMP Home PB="                        (wago-input (wago-digital) 1 22)))
+(set-input "Power Off PB"                                       (log "Power Off PB="                        (wago-input (wago-digital) 1 23)))
+(set-input "Panto Down PB"                                      (log "Panto Down PB="                       (wago-input (wago-digital) 1 21)))
+(set-input "VCB Close PB"                                       (log "VCB Close PB="                        (wago-input (wago-digital) 1 24)))
+(set-input "Left Door Open PB Operating Panel 2"                (log "Left Door Open PB 2="                 (wago-input (wago-digital) 1 26)))
+(set-input "Left Door Close PB Operating Panel 2"               (log "Left Door Close PB 2="                (wago-input (wago-digital) 1 27)))
+(set-input "Left Door Open PB 1 Operating Panel 2"              (log "Left Door Open PB 3="                 (wago-input (wago-digital) 1 25)))
+(set-input "Panto Up PB"                                        (log "Panto Up PB="                         (wago-input (wago-digital) 1 81)))
+(set-input "Safety Cutout SS"                                   (log "Safety Cutout SS="                    (wago-input (wago-digital) 1 30)))
+(set-input "Brake Loop Cutout SS"                               (log "Brake Loop Cutout SS="                (wago-input (wago-digital) 1 29)))
+
+
+(set-input "Panto Selector"                            (log "Panto Selector=" 	                  (case (and      (wago-input (wago-digital) 1 32)  (not (wago-input (wago-digital) 1 34))(not (wago-input (wago-digital) 1 35)))  3(! Unit 1) 
+                                                                                                        (and (not (wago-input (wago-digital) 1 32))      (wago-input (wago-digital) 1 34)(not (wago-input (wago-digital) 1 35)))   2(! Unit 2)
+																										(and (not (wago-input (wago-digital) 1 32))  (not (wago-input (wago-digital) 1 34))    (wago-input (wago-digital) 1 35))   1(! Unit 3)
+                                                                                                                                                                                             0(! Unit All)
+                                                                                          )
+                                                               )
+)
+
+
+(set-input "Deadman Bypass Switch"                                       (log "Deadman Bypass Switch="                        (wago-input (wago-digital) 1 38)))
+
+(set-input "Head Light Switch"                                 (log "Head Light Switch="  (case (and      (wago-input (wago-digital) 1 37)  (not (wago-input (wago-digital) 1 39)))  1(! Low) 
+                                                                                                (and (not (wago-input (wago-digital) 1 37))      (wago-input (wago-digital) 1 39))   2(! High)
+                                                                                                                                                                                     0(! Off)
+                                                                                               )
+                                                               )
+)
+
+
+(set-input "ROS PB"                               	(log "ROS PB="                                            (wago-input (wago-digital) 1 40)))
+(set-input "UTO PB"                               	(log "UTO PB="                                            (wago-input (wago-digital) 1 42)))
+(set-input "ATO Start PB"                         	(log "ATO Start PB="                                      (wago-input (wago-digital) 1 43)))
+(set-input "Emergency Brake Reset PB"             	(log "Emergency Brake Reset PB="                          (wago-input (wago-digital) 1 41)))
+(set-input "Uncouple PB"                          	(log "Uncouple PB="                                       (wago-input (wago-digital) 1 44)))
+(set-input "Flasher Light PB"                     	(log "Flasher Light PB="                                  (wago-input (wago-digital) 1 46)))
+(set-input "Flood Light PB"                       	(log "Flood Light PB="                                    (wago-input (wago-digital) 1 47)))
+(set-input "Battery Reset PB"                     	(log "Battery Reset PB="                                  (wago-input (wago-digital) 1 45)))
+(set-input "Right Door Open PB Operating Panel 5"   (log "Right Door Open PB 2="                              (wago-input (wago-digital) 1 48)))
+(set-input "Right Door Close PB Operating Panel 5"  (log "Right Door Close PB 2="                             (wago-input (wago-digital) 1 50)))
+(set-input "Door Proven Loop Output Switch"      	(log "Door Proven Loop Output Switch="                    (not (wago-input (wago-digital) 1 49))))
+(set-input "Right Door Open PB 1 Operating Panel 5" (log "Right Door Open PB 3="                              (wago-input (wago-digital) 1 52)))
+(set-input "Lamp Test PB"                        	(log "Lamp Test PB="                                      (wago-input (wago-digital) 1 54)))
+(set-input "WFL Test PB"                         	(log "WFL Test PB="                                       (wago-input (wago-digital) 1 55)))
+(set-input "Emergency Stop PB"                  	(log "Emergency Stop PB="                                (not (wago-input (wago-digital) 1 53))))
+
+
+(set-input "Hold Door Close Bypass SS"                                 (log "Hold Door Close Bypass SS="  (case (and      (wago-input (wago-digital) 1 58)  (not (wago-input (wago-digital) 1 59)))  1(! HDCB Left) 
+                                                                                                (and (not (wago-input (wago-digital) 1 58))      (wago-input (wago-digital) 1 59))                   2(! HDCB Right)
+                                                                                                                                                                                                     0(! Normal)
+                                                                                               )
+                                                               )
+)
+
+
+(set-input "Cab Booster Fan SS"                                 (log "Cab Booster Fan SS="  (case (and      (wago-input (wago-digital) 1 60)  (not (wago-input (wago-digital) 1 61)))  1(! Low Speed) 
+                                                                                                (and (not (wago-input (wago-digital) 1 60))      (wago-input (wago-digital) 1 61))     2(! High Speed)
+                                                                                                                                                                                       0(! Off)
+                                                                                               )
+                                                               )
+)
+
+(set-input "Emergency Brake PB Bypass SS"        (log "Emergency Brake PB Bypass SS="                     (wago-input (wago-digital) 1 57)))
+(set-input "Cab EED Left"                        (log "Cab EED Left="                                     (wago-input (wago-digital) 1 66)))
+(set-input "Cab EED Right"                       (log "Cab EED Right="                                    (wago-input (wago-digital) 1 65)))
+(set-input "Control Key"                         (log "Control Key="                                      (wago-input (wago-digital) 1 68)))
+(set-input "Deadman Safety Device"               (log "Deadman Safety Device="                            (wago-input (wago-digital) 1 70)))
+
+(! Master Controller Panel)
+
+(set-input   "Master Controller Handle"        (log "Master Controller Handle="  (delta 0.5 (case (and      (wago-input (wago-digital)  1 71)       (wago-input (wago-digital) 1 69)  (not (wago-input(wago-digital) 1 72))(not (wago-input(wago-digital) 1 74)) (not (wago-input(wago-digital)1 75))) 	-101	                                                 		(! EB)
+													                                              (and  (not(wago-input (wago-digital)  1 71)) (not (wago-input (wago-digital) 1 69)) (not (wago-input(wago-digital) 1 72))     (wago-input(wago-digital) 1 74)  (not (wago-input(wago-digital)1 75))) 	0                                                         		(! Off)
+																						          (and      (wago-input (wago-digital)  1 71)  (not (wago-input (wago-digital) 1 69))      (wago-input(wago-digital) 1 72) (not (wago-input(wago-digital) 1 74)) (not (wago-input(wago-digital)1 75))) 	-100	                                                    	(! Bmax)																								  
+												                                                  (and      (wago-input (wago-digital)  1 71)  (not (wago-input (wago-digital) 1 69)) (not (wago-input(wago-digital) 1 72)) (not (wago-input(wago-digital) 1 74)) (not (wago-input(wago-digital)1 75))) (max (interpolate (get_tbc_ana_0) 0.378 0.04 -10 -100) -100)    (! Brake)
+													                                              (and  (not(wago-input (wago-digital)  1 71)) (not (wago-input (wago-digital) 1 69))  (not (wago-input(wago-digital) 1 72))(not (wago-input(wago-digital) 1 74))  (wago-input(wago-digital) 1 75)) 	(min (interpolate (get_tbc_ana_0) 0.63 1.0  10 100) 100)  		(! Traction)
+																						 																													                                                                                         0
+									                                                         )
+																				  )
+																				   
+                                                )
+)				
+
+
+(set-input "Mode Selector" 			      (log "Mode Selector="		     (case    (and      (wago-input (wago-digital) 1 80)  (not (wago-input (wago-digital) 1 77)) (not (wago-input(wago-digital) 1 79))(not (wago-input(wago-digital) 1 78))(not (wago-input(wago-digital) 1 76)))  5 (! ATO)
+                                                                                  (and (not (wago-input (wago-digital) 1 80))      (wago-input (wago-digital) 1 77)  (not (wago-input(wago-digital) 1 79))(not (wago-input(wago-digital) 1 78))(not (wago-input(wago-digital) 1 76)))  4 (! ATP)
+												                                  (and (not (wago-input (wago-digital) 1 80)) (not (wago-input (wago-digital) 1 77))      (wago-input(wago-digital) 1 79) (not (wago-input(wago-digital) 1 78))(not (wago-input(wago-digital) 1 76)))  3 (! Forword)
+												                                  (and (not (wago-input (wago-digital) 1 80)) (not (wago-input (wago-digital) 1 77)) (not (wago-input(wago-digital) 1 79))     (wago-input(wago-digital) 1 78) (not (wago-input(wago-digital) 1 76)))  2 (! Standby)
+												                                  (and (not (wago-input (wago-digital) 1 80)) (not (wago-input (wago-digital) 1 77)) (not (wago-input(wago-digital) 1 79))(not (wago-input(wago-digital) 1 78))     (wago-input(wago-digital) 1 76))   1 (! Reverse)
+                                                                                                                                                                                                                                                                                       0 (! Off UTO)
+                                                                          )
+                                         )
+)
+
+
+
+(! Outputs)
+(wago-output (wago-digital) 1  0                               (log "Horn PB Lamp="                                 (get-output "Horn PB Lamp")))
+(wago-output (wago-digital) 1  2                               (log "Cab Console Light PB Lamp="                    (get-output "Cab Console Light PB Lamp")))
+(wago-output (wago-digital) 1  3                               (log "Left Door Close PB Operating Panel 1 Lamp="    (get-output "Left Door Close PB Operating Panel 1 Lamp")))
+(wago-output (wago-digital) 1  1                               (log "Right Door Close PB Operating Panel 1 Lamp="   (get-output "Right Door Close PB Operating Panel 1 Lamp")))
+(wago-output (wago-digital) 1  4                               (log "Left Door Open PB Operating Panel 1 Lamp="     (get-output "Left Door Open PB Operating Panel 1 Lamp")))
+(wago-output (wago-digital) 1  6                               (log "Right Door Open PB Operating Panel 1 Lamp="    (get-output "Right Door Open PB Operating Panel 1 Lamp")))
+(wago-output (wago-digital) 1  7                               (log "Cab Main Light PB Lamp="                       (get-output "Cab Main Light PB Lamp")))
+(wago-output (wago-digital) 1  5                               (log "Parking Brake On Switch Lamp="                 (get-output "Parking Brake On Switch Lamp")))
+(wago-output (wago-digital) 1  8                               (log "Parking Brake Off Switch Lamp="                (get-output "Parking Brake Off Switch Lamp")))
+(wago-output (wago-digital) 1  10                              (log "Door Close Announcement PB Lamp="              (get-output "Door Close Announcement PB Lamp")))
+(wago-output (wago-digital) 1  12                              (log "Call On Light PB Lamp="                        (get-output "Call On Light PB Lamp")))
+(wago-output (wago-digital) 1  14                              (log "VCB Open PB Lamp="                             (get-output "VCB Open PB Lamp")))
+(wago-output (wago-digital) 1  15                              (log "LIMP Home PB Lamp="                            (get-output "LIMP Home PB Lamp")))
+(wago-output (wago-digital) 1  13                              (log "Power Off PB Lamp="                            (get-output "Power Off PB Lamp")))
+(wago-output (wago-digital) 1  16                              (log "Panto Down PB Lamp="                           (get-output "Panto Down PB Lamp")))
+(wago-output (wago-digital) 1  18                              (log "VCB Close PB Lamp="                            (get-output "VCB Close PB Lamp")))
+(wago-output (wago-digital) 1  19                              (log "Left Door Open PB Operating Panel 2 Lamp="     (get-output "Left Door Open PB Operating Panel 2 Lamp")))
+(wago-output (wago-digital) 1  17                              (log "Left Door Close PB Operating Panel 2 Lamp="    (get-output "Left Door Close PB Operating Panel 2 Lamp")))
+(wago-output (wago-digital) 1  20                              (log "Left Door Open PB 1 Operating Panel 2 Lamp="   (get-output "Left Door Open PB 1 Operating Panel 2 Lamp")))
+(wago-output (wago-digital) 1  22                              (log "Panto Up PB Lamp="                             (get-output "Panto Up PB Lamp")))
+(wago-output (wago-digital) 1  24                              (log "ROS PB Lamp="                                  (get-output "ROS PB Lamp")))
+(wago-output (wago-digital) 1  26                              (log "UTO PB Lamp="                                  (get-output "UTO PB Lamp")))
+(wago-output (wago-digital) 1  27                              (log "ATO Start PB Lamp="                            (get-output "ATO Start PB Lamp")))
+(wago-output (wago-digital) 1  25                              (log "Emergency Brake Reset PB Lamp="                (get-output "Emergency Brake Reset PB Lamp")))
+(wago-output (wago-digital) 1  28                              (log "APS Fault Indicator="                          (get-output "APS Fault Indicator")))
+(wago-output (wago-digital) 1  30                              (log "Power Fault Indicator="                        (get-output "Power Fault Indicator")))
+(wago-output (wago-digital) 1  31                              (log "Emergency Brake Indicator="                    (get-output "Emergency Brake Indicator")))
+(wago-output (wago-digital) 1  29                              (log "VCB Trip Indicator="                           (get-output "VCB Trip Indicator")))
+(wago-output (wago-digital) 1  32                              (log "Line Voltage Indicator="                       (get-output "Line Voltage Indicator")))
+(wago-output (wago-digital) 1  34                              (log "Other Cab Occupied Indicator="                 (get-output "Other Cab Occupied Indicator")))
+(wago-output (wago-digital) 1  35                              (log "Parking Brake Indicator="                      (get-output "Parking Brake Indicator")))
+(wago-output (wago-digital) 1  33                              (log "All Door Close Indicator="                     (get-output "All Door Close Indicator")))
+(wago-output (wago-digital) 1  21                              (log "HVAC Fault Indicator="                         (get-output "HVAC Fault Indicator")))
+(wago-output (wago-digital) 1  23                              (log "Saloon Door Close Indicator="                  (get-output "Saloon Door Close Indicator")))
+(wago-output (wago-digital) 1  36                              (log "Uncouple PB Lamp="                             (get-output "Uncouple PB Lamp")))
+(wago-output (wago-digital) 1  38                              (log "Flasher Light PB Lamp="                        (get-output "Flasher Light PB Lamp")))
+(wago-output (wago-digital) 1  39                              (log "Flood Light PB Lamp="                          (get-output "Flood Light PB Lamp")))
+(wago-output (wago-digital) 1  45                              (log "Battery Reset PB Lamp="                        (get-output "Battery Reset PB Lamp")))
+(wago-output (wago-digital) 1  40                              (log "Right Door Open PB 2 Lamp="                    (get-output "Right Door Open PB 2 Lamp")))
+(wago-output (wago-digital) 1  42                              (log "Right Door Close PB 2 Lamp="                   (get-output "Right Door Close PB 2 Lamp")))
+(wago-output (wago-digital) 1  52                              (log "Right Door Open PB 3 Lamp="                    (get-output "Right Door Open PB 3 Lamp")))
+(wago-output (wago-digital) 1  41                              (log "WFL Test PB Lamp="                             (get-output "WFL Test PB Lamp")))
+

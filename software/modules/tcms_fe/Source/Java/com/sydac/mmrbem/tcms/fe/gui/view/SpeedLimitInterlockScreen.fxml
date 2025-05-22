@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.tcms.fe.gui.presenter.SpeedLimitInterlockScreenController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="85.4889" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="14.5111" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="98.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="22.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="speedLimit0Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Air Suspension Cut out" GridPane.columnIndex="1" />
+                  <Label fx:id="speedLimit1Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Bogie Isolated" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="speedLimit2Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Epic Cut out" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="speedLimit3Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due R Pressure Isolate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="speedLimit4Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due SCS Mode" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="speedLimit5Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Washing Mode" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="speedLimit6Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Hostler Mode" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="speedLimit7Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Jog Mode" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="speedLimit8Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Low Speed Cutout Mode" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="speedLimit9Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Excessive slip" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label fx:id="speedLimit10Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due No ED available" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label fx:id="speedLimit11Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Brake Failure from BECU" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Label fx:id="speedLimit12Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due override traction block" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <Label fx:id="speedLimit13Lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speed-limit-screen-text" text="Speed Limit active due Air Suspension deflated" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="37.5977" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="24.8046" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="37.5977" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.8695" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="58.6956" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="30.4349" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="hvCommandsBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Traction effort bypass" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

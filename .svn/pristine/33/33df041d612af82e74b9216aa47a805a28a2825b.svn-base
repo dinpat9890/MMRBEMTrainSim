@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gmi_screens xmlns="http://www.sydac.com.au/GMI/1.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sydac.com.au/GMI/1.0/ ../screen.xsd">
+	<!-- Common Internal Screens Here. Internal IDS go from 500 to 599 -->
+
+	<!-- ==================== circuit breaker m panel start==================== -->
+
+	<screen xsi:type="main_screen" name="Circuit Breaker Panel"
+		id="500"
+		background_image="t_car_edb/t_car_edb_main_panel_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 1 start==================== -->
+
+	<screen xsi:type="main_screen" name="T Car Row 1" id="501"
+		background_image="t_car_edb/t_car_edb_panel_Row1_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="apscb">
+			<position x="119" y="489" />
+			<number name="APSCB" variable="switch_state" />
+			<number name="APSCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="sac1cb_remote_control">
+			<position x="400" y="552" />
+			<number name="APSICB" variable="switch_state" />
+			<number name="APSICB" variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="apsicb">
+			<position x="260" y="438" />
+			<number name="APSICB" variable="switch_state" />
+			<number name="APSICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="568" y="489" />
+			<number name="BCGCB" variable="switch_state" />
+			<number name="BCGCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="704" y="489" />
+			<number name="BECUCB1" variable="switch_state" />
+			<number name="BECUCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="840" y="489" />
+			<number name="BECUCB2" variable="switch_state" />
+			<number name="BECUCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="976" y="489" />
+			<number name="CSACB" variable="switch_state" />
+			<number name="CSACB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1113" y="489" />
+			<number name="CSBCB" variable="switch_state" />
+			<number name="CSBCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1248" y="489" />
+			<number name="DIOCB1" variable="switch_state" />
+			<number name="DIOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1384" y="489" />
+			<number name="DIOCB2" variable="switch_state" />
+			<number name="DIOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1520" y="489" />
+			<number name="EBMVCB" variable="switch_state" />
+			<number name="EBMVCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1656" y="489" />
+			<number name="ESKCB" variable="switch_state" />
+			<number name="ESKCB" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 1 end==================== -->
+	<!-- ==================== circuit breaker m panel row 2 start==================== -->
+
+	<screen xsi:type="main_screen" name="T Car Row 2" id="502"
+		background_image="t_car_edb/t_car_edb_panel_Row2_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="apsicb">
+			<position x="124" y="438" />
+			<number name="DSCB" variable="switch_state" />
+			<number name="DSCB" variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="sac1cb_remote_control">
+			<position x="262" y="552" />
+			<number name="DSCB" variable="switch_state" />
+			<number name="DSCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="432" y="489" />
+			<number name="MLCB" variable="switch_state" />
+			<number name="MLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="568" y="489" />
+			<number name="ILCB1" variable="switch_state" />
+			<number name="ILCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="704" y="489" />
+			<number name="ILCB2" variable="switch_state" />
+			<number name="ILCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="840" y="489" />
+			<number name="LDICB" variable="switch_state" />
+			<number name="LDICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="976" y="489" />
+			<number name="LDLCB" variable="switch_state" />
+			<number name="LDLCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1112" y="489" />
+			<number name="LDRCB" variable="switch_state" />
+			<number name="LDRCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1248" y="489" />
+			<number name="MTBMCCB" variable="switch_state" />
+			<number name="MTBMCCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1384" y="489" />
+			<number name="OCCB1" variable="switch_state" />
+			<number name="OCCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1520" y="489" />
+			<number name="PADCB" variable="switch_state" />
+			<number name="PADCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1656" y="489" />
+			<number name="PANCB" variable="switch_state" />
+			<number name="PANCB" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 2 end==================== -->
+	<!-- ==================== circuit breaker m panel row 3 start==================== -->
+
+	<screen xsi:type="main_screen" name="T Car Row 3" id="503"
+		background_image="t_car_edb/t_car_edb_panel_Row3_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="apscb">
+			<position x="28" y="489" />
+			<number name="POCB" variable="switch_state" />
+			<number name="POCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="164" y="489" />
+			<number name="RIO1CB" variable="switch_state" />
+			<number name="RIO1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="300" y="489" />
+			<number name="RIO2CB" variable="switch_state" />
+			<number name="RIO2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apsicb">
+			<position x="442" y="438" />
+			<number name="SAC1CCB" variable="switch_state" />
+			<number name="SAC1CCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="sac1cb_remote_control">
+			<position x="581" y="552" />
+			<number name="SAC1CCB" variable="switch_state" />
+			<number name="SAC1CCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1064" y="489" />
+			<number name="SIOCB1" variable="switch_state" />
+			<number name="SIOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1200" y="489" />
+			<number name="SSCB" variable="switch_state" />
+			<number name="SSCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1336" y="489" />
+			<number name="SSICB" variable="switch_state" />
+			<number name="SSICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1472" y="489" />
+			<number name="SIOCB2" variable="switch_state" />
+			<number name="SIOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1608" y="489" />
+			<number name="ELCB1" variable="switch_state" />
+			<number name="ELCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1744" y="489" />
+			<number name="ELCB2" variable="switch_state" />
+			<number name="ELCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apsicb">
+			<position x="753" y="438" />
+			<number name="SAC2CCB" variable="switch_state" />
+			<number name="SAC2CCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="sac1cb_remote_control">
+			<position x="894" y="552" />
+			<number name="SAC2CCB" variable="switch_state" />
+			<number name="SAC2CCB" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 3 end==================== -->
+	<!-- ==================== circuit breaker m panel row 4 start==================== -->
+
+	<screen xsi:type="main_screen" name="T Car Row 4" id="504"
+		background_image="t_car_edb/t_car_edb_panel_Row4_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="apscb">
+			<position x="211" y="489" />
+			<number name="PTCB" variable="switch_state" />
+			<number name="PTCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="347" y="489" />
+			<number name="TDICB" variable="switch_state" />
+			<number name="TDICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="483" y="489" />
+			<number name="VCBCB" variable="switch_state" />
+			<number name="VCBCB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="619" y="489" />
+			<number name="WIFICB" variable="switch_state" />
+			<number name="WIFICB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="755" y="489" />
+			<number name="SP1CB" variable="switch_state" />
+			<number name="SP1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="891" y="489" />
+			<number name="SP2CB" variable="switch_state" />
+			<number name="SP2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1027" y="489" />
+			<number name="SP3CB" variable="switch_state" />
+			<number name="SP3CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1163" y="489" />
+			<number name="SP4CB" variable="switch_state" />
+			<number name="SP4CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1299" y="489" />
+			<number name="SP5CB" variable="switch_state" />
+			<number name="SP5CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="sp12cb">
+			<position x="1437" y="489" />
+			<number name="SP12CB" variable="switch_state" />
+			<number name="SP12CB" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 4 end==================== -->
+	<!-- ==================== circuit breaker m panel row 5 start==================== -->
+
+	<screen xsi:type="main_screen" name="T Car Row 5" id="505"
+		background_image="t_car_edb_row_5/t_car_edb_panel_Row5_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="msocb1_1">
+			<position x="159" y="544" />
+			<number name="MSOCB1" variable="switch_state" />
+			<number name="MSOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_2">
+			<position x="312" y="544" />
+			<number name="MSOCB1" variable="switch_state" />
+			<number name="MSOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_1">
+			<position x="383" y="544" />
+			<number name="MSOCB2" variable="switch_state" />
+			<number name="MSOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_2">
+			<position x="536" y="544" />
+			<number name="MSOCB2" variable="switch_state" />
+			<number name="MSOCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_1">
+			<position x="607" y="544" />
+			<number name="MSOCB3" variable="switch_state" />
+			<number name="MSOCB3" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_2">
+			<position x="760" y="544" />
+			<number name="MSOCB3" variable="switch_state" />
+			<number name="MSOCB3" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_1">
+			<position x="831" y="544" />
+			<number name="MSOCB4" variable="switch_state" />
+			<number name="MSOCB4" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_2">
+			<position x="984" y="544" />
+			<number name="MSOCB4" variable="switch_state" />
+			<number name="MSOCB4" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_1">
+			<position x="1055" y="544" />
+			<number name="MSOCB5" variable="switch_state" />
+			<number name="MSOCB5" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="msocb1_2">
+			<position x="1208" y="544" />
+			<number name="MSOCB5" variable="switch_state" />
+			<number name="MSOCB5" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="socb">
+			<position x="1269" y="423" />
+			<number name="SOCB1" variable="switch_state" />
+			<number name="SOCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="socb">
+			<position x="1511" y="423" />
+			<number name="SOCB2" variable="switch_state" />
+			<number name="SOCB2" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 5 end==================== -->
+	<!-- ==================== circuit breaker m panel row 6 start==================== -->
+
+	<screen xsi:type="main_screen" name="T Car Row 6" id="506"
+		background_image="t_car_edb_row_6/t_car_edb_panel_Row6_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="ac1cb1">
+			<position x="249" y="449" />
+			<number name="AC1CB" variable="switch_state" />
+			<number name="AC1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="ac1cb1">
+			<position x="659" y="449" />
+			<number name="AC2CB" variable="switch_state" />
+			<number name="AC2CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="mtbm1cb">
+			<position x="1058" y="489" />
+			<number name="MTBM1CB" variable="switch_state" />
+			<number name="MTBM1CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="mtbm1cb">
+			<position x="1368" y="489" />
+			<number name="MTBM2CB" variable="switch_state" />
+			<number name="MTBM2CB" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 6 end==================== -->
+	<!-- ==================== circuit breaker m panel row 7 start==================== -->
+
+	<screen xsi:type="main_screen" name="T Car Row 7" id="507"
+		background_image="t_car_edb/t_car_edb_panel_Row7_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="apsicb">
+			<position x="309" y="438" />
+			<number name="SP11CB" variable="switch_state" />
+			<number name="SP11CB" variable="switch_control" />
+		</screen_object>
+		
+		<screen_object type="sac1cb_remote_control">
+			<position x="447" y="552" />
+			<number name="SP11CB" variable="switch_state" />
+			<number name="SP11CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="617" y="489" />
+			<number name="SP6CB" variable="switch_state" />
+			<number name="SP6CB" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="753" y="489" />
+			<number name="TERCB1" variable="switch_state" />
+			<number name="TERCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="889" y="489" />
+			<number name="TERCB2" variable="switch_state" />
+			<number name="TERCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1025" y="489" />
+			<number name="PISCB1" variable="switch_state" />
+			<number name="PISCB1" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="apscb">
+			<position x="1161" y="489" />
+			<number name="PISCB2" variable="switch_state" />
+			<number name="PISCB2" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="mtbm1cb">
+			<position x="1299" y="489" />
+			<number name="MTOPCB" variable="switch_state" />
+			<number name="MTOPCB" variable="switch_control" />
+		</screen_object>
+
+	</screen>
+
+	<!-- ==================== circuit breaker m panel row 7 end==================== -->
+	<screen xsi:type="main_screen" name="T Car EDB Cubicle" id="508"
+		background_image="t_car_edb/t_car_edb_cubicle_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="spsw_1">
+			<position x="970" y="418" />
+			<number name="SPSW" variable="switch_state" />
+			<number name="SPSW" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="spsw_1">
+			<position x="532" y="418" />
+			<number name="ADDCOS" variable="switch_state" />
+			<number name="ADDCOS" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="spsw_1">
+			<position x="72" y="418" />
+			<number name="ORDCOS" variable="switch_state" />
+			<number name="ORDCOS" variable="switch_control" />
+		</screen_object>
+
+		<screen_object type="sppb_1">
+			<position x="1470" y="378" />
+			<number name="SPPB" variable="button_state" />
+			<number name="SPPB" variable="button_control" />
+		</screen_object>
+	</screen>
+	
+	<!-- ==================== Parking Brake Release start==================== -->
+
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 01 Handle 01"
+		id="133"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_1" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_1" variable="switch_control" />
+		</screen_object>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 01 Handle 02"
+		id="134"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_2" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_1_HANDLE_2" variable="switch_control" />
+		</screen_object>
+	</screen>
+	
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 02 Handle 01"
+		id="135"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_1" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_1" variable="switch_control" />
+		</screen_object>
+	</screen>	
+
+
+	<screen xsi:type="main_screen" name="Parking Brake Release Bogie 02 Handle 02"
+		id="136"
+		background_image="parking_brake_release/parking_brake_release_bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="parking_brake_release">
+			<position x="758" y="292" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_2" variable="switch_state" />
+			<number name="PARKING_BRAKE_MANUAL_RELEASE_BOGIE_2_HANDLE_2" variable="switch_control" />
+		</screen_object>
+	</screen>		
+	<!-- ==================== Parking Brake Release end==================== -->		
+
+
+
+<!-- ==================== EBD Start==================== -->		
+	<screen xsi:type="main_screen" name="EBD Panel" id="601"
+		background_image="t_car_ebd/bg.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+			
+		<screen_object type="vcb_isolation_cock">
+			<position x="42" y="42" />
+			<number name="VCB_ISOLATION_COCK" variable="cock_state" />
+			<number name="VCB_ISOLATION_COCK" variable="cock_control" />
+		</screen_object>
+		
+		<screen_object type="ord_plunger">
+			<position x="675" y="42" />
+			<number name="ORD_PLUNGER" variable="cock_state" />
+			<number name="ORD_PLUNGER" variable="cock_control" />
+		</screen_object>
+		
+		
+		<screen_object type="pantograph_isolation_cock">
+			<position x="1308" y="42" />
+			<number name="PANTOGRAPH_ISOLATION_COCK" variable="cock_state" />
+			<number name="PANTOGRAPH_ISOLATION_COCK" variable="cock_control" />
+		</screen_object>
+		
+	</screen>
+	
+
+<!-- ==================== EBD End==================== -->			
+	
+	<screen_object_type xsi:type="state_object"
+		name="vcb_isolation_cock">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+			<image file="t_car_ebd/vcb_horizontal.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="t_car_ebd/vcb_vertical.png">
+			<state_group_ref name="open" />
+		</image>
+
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="150" width="250"
+				height="600" />
+		</hotspot>
+	</screen_object_type>
+	
+	
+	<screen_object_type xsi:type="state_object"
+		name="ord_plunger">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="0" />
+		</state_group>
+			<image file="t_car_ebd/ord_plunger_pull.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="t_car_ebd/ord_plunger_push.png">
+			<state_group_ref name="open" />
+		</image>
+
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="50" y="150" width="250"
+				height="600" />
+		</hotspot>
+	</screen_object_type>
+	
+	
+	
+	<screen_object_type xsi:type="state_object"
+		name="pantograph_isolation_cock">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+			<image file="t_car_ebd/panto_horizontal.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="t_car_ebd/panto_vertical.png">
+			<state_group_ref name="open" />
+		</image>
+
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="150" width="250"
+				height="600" />
+		</hotspot>
+	</screen_object_type>
+	
+</gmi_screens>

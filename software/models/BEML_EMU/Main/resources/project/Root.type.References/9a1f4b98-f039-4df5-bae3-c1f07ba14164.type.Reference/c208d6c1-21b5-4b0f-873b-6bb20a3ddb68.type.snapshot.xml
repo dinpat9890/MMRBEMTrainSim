@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info>
+    <MetadataNode>
+        <path value="Configuration:type:Config">
+            <node name="Info">
+                <entry value="0" key="StartInProjectRoot" />
+            </node>
+        </path>
+        <path value="ProjectData:type:Info">
+            <node name="Info">
+                <entry value="TrainDynamics" key="Name" />
+            </node>
+        </path>
+        <path value="Root:type:Categories">
+            <path value="FileClassCategory:type:Category">
+                <node name="Info">
+                    <entry value="None" key="DataType" />
+                    <entry value="Classification" key="Name" />
+                    <entry value="1" key="ReadOnly" />
+                    <entry value="1" key="SingleValued" />
+                </node>
+                <path value="artifact:type:Label">
+                    <node name="Info">
+                        <entry value="Artifact" key="Name" />
+                    </node>
+                </path>
+                <path value="convenience:type:Label">
+                    <node name="Info">
+                        <entry value="Convenience" key="Name" />
+                    </node>
+                </path>
+                <path value="derived:type:Label">
+                    <node name="Info">
+                        <entry value="Derived" key="Name" />
+                    </node>
+                </path>
+                <path value="design:type:Label">
+                    <node name="Info">
+                        <entry value="Design" key="Name" />
+                    </node>
+                </path>
+                <path value="none:type:Label">
+                    <node name="Info">
+                        <entry value="None" key="Name" />
+                    </node>
+                </path>
+                <path value="other:type:Label">
+                    <node name="Info">
+                        <entry value="Other" key="Name" />
+                    </node>
+                </path>
+            </path>
+            <path value="ReviewCategory:type:Category">
+                <node name="Info">
+                    <entry value="String" key="DataType" />
+                    <entry value="Review" key="Name" />
+                    <entry value="1" key="ReadOnly" />
+                    <entry value="1" key="SingleValued" />
+                </node>
+                <path value="approved:type:Label">
+                    <node name="Info">
+                        <entry value="Approved" key="Name" />
+                    </node>
+                </path>
+                <path value="needMoreInfo:type:Label">
+                    <node name="Info">
+                        <entry value="More Information Required" key="Name" />
+                    </node>
+                </path>
+                <path value="rejected:type:Label">
+                    <node name="Info">
+                        <entry value="Rejected" key="Name" />
+                    </node>
+                </path>
+                <path value="toReview:type:Label">
+                    <node name="Info">
+                        <entry value="To Review" key="Name" />
+                    </node>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:EntryPoints">
+            <path value="f0fc146e-585a-4e73-9c00-d3a0322fa068:type:EntryPoint">
+                <node name="Info">
+                    <entry value="utilities/set_up_project.m" key="File" />
+                    <entry value="StartUp" key="Type" />
+                </node>
+            </path>
+            <path value="f1ea1543-d11d-42e1-be9d-83589be9fcbb:type:EntryPoint">
+                <node name="Info">
+                    <entry value="utilities/clean_up_project.m" key="File" />
+                    <entry value="Shutdown" key="Type" />
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:Extensions">
+            <path value="Information:type:Extension">
+                <node name="Info">
+                    <entry value="" key="description" />
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:Files">
+            <path value="data:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="bus:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="none" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="CouplerMimic_InterfaceData.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CouplerMimic_Out_Debug.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CouplerMimic_Out_Debug_InputTransformed.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CouplerMimic_Out_Debug_SimulationForces.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CouplerMimic_Out_Debug_SimulationInertia.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="CouplerMimic_Out_Dynamics.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="Coupler_InterfaceData.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Cfg_Vehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Cfg_Vehicle_DavisCoefficients.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_In_Coupler.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_In_Vehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_In_Vehicle_CustomDragForces.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_In_Vehicle_Faults.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_In_Vehicle_Overrides.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_In_Vehicle_TrackData.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Coupler.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Train.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Vehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Vehicle_Coupler.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Vehicle_Couplers.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Vehicle_Drag.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Vehicle_Inertia.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Vehicle_TrackGeometry.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Out_Vehicle_Wheel.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="TrainDynamics_Prm.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+                <path value="config:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="none" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="ConfigSet_TrainDynamics.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="ConfigSet_TrainDynamics_Reference.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+                <path value="enum:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="BrakeShoeCoefficientCalculationMethod.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="DragCalculationMethod.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+                <path value="parameter:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="Def_Prm_Dynamics.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="Default_Value_Prm_TrainDynamics.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+            </path>
+            <path value="models:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="TrainDynamics.slx:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+            </path>
+            <path value="utilities:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="clean_up_project.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_bus_names.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_clear.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_load.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_save.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_configurations_clear.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_configurations_load.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_data_names.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="set_up_project.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+            </path>
+            <path value="work:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:ProjectPath">
+            <path value="3f7af8f6-5ba4-43e5-b3d0-c724d9920a53:type:Reference">
+                <node name="Info">
+                    <entry value="data/config" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="877b9979-ca0b-466d-aecf-6b422d3d84e2:type:Reference">
+                <node name="Info">
+                    <entry value="data/enum" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="894e430a-d199-4359-ad2e-d80743e6f7d4:type:Reference">
+                <node name="Info">
+                    <entry value="data/bus" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="8e0208f4-aa1b-4161-82ca-fc74cefb995a:type:Reference">
+                <node name="Info">
+                    <entry value="data/parameter" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="c0cb29d8-538c-47b9-98f4-ee63a0142591:type:Reference">
+                <node name="Info">
+                    <entry value="data" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="e1b5633a-58e7-4ba3-a73b-78c67b854449:type:Reference">
+                <node name="Info">
+                    <entry value="models" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="f3b118cc-dffe-4338-a6db-a18c58a42485:type:Reference">
+                <node name="Info">
+                    <entry value="utilities" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="f8e22e12-57a6-481d-a7f4-0480bedfa519:type:Reference">
+                <node name="Info">
+                    <entry value="resources" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:References">
+            <path value="004c033e-4e91-4add-ad47-775487cac3d7:type:Reference">
+                <node name="Info">
+                    <entry value="../../dependencies/train_framework" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+        </path>
+    </MetadataNode>
+    <Files>
+        <File path="TrainDynamics.prj" value="2c34c186" />
+        <File path="TrainDynamics.version" value="497fb59b" />
+        <File path="data/bus/CouplerMimic_InterfaceData.m" value="bd21aaf2" />
+        <File path="data/bus/CouplerMimic_Out_Debug.m" value="1d83fd1" />
+        <File path="data/bus/CouplerMimic_Out_Debug_InputTransformed.m" value="bcadc1de" />
+        <File path="data/bus/CouplerMimic_Out_Debug_SimulationForces.m" value="c51b1ae0" />
+        <File path="data/bus/CouplerMimic_Out_Debug_SimulationInertia.m" value="36aff6d9" />
+        <File path="data/bus/CouplerMimic_Out_Dynamics.m" value="89c83f39" />
+        <File path="data/bus/TrainDynamics_Cfg_Vehicle.m" value="b07cb072" />
+        <File path="data/bus/TrainDynamics_Cfg_Vehicle_DavisCoefficients.m" value="4958e9d" />
+        <File path="data/bus/TrainDynamics_In_Coupler.m" value="ce7db0e" />
+        <File path="data/bus/TrainDynamics_In_Vehicle.m" value="f8b4ab91" />
+        <File path="data/bus/TrainDynamics_In_Vehicle_CustomDragForces.m" value="de365b87" />
+        <File path="data/bus/TrainDynamics_In_Vehicle_Faults.m" value="cf7909d9" />
+        <File path="data/bus/TrainDynamics_In_Vehicle_Overrides.m" value="dd2b9eb5" />
+        <File path="data/bus/TrainDynamics_In_Vehicle_TrackData.m" value="134a57d3" />
+        <File path="data/bus/TrainDynamics_Out_Coupler.m" value="d36bda0b" />
+        <File path="data/bus/TrainDynamics_Out_Train.m" value="ed95d075" />
+        <File path="data/bus/TrainDynamics_Out_Vehicle.m" value="be4aa89a" />
+        <File path="data/bus/TrainDynamics_Out_Vehicle_Drag.m" value="9258b0b" />
+        <File path="data/bus/TrainDynamics_Out_Vehicle_Inertia.m" value="26ce4872" />
+        <File path="data/bus/TrainDynamics_Out_Vehicle_TrackGeometry.m" value="64487cd3" />
+        <File path="data/bus/TrainDynamics_Out_Vehicle_Wheel.m" value="1ab74738" />
+        <File path="data/bus/TrainDynamics_Prm.m" value="bc36474d" />
+        <File path="data/bus" value="-1" />
+        <File path="data/config/ConfigSet_TrainDynamics.m" value="b1d53695" />
+        <File path="data/config/ConfigSet_TrainDynamics_Reference.m" value="8df1b851" />
+        <File path="data/config" value="-1" />
+        <File path="data/enum/BrakeShoeCoefficientCalculationMethod.m" value="691f0a3d" />
+        <File path="data/enum/DragCalculationMethod.m" value="b58471a3" />
+        <File path="data/enum" value="-1" />
+        <File path="data/parameter/Def_Prm_Dynamics.m" value="af382fa4" />
+        <File path="data/parameter/Default_Value_Prm_TrainDynamics.m" value="bb90a4f5" />
+        <File path="data/parameter" value="-1" />
+        <File path="data" value="-1" />
+        <File path="models/TrainDynamics.slx" value="18ade61c" />
+        <File path="models" value="-1" />
+        <File path="resources/ExtensionPastSlack.docx" value="b530b970" />
+        <File path="resources/ExtensionPastSlack.png" value="f139a54e" />
+        <File path="resources/LateralForces.png" value="e37e687b" />
+        <File path="resources/LongitudinalForces.png" value="c4eb2525" />
+        <File path="resources/SlackDamping.docx" value="874390fc" />
+        <File path="resources/SlackDamping.png" value="97a84408" />
+        <File path="resources" value="-1" />
+        <File path="utilities/clean_up_project.m" value="ec2daa7f" />
+        <File path="utilities/prj_bus_names.m" value="12b87c50" />
+        <File path="utilities/prj_buses_clear.m" value="e0559700" />
+        <File path="utilities/prj_buses_load.m" value="1ce5bf81" />
+        <File path="utilities/prj_buses_save.m" value="418128af" />
+        <File path="utilities/prj_configurations_clear.m" value="1cb32ea4" />
+        <File path="utilities/prj_configurations_load.m" value="816008eb" />
+        <File path="utilities/prj_data_names.m" value="deeec1e1" />
+        <File path="utilities/set_up_project.m" value="f26629a" />
+        <File path="utilities" value="-1" />
+        <File path="work" value="-1" />
+    </Files>
+    <Date value="2 December 2019 4:07:16 PM" />
+</Info>

@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="no" ?>
+<!--
+	CalibrationAction				- specifies how to calibrate a user
+		perform		- the application performs the full user calibration: detection, 'Psi' pose detection, calibration.
+		load		- the application loads the calibration from the pre-generated calibration file as soon as it detects a user.
+		performsave	- same as 'perform' but as soon the calibration is succeeded it is saved into the file and application exits.
+		
+	BroadcastIPAddress				- specifies the Multicast Group IP Address.
+	BroadcastPort					- specifies the Port to use to broadcast messages.
+	ListeningPort					- specifies the Port to use to listen to external commands. See Live3DMessageStructs.h for details
+
+	CameraProfileString				- Sets the camera profile that the camera should be initialized to. This varies depending on the camera model.
+										RS300 - color_image_width x color_image_height x color_image_frame_rate , depth_image_width x depth_image_height x depth_image_frame_rate
+												e.g. 640x480x60,640x480x60
+												
+	LogUpdatePeriodMs				- how often a log message is displayed about the user position.
+	
+	UpdatePeriodMs					- how often a message is broadcasted (period in milliseconds).
+	DeadBandFilterMinimumDelta		- controls Dead Band Filter to avoid sharp changes in position, set to zero to disable.
+	KalmanFilterMeasurementNoise	- controls Kalman Filter to smoothen movements; increase leads to the better system response and decreases convergence. Value 0.005 seems to be all right.
+	KalmanFilterAccelerationNoise	- controls Kalman Filter to smoothen movements; reduction increases lag and 'spring' effect. Value 10.0 seems to be all right.
+	SkeletonSmoothing				- Smoothing on the OpenNI side.
+	DefaultPosX						- x coordinate (Left/Right) of the default position broadcasted when no user is being tracked.
+	DefaultPosY						- y coordinate (Up/Down) of the default position broadcasted when no user is being tracked.
+	DefaultPosZ						- z coordinate (Forward/Backward) of the default position broadcasted when no user is being tracked.
+	UseDefaultPosDelayMs			- Default pos is only used when tracking was not successful for this period/delay	
+	LogIntoFile						- Logs sent user position info into the log file. Can slow down the server if machine is not powerful enough.
+	LogOntoConsole					- Logs user position info into the console. Prints only on changes, uses LogOntoConsolePosDeltaThreshold.
+	
+	// The following variables specify sensor position & orientation.
+	// They are set within the program itself during the cab coordinate transform setup and resaved to this file
+	// Don't edit these by hand!
+	SensorTranslationX - X translation of sensor
+	SensorTranslationY - Y translation of sensor
+	SensorTranslationZ - Z translation of sensor
+	SensorXAxisX - Sensor X axis X
+    SensorXAxisY - Sensor X axis Y 
+    SensorXAxisZ - Sensor X axis Z
+    SensorYAxisX - Sensor Y axis X
+    SensorYAxisY - Sensor Y axis Y
+    SensorYAxisZ - Sensor Y axis Z
+    SensorZAxisX - Sensor Z axis X
+    SensorZAxisY - Sensor Z axis Y
+    SensorZAxisZ - Sensor Z axis Z
+	
+    // Following speicify face detection zone settings
+    FaceDetectionZoneLeft       - Normlized left [0 - 1] of face detection zone
+    FaceDetectionZoneTop        - Normlized top [0 - 1] of face detection zone
+    FaceDetectionZoneRight      - Normlized right [0 - 1] of face detection zone
+    FaceDetectionZoneBottom     - Normlized bottom [0 - 1] of face detection zone
+
+	LogOntoConsolePosDeltaThreshold	- the position will be printed out only when the delta on at least one coordinate is greater than this threshold. Delta is taken between the previous printed position and the current one.
+	
+	-->
+<Settings>
+    <CalibrationAction>load</CalibrationAction>
+    <BroadcastIPAddress>233.35.0.2</BroadcastIPAddress>
+    <BroadcastPort>7600</BroadcastPort>
+    <ListeningPort>7600</ListeningPort>
+    <CameraPlugin>Realsense2CameraPlugin</CameraPlugin>
+    <CameraProfileString>640x480x30,640x480x30</CameraProfileString>
+    <LogUpdatePeriodMs>1000</LogUpdatePeriodMs>
+    <UpdatePeriodMs>10</UpdatePeriodMs>
+    <DeadBandFilterMinimumDelta>0.03</DeadBandFilterMinimumDelta>
+    <KalmanFilterMeasurementNoise>0.002</KalmanFilterMeasurementNoise>
+    <KalmanFilterAccelerationNoise>20.0</KalmanFilterAccelerationNoise>
+    <SkeletonSmoothing>0.0</SkeletonSmoothing>
+    <DefaultPosX>0.0</DefaultPosX>
+    <DefaultPosY>0.0</DefaultPosY>
+    <DefaultPosZ>0.0</DefaultPosZ>
+    <UseDefaultPosDelayMs>2000</UseDefaultPosDelayMs>
+    <LogIntoFile>0</LogIntoFile>
+    <LogOntoConsole>0</LogOntoConsole>
+    <LogOntoConsolePosDeltaThreshold>0.005</LogOntoConsolePosDeltaThreshold>
+    <SensorTranslationX>0.046755</SensorTranslationX>
+    <SensorTranslationY>-0.175000</SensorTranslationY>
+    <SensorTranslationZ>-1.182459</SensorTranslationZ>
+    <SensorXAxisX>0.955337</SensorXAxisX>
+    <SensorXAxisY>0.000000</SensorXAxisY>
+    <SensorXAxisZ>-0.295520</SensorXAxisZ>
+    <SensorYAxisX>-0.000000</SensorYAxisX>
+    <SensorYAxisY>1.000000</SensorYAxisY>
+    <SensorYAxisZ>0.000000</SensorYAxisZ>
+    <SensorZAxisX>0.295520</SensorZAxisX>
+    <SensorZAxisY>0.000000</SensorZAxisY>
+    <SensorZAxisZ>0.955337</SensorZAxisZ>
+    <FaceDetectionZoneLeft>0.146875</FaceDetectionZoneLeft>
+    <FaceDetectionZoneTop>0.116667</FaceDetectionZoneTop>
+    <FaceDetectionZoneRight>0.937500</FaceDetectionZoneRight>
+    <FaceDetectionZoneBottom>0.779167</FaceDetectionZoneBottom>
+</Settings>

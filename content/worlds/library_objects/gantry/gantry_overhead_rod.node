@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="775722607" name="gantry_overhead_rod">
+		<mesh_name>../worlds/library_objects/gantry/gantry_overhead_rod.mesh</mesh_name>
+		<surface name="gantry_overhead_rod_fence_electric" max_visible_distance="500" max_fade_distance="5" material="87421911dd70d1c235dd9800cf65d2ce450629a0" property="surface_base"/>
+		<surface name="gantry_overhead_rod_gantry_atlas_d" max_visible_distance="500" max_fade_distance="5" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

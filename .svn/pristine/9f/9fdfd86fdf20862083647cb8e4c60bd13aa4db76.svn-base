@@ -1,0 +1,24 @@
+(! Note that saving takes a bit of time (At least 30 secs for a 5 minute session). )
+(! You must set the Start Wait Time property in UpDown.ini to be longer than this or the unit will not start the next session )
+(! save-terminate-session-if (> (time 1) 300))
+
+(include "..\Data\CoreObjectConstants.scr")
+(include "..\Data\Goanna_control.script")
+(include "..\Data\Leopard_control.script")
+
+(define drive $train $active $speed
+  (
+    (set-number (number-id (child-object-id (train-object $train) 12345) "Drive") $active)
+    (set-number (number-id (child-object-id (train-object $train) 12345) "Target Speed") $speed)
+  )
+)
+
+
+(for-all-trains $train
+  (drive $train 1 20)
+)
+
+
+(! Use this if you dont want to save )
+(terminate-session-if (> (time 1) 90))
+(! set-status (max 0 (- 90 (time 1))) " seconds left. Automatically driving trains")

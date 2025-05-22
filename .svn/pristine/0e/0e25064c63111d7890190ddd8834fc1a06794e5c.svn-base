@@ -1,0 +1,82 @@
+﻿(! For all vehicles, if they are collided and our speed, times the mass, is
+   greater than 20000, then consider ourselves derailed. We do this just
+   for automatic trains, not because they are any difference, but just to give
+   simulated trains more control. We also do this as a latch, effectively, so
+   that once set to derailed we will not clear it when the collision criteria
+   are resolved.)
+(for-all-trains $t
+  (enable-if-auto-train $t
+    (for-all-vehicles $t $v
+      (set-number-if (and (get-number (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Collision"))
+                          (> (* (get-number (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Collision Mass"))
+                                (abs (get-number (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Velocity")))
+                             )
+                             20000
+                          )
+                     )
+                     (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Derailment")
+                     1.0
+      )
+    )
+  )
+)
+
+(for-all-trains $t
+  (enable-if-simulated-train $t
+    (for-all-vehicles $t $v
+      (set-number-if (and (get-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Collision"))
+                          (> (* (get-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Collision Mass"))
+                                (abs (get-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Velocity")))
+                             )
+                             20000
+                          )
+                     )
+                     (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Derailment")
+                     1.0
+      )
+    )
+  )
+)
+
+(! For all auto vehicles, if they are derailed then we want to set the Freeze property, resulting in an immediate halt.)
+(for-all-trains $t
+  (enable-if-auto-train $t
+    (for-all-vehicles $t $v
+      (set-number (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Freeze")
+                  (get-number (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Derailment"))
+      )
+    )
+  )
+)
+
+(! For all simulated vehicles, if they collide or are derailed then we want to set the Freeze property, resulting in an immediate halt.)
+(for-all-trains $t
+  (enable-if-simulated-train $t
+    (for-all-vehicles $t $v
+	  (set-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Derailment")
+				  (get-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Bogie Derailed"))
+      )
+      (set-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Freeze")
+                  (or
+                  (get-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Collision"))
+                  (get-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Derailment"))
+                  )
+      )
+    )
+  )
+)
+
+(! Some constants which it really would be nice if they could be automatically generated)
+(define derail-inactive  0)
+(define derail-adjacency 1)
+
+(! For all features of a particular type, we can set the Collider state when they are in the
+   desired state)
+(! for-all-features-of-type "Track Stop" $id
+  (set-number (number-id (object-id (class-feature) "Feature ID" $id) "Derailer")
+              (if (== (get-number (number-id (object-id (class-feature) "Feature ID" $id) "State")) (feature-type-state-id "Track Stop" "Lever Arm Up"))
+                  (derail-adjacency)
+                  (derail-inactive)
+              )
+  )
+)

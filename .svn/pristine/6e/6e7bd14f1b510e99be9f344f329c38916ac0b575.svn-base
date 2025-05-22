@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="obs_tree_trunk" guid="6f37891e65b5e1217cf3bed262fc3330ac1d4baf" parent="ed5b6243626c5495704e7b00e18805401bf8b514" base_material="mesh_base">
+	<texture name="albedo">../features/obstruction_features/graphics/textures/tree_trunk.dds</texture>
+	<parameter name="specular">0</parameter>
+</material>

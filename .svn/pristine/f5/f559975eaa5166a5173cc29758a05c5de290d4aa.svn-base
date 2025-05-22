@@ -1,0 +1,19 @@
+[Database]
+Connection=
+File Based=1
+
+[FeaturePlacement]
+Features=../build/source/features
+Network=../worlds/test_track/definition/Test_Features_Track.xml
+Skin=../worlds/test_track/definition/test_track_skins.xml
+
+[TrackData]
+SchemaDirectory=../features
+WorldTypes=../features/world_types.xml
+
+[ManualVision]
+Car Class Code=DM
+Car Length=21.53
+Start Offset=400
+Start Segment ID=5
+Start From Alpha=1

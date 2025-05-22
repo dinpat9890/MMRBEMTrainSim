@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="1487715537" name="MA_indian_platform_guard_01">
+		<mesh_name>../worlds/library_objects/characters/MA_indian_platform_guard_01.mesh</mesh_name>
+		<surface name="MA_indian_platform_guard_01_LP" min_visible_distance="20" max_visible_distance="800" min_fade_distance="1" material="0d2a91c9aa55fa9c059eaf1f68815ef28ead7977" property="surface_base"/>
+		<surface name="MA_indian_platform_guard_01_MP" min_visible_distance="0" max_visible_distance="20" max_fade_distance="1" material="0d2a91c9aa55fa9c059eaf1f68815ef28ead7977" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.26325641456e-014 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,189 @@
+//
+// Protobuf that defines the CBTC data messages that are sent via Raw Comms Data signals
+//
+syntax = "proto2";
+
+package CBTC.Protos;
+
+option java_package = "com.sydac.mmrbem.cbtc.common.protos";
+option java_outer_classname = "CBTCProtos";
+
+/**
+ ** Data structure associated with CBTC Onboard Inputs
+ **/
+message SpeedLimitList
+{
+  message SpeedLimit
+  {
+    required double distance = 1;
+    required double speed    = 2;
+  }
+
+  required double     reference_train_position = 1;
+  required double     current_speed_limit      = 2;
+  repeated SpeedLimit speed_limits             = 3;
+}
+
+message GradientProfile
+{
+    message GradientProfilePoint
+    {
+        required double distance = 1;
+        required double gradient = 2;
+    }
+
+    required double               reference_train_position = 1;
+    repeated GradientProfilePoint gradient_profile = 2;
+}
+
+enum TrackEventType
+{
+    CHANGE_OF_ENDS  = 0;
+    SKIP            = 1;
+    WORK_ZONE       = 2;
+    ENTER_AUTOMATIC = 3;
+    EXIT_AUTOMATIC  = 4;
+}
+ 
+message TrackEventList
+{
+  message TrackEvent
+  {
+    required double          distance      = 1;
+    required TrackEventType  event         = 2;
+    optional string          station_code  = 3;
+    optional double          length        = 4;
+ }
+ 
+  required double     reference_train_position = 1;
+  repeated TrackEvent track_event_list         = 2;
+}
+
+enum EOACause
+{
+   UNDEFINED       = 1;
+   END_OF_TRACK    = 2;
+   SIGNAL          = 3;
+   TRAIN_REAR       = 4;
+   CHANGE_OVER     = 5;
+   BUFFER          = 6;
+   END_AUTO_REGION = 7;
+}
+ 
+message MovementAuthority
+{
+   required double   reference_train_position = 1;
+   required EOACause eoa_cause                = 2;
+   required double   eoa_distance             = 3;
+   required double   svl_distance             = 4;
+   required double   stopping_distance        = 5;
+}
+
+/**
+ ** Data structure associated with CBTC Onboard Outputs
+ **/
+
+message AvailableModesList
+{
+	enum DrivingMode
+	{
+		NO_MODE = 0;
+		ATP_MODE = 1;
+		ROS_MODE = 2;
+		RMR_MODE = 3;
+		RMF_MODE = 4;		
+		ATB_MODE = 5;
+		ATO_MODE = 6;
+		UTO_MODE = 7;	
+		ATC_BYPASS_MODE = 8;		
+	}
+
+    repeated DrivingMode availableDrivingMode = 1;
+}
+
+/**
+ ** Data structure associated with CBTC Platform Outputs
+ **/
+
+enum TextMessagePriority
+{
+    HIGH = 1;
+    LOW  = 2;
+}
+
+enum TextId
+{
+    AM_MODE_IS_AVAILABLE                  = 100;
+    SWITCH_MODE_TO_CM                     = 200;
+    ATC_IS_BYPASSED                       = 203;
+    EB_TRAIN_DOORS_UNLOCKED               = 110;
+    EB_TRAIN_HOLD_APPLIED                 = 112;
+    EB_OVER_SPEED                         = 113;
+    EB_SIGNAL_OVERRUN                     = 117;
+    EB_ROLLBACK                           = 118;
+    EB_CHANGING_MODE_WHILE_RUNNING        = 120;
+    EB_RADIO_COMMUNICATION_LOST           = 204;
+    EB_RS_DRIVER                          = 205;
+    ATC_INIT_TEST_IN_PROGRESS             = 130;
+    ATC_INIT_TEST_OK                      = 131;
+	
+    EB_PSD_UNLOCKED                       = 111;
+    EB_FATAL_FAULT                        = 114;
+    EB_SAFETY_IMMOBILIZATION_NOT_OBTAINED = 116;
+    ATC_INIT_TEST_NOT_OK                  = 132;
+    ATC_RESET_FOR_MAINTENANCE             = 121;
+    EB_REQUESTED_BY_ATS                   = 122;   
+	EB_TRAIN_DELOCALISED 				  = 123;
+	EB_PEC_REQUEST						  = 124;
+	EB_LOCALIZATION_LOSS_DELOCALIZATION	  = 125;
+	EB_RED_TRIANGLE_WARNING_INDUCTION	  = 126;
+	EB_ENTERING_EMERGENCY_STOP_AREA		  = 127;
+	EB_LOCKED_AXEL						  = 128;
+	EB_TRAIN_DETRAINMENT_DOOR_UNLOCKED    = 129;
+	FSB_WHILE_DOCKING					  =216;
+}
+
+message CBTCTextMessages
+{
+    message CBTCTextMessage
+    {
+        required double              index         = 1;
+        required double              elapsedTime   = 2;
+        required TextId              id            = 3;
+        required bool                ackRequired   = 4;
+        required TextMessagePriority type          = 5;
+        optional double              uniqueId      = 6;
+    }
+
+    repeated CBTCTextMessage cbtcTextMessage = 1;
+}
+
+message DepartureInformation
+{
+	enum DepartureStatus
+	{
+		NO_INDICATION     = 0;
+		NO_DEPARTURE_INFO = 1;
+		TRAIN_HOLD        = 2;
+		REMAINING_TIME    = 3;
+	}
+
+    required DepartureStatus departureStatus              = 1;
+	optional int32           remainingTimeBeforeDeparture = 2;
+}
+
+message TrainDockingInfo
+{
+	enum TrainDockingStatus
+	{
+		UNKNOWN           = 0;
+		CORRECTLY_DOCKED  = 1;
+		SHORT_STOP        = 2;
+		LONG_STOP         = 3;
+		TOO_LONG_STOP     = 4;
+		OPERATIONAL_SERVICE_STOPPING_DISTANCE = 5;
+	}
+
+	required TrainDockingStatus trainDockingStatus    = 1;
+	optional int32              stoppingPointDisatnce = 2;
+}

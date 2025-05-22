@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="elm_rought_trunk_mat" guid="6aab4ebff6491bdc7b3ca5827d45b234f0fd0566" parent="beeebffcbf5325b7972091b203a7bc3de2f4042d" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/elm_rought/textures/elm_rought_trunk.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/elm_rought/textures/elm_rought_trunk_n.dds</texture>
+	<parameter name="albedo_color">0.627451003 0.552941203 0.552941203 1</parameter>
+	<parameter name="roughness">0.600000024</parameter>
+	<parameter name="specular">0.200000003</parameter>
+	<parameter name="microfiber">0.400000006</parameter>
+</material>

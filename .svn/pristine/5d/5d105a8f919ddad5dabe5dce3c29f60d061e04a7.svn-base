@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+  <layer_config name="Project" parent="Train">
+    <generates type="ObjectConstantsH" filename="ProjectObjectConstants.h" include="project_comms_structure"/>
+    <generates type="ObjectDefinitionH" filename="ProjectObjectDefinition.h" include="project_comms_structure"/>
+    <generates type="ObjectDefinitionCpp" filename="ProjectObjectDefinition.cpp" include="project_comms_structure"/>
+    <generates type="ObjectConstantsJava" filename="ProjectObjectConstants.java" include="project_comms_structure"/>
+    <generates type="ObjectDefinitionJava" filename="ProjectObjectDefinition.java" include="project_comms_structure"/>
+    <generates type="ObjectConstantsScripting" filename="ProjectObjectConstants.script" include="project_comms_structure"/>
+    <generates type="FeatureConstantsH" filename="FeatureConstants.h" include="Project"/>
+    <generates type="FeatureConstantsJava" filename="ProjectFeatureConstants.java" include="Project"/>
+  </layer_config>
+</comms_config>

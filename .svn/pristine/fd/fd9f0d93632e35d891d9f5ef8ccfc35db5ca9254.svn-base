@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="outer_tree_billboard" guid="e4c60539b69b1db5f250ab9ab5a44527f66471a4" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<blend src="none" dest="none"/>
+	<state name="noise">1</state>
+	<state name="normal_map">1</state>
+	<state name="up_direction">0</state>
+	<texture name="diffuse">vegetation/textures/outer_tree_billboard.dds</texture>
+	<texture name="normal">vegetation/textures/outer_tree_billboard_n.dds</texture>
+	<parameter name="translucent_scale">1</parameter>
+	<parameter name="occlusion_visibility">1</parameter>
+</material>

@@ -1,0 +1,435 @@
+(!
+   * These sounds need to be located relative to the working directory of the
+     module parsing this script:
+        sound\environment\WindLowLoop_LPF.wav
+        sound\environment\WindMedLoop_LPF.wav
+        sound\environment\WindHighLoop_LPF.wav
+        sound\environment\RainLowLoop_LPF.wav
+        sound\environment\RainMedLoop_LPF.wav
+        sound\environment\RainHighLoop_LPF.wav
+     
+   * The simulator must provide a "Wind Strength km/h" property on a
+     /World/Environment Comms Object, set to a value in the range
+     [0, 100] inclusive.
+     
+   * The simulator must provide a "Rain Percentage" property on a
+     /World/Environment Comms Object, set to a value in the range
+     [0, 100] inclusive.
+     
+   * Tunnel feature types are used to determine if the wind & rain should be
+     heard by the current observer.
+)
+
+(define wind_strength_kmh
+  (get-number (number-id (child-object-id (object-id (class-world)) (class-environment)) "Wind Strength km/h") 0.0)
+)
+
+(define rain_percentage 
+  (get-number (number-id (child-object-id (object-id (class-world)) (class-environment)) "Rain Percentage") 0.0)
+)
+
+(for-all-trains $train
+  (enable-if-simulated-train $train
+    (for-all-vehicles $train $vehicle
+      (enable-if-observer-vehicle $train $vehicle
+        (! log "Found Train " $train)
+        (define observer-vehicle-abs-speed (abs (get-vehicle-speed $train $vehicle)))
+      )
+    )
+  )
+)
+
+(nest
+  (
+    (symbol $WIND_POSITION (position 0.0 0.0 0.0)) 
+    (symbol $WIND_OVERALL_VOLUME_OFFSET   -5.0) 
+    (symbol $WIND_LOW_VOLUME               85.0)
+    (symbol $WIND_MED_VOLUME               95.5)
+    (symbol $WIND_HIGH_VOLUME              100.0)
+    
+    (symbol $RAIN_POSITION (position 0.0 0.0 0.0))
+    (symbol $RAIN_OVERALL_VOLUME_OFFSET  -5.0)
+    (symbol $RAIN_LOW_VOLUME             85.0)
+    (symbol $RAIN_MED_VOLUME             95.0)
+    (symbol $RAIN_HIGH_VOLUME            100.0)
+    
+    (with-var $observer_outside_tunnel 1.0)    
+  )
+  
+  (for-all-features-of-type "Station" $feature
+    (for-intersection (observer-vehicle-position) (initial-feature-region $feature) $intersection
+      (set-var $observer_outside_tunnel (not (get-intersection-test $intersection)))
+    )
+  )
+  
+  (! WIND )
+  (define-sound $sound "sound\environment\WindLowLoop_LPF.wav" (inactivation) (loop) 35703 94482 (relative)
+    (set-sound-position  $sound $WIND_POSITION)
+    (set-sound-volume    $sound (+ $WIND_OVERALL_VOLUME_OFFSET $WIND_LOW_VOLUME))
+	(! set-sound-state     $sound (>< 0 (wind_strength_kmh) 36))
+    (set-sound-state     $sound (and (get-var $observer_outside_tunnel) (>< 0 (wind_strength_kmh) 36)))
+  )
+  
+  (define-sound $sound "sound\environment\WindMedLoop_LPF.wav" (inactivation) (loop) 34770 132300 (relative)
+    (set-sound-position  $sound $WIND_POSITION)
+    (set-sound-volume    $sound (+ $WIND_OVERALL_VOLUME_OFFSET $WIND_MED_VOLUME))
+	(! set-sound-state     $sound (>< 35 (wind_strength_kmh) 66))
+    (set-sound-state     $sound (and (get-var $observer_outside_tunnel) (>< 35 (wind_strength_kmh) 66)))
+  )
+  
+  (define-sound $sound "sound\environment\WindHighLoop_LPF.wav" (inactivation) (loop) 34562 198393 (relative)
+    (set-sound-position  $sound $WIND_POSITION)
+    (set-sound-volume    $sound (+ $WIND_OVERALL_VOLUME_OFFSET $WIND_HIGH_VOLUME))
+	(! set-sound-state     $sound (>< 65 (wind_strength_kmh) 101))
+    (set-sound-state     $sound (and (get-var $observer_outside_tunnel) (>< 65 (wind_strength_kmh) 101)))
+  )
+
+  (! RAIN )
+  (define-sound $sound "sound\environment\RainLowLoop_LPF.wav" (inactivation) (loop) 35733 254370 (relative)
+    (set-sound-position  $sound $RAIN_POSITION)
+    (set-sound-volume    $sound (+ $RAIN_OVERALL_VOLUME_OFFSET $RAIN_LOW_VOLUME))
+	(! set-sound-state     $sound (>< 0 (rain_percentage) 34))
+    (set-sound-state     $sound (and (get-var $observer_outside_tunnel) (>< 0 (rain_percentage) 34)))
+  )
+  
+  (define-sound $sound "sound\environment\RainMedLoop_LPF.wav" (inactivation) (loop) 35047 238591 (relative)
+    (set-sound-position  $sound $RAIN_POSITION)
+    (set-sound-volume    $sound (+ $RAIN_OVERALL_VOLUME_OFFSET $RAIN_MED_VOLUME))
+	(! set-sound-state     $sound (>< 33 (rain_percentage) 67))
+    (set-sound-state     $sound (and (get-var $observer_outside_tunnel) (>< 33 (rain_percentage) 67)))
+  )
+  
+  (define-sound $sound "sound\environment\RainHighLoop_LPF.wav" (inactivation) (loop) 35510 177080 (relative)
+    (set-sound-position  $sound $RAIN_POSITION)
+    (set-sound-volume    $sound (+ $RAIN_OVERALL_VOLUME_OFFSET $RAIN_HIGH_VOLUME))
+	(! set-sound-state     $sound (>< 66 (rain_percentage) 101))
+    (set-sound-state     $sound (and (get-var $observer_outside_tunnel) (>< 66 (rain_percentage) 101)))
+  )  
+)
+
+(nest
+  (
+    (with-var $observer_outside_tunnel 0.0)
+    (with-var $observer_at_underbridge 0.0)
+    (with-var $observer_at_overbridge  0.0)
+    (with-var $observer_at_station     0.0)
+    (with-var $observer_at_cutting     0.0)
+  )
+
+  (define underbridge_subtraction_offset
+    (if (get-var $observer_at_underbridge) 4.0 0.0)
+  )
+  
+  (! for-all-features-of-type "Over Bridge" $feature
+    (for-intersection (observer-vehicle-position) (initial-feature-region $feature) $intersection
+      (set-var $observer_at_overbridge (get-intersection-test $intersection))
+     (! log "Intesection_at_overbridge= " $feature (get-var $observer_at_overbridge))
+    )
+  )
+  
+  (! for-all-features-of-type "Under Bridge" $feature
+    (for-intersection (observer-vehicle-position) (initial-feature-region $feature) $intersection
+      (set-var $observer_at_overbridge (get-intersection-test $intersection))
+     (! log "Intesection_at_overbridge= " $feature (get-var $observer_at_underbridge))
+    )
+  )
+
+  (for-all-features-of-type "Station" $feature
+    (for-intersection (observer-vehicle-position) (initial-feature-region $feature) $intersection
+      (set-var $observer_at_station (get-intersection-test $intersection))
+      (! log "Intesection_at_station= " $feature (get-intersection-test $intersection))
+    )
+  )
+
+  (! Applies an increase in volume when the observer is within a cutting )
+  (define adjust-for-cuttings $volume
+     (if (get-var $observer_at_cutting) (limit 0 100 (+ $volume 2.0)) $volume)
+  )
+
+  (for-all-trains $train 
+    (enable-if-simulated-train $train 
+      (for-all-vehicles $train $vehicle
+        
+        
+        (enable-if-observer-vehicle $train $vehicle 
+          (! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+          (! ~~~~~~~~~~~~~~~~ Environmental/Track Interaction Sounds ~~~~~~~~~~~~~~~~~~~~)
+          (! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+      
+          (! AERODYNAMIC NOISE )
+          (nest
+            (
+              (symbol $WINDAGE_GAIN_MAX_SPEED 160.0)
+              (symbol $WINDAGE_GAIN_MAX       -10.0)
+              (symbol $WINDAGE_GAIN_MIN_SPEED  30.0)
+              (symbol $WINDAGE_GAIN_MIN       -30.0)
+            )
+            (define-observer-sound $sound "sound\environment\WindageLoop.wav" (inactivation) (loop) 85065 207055
+                (set-sound-volume    $sound 
+               (if (get-var $observer_at_station)
+                  (+ 5 (limit 0 85 (vol_for_speed_1 $WINDAGE_GAIN_MAX $WINDAGE_GAIN_MAX_SPEED $WINDAGE_GAIN_MIN $WINDAGE_GAIN_MIN_SPEED (observer-vehicle-abs-speed))))
+                  (limit 0 85 (vol_for_speed_1 $WINDAGE_GAIN_MAX $WINDAGE_GAIN_MAX_SPEED $WINDAGE_GAIN_MIN $WINDAGE_GAIN_MIN_SPEED (observer-vehicle-abs-speed)))
+               )
+            )
+                (set-sound-frequency $sound (+ 0.89 (* 0.005 (observer-vehicle-abs-speed))))
+                (set-sound-state     $sound (> (observer-vehicle-abs-speed) 2.5))
+            )
+          )
+
+          (! POINTS, POINTS TRACK CLATTER, & FROGS TRACK CLATTER )
+          (nest
+            (
+              (symbol $POINTS_GAIN_MAX_SPEED 160.0)
+              (symbol $POINTS_GAIN_MAX        -5.0)
+              (symbol $POINTS_GAIN_MIN_SPEED  10.0)
+              (symbol $POINTS_GAIN_MIN       -17.0)
+            )
+            (for-track-association-crossed (observer-vehicle-position) (get-point-track-associations) $position $trigger
+              (define-observer-sound  $sound "sound\environment\Points.wav" (to-completion) (no-loop) 0 0
+                (set-sound-volume            $sound (adjust-for-cuttings (vol_for_speed_1 $POINTS_GAIN_MAX $POINTS_GAIN_MAX_SPEED $POINTS_GAIN_MIN $POINTS_GAIN_MIN_SPEED (get-abs-observer-speed))))
+                (set-sound-frequency         $sound (limit 0 1.1 (+ 0.5 (* 0.06 (get-abs-observer-speed)))))
+                (set-sound-state             $sound (sustain $trigger 0.25))
+              )
+            )
+          )
+
+          (! RAIL JOINTS TRACK CLATTER )
+          (nest
+            (
+              (symbol $RUMBLERATTLE_GAIN_MAX_SPEED 160.0)
+              (symbol $RUMBLERATTLE_GAIN_MAX       -12.0)
+              (symbol $RUMBLERATTLE_GAIN_MIN_SPEED  20.0)
+              (symbol $RUMBLERATTLE_GAIN_MIN       -35.0)
+            )
+            (define-observer-sound $sound "sound\environment\RumbleRattleLoop.wav" (inactivation) (loop) 92490 430076
+              (set-sound-volume $sound
+                (adjust-for-cuttings
+                  (- (vol_for_speed_1 $RUMBLERATTLE_GAIN_MAX $RUMBLERATTLE_GAIN_MAX_SPEED $RUMBLERATTLE_GAIN_MIN $RUMBLERATTLE_GAIN_MIN_SPEED (get-abs-observer-speed))
+                    (underbridge_subtraction_offset)
+                  )
+                )
+              )
+              (set-sound-frequency $sound (+ 0.59 (* 0.025 (get-abs-observer-speed))))
+              (set-sound-state     $sound (> (get-abs-observer-speed) 2.0))
+            )
+          )
+          
+          (! WHEEL SLIP)
+          (! define-sound $sound  "387\WheelSlip.wav" (inactivation) (loop) 0 0 (relative)
+            (set-sound-position   $sound (position 0.0 0.0 -1.0))
+            (set-sound-volume     $sound 80.00)
+            (set-sound-frequency  $sound 1.00)
+            (set-sound-state      $sound (>< 0.5 (get-vehicle-audio-output-number $train $vehicle  "Wheel Slip") 1.5))
+          )
+
+
+          (! FLANGING IMPLEMENTATION )
+          (nest
+            (
+              (symbol $FLANGING_POSITION (position -1.0 0.0 1.5))
+
+              (symbol $FLANGING_MED_dB_MAX_SPEED 160.0)
+              (symbol $FLANGING_MED_dB_MAX       -11.0)
+              (symbol $FLANGING_MED_dB_MIN_SPEED  20.0)
+              (symbol $FLANGING_MED_dB_MIN       -24.0)
+              (symbol $FLANGING_MED_CURVE_TRIGGER_DURATION 4.5)
+
+              (symbol $FLANGING_TIGHT_dB_MAX_SPEED 160.0)
+              (symbol $FLANGING_TIGHT_dB_MAX        -3.0)
+              (symbol $FLANGING_TIGHT_dB_MIN_SPEED  20.0)
+              (symbol $FLANGING_TIGHT_dB_MIN       -12.0)
+              (symbol $FLANGING_TIGHT_CURVE_TRIGGER_DURATION 2.5)
+
+              (symbol $FLANGING_MED_CURVE_S1    1.5)
+              (symbol $FLANGING_MED_CURVE_S2   16.7)
+              (symbol $FLANGING_MED_CURVE_S3   28.5)
+              (symbol $FLANGING_TIGHT_CURVE_S1  1.5)
+              (symbol $FLANGING_TIGHT_CURVE_S2 16.7)
+              (symbol $FLANGING_TIGHT_CURVE_S3 28.5)
+            )
+
+            (! MEDIUM CURVE )
+            (define-observer-sound $sound "sound\environment\FlangingMedCurveLowSpeed.wav" (inactivation) (loop) 0 0
+              (set-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_MED_dB_MAX $FLANGING_MED_dB_MAX_SPEED $FLANGING_MED_dB_MIN $FLANGING_MED_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-medium-curve) (>< $FLANGING_MED_CURVE_S1 (get-abs-observer-speed) $FLANGING_MED_CURVE_S2))
+                  $FLANGING_MED_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingMedCurveMedSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_MED_dB_MAX $FLANGING_MED_dB_MAX_SPEED $FLANGING_MED_dB_MIN $FLANGING_MED_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-medium-curve) (>< $FLANGING_MED_CURVE_S2 (get-abs-observer-speed) $FLANGING_MED_CURVE_S3))
+                  $FLANGING_MED_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingMedCurveHighSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_MED_dB_MAX $FLANGING_MED_dB_MAX_SPEED $FLANGING_MED_dB_MIN $FLANGING_MED_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-medium-curve) (> (get-abs-observer-speed) $FLANGING_MED_CURVE_S3))
+                  $FLANGING_MED_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (! TIGHT CURVE )
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingTightCurveLowSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_TIGHT_dB_MAX $FLANGING_TIGHT_dB_MAX_SPEED $FLANGING_TIGHT_dB_MIN $FLANGING_TIGHT_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-tight-curve) (>< $FLANGING_TIGHT_CURVE_S1 (get-abs-observer-speed) $FLANGING_TIGHT_CURVE_S2))
+                  $FLANGING_TIGHT_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingTightCurveMedSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings (vol_for_speed_1 $FLANGING_TIGHT_dB_MAX $FLANGING_TIGHT_dB_MAX_SPEED $FLANGING_TIGHT_dB_MIN $FLANGING_TIGHT_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-tight-curve) (>< $FLANGING_TIGHT_CURVE_S2 (get-abs-observer-speed) $FLANGING_TIGHT_CURVE_S3))
+                  $FLANGING_TIGHT_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+
+            (define-vehicle-sound $sound $train $vehicle "sound\environment\FlangingTightCurveHighSpeed.wav" (inactivation) (loop) 0 0
+              (set-vehicle-sound-position $sound $FLANGING_POSITION)
+              (set-sound-volume $sound
+                (adjust-for-cuttings  (vol_for_speed_1 $FLANGING_TIGHT_dB_MAX $FLANGING_TIGHT_dB_MAX_SPEED $FLANGING_TIGHT_dB_MIN $FLANGING_TIGHT_dB_MIN_SPEED (get-abs-observer-speed)))
+              )
+              (set-sound-state $sound
+                (trigger-held-high
+                  (and (observer-at-tight-curve) (> (get-abs-observer-speed) $FLANGING_TIGHT_CURVE_S3))
+                  $FLANGING_TIGHT_CURVE_TRIGGER_DURATION
+                )
+              )
+            )
+          )
+
+          (! log " - - > > observer_track_radius: " (get-track-position-radius (observer-vehicle-position)))
+          (! log "RADIUS= " (delta 5.0 (get-vehicle-number $train $vehicle "Vehicle Radius")))
+
+          (! PLATFORMS )
+          (! To hear the crowd you must be in a station region, travelling less than 5km/h)
+          (! we also only want the 2 closest crowds to make any noise, but we need to bound by those within 120m due to the other components of the set-sound-state logic)
+
+		  (set-var @crowd-closest-pos (closest-position-n (observer-vehicle-position) 2))
+
+          (nest
+            (
+              (symbol $CROWD_OVERALL_VOLUME_OFFSET 0.0)
+              (symbol $CROWD_LOW_VOLUME            85.0)
+              (symbol $CROWD_MED_VOLUME            95.0)
+              (symbol $CROWD_HIGH_VOLUME           100.0)
+            )
+            (for-all-features-of-type "Platform Passenger - Boarding" $feature
+              (for-intersection (observer-vehicle-position) (initial-feature-region $feature) $intersection
+                (with $rp (relative-position (observer-vehicle-position) (get-intersection-position-2 $intersection))
+                  (with $sound_state
+                    (and
+                      (< (get-intersection-distance $intersection) 120.0)
+                      (< (get-abs-observer-speed) (kmh-to-ms 5.0))
+                      (inside-closest-position-n (get-var @crowd-closest-pos) (get-intersection-position-2 $intersection) 1)
+                    )
+                    (with $sound_position
+                      (position
+                        (if (< (get-position-x $rp) 0) -4.0 4.0)
+                        (if (< (get-position-y $rp) 0) -4.0 4.0)
+                        0.0
+                      )
+                      (define-observer-sound $sound "sound\environment\crowd_low_loop_lpf.wav" (inactivation) (loop) 217683 661168
+                        (set-sound-position  $sound $sound_position)
+                        (set-sound-volume    $sound (+ $CROWD_OVERALL_VOLUME_OFFSET $CROWD_LOW_VOLUME))
+                        (set-sound-state     $sound (and $sound_state (== (get-feature-state $feature) (feature-state-id $feature "Low Density"))))
+                      )
+
+                      (define-observer-sound $sound "sound\environment\crowd_med_loop_lpf.wav" (inactivation) (loop) 96210 512640
+                        (set-sound-position  $sound $sound_position)
+                        (set-sound-volume    $sound (+ $CROWD_OVERALL_VOLUME_OFFSET $CROWD_MED_VOLUME))
+                        (set-sound-state     $sound (and $sound_state (== (get-feature-state $feature) (feature-state-id $feature "Med Density"))))
+                      )
+
+                      (define-observer-sound $sound "sound\environment\crowd_high_loop_lpf.wav" (inactivation) (loop) 69093 465871
+                        (set-sound-position  $sound $sound_position)
+                        (set-sound-volume    $sound (+ $CROWD_OVERALL_VOLUME_OFFSET $CROWD_HIGH_VOLUME))
+                        (set-sound-state     $sound (and $sound_state (== (get-feature-state $feature) (feature-state-id $feature "High Density"))))
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+
+          (! BRIDGES & TUNNELS )
+          (nest
+            (
+              (symbol $UNDERBRIDGE_GAIN_MAX_SPEED 160.0)
+              (symbol $UNDERBRIDGE_GAIN_MAX       -2.0)
+              (symbol $UNDERBRIDGE_GAIN_MIN_SPEED  30.0)
+              (symbol $UNDERBRIDGE_GAIN_MIN       -32.0)         
+
+              (symbol $TUNNEL_GAIN_MAX_SPEED 160.0)
+              (symbol $TUNNEL_GAIN_MAX       -2.0)
+              (symbol $TUNNEL_GAIN_MIN_SPEED  20.0)
+              (symbol $TUNNEL_GAIN_MIN       -25.0)
+            )
+            (! UNDER BRIDGE)
+            (define-sound $sound "sound\environment\Bridge_Overpass.wav" (inactivation) (loop) 0 0 (relative)
+              (set-sound-position  $sound (position 0 0 0))
+              (set-sound-volume    $sound (limit 90.0 100.0 (+ 90.0 (/ 3.0 (get-abs-observer-speed)))))
+              (set-sound-frequency $sound (limit 1.0 2.0 (+ 0.135 (* 0.15 (get-abs-observer-speed)))))
+              (set-sound-state     $sound (and (get-var $observer_at_overbridge)
+                                          (> (get-abs-observer-speed) 1.0))
+              )
+            )
+
+         (! OVER BRIDGE)
+             (define-sound $sound "sound\environment\Bridge_Overpass.wav" (inactivation) (loop) 0 0 (relative)
+			  (set-sound-position  $sound (position 0 0 0))
+              (set-sound-volume    $sound (limit 90.0 100.0 (+ 90.0 (/ 3.0 (get-abs-observer-speed)))))
+              (set-sound-frequency $sound (limit 1.0 2.0 (+ 0.135 (* 0.15 (get-abs-observer-speed)))))
+              (set-sound-state     $sound (and (get-var $observer_at_underbridge)
+                                          (> (get-abs-observer-speed) 1.0))
+              )
+            )
+
+            (! TUNNEL )
+            (define-sound $sound "sound\environment\TunnelLoop.wav" (inactivation) (loop) 0 0 (relative)
+              (set-sound-position  $sound (position 0 0 0))
+              (set-sound-volume    $sound (limit 90.0 100.0 (+ 90.0 (/ 3.0 (get-abs-observer-speed)))))
+              (set-sound-frequency $sound (limit 1.0 2.0 (+ 0.135 (* 0.15 (get-abs-observer-speed)))))
+              (set-sound-state     $sound (and (get-var $observer_outside_tunnel)
+                                          (> (get-abs-observer-speed) 1.0))
+              )
+            )
+
+          )         
+        )
+      )
+    )
+  )
+)

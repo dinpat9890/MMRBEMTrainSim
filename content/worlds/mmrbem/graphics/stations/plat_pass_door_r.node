@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>properties/DoorControl.prop</library>
+	</properties>
+	<node type="ObjectMeshStatic" id="1273030344" name="plat_pass_door_r">
+		<mesh_name>../worlds/mmrbem/graphics/stations/plat_pass_door_r.mesh</mesh_name>
+		<surface name="plat_pass_door_r_psd_platform_sliding_gates" max_visible_distance="600" material="c43da3344d78ea13e72578582891ddf84f0d5c0d" property="surface_base"/>
+		<surface name="plat_pass_door_r_psd_tileable_stairs" max_visible_distance="600" material="fe20a7a25648550c0837d966a900cc3d67e20958" property="surface_base"/>
+		<transform>0.999999935219 1.56303420762e-008 0 0.0 -1.56303420762e-008 0.999999935219 0 0.0 0 0 1 0.0 5.45696821064e-012 -3.63797880709e-012 -4.4408920985e-016 1.0</transform>
+		<node type="WorldExpression" id="986513490" name="WorldExpression" property="DoorControl">
+			<expression>{
+#include &lt;train_expressions/DoorControl.h&gt;
+}</expression>
+			<property>
+				<state name="DoorType">1</state>
+				<parameter name="MaxDistance">1.00999999</parameter>
+				<parameter name="EndPos">0 0 0</parameter>
+			</property>
+			<transform>1.00000005961 0 0 0.0 0 1.00000005961 0 0.0 0 0 1.00000005961 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

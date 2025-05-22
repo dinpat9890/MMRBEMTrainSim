@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_aspen_01_v2" guid="2ff00365242d0a856f5719097e94ec0b011cc91a" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<blend src="none" dest="none"/>
+	<state name="normal_map">1</state>
+	<texture name="diffuse">../worlds/shared/graphics/vegetation/textures/aspen_imposter_v2.dds</texture>
+	<texture name="normal">aspen/textures/aspen_01_imposter_n.dds</texture>
+	<parameter name="translucent_scale">1</parameter>
+	<parameter name="impostor_transform">vec4(4.0f,1.0f,0.0f,0.0f)</parameter>
+	<parameter name="occlusion_visibility">1</parameter>
+</material>

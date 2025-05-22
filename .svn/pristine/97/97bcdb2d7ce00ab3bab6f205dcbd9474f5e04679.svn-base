@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="698033931" name="station_cctv_camera">
+		<mesh_name>../worlds/mmrbem/graphics/stations/station_cctv_camera.mesh</mesh_name>
+		<surface name="station_cctv_camera_platform_lights" material="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" property="surface_base"/>
+		<surface name="station_cctv_camera_shed_01" material="e6218c0d435caa2880e8260437cc08266ed20c23" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -1.06581410364e-014 -2.84217094304e-014 0 1.0</transform>
+	</node>
+</nodes>

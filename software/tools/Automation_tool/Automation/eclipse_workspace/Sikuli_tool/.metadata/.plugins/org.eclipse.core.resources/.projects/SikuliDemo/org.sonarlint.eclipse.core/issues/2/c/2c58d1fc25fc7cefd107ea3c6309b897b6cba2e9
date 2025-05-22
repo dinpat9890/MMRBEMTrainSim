@@ -1,0 +1,26 @@
+
+y	java:S116	"MRename this field "S1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯Hğ“RMINORZ
+CODE_SMELL
+x	java:S116	"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊ²¯Hï“RMINORZ
+CODE_SMELL
+j	java:S106|"9Replace this use of System.out or System.err by a logger.(Ñì®”şÿÿÿÿH÷“RMAJORZ
+CODE_SMELL
+¢
+java:S1130ƒ"uRemove the declaration of thrown exception 'org.sikuli.script.FindFailed', as it cannot be thrown from method's body.(û³IHø“RMINORZ
+CODE_SMELL
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒáÂ‘øÿÿÿÿHˆ”RMINORZ
+CODE_SMELL
+
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¨ûªÀıÿÿÿÿHõ“RMINORZ
+CODE_SMELL
+‡
+java:S1192D"RDefine a constant instead of duplicating this literal "systemButton.PNG" 12 times.(Š£—œıÿÿÿÿHû“RCRITICALZ
+CODE_SMELL
+f	java:S106‰"9Replace this use of System.out or System.err by a logger.(Àûå Hú“RMAJORZ
+CODE_SMELL
+O
+java:S1659""Declare "mode" on a separate line.(ËùŸÁHó“RMINORZ
+CODE_SMELL
+M
+java:S1659	" Declare "S1" on a separate line.(ÕÊ²¯Hñ“RMINORZ
+CODE_SMELL

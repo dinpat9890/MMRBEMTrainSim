@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="319971566" name="material_ball">
+		<mesh_name>core/meshes/material_ball.mesh</mesh_name>
+		<surface name="material_ball_mat" material="716f3df11be2672a4a789a548f4a9ed292ce5473" property="surface_base"/>
+		<transform>1.00000005921 0 0 0.0 0 1.00000005921 0 0.0 0 0 0.999999999605 0.0 0 0 0 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="515041721" folded="1" name="test_track_terrain">
+		<layer>../worlds/test_track/graphics/layers/test_track_terrain.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 800 0 -0.25 1.0</transform>
+	</node>
+	<node type="NodeLayer" id="1356970296" folded="1" name="track">
+		<layer>../worlds/test_track/graphics/layers/track.node</layer>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

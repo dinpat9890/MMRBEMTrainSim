@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comms_config>
+    <layer name="Project">
+        <object_class class="DMI" constant_name="DMI" />
+
+        <!-- DMI inputs data from UI -->
+        <object_class class="DMIInputs" constant_name="DMI_INPUTS">
+            <!-- DMI input data May be not needed let it be here till confirm from front end side-->
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Inputs"                                  constant_name="IO_CONTROLLER_CLASS_INPUTS_TAG"                  default="0.0" delta="0.5"/>
+            <object_number name="Class Inputs"                                  constant_name="CLASS_INPUTS"                                    default="0.0" delta="0.5"/>
+
+            <object_number name="Text Message Acknowledge Request"              constant_name="TEXT_MESSAGE_ACKNOWLEDGE_REQUEST"                default="0"  delta="0.5"/>
+            <object_number name="Text Message Up Button Request"                constant_name="TEXT_MESSAGE_UP_BUTTON_REQUEST"                  default="0"  delta="0.5"/>
+            <object_number name="Text Message Down Button Request"              constant_name="TEXT_MESSAGE_DOWN_BUTTON_REQUEST"                default="0"  delta="0.5"/>
+
+
+            <!--Menu Inputs -->
+            <object_number name="Menu Button Press Request"                     constant_name="MENU_BUTTON_PRESS_REQUEST"                       default="0"  delta="0.5"/>
+            <object_number name="English Language Button Press Request"         constant_name="ENGLISH_LANGUAGE_BUTTON_PRESS_REQUEST"           default="0"  delta="0.5"/>
+            <object_number name="Hebrew Language Button Press Request"          constant_name="HEBREW_LANGUAGE_BUTTON_PRESS_REQUEST"            default="0"  delta="0.5"/>
+            <object_number name="Menu Close Button Press Request"               constant_name="MENU_CLOSE_BUTTON_PRESS_REQUEST"                 default="0"  delta="0.5"/>
+
+            <!--Settings Inputs -->
+            <object_number name="Brightness Button Press Request"               constant_name="BRIGHTNESS_BUTTON_PRESS_REQUEST"                 default="0"  delta="0.5"/>
+            <object_number name="Audio Button Press Request"                    constant_name="AUDIO_BUTTON_PRESS_REQUEST"                      default="0"  delta="0.5"/>
+            <object_number name="Brightness Change Request"                     constant_name="BRIGHTNESS_CHANGE_REQUEST"                       default="5"  delta="0.5"/>
+            <object_number name="Brightness Close Request"                      constant_name="BRIGHTNESS_CLOSE_REQUEST"                        default="0"  delta="0.5"/>
+            <object_number name="Audio Close Request"                           constant_name="AUDIO_CLOSE_REQUEST"                             default="0"  delta="0.5"/>
+            <object_number name="Audio Change Request"                          constant_name="AUDIO_CHANGE_REQUEST"                            default="4"  delta="0.5"/>
+
+            <!--Crew Id Inputs -->
+            <object_number  name="Crew Button Press Request"                    constant_name="CREW_BUTTON_PRESS_REQUEST"                       default="0"  delta="0.5"/>
+
+            <!--Crew Id Popup Screen Buttons -->
+            <object_number name="Crew Id Popup Screen Button 0 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_0_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 1 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_1_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 2 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_2_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 3 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_3_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 4 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_4_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 5 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_5_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 6 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_6_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 7 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_7_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 8 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_8_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 9 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_9_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Clear Button Pressed"     constant_name="CREW_ID_POPUP_SCREEN_CLEAR_BUTTON_PRESSED"       default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Validate Button Pressed"  constant_name="CREW_ID_POPUP_SCREEN_VALIDATE_BUTTON_PRESSED"    default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Cancel Button Pressed"    constant_name="CREW_ID_POPUP_SCREEN_CANCEL_BUTTON_PRESSED"      default="0.0" delta="0.5" />
+
+        </object_class>
+
+        <object_class class="DMIInputsValues" constant_name="DMI_INPUTS_VALUES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Values"                                  constant_name="IO_CONTROLLER_CLASS_VALUES_TAG"                  default="0.0" delta="0.5" />
+            <object_number name="Class Values"                                  constant_name="CLASS_VALUES"                                    default="0.0" delta="0.5" />
+
+            <object_number name="Text Message Acknowledge Request"              constant_name="TEXT_MESSAGE_ACKNOWLEDGE_REQUEST"                default="0"  delta="0.5"/>
+            <object_number name="Text Message Up Button Request"                constant_name="TEXT_MESSAGE_UP_BUTTON_REQUEST"                  default="0"  delta="0.5"/>
+            <object_number name="Text Message Down Button Request"              constant_name="TEXT_MESSAGE_DOWN_BUTTON_REQUEST"                default="0"  delta="0.5"/>
+
+            <!--Menu Inputs -->
+            <object_number name="Menu Button Press Request"                     constant_name="MENU_BUTTON_PRESS_REQUEST"                       default="0"  delta="0.5"/>
+            <object_number name="English Language Button Press Request"         constant_name="ENGLISH_LANGUAGE_BUTTON_PRESS_REQUEST"           default="0"  delta="0.5"/>
+            <object_number name="Hebrew Language Button Press Request"          constant_name="HEBREW_LANGUAGE_BUTTON_PRESS_REQUEST"            default="0"  delta="0.5"/>
+            <object_number name="Menu Close Button Press Request"               constant_name="MENU_CLOSE_BUTTON_PRESS_REQUEST"                 default="0"  delta="0.5"/>
+
+            <!--Settings Inputs -->
+            <object_number name="Brightness Button Press Request"               constant_name="BRIGHTNESS_BUTTON_PRESS_REQUEST"                 default="0"  delta="0.5"/>
+            <object_number name="Audio Button Press Request"                    constant_name="AUDIO_BUTTON_PRESS_REQUEST"                      default="0"  delta="0.5"/>
+            <object_number name="Brightness Change Request"                     constant_name="BRIGHTNESS_CHANGE_REQUEST"                       default="5"  delta="0.5"/>
+            <object_number name="Brightness Close Request"                      constant_name="BRIGHTNESS_CLOSE_REQUEST"                        default="0"  delta="0.5"/>
+            <object_number name="Audio Close Request"                           constant_name="AUDIO_CLOSE_REQUEST"                             default="0"  delta="0.5"/>
+            <object_number name="Audio Change Request"                          constant_name="AUDIO_CHANGE_REQUEST"                            default="4"  delta="0.5"/>
+
+            <!--Crew Id Inputs -->
+            <object_number name="Crew Button Press Request"                     constant_name="CREW_BUTTON_PRESS_REQUEST"                       default="0"  delta="0.5"/>
+
+            <!--Crew Id Popup Screen Buttons -->
+            <object_number name="Crew Id Popup Screen Button 0 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_0_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 1 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_1_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 2 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_2_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 3 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_3_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 4 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_4_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 5 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_5_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 6 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_6_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 7 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_7_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 8 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_8_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 9 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_9_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Clear Button Pressed"     constant_name="CREW_ID_POPUP_SCREEN_CLEAR_BUTTON_PRESSED"       default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Validate Button Pressed"  constant_name="CREW_ID_POPUP_SCREEN_VALIDATE_BUTTON_PRESSED"    default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Cancel Button Pressed"    constant_name="CREW_ID_POPUP_SCREEN_CANCEL_BUTTON_PRESSED"      default="0.0" delta="0.5" />
+        </object_class>
+
+        <object_class class="DMIInputsModes" constant_name="DMI_INPUTS_MODES">
+            <!-- Required by the IO Controller -->
+            <object_number name="Class Modes"                                   constant_name="IO_CONTROLLER_CLASS_MODES_TAG"                   default="0.0" delta="0.5" />
+            <object_number name="Class Modes"                                   constant_name="CLASS_MODES"                                     default="0.0" delta="0.5" />
+
+            <object_number name="Text Message Acknowledge Request"              constant_name="TEXT_MESSAGE_ACKNOWLEDGE_REQUEST"                default="0"  delta="0.5"/>
+            <object_number name="Text Message Up Button Request"                constant_name="TEXT_MESSAGE_UP_BUTTON_REQUEST"                  default="0"  delta="0.5"/>
+            <object_number name="Text Message Down Button Request"              constant_name="TEXT_MESSAGE_DOWN_BUTTON_REQUEST"                default="0"  delta="0.5"/>
+
+            <!--Menu Inputs -->
+            <object_number name="Menu Button Press Request"                     constant_name="MENU_BUTTON_PRESS_REQUEST"                       default="0"  delta="0.5"/>
+            <object_number name="English Language Button Press Request"         constant_name="ENGLISH_LANGUAGE_BUTTON_PRESS_REQUEST"           default="0"  delta="0.5"/>
+            <object_number name="Hebrew Language Button Press Request"          constant_name="HEBREW_LANGUAGE_BUTTON_PRESS_REQUEST"            default="0"  delta="0.5"/>
+            <object_number name="Menu Close Button Press Request"               constant_name="MENU_CLOSE_BUTTON_PRESS_REQUEST"                 default="0"  delta="0.5"/>
+
+            <!--Settings Inputs -->
+            <object_number name="Brightness Button Press Request"               constant_name="BRIGHTNESS_BUTTON_PRESS_REQUEST"                 default="0"  delta="0.5"/>
+            <object_number name="Audio Button Press Request"                    constant_name="AUDIO_BUTTON_PRESS_REQUEST"                      default="0"  delta="0.5"/>
+            <object_number name="Brightness Change Request"                     constant_name="BRIGHTNESS_CHANGE_REQUEST"                       default="5"  delta="0.5"/>
+            <object_number name="Brightness Close Request"                      constant_name="BRIGHTNESS_CLOSE_REQUEST"                        default="0"  delta="0.5"/>
+            <object_number name="Audio Close Request"                           constant_name="AUDIO_CLOSE_REQUEST"                             default="0"  delta="0.5"/>
+            <object_number name="Audio Change Request"                          constant_name="AUDIO_CHANGE_REQUEST"                            default="4"  delta="0.5"/>
+
+            <!--Crew Id Inputs -->
+            <object_number  name="Crew Button Press Request"                    constant_name="CREW_BUTTON_PRESS_REQUEST"                       default="0"  delta="0.5"/>
+
+            <!--Crew Id Popup Screen Buttons -->
+            <object_number name="Crew Id Popup Screen Button 0 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_0_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 1 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_1_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 2 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_2_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 3 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_3_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 4 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_4_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 5 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_5_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 6 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_6_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 7 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_7_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 8 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_8_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Button 9 Pressed"         constant_name="CREW_ID_POPUP_SCREEN_BUTTON_9_PRESSED"           default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Clear Button Pressed"     constant_name="CREW_ID_POPUP_SCREEN_CLEAR_BUTTON_PRESSED"       default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Validate Button Pressed"  constant_name="CREW_ID_POPUP_SCREEN_VALIDATE_BUTTON_PRESSED"    default="0.0" delta="0.5" />
+            <object_number name="Crew Id Popup Screen Cancel Button Pressed"    constant_name="CREW_ID_POPUP_SCREEN_CANCEL_BUTTON_PRESSED"      default="0.0" delta="0.5" />
+        </object_class>
+
+        <!-- DMI output data from UI -->
+        <object_class class="DMIOutputs" constant_name="DMI_OUTPUTS">
+          <!-- Required by the IO Controller -->
+            <object_number name="Class Outputs"                                 constant_name="IO_CONTROLLER_CLASS_OUTPUTS_TAG"                 default="0.0" delta="0.5" />
+            <object_number name="Class Outputs"                                 constant_name="CLASS_OUTPUTS"                                   default="0.0" delta="0.5" />
+            <object_number name="Current Screen Id"                             constant_name="CURRENT_SCREEN_ID"                               default="0.0" delta="0.5" />
+            <object_number name="Progress Bar Value"                            constant_name="PROGRESS_BAR_VALUE"                              default="0.0" delta="0.1" />
+            <object_number name="Life Indicator Status"                         constant_name="LIFE_INDICATOR_STATUS"                           default="0.0" delta="0.5" />
+            <object_raw    name="Service Number Value"                          constant_name="SERVICE_NUMBER_VALUE" />
+            <object_raw    name="Software Version"                              constant_name="SOFTWARE_VERSION" />
+
+
+            <!-- Properties mapped from CBTCOnboardOutputs -->
+            <object_number name="Warning Status"                                constant_name="WARNING_STATUS"                                  default="0"  delta="0.5"/>
+            <object_number name="Current Driving Mode"                          constant_name="CURRENT_DRIVING_MODE"                            default="0"  delta="0.5"/>
+            <object_number name="Current Train Speed"                           constant_name="CURRENT_TRAIN_SPEED"                             default="0"  delta="0.01"/>
+            <object_number name="CBTC Target Speed"                             constant_name="CBTC_TARGET_SPEED"                               default="0"  delta="0.1"/>
+            <object_number name="CBTC Permitted Speed"                          constant_name="CBTC_PERMITTED_SPEED"                            default="0"  delta="0.1"/>
+            <object_number name="Safety Brake Status"                           constant_name="SAFETY_BRAKE_STATUS"                             default="0"  delta="0.5"/>
+            <object_number name="ATC Status"                                    constant_name="ATC_STATUS"                                      default="0"  delta="0.5"/>
+            <object_number name="Target Distance"                               constant_name="TARGET_DISTANCE"                                 default="0"  delta="0.5"/>
+            <object_number name="Target Distance Bar Graph Status"              constant_name="TARGET_DISTANCE_BAR_GRAPH_STATUS"                default="0"  delta="0.5"/>
+            <object_number name="Localisation Status"                           constant_name="LOCALISATION_STATUS"                             default="0"  delta="0.5"/>
+            <object_number name="Advisory Speed"                                constant_name="ADVISORY_SPEED"                                  default="0"  delta="0.1"/>
+            <object_number name="Driver Event Skip Station"                     constant_name="DRIVER_EVENT_SKIP_STATION"                       default="0"  delta="0.5"/>
+            <object_number name="Driver Event Change Ends"                      constant_name="DRIVER_EVENT_CHANGE_ENDS"                        default="0"  delta="0.5"/>
+            <object_number name="Driver Event Work Zone"                        constant_name="DRIVER_EVENT_WORK_ZONE"                          default="0"  delta="0.5"/>
+            <object_number name="Radio Communication Status"                    constant_name="RADIO_COMMUNICATION_STATUS"                      default="0"  delta="0.5"/>
+            <object_number name="ATP Zone Status"                    			constant_name="ATP_ZONE_STATUS"                      			default="0"  delta="0.5"/>
+            <object_number name="Depot Indication"                 				constant_name="DEPOT_INDICATION"                				default="0"  delta="0.5"/>
+			<object_number name="Warning Speed"                                 constant_name="WARNING_SPEED"                                   default="0"  delta="0.1"/>
+            <object_raw    name="Available Modes"                               constant_name="AVAILABLE_MODES" />
+
+            <!-- CREW Number related properties -->
+            <object_number name="Crew Id Panel Status"                          constant_name="CREW_ID_PANEL_STATUS"                            default="0"  delta="0.5"/>
+            <object_raw    name="Crew Number"                                   constant_name="CREW_NUMBER" />
+            <object_raw    name="Crew Id Panel Entered Number"                  constant_name="CREW_ID_PANEL_ENTERED_NUMBER" />
+
+            <!--Settings Outputs -->
+            <object_number name="Selected Settings Panel"                       constant_name="SELECTED_SETTINGS_PANEL"                         default="0"  delta="0.5"/>
+            <object_number name="Selected Brightness Value"                     constant_name="SELECTED_BRIGHTNESS_VALUE"                       default="5"  delta="0.5"/>
+            <object_number name="Selected Audio Value"                          constant_name="SELECTED_AUDIO_VALUE"                            default="4"  delta="0.5"/>
+
+            <!-- Properties mapped from CBTCPlatformOutputs -->
+            <object_number name="Train Door Status"                             constant_name="TRAIN_DOOR_STATUS"                               default="0"  delta="0.5"/>
+            <object_number name="PSD Door Status"                               constant_name="PSD_DOOR_STATUS"                                 default="0"  delta="0.5"/>
+            <object_number name="Departure Order"                               constant_name="DEPARTURE_ORDER"                                 default="0"  delta="0.5"/>
+            <object_raw    name="Remaining Time Before Departure"               constant_name="REMAINING_TIME_BEFORE_DEPARTURE"                 default="0"  delta="0.1"/>
+            <object_number name="Departure Information Status"                  constant_name="DEPARTURE_INFORMATION_STATUS"                    default="0"  delta="0.5"/>
+            <object_number name="Remaining Time In Minute Status"               constant_name="REMAINING_TIME_IN_MINUTE_STATUS"                 default="0"  delta="0.05"/>
+            <object_raw    name="Train Docking Info"                            constant_name="TRAIN_DOCKING_INFO" />
+            <object_number name="Detrainment Door Status"                       constant_name="DETRAINMENT_DOOR_STATUS"                         default="0"  delta="0.5"/>
+
+            <object_number name="Current Date and Time"                         constant_name="CURRENT_DATE_AND_TIME"                           default="0"  delta="0.05"/>
+            <object_raw    name="Final Destination Name"                        constant_name="FINAL_DESTINATION_NAME" />
+
+            <!-- Text message related properties -->
+            <object_raw    name="Active Text Messages"                          constant_name="ACTIVE_TEXT_MESSAGES" />
+            <object_number name="Text Message Up Button Status"                 constant_name="TEXT_MESSAGE_UP_BUTTON_STATUS"                   default="0"  delta="0.5"/>
+            <object_number name="Text Message Down Button Status"               constant_name="TEXT_MESSAGE_DOWN_BUTTON_STATUS"                 default="0"  delta="0.5"/>
+            <object_number name="New Message Indication"                        constant_name="NEW_MESSAGE_INDICATION"                          default="0"  delta="0.5"/>
+
+            <!-- Menu related properties -->
+            <object_number name="Menu Panel Status"                             constant_name="MENU_PANEL_STATUS"                               default="0"  delta="0.5"/>
+
+
+            <object_number name="Train Docking Status"                          constant_name="TRAIN_DOCKING_STATUS"                            default="0"  delta="0.5"/>
+            <object_number name="Atc Bypass State"                              constant_name="ATC_BYPASS_STATE"                                default="0"  delta="0.5"/>
+            <object_raw    name="Operational Service Stopping Distance"         constant_name="OPERATIONAL_SERVICE_STOPPING_DISTANCE" />
+			
+            <object_number name="Destination Code"                              constant_name="DESTINATION_CODE"                                default="0"  delta="0.5"/>
+            <object_number name="Neutral Zone Status"                           constant_name="NEUTRAL_ZONE_STATUS"                             default="0"  delta="0.5"/>
+
+        </object_class>
+    </layer>
+
+    <!-- Parent-child relationship mapping -->
+    <relationship parent="Vehicle" child="DMI"/>
+    <relationship parent="DMI" child="DMIInputs"/>
+    <relationship parent="DMI" child="DMIOutputs"/>
+
+    <!-- Class ID declerations -->
+    <class_ids>
+        <class_id class_name="DMI" class_id="401" />
+        <class_id class_name="DMIInputs" class_id="402" />
+        <class_id class_name="DMIInputsValues" class_id="403" />
+        <class_id class_name="DMIInputsModes" class_id="404" />
+        <class_id class_name="DMIOutputs" class_id="405" />
+    </class_ids>
+</comms_config>
+

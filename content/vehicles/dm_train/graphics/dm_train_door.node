@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>properties/DoorControl.prop</library>
+	</properties>
+	<node type="NodeDummy" id="41292658" name="dm_train_door">
+		<transform>0.999999940395 -9.3677232495e-031 0 0.0 9.3677232495e-031 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -2.7275959269e-012 -1.45514711392e-011 1.42108547152e-014 1.0</transform>
+		<node type="ObjectMeshStatic" id="239877150" folded="1" name="door_right_a1">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -3.42200016975 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="1608593806" name="door_right_a1_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">1.6170001 -3.42200017 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1584028289" folded="1" name="door_right_b1">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -3.42200016975 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="1974511920" name="door_right_b1_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">1.6170001 -3.42200017 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="585535103" folded="1" name="door_right_a2">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -8.64700031281 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="1074496015" name="door_right_a2_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">1.6170001 -8.64700031 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1158110843" folded="1" name="door_right_b2">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -8.64700031281 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="869977071" name="door_right_b2_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">1.6170001 -8.64700031 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="2113734761" folded="1" name="door_right_a3">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -13.8830003738 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="559234787" name="door_right_a3_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">1.6170001 -13.8830004 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="870821267" folded="1" name="door_right_b3">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -13.8830003738 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="579333019" name="door_right_b3_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">1.6170001 -13.8830004 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1792898654" folded="1" name="door_right_a4">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -19.1100006104 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="14147497" name="door_right_a4_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">1.6170001 -19.1100006 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="737656600" folded="1" name="door_right_b4">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.617000103 -19.1100006104 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="445762760" name="door_right_b4_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">1.6170001 -19.1100006 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1733769917" folded="1" name="door_left_a1">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -3.42200016975 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="1349235237" name="door_left_a1_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">-1.6170001 -3.42200017 0.992000043</parameter>
+				</property>
+				<transform>1 -3.46754112782e-021 0 0.0 3.46754112782e-021 1 0 0.0 0 0 1 0.0 -2.22044604925e-016 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1697390272" folded="1" name="door_left_b1">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -3.42200016975 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="1745979306" name="door_left_b1_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">-1.6170001 -3.42200017 0.992000043</parameter>
+				</property>
+				<transform>1 -3.46754112782e-021 0 0.0 3.46754112782e-021 1 0 0.0 0 0 1 0.0 0 0 1.11022302463e-016 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="633358799" folded="1" name="door_left_a2">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -8.64700031281 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="2024660031" name="door_left_a2_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">-1.6170001 -8.64700031 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.0299685349e-007 3.12805166658e-007 4.33921814036e-008 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1299999650" folded="1" name="door_left_b2">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -8.64700031281 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="1298827290" name="door_left_b2_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">-1.6170001 -8.64700031 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="183643582" folded="1" name="door_left_a3">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -13.8830003738 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="1392595202" name="door_left_a3_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">-1.6170001 -13.8830004 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="48453693" folded="1" name="door_left_b3">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -13.8830003738 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="2118029463" name="door_left_b3_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">-1.6170001 -13.8830004 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2.22044604925e-016 -1.7763568394e-015 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="826868376" folded="1" name="door_left_a4">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_b1.mesh</mesh_name>
+			<surface name="door_right_b1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_b1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -19.1100006104 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="814537885" name="door_left_a4_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">-0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="EndPos">-1.6170001 -19.1100006 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2.22044604925e-016 -3.5527136788e-015 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1499442800" folded="1" name="door_left_b4">
+			<mesh_name>../vehicles/dm_train/graphics/door_right_a1.mesh</mesh_name>
+			<surface name="door_right_a1_dm_train" max_visible_distance="800" max_fade_distance="10" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+			<surface name="door_right_a1_glass" max_visible_distance="800" max_fade_distance="10" material="f46b79275ca12de88ad91ec4192ebfbd7bd533f5" property="surface_base"/>
+			<transform>-0.999999999995 -8.74227797782e-008 0 0.0 8.74227797782e-008 -0.999999999995 0 0.0 0 0 0.999999999995 0.0 -1.617000103 -19.1100006104 0.992000043392 1.0</transform>
+			<node type="WorldExpression" id="595046978" name="door_left_b4_control" property="DoorControl">
+				<expression>{
+#include &lt;../vehicles/common/DoorControl.h&gt;
+}</expression>
+				<property>
+					<parameter name="PopDistance">0.0199999996</parameter>
+					<parameter name="MaxDistance">0.800000012</parameter>
+					<parameter name="Direction">180</parameter>
+					<parameter name="EndPos">-1.6170001 -19.1100006 0.992000043</parameter>
+				</property>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2.22044604925e-016 -0.691 0 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

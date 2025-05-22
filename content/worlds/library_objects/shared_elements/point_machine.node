@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1053413456" name="point_machine">
+		<mesh_name>../worlds/library_objects/shared_elements/point_machine.mesh</mesh_name>
+		<surface name="point_machine" max_visible_distance="500" max_fade_distance="50" material="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" property="surface_base"/>
+		<transform>0.999999940395 -8.32667268469e-017 0 0.0 -1.38777878078e-016 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -9.09494701773e-013 1.09139364213e-011 -4.4408920985e-016 1.0</transform>
+	</node>
+</nodes>

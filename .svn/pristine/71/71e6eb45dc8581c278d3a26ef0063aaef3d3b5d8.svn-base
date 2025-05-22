@@ -1,0 +1,74 @@
+package Mumbai_Metro_SMC;
+
+import org.sikuli.script.Button;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Mouse;
+import org.sikuli.script.Screen;
+import java.io.File; // Import the File class
+import java.io.IOException; // Import the IOException class to handle errors
+import java.io.FileWriter;
+
+public class DMIHMITest {
+
+	Screen screen, screen1;
+	static FileWriter output;
+	int i;
+	String sessionName, mode;
+
+	public DMIHMITest() throws IOException {
+		// TODO Auto-generated constructor stub
+		output = new FileWriter(FilePathConstant.IMAGE_PATH +"Automation.log");
+		screen1 = new Screen();
+		screen = new Screen(1);
+		i = 0;
+		sessionName = null;
+		mode = null;
+	}
+
+	private void startSimulator() throws IOException {
+		try {
+			screen.find("FilePathConstant.IMAGE_PATH +smc_1.PNG");
+			screen.doubleClick("\"FilePathConstant.IMAGE_PATH +smc_1.PNG");
+			screen.wait(2.0);
+
+			screen.find("FilePathConstant.IMAGE_PATH +DefaultManager.PNG");
+			screen.click("FilePathConstant.IMAGE_PATH +DefaultManager.PNG");
+			screen.wait(1.0);
+
+			screen.find("FilePathConstant.IMAGE_PATH +SuperUser.PNG");
+			screen.click("FilePathConstant.IMAGE_PATH +SuperUser.PNG");
+			screen.wait(1.0);
+
+			screen.find("FilePathConstant.IMAGE_PATH +password.PNG");
+			screen.click("FilePathConstant.IMAGE_PATH +password.PNG");
+			screen.type("password");
+			screen.wait(1.0);
+
+			screen.find("FilePathConstant.IMAGE_PATH +okbutton.PNG");
+			screen.click("FilePathConstant.IMAGE_PATH +okbutton.PNG");
+			screen.wait(2.0);
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String [] args) throws FindFailed {
+		try {
+			// create a file
+		      File myObj = new File(FilePathConstant.IMAGE_PATH +"Automation.log");
+		      if (myObj.createNewFile()) 
+		        System.out.println("Detailed log in saved in " + myObj.getAbsolutePath());
+		       else 
+		        System.out.println("Detailed log in saved in " + myObj.getAbsolutePath());
+		      
+		      	
+		      dumy obj = new dumy();
+				obj.writeFile("Welcome to OKTAL SYDAC");
+				obj.startSimulator();
+								
+		    } catch (IOException e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    } 
+	}
+}

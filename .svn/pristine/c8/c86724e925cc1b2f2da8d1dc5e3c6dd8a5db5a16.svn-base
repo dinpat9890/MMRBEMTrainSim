@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="MA_casual_indian_05" guid="f3f0794efcc4bda2ea34fafd83c70c7dba175c28" parent="f4a968fecc6da61f97606239b14677d71f6a13cc" base_material="mesh_base">
+	<options two_sided="1"/>
+	<texture name="albedo">../worlds/library_objects/characters/textures/MA_Casual_Indian_05.dds</texture>
+	<parameter name="specular">0.5</parameter>
+	<parameter name="microfiber">0</parameter>
+</material>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="190336158" name="Sleeper">
+		<mesh_name>obstruction_features/graphics/sleeper.mesh</mesh_name>
+		<surface name="sleeper" max_visible_distance="800" material="526ba9d0a791970d32db20cf6182e5ac565d4c66" property="surface_base"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0.4 1.0</transform>
+	</node>
+</nodes>

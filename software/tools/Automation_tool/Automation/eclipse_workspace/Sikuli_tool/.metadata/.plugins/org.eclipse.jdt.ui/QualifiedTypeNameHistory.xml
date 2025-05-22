@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.sikuli.script.ScreenImage"/>
+    <fullyQualifiedTypeName name="org.sikuli.script.Pattern"/>
+    <fullyQualifiedTypeName name="org.sikuli.script.Key"/>
+    <fullyQualifiedTypeName name="org.sikuli.script.Mouse"/>
+    <fullyQualifiedTypeName name="org.sikuli.script.Screen"/>
+</qualifiedTypeNameHistroy>

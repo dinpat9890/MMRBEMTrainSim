@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1033343539" name="hording_2">
+		<mesh_name>../worlds/library_objects/shared_elements/hording_02.mesh</mesh_name>
+		<surface name="hording_02_generic_metal" max_visible_distance="1000" max_fade_distance="10" material="1592e9b50d50ce280b2b5aaa0851fb05fa36a9dd" property="surface_base"/>
+		<surface name="hording_02_line_7_hording_01" max_visible_distance="1000" max_fade_distance="10" material="317016c1b4c99cd9086262af83046f7821a6f560" property="surface_base"/>
+		<surface name="hording_02_metal_case" max_visible_distance="1000" max_fade_distance="10" material="d362a3f3071917ab24f099b2209badfda803316f" property="surface_base"/>
+		<surface name="hording_02_platform_lights" max_visible_distance="1000" max_fade_distance="10" material="5a2a0f582598c5bf4ede5fda88fd2437f5c85e9d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

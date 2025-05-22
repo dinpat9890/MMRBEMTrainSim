@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="mc_01a" guid="b782fdd04e64d0fb084f365a986996e95c569113" parent="f4a968fecc6da61f97606239b14677d71f6a13cc" base_material="mesh_base">
+	<texture name="albedo">../features/obstruction_features/graphics/textures/mc_01a.dds</texture>
+	<texture name="normal">../features/obstruction_features/graphics/textures/mc_01a_n.dds</texture>
+	<parameter name="specular">0.300000012</parameter>
+</material>

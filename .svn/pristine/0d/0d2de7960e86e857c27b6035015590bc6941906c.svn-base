@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Shunt_Signal" group="Signal" constant_name="FETY_SHUNT_SIGNAL" modifiable="0" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+		<feature_type_state state_id="3" name="Automated"   user_selectable="1" />
+        <feature_type_state state_id="1" name="On"   user_selectable="1" />
+        <feature_type_state state_id="2" name="Off"  user_selectable="1" />
+        <feature_type_state state_id="4" name="Faulty"  user_selectable="1" />
+    </feature_type_state_type>
+
+    <object_parameters>
+        <key name="Initial State"  type="State" description="Initial State"  default="Off" />
+		<key name="User State"     type="State" default="Automated" description="Automated User State" />
+        <!-- Feature Properties -->
+        <key name="label1"          type="string"  default="xxx"  description="Label on ID plate" />
+        <key name="label2"          type="string"  default="xxx"  description="Label on ID plate" />
+    </object_parameters>
+
+    <feature_type_icon icon_code="Shunt_Signal" small_icon="icons/shunt_signal.zip#off-SMALL.png" big_icon="icons/shunt_signal.zip#off-BIG.png">
+         <feature_type_state_icon state_id="1" icon_code="On" small_icon="icons/shunt_signal.zip#on-SMALL.png" big_icon="icons/shunt_signal.zip#on-BIG.png" />
+         <feature_type_state_icon state_id="2" icon_code="Off" small_icon="icons/shunt_signal.zip#off-SMALL.png" big_icon="icons/shunt_signal.zip#off-BIG.png" />
+		 <feature_type_state_icon state_id="3" icon_code="Automated" small_icon="icons/shunt_signal.zip#off-SMALL.png" big_icon="icons/shunt_signal.zip#off-BIG.png" />
+         <feature_type_state_icon state_id="4" icon_code="Faulty" small_icon="icons/shunt_signal.zip#faulty-SMALL.png" big_icon="icons/shunt_signal.zip#faulty-BIG.png" />
+     </feature_type_icon>
+
+   <feature_type_vision class="SignalFeature" raycast_type="RaycastGround" node_file="shunt_signal.node">
+       <scripting>
+           <script script_path="scripts/SignalFeature.us.cpp" />
+       </scripting>
+       <model_parts>
+            <model_part model_part_id="1" name="head/on" />
+            <model_part model_part_id="2" name="head/off" />
+        </model_parts>
+        <model_state_parts>
+            <model_state_part state_id="1" part_id="1" />
+            <model_state_part state_id="2" part_id="2" />
+            <model_state_part state_id="4" part_id="1" />
+            <model_state_part state_id="4" part_id="2" />
+        </model_state_parts>
+  </feature_type_vision>
+
+</feature_type>

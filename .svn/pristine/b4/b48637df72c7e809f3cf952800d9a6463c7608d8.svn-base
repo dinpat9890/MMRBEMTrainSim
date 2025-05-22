@@ -1,0 +1,7 @@
+# Properties that identify the hub that an application is useing.
+
+# Must match the contents of PHYSICALHUB PHHU_HUB_NAME
+hub.hubName=Driver's Cab
+# The following properties associate this application with the simulator
+# Must match the contents of SIMULATOR SIM_SIMULATOR_NAME
+hub.simName=Fixed Set Driver's Cab

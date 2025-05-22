@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="rowan_bush_shadow" guid="94e3f2b371ad1089745c1e83ba7bd02f8069b8c4" parent="d08965ea13c92ed6883d879a82703570ceadfc25" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/imposter_bush.dds</texture>
+</material>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <edit_types>
+    <edit_type edittype_id="1" edittype_name="Created" />
+    <edit_type edittype_id="2" edittype_name="Copied" />
+    <edit_type edittype_id="3" edittype_name="Modified" />
+  </edit_types>
+</config>

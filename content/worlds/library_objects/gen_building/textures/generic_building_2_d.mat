@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="generic_building_2_d" guid="6b769c60a92c22e569c87143ce18d214dd5102da" parent="74de717c488e1384c0a179ba0f7519c6733d1fe5" base_material="mesh_base">
+	<options two_sided="0"/>
+	<texture name="albedo">../worlds/library_objects/gen_building/textures/generic_building_2_d.dds</texture>
+	<texture name="emission">../worlds/library_objects/gen_building/textures/bldg_res_02_e.dds</texture>
+	<parameter name="albedo_color">0.698039234 0.698039234 0.698039234 1</parameter>
+	<parameter name="emission_color">1 1 1 1</parameter>
+	<parameter name="emission_scale">0.200000003</parameter>
+</material>

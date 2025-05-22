@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="depot_rough_concrete_red" guid="805445940cdacd606f9daf4bf34166666a8315d0" parent="68420a2261aaa870139bdadba92297c9bc0a8bfe" base_material="mesh_base">
+	<state name="workflow">0</state>
+	<texture name="albedo">../worlds/mmrbem/graphics/depot/textures/depot_rough concrete.dds</texture>
+	<parameter name="albedo_color">0.709803939 0.325490206 0.325490206 1</parameter>
+</material>

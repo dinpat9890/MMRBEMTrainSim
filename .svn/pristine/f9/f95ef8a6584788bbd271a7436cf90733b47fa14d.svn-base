@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmi_screens xmlns="http://www.sydac.com.au/GMI/1.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sydac.com.au/GMI/1.0/ ../screen.xsd">
+	<!-- Common Internal Screens Here. Internal IDS go from 1 to 99 -->
+
+	<screen_object_type xsi:type="state_object"
+		name="flood_light" extends="indicator_light">
+		<image file="dm_car_exterior_lights/light_off.png">
+			<state_group_ref name="off" />
+		</image>
+		<image file="dm_car_exterior_lights/flood_light_on.png">
+			<state_group_ref name="on" />
+		</image>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="flasher_light" extends="indicator_light">
+		<image file="dm_car_exterior_lights/light_off.png">
+			<state_group_ref name="off" />
+		</image>
+		<image file="dm_car_exterior_lights/flasher_light_on.png">
+			<state_group_ref name="on" />
+		</image>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="head_light_1" extends="head_light">
+
+		<image file="dm_car_exterior_lights/head_light_off.png">
+			<state_group_ref name="off" />
+		</image>
+		<image file="dm_car_exterior_lights/head_light_low.png">
+			<state_group_ref name="low" />
+		</image>
+		<image file="dm_car_exterior_lights/head_light_high.png">
+			<state_group_ref name="high" />
+		</image>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="uto_rm_light" extends="light">
+
+		<image file="dm_car_exterior_lights/uto_rm_light_off.png">
+			<state_group_ref name="off" />
+		</image>
+		<image file="dm_car_exterior_lights/uto_rm_light_on.png">
+			<state_group_ref name="on" />
+		</image>
+		<flashing_image pool_name="light_timer" period="500">
+			<frame file="dm_car_exterior_lights/uto_rm_light_off.png" />
+			<frame file="dm_car_exterior_lights/uto_rm_light_on.png" />
+			<state_group_ref name="flashing" />
+		</flashing_image>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="marker_tail_light" extends="light">
+
+		<image file="dm_car_exterior_lights/tail_light_off.png">
+			<state_group_ref name="off" />
+		</image>
+		<image file="dm_car_exterior_lights/marker_light_on.png">
+			<state_group_ref name="on" />
+		</image>
+		<image file="dm_car_exterior_lights/tail_light_on.png">
+			<state_group_ref name="flashing" />
+		</image>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="MREP Isolation Cock End 1"
+		id="2" background_image="mrep_isolation_cock_end_1/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="mrep_isolation_cock_end_1">
+			<position x="0" y="129" />
+			<number name="MREP_ISOLATION_COCK_END_1" variable="cock_state" />
+			<number name="MREP_ISOLATION_COCK_END_1"
+				variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen xsi:type="main_screen" name="MREP Isolation Cock End 2"
+		id="3" background_image="mrep_isolation_cock_end_2/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="mrep_isolation_cock_end_2">
+			<position x="1078" y="129" />
+			<number name="MREP_ISOLATION_COCK_END_2" variable="cock_state" />
+			<number name="MREP_ISOLATION_COCK_END_2"
+				variable="cock_control" />
+		</screen_object>
+	</screen>
+	
+
+	
+<!-- 	<screen_object_type xsi:type="state_object"
+		name="back_wall_panel_door" extends="indicator_light">
+		<image file="driver_desk/door_close.png">
+			<state_group_ref name="off" />
+		</image>
+		<image file="driver_desk/door_open.png">
+			<state_group_ref name="on" />
+		</image>
+	</screen_object_type>	 -->
+
+	<screen_object_type xsi:type="state_object"
+		name="mrep_isolation_cock_end_1">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="mrep_isolation_cock_end_1/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="mrep_isolation_cock_end_1/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="40" y="70" width="750"
+				height="350" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="mrep_isolation_cock_end_2">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="mrep_isolation_cock_end_2/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="mrep_isolation_cock_end_2/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="30" y="60" width="760"
+				height="350" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="BIC1 End 1" id="4"
+		background_image="bic2_end_1/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="bic2_end_1">
+			<position x="599" y="334" />
+			<number name="BIC_1_OUTSIDE" variable="cock_state" />
+			<number name="BIC_1_OUTSIDE" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="bic2_end_1">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="bic2_end_1/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="bic2_end_1/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="30" y="50" width="500"
+				height="350" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="BIC2 End 2" id="5"
+		background_image="bic2_end_2/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="bic2_end_2">
+			<position x="783" y="13" />
+			<number name="BIC_2_OUTSIDE" variable="cock_state" />
+			<number name="BIC_2_OUTSIDE" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="bic2_end_2">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="bic2_end_2/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="bic2_end_2/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="30" y="50" width="850"
+				height="500" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="Epic" id="6"
+		background_image="epic/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="epic">
+			<position x="366" y="233" />
+			<number name="EPIC" variable="cock_state" />
+			<number name="EPIC" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="epic">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="epic/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="epic/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="10" width="800"
+				height="450" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="ASCO End 1" id="7"
+		background_image="asco_end_1/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="asco_end_1">
+			<position x="351" y="209" />
+			<number name="ASCO_END_1" variable="cock_state" />
+			<number name="ASCO_END_1" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="asco_end_1">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="asco_end_1/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="asco_end_1/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="10" width="800"
+				height="450" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="ASCO End 2" id="8"
+		background_image="asco_end_2/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="asco_end_2">
+			<position x="351" y="209" />
+			<number name="ASCO_END_2" variable="cock_state" />
+			<number name="ASCO_END_2" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="asco_end_2">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="asco_end_2/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="asco_end_2/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="10" width="800"
+				height="450" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="AS Isolation Cock" id="9"
+		background_image="as_isolation_cock/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="as_isolation_cock">
+			<position x="29" y="78" />
+			<number name="AS_ISOLATION_COCK" variable="cock_state" />
+			<number name="AS_ISOLATION_COCK" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="as_isolation_cock">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="as_isolation_cock/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="as_isolation_cock/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="10" width="1000"
+				height="450" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="SR" id="10"
+		background_image="sr/BG.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="sr">
+			<position x="829" y="96" />
+			<number name="SR" variable="cock_state" />
+			<number name="SR" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="sr">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="sr/isolated.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="sr/non_isolated.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="10" width="800"
+				height="450" />
+		</hotspot>
+	</screen_object_type>
+
+	<!-- Door Objects -->
+	<screen_object_type xsi:type="transform_object"
+		name="door_left" image="vehicle_navigation/door_left.png"
+		min_value="0" max_value="1" max_offset_x="-54">
+	</screen_object_type>
+
+	<screen_object_type xsi:type="transform_object"
+		name="door_right" image="vehicle_navigation/door_right.png"
+		min_value="0" max_value="1" max_offset_x="54">
+	</screen_object_type>
+
+	<screen_object_type xsi:type="transform_object"
+		name="left_door_rear"
+		image="vehicle_navigation/door_interior_left.png" min_value="0"
+		max_value="1" max_offset_x="-52">
+	</screen_object_type>
+
+	<screen_object_type xsi:type="transform_object"
+		name="right_door_rear"
+		image="vehicle_navigation/door_interior_right.png" min_value="0"
+		max_value="1" max_offset_x="52">
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="ead_cover">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="ead_location/ead_cover_clsed.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="ead_location/ead_cover_open.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="40" y="600" width="440"
+				height="200" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="ead">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="ead_location/ead_rest.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="ead_location/ead_unlock.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="100" y="200" width="200"
+				height="200" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen xsi:type="main_screen" name="Right Door EAD location"
+		id="11" background_image="ead_location/ead_location_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		
+		<screen_object type="ead">
+			<position x="746" y="216" />
+			<hotspots  visible="false"/> 
+			<number name="RIGHT_DOOR_EAD" variable="cock_state" />
+			<number name="RIGHT_DOOR_EAD" variable="cock_control" />
+		</screen_object>
+		
+		
+		<screen_object type="ead_cover">
+			<position x="718" y="134" />
+			<number name="RIGHT_DOOR_EAD_COVER" variable="cock_state" />
+			<number name="RIGHT_DOOR_EAD_COVER" variable="cock_control" />
+		</screen_object>
+	</screen>
+
+	<screen xsi:type="main_screen" name="Left Door EAD location"
+		id="12" background_image="ead_location/ead_location_background.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="ead">
+			<position x="746" y="216" />
+				<hotspots  visible="false"/> 
+			<number name="LEFT_DOOR_EAD" variable="cock_state" />
+			<number name="LEFT_DOOR_EAD" variable="cock_control" />
+		</screen_object>
+
+		<screen_object type="ead_cover">
+			<position x="718" y="134" />
+			<number name="LEFT_DOOR_EAD_COVER" variable="cock_state" />
+			<number name="LEFT_DOOR_EAD_COVER" variable="cock_control" />
+		</screen_object>
+
+		
+	</screen>
+
+	<screen xsi:type="main_screen" name="PECU location" id="13"
+		background_image="pecu_location/passenger_emergency_control_unit.png">
+		<audio_location indoors="true"
+			distance_from_no1_end="2" heading="0" />
+
+		<screen_object type="push_button">
+			<position x="891" y="649" />
+			<number name="PECU_PUSH_BUTTON" variable="cock_state" />
+			<number name="PECU_PUSH_BUTTON" variable="cock_control" />
+		</screen_object>
+
+		<screen_object type="indicator">
+			<position x="814" y="434" />
+			<number name="WAIT_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="indicator">
+			<position x="944" y="434" />
+			<number name="CALL_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="indicator">
+			<position x="1075" y="434" />
+			<number name="TALK_INDICATOR" variable="light_state" />
+		</screen_object>
+
+		<screen_object type="static_image">
+			<position x="823" y="545" />
+			<property name="file"
+				value="pecu_location/push_botton_cover.png" />
+		</screen_object>
+	</screen>
+
+	<screen_object_type xsi:type="state_object"
+		name="push_button">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+		<image file="pecu_location/push_button_unpushed_unlit.png">
+			<state_group_ref name="closed" />
+		</image>
+		<image file="pecu_location/push_button_pushed_unlit.png">
+			<state_group_ref name="open" />
+		</image>
+
+		<hotspot xsi:type="region_hotspot">
+			<behaviour input_variable="cock_control"
+				type="binary toggle" state_variable="cock_state" />
+			<region xsi:type="rectangle" x="10" y="10" width="130"
+				height="130" />
+		</hotspot>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="indicator" extends="indicator_light">
+		<image file="pecu_location/indicator_off.png">
+			<state_group_ref name="off" />
+		</image>
+		<image file="pecu_location/indicator_on.png">
+			<state_group_ref name="on" />
+		</image>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="panto_position_12" extends="pantograph">
+		<image file="vehicle_navigation/t_car_1_2_pantograph_down.png">
+			<state_group_ref name="panto down" />
+		</image>
+		<image file="vehicle_navigation/t_car_1_2_pantograph_middle.png">
+			<state_group_ref name="panto mid" />
+		</image>
+		<image file="vehicle_navigation/t_car_1_2_pantograph_up.png">
+			<state_group_ref name="panto up" />
+		</image>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="panto_position_21" extends="pantograph">
+		<image file="vehicle_navigation/t_car_2_1_pantograph_down.png">
+			<state_group_ref name="panto down" />
+		</image>
+		<image file="vehicle_navigation/t_car_2_1_pantograph_middle.png">
+			<state_group_ref name="panto mid" />
+		</image>
+		<image file="vehicle_navigation/t_car_2_1_pantograph_up.png">
+			<state_group_ref name="panto up" />
+		</image>
+	</screen_object_type>
+</gmi_screens>

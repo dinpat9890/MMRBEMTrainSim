@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1355751773" name="elm_02_1">
+		<mesh_name>elm_rought/elm_02_1.mesh</mesh_name>
+		<surface name="elm_rought_leaves_02_1_lod_2_elm_rought_leaves_sum_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="12efa6f844b3ec99fcb70cd45db599005511e084" property="surface_base"/>
+		<surface name="elm_rought_tree_02_1_lod_2_elm_rought_trunk_mat" min_visible_distance="60" max_visible_distance="200" min_fade_distance="15" max_fade_distance="15" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+		<surface name="elm_rought_tree_02_1_lod_1_elm_rought_trunk_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+		<surface name="elm_rought_leaves_02_1_lod_1_elm_rought_leaves_sum_mat" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="12efa6f844b3ec99fcb70cd45db599005511e084" property="surface_base"/>
+		<surface name="elm_rought_leaves_02_1_lod_0_elm_rought_leaves_sum_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="12efa6f844b3ec99fcb70cd45db599005511e084" property="surface_base"/>
+		<surface name="elm_rought_tree_02_1_lod_0_elm_rought_trunk_mat" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+		<transform>0.99999988 0 0 0.0 0 0.99999988 0 0.0 0 0 0.99999988 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

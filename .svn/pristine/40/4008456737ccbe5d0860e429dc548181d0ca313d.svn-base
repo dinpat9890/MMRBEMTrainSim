@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="765236235" name="gantry_type03_push">
+		<mesh_name>../worlds/library_objects/gantry/gantry_type03_push.mesh</mesh_name>
+		<surface name="gantry_type03_push_fence_electric" material="48094474559869b5f217bae90dd93f663d90a28a" property="surface_base"/>
+		<surface name="gantry_type03_push_gantry_atlas_d" material="8c747dd5ea8ede44cb6af60a4b8d77fc00cb6946" property="surface_base"/>
+		<transform>0.999999940395 1.11022302463e-016 0 0.0 -1.11022302463e-016 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.63797880709e-012 -1.09139364213e-011 0 1.0</transform>
+		<node type="NodeDummy" id="807060095" name="Connection_conductor">
+			<transform>1 -6.61796907384e-024 0 0.0 6.61796907384e-024 1 0 0.0 0 0 1 0.0 8.07793566946e-028 0 5.4 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="240704955" name="Connection_catenary">
+			<transform>1 -6.61796907384e-024 0 0.0 6.61796907384e-024 1 0 0.0 0 0 1 0.0 -0.02 0 6.75 1.0</transform>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,71 @@
+#
+# Domain : Simulator Controller Console  (scc)
+#
+# SCC properties that are specific to a particular simulator type
+#
+
+# A unique ID for this simulator's SCC.
+# This ID:
+#   must be UNIQUE from other SCCs' IDs;
+#   must be below 256 (as it is combined with other numbers to create dynamic UIDs).
+scc.id = 1
+
+# A list of module names that are required for a session to be started
+# Note that entries are not required for this or other SCCs; these are defined by 
+# pam.module.name.<system>, which is usually in SCCApplicationManager.properties.
+## The format of the key is scc.requiredModule.x, where x increments from 1
+scc.requiredModule.1 = Driver:FC-03-DMI Backend
+scc.requiredModule.2 = Driver:FC-03-DMI Frontend
+scc.requiredModule.3 = Driver:FC-04-Hub
+scc.requiredModule.4 = Driver:FC-07-IO Module
+scc.requiredModule.5 = Driver:FC-06-TCMS Backend
+scc.requiredModule.6 = Driver:FC-06-TCMS Frontend
+scc.requiredModule.7 = Driver:FC-04-Train Model 1
+scc.requiredModule.8 = Driver:FC-02-Vision Comms
+scc.requiredModule.9 = Driver:FC-04-World Model
+
+
+# Optional modules
+scc.optionalModule.1  = Driver:FC-11-Audio Engine
+scc.optionalModule.2  = Driver:FC-06-Serial Devices
+scc.optionalModule.3  = Driver:FC-03-CBTC OnBoard Unit
+scc.optionalModule.4  = Driver:FC-03-CBTC Trackside Units
+scc.optionalModule.5  = Driver:FC-05-CCTV Frontend
+scc.optionalModule.6  = Driver:IWS-03-CCTV Frontend Instructor
+scc.optionalModule.7  = Driver:FC-05-CCTV Unit
+scc.optionalModule.8  = Driver:IWS-03-DMI Frontend Instructor
+scc.optionalModule.9  = Driver:FC-11-DVA Unit
+scc.optionalModule.10 = Driver:OWS-01-GCP Driver Desk Control Panel Observer
+scc.optionalModule.11 = Driver:IWS-02-Instructor PAPIS Frontend
+scc.optionalModule.12 = Driver:IWS-01-Logging And Replay
+scc.optionalModule.13 = Driver:IWS-01-Motion Base Controller
+scc.optionalModule.14 = Driver:FC-04-PAPIS Backend
+scc.optionalModule.15 = Driver:FC-04-PAPIS Frontend
+scc.optionalModule.16 = Driver:FC-11-PIS Unit
+scc.optionalModule.17 = Driver:FC-07-Procedural Trainer
+scc.optionalModule.18 = Driver:IWS-01-Procedural Trainer Instructor
+scc.optionalModule.19 = Driver:OWS-01-Procedural Trainer Observer
+scc.optionalModule.20 = Driver:FC-09-PSD Backend
+scc.optionalModule.21 = Driver:FC-09-PSD Frontend
+scc.optionalModule.22 = Driver:FC-08-Radio Backend
+scc.optionalModule.23 = Driver:FC-08-Radio Frontend
+scc.optionalModule.24 = Driver:FC-08-Radio Unit
+scc.optionalModule.25 = Driver:FC-10-Scripting Engine
+scc.optionalModule.26 = Driver:IWS-01-Session Analyser
+scc.optionalModule.27 = Driver:FC-11-Sound Model
+scc.optionalModule.28 = Driver:IWS-01-Student Monitoring
+scc.optionalModule.29 = Driver:OWS-01-SMS Backend
+scc.optionalModule.30 = Driver:ISW-02-TCMS Frontend Instructor
+scc.optionalModule.31 = Driver:FC-02-Vision Comms CCTV
+scc.optionalModule.32 = Driver:FC-02-Vision Comms TCMS CCTV
+
+# Ignored modules
+# Normally modules are added to the system status list when they appear,
+# and will subsequently show an "missing" status if they disappear.
+# However, ignored modules will never be added to the system status list.
+#scc.ignoredModule.1 = Driver:Comms Show
+
+# The simulator that this SCC is in charge of.
+#
+# Valid vaues are in the SIMULATOR table (SIM_SIMULATOR_NAME column)
+scc.simulatorName = Fixed Set Driver's Cab

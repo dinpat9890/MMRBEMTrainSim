@@ -1,0 +1,73 @@
+package Mumbai_Metro;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Screen;
+import java.io.IOException; // Import the IOException class to handle errors
+
+public class powerMenuStartup {
+
+	Screen S, S1;
+
+	public powerMenuStartup() throws IOException {
+
+		S = new Screen();
+		S1 = new Screen(1);
+	}
+
+	private void powerMenu() throws IOException {
+		try {
+			S1.find(FilePathConstant.POWER_MENU + "powerScreen.PNG");
+			S1.doubleClick(FilePathConstant.POWER_MENU + "powerScreen.PNG");
+			S1.wait(2.0);
+			
+			S.find(FilePathConstant.POWER_MENU + "StartSim.PNG");
+			S.click(FilePathConstant.POWER_MENU + "StartSim.PNG");
+			S.wait(2.0);
+
+			System.out.println("**** Power Menu Start Successfully****");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void smc() throws IOException {
+		try {
+			S1.find(FilePathConstant.IMAGE_PATH_1 + "smc_1.PNG");
+			S1.doubleClick(FilePathConstant.IMAGE_PATH_1 + "smc_1.PNG");
+			S1.wait(2.0);
+
+			S1.find(FilePathConstant.IMAGE_PATH_1 + "DefaultManager.PNG");
+			S1.click(FilePathConstant.IMAGE_PATH_1 + "DefaultManager.PNG");
+			S1.wait(1.0);
+
+			S1.find(FilePathConstant.IMAGE_PATH_1 + "SuperUser.PNG");
+			S1.click(FilePathConstant.IMAGE_PATH_1 + "SuperUser.PNG");
+			S1.wait(1.0);
+
+			S1.find(FilePathConstant.IMAGE_PATH_1 + "password.PNG");
+			S1.click(FilePathConstant.IMAGE_PATH_1 + "password.PNG");
+			S1.type("password");
+			S1.wait(1.0);
+
+			S1.find(FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG");
+			S1.click(FilePathConstant.IMAGE_PATH_1 + "okbutton.PNG");
+			S1.wait(2.0);
+			System.out.println("**** SMC Lauched successfully****");
+
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) throws FindFailed {
+		try {
+			// create a file
+			powerMenuStartup obj = new powerMenuStartup();
+			obj.powerMenu();
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+}

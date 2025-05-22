@@ -1,0 +1,24 @@
+// Message definitions for PIS project side announcements
+syntax = "proto2";
+
+package PIS.Announcement.Protos;
+
+option java_package         = "com.sydac.mmrbem.pis.project.protos";
+option java_outer_classname = "PISAnnouncementProtos";
+
+enum PISMessageType
+{
+    DRIVER_PUBLIC_ANNOUNCEMENT  = 0;
+    DRIVER_TRIGGERED_EMERGENCY  = 1;
+    DRIVER_TRIGGERED_MANUAL     = 2;
+    AT_STATION                  = 3;
+    APPROACH                    = 4;
+    DEPARTURE                   = 5;
+    JOURNEY                     = 6;
+    TRIP_CHANGE                 = 7;
+    SKIP_STATION                = 8;
+}
+
+
+
+

@@ -1,0 +1,3290 @@
+## SoftPLCConfig
+## Tue Feb 27 16:18:05 2024
+
+
+[BEMLEMUCB]
+cell size=30,10
+margins=5,5
+spacing=1,1
+
+[BEMLEMUCB circuit_breaker_panel_dm]
+label=Circuit Breaker Panel DM Car
+margins=15,15
+name=circuit_breaker_panel_dm
+pos=0,0
+spacing=10,10
+style=Panel
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0000]
+in number=EBLR2CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=EBLR2CB
+name=eblr2cb
+number=EBLR2CB
+out number=EBLR2CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0001]
+in number=ILCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=ILCB2
+name=ilcb2
+number=ILCB2
+out number=ILCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0002]
+in number=ODDCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=ODDCB
+name=oddcb
+number=ODDCB
+out number=ODDCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0003]
+in number=SIOCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=SIOCB1
+name=siocb1
+number=SIOCB1
+out number=SIOCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0004]
+in number=TVDUCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TVDUCB
+name=tvducb
+number=TVDUCB
+out number=TVDUCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0005]
+in number=BECUCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=BECUCB2
+name=becucb2
+number=BECUCB2
+out number=BECUCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0006]
+in number=CBTCCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CBTCCB1
+name=cbtccb1
+number=CBTCCB1
+out number=CBTCCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0007]
+in number=DLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=DLCB
+name=dlcb
+number=DLCB
+out number=DLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0008]
+in number=MSOCB4
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=MSOCB4
+name=msocb4
+number=MSOCB4
+out number=MSOCB4 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0009]
+in number=AC1CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=AC1CB
+name=ac1cb
+number=AC1CB
+out number=AC1CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=0,9
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0100]
+in number=EBMVCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=EBMVCB
+name=ebmvcb
+number=EBMVCB
+out number=EBMVCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0101]
+in number=LDICB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=LDICB
+name=ldicb
+number=LDICB
+out number=LDICB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0102]
+in number=PBCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=PBCB
+name=pbcb
+number=PBCB
+out number=PBCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0103]
+in number=SIOCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=SIOCB2
+name=siocb2
+number=SIOCB2
+out number=SIOCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0104]
+in number=TWVCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TWVCB
+name=twvcb
+number=TWVCB
+out number=TWVCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0105]
+in number=BECUCB3
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=BECUCB3
+name=becucb3
+number=BECUCB3
+out number=BECUCB3 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0106]
+in number=CBFCCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CBFCCB
+name=cbfccb
+number=CBFCCB
+out number=CBFCCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0107]
+in number=DIOCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=DIOCB2
+name=diocb2
+number=DIOCB2
+out number=DIOCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0108]
+in number=MSOCB3
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=MSOCB3
+name=msocb3
+number=MSOCB3
+out number=MSOCB3 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0109]
+in number=FDSCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=FDSCB
+name=fdscb
+number=FDSCB
+out number=FDSCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=1,9
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0200]
+in number=EDCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=EDCB
+name=edcb
+number=EDCB
+out number=EDCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0201]
+in number=LDLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=LDLCB
+name=ldlcb
+number=LDLCB
+out number=LDLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0202]
+in number=PISCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=PISCB1
+name=piscb1
+number=PISCB1
+out number=PISCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0203]
+in number=SSICB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=SSICB
+name=ssicb
+number=SSICB
+out number=SSICB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0204]
+in number=VCCB Or UCCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=VCCB Or UCCB
+name=vccb or uccb
+number=VCCB Or UCCB
+out number=VCCB Or UCCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0205]
+in number=RSACB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=RSACB
+name=rsacb
+number=RSACB
+out number=RSACB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0206]
+in number=CBFCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CBFCB
+name=cbfcb
+number=CBFCB
+out number=CBFCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0207]
+in number=DIOCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=DIOCB1
+name=diocb1
+number=DIOCB1
+out number=DIOCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0208]
+in number=MSOCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=MSOCB2
+name=msocb2
+number=MSOCB2
+out number=MSOCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=2,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0300]
+in number=ELCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=ELCB1
+name=elcb1
+number=ELCB1
+out number=ELCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0301]
+in number=LDRCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=LDRCB
+name=ldrcb
+number=LDRCB
+out number=LDRCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0302]
+in number=PISCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=PISCB2
+name=piscb2
+number=PISCB2
+out number=PISCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0303]
+in number=TBCCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TBCCB1
+name=tbccb1
+number=TBCCB1
+out number=TBCCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0304]
+in number=VCBCCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=VCBCCB
+name=vcbccb
+number=VCBCCB
+out number=VCBCCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0305]
+in number=CMCCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CMCCB
+name=cmccb
+number=CMCCB
+out number=CMCCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0306]
+in number=C1CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=C1CB
+name=c1cb
+number=C1CB
+out number=C1CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0307]
+in number=CSCCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CSCCB
+name=csccb
+number=CSCCB
+out number=CSCCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0308]
+in number=MSOCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=MSOCB1
+name=msocb1
+number=MSOCB1
+out number=MSOCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=3,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0400]
+in number=ELCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=ELCB2
+name=elcb2
+number=ELCB2
+out number=ELCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0401]
+in number=MLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=MLCB
+name=mlcb
+number=MLCB
+out number=MLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0402]
+in number=POCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=POCB
+name=pocb
+number=POCB
+out number=POCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0403]
+in number=TBCCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TBCCB2
+name=tbccb2
+number=TBCCB2
+out number=TBCCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0404]
+in number=VIO1CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=VIO1CB
+name=vio1cb
+number=VIO1CB
+out number=VIO1CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0405]
+in number=CILCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CILCB
+name=cilcb
+number=CILCB
+out number=CILCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0406]
+in number=BLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=BLCB
+name=blcb
+number=BLCB
+out number=BLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0407]
+in number=CSBCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CSBCB
+name=csbcb
+number=CSBCB
+out number=CSBCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0408]
+in number=HVAC1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=HVAC1
+name=hvac1
+number=HVAC1
+out number=HVAC1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=4,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0500]
+in number=ERCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=ERCB
+name=ercb
+number=ERCB
+out number=ERCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0501]
+in number=MMCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=MMCB
+name=mmcb
+number=MMCB
+out number=MMCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0502]
+in number=PPU1CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=PPU1CB
+name=ppu1cb
+number=PPU1CB
+out number=PPU1CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0503]
+in number=TBNCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TBNCB
+name=tbncb
+number=TBNCB
+out number=TBNCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0504]
+in number=VIO2CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=VIO2CB
+name=vio2cb
+number=VIO2CB
+out number=VIO2CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0505]
+in number=CICB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CICB
+name=cicb
+number=CICB
+out number=CICB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0506]
+in number=ZVBACB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=ZVBACB
+name=zvbacb
+number=ZVBACB
+out number=ZVBACB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0507]
+in number=CSACB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CSACB
+name=csacb
+number=CSACB
+out number=CSACB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0508]
+in number=SAC2CCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=SAC2CCB
+name=sac2ccb
+number=SAC2CCB
+out number=SAC2CCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=5,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0600]
+in number=HCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=HCB
+name=hcb
+number=HCB
+out number=HCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0601]
+in number=NBCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=NBCB
+name=nbcb
+number=NBCB
+out number=NBCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0602]
+in number=PPU2CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=PPU2CB
+name=ppu2cb
+number=PPU2CB
+out number=PPU2CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0603]
+in number=TDICB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TDICB
+name=tdicb
+number=TDICB
+out number=TDICB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0604]
+in number=WFLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=WFLCB
+name=wflcb
+number=WFLCB
+out number=WFLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0605]
+in number=CELCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CELCB
+name=celcb
+number=CELCB
+out number=CELCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0606]
+in number=EBLR1CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=EBLR1CB
+name=eblr1cb
+number=EBLR1CB
+out number=EBLR1CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0607]
+in number=CRSBCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CRSBCB
+name=crsbcb
+number=CRSBCB
+out number=CRSBCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0608]
+in number=HVAC2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=HVAC2
+name=hvac2
+number=HVAC2
+out number=HVAC2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=6,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0700]
+in number=HLLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=HLLCB
+name=hllcb
+number=HLLCB
+out number=HLLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0701]
+in number=NVICB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=NVICB
+name=nvicb
+number=NVICB
+out number=NVICB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0702]
+in number=PPU3CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=PPU3CB
+name=ppu3cb
+number=PPU3CB
+out number=PPU3CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0703]
+in number=TLLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TLLCB
+name=tllcb
+number=TLLCB
+out number=TLLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0704]
+in number=WIFICB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=WIFICB
+name=wificb
+number=WIFICB
+out number=WIFICB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0705]
+in number=CECB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CECB
+name=cecb
+number=CECB
+out number=CECB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0706]
+in number=DRCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=DRCB
+name=drcb
+number=DRCB
+out number=DRCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0707]
+in number=SOCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=SOCB2
+name=socb2
+number=SOCB2
+out number=SOCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0708]
+in number=SAC1CCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=SAC1CCB
+name=sac1ccb
+number=SAC1CCB
+out number=SAC1CCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=7,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0800]
+in number=HLRCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=HLRCB
+name=hlrcb
+number=HLRCB
+out number=HLRCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0801]
+in number=OCCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=OCCB1
+name=occb1
+number=OCCB1
+out number=OCCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0802]
+in number=RIO1CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=RIO1CB
+name=rio1cb
+number=RIO1CB
+out number=RIO1CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0803]
+in number=TLRCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TLRCB
+name=tlrcb
+number=TLRCB
+out number=TLRCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0804]
+in number=WWCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=WWCB
+name=wwcb
+number=WWCB
+out number=WWCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0805]
+in number=CDUCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CDUCB
+name=cducb
+number=CDUCB
+out number=CDUCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0806]
+in number=DPLCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=DPLCB
+name=dplcb
+number=DPLCB
+out number=DPLCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0807]
+in number=SOCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=SOCB1
+name=socb1
+number=SOCB1
+out number=SOCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0808]
+in number=CMCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CMCB
+name=cmcb
+number=CMCB
+out number=CMCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=8,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0900]
+in number=ILCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=ILCB1
+name=ilcb1
+number=ILCB1
+out number=ILCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,0
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0901]
+in number=OCCB2
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=OCCB2
+name=occb2
+number=OCCB2
+out number=OCCB2 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,1
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0902]
+in number=RIO2CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=RIO2CB
+name=rio2cb
+number=RIO2CB
+out number=RIO2CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,2
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0903]
+in number=TRIVCB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=TRIVCB
+name=trivcb
+number=TRIVCB
+out number=TRIVCB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,3
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0904]
+in number=BECUCB1
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=BECUCB1
+name=becucb1
+number=BECUCB1
+out number=BECUCB1 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,4
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0905]
+in number=CCNVIO1CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=CCNVIO1CB
+name=ccnvio1cb
+number=CCNVIO1CB
+out number=CCNVIO1CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,5
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0906]
+in number=DMICB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=DMICB
+name=dmicb
+number=DMICB
+out number=DMICB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,6
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0907]
+in number=MSOCB5
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=MSOCB5
+name=msocb5
+number=MSOCB5
+out number=MSOCB5 Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,7
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUCB circuit_breaker_panel_dm Ctrl0908]
+in number=AC2CB
+in type=Hub Input
+initial input value=1
+initial output value=0
+label=AC2CB
+name=ac2cb
+number=AC2CB
+out number=AC2CB Trip
+out type=Hub Output
+parent panel=circuit_breaker_panel_dm
+pos=9,8
+size=125,25
+style=Trippable Circuit Breaker
+
+[BEMLEMUDesk]
+cell size=30,10
+margins=5,5
+spacing=1,1
+
+[BEMLEMUDesk driver_desk_left_op_2]
+label=Driver Desk Left OP 2
+margins=15,15
+name=driver_desk_left_op_2
+pos=0,0
+spacing=5,5
+style=Panel
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0000]
+label=Wiper Selection
+name=wiper_selector_label
+parent panel=driver_desk_left_op_2
+pos=0,0
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0001]
+initial value=0
+name=wiper_selector
+number=Wiper Selection Switch
+parent panel=driver_desk_left_op_2
+pos=0,1
+range=3,0
+size=40,75
+style=Slider
+tick marks=0;1;2;3
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0002]
+enumerations=[0,0]=All;[1,1]=Left;[2,2]=Middle;[3,3]=Right
+name=wiper_selector_text
+number=Wiper Selection Switch
+parent panel=driver_desk_left_op_2
+pos=0,2
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0003]
+colour=0,255,0
+initial value=0
+name=vcb_open_pb_lamp
+number=VCB Open PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=0,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0004]
+colour=0,255,0
+initial value=0
+name=panto_up_pb_lamp
+number=Panto Up PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=0,4
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0005]
+colour=0,255,0
+initial value=0
+name=limp_home_pb_lamp
+number=LIMP Home PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=0,5
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0006]
+colour=0,255,0
+initial value=0
+name=left_door_open_pb_operating_panel_2_lamp
+number=Left Door Open PB Operating Panel 2 Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=0,6
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0007]
+label=Panto Selector
+name=panto_selector_label
+parent panel=driver_desk_left_op_2
+pos=0,7
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0008]
+initial value=0
+name=panto_selector
+number=Panto Selector
+parent panel=driver_desk_left_op_2
+pos=0,8
+range=3,0
+size=40,75
+style=Slider
+tick marks=0;1;2;3
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0009]
+enumerations=[0,0]=All;[1,1]=Unit3;[2,2]=Unit2;[3,3]=Unit1
+name=panto_selector_text
+number=Panto Selector
+parent panel=driver_desk_left_op_2
+pos=0,9
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0010]
+colour=0,255,0
+initial value=0
+name=call_on_light_pb_lamp
+number=Call On Light PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=0,10
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0100]
+label=Wiper Control
+name=wiper_control_label
+parent panel=driver_desk_left_op_2
+pos=1,0
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0101]
+initial value=0
+name=wiper_control
+number=Wiper Control Switch
+parent panel=driver_desk_left_op_2
+pos=1,1
+range=2,-1
+size=40,75
+style=Slider
+tick marks=-1;0;1;2
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0102]
+enumerations=[-1,-1]=Park;[0,0]=Off;[1,1]=Low Speed;[2,2]=High Speed
+name=wiper_control_text
+number=Wiper Control Switch
+parent panel=driver_desk_left_op_2
+pos=1,2
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0103]
+initial value=0
+label=VCB Open PB
+name=vcb_open_pb
+number=VCB Open PB
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=1,3
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0104]
+initial value=0
+label=P ON/PantoUp PB
+name=panto_up_pb
+number=Panto Up PB
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=1,4
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0105]
+initial value=0
+label=LIMP Home PB
+name=limp_home_pb
+number=LIMP Home PB
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=1,5
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0106]
+initial value=0
+label=L Door Open PB
+name=left_door_open_pb_operating_panel_2
+number=Left Door Open PB Operating Panel 2
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=1,6
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0107]
+label=Deadman Bypass Sw
+name=deadman_bypass_switch_label
+parent panel=driver_desk_left_op_2
+pos=1,7
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0108]
+initial value=0
+name=deadman_bypass_switch
+number=Deadman Bypass Switch
+parent panel=driver_desk_left_op_2
+pos=1,8
+range=1,0
+size=40,75
+style=Slider
+tick marks=0;1
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0109]
+enumerations=[0,0]=Normal;[1,1]=Cutout
+name=deadman_bypass_switch_text
+number=Deadman Bypass Switch
+parent panel=driver_desk_left_op_2
+pos=1,9
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0110]
+initial value=0
+label=Call On Light PB
+name=call_on_light_pb
+number=Call On Light PB
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=1,10
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0200]
+label=Safety Cutout
+name=safety_cutout_ss_label
+parent panel=driver_desk_left_op_2
+pos=2,0
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0201]
+initial value=0
+name=safety_cutout_ss
+number=Safety Cutout SS
+parent panel=driver_desk_left_op_2
+pos=2,1
+range=1,0
+size=40,75
+style=Slider
+tick marks=0;1
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0202]
+enumerations=[0,0]=Normal;[1,1]=Cutout
+name=safety_cutout_ss_text
+number=Safety Cutout SS
+parent panel=driver_desk_left_op_2
+pos=2,2
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0203]
+colour=0,255,0
+initial value=0
+name=vcb_close_pb_lamp
+number=VCB Close PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=2,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0204]
+colour=0,255,0
+initial value=0
+name=panto_down_pb_lamp
+number=Panto Down PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=2,4
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0205]
+colour=0,255,0
+initial value=0
+name=power_off_pb_lamp
+number=Power Off PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=2,5
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0206]
+colour=0,255,0
+initial value=0
+name=left_door_close_pb_operating_panel_2_lamp
+number=Left Door Close PB Operating Panel 2 Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=2,6
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0207]
+label=Head Light Switch
+name=head_light_switch_label
+parent panel=driver_desk_left_op_2
+pos=2,7
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0208]
+initial value=0
+name=head_light_switch
+number=Head Light Switch
+parent panel=driver_desk_left_op_2
+pos=2,8
+range=2,0
+size=40,75
+style=Slider
+tick marks=0;1;2
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0209]
+enumerations=[0,0]=Off;[1,1]=Low;[2,2]=High
+name=head_light_switch_text
+number=Head Light Switch
+parent panel=driver_desk_left_op_2
+pos=2,9
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0210]
+colour=0,255,0
+initial value=0
+name=left_door_open_pb_1_operating_panel_2_lamp
+number=Left Door Open PB 1 Operating Panel 2 Lamp
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=2,10
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0300]
+label=Brake Loop Cutout
+name=brake_loop_cutout_ss_label
+parent panel=driver_desk_left_op_2
+pos=3,0
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0301]
+initial value=0
+name=brake_loop_cutout_ss
+number=Brake Loop Cutout SS
+parent panel=driver_desk_left_op_2
+pos=3,1
+range=1,0
+size=40,75
+style=Slider
+tick marks=0;1
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0302]
+enumerations=[0,0]=Normal;[1,1]=Cutout
+name=brake_loop_cutout_ss_text
+number=Brake Loop Cutout SS
+parent panel=driver_desk_left_op_2
+pos=3,2
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0303]
+initial value=0
+label=VCB Close PB
+name=vcb_close_pb
+number=VCB Close PB
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=3,3
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0304]
+initial value=0
+label=Panto Down PB
+name=panto_down_pb
+number=Panto Down PB
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=3,4
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0305]
+initial value=0
+label=Power Off PB
+name=power_off_pb
+number=Power Off PB
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=3,5
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0306]
+initial value=0
+label=L Door Close PB
+name=left_door_close_pb_operating_panel_2
+number=Left Door Close PB Operating Panel 2
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=3,6
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_2 Ctrl0310]
+initial value=0
+label=L Door Open PB1
+name=left_door_open_pb_1_operating_panel_2
+number=Left Door Open PB 1 Operating Panel 2
+off value=0
+on value=1
+parent panel=driver_desk_left_op_2
+pos=3,10
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_left_op_4]
+label=Driver Desk Left OP 4
+margins=15,15
+name=driver_desk_left_op_4
+pos=0,1
+spacing=5,5
+style=Panel
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0000]
+colour=0,255,0
+initial value=0
+name=aps_fault_indicator
+number=APS Fault Indicator
+parent panel=driver_desk_left_op_4
+pos=0,0
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0001]
+colour=0,255,0
+initial value=0
+name=emergency_brake_indicator
+number=Emergency Brake Indicator
+parent panel=driver_desk_left_op_4
+pos=0,1
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0002]
+colour=0,255,0
+initial value=0
+name=line_voltage_indicator
+number=Line Voltage Indicator
+parent panel=driver_desk_left_op_4
+pos=0,2
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0003]
+colour=0,255,0
+initial value=0
+name=parking_brake_indicator
+number=Parking Brake Indicator
+parent panel=driver_desk_left_op_4
+pos=0,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0004]
+colour=0,255,0
+initial value=0
+name=hvac_fault_indicator
+number=HVAC Fault Indicator
+parent panel=driver_desk_left_op_4
+pos=0,4
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0100]
+initial value=0
+label=APS Fault Indicator
+name=aps_fault_indicator_label
+parent panel=driver_desk_left_op_4
+pos=1,0
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0101]
+initial value=0
+label=Emergency Brake Indicator
+name=emergency_brake_indicator_label
+parent panel=driver_desk_left_op_4
+pos=1,1
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0102]
+initial value=0
+label=Line Voltage Indicator
+name=line_voltage_indicator_label
+parent panel=driver_desk_left_op_4
+pos=1,2
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0103]
+initial value=0
+label=Parking Brake Indicator
+name=parking_brake_indicator_label
+parent panel=driver_desk_left_op_4
+pos=1,3
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0104]
+initial value=0
+label=HVAC Fault Indicator
+name=hvac_fault_indicator_label
+parent panel=driver_desk_left_op_4
+pos=1,4
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0200]
+colour=0,255,0
+initial value=0
+name=power_fault_indicator
+number=Power Fault Indicator
+parent panel=driver_desk_left_op_4
+pos=2,0
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0201]
+colour=0,255,0
+initial value=0
+name=vcb_trip_indicator
+number=VCB Trip Indicator
+parent panel=driver_desk_left_op_4
+pos=2,1
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0202]
+colour=0,255,0
+initial value=0
+name=other_cab_occupied_indicator
+number=Other Cab Occupied Indicator
+parent panel=driver_desk_left_op_4
+pos=2,2
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0203]
+colour=0,255,0
+initial value=0
+name=all_door_close_indicator
+number=All Door Close Indicator
+parent panel=driver_desk_left_op_4
+pos=2,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0204]
+colour=0,255,0
+initial value=0
+name=saloon_door_close_indicator
+number=Saloon Door Close Indicator
+parent panel=driver_desk_left_op_4
+pos=2,4
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0300]
+initial value=0
+label=Power Fault Indicator
+name=power_fault_indicator_label
+parent panel=driver_desk_left_op_4
+pos=3,0
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0301]
+initial value=0
+label=VCB Trip Indicator
+name=vcb_trip_indicator_label
+parent panel=driver_desk_left_op_4
+pos=3,1
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0302]
+initial value=0
+label=Other Cab Occupied Indicator
+name=other_cab_occupied_indicator_label
+parent panel=driver_desk_left_op_4
+pos=3,2
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0303]
+initial value=0
+label=All Door Close Indicator
+name=all_door_close_indicator_label
+parent panel=driver_desk_left_op_4
+pos=3,3
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_left_op_4 Ctrl0304]
+initial value=0
+label=Saloon Door Close Indicator
+name=saloon_door_close_indicator_label
+parent panel=driver_desk_left_op_4
+pos=3,4
+size=140,25
+style=Static
+
+[BEMLEMUDesk driver_desk_right_op_5]
+label=Driver Desk Right OP 5
+margins=15,15
+name=driver_desk_right_op_5
+pos=4,0
+spacing=5,5
+style=Panel
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0000]
+colour=0,255,0
+initial value=0
+name=uncouple_pb_lamp
+number=Uncouple PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=0,0
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0001]
+colour=0,255,0
+initial value=0
+name=flood_light_pb_lamp
+number=Flood Light PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=0,1
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0002]
+colour=0,255,0
+initial value=0
+name=right_door_open_pb_operating_panel_5_lamp
+number=Right Door Open PB Operating Panel 5 Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=0,2
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0003]
+colour=0,255,0
+initial value=0
+name=lamp_test_pb_lamp
+number=Lamp Test PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=0,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0004]
+label=DP Loop O/P Sw
+name=door_proven_loop_output_switch_label
+parent panel=driver_desk_right_op_5
+pos=0,4
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0005]
+initial value=0
+name=door_proven_loop_output_switch
+number=Door Proven Loop Output Switch
+parent panel=driver_desk_right_op_5
+pos=0,5
+range=1,0
+size=40,75
+style=Slider
+tick marks=0;1
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0006]
+enumerations=[0,0]=Normal;[1,1]=Cutout
+name=door_proven_loop_output_switch_text
+number=Door Proven Loop Output Switch
+parent panel=driver_desk_right_op_5
+pos=0,6
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0007]
+initial value=0
+label=Emergency Stop
+name=emergency_stop_pb
+number=Emergency Stop PB
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=0,7
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0100]
+initial value=0
+label=Uncouple PB
+name=uncouple_pb
+number=Uncouple PB
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=1,0
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0101]
+initial value=0
+label=Flood Light PB
+name=flood_light_pb
+number=Flood Light PB
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=1,1
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0102]
+initial value=0
+label=R Door Open PB
+name=right_door_open_pb_operating_panel_5
+number=Right Door Open PB Operating Panel 5
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=1,2
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0103]
+initial value=0
+label=Lamp Test PB
+name=lamp_test_pb
+number=Lamp Test PB
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=1,3
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0104]
+label=HDC Bypass SS
+name=hold_door_close_bypass_ss_label
+parent panel=driver_desk_right_op_5
+pos=1,4
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0105]
+initial value=0
+name=hold_door_close_bypass_ss
+number=Hold Door Close Bypass SS
+parent panel=driver_desk_right_op_5
+pos=1,5
+range=2,0
+size=40,75
+style=Slider
+tick marks=0;1;2
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0106]
+enumerations=[0,0]=Normal;[1,1]=HDCB Left;[2,2]=HDCB Right
+name=hold_door_close_bypass_ss_text
+number=Hold Door Close Bypass SS
+parent panel=driver_desk_right_op_5
+pos=1,6
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0107]
+colour=0,255,0
+initial value=0
+name=right_door_open_pb_1_operating_panel_5_lamp
+number=Right Door Open PB 1 Operating Panel 5 Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=1,7
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0200]
+colour=0,255,0
+initial value=0
+name=flasher_light_pb_lamp
+number=Flasher Light PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=2,0
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0201]
+colour=0,255,0
+initial value=0
+name=battery_reset_pb_lamp
+number=Battery Reset PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=2,1
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0202]
+colour=0,255,0
+initial value=0
+name=right_door_close_pb_operating_panel_5_lamp
+number=Right Door Close PB Operating Panel 5 Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=2,2
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0203]
+colour=0,255,0
+initial value=0
+name=wfl_test_pb_lamp
+number=WFL Test PB Lamp
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=2,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0204]
+label=EB Bypass SS
+name=emergency_brake_pb_bypass_ss_label
+parent panel=driver_desk_right_op_5
+pos=2,4
+size=100,20
+style=Static
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0205]
+initial value=0
+name=emergency_brake_pb_bypass_ss
+number=Emergency Brake PB Bypass SS
+parent panel=driver_desk_right_op_5
+pos=2,5
+range=1,0
+size=40,75
+style=Slider
+tick marks=0;1
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0206]
+enumerations=[0,0]=Normal;[1,1]=Bypass
+name=emergency_brake_pb_bypass_ss_text
+number=Emergency Brake PB Bypass SS
+parent panel=driver_desk_right_op_5
+pos=2,6
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0207]
+initial value=0
+label=R Door Open PB1
+name=right_door_open_pb_1_operating_panel_5
+number=Right Door Open PB 1 Operating Panel 5
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=2,7
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0300]
+initial value=0
+label=Flasher Light PB
+name=flasher_light_pb
+number=Flasher Light PB
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=3,0
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0301]
+initial value=0
+label=Battery Reset PB
+name=battery_reset_pb
+number=Battery Reset PB
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=3,1
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0302]
+initial value=0
+label=R Door Close PB
+name=right_door_close_pb_operating_panel_5
+number=Right Door Close PB Operating Panel 5
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=3,2
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk driver_desk_right_op_5 Ctrl0303]
+initial value=0
+label=WFL Test PB
+name=wfl_test_pb
+number=WFL Test PB
+off value=0
+on value=1
+parent panel=driver_desk_right_op_5
+pos=3,3
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk gauges]
+label=Guages
+margins=15,15
+name=gauges
+pos=4,1
+spacing=5,5
+style=Panel
+
+[BEMLEMUDesk gauges Ctrl0000]
+format=%.1f
+name=mr_air_gauge_mr_pressure
+number=MR Air Gauge MR Pressure
+on value=1
+parent panel=gauges
+pos=0,0
+size=80,25
+style=Static Number
+type=Hub Output
+
+[BEMLEMUDesk gauges Ctrl0001]
+format=%.1f
+name=bc_sr_dual_pressure_gauge_bc_pressure
+number=BC SR Dual Pressure Gauge BC Pressure
+on value=1
+parent panel=gauges
+pos=0,1
+size=80,25
+style=Static Number
+type=Hub Output
+
+[BEMLEMUDesk gauges Ctrl0002]
+format=%.1f
+name=bc_sr_dual_pressure_gauge_sr_pressure
+number=BC SR Dual Pressure Gauge SR Pressure
+on value=1
+parent panel=gauges
+pos=0,2
+size=80,25
+style=Static Number
+type=Hub Output
+
+[BEMLEMUDesk gauges Ctrl0100]
+label=MR Air Pressure (Pascal)
+name=mr_air_gauge_mr_pressure_label
+on value=1
+parent panel=gauges
+pos=1,0
+size=120,25
+style=Static
+
+[BEMLEMUDesk gauges Ctrl0101]
+label=BC Air Pressure (Pascal)
+name=bc_sr_dual_pressure_gauge_bc_pressure_label
+on value=1
+parent panel=gauges
+pos=1,1
+size=120,25
+style=Static
+
+[BEMLEMUDesk gauges Ctrl0102]
+label=SR Air Pressure (Pascal)
+name=bc_sr_dual_pressure_gauge_sr_pressure_label
+on value=1
+parent panel=gauges
+pos=1,2
+size=120,25
+style=Static
+
+[BEMLEMUDesk main_operating_controls_1]
+label=Modes
+margins=15,20
+name=main_operating_controls_1
+pos=2,0
+spacing=5,10
+style=Panel
+
+[BEMLEMUDesk main_operating_controls_1 Ctrl0000]
+initial value=0
+label=ATO
+name=mode_ato
+number=Mode Selector
+off value=5
+on value=5
+parent panel=main_operating_controls_1
+pos=0,0
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_1 Ctrl0001]
+initial value=0
+label=ATP
+name=mode_atp
+number=Mode Selector
+off value=4
+on value=4
+parent panel=main_operating_controls_1
+pos=0,1
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_1 Ctrl0002]
+initial value=0
+label=RMF
+name=mode_rmf
+number=Mode Selector
+off value=3
+on value=3
+parent panel=main_operating_controls_1
+pos=0,2
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_1 Ctrl0003]
+initial value=0
+label=Standby
+name=mode_standby
+number=Mode Selector
+off value=2
+on value=2
+parent panel=main_operating_controls_1
+pos=0,3
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_1 Ctrl0004]
+initial value=0
+label=RMR
+name=mode_rmr
+number=Mode Selector
+off value=1
+on value=1
+parent panel=main_operating_controls_1
+pos=0,4
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_1 Ctrl0005]
+initial value=0
+label=OFF/UTO
+name=mode_off
+number=Mode Selector
+off value=0
+on value=0
+parent panel=main_operating_controls_1
+pos=0,5
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_2]
+label=Master Control
+margins=15,15
+name=main_operating_controls_2
+pos=3,0
+spacing=5,5
+style=Panel
+
+[BEMLEMUDesk main_operating_controls_2 Ctrl0000]
+label=Mode Selector
+name=mode_selector_label
+parent panel=main_operating_controls_2
+pos=0,0
+size=110,20
+style=Static
+
+[BEMLEMUDesk main_operating_controls_2 Ctrl0001]
+initial value=0
+name=mode_selector
+number=Mode Selector
+parent panel=main_operating_controls_2
+pos=0,1
+range=5,0
+size=40,99
+style=Slider
+tick marks=0;1;2;3;4;5
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_2 Ctrl0002]
+enumerations=[0,0]=OFF/UTO;[1,1]=Reverse;[2,2]=Standby;[3,3]=Forward;[4,4]=ATP;[5,5]=ATO
+name=mode_selector_text
+number=Mode Selector
+parent panel=main_operating_controls_2
+pos=0,2
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_2 Ctrl0003]
+initial value=0
+label=Control Key
+name=control_key
+number=Control Key
+parent panel=main_operating_controls_2
+pos=0,3
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_3]
+label=Traction
+margins=15,15
+name=main_operating_controls_3
+pos=1,1
+spacing=5,8
+style=Panel
+
+[BEMLEMUDesk main_operating_controls_3 Ctrl0001]
+initial value=0
+label=Max
+name=tr_100
+number=Master Controller Handle
+off value=100
+on value=100
+parent panel=main_operating_controls_3
+pos=0,1
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_3 Ctrl0002]
+initial value=0
+label=0.75
+name=tr_75
+number=Master Controller Handle
+off value=75
+on value=75
+parent panel=main_operating_controls_3
+pos=0,2
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_3 Ctrl0003]
+initial value=0
+label=0.5
+name=tr_50
+number=Master Controller Handle
+off value=50
+on value=50
+parent panel=main_operating_controls_3
+pos=0,3
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_3 Ctrl0004]
+initial value=0
+label=0.25
+name=tr_25
+number=Master Controller Handle
+off value=25
+on value=25
+parent panel=main_operating_controls_3
+pos=0,4
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_3 Ctrl0005]
+initial value=0
+label=Min
+name=tr_min
+number=Master Controller Handle
+off value=1
+on value=1
+parent panel=main_operating_controls_3
+pos=0,5
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_3 Ctrl0006]
+initial value=0
+label=Coast
+name=tr_coast
+number=Master Controller Handle
+off value=0
+on value=0
+parent panel=main_operating_controls_3
+pos=0,6
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_4]
+label=Control
+margins=15,15
+name=main_operating_controls_4
+pos=2,1
+spacing=5,1
+style=Panel
+
+[BEMLEMUDesk main_operating_controls_4 Ctrl0000]
+label=TBC
+name=traction_brake_label
+parent panel=main_operating_controls_4
+pos=0,0
+size=110,20
+style=Static
+
+[BEMLEMUDesk main_operating_controls_4 Ctrl0001]
+initial value=0
+name=traction_brake_controller
+number=Master Controller Handle
+parent panel=main_operating_controls_4
+pos=0,1
+range=100,-101
+size=40,99
+style=Slider
+tick marks=-101;-100;-75;-50;-25;-1;0;1;25;50;75;100
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_4 Ctrl0002]
+enumerations=[-101,-101]=EB;[-100,-100]=MaxSB;[-75,-75]=SB75;[-50,-50]=SB50;[-25,-25]=SB25;[-1,-1]=MinSB;[0,0]=Coast;[1,1]=MinTR;[25,25]=TR25;[50,50]=TR50;[75,75]=TR75;[100,100]=MaxTR
+name=ind_brake_text
+number=Master Controller Handle
+parent panel=main_operating_controls_4
+pos=0,2
+size=100,20
+style=Enumerated Text
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_4 Ctrl0003]
+initial value=0
+label=Deadman
+name=deadman_safety_device
+number=Deadman Safety Device
+parent panel=main_operating_controls_4
+pos=0,3
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_5]
+label=Braking
+margins=15,15
+name=main_operating_controls_5
+pos=3,1
+spacing=5,8
+style=Panel
+
+[BEMLEMUDesk main_operating_controls_5 Ctrl0001]
+initial value=0
+label=Min
+name=sb_min
+number=Master Controller Handle
+off value=-1
+on value=-1
+parent panel=main_operating_controls_5
+pos=0,1
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_5 Ctrl0002]
+initial value=0
+label=0.25
+name=sb_25
+number=Master Controller Handle
+off value=-25
+on value=-25
+parent panel=main_operating_controls_5
+pos=0,2
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_5 Ctrl0003]
+initial value=0
+label=0.5
+name=sb_50
+number=Master Controller Handle
+off value=-50
+on value=-50
+parent panel=main_operating_controls_5
+pos=0,3
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_5 Ctrl0004]
+initial value=0
+label=0.75
+name=sb_75
+number=Master Controller Handle
+off value=-75
+on value=-75
+parent panel=main_operating_controls_5
+pos=0,4
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_5 Ctrl0005]
+initial value=0
+label=Max
+name=sb_100
+number=Master Controller Handle
+off value=-100
+on value=-100
+parent panel=main_operating_controls_5
+pos=0,5
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk main_operating_controls_5 Ctrl0006]
+initial value=0
+label=Emergency
+name=eb
+number=Master Controller Handle
+off value=-101
+on value=-101
+parent panel=main_operating_controls_5
+pos=0,6
+size=85,20
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_a]
+label=Operating Panel 1 a
+margins=15,15
+name=operating_panel_1_a
+pos=1,2
+spacing=5,10
+style=Panel
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0000]
+colour=0,255,0
+initial value=0
+name=horn_pb_lamp
+number=Horn PB Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=0,0
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0001]
+colour=0,255,0
+initial value=0
+name=left_door_close_pb_operating_panel_1_lamp
+number=Left Door Close PB Operating Panel 1 Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=0,1
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0002]
+colour=0,255,0
+initial value=0
+name=left_door_open_pb_operating_panel_1_lamp
+number=Left Door Open PB Operating Panel 1 Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=0,2
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0003]
+colour=0,255,0
+initial value=0
+name=cab_main_light
+number=Cab Main Light
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=0,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0004]
+colour=0,255,0
+initial value=0
+name=parking_brake_off_switch_lamp
+number=Parking Brake Off Switch Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=0,4
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0100]
+initial value=0
+label=Horn PB
+name=horn_pb
+number=Horn PB
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=1,0
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0101]
+initial value=0
+label=L Door Close PB
+name=left_door_close_pb_operating_panel_1
+number=Left Door Close PB Operating Panel 1
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=1,1
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0102]
+initial value=0
+label=L Door Open PB
+name=left_door_open_pb_operating_panel_1
+number=Left Door Open PB Operating Panel 1
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=1,2
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0103]
+initial value=0
+label=Cab Main Light
+name=cab_main_light_pb
+number=Cab Main Light PB
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=1,3
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_a Ctrl0104]
+initial value=0
+label=PB Off Sw
+name=parking_brake_off_switch
+number=Parking Brake Off Switch
+off value=0
+on value=1
+parent panel=operating_panel_1_a
+pos=1,4
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_b]
+label=Operating Panel 1 b
+margins=15,15
+name=operating_panel_1_b
+pos=2,2
+spacing=5,10
+style=Panel
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0000]
+colour=0,255,0
+initial value=0
+name=cab_console_light
+number=Cab Console Light
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=0,0
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0001]
+colour=0,255,0
+initial value=0
+name=right_door_close_pb_operating_panel_1_lamp
+number=Right Door Close PB Operating Panel 1 Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=0,1
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0002]
+colour=0,255,0
+initial value=0
+name=right_door_open_pb_operating_panel_1_lamp
+number=Right Door Open PB Operating Panel 1 Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=0,2
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0003]
+colour=0,255,0
+initial value=0
+name=parking_brake_on_switch_lamp
+number=Parking Brake On Switch Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=0,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0004]
+colour=0,255,0
+initial value=0
+name=door_close_announcement_pb_lamp
+number=Door Close Announcement PB Lamp
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=0,4
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0100]
+initial value=0
+label=Cab Console Light
+name=cab_console_light_pb
+number=Cab Console Light PB
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=1,0
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0101]
+initial value=0
+label=R Door Close PB
+name=right_door_close_pb_operating_panel_1
+number=Right Door Close PB Operating Panel 1
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=1,1
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0102]
+initial value=0
+label=R Door Open PB
+name=right_door_open_pb_operating_panel_1
+number=Right Door Open PB Operating Panel 1
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=1,2
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0103]
+initial value=0
+label=PB On Sw
+name=parking_brake_on_switch
+number=Parking Brake On Switch
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=1,3
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_b Ctrl0104]
+initial value=0
+label=Door Close Ann.
+name=door_close_announcement_pb
+number=Door Close Announcement PB
+off value=0
+on value=1
+parent panel=operating_panel_1_b
+pos=1,4
+size=100,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_c]
+label=Operating Panel 1 c
+margins=15,15
+name=operating_panel_1_c
+pos=3,2
+spacing=5,10
+style=Panel
+
+[BEMLEMUDesk operating_panel_1_c Ctrl0000]
+initial value=0
+label=Emergency Brake
+name=emergency_brake_pb
+number=Emergency Brake PB
+off value=0
+on value=1
+parent panel=operating_panel_1_c
+pos=0,0
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_1_c Ctrl0001]
+initial value=0
+label=DP Loop Cutout
+name=door_proven_loop_cutout_pb
+number=Door Proven Loop Cutout PB
+off value=0
+on value=1
+parent panel=operating_panel_1_c
+pos=0,1
+size=100,25
+style=Latching Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_3]
+label=Operating Panel 3
+margins=15,25
+name=operating_panel_3
+pos=1,0
+spacing=5,20
+style=Panel
+
+[BEMLEMUDesk operating_panel_3 Ctrl0000]
+colour=0,255,0
+initial value=0
+name=ros_pb_lamp
+number=ROS PB Lamp
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=0,0
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_3 Ctrl0001]
+colour=0,255,0
+initial value=0
+name=uto_pb_lamp
+number=UTO PB Lamp
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=0,1
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_3 Ctrl0002]
+colour=0,255,0
+initial value=0
+name=ato_start_lamp
+number=ATO Start PB Lamp
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=0,2
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_3 Ctrl0003]
+colour=0,255,0
+initial value=0
+name=emergency_brake_reset_pb_lamp
+number=Emergency Brake Reset PB Lamp
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=0,3
+size=25,25
+style=Light
+type=Hub Output
+
+[BEMLEMUDesk operating_panel_3 Ctrl0100]
+initial value=0
+label=ROS PB
+name=ros_pb
+number=ROS PB
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=1,0
+size=85,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_3 Ctrl0101]
+initial value=0
+label=UTO PB
+name=uto_pb
+number=UTO PB
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=1,1
+size=85,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_3 Ctrl0102]
+initial value=0
+label=ATO Start PB
+name=ato_start
+number=ATO Start PB
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=1,2
+size=85,25
+style=Held Button
+type=Hub Input
+
+[BEMLEMUDesk operating_panel_3 Ctrl0103]
+initial value=0
+label=EB Reset PB
+name=emergency_brake_reset_pb
+number=Emergency Brake Reset PB
+off value=0
+on value=1
+parent panel=operating_panel_3
+pos=1,3
+size=85,25
+style=Held Button
+type=Hub Input
+
+[DM]
+tab01=BEMLEMUDesk
+tab02=BEMLEMUCB
+
+[Soft PLC]
+Window Size X=1380
+Window Size Y=710
+
+[Tab Labels]
+tab01=Driver Desk
+tab02=CB Panel

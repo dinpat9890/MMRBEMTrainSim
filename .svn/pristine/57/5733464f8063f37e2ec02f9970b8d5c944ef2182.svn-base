@@ -1,0 +1,28 @@
+# Train Number for TCMS Application
+dmi.trainId=8
+dmi.serviceNumber=1234
+dmi.softwareVersion= 123
+
+# Time (in seconds) for which new message indication has to be displayed
+dmi.newMessageIndicationDuration=15
+
+# Time (in seconds) for which text message Ack button is disabled
+dmi.ackDisableDuration=1
+
+# Progress bar counter states
+dmi.progressBarCounterStates=10
+
+# TCMS user id
+tcms.userId=00001
+
+# Start up Splash screen display time in millisecond
+tcms.powerUpSplashScreenTime=5000
+
+# Start up Blue screen display time in millisecond
+tcms.powerUpDataLoadingScreenTime=10000
+
+# PIS Station List xml path
+tcms.pisFolderPath=..\\Data\\PIS_Station_list.xml
+
+# Test Screens Data xml path
+tcms.testScreenDataPath=..\\Data\\Test_Screen_Data.xml

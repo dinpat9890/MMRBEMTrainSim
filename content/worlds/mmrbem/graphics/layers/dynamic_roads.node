@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<properties>
+		<library>extrude.prop</library>
+	</properties>
+	<node type="NodeDummy" id="229896406" folded="1" name="16m_road" property="extrude">
+		<property/>
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="27054547" enabled="0" name="template">
+			<reference>../worlds/library_objects/dynamic_roads/16m_road.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1523647577" folded="1" name="spline">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="NodeDummy" id="129980259" folded="1" name="knot0">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.11336541176 0.256832838058 -0.833339214325 1.0</transform>
+			</node>
+		</node>
+	</node>
+	<node type="NodeDummy" id="885972786" folded="1" name="16m_road_with_wall" property="extrude">
+		<property/>
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="2010781879" enabled="0" name="template">
+			<reference>../worlds/library_objects/dynamic_roads/16m_road_with_wall.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1286087885" folded="1" name="spline">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="NodeDummy" id="1828274580" name="knot0">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.15015888214 0.536499857903 -0.623940944672 1.0</transform>
+			</node>
+		</node>
+	</node>
+	<node type="NodeDummy" id="356695196" folded="1" name="7m_road.node" property="extrude">
+		<property/>
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="1576041658" enabled="0" name="template">
+			<reference>../worlds/library_objects/dynamic_roads/7m_road.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="314089925" folded="1" name="spline">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="NodeDummy" id="921311261" name="knot0">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.25600194931 0.238065898418 -0.604800403118 1.0</transform>
+			</node>
+		</node>
+	</node>
+	<node type="NodeDummy" id="1107543735" folded="1" name="7m_road_plain" property="extrude">
+		<property/>
+		<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeReference" id="1165870101" enabled="0" name="template">
+			<reference>../worlds/library_objects/dynamic_roads/7m_road_plain.node</reference>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="895476556" folded="1" name="spline">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="NodeDummy" id="1248261381" name="knot0">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.08014845848 0.552353024483 -0.72676384449 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

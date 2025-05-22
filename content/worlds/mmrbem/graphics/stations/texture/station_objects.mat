@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="station_objects" guid="f7739603de5fd29cda84f78b4ee874a910b55bb4" base_material="mesh_base">
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/station_objects.dds</texture>
+	<texture name="shading">../worlds/mmrbem/graphics/stations/texture/station_objects_met.dds</texture>
+	<parameter name="albedo_color">1 1 1 1</parameter>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">0.75</parameter>
+	<parameter name="specular">0</parameter>
+</material>

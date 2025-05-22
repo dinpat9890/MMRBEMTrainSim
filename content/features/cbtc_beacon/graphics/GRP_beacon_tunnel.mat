@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="GRP_beacon_tunnel" guid="3674e42eab9e75450100545a0858960df3029f04" parent="0b49b6a06b1d6a72495fa063aba633be061ce309" base_material="mesh_base">
+	<state name="ao_map">1</state>
+	<texture name="ambient_occlusion">cbtc_beacon/graphics/stations/textures/tunnel_ao.dds</texture>
+</material>

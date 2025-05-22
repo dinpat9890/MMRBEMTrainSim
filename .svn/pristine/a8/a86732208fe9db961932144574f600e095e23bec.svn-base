@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="470107475" name="building_apartment_tall_01">
+		<mesh_name>../worlds/library_objects/gen_building/building_apartment_tall_01.mesh</mesh_name>
+		<surface name="building_apartment_tall_01_apartment_01" max_visible_distance="8000" max_fade_distance="10" material="1e8a0c5f515a3d67aa0802486ccd92bd0ff2b11e" property="surface_base"/>
+		<surface name="building_apartment_tall_01_apartment_railing" max_visible_distance="8000" max_fade_distance="10" material="70be85a0e67740d096f5c3a64d8e7035c76926fc" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

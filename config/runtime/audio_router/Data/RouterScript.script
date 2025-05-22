@@ -1,0 +1,209 @@
+(! Intercom Audio Routing Script )
+(include "ProjectObjectConstants.script")
+(define instructor-hub-id (hub-from-name "Driver's Instructor" "Fixed Set Driver's Cab"))
+(define trainee-hub-id    (hub-from-name "Driver's Cab"        "Fixed Set Driver's Cab"))
+(define observer-hub-id   (hub-from-name "Observer"            "Fixed Set Driver's Cab"))
+
+(define instructor-port $terminal_name
+   (port (terminal $terminal_name) (instructor-hub-id))
+)
+ 
+(define trainee-port $terminal_name
+  (port (terminal $terminal_name) (trainee-hub-id))
+)
+
+(define observer-port $terminal_name
+  (port (terminal $terminal_name) (observer-hub-id))
+)
+
+(enable-if-in-session
+  (enable-if-not-preview
+    (enable-if-not-replay
+            
+      (define trainee-train-object
+        (child-object-id (object-id (class-world)) (class-train))
+      )
+      
+      (nest
+        (
+          (symbol $NOCALL 0)
+          (symbol $RINGING 1)
+          (symbol $CONNECTED 2)
+          
+          (symbol $RADIO_CALL_STATE "Radio Intercom state")
+          (symbol $PAPIS_CALL_STATE "Intercom")               
+          (symbol $PUBLIC_ADDRESS_STATE "Public Address")		  
+        )
+      
+      (! PAPIS_CALL_STATE connected)
+        (define papis-connected
+          (symbol $intercom_outputs (child-object-id (child-object-id (trainee-train-object) (class-intercom)) (class-intercom-outputs)) 
+            (symbol $papis_call_state (get-number (number-id $intercom_outputs $PAPIS_CALL_STATE) $NOCALL)
+                (== $papis_call_state $CONNECTED)  
+               
+                 (! log "PAPIS_CALL_STATE in =" $papis_call_state)               
+            )
+          )
+        )
+        (log "PAPIS_CALL_STATE = " (papis-connected))
+      
+      (! RADIO_CALL_STATE connected)
+        (define radio-connected
+          (symbol $radio_intercom_outputs (child-object-id (child-object-id (trainee-train-object) (class-radio-intercom)) (class-radio-intercom-outputs)) 
+            (symbol $radio_call_state (get-number (number-id $radio_intercom_outputs $RADIO_CALL_STATE) $NOCALL)
+                (== $radio_call_state $CONNECTED)  
+               
+                 (! log "RADIO_CALL_STATE in =" $radio_call_state)               
+            )
+          )
+        )
+        (log "RADIO_CALL_STATE = " (radio-connected))
+
+		(! PUBLIC_ADDRESS_STATE connected)
+        (define pa-connected
+          (symbol $intercom_outputs (child-object-id (child-object-id (trainee-train-object) (class-intercom)) (class-intercom-outputs)) 
+            (symbol $public_address_state (get-number (number-id $intercom_outputs $PUBLIC_ADDRESS_STATE) $NOCALL)
+                (== $public_address_state $RINGING)  
+               
+                 (! log "PUBLIC_ADDRESS_STATE in =" $public_address_state)               
+            )
+          )
+        )
+        (log "PUBLIC_ADDRESS_STATE = " (pa-connected))
+      
+      
+        (! PAPIS call )
+        (! PAPIS_CALL_STATE = Connected ==> PAPIS Mic will be functional. )
+        (! Route PAPIS Mic to Instructor Speaker)
+        (connection
+          (trainee-port    "PAPIS Mic")
+          (instructor-port "Instructor Speaker")
+          (if(== papis-connected 1.0)1.0 0.0)
+        )
+        (! PAPIS_CALL_STATE = Connected ==> Recording Mic will be functional. )
+        (connection
+          (trainee-port    "PAPIS Mic")
+          (instructor-port "Instructor Recording")
+          (if(== papis-connected 1.0)1.0 0.0)
+        )
+        
+        (! RADIO call )
+        (! RADIO_CALL_STATE = Connected ==> RADIO Mic will be functional. )
+        (! Route RADIO Mic to Instructor Speaker)
+        (connection
+          (trainee-port    "Train Radio Mic")
+          (instructor-port "Instructor Speaker")
+          (if(== radio-connected 1.0)1.0 0.0)
+        )
+        (! RADIO_CALL_STATE = Connected ==> Recording will be functional. )  
+        (connection
+          (trainee-port    "Train Radio Mic")
+          (instructor-port "Instructor Recording")
+          (if(== radio-connected 1.0)1.0 0.0)
+        )
+        
+		(! PA call )
+        (! PUBLIC_ADDRESS_STATE = Connected ==> PAPIS Mic will be functional. )
+        (! Route PAPIS Mic to Instructor Speaker)
+        (connection
+          (trainee-port    "PAPIS Mic")
+          (instructor-port "Instructor Speaker")
+          (if(== pa-connected 1.0)1.0 0.0)
+        )
+        (! PUBLIC_ADDRESS_STATE = Connected ==> Recording will be functional. )
+        (connection
+          (trainee-port    "PAPIS Mic")
+          (instructor-port "Instructor Recording")
+          (if(== papis-connected 1.0)1.0 0.0)
+        )
+      
+      )
+      
+        (! DEFAULT ROUTES BELOW)
+        (! Setting Default Route from Instructor Mic)
+        (connection
+          (instructor-port "Instructor Mic")
+          (trainee-port    "Cab Speaker")
+           1.0
+        )               
+           
+        (connection
+          (instructor-port "Instructor Mic")
+          (observer-port   "Observer Speaker")
+           1.0
+        )
+        
+        (connection
+          (instructor-port "Instructor Mic")
+          (instructor-port "Instructor Recording")
+           1.0
+        )
+        
+        (! Setting Default Route from Papis Fist Mic)
+        (connection
+          (trainee-port  "PAPIS Mic")
+          (observer-port "Observer Speaker")
+           1.0
+        )               
+           
+        (connection
+          (trainee-port    "PAPIS Mic")
+          (instructor-port "Instructor Recording")
+           1.0
+        )
+         
+        (! Setting Default Route from Radio Fist Mic)
+        (connection
+          (trainee-port  "Train Radio Mic")
+          (observer-port "Observer Speaker")
+           1.0
+        )               
+           
+        (connection
+          (trainee-port    "Train Radio Mic")
+          (instructor-port "Instructor Recording")
+           1.0
+        )
+        
+        (! Setting Default Route from Cab Amb Mic)
+        (connection
+          (trainee-port    "Cab Amb Mic")
+          (instructor-port "Instructor Speaker")
+           1.0
+        ) 
+        
+        (connection
+          (trainee-port  "Cab Amb Mic")
+          (observer-port "Observer Speaker")
+           1.0
+        )               
+           
+        (connection
+          (trainee-port    "Cab Amb Mic")
+          (instructor-port "Instructor Recording")
+           1.0
+        )
+        
+        (! Setting Default Route from Instructor Replay)
+        (connection
+          (instructor-port "Instructor Replay")
+          (instructor-port "Instructor Speaker")
+           1.0
+        ) 
+        
+        (connection
+          (instructor-port "Instructor Replay")
+          (trainee-port    "Cab Speaker")
+           1.0
+        ) 
+        
+        (connection
+          (instructor-port "Instructor Replay")
+          (observer-port   "Observer Speaker")
+           1.0
+        )
+        
+      ) (! end nest)
+    ) (! end enable-if-not-replay)
+  ) (! end enable-if-not-preview)
+) (! end enable-if-in-session)

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="beijing_metro_trackbed" guid="dddad6e0d61814ebfe36280cdc1bb0fb2c7a6640" base_material="mesh_base">
+	<options cast_shadow="0" cast_world_shadow="0"/>
+	<state name="ao_map">1</state>
+	<state name="specular_map">1</state>
+	<state name="material_ssr">0</state>
+	<texture name="albedo">line_16/graphics/track/texture/beijing_metro_trackbed_albedo.dds</texture>
+	<texture name="shading">line_16/graphics/track/texture/beijing_metro_trackbed_met.dds</texture>
+	<texture name="normal">line_16/graphics/track/texture/beijing_metro_trackbed_n.dds</texture>
+	<texture name="ambient_occlusion">line_16/graphics/tunnel/textures/tunnel_cylindrical_L.dds</texture>
+	<parameter name="albedo_color">0.501960814 0.501960814 0.501960814 1</parameter>
+	<parameter name="metalness">0.59799999</parameter>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0.477999985</parameter>
+</material>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="metal_mesh_01" guid="fba5fbe54908f892f5ffb6b25c6222793c6d4063" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1" two_sided="1"/>
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/metal_mesh_01.dds</texture>
+</material>

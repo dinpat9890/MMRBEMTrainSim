@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <code_types>
+    <code_type code_type_id="ORG" description="Origin Types" />
+    <code_type code_type_id="RAS" description="Radio Systems" />    
+  </code_types>
+  <origin_types>
+    <origin_type code_id="1" name="GLOB" description="Global" />
+    <origin_type code_id="2" name="INTE" description="Internal" />
+  </origin_types>   
+</config>

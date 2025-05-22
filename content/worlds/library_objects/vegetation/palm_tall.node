@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1255931551" name="palm_tall">
+		<mesh_name>../worlds/shared/graphics/vegetation/palm_tall.mesh</mesh_name>
+		<surface name="branch_group_0_lod_004_DatePalmBark" material="0d4189afdddb597ccd5b5ea553a50c60c6fd0930" property="surface_base"/>
+		<surface name="frond_group_0_lod_004_PalmAtllas" material="cec2790e763902b6c6d8a39d4cf7589f30a9cb89" property="surface_base"/>
+		<surface name="frond_group_1_lod_004_PalmAtllas" material="cec2790e763902b6c6d8a39d4cf7589f30a9cb89" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

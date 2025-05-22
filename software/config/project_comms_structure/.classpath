@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="source/java"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/java_interface/jar/comms.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/core/config/core_comms_structure/jar/CoreCommsStructure.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/runtime_data/jar/runtimedata.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

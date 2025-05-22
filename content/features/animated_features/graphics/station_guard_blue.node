@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="1075860048" name="station_guard_blue">
+		<mesh_name>../features/animated_features/graphics/station_guard_blue.mesh</mesh_name>
+		<surface name="flag_green" enabled="0" max_visible_distance="1000" material="d22892134f262ec193c24484705a5cd6cb76ee66" property="surface_base"/>
+		<surface name="flag_red" enabled="0" max_visible_distance="1000" material="384a661dfc5896e1169858afdc580350ead9cc20" property="surface_base"/>
+		<surface name="lantern_green" enabled="0" max_visible_distance="1000" material="76ea9ca1d3e6e36330f5b9f1dfe0e4680a561e79" property="surface_base"/>
+		<surface name="lantern_red" enabled="0" max_visible_distance="1000" material="7bb605488a32eb28393c38501ee0ed01ba996e88" property="surface_base"/>
+		<surface name="station_guard_blue_body_LOD_0" max_visible_distance="1000" material="7492ff0f229e7ac7dc33e74b9f6e92ecfcf7c73e" property="surface_base"/>
+		<surface name="station_guard_blue_head_LOD_0" max_visible_distance="1000" material="15abc143017a2691fa58518d12610c273c4e522f" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

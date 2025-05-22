@@ -1,0 +1,90 @@
+# CoreTrainSim Applications Build Properties File
+
+sw.dir=../../software
+config.dir=../../config
+
+# Path (under a module's basedir) for module localisation template files to be built into
+l10n.dir=localisation
+
+# Dependencies
+
+dependencies.dir=../../dependencies
+
+cots.dir=${dependencies.dir}/cots/oksygen/cots
+
+core.sw.dir=${dependencies.dir}/software/oksygen/common
+core.libraries.dir=${core.sw.dir}/libraries
+train.sw.dir=${dependencies.dir}/software/oksygen/sim/train
+train.tools.dir=${train.sw.dir}/tools
+train.libraries.dir=${train.sw.dir}/libraries
+train.modules.dir=${train.sw.dir}/modules
+
+# Deployment
+
+deploy.dir=${basedir}/../../Deploy
+
+
+# Localisation directories
+
+build.mo.dir=${deploy.dir}/localisation
+l10n.config.dir=${config.dir}/localisation/translation
+l10n.config.content.dir=${l10n.config.dir}/content
+l10n.config.java.dir=${l10n.config.dir}/java
+
+#
+# Sydac Tools
+#
+
+tools.subdir=tools
+
+i18n.dir=localisation
+
+#
+# COTS Tools
+#
+
+# Note that we need to be careful not to collide with the similar properties defined in create.pot.xml (supplied as a value add to gettext)
+# GNU gettext utilities
+gnugettext.bin.dir=${cots.dir}/gettext/bin
+# xgettext extracts externalised strings from source
+#gnugettext.xgettext=${gnugettext.bin.dir}/xgettext
+# msgconv converts the encoding of files
+#gnugettext.msgconv=${gnugettext.bin.dir}/msgconv
+# msginit creates a new PO file for a particular target language based on a POT file
+gnugettext.msginit=${gnugettext.bin.dir}/msginit
+# msgmerge merges an existing PO file with an updated POT file
+gnugettext.msgmerge=${gnugettext.bin.dir}/msgmerge
+# msgfmt generates binary message catalog from textual translation description.
+gnugettext.msgfmt=${gnugettext.bin.dir}/msgfmt
+
+#
+# localisation
+#
+
+common.basedir=../software/common
+common.jar=${common.basedir}/jar
+common.lib=${common.basedir}/lib
+common.inc=${common.basedir}/include
+common.pot=${common.basedir}/pot
+common.pot.java=${common.pot}/java
+
+project.basedir=.
+project.pot=${project.basedir}/template
+project.pot.content=${project.pot}/content
+project.pot.java=${project.pot}/java
+project.pot.rc=${project.pot}/RC
+
+# Space separated locales in the following format:
+#  REQURED:
+#    - Two lowercase letter language code eg "en" for English "de" for German
+#      See http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes for valid codes
+#  OPTIONAL:
+#    - An underscore followed by the two uppercase letter country code 
+#      eg "AU" for Australia "CA" for Canada
+#      See http://en.wikipedia.org/wiki/ISO_3166-1 for valid codes
+supported.locales=en_AU hi_IN
+
+# Localised resource DLL building
+resourcedll.dir=../software/ResourceDLLBuilder
+resourcedll.out.dir={resourcedll.dir}/Release
+

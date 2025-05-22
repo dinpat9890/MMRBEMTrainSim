@@ -1,0 +1,18 @@
+<ivy-module version="2.4" xmlns:e="http://ant.apache.org/ivy/extra" >
+  <info organisation="sydac.project" module="TrainModel" e:version.major="0" e:version.minor="0" />
+  <configurations>
+    <conf name="release"  description="Produces artifacts for releasing in a deploy package"      visibility="public" />
+    <conf name="software" description="Produces artifacts used for developing dependent software" visibility="public" />
+    <conf name="content"  description="Produces artifacts used for developing dependent content"  visibility="public" />
+    <conf name="compile" description="Provides artifacts to compile against"                    visibility="public" />
+    <conf name="rn"      description="Produces release notes source artifacts"                  visibility="public" />
+  </configurations>
+  <publications>
+  </publications>
+  <dependencies defaultconf="compile;rn" >
+    <!-- Model dependencies -->
+    <dependency org="sydac.sim.train.models" name="train_framework" rev="3.0.0" conf="compile"/>
+    <dependency org="sydac.sim.train.models" name="train_dynamics"  rev="7.0.0" conf="compile"/>
+    <dependency org="sydac.sim.train.models" name="train_brakes"  	rev="2.0.0" conf="compile"/>
+  </dependencies>
+</ivy-module>

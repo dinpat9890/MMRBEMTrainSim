@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<world_types xmlns="http://www.sydac.com.au/WorldTypes/1.0/">
+  <object_type_groups>
+    <object_type_group name="Buffer" />
+    <object_type_group name="CBTC" />
+    <object_type_group name="Camera" />
+    <object_type_group name="Handsignaller" />
+    <object_type_group name="Location" />
+    <object_type_group name="Obstruction" />
+    <object_type_group name="Platform" />
+    <object_type_group name="PlatformDoors" />
+    <object_type_group name="PlatformPassenger" />
+    <object_type_group name="Point" />
+    <object_type_group name="Route" />
+    <object_type_group name="Sign" />
+    <object_type_group name="Signal" />
+    <object_type_group name="TrackCircuit" />
+    <object_type_group name="TrackProperty" />
+    <object_type_group name="TrainProtection" />
+    <object_type_group name="UserFeatures" />
+  </object_type_groups>
+
+  <object_types>
+    <object_type name="2A_Board" group="Sign">
+      <state_type name="State">
+        <state name="Start" />
+        <state name="End" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Start" />
+    </object_type>
+    <object_type name="2B_Board" group="Sign">
+      <state_type name="State">
+        <state name="Start" />
+        <state name="End" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Start" />
+    </object_type>
+    <object_type name="ATC_Begins_Marker_Board" group="Sign">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="Automatic Region" group="CBTC" />
+    <object_type name="Broken Rail" group="TrackProperty">
+      <state_type name="State">
+        <state name="Inactive" />
+        <state name="Small Break" />
+        <state name="Severe Break" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Inactive" />
+      <key name="Derailer" type="double" default="0.0" />
+    </object_type>
+    <object_type name="Buffer_Stop" group="Buffer">
+      <state_type name="State">
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="2.0" />
+      <key name="label1" type="string" default="xxx" />
+      <key name="label2" type="string" default="xxx" />
+    </object_type>
+    <object_type name="CBTC Beacon" group="CBTC">
+      <state_type name="State">
+        <state name="Normal" />
+        <state name="Faulty" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Normal" />
+      <key name="MountType" type="string" default="Track" />
+      <key name="BeaconType" type="double" default="1000" />
+    </object_type>
+    <object_type name="CBTC Beacon Depot" group="CBTC">
+      <state_type name="State">
+        <state name="Normal" />
+        <state name="Faulty" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Normal" />
+      <key name="MountType" type="string" default="Track" />
+      <key name="BeaconType" type="double" default="1000" />
+    </object_type>
+    <object_type name="Unauthorised Personnel on the Track" group="Handsignaller">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Idle" />
+        <state name="Idle Red Flag" />
+        <state name="Waving Red Flag" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Idle" />
+    </object_type>
+    <object_type name="Depot_Exit_Board" group="Sign">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="Depot Region" group="Location" />
+    <object_type name="Fire" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Not Visible" />
+      <key name="Length" type="double" default="400" />
+    </object_type>
+    <object_type name="Fouling_Mark" group="Sign">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="Fouling_Mark_FM" group="Sign">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="L7_Board" group="Sign">
+      <state_type name="State">
+        <state name="Start" />
+        <state name="End" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Start" />
+    </object_type>
+    <object_type name="LT_Board" group="Sign">
+      <state_type name="State">
+        <state name="Start" />
+        <state name="End" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Start" />
+    </object_type>
+    <object_type name="Main_Line_Signal_Long" group="Signal">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Off" />
+        <state name="Red" />
+        <state name="Violet" />
+        <state name="Green" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Violet" />
+      <key name="User State" type="State" default="Automated" />
+      <key name="label1" type="string" default="xxx" />
+      <key name="label2" type="string" default="xxx" />
+    </object_type>
+    <object_type name="Main_Line_Signal_Short" group="Signal">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Off" />
+        <state name="Red" />
+        <state name="Violet" />
+        <state name="Green" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Violet" />
+      <key name="User State" type="State" default="Automated" />
+      <key name="label1" type="string" default="xxx" />
+      <key name="label2" type="string" default="xxx" />
+    </object_type>
+    <object_type name="Marker Pin" group="UserFeatures">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Red" />
+        <state name="Green" />
+        <state name="Blue" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Red" />
+      <key name="User State" type="State" default="Red" />
+      <key name="HeightAdjust" type="double" default="0" />
+      <key name="HorizontalAdjust" type="double" default="0" />
+      <key name="LateralAdjust" type="double" default="0" />
+      <key name="PoleEnable" type="double" default="1" />
+      <key name="BallEnable" type="double" default="1" />
+      <key name="MarkerLabel" type="string" default="XXXXXX" />
+    </object_type>
+    <object_type name="Neutral Section" group="TrainProtection">
+      <key name="Length" type="double" default="35" />
+    </object_type>
+    <object_type name="Neutral_Section_Warning_Board_Blue" group="Sign">
+      <state_type name="State">
+        <state name="250m" />
+        <state name="500m" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="250m" />
+    </object_type>
+    <object_type name="Neutral_Section_Warning_Board_White" group="Sign">
+      <state_type name="State">
+        <state name="250m" />
+        <state name="500m" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="250m" />
+    </object_type>
+    <object_type name="Neutral_Section_Warning_Board_Yellow" group="Sign">
+      <state_type name="State">
+        <state name="250m" />
+        <state name="500m" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="250m" />
+    </object_type>
+    <object_type name="Non ATC Region" group="Location" />
+    <object_type name="Normal_Stopping_Marker_Board" group="Sign">
+      <state_type name="State">
+        <state name="6C" />
+        <state name="8C" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="6C" />
+    </object_type>
+    <object_type name="NS_End_Sign" group="Sign">
+      <state_type name="State">
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="NS_End_Sign_White" group="Sign">
+      <state_type name="State">
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="NS_End_Sign_Yellow" group="Sign">
+      <state_type name="State">
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="NS_Start_Sign" group="Sign">
+      <state_type name="State">
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="NS_Start_Sign_White" group="Sign">
+      <state_type name="State">
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="NS_Start_Sign_Yellow" group="Sign">
+      <state_type name="State">
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="ObstructionWateronTrack" group="Obstruction">
+      <state_type name="State">
+        <state name="None" />
+        <state name="Low" />
+        <state name="Med" />
+        <state name="High" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="None" />
+      <key name="Length" type="double" default="400" />
+    </object_type>
+    <object_type name="Obstruction - Banner_Flag" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Car" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="1.0" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Cow" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Off Track" />
+        <state name="On Track" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Off Track" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Dog" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Off Track" />
+        <state name="On Track" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Off Track" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction Fixed OLE" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Damaged" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Not Visible" />
+    </object_type>
+    <object_type name="Obstruction - Horse" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Off Track" />
+        <state name="On Track" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Off Track" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Kite" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="2" />
+    </object_type>
+    <object_type name="Obstruction - Rope" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Sheep" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Off Track" />
+        <state name="On Track" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Off Track" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Shirt" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Sleeper" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Obstruction - Tree" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="Collider" type="double" default="2" />
+      <key name="Length" type="double" default="1" />
+    </object_type>
+    <object_type name="Platform" group="Platform">
+      <key name="Length" type="double" />
+      <key name="Platform Name" type="string" />
+      <key name="Station Name" type="string" />
+    </object_type>
+    <object_type name="Platform Camera" group="Camera">
+      <state_type name="State">
+        <state name="On" />
+        <state name="Off" />
+        <state name="Degraded" />
+        <state name="Whiteout" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="On" />
+      <key name="Top" type="double" />
+      <key name="Bottom" type="double" />
+      <key name="Left" type="double" />
+      <key name="Right" type="double" />
+      <key name="Horizontal Field of View" type="double" />
+      <key name="Vertical Field of View" type="double" />
+      <key name="Near Plane" type="double" />
+      <key name="Far Plane" type="double" />
+      <key name="Reflection Enabled" type="boolean" default="0" />
+      <key name="Reflection X" type="double" default="1.0" />
+      <key name="Reflection Y" type="double" default="0.0" />
+      <key name="Reflection Z" type="double" default="0.0" />
+    </object_type>
+    <object_type name="Platform Passenger - Boarding" group="PlatformPassenger">
+      <state_type name="State">
+        <state name="None" />
+        <state name="Low Density" />
+        <state name="Med Density" />
+        <state name="High Density" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Low Density" />
+      <key name="ContentName" type="string" />
+    </object_type>
+    <object_type name="Platform Passenger - Alighting" group="PlatformPassenger">
+      <state_type name="State">
+        <state name="None" />
+        <state name="Low Density" />
+        <state name="Med Density" />
+        <state name="High Density" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Med Density" />
+      <key name="Parent ID" type="string" />
+    </object_type>
+    <object_type name="Platform Passenger - Arriving" group="PlatformPassenger">
+      <state_type name="State">
+        <state name="None" />
+        <state name="Low Density" />
+        <state name="Med Density" />
+        <state name="High Density" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="None" />
+      <key name="Parent ID" type="string" />
+    </object_type>
+    <object_type name="Platform Passenger - Intoxicated" group="PlatformPassenger">
+      <state_type name="State">
+        <state name="None" />
+        <state name="1" />
+        <state name="3" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="None" />
+      <key name="Parent ID" type="string" />
+    </object_type>
+    <object_type name="Platform Passenger - Pram" group="PlatformPassenger">
+      <state_type name="State">
+        <state name="None" />
+        <state name="1" />
+        <state name="3" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="None" />
+      <key name="Parent ID" type="string" />
+    </object_type>
+    <object_type name="Platform Unbalanced Loading" group="PlatformPassenger">
+      <state_type name="State">
+        <state name="Even" />
+        <state name="Tail" />
+        <state name="Middle" />
+        <state name="Front" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Even" />
+      <key name="Parent ID" type="string" />
+    </object_type>
+    <object_type name="Platform Passenger - Wheelchair" group="PlatformPassenger">
+      <state_type name="State">
+        <state name="None" />
+        <state name="1" />
+        <state name="3" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="None" />
+      <key name="Parent ID" type="string" />
+    </object_type>
+    <object_type name="Platform Screen Doors" group="PlatformDoors">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Closed" />
+        <state name="Open" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Closed" />
+      <key name="User State" type="State" default="Automated" />
+      <key name="Platform Content Name" type="string" />
+      <key name="Door Position" type="double" default="0" />
+      <key name="SDO Code" type="double" default="0" />
+      <key name="Platform Feature ID" type="double" />
+      <key name="Number Doors" type="double" default="8" />
+    </object_type>
+    <object_type name="Point" group="Point">
+      <state_type name="State">
+        <state name="Branch Line" />
+        <state name="Main Line" />
+        <state name="Not Active" />
+        <state name="Broken" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Main Line" />
+      <key name="Branch Segment At Alpha" type="boolean" />
+      <key name="Branch Segment ID" type="double" />
+      <key name="Facing Segment At Alpha" type="boolean" />
+      <key name="Facing Segment ID" type="double" />
+      <key name="Is Left Branch" type="boolean" />
+      <key name="Trailing Segment At Alpha" type="boolean" />
+      <key name="Trailing Segment ID" type="double" />
+    </object_type>
+    <object_type name="Restricted_Manual_Mode_Marker_Board" group="Sign">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+    </object_type>
+    <object_type name="Route Control" group="Route">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Clear" />
+        <state name="Set" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Clear" />
+      <key name="User State" type="State" default="Automated" />
+    </object_type>
+    <object_type name="Route_Indicator" group="Signal">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Off" />
+        <state name="M" />
+        <state name="D" />
+        <state name="S" />
+        <state name="T" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="M" />
+    </object_type>
+    <object_type name="Shunt_Signal" group="Signal">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="On" />
+        <state name="Off" />
+        <state name="Faulty" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Off" />
+      <key name="User State" type="State" default="Automated" />
+      <key name="label1" type="string" default="xxx" />
+      <key name="label2" type="string" default="xxx" />
+    </object_type>
+    <object_type name="Shunt_Signal_Attach" group="Signal">
+      <state_type name="State">
+        <state name="On" />
+        <state name="Off" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Off" />
+      <key name="label1" type="string" default="xxx" />
+      <key name="label2" type="string" default="xxx" />
+    </object_type>
+    <object_type name="Smoke" group="Obstruction">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Not Visible" />
+      <key name="Length" type="double" default="400" />
+    </object_type>
+    <object_type name="Speed_Restriction_Marker_Board" group="Sign">
+      <state_type name="State">
+        <state name="05 km/h" />
+        <state name="10 km/h" />
+        <state name="15 km/h" />
+        <state name="20 km/h" />
+        <state name="25 km/h" />
+        <state name="30 km/h" />
+        <state name="35 km/h" />
+        <state name="40 km/h" />
+        <state name="45 km/h" />
+        <state name="50 km/h" />
+        <state name="55 km/h" />
+        <state name="60 km/h" />
+        <state name="65 km/h" />
+        <state name="70 km/h" />
+        <state name="75 km/h" />
+        <state name="80 km/h" />
+        <state name="85 km/h" />
+        <state name="90 km/h" />
+        <state name="95 km/h" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="45 km/h" />
+    </object_type>
+    <object_type name="Station" group="Location" />
+    <object_type name="Stopping Point" group="CBTC">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Skip" />
+        <state name="Hold" />
+        <state name="Emergency" />
+        <state name="Turnback" />
+        <state name="Immediate Departure" />
+        <state name="Inactive" />
+        <state name="5 Sec" />
+        <state name="10 Sec" />
+        <state name="15 Sec" />
+        <state name="20 Sec" />
+        <state name="25 Sec" />
+        <state name="30 Sec" />
+        <state name="45 Sec" />
+        <state name="60 Sec" />
+        <state name="90 Sec" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Inactive" />
+      <key name="User State" type="State" default="Automated" />
+      <key name="Platform Feature ID" type="double" default="0" />
+      <key name="Station Code" type="string" displayed="1" default="None" />
+      <key name="CSDE Code" type="double" displayed="1" default="0" />
+    </object_type>
+    <object_type name="Stopping_Reverse_Marker_Board" group="Sign">
+      <state_type name="State">
+        <state name="6C" />
+        <state name="8C" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="6C" />
+    </object_type>
+    <object_type name="Track Circuit" group="TrackCircuit">
+      <state_type name="State">
+        <state name="Automated" />
+        <state name="Occupied" />
+        <state name="Clear" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Clear" />
+      <key name="User State" type="State" default="Automated" />
+      <key name="Time Occupied" type="double" default="0" />
+    </object_type>
+    <object_type name="Track Workers" group="Handsignaller">
+      <state_type name="State">
+        <state name="Idle" />
+        <state name="Working" />
+        <state name="Acknowledge" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Idle" />
+      <key name="Collider" type="double" default="1" />
+    </object_type>
+    <object_type name="Virtual_Signal_Marker_Board" group="Sign">
+      <state_type name="State">
+        <state name="Not Visible" />
+        <state name="Visible" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="Visible" />
+      <key name="label" type="string" default="xxx" />
+    </object_type>
+    <object_type name="Work Zone" group="CBTC">
+      <state_type name="State">
+        <state name="10 kph" />
+        <state name="20 kph" />
+        <state name="30 kph" />
+        <state name="40 kph" />
+        <state name="50 kph" />
+        <state name="60 kph" />
+        <state name="70 kph" />
+      </state_type>
+
+      <key name="Initial State" type="State" default="40 kph" />
+    </object_type>
+    <object_type name="Work Zone End" group="CBTC">
+      <state_type name="State">
+        <state name="Active" />
+      </state_type>
+    </object_type>
+  </object_types>
+</world_types>

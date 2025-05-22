@@ -1,0 +1,10 @@
+# Flags for developers
+# For hiding the mouse on touch screens (Default value is true)
+gui.screen.hide.mouse=false
+# For displaying the screen without a windows frame. (Default value is true)
+gui.screen.undecorated=true
+
+# The colour to show behind the TMS panel
+# The format is a # followed by three or six hexadecimal numbers, like you would use in HTML/CSS.
+# Defaults to black #000000
+gui.screen.background=#000

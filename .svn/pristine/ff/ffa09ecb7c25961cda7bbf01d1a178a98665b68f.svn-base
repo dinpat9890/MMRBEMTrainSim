@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1759651895" folded="1" name="banner_flag">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1005359348" name="banner_flag">
+			<mesh_name>../features/obstruction_features/graphics/banner_flag.mesh</mesh_name>
+			<surface name="banner_flag_shown" max_visible_distance="1000" max_fade_distance="10" material="b3ae10889ce55bfe1817d2748cad2d87355b04c4" property="surface_base"/>
+			<transform>2.23517388598e-007 1.24999971688 0 0.0 -0.999999701977 1.78813902352e-007 0 0.0 0 0 0.999999880791 0.0 0 0 -1 1.0</transform>
+		</node>
+	</node>
+</nodes>

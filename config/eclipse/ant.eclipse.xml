@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<project name="NTATRL" default="config.eclipse" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" basedir=".">
+  <import file="../../ant.common_properties.xml" />
+
+  <!-- Configure Eclipse projects for the dependencies (software and COTS) -->
+  <target name="config.eclipse" description="Creates an Eclipse project for the downloaded dependencies (fetched using the retrieve.all target).">
+    <property name="eclipse.dependencies.path" value="../../Software/Dependencies/Software"/>
+
+    <create-eclipse-project name="OKSYGEN-Libraries-COTS"          dir="${dir.deps.cots}"/>	
+    <create-eclipse-project name="OKSYGEN-Libraries-Software"  dir="${dir.deps.software}"/>
+	<create-eclipse-project name="Spring-Framework"  dir="${dir.software.deps}/org"/>
+	<create-eclipse-project name="Apache-COMMONS-Logging"  dir="${dir.software.deps}/commons-logging"/>
+	<create-eclipse-project name="OKSYGEN-Patches-Deploy"  dir="${dir.patches.deploy}"/>
+	<!-- Will add this projects when required in future
+	<create-eclipse-project name="OKSYGEN-Libraries-ASM"  dir="${dir.software.deps}/asm"/>
+	<create-eclipse-project name="OKSYGEN-Libraries-AOP"  dir="${dir.software.deps}/aopalliance"/> 
+	-->
+  </target>
+
+  <macrodef name="create-eclipse-project">
+    <attribute name="name"/>
+    <attribute name="dir"/>
+    <sequential>
+      <echo file="@{dir}/.classpath" append="false">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;classpath&gt;
+    &lt;classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/&gt;
+    &lt;classpathentry kind="output" path="Build"/&gt;
+&lt;/classpath&gt;
+</echo>
+    <echo file="@{dir}/.project" append="false">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;projectDescription&gt;
+    &lt;name&gt;@{name}&lt;/name&gt;
+    &lt;comment&gt;&lt;/comment&gt;
+    &lt;projects&gt;
+    &lt;/projects&gt;
+    &lt;buildSpec&gt;
+        &lt;buildCommand&gt;
+            &lt;name&gt;org.eclipse.jdt.core.javabuilder&lt;/name&gt;
+            &lt;arguments&gt;
+            &lt;/arguments&gt;
+        &lt;/buildCommand&gt;
+    &lt;/buildSpec&gt;
+    &lt;natures&gt;
+        &lt;nature&gt;org.eclipse.jdt.core.javanature&lt;/nature&gt;
+    &lt;/natures&gt;
+&lt;/projectDescription&gt;
+      </echo>
+    </sequential>
+  </macrodef>
+</project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/OKSYGEN-Libraries-Software/oksygen/sim/core/libraries/application_manager/jar/applicationmanager.jar"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.sydac.common.applicationmanager.ApplicationManager"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="efects-Libraries-ProjectTrainMarshalling"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="..\Environment\ApplicationManager.properties &#13;&#10;..\Environment\Database.ini &#13;&#10;..\Environment\SMCApplicationManager.properties &#13;&#10;..\Environment\SMC.properties&#13;&#10;..\Environment\Units.properties"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MMRBEM-Libraries-ProjectTrainMarshalling"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-mx256m -enableassertions"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${project_loc:MMRBEMTrainSim-Plugins-SSC}/../../../Deploy/Startup"/>
+</launchConfiguration>

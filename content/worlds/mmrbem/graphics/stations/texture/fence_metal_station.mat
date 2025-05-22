@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="fence_metal_station" guid="3f48a345e2dca41e5b439e1e6ed1097172546039" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1" depth_test="1" two_sided="1" cast_shadow="1" cast_world_shadow="1"/>
+	<state name="workflow">0</state>
+	<state name="deferred">1</state>
+	<state name="jitter_transparency">0</state>
+	<state name="lightmap_with_ambient">0</state>
+	<state name="normal_map">1</state>
+	<texture name="diffuse">../worlds/mmrbem/graphics/stations/texture/fence_metal_station.dds</texture>
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/fence_metal_station.dds</texture>
+	<parameter name="material_mask">0x1</parameter>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">0.75</parameter>
+	<parameter name="specular_color">0.200000003 0.200000003 0.200000003 1</parameter>
+	<parameter name="translucent">0</parameter>
+	<parameter name="transparent">0.726000011</parameter>
+	<parameter name="transparent_pow">0.159999996</parameter>
+</material>

@@ -1,0 +1,23 @@
+## BEML_EMU_Overlays
+## Fri Jul 26 09:29:33 2024
+
+
+[BEML_EMU Overlay Overlay/SydacTrainCollision]
+Class=Train
+Overlay=Overlay/SydacTrainCollision
+Property=Collision
+
+[BEML_EMU Overlay Overlay/SydacTrainDerailment]
+Class=Train
+Overlay=Overlay/SydacTrainDerailment
+Property=Derailment
+
+[DM Vision Property Vehicle Coupled]
+Class=Vehicle
+Property=Coupled Overlay
+Vision Property=Coupled
+
+[DM Vision Property Vehicle Coupler Damaged]
+Class=Vehicle
+Property=Coupler Damaged Overlay
+Vision Property=Coupler Damaged

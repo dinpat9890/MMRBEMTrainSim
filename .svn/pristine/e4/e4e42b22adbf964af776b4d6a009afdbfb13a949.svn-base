@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1631801610" name="dm_train_interior">
+		<mesh_name>../vehicles/dm_train/graphics/dm_train_interior.mesh</mesh_name>
+		<surface name="dm_train_interior_dm_train" max_visible_distance="500" max_fade_distance="5" material="c87d8de21a6551626418e04f56fd328916bd966f" property="surface_base"/>
+		<surface name="dm_train_interior_glass" max_visible_distance="500" max_fade_distance="5" material="38b69e845ccb4978425c280a64aaddb3b71a5f83" property="surface_base"/>
+		<surface name="dm_train_interior_m_car" max_visible_distance="500" max_fade_distance="5" material="38b69e845ccb4978425c280a64aaddb3b71a5f83" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -8.881784197e-016 0 0 1.0</transform>
+	</node>
+</nodes>

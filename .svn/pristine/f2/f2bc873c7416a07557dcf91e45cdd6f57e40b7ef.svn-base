@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="obs_tree_leaves" guid="c64dba1236c886bf1cc414890a5231b503ad1f59" parent="ed5b6243626c5495704e7b00e18805401bf8b514" base_material="mesh_base">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options transparent="2"/>
+	<texture name="albedo">../features/obstruction_features/graphics/textures/tree_leaves.dds</texture>
+	<parameter name="specular">0</parameter>
+</material>

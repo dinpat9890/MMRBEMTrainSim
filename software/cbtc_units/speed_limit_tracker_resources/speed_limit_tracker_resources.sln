@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "speed_limit_tracker_resources", "speed_limit_tracker_resources.vcxproj", "{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Develop|Win32 = Develop|Win32
+		Develop|x64 = Develop|x64
+		Direct Debug|Win32 = Direct Debug|Win32
+		Direct Debug|x64 = Direct Debug|x64
+		Direct Develop|Win32 = Direct Develop|Win32
+		Direct Develop|x64 = Direct Develop|x64
+		Direct Release|Win32 = Direct Release|Win32
+		Direct Release|x64 = Direct Release|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Debug|Win32.Build.0 = Debug|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Debug|x64.ActiveCfg = Debug|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Debug|x64.Build.0 = Debug|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Develop|Win32.ActiveCfg = Develop|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Develop|Win32.Build.0 = Develop|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Develop|x64.ActiveCfg = Develop|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Develop|x64.Build.0 = Develop|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Debug|Win32.ActiveCfg = Direct Debug|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Debug|Win32.Build.0 = Direct Debug|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Debug|x64.ActiveCfg = Direct Debug|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Debug|x64.Build.0 = Direct Debug|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Develop|Win32.ActiveCfg = Direct Develop|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Develop|Win32.Build.0 = Direct Develop|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Develop|x64.ActiveCfg = Direct Develop|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Develop|x64.Build.0 = Direct Develop|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Release|Win32.ActiveCfg = Direct Release|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Release|Win32.Build.0 = Direct Release|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Release|x64.ActiveCfg = Direct Release|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Direct Release|x64.Build.0 = Direct Release|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Release|Win32.ActiveCfg = Release|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Release|Win32.Build.0 = Release|Win32
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Release|x64.ActiveCfg = Release|x64
+		{C1B4AE4E-6753-487D-B8B4-2B6696C06A43}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28BC356B-2A97-48F7-8791-6CA06C774F55}
+	EndGlobalSection
+EndGlobal

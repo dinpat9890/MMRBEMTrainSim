@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="oregonash_leaves" guid="1a7e1d3820a7ca0e0d567260717bdb125f5376af" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/tree_oregonash_branches_d.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/textures/tree_oregonash_branches_n.dds</texture>
+</material>

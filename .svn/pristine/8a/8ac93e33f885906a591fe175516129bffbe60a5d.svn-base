@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1535692698" name="starter_vegetation">
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="38697705" name="ground_cover">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectGrass" id="2110749742" collider="0" name="grass">
+				<thinning>1</thinning>
+				<variation>1</variation>
+				<orientation>0</orientation>
+				<intersection>1</intersection>
+				<num_textures>4</num_textures>
+				<seed>0</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>512</step>
+				<subdivision>1</subdivision>
+				<density>1</density>
+				<threshold>0.349999994</threshold>
+				<angle>0</angle>
+				<probability>1 1 1 1</probability>
+				<min_bend_mean>0 0 0 0</min_bend_mean>
+				<min_bend_spread>0 0 0 0</min_bend_spread>
+				<max_bend_mean>0 0 0 0</max_bend_mean>
+				<max_bend_spread>0 0 0 0</max_bend_spread>
+				<min_height_mean>1 1 1 1</min_height_mean>
+				<min_height_spread>0.300000012 0.300000012 0.300000012 0.300000012</min_height_spread>
+				<max_height_mean>1.79999995 1.79999995 1.79999995 1.79999995</max_height_mean>
+				<max_height_spread>0.300000012 0.300000012 0.300000012 0.300000012</max_height_spread>
+				<aspect_mean>1.5 1.5 1.5 1.5</aspect_mean>
+				<aspect_spread>0.5 0.5 0.5 0.5</aspect_spread>
+				<offset_mean>0 0 0 0</offset_mean>
+				<offset_spread>0 0 0 0</offset_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_ARGB.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="grass" cast_shadow="0" cast_world_shadow="0" max_visible_distance="200" max_fade_distance="10" material="f2ab0b7f133e96ddc26990fb1de584227caff422" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshClutter" id="796811594" name="nettle">
+				<mesh_name>../worlds/shared/graphics/vegetation/nettle_low.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>3000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>5</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.0350000001</density>
+				<threshold>0.300000012</threshold>
+				<angle>0</angle>
+				<min_scale_mean>0.5</min_scale_mean>
+				<min_scale_spread>1</min_scale_spread>
+				<max_scale_mean>1.25</max_scale_mean>
+				<max_scale_spread>1</max_scale_spread>
+				<offset_mean>-0.349999994</offset_mean>
+				<offset_spread>0.5</offset_spread>
+				<rotation_mean>0 0 180</rotation_mean>
+				<rotation_spread>0 0 90</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="nettle_low" max_visible_distance="300" max_fade_distance="50" material="1c5dee0a003fb66d4dfe467a5ef0acd89b7c630c" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshClutter" id="471488078" name="raspberry">
+				<mesh_name>../worlds/shared/graphics/vegetation/raspberry_bush.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>3000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>6</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.0199999996</density>
+				<threshold>0.300000012</threshold>
+				<angle>0</angle>
+				<min_scale_mean>1</min_scale_mean>
+				<min_scale_spread>1</min_scale_spread>
+				<max_scale_mean>3</max_scale_mean>
+				<max_scale_spread>1</max_scale_spread>
+				<offset_mean>-0.100000001</offset_mean>
+				<offset_spread>0.5</offset_spread>
+				<rotation_mean>0 0 180</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="raspberries_01_01_lod_2_raspberries_mat" max_visible_distance="300" max_fade_distance="50" material="f12d54e919a853f78443678bc888bbfe8985d69b" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+			<node type="ObjectMeshClutter" id="1874770519" name="ground_cover">
+				<mesh_name>../worlds/shared/graphics/vegetation/ground_cover.mesh</mesh_name>
+				<orientation>1</orientation>
+				<intersection>1</intersection>
+				<visible_distance>150</visible_distance>
+				<fade_distance>50</fade_distance>
+				<seed>1</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.0500000007</density>
+				<threshold>0.758000016</threshold>
+				<angle>0</angle>
+				<min_scale_mean>2</min_scale_mean>
+				<min_scale_spread>1</min_scale_spread>
+				<max_scale_mean>5</max_scale_mean>
+				<max_scale_spread>1</max_scale_spread>
+				<offset_mean>-0.100000001</offset_mean>
+				<offset_spread>0</offset_spread>
+				<rotation_mean>0 0 180</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="Sphere001" cast_shadow="0" cast_world_shadow="0" max_visible_distance="150" max_fade_distance="50" material="624db96d1328cd5c489f55181c45d9f85151b2d1" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1344236270" name="vegetation">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshClutter" id="1579286055" name="linden">
+				<mesh_name>../dependencies/vision/oksygen/content/core/graphics/vegetation/graphics/linden/linden_tree.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.00499999989</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<min_scale_mean>0.5</min_scale_mean>
+				<min_scale_spread>0</min_scale_spread>
+				<max_scale_mean>0.75</max_scale_mean>
+				<max_scale_spread>0</max_scale_spread>
+				<offset_mean>-0.200000003</offset_mean>
+				<offset_spread>0</offset_spread>
+				<rotation_mean>0 0 0</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="linden_trunk_lod_0_linden_trunk" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="linden_leaves_lod_0_linden_leaves" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="linden_leaves_lod_1_linden_leaves" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="linden_leaves_lod_2_linden_leaves" max_visible_distance="350" max_fade_distance="50" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+				<surface name="linden_trunk_lod_1_linden_trunk" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="linden_trunk_lod_2_linden_trunk" max_visible_distance="150" max_fade_distance="50" material="1033d1fea76f864acdfb21043b9fc244206affdf" property="surface_base"/>
+				<surface name="linden_twigs_linden_trunk" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="1730165450" collider="0" name="linden_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>0</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.00499999989</density>
+					<threshold>0.5</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>10 10 10 10</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>21 21 21 21</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>0 0 0 0</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" max_visible_distance="1500" max_fade_distance="500" material="2cb32e12f71e9412f69f567e6d5a5170e623c044" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshClutter" id="1208808379" name="aspen">
+				<mesh_name>../dependencies/vision/oksygen/content/core/graphics/vegetation/graphics/aspen/aspen_01.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>1</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.00499999989</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<min_scale_mean>0.5</min_scale_mean>
+				<min_scale_spread>0</min_scale_spread>
+				<max_scale_mean>1</max_scale_mean>
+				<max_scale_spread>0</max_scale_spread>
+				<offset_mean>-0.200000003</offset_mean>
+				<offset_spread>0</offset_spread>
+				<rotation_mean>0 0 0</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="aspen_01_trunk_lod_2_trunk_mat" max_visible_distance="150" max_fade_distance="50" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+				<surface name="aspen_01_twigs_lod_0_trunk_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="aspen_01_trunk_lod_1_trunk_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="aspen_01_trunk_lod_0_trunk_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="aspen_01_leaf_lod_2_leaves_mat" max_visible_distance="150" max_fade_distance="50" material="6bc1b6c6c03ce27931cf7d2817946eec2dfc1f63" property="surface_base"/>
+				<surface name="aspen_01_leaf_lod_0_leaves_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="aspen_01_leaf_lod_1_leaves_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="297183721" collider="0" name="aspen_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>1</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.00499999989</density>
+					<threshold>0.5</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>9 9 9 9</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>18 18 18 18</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>0 0 0 0</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" max_visible_distance="1500" max_fade_distance="500" material="2ff00365242d0a856f5719097e94ec0b011cc91a" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshClutter" id="1283265281" name="elm">
+				<mesh_name>../dependencies/vision/oksygen/content/core/graphics/vegetation/graphics/elm_rought/elm_01_1.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>2</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.00499999989</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<min_scale_mean>0.5</min_scale_mean>
+				<min_scale_spread>0</min_scale_spread>
+				<max_scale_mean>1</max_scale_mean>
+				<max_scale_spread>0</max_scale_spread>
+				<offset_mean>-1</offset_mean>
+				<offset_spread>0</offset_spread>
+				<rotation_mean>0 0 0</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="elm_rought_tree_01_1_lod_2_elm_rought_trunk_mat" max_visible_distance="150" max_fade_distance="50" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+				<surface name="elm_rought_leaves_01_1_lod_2_elm_rought_leaves_sum_mat" max_visible_distance="150" max_fade_distance="50" material="12efa6f844b3ec99fcb70cd45db599005511e084" property="surface_base"/>
+				<surface name="elm_rought_leaves_01_1_lod_1_elm_rought_leaves_sum_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="elm_rought_tree_01_1_lod_1_elm_rought_trunk_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="elm_rought_tree_01_1_lod_0_elm_rought_trunk_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<surface name="elm_rought_leaves_01_1_lod_0_elm_rought_leaves_sum_mat" enabled="0" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="161079588" collider="0" name="elm_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>2</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.00499999989</density>
+					<threshold>0.5</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>7.5 7.5 7.5 7.5</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>15 15 15 15</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>-1 -1 -1 -1</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" max_visible_distance="1500" max_fade_distance="10" material="6ee4c0d09d4c135dc23227d30256adcde729bc84" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshClutter" id="139915746" name="oak">
+				<mesh_name>../worlds/shared/graphics/vegetation/oak_3_reduced.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>3</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.00499999989</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<min_scale_mean>0.5</min_scale_mean>
+				<min_scale_spread>0</min_scale_spread>
+				<max_scale_mean>1</max_scale_mean>
+				<max_scale_spread>0</max_scale_spread>
+				<offset_mean>-0.5</offset_mean>
+				<offset_spread>1</offset_spread>
+				<rotation_mean>0 0 0</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="oak_leaves_03_1_lod_2_oak_leaves_sum_mat" max_visible_distance="150" max_fade_distance="50" material="17a262a5f6d8fda9cb2ecda513dcfd3c26a34b92" property="surface_base"/>
+				<surface name="oak_tree_03_1_lod_2_oak_trunk_mat" max_visible_distance="150" max_fade_distance="50" material="353fb4a35adab49f9a6c5b00abbafc883dc858d7" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="929446325" collider="0" name="oak_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>3</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.00499999989</density>
+					<threshold>0.5</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>11 11 11 11</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>22 22 22 22</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>-0.5 -0.5 -0.5 -0.5</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" max_visible_distance="1500" max_fade_distance="10" material="7ff83a49eba38b5331655b09769e5e4fcff9c32a" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshClutter" id="1050846278" name="tree_tall_tropical_a">
+				<mesh_name>../worlds/shared/graphics/vegetation/tree_tall.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>10</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.00999999978</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<min_scale_mean>1</min_scale_mean>
+				<min_scale_spread>0</min_scale_spread>
+				<max_scale_mean>1.5</max_scale_mean>
+				<max_scale_spread>0</max_scale_spread>
+				<offset_mean>-1</offset_mean>
+				<offset_spread>0</offset_spread>
+				<rotation_mean>0 0 0</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="tree_tall_leaves" max_visible_distance="150" max_fade_distance="50" material="7b86cecad0a657f6512591c28932d6ef1729d5e7" property="surface_base"/>
+				<surface name="tree_tall_trunk" max_visible_distance="150" max_fade_distance="50" material="353fb4a35adab49f9a6c5b00abbafc883dc858d7" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="1634214836" collider="0" name="tree_tall_tropical_a_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>10</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.00999999978</density>
+					<threshold>0.5</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>9 9 9 9</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>13 13 13 13</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>-0.5 -0.5 -0.5 -0.5</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" max_visible_distance="1500" max_fade_distance="10" material="206d4a0e3485f3d6261ddbbe3d60d365844bfbc6" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshClutter" id="2111778845" name="palm_tall">
+				<mesh_name>../worlds/shared/graphics/vegetation/palm_tall.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>7</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.000500000024</density>
+				<threshold>0.200000003</threshold>
+				<angle>0</angle>
+				<min_scale_mean>1</min_scale_mean>
+				<min_scale_spread>0</min_scale_spread>
+				<max_scale_mean>1</max_scale_mean>
+				<max_scale_spread>0</max_scale_spread>
+				<offset_mean>-0.5</offset_mean>
+				<offset_spread>0.5</offset_spread>
+				<rotation_mean>0 0 180</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="branch_group_0_lod_004_DatePalmBark" max_visible_distance="150" max_fade_distance="50" material="0d4189afdddb597ccd5b5ea553a50c60c6fd0930" property="surface_base"/>
+				<surface name="frond_group_0_lod_004_PalmAtllas" max_visible_distance="350" max_fade_distance="100" material="cec2790e763902b6c6d8a39d4cf7589f30a9cb89" property="surface_base"/>
+				<surface name="frond_group_1_lod_004_PalmAtllas" max_visible_distance="350" max_fade_distance="100" material="cec2790e763902b6c6d8a39d4cf7589f30a9cb89" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="1298271404" collider="0" name="palm_tall_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>7</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.000500000024</density>
+					<threshold>0.200000003</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>35 35 35 35</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>35 35 35 35</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>-0.5 -0.5 -0.5 -0.5</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" min_visible_distance="150" max_visible_distance="2500" min_fade_distance="50" max_fade_distance="10" material="71ce93edfec267666151e9dcecea95038d0678e6" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshClutter" id="1262938729" name="tree_medium_tropical_b">
+				<mesh_name>../worlds/shared/graphics/vegetation/tree_medium.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>9</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.0500000007</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<min_scale_mean>0.5</min_scale_mean>
+				<min_scale_spread>0.5</min_scale_spread>
+				<max_scale_mean>0.75</max_scale_mean>
+				<max_scale_spread>0.5</max_scale_spread>
+				<offset_mean>-1</offset_mean>
+				<offset_spread>0</offset_spread>
+				<rotation_mean>0 0 0</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="tree_medium_leaves" max_visible_distance="150" max_fade_distance="50" material="7b86cecad0a657f6512591c28932d6ef1729d5e7" property="surface_base"/>
+				<surface name="tree_medium_trunk" max_visible_distance="150" max_fade_distance="50" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="1750289686" collider="0" name="bush01_a_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>9</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.0500000007</density>
+					<threshold>0.5</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>5 5 5 5</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>5.5999999 5.5999999 5.5999999 5.5999999</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>-0.5 -0.5 -0.5 -0.5</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" max_visible_distance="1500" max_fade_distance="10" material="5738f0988a34c536fef7de47f05aad65a804c498" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshClutter" id="1242686018" name="bush01_a">
+				<mesh_name>../worlds/shared/graphics/vegetation/bush01.mesh</mesh_name>
+				<intersection>1</intersection>
+				<visible_distance>4000</visible_distance>
+				<fade_distance>100</fade_distance>
+				<seed>8</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>256</step>
+				<density>0.0500000007</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<min_scale_mean>0.75</min_scale_mean>
+				<min_scale_spread>0</min_scale_spread>
+				<max_scale_mean>1</max_scale_mean>
+				<max_scale_spread>0</max_scale_spread>
+				<offset_mean>-0.5</offset_mean>
+				<offset_spread>0</offset_spread>
+				<rotation_mean>0 0 0</rotation_mean>
+				<rotation_spread>0 0 0</rotation_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="bush01_leaves" max_visible_distance="150" max_fade_distance="50" material="4329832d2678c765202f34b181ff15f7d91c1623" property="surface_base"/>
+				<surface name="bush01_trunk" max_visible_distance="150" max_fade_distance="50" material="85f9fd5c5c805f9e846915a55b9ffe906053ecdd" property="surface_base"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				<node type="ObjectGrass" id="1916996076" collider="0" name="bush01_a_imposter">
+					<thinning>1</thinning>
+					<variation>1</variation>
+					<orientation>0</orientation>
+					<intersection>1</intersection>
+					<num_textures>1</num_textures>
+					<seed>8</seed>
+					<size_x>4096</size_x>
+					<size_y>4096</size_y>
+					<step>512</step>
+					<subdivision>2</subdivision>
+					<density>0.0500000007</density>
+					<threshold>0.5</threshold>
+					<angle>0</angle>
+					<probability>1 1 1 1</probability>
+					<min_bend_mean>0 0 0 0</min_bend_mean>
+					<min_bend_spread>0 0 0 0</min_bend_spread>
+					<max_bend_mean>0 0 0 0</max_bend_mean>
+					<max_bend_spread>0 0 0 0</max_bend_spread>
+					<min_height_mean>4.5 4.5 4.5 4.5</min_height_mean>
+					<min_height_spread>0 0 0 0</min_height_spread>
+					<max_height_mean>6 6 6 6</max_height_mean>
+					<max_height_spread>0 0 0 0</max_height_spread>
+					<aspect_mean>1 1 1 1</aspect_mean>
+					<aspect_spread>0 0 0 0</aspect_spread>
+					<offset_mean>-0.5 -0.5 -0.5 -0.5</offset_mean>
+					<offset_spread>0 0 0 0</offset_spread>
+					<mask_image>../worlds/shared/graphics/vegetation/placeholder_R8.dds</mask_image>
+					<mask_flip_y>1</mask_flip_y>
+					<surface name="grass" max_visible_distance="1500" max_fade_distance="10" material="5738f0988a34c536fef7de47f05aad65a804c498" property="surface_base"/>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectGrass" id="1640189922" collider="0" name="outer_tree_billboards">
+				<thinning>1</thinning>
+				<variation>1</variation>
+				<orientation>0</orientation>
+				<intersection>1</intersection>
+				<num_textures>4</num_textures>
+				<seed>0</seed>
+				<size_x>4096</size_x>
+				<size_y>4096</size_y>
+				<step>512</step>
+				<subdivision>1</subdivision>
+				<density>0.0149999997</density>
+				<threshold>0.5</threshold>
+				<angle>0</angle>
+				<probability>1 1 1 1</probability>
+				<min_bend_mean>0 0 0 0</min_bend_mean>
+				<min_bend_spread>0 0 0 0</min_bend_spread>
+				<max_bend_mean>0 0 0 0</max_bend_mean>
+				<max_bend_spread>0 0 0 0</max_bend_spread>
+				<min_height_mean>20 20 20 20</min_height_mean>
+				<min_height_spread>1 1 1 1</min_height_spread>
+				<max_height_mean>25 25 25 25</max_height_mean>
+				<max_height_spread>1 1 1 1</max_height_spread>
+				<aspect_mean>1 1 1 1</aspect_mean>
+				<aspect_spread>0 0 0 0</aspect_spread>
+				<offset_mean>-2 -2 -2 -2</offset_mean>
+				<offset_spread>0 0 0 0</offset_spread>
+				<mask_image>../worlds/shared/graphics/vegetation/placeholder_ARGB.dds</mask_image>
+				<mask_flip_y>1</mask_flip_y>
+				<surface name="grass" cast_shadow="0" cast_world_shadow="0" max_visible_distance="1500" max_fade_distance="100" material="dec2f84d983ce42e5811efaf4770951ca62356f1" property="surface_base"/>
+				<transform>0.999999999996 0 0 0.0 0 0.999999999996 0 0.0 0 0 1 0.0 4.96220309287e-009 5.82076609135e-009 -1.42108547152e-014 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

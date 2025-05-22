@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="bush_1_billboard_summer" guid="9d9b2f1468efc0e0cbc7321ba89b77d93f2b6bbc" parent="0ecaa72fb51fb7b4a4d6b62b32dc45eec792834c" base_material="mesh_base">
+	<blend src="none" dest="none"/>
+	<options transparent="1" two_sided="1"/>
+	<state name="vegetation">0</state>
+	<state name="material_ssao">0</state>
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/Dense_bush_LOD.dds</texture>
+	<parameter name="material_mask">0xffffffff</parameter>
+	<parameter name="albedo_color">0.945098102 1 0.886274576 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="microfiber">0</parameter>
+	<parameter name="translucent">1</parameter>
+</material>

@@ -1,0 +1,22 @@
+# ======================================================================
+#
+# This is the list of MMRBEM Control Table Spreadsheets that are to be processed.
+# There should be 1 Control Table spreadsheet Per SAP plan.
+#
+# Note that the Paths are relative to the Directory that the Encoder is
+# run from (FeatureAutomation directory)
+#
+# For Testing purposes you may comment out the other tables with a #
+# Make sure that the appropriate Raw Script in FeatureAutomationScripts\Input\AutomationScriptInputFiles.txt
+# is enabled and comment out others to prevent errors.
+#
+# ======================================================================
+
+#Line 2A
+ControlTables\Input\Line_2A_Control_Table.xlsx
+
+#Line 7
+ControlTables\Input\Line7_Control_Table.xlsx
+
+#Charkop_Depot_Control_Table.xlsx
+ControlTables\Input\Charkop_Depot_Control_Table.xlsx

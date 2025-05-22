@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shed_01" guid="e6218c0d435caa2880e8260437cc08266ed20c23" base_material="mesh_base">
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/shed_01.dds</texture>
+	<texture name="shading">../worlds/mmrbem/graphics/stations/texture/shed_01_met.dds</texture>
+	<texture name="normal">../worlds/mmrbem/graphics/stations/texture/shed_01_n.dds</texture>
+	<parameter name="albedo_color">0.917647123 0.917647123 0.917647123 1</parameter>
+	<parameter name="metalness">0.61500001</parameter>
+	<parameter name="roughness">1</parameter>
+	<parameter name="specular">0.449999988</parameter>
+</material>

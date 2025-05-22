@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="generic_metal_blue" guid="95f41e2a4b2ce1f95928b0174d6bb5f58163b923" parent="1592e9b50d50ce280b2b5aaa0851fb05fa36a9dd" base_material="mesh_base">
+	<parameter name="albedo_color">0.309803933 0.521568656 0.776470661 1</parameter>
+	<parameter name="roughness">0.634000003</parameter>
+	<parameter name="specular">0.425000012</parameter>
+</material>

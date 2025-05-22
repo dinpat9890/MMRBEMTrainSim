@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\DataAccess\SessionTransactionalDataWriter.cpp" />
+    <ClCompile Include="Source\DBScoringParameterProvider.cpp" />
+    <ClCompile Include="Source\InfractionRules\AlertPeopleInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\CBTCEBInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\DeadmanEmergencyAboveRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\DeadmanEmergencyBelowRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\DoorNotOpenedForBoardingPassInfraction.cpp" />
+    <ClCompile Include="Source\InfractionRules\DoorOpenedCmdHeldTooLongInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\DoorOpenedCmdRemovedTooQuicklyInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\DoorOpenedFromWrongPanelInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\DoorOpenedFromWrongSideInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\ElectricConsumptionInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\ElectricEfficiencyInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\EmergencyStopInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\IncorrectStoppingLocationAtStationInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\JerkyDrivingInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\ObstructionCollisionInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\PantographOperatedInMotionInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\PassingStopReverseMarkerBoardInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\RedSignalOverrunInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\RollbackInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\RunningTimeNotAchievedInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\TimetableNotFollowedInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\TrainStoppedAfterStoppingPointInfractionRule.cpp" />
+    <ClCompile Include="Source\InfractionRules\TrainStoppedBeforeStoppingPointInfractionRule.cpp" />
+    <ClCompile Include="Source\LocomotiveTrainProperties.cpp" />
+    <ClCompile Include="Source\ProjectConfig.cpp" />
+    <ClCompile Include="Source\SessionAnalyser.cpp" />
+    <ClCompile Include="Source\SessionAnalyserModule.cpp" />
+    <ClCompile Include="Source\SessionAnalyserProperties.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\InfractionRule.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\InfractionUnit.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\InterpretedTrainProperties.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\SATrainPathWatcher.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\SATrainPathWatcherUnit.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\SessionFeatureUnit.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\SimPropertyWatcher.cpp" />
+    <ClCompile Include="Source\SessionAnalyserUnits\TransactionLogUnit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\DataAccess\SessionTransactionalDataWriter.h" />
+    <ClInclude Include="Source\DBScoringParameterProvider.h" />
+    <ClInclude Include="Source\InfractionRules\AlertPeopleInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\CBTCEBInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\DeadmanEmergencyAboveRule.h" />
+    <ClInclude Include="Source\InfractionRules\DeadmanEmergencyBelowRule.h" />
+    <ClInclude Include="Source\InfractionRules\DoorNotOpenedForBoardingPassInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\DoorOpenedCmdHeldTooLongInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\DoorOpenedCmdRemovedTooQuicklyInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\DoorOpenedFromWrongPanelInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\DoorOpenedFromWrongSideInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\EfficiencyInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\ElectricEfficiencyInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\EmergencyStopInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\ElectricConsumptionInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\IncorrectStoppingLocationAtStationInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\JerkyDrivingInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\ObstructionCollisionInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\PantographOperatedInMotionInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\PassingStopReverseMarkerBoardInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\RedSignalOverrunInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\RollbackInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\RunningTimeNotAchievedInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\TimetableNotFollowedInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\TrainStoppedAfterStoppingPointInfractionRule.h" />
+    <ClInclude Include="Source\InfractionRules\TrainStoppedBeforeStoppingPointInfractionRule.h" />
+    <ClInclude Include="Source\LocomotiveTrainProperties.h" />
+    <ClInclude Include="Source\CreateCallback.h" />
+    <ClInclude Include="Source\ScoringParameterProvider.h" />
+    <ClInclude Include="Source\ProjectConfig.h" />
+    <ClInclude Include="Source\ScoringParameterValidation.h" />
+    <ClInclude Include="Source\SessionAnalyserModule.h" />
+    <ClInclude Include="Source\SessionAnalyserProperties.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\InfractionRule.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\InfractionUnit.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\InterpretedTrainProperties.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\SATrainPathWatcher.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\SATrainPathWatcherUnit.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\SessionFeatureUnit.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\SimPropertyWatcher.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\TransactionLogUnit.h" />
+    <ClInclude Include="Source\SessionAnalyserUnits\Utility.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BCE582A9-6864-44C7-BCAF-8FA700C60BA1}</ProjectGuid>
+    <RootNamespace>SessionAnalyser</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <!-- Define some properties so that we know where our shared properties are, which in turn should
+       pull in the core properties from the dependencies -->
+  <Import Project="../../project.cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(COTSIncludeRoot)/fmt/include;$(CoreSimIncludeRoot)core_types/include;$(CommonIncludeRoot)comms/include;$(CommonIncludeRoot)sim_comms/include;$(CommonIncludeRoot)common/include;$(CommonIncludeRoot)sim_common/include;$(CommonIncludeRoot)network_definition/include;$(CoreTrainSimIncludeRoot)world_api/include;$(CoreSimIncludeRoot)utility/include;$(CoreSimIncludeRoot)core_properties/include;$(CoreSimConfigRoot)core_comms_structure/include;$(CoreSimIncludeRoot)core_data_access/include;$(CoreSimIncludeRoot)file_access/include;$(CoreTrainSimIncludeRoot)train_data_access/include;$(CoreTrainSimConfigRoot)train_comms_structure/include;$(ProjectConfigRoot)project_comms_structure/include;$(ProjectConfigRoot)project_features/include;dependencies/session_data_access/include;dependencies/scoring_data_access/include;Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CONSOLE;WIN32;_VARIADIC_MAX=10;_WINSOCK_DEPRECATED_NO_WARNINGS;$(ClPreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+$(COTSIncludeRoot)/fmt/lib/fmt$(LibType);
+$(COTSIncludeRoot)/zlib/lib/zlib$(LibType);
+$(CommonIncludeRoot)common/lib/common$(LibType);
+$(CommonIncludeRoot)comms/lib/comms$(LibType);
+$(CommonIncludeRoot)network_definition/lib/network_definition$(LibType);
+$(CommonIncludeRoot)oracle_access/lib/oracle_access$(LibType);
+$(CommonIncludeRoot)sim_comms/lib/sim_comms$(LibType);
+$(CoreSimIncludeRoot)config_file_access/lib/config_file_access$(LibType);
+$(CoreSimIncludeRoot)core_data_access/lib/core_data_access$(LibType);
+$(CoreSimIncludeRoot)core_properties/lib/core_properties$(LibType);
+$(CoreSimIncludeRoot)file_access/lib/file_access$(LibType);
+$(CoreSimIncludeRoot)utility/lib/utility$(LibType);
+$(CoreTrainSimIncludeRoot)train_data_access/lib/train_data_access$(LibType);
+$(CoreTrainSimIncludeRoot)world_api/lib/world_api$(LibType);
+dependencies/scoring_data_access/lib/scoring_data_access$(LibType);
+dependencies/session_data_access/lib/session_data_access$(LibType);
+%(AdditionalDependencies)
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <PropertyGroup>
+    <LocalDebuggerCommandArguments>..\Environment\SessionAnalyser.ini</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>..\..\..\deploy\data</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=$(cotsdir)\xerces\Bin\$(Platform);$(cotsdir)\oci\$(Platform)\bin;C:\Progra~2\Oracle\Instantclient_11_2\bin
+TNS_ADMIN=..\Environment\
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

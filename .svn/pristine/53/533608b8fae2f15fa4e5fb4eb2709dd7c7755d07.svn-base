@@ -1,0 +1,60 @@
+## SimSetup
+## Wed Mar 30 07:55:12 2022
+
+[Autogen]
+Autogen Path=oksygen/sim/extra/scripts/auto_gen/
+Clean Files=0
+Delete Files=0
+Generate Files=1
+
+[Communications]
+Address=192.168.61.135
+Display Names=InstructorVision
+Engine Name=InstructorVision
+Port=5050
+
+[Defaults]
+Database=Database.ini
+Logging=Logging.ini
+
+# Change this to 1 to support Ogre style feature raycast Y offset behaviour
+[Feature]
+Y Raycast Offset=0
+
+[Files]
+Config File=../Environment/Vision.cfg
+Data Path=../data/vision/
+
+[Graphics]
+Anti-aliasing=8
+# Options are Open GL, Direct3D9, Direct3D10, Direct3D11
+Engine=Direct3D11
+Gamma=1.0
+Refresh Rate=60
+
+[Plugins]
+YYEnforce Compatible=0
+
+[Plugins]
+Subsystem Path=..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\autogen_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\environment_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\feature_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\perspective_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\core\subsystems\view_subsystems\bin;..\..\..\..\..\..\dependencies\software\oksygen\sim\train\subsystems\train_subsystems\bin
+
+[Subsystem Plugins]
+autogen_subsystems
+environment_subsystems
+feature_subsystems
+perspective_subsystems
+train_subsystems
+view_subsystems
+
+[Windowing]
+# If set to true (1), the window is drawn without a frame. Due to
+# restrictions in the Unigine API this will also lock the window to
+# the top-left of the screen. Only used if Full-screen is set to
+# false (0).
+Frameless=1
+Full-screen=1
+Height=1920
+# If set to 1, the mouse cursor is shown when the editor is not loaded
+# otherwise when set to 0, cursor is only shown when editor is loaded (default)
+Show Mouse Cursor=1
+Width=1080

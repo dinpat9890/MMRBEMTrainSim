@@ -1,0 +1,168 @@
+## BEML_EMU_Common
+## Fri Jul 26 09:29:33 2024
+
+
+[DM Door 1]
+Class=VehicleOutputs
+Property=Left Door 1 Position
+Vision Property=Left_Door_1
+
+[DM Door 2]
+Class=VehicleOutputs
+Property=Left Door 2 Position
+Vision Property=Left_Door_2
+
+[DM Door 3]
+Class=VehicleOutputs
+Property=Left Door 3 Position
+Vision Property=Left_Door_3
+
+[DM Door 4]
+Class=VehicleOutputs
+Property=Left Door 4 Position
+Vision Property=Left_Door_4
+
+[DM Door 5]
+Class=VehicleOutputs
+Property=Right Door 1 Position
+Vision Property=Right_Door_1
+
+[DM Door 6]
+Class=VehicleOutputs
+Property=Right Door 2 Position
+Vision Property=Right_Door_2
+
+[DM Door 7]
+Class=VehicleOutputs
+Property=Right Door 3 Position
+Vision Property=Right_Door_3
+
+[DM Door 8]
+Class=VehicleOutputs
+Property=Right Door 4 Position
+Vision Property=Right_Door_4
+
+[DM Vision Property VehicleOutputs Flasher Light]
+Class=VehicleOutputs
+Property=Flasher Light
+Vision Property=Flasher Light
+
+[DM Vision Property VehicleOutputs Flood Light]
+Class=VehicleOutputs
+Property=Flood Light
+Vision Property=Flood Light
+
+[DM Vision Property VehicleOutputs Head Light]
+Class=VehicleOutputs
+Property=Head Light
+Vision Property=Head Light
+
+[DM Vision Property VehicleOutputs Marker Or Tail Light]
+Class=VehicleOutputs
+Property=Marker Or Tail Light
+Vision Property=Marker Or Tail Light
+
+[DM Vision Property VehicleOutputs UTO Or RM Light]
+Class=VehicleOutputs
+Property=UTO Or RM Light
+Vision Property=UTO Or RM Light
+
+[DM Vision Property VehicleOutputs Wiper Position Center]
+Class=VehicleOutputs
+Property=Wiper Position Center
+Vision Property=Wiper Position Center
+
+[DM Vision Property VehicleOutputs Wiper Position Left]
+Class=VehicleOutputs
+Property=Wiper Position Left
+Vision Property=Wiper Position Left
+
+[DM Vision Property VehicleOutputs Wiper Position Right]
+Class=VehicleOutputs
+Property=Wiper Position Right
+Vision Property=Wiper Position Right
+
+[M Door 1]
+Class=VehicleOutputs
+Property=Left Door 1 Position
+Vision Property=Left_Door_1
+
+[M Door 2]
+Class=VehicleOutputs
+Property=Left Door 2 Position
+Vision Property=Left_Door_2
+
+[M Door 3]
+Class=VehicleOutputs
+Property=Left Door 3 Position
+Vision Property=Left_Door_3
+
+[M Door 4]
+Class=VehicleOutputs
+Property=Left Door 4 Position
+Vision Property=Left_Door_4
+
+[M Door 5]
+Class=VehicleOutputs
+Property=Right Door 1 Position
+Vision Property=Right_Door_1
+
+[M Door 6]
+Class=VehicleOutputs
+Property=Right Door 2 Position
+Vision Property=Right_Door_2
+
+[M Door 7]
+Class=VehicleOutputs
+Property=Right Door 3 Position
+Vision Property=Right_Door_3
+
+[M Door 8]
+Class=VehicleOutputs
+Property=Right Door 4 Position
+Vision Property=Right_Door_4
+
+[T Door 1]
+Class=VehicleOutputs
+Property=Left Door 1 Position
+Vision Property=Left_Door_1
+
+[T Door 2]
+Class=VehicleOutputs
+Property=Left Door 2 Position
+Vision Property=Left_Door_2
+
+[T Door 3]
+Class=VehicleOutputs
+Property=Left Door 3 Position
+Vision Property=Left_Door_3
+
+[T Door 4]
+Class=VehicleOutputs
+Property=Left Door 4 Position
+Vision Property=Left_Door_4
+
+[T Door 5]
+Class=VehicleOutputs
+Property=Right Door 1 Position
+Vision Property=Right_Door_1
+
+[T Door 6]
+Class=VehicleOutputs
+Property=Right Door 2 Position
+Vision Property=Right_Door_2
+
+[T Door 7]
+Class=VehicleOutputs
+Property=Right Door 3 Position
+Vision Property=Right_Door_3
+
+[T Door 8]
+Class=VehicleOutputs
+Property=Right Door 4 Position
+Vision Property=Right_Door_4
+
+[T Vision Property VehicleOutputs Pantograph Position]
+Class=VehicleOutputs
+Property=Pantograph Position
+Vision Property=Pantograph Position

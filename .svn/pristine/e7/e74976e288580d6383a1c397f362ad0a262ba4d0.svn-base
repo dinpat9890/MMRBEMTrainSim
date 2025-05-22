@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties version="1.00">
+	<property name="display">
+		<parameter name="viewport_fps" type="int">0</parameter>
+	</property>
+</properties>

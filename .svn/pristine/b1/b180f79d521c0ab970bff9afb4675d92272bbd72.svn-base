@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<project name="Maintain" default="update.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="./ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+
+  <!-- Import core packaging scripts -->
+  <import file="${dir.deps.processes}/maintainer/maintainer.xml" as="maintainer" />
+  
+  <!-- A handy target for updating everything -->
+  <extension-point name="update.all" description="Updates/maintains all files" />
+</project>

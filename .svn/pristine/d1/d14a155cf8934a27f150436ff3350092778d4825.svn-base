@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)..\..\..\Deploy\cots\xerces\Bin\$(Platform);$(SolutionDir)..\..\..\Deploy\cots\oci\$(Platform)\bin;$(SolutionDir)..\..\..\Deploy\cots\vc_redist\$(PlatformTarget)\crt;$(COTSDir)xerces/bin/Win32;%PATH%
+TNS_ADMIN=$(SolutionDir)..\..\..\Deploy\Environment\
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(SolutionDir)..\..\..\dependencies\software\oksygen\sim\core\modules\plugin_module\bin\plugin_module_d.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>PISUnit.ini</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+</Project>

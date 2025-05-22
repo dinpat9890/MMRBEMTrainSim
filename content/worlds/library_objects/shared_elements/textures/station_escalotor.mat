@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="station_escalotor" guid="6a39e91f5bf60f152ed09c0ed8c149bab2ea99fd" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/station_escalotor.DDS</texture>
+	<parameter name="metalness">1</parameter>
+	<parameter name="roughness">0.400000006</parameter>
+</material>

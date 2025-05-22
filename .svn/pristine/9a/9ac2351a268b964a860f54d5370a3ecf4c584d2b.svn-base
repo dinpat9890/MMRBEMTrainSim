@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+  Provides a macro for calling rsync.
+  The intention is to allow projects to create targets that sync their Deploy
+  folder to different locations (e.g. sync.devrig, or sync.production).
+
+  The macro uses the following attributes:
+    source      - [Required] The source files or folder to synchronise.
+    destination - [Required] The destination folder.
+    password    - [Optional] Password for destination folder access.
+
+  Note that this macro will create a timestamped log file for each invocation.
+-->
+<project name="sync" basedir=".">
+  <macrodef name="rsync">
+    <attribute name="source"/>
+    <attribute name="destination"/>
+    <attribute name="password" default=""/>
+    <attribute name="rsync.log.dir" default=".\"/>
+    <sequential>
+      <!-- Scope our timestamp to this macro execution -->
+      <local name="sync.timestamp"/>
+      <tstamp>
+        <format property="sync.timestamp" pattern="dd-MM-yyyy hh.mm.ss"/>
+      </tstamp>
+      <exec executable="rsync">
+        <env key="RSYNC_PASSWORD" value="@{password}"/>
+        <arg value="-rhvizPqc"/>
+        <arg value="--chmod=a=rw,Da+x"/>
+        <arg value="--delete-after"/>
+        <arg value="--log-file=@{rsync.log.dir}rsync_rig_${sync.timestamp}.log"/>
+        <arg value="@{source}"/>
+        <arg value="@{destination}"/>
+      </exec>
+    </sequential>
+  </macrodef>
+</project>

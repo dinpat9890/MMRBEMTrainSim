@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="trackworker_c" guid="7cb5e7c1af2a2434d1b59ba4e0206002eb4577c7" base_material="mesh_base">
+	<texture name="albedo">../features/animated_features/graphics/textures/trackworker_c_body.dds</texture>
+	<parameter name="microfiber">0.787999988</parameter>
+	<parameter name="normal_scale">0</parameter>
+</material>

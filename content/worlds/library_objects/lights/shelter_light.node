@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="1907593728" name="shelter_light">
+		<transform>1 -6.38378239159e-016 5.05780313464e-017 0.0 -6.66133814775e-016 1 -1.38777878078e-016 0.0 2.40855512618e-016 8.32667268469e-017 1 0.0 1.67347025126e-010 1.24600774143e-010 1.45181644484e-011 1.0</transform>
+		<node type="LightProj" id="66210555" name="LightProj">
+			<penumbra>1.5</penumbra>
+			<attenuation_distance>13</attenuation_distance>
+			<shape>0.75 0.5 0</shape>
+			<shape_type>3</shape_type>
+			<fov>110</fov>
+			<znear>0.100000001</znear>
+			<color>1 0.968627512 0.847058892 1</color>
+			<intensity>2.79999995</intensity>
+			<attenuation_power>0.349999994</attenuation_power>
+			<shadow>0</shadow>
+			<shadow_resolution>0</shadow_resolution>
+			<shadow_bias>1</shadow_bias>
+			<visible_distance>300</visible_distance>
+			<fade_distance>100</fade_distance>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>1</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>1</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>0</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>0</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0</shadow_screen_space_softness>
+			<transform>0.999999404938 3.42390879537e-008 -4.2937209885e-026 0.0 -6.55741775324e-008 0.999999275394 1.7069745108e-025 0.0 -3.68627642991e-018 3.85659574186e-019 0.999997019768 0.0 -2.91038304567e-011 5.82076609135e-011 -0.149122008512 1.0</transform>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,8 @@
+﻿(for $t (database-trains) 
+  (create-object $o (object-id (class-controls)) (class-train-control) "TrainControl"
+    (define-raw-json $o "Train Definition"
+      (json-object "id" $t
+                   "simulated" (not (is-auto-train $t))
+                   "type" (get-train-id $t)))
+  )
+)

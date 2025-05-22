@@ -1,0 +1,130 @@
+# CoreTrainSim Applications Build Properties File
+
+
+# Common build directories
+#
+
+# Path (under a module's basedir) for jar file to be build into
+jar.dir=Jar
+# Path (under a module's basedir) for dependent libraries to be copied into
+lib.dir=Dependencies
+# Path (under a module's basedir) for module documentation to be built into
+doc.dir=Doc
+
+#
+# Java compiler options
+#
+java.compile.debug=true
+java.compile.optimize=true
+java.compile.deprecation=true
+java.compile.nowarn=false
+
+ant.build.javac.source=1.8
+ant.build.javac.target=1.8
+
+source.encoding=utf-8
+
+i18n.dir=Localisation
+
+test.src.dir=Test/Java
+test.bld.dir=Test-Build
+test.jar.dir=Test-Jar
+test.out.dir=test-output
+test.jar.prefix=test-
+
+
+#
+# COTS Lib Files
+#
+
+cots.dir=COTS
+
+#
+# Common build directories
+#
+bld.subdir=Build
+l10n.subdir=Localisation
+doc.subdir=Doc
+jar.subdir=Jar
+lib.subdir=Lib
+log.subdir=Log
+src.subdir=Source/Java
+bin.subdir=Bin
+tools.subdir=Tools
+config.dir=../Config
+project.jar=Project/Jar
+
+# Localisation directories
+
+build.mo.dir=${deploy.dir}/Localisation
+l10n.config.dir=${config.dir}/Localisation
+l10n.config.content.dir=${l10n.config.dir}/Content
+l10n.config.java.dir=${l10n.config.dir}/Java
+l10n.config.rc.dir=${l10n.config.dir}/RC
+
+# GMI Configuration
+gmiconfig.basedir=Libraries/GraphicalModelInterfaceConfig
+gmiconfig.jar=gmiconfig.jar
+
+# GMI Plugin
+gmiplugin.basedir=Libraries/SampleGMIPlugin
+gmiplugin.jar=gmiplugin.jar
+
+# SplashScreens
+splashscreens.basedir=Libraries/SplashScreens
+splashscreens.jar=splashscreens.jar
+
+# Project Config Data
+projectconfigdata.basedir=Libraries/ProjectConfigData
+projectconfigdata.jar=ProjectCommsStructure.jar
+
+# TMS
+tmsfrontend.basedir=TMS/Frontend
+tmsfrontend.jar=tmsfrontend.jar
+tmscommon.basedir=TMS/Common
+tmscommon.jar=tmscommon.jar
+
+# Simulator Control WebService Project
+sim-control-webservice.basedir=Webservice
+sim-control-webservice.jar=sim-control-webservice.jar
+sim-control-webservice.pot=sim-control-webservice.pot
+
+# Frontend Common
+frontendcommon.basedir=FrontendCommon
+frontendcommon.jar=frontendcommon.jar
+
+# COP
+copfrontend.basedir=COP/Frontend
+copfrontend.jar=copfrontend.jar
+copcommon.basedir=COP/Common
+copcommon.jar=copcommon.jar
+
+# RadioEmulator
+radioemulatorfrontend.basedir=RadioEmulator/Frontend
+radioemulatorfrontend.jar=copfrontend.jar
+radioemulatorcommon.basedir=RadioEmulator/Common
+radioemulatorcommon.jar=radioemulatorcommon.jar
+
+# Protobuffer Serialisation Project
+protos-serialisation.basedir=Libraries/Serialisation
+protos-serialisation.jar.base.name=protos-serialisation
+protos-serialisation.jar=${protos-serialisation.jar.base.name}.jar
+
+#Protobuf
+protoc=cots/oksygen/cots/protobuf/bin/protoc.exe
+
+#Part Trainer Common
+pttcommon.basedir=PTS/PartTrainerCommon
+pttcommon.jar=parttrainercommon.jar
+
+#Part Trainer SCC
+pttscc.basedir=PTS/PartTrainerSCC
+pttscc.jar=parttrainerscc.jar
+
+#Part Trainer App Switcher
+pttappswitcher.basedir=PTS/PartTrainerAppSwitcher
+pttappswitcher.jar=pttappswitcher.jar
+
+# Project Data Objects
+projectdataobjects.basedir=Libraries/ProjectDataObjects
+projectdataobjects.jar=projectdataobjects.jar

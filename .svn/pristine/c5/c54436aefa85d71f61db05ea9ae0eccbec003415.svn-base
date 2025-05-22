@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="FA_casual_indian_05" guid="c1b8d9ea9542b0c4315272504cc991358d5f5684" parent="f4a968fecc6da61f97606239b14677d71f6a13cc" base_material="mesh_base">
+	<options two_sided="1"/>
+	<texture name="albedo">../worlds/library_objects/characters/textures/FA_Casual_Indian_05.dds</texture>
+</material>

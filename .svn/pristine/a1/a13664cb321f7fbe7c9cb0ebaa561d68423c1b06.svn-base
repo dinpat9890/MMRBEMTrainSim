@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="tileable_stairs" guid="a88e0509d8fc3abcb8303f81b49be63a46a6d68f" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/shared_elements/textures/tileable_stairs.dds</texture>
+</material>

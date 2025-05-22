@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="neutral_section_clear_zone_yellow" guid="60c8e871aa2d646f09a986e1f6861968a639e5fc" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/features/textures/neutral_section_clear_zone_yellow.dds</texture>
+	<parameter name="albedo_color">0.776470661 0.776470661 0.776470661 1</parameter>
+	<parameter name="emission_scale">0.800000012</parameter>
+</material>

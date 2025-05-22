@@ -1,0 +1,304 @@
+<?xml version="1.0" ?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{5a683639-6a82-42d8-8106-057ddedcbd55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Generated">
+      <UniqueIdentifier>{258c7886-a0cb-4dad-a4fd-f9fb3c7baf27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{53f6e2f5-a9c3-4ad9-bafc-3828c4eeeaa1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\RegisterMemoryMap.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegisterModel.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ModelSpecific.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dll.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\BEML_EMU.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\BEML_EMU_capi.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\BEML_EMU_data.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\IOControls.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\IOControls_IncrementControl.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\IOControls_IncrementControl_h.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    
+    <ClCompile Include="source\MATLAB\IOControls_capi.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\IncrementControl.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\MCBControl.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\MomentaryControl.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\ToggleControl.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\TrainDynamics.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\TrainDynamics_capi.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\look1_ts8Dd_binlcapw.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\rtGetInf.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\rtGetNaN.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\rt_nonfinite.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MATLAB\rt_zcfcn.cpp">
+      <Filter>Source Generated</Filter>
+    </ClCompile>
+    <ClInclude Include="source\MATLAB\BEML_EMU.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\BEML_EMU_capi.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\BEML_EMU_capi_host.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\BEML_EMU_private.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\BEML_EMU_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\IOControls.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\IOControls_IncrementControl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\IOControls_IncrementControl_h.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    
+    <ClInclude Include="source\MATLAB\IOControls_capi.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\IOControls_capi_host.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\IOControls_private.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\IOControls_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\IncrementControl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\MCBControl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\MomentaryControl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\ToggleControl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\TrainDynamics.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\TrainDynamics_capi.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\TrainDynamics_capi_host.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\TrainDynamics_private.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\TrainDynamics_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\builtin_typeid_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\ext_work.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\look1_ts8Dd_binlcapw.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\model_reference_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\multiword_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtGetInf.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtGetNaN.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rt_assert.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rt_logging.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rt_nonfinite.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rt_zcfcn.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtmodel.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtw_capi.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtw_continuous.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtw_extmode.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtw_matlogging.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtw_modelmap.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtw_modelmap_logging.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtw_solver.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\rtwtypes.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\simstruc_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\sl_sample_time_defs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\sl_types_def.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\solver_zc.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\sysran_types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MATLAB\tmwtypes.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  
+<ClCompile Include="source\MATLAB\BINARYSEARCH_real_T.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\DoorSystem.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\DoorSystem_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\ElectricalSystem.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\ElectricalSystem_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\LookUp_real_T_real_T.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\PantographSystem.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\PantographSystem_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\PneumaticsSystem.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\PneumaticsSystem_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\PneumaticsSystem_data.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\TractionSystem.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\TractionSystem_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\TrainBrakes.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\TrainBrakes_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\rt_nrand_Upu32_Yd_f_pw_snf.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\rt_powd_snf.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\rt_urand_Upu32_Yd_f_pw_snf.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClInclude Include="source\MATLAB\BINARYSEARCH_real_T.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\DoorSystem.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\DoorSystem_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\DoorSystem_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\DoorSystem_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\DoorSystem_types.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\ElectricalSystem.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\ElectricalSystem_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\ElectricalSystem_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\ElectricalSystem_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\ElectricalSystem_types.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\LookUp_real_T_real_T.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PantographSystem.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PantographSystem_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PantographSystem_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PantographSystem_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PantographSystem_types.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PneumaticsSystem.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\PneumaticsSystem_types.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TractionSystem.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TractionSystem_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TractionSystem_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TractionSystem_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TractionSystem_types.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TrainBrakes.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TrainBrakes_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TrainBrakes_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TrainBrakes_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TrainBrakes_types.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\rt_nrand_Upu32_Yd_f_pw_snf.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\rt_powd_snf.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\rt_urand_Upu32_Yd_f_pw_snf.h"><Filter>Include</Filter></ClInclude>
+<ClCompile Include="source\MATLAB\TCMSSystem.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\TCMSSystem_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClInclude Include="source\MATLAB\TCMSSystem.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TCMSSystem_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TCMSSystem_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TCMSSystem_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\TCMSSystem_types.h"><Filter>Include</Filter></ClInclude>
+<ClCompile Include="source\MATLAB\IOControls_IncrementControl_a.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClInclude Include="source\MATLAB\IOControls_IncrementControl_a.h"><Filter>Include</Filter></ClInclude>
+<ClCompile Include="source\MATLAB\look1_pbinlcapw.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClInclude Include="source\MATLAB\look1_pbinlcapw.h"><Filter>Include</Filter></ClInclude>
+<ClCompile Include="source\MATLAB\CouplingSystem.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\CouplingSystem_capi.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClInclude Include="source\MATLAB\CouplingSystem.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\CouplingSystem_capi.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\CouplingSystem_capi_host.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\CouplingSystem_private.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\CouplingSystem_types.h"><Filter>Include</Filter></ClInclude>
+<ClCompile Include="source\MATLAB\look1_binlcapw.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\look1_binlcpw.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClInclude Include="source\MATLAB\look1_binlcapw.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\look1_binlcpw.h"><Filter>Include</Filter></ClInclude>
+<ClCompile Include="source\MATLAB\RotaryControl.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClCompile Include="source\MATLAB\rt_modd_snf.cpp"><Filter>Source Generated</Filter></ClCompile>
+<ClInclude Include="source\MATLAB\RotaryControl.h"><Filter>Include</Filter></ClInclude>
+<ClInclude Include="source\MATLAB\rt_modd_snf.h"><Filter>Include</Filter></ClInclude></ItemGroup>
+</Project>

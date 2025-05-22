@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_tree_tall_tropical_a" guid="206d4a0e3485f3d6261ddbbe3d60d365844bfbc6" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<texture name="diffuse">../worlds/shared/graphics/vegetation/textures/imposter_tree_tall_tropical_a.dds</texture>
+	<parameter name="diffuse_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+</material>

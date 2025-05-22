@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info>
+    <MetadataNode>
+        <path value="ProjectData:type:Info">
+            <node name="Info">
+                <entry value="IOControls" key="Name" />
+            </node>
+        </path>
+        <path value="Root:type:Categories">
+            <path value="FileClassCategory:type:Category">
+                <node name="Info">
+                    <entry value="None" key="DataType" />
+                    <entry value="Classification" key="Name" />
+                    <entry value="1" key="ReadOnly" />
+                    <entry value="1" key="SingleValued" />
+                </node>
+                <path value="artifact:type:Label">
+                    <node name="Info">
+                        <entry value="Artifact" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="convenience:type:Label">
+                    <node name="Info">
+                        <entry value="Convenience" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="derived:type:Label">
+                    <node name="Info">
+                        <entry value="Derived" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="design:type:Label">
+                    <node name="Info">
+                        <entry value="Design" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="none:type:Label">
+                    <node name="Info">
+                        <entry value="None" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="other:type:Label">
+                    <node name="Info">
+                        <entry value="Other" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+            </path>
+            <path value="ReviewCategory:type:Category">
+                <node name="Info">
+                    <entry value="String" key="DataType" />
+                    <entry value="Review" key="Name" />
+                    <entry value="1" key="ReadOnly" />
+                    <entry value="1" key="SingleValued" />
+                </node>
+                <path value="approved:type:Label">
+                    <node name="Info">
+                        <entry value="Approved" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="needMoreInfo:type:Label">
+                    <node name="Info">
+                        <entry value="More Information Required" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="rejected:type:Label">
+                    <node name="Info">
+                        <entry value="Rejected" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+                <path value="toReview:type:Label">
+                    <node name="Info">
+                        <entry value="To Review" key="Name" />
+                        <entry value="READ_ONLY" key="ReadOnly" />
+                    </node>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:EntryPoints">
+            <path value="351b86c0-b5d5-4077-8388-13cbc843c47b:type:EntryPoint">
+                <node name="Info">
+                    <entry value="utilities/set_up_project.m" key="File" />
+                    <entry value="set_up_project" key="Name" />
+                    <entry value="StartUp" key="Type" />
+                </node>
+            </path>
+            <path value="e6be6c16-40c4-4b41-9892-da7b76e7c10e:type:EntryPoint">
+                <node name="Info">
+                    <entry value="utilities/clean_up_project.m" key="File" />
+                    <entry value="clean_up_project" key="Name" />
+                    <entry value="Shutdown" key="Type" />
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:Extensions" />
+        <path value="Root:type:Files">
+            <path value="IOControls.version:type:File">
+                <node name="Info" />
+            </path>
+            <path value="build:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="build.bat:type:File">
+                    <node name="Info" />
+                </path>
+                <path value="build.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+            </path>
+            <path value="data:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="bus:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="IOControls_In_InputControl.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="IOControls_In_MCBControl.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="IOControls_In_Vehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="IOControls_Out_Vehicle.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="IOControls_Out_Vehicle_InputStates.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="IOControls_Out_Vehicle_MCBTripStates.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                    <path value="IOControls_Out_Vehicle_OutputStates.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+                <path value="config:type:File">
+                    <node name="Info" />
+                    <path value="1:type:DIR_SIGNIFIER">
+                        <node name="Info" />
+                    </path>
+                    <path value="ConfigSet_IOControls_Reference.m:type:File">
+                        <node name="Info">
+                            <node name="Category">
+                                <entry value="FileClassCategory" key="UUID" />
+                                <node name="Label">
+                                    <entry value="design" key="UUID" />
+                                </node>
+                            </node>
+                        </node>
+                    </path>
+                </path>
+            </path>
+            <path value="models:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="IOControls.slx:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+            </path>
+            <path value="utilities:type:File">
+                <node name="Info">
+                    <node name="Category">
+                        <entry value="FileClassCategory" key="UUID" />
+                        <node name="Label">
+                            <entry value="none" key="UUID" />
+                        </node>
+                    </node>
+                </node>
+                <path value="1:type:DIR_SIGNIFIER">
+                    <node name="Info" />
+                </path>
+                <path value="clean_up_project.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_bus_names.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_clear.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_load.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_buses_save.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_configurations_clear.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="prj_configurations_load.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+                <path value="set_up_project.m:type:File">
+                    <node name="Info">
+                        <node name="Category">
+                            <entry value="FileClassCategory" key="UUID" />
+                            <node name="Label">
+                                <entry value="design" key="UUID" />
+                            </node>
+                        </node>
+                    </node>
+                </path>
+            </path>
+        </path>
+        <path value="Root:type:ProjectData" />
+        <path value="Root:type:ProjectPath">
+            <path value="309e4a58-3661-4a79-a48c-6bb40a1309d2:type:Reference">
+                <node name="Info">
+                    <entry value="data" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="a9753c37-8e6f-483a-9b5a-e249c4399cb7:type:Reference">
+                <node name="Info">
+                    <entry value="models" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="cd5e54ed-de94-4c62-93b7-b11a26083ad3:type:Reference">
+                <node name="Info">
+                    <entry value="data/config" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="cf76981e-e821-452c-bcc0-e7813b6edfcb:type:Reference">
+                <node name="Info">
+                    <entry value="utilities" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="dee18ef5-d6c9-4162-b33c-3edbc0cf9c1b:type:Reference">
+                <node name="Info">
+                    <entry value="build" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+            <path value="e366a00c-cb94-41b2-b27f-2d283a167615:type:Reference">
+                <node name="Info">
+                    <entry value="data/bus" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+        </path>
+        <path value="Root:type:References">
+            <path value="e1b101e0-0a43-4a62-b6aa-20b38413d751:type:Reference">
+                <node name="Info">
+                    <entry value="../../dependencies/train_framework" key="Ref" />
+                    <entry value="Relative" key="Type" />
+                </node>
+            </path>
+        </path>
+    </MetadataNode>
+    <Files>
+        <File path="IOControls.prj" value="fe84b66d" />
+        <File path="IOControls.version" value="a9a0c2a8" />
+        <File path="build/build.bat" value="43165a2a" />
+        <File path="build/build.m" value="2b7aec33" />
+        <File path="build" value="-1" />
+        <File path="data/bus/IOControls_In_InputControl.m" value="b411757a" />
+        <File path="data/bus/IOControls_In_MCBControl.m" value="e1840e09" />
+        <File path="data/bus/IOControls_In_Vehicle.m" value="6e593223" />
+        <File path="data/bus/IOControls_Out_Vehicle.m" value="e1f286ac" />
+        <File path="data/bus/IOControls_Out_Vehicle_InputStates.m" value="4f86aafa" />
+        <File path="data/bus/IOControls_Out_Vehicle_MCBTripStates.m" value="b940ab19" />
+        <File path="data/bus/IOControls_Out_Vehicle_OutputStates.m" value="b5d73e46" />
+        <File path="data/bus" value="-1" />
+        <File path="data/config/ConfigSet_IOControls_Reference.m" value="8ee9391a" />
+        <File path="data/config" value="-1" />
+        <File path="data" value="-1" />
+        <File path="models/IOControls.slx" value="941fe959" />
+        <File path="models" value="-1" />
+        <File path="resources/project/Project.xml" value="c576b26a" />
+        <File path="resources/project/ProjectData.type.Info.xml" value="15f68673" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category.xml" value="d2dc6b71" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category/artifact.type.Label.xml" value="3a808e07" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category/convenience.type.Label.xml" value="9fa19c1e" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category/derived.type.Label.xml" value="b32f4cc5" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category/design.type.Label.xml" value="657f94e3" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category/none.type.Label.xml" value="4434695f" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category/other.type.Label.xml" value="7716e543" />
+        <File path="resources/project/Root.type.Categories/FileClassCategory.type.Category" value="-1" />
+        <File path="resources/project/Root.type.Categories/ReviewCategory.type.Category.xml" value="79255bc" />
+        <File path="resources/project/Root.type.Categories/ReviewCategory.type.Category/approved.type.Label.xml" value="4e1d86e4" />
+        <File path="resources/project/Root.type.Categories/ReviewCategory.type.Category/needMoreInfo.type.Label.xml" value="53363122" />
+        <File path="resources/project/Root.type.Categories/ReviewCategory.type.Category/rejected.type.Label.xml" value="d227eb9e" />
+        <File path="resources/project/Root.type.Categories/ReviewCategory.type.Category/toReview.type.Label.xml" value="cfa0af23" />
+        <File path="resources/project/Root.type.Categories/ReviewCategory.type.Category" value="-1" />
+        <File path="resources/project/Root.type.Categories" value="-1" />
+        <File path="resources/project/Root.type.EntryPoints/351b86c0-b5d5-4077-8388-13cbc843c47b.type.EntryPoint.xml" value="10f37d4d" />
+        <File path="resources/project/Root.type.EntryPoints/e6be6c16-40c4-4b41-9892-da7b76e7c10e.type.EntryPoint.xml" value="458503a1" />
+        <File path="resources/project/Root.type.EntryPoints" value="-1" />
+        <File path="resources/project/Root.type.Extensions" value="-1" />
+        <File path="resources/project/Root.type.Files/IOControls.version.type.File.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/build.type.File.xml" value="2f34bdc5" />
+        <File path="resources/project/Root.type.Files/build.type.File/1.type.DIR_SIGNIFIER.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/build.type.File/build.bat.type.File.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/build.type.File/build.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/build.type.File" value="-1" />
+        <File path="resources/project/Root.type.Files/data.type.File.xml" value="2f34bdc5" />
+        <File path="resources/project/Root.type.Files/data.type.File/1.type.DIR_SIGNIFIER.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/1.type.DIR_SIGNIFIER.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/IOControls_In_InputControl.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/IOControls_In_MCBControl.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/IOControls_In_Vehicle.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/IOControls_Out_Vehicle.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/IOControls_Out_Vehicle_InputStates.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/IOControls_Out_Vehicle_MCBTripStates.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File/IOControls_Out_Vehicle_OutputStates.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/bus.type.File" value="-1" />
+        <File path="resources/project/Root.type.Files/data.type.File/config.type.File.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/data.type.File/config.type.File/1.type.DIR_SIGNIFIER.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/data.type.File/config.type.File/ConfigSet_IOControls_Reference.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/data.type.File/config.type.File" value="-1" />
+        <File path="resources/project/Root.type.Files/data.type.File" value="-1" />
+        <File path="resources/project/Root.type.Files/models.type.File.xml" value="2f34bdc5" />
+        <File path="resources/project/Root.type.Files/models.type.File/1.type.DIR_SIGNIFIER.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/models.type.File/IOControls.slx.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/models.type.File" value="-1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File.xml" value="2f34bdc5" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/1.type.DIR_SIGNIFIER.xml" value="3af507e" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/clean_up_project.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/prj_bus_names.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/prj_buses_clear.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/prj_buses_load.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/prj_buses_save.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/prj_configurations_clear.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/prj_configurations_load.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File/set_up_project.m.type.File.xml" value="df0217e1" />
+        <File path="resources/project/Root.type.Files/utilities.type.File" value="-1" />
+        <File path="resources/project/Root.type.Files" value="-1" />
+        <File path="resources/project/Root.type.ProjectData" value="-1" />
+        <File path="resources/project/Root.type.ProjectPath/309e4a58-3661-4a79-a48c-6bb40a1309d2.type.Reference.xml" value="560612e0" />
+        <File path="resources/project/Root.type.ProjectPath/a9753c37-8e6f-483a-9b5a-e249c4399cb7.type.Reference.xml" value="a75ae6bc" />
+        <File path="resources/project/Root.type.ProjectPath/cd5e54ed-de94-4c62-93b7-b11a26083ad3.type.Reference.xml" value="75461a45" />
+        <File path="resources/project/Root.type.ProjectPath/cf76981e-e821-452c-bcc0-e7813b6edfcb.type.Reference.xml" value="3d26e7a3" />
+        <File path="resources/project/Root.type.ProjectPath/dee18ef5-d6c9-4162-b33c-3edbc0cf9c1b.type.Reference.xml" value="849467b8" />
+        <File path="resources/project/Root.type.ProjectPath/e366a00c-cb94-41b2-b27f-2d283a167615.type.Reference.xml" value="41262196" />
+        <File path="resources/project/Root.type.ProjectPath" value="-1" />
+        <File path="resources/project/Root.type.References/e1b101e0-0a43-4a62-b6aa-20b38413d751.type.Reference.xml" value="585d9049" />
+        <File path="resources/project/Root.type.References" value="-1" />
+        <File path="resources/project/uuid-01d97f5d-49cb-4d2d-a9a1-713f9309bc3c.xml" value="3af507e" />
+        <File path="resources/project" value="-1" />
+        <File path="resources" value="-1" />
+        <File path="utilities/clean_up_project.m" value="ec2daa7f" />
+        <File path="utilities/prj_bus_names.m" value="b0631986" />
+        <File path="utilities/prj_buses_clear.m" value="c382878d" />
+        <File path="utilities/prj_buses_load.m" value="1ce5bf81" />
+        <File path="utilities/prj_buses_save.m" value="bd8efca" />
+        <File path="utilities/prj_configurations_clear.m" value="7ad06dc9" />
+        <File path="utilities/prj_configurations_load.m" value="9fa3b43c" />
+        <File path="utilities/set_up_project.m" value="cb5daf95" />
+        <File path="utilities" value="-1" />
+        <File path="work" value="-1" />
+    </Files>
+    <Date value="24 November, 2021 3:07:01 PM" />
+</Info>

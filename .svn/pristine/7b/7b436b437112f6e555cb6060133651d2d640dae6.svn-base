@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="2009823776" name="generic_building_49_b">
+		<mesh_name>../worlds/library_objects/gen_building/generic_building_49_b.mesh</mesh_name>
+		<surface name="generic_building_49_b_Generic_Res_Building_49b" max_visible_distance="2000" max_fade_distance="10" material="6f008e69704faa105f3bbb09073d37d38018e76e" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1664118920" name="caution_25000_volts_board">
+		<mesh_name>../worlds/library_objects/features/caution_25000_volts_board.mesh</mesh_name>
+		<surface name="caution_25000_volts_board" max_visible_distance="1000" material="d700f879e19812f2d542e2a8a56f3f9bb2d896af" property="surface_base"/>
+		<transform>1.29999997075 2.72374685861e-008 1.01931589656e-036 0.0 -8.25072749011e-009 1.29999982248 1.10653628944e-036 0.0 -1.18242638621e-029 6.00137708899e-029 1.2999997965 0.0 -9.09494701773e-013 0 -0.055 1.0</transform>
+	</node>
+</nodes>

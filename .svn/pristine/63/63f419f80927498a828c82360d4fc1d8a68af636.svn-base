@@ -1,0 +1,19 @@
+[Database]
+Connection=
+File Based=1
+
+[FeaturePlacement]
+Features=../build/source/features
+Network=../worlds/mmrbem/definition/MMRBEM_Features_Track.xml
+Skin=../worlds/mmrbem/definition/mmrbem_skins.xml
+
+[TrackData]
+SchemaDirectory=../features
+WorldTypes=../features/world_types.xml
+
+[ManualVision]
+Car Class Code=DM
+Car Length=21.53
+Start Offset=200
+Start Segment ID=160
+Start From Alpha=0

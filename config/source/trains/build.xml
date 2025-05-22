@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- ======================================================================= -->
+<!-- Build file for Model Config                                       -->
+<!-- ======================================================================= -->
+<project name="Model Config" xmlns:ac="antlib:net.sf.antcontrib">
+  <import file="../../../ant.common_properties.xml" />
+  <import file="${dir.config}/ant.paths.xml" />
+
+  <!-- As much as possible, this should be standard --> 
+  <import file="${dir.deps.processes}/modeller/modeller.config.xml" as="modeller" />
+</project>

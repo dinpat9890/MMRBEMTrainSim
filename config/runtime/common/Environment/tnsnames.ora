@@ -1,0 +1,101 @@
+CORE = 
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.129.40.30)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+SYD10XE1 = 
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = ADLS0032.simulation.lan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+  
+SYD11XE1 = 
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = ADLS0054.simulation.lan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+  
+SYD11U1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = ADLS0054.simulation.lan)(PORT = 1522))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = SYD11U1)
+    )
+  )
+
+SYD11C1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = ADLS0054.simulation.lan)(PORT = 1522))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = SYD11C1)
+    )
+  )   
+  
+SYDDEV1 =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = ORACLETEST.simulation.lan)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = SYDDEV1)
+    )
+  )
+
+SYDDEV2 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = ORACLETEST.simulation.lan)(PORT = 1522))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+UKDEV =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = syd-devuk-04.simulation.lan)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = ORA92)
+    )
+  )
+
+UKDEVXE =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = syd-devuk-04.simulation.lan)(PORT = 1522))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = XE)
+    )
+  )
+
+LOCAL =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 127.0.0.1)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+ORACLESERVER =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = PUNS2004.simulation.lan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )

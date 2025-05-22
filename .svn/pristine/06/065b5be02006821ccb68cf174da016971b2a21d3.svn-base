@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshSkinned" id="1556926794" name="trackworker_bman0103">
+		<mesh_name>../features/animated_features/graphics/trackworker_b.mesh</mesh_name>
+		<surface name="trackworker_bman0103_LOD_0_body" max_visible_distance="800" material="a5ac8803099a8c5826d816a803722102a8e6b7e2" property="surface_base"/>
+		<surface name="trackworker_bman0103_LOD_0_head" max_visible_distance="800" material="f2d26e986dba40fb2521d7a686fe7631d41a6a1f" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

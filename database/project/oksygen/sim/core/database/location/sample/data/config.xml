@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <location_types>
+    <location_type location_type_id="3" name="Global" internal="1" origin_type="GLOB" />
+  </location_types>
+</config>

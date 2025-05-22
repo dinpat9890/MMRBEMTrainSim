@@ -1,0 +1,4 @@
+..\Tools\Deploy
+..\Tools\Internal
+..\Bin\Project
+..\Vision\Bin

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="2023238238" name="station_light_round">
+		<transform>0.999999880791 5.55111446138e-017 0 0.0 -5.55111446138e-017 0.999999880791 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="LightProj" id="1536442419" name="LightProj">
+			<penumbra>0.5</penumbra>
+			<attenuation_distance>15</attenuation_distance>
+			<shape>2 1 0.200000003</shape>
+			<shape_type>-1</shape_type>
+			<fov>120</fov>
+			<znear>1</znear>
+			<color>1 0.968627512 0.847058892 1</color>
+			<attenuation_power>0.100000001</attenuation_power>
+			<shadow>0</shadow>
+			<shadow_resolution>0</shadow_resolution>
+			<shadow_bias>1</shadow_bias>
+			<visible_distance>300</visible_distance>
+			<fade_distance>100</fade_distance>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>0.999999880791 0 0 0.0 0 0.999999046326 0 0.0 0 0 0.999999165535 0.0 -2.91038304567e-011 0 4 1.0</transform>
+		</node>
+	</node>
+</nodes>

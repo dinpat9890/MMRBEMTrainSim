@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="oak_shadow" guid="3672b84f12303d8e79f0864e89cec08cc9cdc83f" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/oak_imposter.dds</texture>
+</material>

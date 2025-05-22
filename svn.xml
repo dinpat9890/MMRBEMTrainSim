@@ -1,0 +1,172 @@
+<project>
+  <scriptdef name="cleanup" language="jython">
+import os
+temp_file = "svn$py.class"
+if os.path.isfile(temp_file):
+  os.remove(temp_file)
+  </scriptdef>
+    
+  <scriptdef name="svn_get_root_revision" language="jython">
+    <attribute name="property"/>
+    <attribute name="path"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.get_root_revision(os.path.join(project.baseDir.absolutePath, attributes.get("path")))
+if result == "":
+   project.setProperty(attributes.get("fail_property"), "1")
+else:
+  project.setProperty(attributes.get("property"), result)
+project.createTask("cleanup").perform()
+	</scriptdef>
+  
+  <scriptdef name="svn_get_path_revision" language="jython">
+    <attribute name="property"/>
+    <attribute name="path"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.get_path_revision(os.path.join(project.baseDir.absolutePath, attributes.get("path")))
+if result == "":
+   project.setProperty(attributes.get("fail_property"), "1")
+else:
+  project.setProperty(attributes.get("property"), result)
+project.createTask("cleanup").perform()
+	</scriptdef>
+    
+    <scriptdef name="svn_exists" language="jython">
+    <attribute name="url"/>
+    <attribute name="property"/>
+import svn
+result = svn.exists(attributes.get("url"))
+if result == 1:
+  project.setProperty(attributes.get("property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+    
+    <scriptdef name="svn_get_url" language="jython">
+    <attribute name="property"/>
+    <attribute name="path"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.get_url(os.path.join(project.baseDir.absolutePath, attributes.get("path")))
+if result == "":
+   project.setProperty(attributes.get("fail_property"), "1")
+else:
+  project.setProperty(attributes.get("property"), result)
+project.createTask("cleanup").perform()
+	</scriptdef>
+  
+  <scriptdef name="svn_get_repo_root_url" language="jython">
+    <attribute name="property"/>
+    <attribute name="path"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.get_repo_root_url(os.path.join(project.baseDir.absolutePath, attributes.get("path")))
+if result == "":
+   project.setProperty(attributes.get("fail_property"), "1")
+else:
+  project.setProperty(attributes.get("property"), result)
+project.createTask("cleanup").perform()
+	</scriptdef>
+  
+  <scriptdef name="svn_commit" language="jython">
+    <attribute name="path"/>
+    <attribute name="message"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.commit(os.path.join(project.baseDir.absolutePath, attributes.get("path")),attributes.get("message"))
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+  
+    <scriptdef name="svn_add_delete_commit" language="jython">
+    <attribute name="path"/>
+    <attribute name="message"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.add_delete_commit(os.path.join(project.baseDir.absolutePath, attributes.get("path")),attributes.get("message"))
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+    
+    <scriptdef name="svn_copy_url" language="jython">
+    <attribute name="source_url"/>
+    <attribute name="dest_url"/>
+    <attribute name="message"/>
+    <attribute name="fail_property"/>
+import svn
+result = svn.copy_url(attributes.get("source_url"),attributes.get("dest_url"),attributes.get("message"))
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+    
+    <scriptdef name="svn_check_modified" language="jython">
+    <attribute name="path"/>
+    <attribute name="property"/>
+    <attribute name="fail_property"/>
+import svn, os
+unversioned = svn.check_modified(os.path.join(project.baseDir.absolutePath, attributes.get("path")))
+if unversioned == 1:
+   project.setProperty(attributes.get("property"), "1")
+elif unversioned == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+    
+    <scriptdef name="svn_update" language="jython">
+    <attribute name="path"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.update(os.path.join(project.baseDir.absolutePath, attributes.get("path")))
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+    
+    <scriptdef name="svn_checkout" language="jython">
+    <attribute name="path"/>
+    <attribute name="url"/>
+    <attribute name="recurse"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.checkout(attributes.get("url"), os.path.join(project.baseDir.absolutePath, attributes.get("path")), attributes.get("recurse") != "false")
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+  
+  <scriptdef name="svn_export" language="jython">
+    <attribute name="path"/>
+    <attribute name="url"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.export(attributes.get("url"), os.path.join(project.baseDir.absolutePath, attributes.get("path")))
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+  </scriptdef>
+    
+    <scriptdef name="svn_mkdir" language="jython">
+    <attribute name="url"/>
+    <attribute name="message"/>
+    <attribute name="fail_property"/>
+import svn
+result = svn.mkdir(attributes.get("url"), attributes.get("message"))
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+  
+  <scriptdef name="svn_switch" language="jython">
+    <attribute name="path"/>
+    <attribute name="url"/>
+    <attribute name="fail_property"/>
+import svn, os
+result = svn.switch(os.path.join(project.baseDir.absolutePath, attributes.get("path")),attributes.get("url"))
+if result == -1:
+   project.setProperty(attributes.get("fail_property"), "1")
+project.createTask("cleanup").perform()
+	</scriptdef>
+</project>

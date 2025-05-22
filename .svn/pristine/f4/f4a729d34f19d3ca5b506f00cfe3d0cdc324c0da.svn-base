@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1780645633" name="goregaon_west_station">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/goregaon_west_station.mesh</mesh_name>
+		<surface name="goregaon_west_station" max_visible_distance="500" max_fade_distance="5" material="ed8031e9523e11543c9e52ad867cbb625231de0d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

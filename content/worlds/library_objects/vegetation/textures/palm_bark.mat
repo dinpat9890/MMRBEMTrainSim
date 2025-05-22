@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="palm_bark" guid="e15cce3b357067e7a47f2a362185cf4dfefb2985" parent="beeebffcbf5325b7972091b203a7bc3de2f4042d" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/DatePalmBark.dds</texture>
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="animation_stem_noise">0.400000006</parameter>
+	<parameter name="animation_stem_offset">0.0199999996</parameter>
+	<parameter name="animation_stem_radius">0.200000003</parameter>
+	<parameter name="animation_stem_scale">2</parameter>
+</material>

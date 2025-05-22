@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<project name="GMI Config" default="build.jar">
+
+  <property name="jar.base.name" value="gmiconfig" />
+
+  <!-- For using top level scripts/properties -->
+  <property name="path.root" value="../../"/>
+
+  <!-- Path of this directory -->
+  <dirname property="this.path" file="${ant.file}"/>
+  <!-- Name of this directory (not a path) -->
+  <basename property="this.dir" file="${this.path}"/>
+    <!-- Name of this module (as published in Ivy) -->
+  <property name="module.name" value="${this.dir}"/>
+
+  <!-- move these to software properties? -->
+  <property name="dependencies.dir" value="${path.root}/../dependencies"/>
+  <property name="libraries.dir" value="${path.root}/Libraries"/>
+  <property name="deploy.dir" value="${path.root}/../Deploy"/>
+  
+  <!-- Use the standard builder -->
+  <import file="${path.root}/builder.jar.xml" as="builder" />
+
+    <!-- Path for pot to be compiled into -->
+  <property name="l10n.dir" value="${this.path}/${i18n.dir}"/>
+
+  <path id="project.classpath">
+  </path>
+
+  <target name="build.all" depends="prepare" description="Build the Jar file">
+    <echo message="Copying GMI config files"/>
+    <!-- Copy config files -->
+    <copy todir="${bld.dir}">
+      <fileset dir="${src.dir}"/>
+    </copy>
+
+    <echo message="Building a jar for ${ant.file}"/>
+    <jar destfile="${jar.dir}/${jar.file}" basedir="${bld.dir}"/>
+  </target>
+
+  
+    <!-- For generating files to localise the app. -->
+  <property name="i18n.template.creator" value="../../../dependencies/cots/oksygen/cots/gettext/create.pot.xml"/>
+
+  
+  </project>

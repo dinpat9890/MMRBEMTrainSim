@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!-- ======================================================================= -->
+<!-- Build file for ProjectTrainMarshalling                                  -->
+<!-- ======================================================================= -->
+<project name="ProjectTrainMarshalling" default="build.jar" basedir=".">
+
+    <property name="jar.base.name" value="projecttrainmarshalling" />
+     <import file="../../../ant.common_properties.xml" />
+
+  <!-- Path of this directory -->
+  <dirname property="this.path" file="${ant.file}"/>
+  <!-- Name of this directory (not a path) -->
+  <basename property="this.dir" file="${this.path}"/>
+  <!-- Name of this module (as published in Ivy) -->
+  <property name="module.name" value="${this.dir}"/>
+
+  <!-- Import Properties from root path.root directory -->
+  <property file="${path.root}/build.properties"/>
+
+  <property name="run.tests" value="true"/>
+
+    <path id="project.classpath">
+	    <pathelement location="${dir.software.deps}/software/oksygen/sim/train/libraries/data_objects/jar/dataobjects.jar" />
+        <pathelement location="${dir.software.deps}/software/oksygen/common/libraries/database/jar/database.jar" />
+        <pathelement location="${dir.software.deps}/software/oksygen/common/libraries/logging/jar/logging.jar" />
+        <pathelement location="${dir.software.deps}/software/oksygen/sim/train/modules/simulator_manager_console/jar/simulatormanager.jar"/>
+        <pathelement location="${dir.software.deps}/software/oksygen/common/libraries/i18n/jar/i18n.jar" />
+        <pathelement location="${dir.software.deps}/software/oksygen/common/libraries/registry/jar/registry.jar" />
+        <pathelement location="${dir.software.deps}/software/oksygen/common/libraries/unit_conversions/jar/unitconversions.jar"/>
+    </path>
+
+    <!-- As much as possible, this should be standard -->
+    <import file="${dir.deps.processes}/builder/builder.software.jar.xml" as="builder" />
+    <import file="${dir.deps.processes}/packager/packager.software.xml" as="packager" />
+
+</project>
+
+
+

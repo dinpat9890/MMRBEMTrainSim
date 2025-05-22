@@ -1,0 +1,8 @@
+#
+# Domain : Peer Application Manager  (pam)
+#
+# Properties that are specific to a particular system type
+#
+pam.systems=driver,integrated
+pam.module.name.driver=OWS-03-Procedural Trainer Observer
+pam.module.name.integrated=DS-07-Driver Procedural Trainer

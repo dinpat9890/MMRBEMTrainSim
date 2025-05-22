@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="754715491" name="psd_control_panel_03">
+		<mesh_name>../worlds/mmrbem/graphics/stations/psd_control_panel_03.mesh</mesh_name>
+		<surface name="psd_control_panel_03" material="504bbfab5923a6ceef7cc9fb70ec445325a2050a" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

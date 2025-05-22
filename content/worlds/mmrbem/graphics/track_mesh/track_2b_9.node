@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1455415702" name="track_2b_9">
+		<mesh_name>../worlds/mmrbem/graphics/track_mesh/track_2b_9.mesh</mesh_name>
+		<surface name="track_2b_9_rail" max_visible_distance="1000" max_fade_distance="10" material="f4156e647d9f69465db3a67637d59fd03b2f8a9d" property="surface_base"/>
+		<surface name="track_2b_9_trackbed_base_concrete" max_visible_distance="1000" max_fade_distance="10" material="c07dd821f0e2b831ecc215fcc234227a384a1d86" property="surface_base"/>
+		<surface name="track_2b_9_trackbed_raised" max_visible_distance="1000" max_fade_distance="10" material="1947c434d18289a2c98b770a1e4b54aefac48ec8" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

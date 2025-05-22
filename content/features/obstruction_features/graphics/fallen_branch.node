@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="441677658" name="fallen_branch">
+		<mesh_name>../features/obstruction_features/graphics/fallen_branch.mesh</mesh_name>
+		<surface name="fallen_branch_linden_leaves" max_visible_distance="800" max_fade_distance="10" material="aed4c9383092fb3d2e5413e9c607373218615100" property="surface_base"/>
+		<surface name="fallen_branch_linden_trunk" max_visible_distance="800" max_fade_distance="10" material="e05e4a8f6f93fbebe1d9c0e21ecffb5e738b164e" property="surface_base"/>
+		<transform>0.999999940395 -2.22586706011e-016 1.11022302463e-016 0.0 5.35595873208e-017 0.999999940395 -1.7455654977e-017 0.0 -1.11022302463e-016 1.16876994194e-016 0.999999940395 0.0 0 -3.63797880709e-012 0 1.0</transform>
+	</node>
+</nodes>

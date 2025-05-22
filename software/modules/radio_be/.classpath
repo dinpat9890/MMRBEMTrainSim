@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Source/Java"/>
+	<classpathentry kind="src" path="Test/Java"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/core/libraries/application_manager/jar/applicationmanager.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/java_interface/jar/comms.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/core/config/core_comms_structure/jar/CoreCommsStructure.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/database/jar/database.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/data_objects/jar/dataobjects.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/febe/jar/febeutils.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/foundation/jar/foundation.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/gui/jar/gui.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/i18n/jar/i18n.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/logging/jar/logging.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/peer_module/jar/peermodule.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/registry/jar/registry.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/libraries/runtime_data/jar/runtimedata.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/core/libraries/session_data/jar/sessiondata.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/modules/simulator_controller_console/jar/simulatorcontroller.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/sim/train/config/train_comms_structure/jar/TrainCommsStructure.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-Software/oksygen/common/libraries/unit_conversions/jar/unitconversions.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Spring-Framework/springframework/spring-core/spring-core.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Spring-Framework/springframework/spring-aop/spring-aop.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Spring-Framework/springframework/spring-asm/spring-asm.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Spring-Framework/springframework/spring-beans/spring-beans.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Spring-Framework/springframework/spring-context/spring-context.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Spring-Framework/springframework/spring-expression/spring-expression.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-COTS/jscience/jscience.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-COTS/apache-log4j/log4j-1.2.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-COTS/oci/Win32/bin/ojdbc7.jar"/>
+	<classpathentry exported="true" kind="lib" path="/OKSYGEN-Libraries-COTS/protobuf/lib/protobuf.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Apache-COMMONS-Logging/commons-logging/commons-logging.jar"/>
+	<classpathentry kind="src" path="/MMRBEM-Libraries-CabScreensFECommon"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MMRBEM-Libraries-Radio-Common"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MMRBEM-Libraries-ProjectCommsStructure"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MMRBEM-Libraries-Serialisation"/>
+	<classpathentry kind="output" path="Build"/>
+</classpath>

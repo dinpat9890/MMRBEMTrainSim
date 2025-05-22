@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="pacificsilverfir_leaves" guid="e1381909f6bc4f6c55d003cc8a062eb18017d419" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/tree_pacificsilverfir_branches_alb.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/textures/tree_pacificsilverfir_branches_n.dds</texture>
+</material>

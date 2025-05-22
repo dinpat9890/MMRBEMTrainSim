@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<project name="ContentPaths" >
+  <import file="${dir.root}/ant.paths.xml" as="root_paths" />
+
+  <path id="deploy.vision.features">
+    <fileset dir="${dir.content}/features" />
+  </path>
+  
+  <path id="deploy.vision.graphics">
+    <fileset dir="${dir.content}/graphics" />
+  </path>
+  
+  <path id="deploy.vision.vehicles">
+    <fileset dir="${dir.content}/vehicles" />
+  </path>
+  
+  <path id="deploy.vision.worlds">
+    <fileset dir="${dir.content.project.worlds}" >
+      <!-- As far as I can tell, the height and normal maps are only used for terrain generation, so we can exclude them. -->
+      <exclude name="**/Terrain/Maps/Height/**" />
+      <exclude name="**/Terrain/Maps/Normal/**" />
+      <!-- Exclude all the source stuff, like 3DS Max and Photoshop files -->
+      <exclude name="**/3ds max/**" />
+      <exclude name="**/3dsmax/**" />
+      <exclude name="**/PSD/**" />
+      <exclude name="**/*.svg" />
+    </fileset>
+  </path>
+  
+  <path id="deploy.vision.deps.general">
+    <!-- Start excluding files if we don't want some of the content, or even entire worlds -->
+    <!-- Exclude fonts because, at least for the moment, their directory structure needs minor
+         rearrangement. -->
+    <fileset dir="${dir.deps}/vision/oksygen/content">
+      <exclude name="**/*.prop"/>
+      <exclude name="**/*.xml"/>
+      <exclude name="fonts/**"/>
+    </fileset>
+  </path>
+  
+  <path id="deploy.vision.deps.fonts">
+    <fileset dir="${dir.deps}/vision/oksygen/content/core/fonts">
+      <include name="**/dds/Output/*"/>
+    </fileset>
+  </path>
+  
+  <path id="deploy.vision.props">
+    <!-- These could be combined with sample properties from the dependencies, if required. However,
+         in the default set-up the properties (and XML) live under the source unigine folder, and so
+         will be copied automatically already (albeit encrypted) -->
+
+    <!-- Firstly, pick all of the properties that come by default -->
+    <fileset dir="${dir.deps}/vision/oksygen">
+      <include name="**/*.prop"/>
+    </fileset>
+    
+    <!-- Then, pick everything that we have overridden for the project. When this flattens will we
+         overwrite? Projects will likely want to tweak this as they desire, possibly be removing
+         the above. -->
+    <fileset dir="${dir.content.unigine_scripts}/properties">
+      <include name="**/*.prop"/>
+    </fileset>
+  </path>
+  
+  <path id="deploy.vision.deps.props">
+    <!-- These could be combined with sample properties from the dependencies, if required. However,
+         in the default set-up the properties (and XML) live under the source unigine folder, and so
+         will be copied automatically already (albeit encrypted) -->
+
+    <!-- Firstly, pick all of the properties that come by default -->
+    <fileset dir="${dir.deps}/vision/oksygen">
+      <include name="**/*.prop"/>
+    </fileset>
+  </path>
+  
+  <path id="deploy.vision.xml">
+    <!-- Windscreen effects configuration (which could be overwritten by a project, but just in
+         case) -->
+    <fileset dir="${dir.deps}/vision/oksygen/sim/train/unigine/windscreen_effects" erroronmissingdir="false" >
+      <include name="**/*.xml"/>
+    </fileset>
+
+    <!-- fileset dir="${dir.deps}/vision/oksygen">
+      <include name="**/*.xml"/>
+    </fileset -->
+  </path>
+  
+  <path id="deploy.vision.settings">
+    <!-- Change this to pick the settings file from the project's own location, if necessary -->
+    <fileset dir="${dir.deps}/software/oksygen/sim">
+      <include name="**/RenderSettings.settings"/>
+    </fileset>
+  </path>
+</project>

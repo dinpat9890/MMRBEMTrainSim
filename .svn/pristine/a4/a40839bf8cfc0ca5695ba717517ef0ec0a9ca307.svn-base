@@ -1,0 +1,14 @@
+#
+# SMC User Settings properties
+#
+
+# This plugin is a container for all plugins that manage user settings.
+#
+# Default plugins come from Core, but may be included/excluded/substituted
+# according to individual projects' needs.
+#
+simulatormanager.settings.plugin.count=4
+simulatormanager.settings.plugin.1.class = com.sydac.simulatormanager.settings.plugin.featuretypegroup.FeatureGroupsPlugin
+simulatormanager.settings.plugin.2.class = com.sydac.simulatormanager.settings.plugin.prefs.UserPreferencesPlugin
+simulatormanager.settings.plugin.3.class = com.sydac.simulatormanager.settings.plugin.scoring.scheme.ScoringSchemePlugin
+simulatormanager.settings.plugin.4.class = com.sydac.simulatormanager.settings.plugin.scoring.parameter.ScoringParameterPlugin

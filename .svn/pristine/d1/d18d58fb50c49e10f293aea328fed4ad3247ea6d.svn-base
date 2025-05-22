@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<windscreen_effects xmlns="http://www.sydac.com.au/WindscreenEffects/1.0/"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.sydac.com.au/WindscreenEffects/1.0/ WindscreenEffects.xsd">
+  <defaults>
+    <effects>
+      <rain>
+        <min_water_drop_size>0.002</min_water_drop_size>
+        <max_water_drop_size>0.006</max_water_drop_size>
+        <water_drop_capacity>1.0</water_drop_capacity>
+        <max_vehicle_speed>25.0</max_vehicle_speed>
+      </rain>
+      <snow>
+        <water_shading>0</water_shading>
+        <min_snowflake_size>0.001</min_snowflake_size>
+        <max_snowflake_size>0.002</max_snowflake_size>
+        <snowflake_capacity>1.0</snowflake_capacity>
+      </snow>
+      <dirt>
+        <max_dirt>1.0</max_dirt>
+        <dirt_rate>0.0001</dirt_rate>
+      </dirt>
+      <crack>
+      </crack>
+    </effects>
+  </defaults>
+  <windscreen_config car_class="DM">
+    <wipers>
+      <wiper name="right_wiper" node_name="wiper_right" wiper_blade_top_surface_name="wiper_right_blade_top" wiper_blade_bottom_surface_name="wiper_right_blade_bottom" />
+      <wiper name="left_wiper" node_name="wiper_left" wiper_blade_top_surface_name="wiper_left_blade_top" wiper_blade_bottom_surface_name="wiper_left_blade_bottom" />
+      <wiper name="center_wiper" node_name="wiper_center" wiper_blade_top_surface_name="wiper_center_blade_top" wiper_blade_bottom_surface_name="wiper_center_blade_bottom" />
+    </wipers>
+    <windscreens>
+      <windscreen name="front_windscreen" x="0" y="-20.2" z="3.05" heading="0" pitch="-22" roll="0" width="4" height="2" />
+      <windscreen name="left_window" x="-0.96" y="-1.02" z="2.65" heading="25" pitch="18" roll="0" width="0.7" height="1" />
+      <windscreen name="right_window" x="-1.5" y="-19.3" z="2.85" heading="90" pitch="0" roll="0" width="1.5" height="1.2" />
+      <windscreen name="forward_screen1" x="-0.96" y="-0.92" z="2.65" heading="20" pitch="18" roll="0" width="1" height="1.45" />
+      <windscreen name="forward_screen2" x="-0.1" y="-0.43" z="2.65" heading="3" pitch="18" roll="0" width="1.45" height="1.45" />
+      <windscreen name="forward_screen3" x="0.4" y="-0.43" z="2.65" heading="5" pitch="18" roll="0" width="2.5" height="1.45" />
+      <windscreen name="forward_screen4" x="0.96" y="-0.4" z="2.65" heading="-23" pitch="18" roll="0" width="1.2" height="1.45" />
+    </windscreens>
+    <views />
+    <masks />
+    <perspectives>
+      <perspective name="Instructor's Forward View">
+        <wipers>
+          <wiper name="left_wiper" />
+        </wipers>
+        <windscreen name="left_window" />
+        <view name="live3d" />
+        <mask name="default" />
+        <effects>
+          <rain />
+          <snow />
+          <crack />
+        </effects>
+      </perspective>
+      <perspective name="Driver's Forward View">
+        <wipers>
+          <wiper name="left_wiper" />
+        </wipers>
+        <windscreen name="left_window" />
+        <view name="live3d" />
+        <mask name="default" />
+        <effects>
+          <rain />
+          <snow />
+        </effects>
+      </perspective>
+      <perspective name="Driver's Forward Screen1 View">
+        <wipers>
+          <wiper name="left_wiper" />
+        </wipers>
+        <windscreen name="forward_screen1" />
+        <view name="live3d" />
+        <mask name="default" />
+        <effects>
+          <rain />
+          <snow />
+        </effects>
+      </perspective>
+      <perspective name="Driver's Forward Screen2 View">
+        <wipers>
+          <wiper name="center_wiper" />
+        </wipers>
+        <windscreen name="forward_screen2" />
+        <view name="live3d" />
+        <mask name="default" />
+        <effects>
+          <rain />
+          <snow />
+        </effects>
+      </perspective>
+      <perspective name="Driver's Forward Screen3 View">
+        <wipers>
+          <wiper name="center_wiper" />
+        </wipers>
+        <windscreen name="forward_screen3" />
+        <view name="live3d" />
+        <mask name="default" />
+        <effects>
+          <rain />
+          <snow />
+        </effects>
+      </perspective>
+      <perspective name="Driver's Forward Screen4 View">
+        <wipers>
+          <wiper name="right_wiper" />
+        </wipers>
+        <windscreen name="forward_screen4" />
+        <view name="live3d" />
+        <mask name="default" />
+        <effects>
+          <rain />
+          <snow />
+        </effects>
+      </perspective>
+    </perspectives>
+  </windscreen_config>
+</windscreen_effects>

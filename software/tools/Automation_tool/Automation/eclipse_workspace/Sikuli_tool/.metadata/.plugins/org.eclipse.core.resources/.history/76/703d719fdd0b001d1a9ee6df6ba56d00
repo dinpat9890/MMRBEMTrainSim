@@ -1,0 +1,50 @@
+package Mumbai_Metro;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
+import org.sikuli.script.Screen;
+import java.io.IOException; // Import the IOException class to handle errors
+
+/**
+ * Created Automation Script for PowerMenu Starting to load SMC, SCC & PT
+ * Screens using sikuli tool.
+ *
+ * @author ext-asatis
+ */
+
+public class dummy {
+
+	Screen center_Screen = new Screen(); // Center
+	Screen right_Screen = new Screen(1); // Right
+	Screen left_Screen = new Screen(2); // Left
+	Screen s = new Screen(); // Center
+
+	private void powerMenu() throws IOException {
+		try {
+			center_Screen.find(FilePathConstant.POWER_MENU + "powerScreen.PNG");
+			center_Screen.doubleClick(FilePathConstant.POWER_MENU + "powerScreen.PNG");
+			center_Screen.wait(12.0);
+
+			center_Screen.find(FilePathConstant.POWER_MENU + "StartSim.PNG");
+			center_Screen.click(FilePathConstant.POWER_MENU + "StartSim.PNG");
+			center_Screen.wait(20.0);
+			if (s.exists(FilePathConstant.POWER_MENU + "StartSim.PNG") != null)
+				System.out.println("\n****Test Case 1: Power Screen Test case Passed****\n");
+			else
+				System.out.println("\n****Test Case 1: Test case Failed****\n");
+		} catch (FindFailed e) {
+			e.printStackTrace();
+		}
+	}
+public static void main(String[] args) throws FindFailed {
+	try {
+		dummy obj = new dummy();
+
+		obj.powerMenu();
+
+	} catch (IOException e) {
+		System.out.println("An error occurred.");
+		e.printStackTrace();
+	}
+}
+}

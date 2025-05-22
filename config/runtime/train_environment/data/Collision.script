@@ -1,0 +1,107 @@
+﻿(! Some constants which it really would be nice if they could be automatically generated)
+(define collision-inactive  0)
+(define collision-geometry  1)
+(define collision-adjacency 2)
+
+(! Buffer is Adjacency Collidable in All States and does not require a Script)
+
+(! For all simulated vehicles, if they collide then we want to set the Freeze property, resulting in an immediate halt.)
+(for-all-trains $t
+  (enable-if-simulated-train $t
+    (for-all-vehicles $t $v
+      (set-number-if
+                  (or 
+					(== (get-number (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Collision")) 1.0)
+					(== (get-number (number-id (child-object-id (vehicle-object $t $v) (class-coupling)) "Coupler Damaged") 0) 1.0)
+				  )
+                  (number-id (child-object-id (object-id (class-train) "Scenario Train ID" $t) (class-vehicle) "Index" $v) "Freeze")
+                  1.0
+      )
+    )
+  )
+)
+
+(! For all auto vehicles, if they collide then we want to set the Freeze property, resulting in an immediate halt.)
+(for-all-trains $t
+  (enable-if-auto-train $t
+    (for-all-vehicles $t $v
+      (set-number-if
+				  (== (get-number (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Collision")) 1.0)
+                  (number-id (child-object-id (object-id (class-auto-train) "Scenario Train ID" $t) (class-auto-vehicle) "Index" $v) "Freeze")
+                  1.0
+      )
+    )
+  )
+)
+
+(! For all simulated trains, if they collide we want to latch it in Collision Overlay State.)
+(for-all-trains $t
+  (enable-if-simulated-train $t
+       (set-number-if
+                  (== (get-number (number-id (train-object $t) "Collision")) 1)
+                  (number-id (train-object $t) "Collision Overlay State")
+                  1.0
+        )
+    )
+  )
+
+(! Obstruction Car is Adjacency Collidable when its Visible )
+(for-all-features-of-type "Obstruction - Car" $id
+  (set-number (number-id (object-id (class-feature) "Feature ID" $id) "Collider")
+              (if (== (get-number (number-id (object-id (class-feature) "Feature ID" $id) "State")) (feature-type-state-id "Obstruction - Car" "Visible"))
+                  (collision-adjacency)
+                  (collision-inactive)
+              )
+  )
+)
+
+(! Obstruction Tree is Adjacency Collidable when its Visible )
+(for-all-features-of-type "Obstruction - Tree" $id
+  (set-number (number-id (object-id (class-feature) "Feature ID" $id) "Collider")
+              (if (== (get-number (number-id (object-id (class-feature) "Feature ID" $id) "State")) (feature-type-state-id "Obstruction - Tree" "Visible"))
+                  (collision-adjacency)
+                  (collision-inactive)
+              )
+  )
+)
+
+(! Obstruction Sleeper is Adjacency Collidable when its Visible )
+(for-all-features-of-type "Obstruction - Sleeper" $id
+  (set-number (number-id (object-id (class-feature) "Feature ID" $id) "Collider")
+              (if (== (get-number (number-id (object-id (class-feature) "Feature ID" $id) "State")) (feature-type-state-id "Obstruction - Sleeper" "Visible"))
+                  (collision-adjacency)
+                  (collision-inactive)
+              )
+  )
+)
+
+
+(! Obstruction Cow is Adjacency Collidable when its Visible )
+(for-all-features-of-type "Obstruction - Cow" $id
+  (set-number (number-id (object-id (class-feature) "Feature ID" $id) "Collider")
+              (if (== (get-number (number-id (object-id (class-feature) "Feature ID" $id) "State")) (feature-type-state-id "Obstruction - Cow" "On Track"))
+                  (collision-adjacency)
+                  (collision-inactive)
+              )
+  )
+)
+
+(! Obstruction Horse is Adjacency Collidable when its Visible )
+(for-all-features-of-type "Obstruction - Horse" $id
+  (set-number (number-id (object-id (class-feature) "Feature ID" $id) "Collider")
+              (if (== (get-number (number-id (object-id (class-feature) "Feature ID" $id) "State")) (feature-type-state-id "Obstruction - Horse" "On Track"))
+                  (collision-adjacency)
+                  (collision-inactive)
+              )
+  )
+)
+
+(! Obstruction Sheep is Adjacency Collidable when its Visible )
+(for-all-features-of-type "Obstruction - Sheep" $id
+  (set-number (number-id (object-id (class-feature) "Feature ID" $id) "Collider")
+              (if (== (get-number (number-id (object-id (class-feature) "Feature ID" $id) "State")) (feature-type-state-id "Obstruction - Sheep" "On Track"))
+                  (collision-adjacency)
+                  (collision-inactive)
+              )
+  )
+)

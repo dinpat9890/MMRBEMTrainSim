@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects xmlns="http://www.sydac.com.au/GMI/1.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sydac.com.au/GMI/1.0/ object.xsd">
+	<!-- Common Base Objects -->
+	<screen_object_type xsi:type="state_object"
+		name="pantograph">
+		<output_variable name="panto_control" />
+
+		<state_group name="panto down">
+			<state variable="panto_control" value="0" />
+		</state_group>
+		<state_group name="panto mid">
+			<state variable="panto_control" greater_than="0" less_than="1" />
+		</state_group>
+		<state_group name="panto up">
+			<state variable="panto_control" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="isolation_cock">
+		<value_variable name="cock_control" />
+		<input_variable name="cock_state" />
+		<state_group name="closed">
+			<state variable="cock_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="cock_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="mcb">
+		<vehicle_variable name="mcb_request" />
+		<value_variable name="mcb_control" />
+		<input_variable name="mcb_state" />
+		<state_group name="tripped">
+			<state variable="mcb_state" value="0" />
+		</state_group>
+		<state_group name="set">
+			<state variable="mcb_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="button">
+		<value_variable name="button_control" />
+		<input_variable name="button_state" />
+		<state_group name="not pressed">
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed">
+			<state variable="button_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="button_light_paired">
+		<value_variable name="button_control" />
+		<value_variable name="other_button_control" />
+		<input_variable name="button_state" />
+		<output_variable name="light_state" />
+		<state_group name="not pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="panto_switch">
+		<value_variable name="button_control" />
+		<value_variable name="other_button_control" />
+		<input_variable name="button_state" />
+		<input_variable name="other_button_state" />
+		<state_group name="panto up">
+			<state variable="button_state" value="1" />
+			<state variable="other_button_state" value="0" />
+		</state_group>
+		<state_group name="panto down">
+			<state variable="button_state" value="0" />
+			<state variable="other_button_state" value="1" />
+		</state_group>
+		<state_group name="panto reset">
+			<state variable="button_state" value="0" />
+			<state variable="other_button_state" value="0" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="off">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="on">
+			<state variable="switch_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="light">
+		<output_variable name="light_state" />
+		<state_group name="off">
+			<state variable="light_state" value="0" />
+		</state_group>
+		<state_group name="on">
+			<state variable="light_state" value="1" />
+		</state_group>
+		<state_group name="flashing">
+			<state variable="light_state" value="2" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="head_light">
+		<output_variable name="light_state" />
+		<state_group name="off">
+			<state variable="light_state" value="0" />
+		</state_group>
+		<state_group name="low">
+			<state variable="light_state" value="1" />
+		</state_group>
+		<state_group name="high">
+			<state variable="light_state" value="2" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="tail_light">
+		<output_variable name="light_state" />
+		<state_group name="off">
+			<state variable="light_state" value="0" />
+		</state_group>
+		<state_group name="low">
+			<state variable="light_state" value="1" />
+		</state_group>
+		<state_group name="high">
+			<state variable="light_state" value="2" />
+		</state_group>
+		<state_group name="white">
+			<state variable="light_state" value="3" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="button_light">
+		<value_variable name="button_control" />
+		<input_variable name="button_state" />
+		<output_variable name="light_state" />
+		<state_group name="not pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="button_light_flashing">
+		<value_variable name="button_control" />
+		<input_variable name="button_state" />
+		<output_variable name="light_state" />
+		<state_group name="not pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed light flashing">
+			<state variable="light_state" value="2" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light flashing">
+			<state variable="light_state" value="2" />
+			<state variable="button_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="button_door_flashing">
+		<value_variable name="button_control" />
+		<input_variable name="button_state" />
+		<output_variable name="door_state" />
+		<state_group name="not pressed door off">
+			<state variable="door_state" value="0" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed door off">
+			<state variable="door_state" value="0" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed door green">
+			<state variable="door_state" value="1" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed door green">
+			<state variable="door_state" value="1" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed door red">
+			<state variable="door_state" value="-1" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed door red">
+			<state variable="door_state" value="-1" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed door green flashing">
+			<state variable="door_state" value="2" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed door green flashing">
+			<state variable="door_state" value="2" />
+			<state variable="button_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="paired_button_light">
+		<value_variable name="button_control" />
+		<value_variable name="other_button_control" />
+		<input_variable name="button_state" />
+		<output_variable name="light_state" />
+		<state_group name="not pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light off">
+			<state variable="light_state" value="0" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light on">
+			<state variable="light_state" value="1" />
+			<state variable="button_state" value="1" />
+		</state_group>
+		<state_group name="not pressed light flashing">
+			<state variable="light_state" value="2" />
+			<state variable="button_state" value="0" />
+		</state_group>
+		<state_group name="pressed light flashing">
+			<state variable="light_state" value="2" />
+			<state variable="button_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="3_pos_rotary_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="close">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="left">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="right">
+			<state variable="switch_state" value="2" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="3_pos_switch_state">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="off">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="low">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="high">
+			<state variable="switch_state" value="2" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="3_pos_msc_rotary_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="close">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="left">
+			<state variable="switch_state" value="-1" />
+		</state_group>
+		<state_group name="right">
+			<state variable="switch_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="3_pos_reverser_handle">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="reverse">
+			<state variable="switch_state" value="-1" />
+		</state_group>
+		<state_group name="neutral">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="forward">
+			<state variable="switch_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="3_pos_reverser_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="reverse">
+			<state variable="switch_state" value="-1" />
+		</state_group>
+		<state_group name="neutral">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="forward">
+			<state variable="switch_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="4_pos_rotary_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="up">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="right">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="down">
+			<state variable="switch_state" value="2" />
+		</state_group>
+		<state_group name="left">
+			<state variable="switch_state" value="3" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="wiper_4_state_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="Park">
+			<state variable="switch_state" value="-1" />
+		</state_group>
+		<state_group name="Off">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="LowSpeed">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="HighSpeed">
+			<state variable="switch_state" value="2" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="mode_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="up">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="right">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="down">
+			<state variable="switch_state" value="2" />
+		</state_group>
+		<state_group name="left">
+			<state variable="switch_state" value="-1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="driving_mode_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="left down">
+			<state variable="switch_state" value="-2" />
+		</state_group>
+		<state_group name="left">
+			<state variable="switch_state" value="-1" />
+		</state_group>
+		<state_group name="off">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="right">
+			<state variable="switch_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="5_pos_rotary_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="up-left">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="up">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="up-right">
+			<state variable="switch_state" value="2" />
+		</state_group>
+		<state_group name="right">
+			<state variable="switch_state" value="3" />
+		</state_group>
+		<state_group name="down">
+			<state variable="switch_state" value="4" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="5_pos_rotary_switch_wiper">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="up-left">
+			<state variable="switch_state" value="-1" />
+		</state_group>
+		<state_group name="up">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="up-right">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="right">
+			<state variable="switch_state" value="2" />
+		</state_group>
+		<state_group name="down">
+			<state variable="switch_state" value="3" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="lever">
+		<value_variable name="lever_control" />
+		<input_variable name="lever_state" />
+		<state_group name="not pulled">
+			<state variable="lever_state" value="0" />
+		</state_group>
+		<state_group name="pulled">
+			<state variable="lever_state" value="1" />
+		</state_group>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="OnOffSwitch">
+		<output_variable name="switch_state" />
+		<state_group name="off">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="on">
+			<state variable="switch_state" value="1" />
+		</state_group>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="lock">
+		<value_variable name="lock_control" />
+		<input_variable name="lock_state" />
+		<state_group name="lock">
+			<state variable="lock_state" value="0" />
+		</state_group>
+		<state_group name="unlock">
+			<state variable="lock_state" value="1" />
+		</state_group>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="coupling">
+		<value_variable name="coupling_control" />
+		<input_variable name="coupling_state" />
+		<state_group name="coupling_not_selected">
+			<state variable="coupling_state" value="0" />
+		</state_group>
+		<state_group name="coupling_selected">
+			<state variable="coupling_state" value="1" />
+		</state_group>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="indicator_light">
+		<output_variable name="light_state" />
+		<state_group name="off">
+			<state variable="light_state" value="0" />
+		</state_group>
+		<state_group name="on">
+			<state variable="light_state" value="1" />
+		</state_group>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="emergency_controls">
+		<output_variable name="emergency_state" />
+		<state_group name="closed">
+			<state variable="emergency_state" value="0" />
+		</state_group>
+		<state_group name="open">
+			<state variable="emergency_state" value="1" />
+		</state_group>
+	</screen_object_type>
+
+	<screen_object_type xsi:type="state_object"
+		name="cable">
+		<vehicle_variable name="cable_request" />
+		<value_variable name="cable_control" />
+		<input_variable name="cable_state" />
+		<state_group name="disconnect">
+			<state variable="cable_state" value="0" />
+		</state_group>
+		<state_group name="connect">
+			<state variable="cable_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	<screen_object_type xsi:type="state_object"
+		name="6_pos_rotary_switch">
+		<value_variable name="switch_control" />
+		<input_variable name="switch_state" />
+		<state_group name="off">
+			<state variable="switch_state" value="0" />
+		</state_group>
+		<state_group name="reverse">
+			<state variable="switch_state" value="1" />
+		</state_group>
+		<state_group name="standby">
+			<state variable="switch_state" value="2" />
+		</state_group>
+		<state_group name="forward">
+			<state variable="switch_state" value="3" />
+		</state_group>
+		<state_group name="atp">
+			<state variable="switch_state" value="4" />
+		</state_group>
+		<state_group name="ato">
+			<state variable="switch_state" value="5" />
+		</state_group>
+	</screen_object_type>
+	
+	<screen_object_type xsi:type="state_object"
+		name="door_handle_cover">
+		<value_variable name="handle_control" />
+		<input_variable name="handle_state" />
+		<output_variable name="cover_state" />
+		<state_group name="handle_off_cover_off">
+			<state variable="cover_state" value="0" />
+			<state variable="handle_state" value="0" />
+		</state_group>
+		<state_group name="handle_on_cover_off">
+			<state variable="cover_state" value="0" />
+			<state variable="handle_state" value="1" />
+		</state_group>
+		<state_group name="handle_off_cover_on">
+			<state variable="cover_state" value="1" />
+			<state variable="handle_state" value="0" />
+		</state_group>
+		<state_group name="handle_on_cover_on">
+			<state variable="cover_state" value="1" />
+			<state variable="handle_state" value="1" />
+		</state_group>
+	</screen_object_type>
+	
+	<screen_object_type xsi:type="state_object"
+		name="winding_notification">
+		<input_variable name="winding_state" />
+
+		<state_group name="initial">
+			<state variable="winding_state" value="0" />
+		</state_group>
+		<state_group name="middle">
+			<state variable="winding_state" greater_than="0" less_than="12" />
+		</state_group>
+		<state_group name="complete">
+			<state variable="winding_state" value="12" />
+		</state_group>
+	</screen_object_type>
+	
+	
+</objects>

@@ -1,0 +1,58 @@
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra" >
+  <info organisation="oksygen.project" module="MMRBEMTrainSim" e:version.major="0" e:version.minor="0" />
+  <configurations>
+    <conf name="release"  description="Produces artifacts for releasing in a deploy package"                        visibility="public" />
+    <conf name="software" description="Produces artifacts used for developing dependent software"                   visibility="public" />
+    <conf name="content"  description="Produces artifacts used for developing dependent content"                    visibility="public" />
+    <conf name="process"  description="Produces artifacts used for managing the process of development and release" visibility="public" />
+  </configurations>
+  <publications>
+  </publications>
+    <dependencies defaultconf="release;content" defaultconfmapping="release;software->compile,link;content->develop;rn">
+
+    <dependency org="oksygen.sim.train.packages" name="core_train_sim" rev="4.0.1-alpha9" branch="core_4_0" conf="release,content,software->@" />
+
+    <dependency org="oksygen.sim.core.packages" name="core_processes" rev="3.3.0-alpha30" conf="process->release"/>
+    <!--<dependency org="oksygen.sim.core.packages" name="core_processes" rev="3.2.1-alpha2" branch="core_4_0" conf="process->*"/>-->
+
+    <dependency org="oksygen.content.core.graphics" name="vegetation" rev="1.0.1" conf="release,content->runtime"/>
+
+    <dependency org="oksygen.sim.train.modules" name="simulator_session_controller" rev="1.0.1-alpha8" branch="core_4_0" conf="release->@"/>
+
+    <dependency org="oksygen.content.core.graphics" name="characters" rev="3.2.1" conf="release,content->runtime"/>
+
+    <!-- Tools -->
+    <!--<dependency org="oksygen.sim.core.tools" name="vision_studio" rev="3.1.0" branch="core_4_0" conf="*->*" />-->
+    <dependency org="oksygen.sim.core.tools" name="vision_studio" rev="3.1.1-alpha3" branch="core_4_0" conf="content->*"/>
+
+    <dependency org="org.springframework" name="spring-core" rev="5.2.0.RELEASE" conf="release,software->default" />
+    <dependency org="org.springframework" name="spring-context" rev="5.2.0.RELEASE" conf="release,software->default" />
+    <dependency org="org.springframework" name="spring-aop" rev="5.2.0.RELEASE" conf="release,software->default" />
+    <dependency org="org.springframework" name="spring-asm" rev="3.0.5.RELEASE" conf="release,software->default"/>
+    <dependency org="org.springframework" name="spring-beans" rev="5.2.0.RELEASE" conf="release,software->default"/>
+    <dependency org="org.springframework" name="spring-expression" rev="5.2.0.RELEASE" conf="release,software->default"/>
+    <dependency org="commons-logging" name="commons-logging" rev="1.2" conf="release,software->default" />
+    <dependency org="commons-logging" name="commons-logging-api" rev="1.1" conf="release,software->default"/>
+    <!-- Core Features -->
+    <dependency org="oksygen.content.core.features" name="platform_passenger"   rev="1.2.2"    conf="release;software->source;content->develop"/>
+    <dependency org="oksygen.content.core.features" name="platform_camera"   rev="1.1.1"    conf="release;software->source;content->develop"/>
+
+    <!-- Trains -->
+    <dependency org="oksygen.content.train.vehicles" name="goanna" rev="latest.integration"/>
+
+    <!-- Cots -->
+    <dependency org="oksygen.cots" name="googletest"  rev="1.7.0" conf="software->compile"/>
+
+    <dependency org="oksygen.cots" name="vc_redist"  rev="vc140" conf="release->compile"/>
+    <dependency org="sydac.cots" name="vc_redist"     rev="vc110"   conf="release->compile" />
+
+    <!-- Session Analyzer -->
+    <dependency org="oksygen.cots" name="fmt" rev="7.1.3" conf="software->compile" />
+    <!--
+    These are required by Session Analyser, but they fail to retrieve due to being incompatible with the revision of core_train_sim being used here.
+    <dependency org="sydac.sim.freight.libraries" name="scoring_data_access" branch="sfts_2_8" rev="latest.integration" conf="release->@;software->link" />
+    <dependency org="sydac.sim.freight.libraries" name="session_data_access" branch="sfts_2_8" rev="latest.integration" conf="release->@;software->link" />
+    -->
+
+  </dependencies>
+</ivy-module>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1193377156" name="under_construction_building_53">
+		<mesh_name>../worlds/library_objects/gen_building/under_construction_building_53.mesh</mesh_name>
+		<surface name="under_construction_building_53_generic_building_53" max_visible_distance="2000" material="e65fc56be936ece2cd78ee4ca998c0139cf76513" property="surface_base"/>
+		<surface name="under_construction_building_53_station_alpha_01" max_visible_distance="1500" material="c22973beea725fcde9a7f1da8fc00931dc6927de" property="surface_base"/>
+		<transform>0.999999940395 1.0839614686e-028 -1.26217744835e-029 0.0 1.66533453694e-016 0.999999940395 1.26217744835e-029 0.0 9.86076131526e-031 -3.15544362088e-030 0.999999940395 0.0 1.09139364213e-011 1.45519152284e-011 -5.3290705182e-015 1.0</transform>
+	</node>
+</nodes>

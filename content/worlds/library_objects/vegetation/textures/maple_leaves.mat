@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="maple_leaves" guid="d0369851badfaa46abee7766290120e83c447cc5" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/tree_bigleafmaple_branches_alb.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/textures/tree_bigleafmaple_branches_n.dds</texture>
+</material>

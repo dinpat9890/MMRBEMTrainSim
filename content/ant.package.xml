@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<project name="Package Content" default="package.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="../ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+  
+  <!-- Import core packaging scripts -->
+  <import file="${dir.deps.processes}/packager/packager.content.vision.xml" as="packager" />
+  
+  <!-- Extend targets that we want to add to, but with targets that can be called locally -->
+  <target name="deploy.content" description="Copies content files to the deploy folder being prepared" extensionOf="deploy.all" depends="deploy.vision"/>
+</project>

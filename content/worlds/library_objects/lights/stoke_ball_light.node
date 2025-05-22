@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="NodeDummy" id="425862937" name="stoke_ball_light">
+		<transform>0.999999165535 5.55111512313e-017 0 0.0 -5.55111512313e-017 0.999999165535 0 0.0 0 0 0.999999046326 0.0 -5.82076609135e-011 -1.4555467942e-011 -4.26325641456e-014 1.0</transform>
+		<node type="LightProj" id="1855235890" name="LightProj_0">
+			<penumbra>1</penumbra>
+			<attenuation_distance>30</attenuation_distance>
+			<shape>0.851000011 1 0.531000018</shape>
+			<shape_type>-1</shape_type>
+			<fov>150</fov>
+			<znear>0.100000001</znear>
+			<color>0.976470649 0.976470649 0.937254965 1</color>
+			<intensity>1.22000003</intensity>
+			<attenuation_power>0.400000006</attenuation_power>
+			<shadow>0</shadow>
+			<shadow_resolution>1</shadow_resolution>
+			<shadow_bias>0</shadow_bias>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>8</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>8</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>1</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.5</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size>0.5</shadow_screen_space_step_size>
+			<shadow_screen_space_threshold>1</shadow_screen_space_threshold>
+			<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
+			<transform>0.999999856991 -1.53148063675e-008 0 0.0 1.73842651385e-008 0.999999260942 0 0.0 0 0 0.999999880795 0.0 0 0 6.18238591826 1.0</transform>
+		</node>
+	</node>
+</nodes>

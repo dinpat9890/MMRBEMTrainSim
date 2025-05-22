@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feature_type name="Platform Screen Doors" group="PlatformDoors" constant_name="FETY_PSD" modifiable="0" available="1" user_feature="0" version="2.0">
+
+    <feature_type_state_type name="State">
+      <feature_type_state state_id="1" name="Automated" user_selectable="1" />
+      <feature_type_state state_id="2" name="Closed" user_selectable="0" />
+      <feature_type_state state_id="3" name="Open" user_selectable="0" />
+    </feature_type_state_type>
+
+    <object_parameters>
+      <key name="Initial State"         type="State" description="Initial State"  default="Closed" />
+      <key name="User State"            type="State" default="Automated" description="Automated User State" />
+      <!-- Door Control Script Required Properties -->
+      <key name="Platform Content Name" type="string" description="Identity of Unigine components" />
+      <key name="Door Position"         type="double" default="0" description="0= fully closed ; 100=fully open" />
+      <key name="SDO Code"              type="double" default="0" description="Selective Door Open Code" />
+      <!-- Feature Properties -->
+      <key name="Platform Feature ID"   type="double" description="The ID of the  associated Platform" />
+      <key name="Number Doors"          type="double" default="8" description="The Number of PSD Doors" />
+    </object_parameters>
+
+   <feature_type_icon icon_code="Platform_Screen_Doors" small_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors-SMALL.png" big_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors-BIG.png">
+      <feature_type_state_icon state_id="1" icon_code="Automated" small_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors_Automated-SMALL.png" big_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors_Automated-BIG.png" />
+      <feature_type_state_icon state_id="2" icon_code="Closed" small_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors_Closed-SMALL.png" big_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors_Closed-BIG.png" />
+      <feature_type_state_icon state_id="3" icon_code="Open" small_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors_Open-SMALL.png" big_icon="icons/Platform_Screen_Doors.zip#Platform_Screen_Doors_Open-BIG.png" />
+   </feature_type_icon>
+
+  <feature_type_vision class="PlatformDoors" raycast_type="NoRaycast" node_file="world" >
+      <scripting>
+        <script script_path="Scripts/PlatformDoors.us.cpp" />
+      </scripting>
+  </feature_type_vision>
+
+</feature_type>

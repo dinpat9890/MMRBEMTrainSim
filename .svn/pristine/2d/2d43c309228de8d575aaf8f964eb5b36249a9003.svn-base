@@ -1,0 +1,25 @@
+## Comms Show
+## Mon Jun 19 16:26:01 2023
+
+
+[CommsShow]
+RunOnStartup=1
+Use Object Identifier=1
+
+[GUI]
+Selected Tab=1
+
+[Liveliness]
+Multicast Address=233.0.0.1
+Multicast Port=2501
+
+[Miscellaneous]
+DLL Filename=..\bin\core_session_data_dll.dll
+
+[System.1]
+Guest=0
+Join Sessions=1
+Module Name=CommsShow
+Multicast Address=233.0.0.1
+Multicast Port=2500
+Request All Objects=1

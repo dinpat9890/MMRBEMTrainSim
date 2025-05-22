@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1979247947" name="elm_01_1">
+		<mesh_name>elm_rought/elm_01_1.mesh</mesh_name>
+		<surface name="elm_rought_tree_01_1_lod_2_elm_rought_trunk_mat" max_visible_distance="350" max_fade_distance="15" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+		<surface name="elm_rought_leaves_01_1_lod_2_elm_rought_leaves_sum_mat" max_visible_distance="350" max_fade_distance="15" material="12efa6f844b3ec99fcb70cd45db599005511e084" property="surface_base"/>
+		<surface name="elm_rought_leaves_01_1_lod_1_elm_rought_leaves_sum_mat" enabled="0" folded="1" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="12efa6f844b3ec99fcb70cd45db599005511e084" property="surface_base"/>
+		<surface name="elm_rought_tree_01_1_lod_1_elm_rought_trunk_mat" enabled="0" min_visible_distance="15" max_visible_distance="60" min_fade_distance="15" max_fade_distance="15" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+		<surface name="elm_rought_tree_01_1_lod_0_elm_rought_trunk_mat" enabled="0" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="d9075b6d115a2df832c68afdac9328d846a74a9c" property="surface_base"/>
+		<surface name="elm_rought_leaves_01_1_lod_0_elm_rought_leaves_sum_mat" enabled="0" max_visible_distance="15" min_fade_distance="15" max_fade_distance="15" material="12efa6f844b3ec99fcb70cd45db599005511e084" property="surface_base"/>
+		<transform>0.999999940395 -3.37846152455e-016 0 0.0 -2.05927975376e-016 0.999999940395 1.03397576569e-024 0.0 -4.96308367532e-024 5.79026428787e-024 0.999999940395 0.0 3.63797880709e-012 3.18323145621e-011 -1.58447473891e-014 1.0</transform>
+		<node type="ObjectMeshStatic" id="1445337401" name="elm_01_1_crossplane">
+			<mesh_name>../worlds/library_objects/vegetation/elm_01_1_crossplane.mesh</mesh_name>
+			<surface name="elm_rought_tree_01_1_crossplane" min_visible_distance="350" max_visible_distance="1500" max_fade_distance="15" material="2cb00948a44167c3cf35be7d64847d585beb1eab" property="surface_base"/>
+			<transform>3.95586033504e-008 0.799999932452 3.01353514491e-016 0.0 -0.799999909617 1.60510742979e-007 -1.80212723428e-016 0.0 9.21269159142e-009 5.36417225787e-009 0.949999955376 0.0 -3.63797880709e-012 0 -2.42470804448e-015 1.0</transform>
+		</node>
+	</node>
+</nodes>

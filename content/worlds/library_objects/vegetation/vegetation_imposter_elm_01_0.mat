@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="vegetation_imposter_elm_01_0" guid="6940ab61af7e5add57fd90b6eebb0f4e419d68f7" parent="204da1d83725d5f05a39dff378a29b53b7ff22b4" base_material="grass_impostor_base">
+	<options cast_world_shadow="0"/>
+	<texture name="diffuse">../worlds/library_objects/vegetation/textures/elm_imposter.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/elm_rought/textures/elm_01_imposter_n.dds</texture>
+	<parameter name="diffuse_color">0.749019623 0.749019623 0.749019623 1</parameter>
+	<parameter name="translucent_scale">1</parameter>
+	<parameter name="alpha_scale">1</parameter>
+	<parameter name="noise_scale">0.100000001</parameter>
+</material>

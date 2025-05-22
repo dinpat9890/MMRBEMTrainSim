@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="649008615" name="placeholders_line2A_Line_7">
+		<mesh_name>../worlds/mmrbem/graphics/stations/placeholders_line2A_Line_7.mesh</mesh_name>
+		<surface name="Both_lines" material="401e90ccd85f4f2bb97c19ab9e1351325c4012eb" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

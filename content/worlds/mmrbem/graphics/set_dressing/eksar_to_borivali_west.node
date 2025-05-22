@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.5.0.2">
+	<node type="ObjectMeshStatic" id="1629551126" name="eksar_to_borivali_west">
+		<mesh_name>../worlds/mmrbem/graphics/set_dressing/eksar_to_borivali_west.mesh</mesh_name>
+		<surface name="eksar_to_borivali_west_gantry_poles_numbers_01" material="43b1c41a69d7648982190206b8d8e54836349f2c" property="surface_base"/>
+		<surface name="eksar_to_borivali_west_gantry_poles_numbers_02" material="ed8031e9523e11543c9e52ad867cbb625231de0d" property="surface_base"/>
+		<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

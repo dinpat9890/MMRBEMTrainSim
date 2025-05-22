@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="building_highrise_glass_01_blue_dark" guid="2f015ad18583d490bcda487eed08361237dc349c" parent="5c557267d802d94621ae5ed8603f95a6eedb3536" base_material="mesh_base">
+	<parameter name="albedo_color">0.250980407 0.286274523 0.368627459 1</parameter>
+</material>

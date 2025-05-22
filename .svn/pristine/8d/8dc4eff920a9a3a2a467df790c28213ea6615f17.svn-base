@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="316.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="18.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="carLbl" alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="296.0" styleClass="interlock-car-label" />
+            <Label fx:id="vcbLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Transformer Oil Temperature too High" GridPane.rowIndex="1" />
+            <Label fx:id="vcbLbl7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="LINE VOLTAGE IS NOT PRESENT" GridPane.rowIndex="7" />
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="4">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="44.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="16.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="30.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="vcbLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="VCB opened by CI" />
+                  <Label fx:id="vcb4DmLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="(DM1)" GridPane.columnIndex="1" />
+                  <Label fx:id="vcb4DmCarLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="car" GridPane.columnIndex="2" />
+                  <Label fx:id="vcb4TCarLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="T2" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="5">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="44.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="16.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="vcbLbl5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="VCB opened by CI" />
+                  <Label fx:id="vcb5DmLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="(M3)" GridPane.columnIndex="1" />
+                  <Label fx:id="vcb5DmCarLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="car" GridPane.columnIndex="2" />
+                  <Label fx:id="vcb5TCarLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="T2" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <Label fx:id="vcbLbl8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="APS K-AK CONTACTOR IS CLOSED" GridPane.rowIndex="8" />
+            <Label fx:id="vcbLbl9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="CI K-AK CONTACTOR IS CLOSED" GridPane.rowIndex="9" />
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="85.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="15.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="vcb2TCarLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="T2" GridPane.columnIndex="1" />
+                  <Label fx:id="vcbLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="VCB opened by AC overcurrent car " />
+               </children>
+            </GridPane>
+            <GridPane fx:id="vcbGrid3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" GridPane.rowIndex="3">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="84.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="16.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="vcb3TCarLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="T2" GridPane.columnIndex="1" />
+                  <Label fx:id="vcbLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="VCB opened by MTr protection car" />
+               </children>
+            </GridPane>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="6">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="40.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="vcb6TCarLbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="T2" GridPane.columnIndex="1" />
+                  <Label fx:id="vcbLbl6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="VCB opened by APS car " />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

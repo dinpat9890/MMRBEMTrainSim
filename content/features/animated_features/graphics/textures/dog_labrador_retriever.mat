@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="dog_labrador_retriever" guid="639f2b3229f96f3f8bdf35beb82de58aa6708e1d" parent="f4a968fecc6da61f97606239b14677d71f6a13cc" base_material="mesh_base">
+	<texture name="albedo">animated_features/graphics/textures/dog_labrador_retriever.dds</texture>
+</material>

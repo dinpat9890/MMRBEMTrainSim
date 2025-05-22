@@ -1,0 +1,47 @@
+# Translations for hardware names.
+# Copyright (C) 2022 Sydac Pty Ltd
+# This file is distributed under the same license as the Hardware Names package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hardware Names ${version.number}\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-15 13:17+0530\n"
+"PO-Revision-Date: 2022-11-15 13:17+0530\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. This is the name of a Simulator.
+msgid "Fixed Set Driver's Cab"
+msgstr ""
+
+#. This is the name of a Hub (described to users as Simulator Stations).
+msgid "Driver's Instructor"
+msgstr ""
+
+#. This is the name of a Hub (described to users as Simulator Stations).
+msgid "Observer"
+msgstr ""
+
+#. The following text is used for multiple types of content. Descriptions follow:
+#.  • This is the name of a Hub (described to users as Simulator Stations).
+#.  • This is the name of a Hub Type (described to users as Simulator Station Type).
+msgid "Driver's Cab"
+msgstr ""
+
+#. This is the name of a Hub Type (described to users as Simulator Station Type).
+msgid "Observer Station"
+msgstr ""
+
+#. This is the name of a Hub Type (described to users as Simulator Station Type).
+msgid "Driver's Instructor Desk"
+msgstr ""
+
+#. This is the name of a Display Channel, a screen that displays the 3D world to the user.
+msgid "Main Display"
+msgstr ""

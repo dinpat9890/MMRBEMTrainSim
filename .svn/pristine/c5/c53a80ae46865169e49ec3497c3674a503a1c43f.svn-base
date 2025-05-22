@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<project name="Build" default="package.all" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib" xmlns:if="ant:if">
+  <!-- Get the common local properties, to set first to override any defaults that the imported
+       scripts may specify -->
+  <import file="./ant.common_properties.xml" />
+  
+  <!-- Get Local properties and macros -->
+  <property file="build.properties" />
+  
+  <!-- Import the modules to build, before the core scripts -->
+  <import file="ant.paths.xml" as="paths" />
+
+  <!-- Import core packaging scripts -->
+  <!-- import file="${dir.deps.processes}/packager/packager.xml" as="packager" / -->
+  
+  <!-- Import packaging scripts from other folders (which may use core scripts -->
+  <import file="${dir.config}/ant.build.xml" as="build.config" />
+  <import file="${dir.content}/ant.build.xml" as="build.content" />
+  <import file="${dir.software}/ant.build.xml" as="build.software" />
+  
+  <!-- A handy target for building everything -->
+  <extension-point name="build.all" description="Builds all content for the project" />
+  
+  <!-- A handy target for cleaning everything -->
+  <extension-point name="clean.all" description="Cleans all built content for the project" />
+</project>

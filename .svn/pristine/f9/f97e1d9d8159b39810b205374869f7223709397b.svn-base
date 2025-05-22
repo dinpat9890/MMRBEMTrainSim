@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1024.0" stylesheets="@tcms-application.css" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sydac.mmrbem.tcms.fe.gui.presenter.EmergencyBrakeInterlockScreenController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="85.4889" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="14.5111" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="1.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="99.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="6.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="22.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="emergencyLbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake requested by CC" GridPane.columnIndex="1" />
+                  <Label fx:id="emergencyLbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake due to EB push button in DM1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="emergencyLbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake due Dead man in DM1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="emergencyLbl6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake for non cab enabled" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="emergencyLbl7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake for non direction selected" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="emergencyLbl8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="EB LOOP open due to Master controller in EB position" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="emergencyLbl9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="EB LOOP open due to Brake loop open" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="emergencyLbl10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake due to ZVIR" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label fx:id="emergencyLbl11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Master Controller in FSB position" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="35.5" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="62.5" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="emergencyLbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake due to EB push button in DM" />
+                        <Label fx:id="emergencyLbl3CarNo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="8" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="29.9" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="2.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="68.1" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="emergencyLbl5CarNo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="8" GridPane.columnIndex="1" />
+                        <Label fx:id="emergencyLbl5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="panto-label" text="Emergency brake due Dead man in DM" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

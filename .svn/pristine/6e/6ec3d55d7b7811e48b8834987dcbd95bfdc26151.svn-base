@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<feature_type name="Obstruction Fixed OLE" group="Obstruction" constant_name="FETY_OBS_FIXED_OLE" modifiable="0" available="1" user_feature="0" version="2.0">
+
+  <feature_type_state_type name="State">
+    <feature_type_state state_id="1" name="Not Visible" user_selectable="1" />
+    <!--feature_type_state state_id="2" name="Obstructed" user_selectable="1" /-->
+    <feature_type_state state_id="3" name="Damaged" user_selectable="1" />
+  </feature_type_state_type>
+
+  <object_parameters>
+    <key name="Initial State" type="State" default="Not Visible" description="Initial State"  />
+  </object_parameters>
+
+  <feature_type_icon icon_code="OLE" >
+    <feature_type_state_icon state_id="1" icon_code="Not_Visible"  small_icon="Icons/OLE.zip#OLE-Not_Visible-SMALL.png"   big_icon="Icons/OLE.zip#OLE-Not_Visible-BIG.png" />
+    <!--feature_type_state_icon state_id="2" icon_code="Obstructed"  small_icon="Icons/OLE.zip#OLE-Obstructed-SMALL.png"   big_icon="Icons/OLE.zip#OLE-Obstructed-BIG.png" /-->
+    <feature_type_state_icon state_id="3" icon_code="Damaged"  small_icon="Icons/OLE.zip#OLE-Damaged-SMALL.png"   big_icon="Icons/OLE.zip#OLE-Damaged-BIG.png" />
+  </feature_type_icon>
+
+  <feature_type_vision class="ObstructionFixedOLE" raycast_type="none" node_file="Core_Dummy_Feature.node" >
+    <scripting>
+      <script script_path="Scripts/ObstructionFixedOLE.us.cpp" />
+    </scripting>
+  </feature_type_vision>
+</feature_type>

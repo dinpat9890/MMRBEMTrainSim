@@ -1,0 +1,61 @@
+syntax = "proto2";
+
+package radio.protos;
+
+option java_package = "com.sydac.radio.proto";
+option java_outer_classname = "RadioProtos";
+
+
+ /**
+  * Commonly used enum and messages. Do not try to change these protos.  
+  * Use wherever these types are applied.
+ **/
+
+/**
+  * Data structure to hold call details which
+  * gives information about each call triggered
+  * from Radio Device or SCC UI
+ **/
+
+
+ message MessageList
+ {
+	message Message
+	{
+		required int32 messageId = 1;
+		required string messageText	= 2;
+		required int64 dateTime = 3; // The date, as accepted by java.util.Date.Date(long) 
+	}
+	
+	repeated Message messages = 1;
+ }
+ 
+ message InBoxMessage
+{
+	required int32 messageId = 1;
+	required string messageText	= 2;
+	optional string statusCode	= 3;
+	optional int64 dateTime = 4; // The date, as accepted by java.util.Date.Date(long) 
+}
+
+ message OutBoxMessage
+{
+	required int32 messageId = 1;
+	required string messageText	= 2;
+	optional string statusCode	= 3;
+	optional int64 dateTime = 4; // The date, as accepted by java.util.Date.Date(long) 
+}
+
+message ContactList
+{
+	message Contact
+	{
+		required int32 contactId = 1;
+		required string contactText	= 2;
+	}
+	
+	repeated Contact contact = 1;
+}
+ 
+ 
+ 

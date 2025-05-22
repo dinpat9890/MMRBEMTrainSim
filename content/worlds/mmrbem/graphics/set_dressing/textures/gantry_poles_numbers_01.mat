@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="gantry_poles_numbers_01" guid="43b1c41a69d7648982190206b8d8e54836349f2c" base_material="mesh_base">
+	<state name="material_motion_blur">0</state>
+	<texture name="albedo">../worlds/mmrbem/graphics/set_dressing/textures/gantry_poles_numbers_01.dds</texture>
+	<texture name="noise_2d">../worlds/library_objects/track/textures/2d_noise.dds</texture>
+	<parameter name="specular">0.800000012</parameter>
+	<parameter name="noise_2d_scale">0.300000012</parameter>
+	<parameter name="noise_2d_uv_transform">vec4(0.05f,0.05f,0.0f,0.0f)</parameter>
+</material>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="palm_leaves" guid="45a8f3fd364f2387dc80e3d9fbb50334c0645bc1" parent="b14bec41905e6059fafd800771af46fcdd073763" base_material="mesh_base">
+	<texture name="albedo">../worlds/library_objects/vegetation/textures/PalmAtlas_Diffuse.dds</texture>
+	<texture name="normal">../worlds/library_objects/vegetation/textures/PalmAtlas_Normal.dds</texture>
+	<parameter name="albedo_color">0.752941251 0.752941251 0.752941251 1</parameter>
+	<parameter name="specular">0</parameter>
+	<parameter name="translucent">1</parameter>
+	<parameter name="animation_stem_noise">0.400000006</parameter>
+	<parameter name="animation_stem_offset">0.0199999996</parameter>
+	<parameter name="animation_stem_radius">0.200000003</parameter>
+	<parameter name="animation_stem_scale">2</parameter>
+</material>

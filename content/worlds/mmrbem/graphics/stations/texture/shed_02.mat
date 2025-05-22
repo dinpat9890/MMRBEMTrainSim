@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="shed_02" guid="6422e69141e36464ba6f23b6eb14132507495717" parent="e6218c0d435caa2880e8260437cc08266ed20c23" base_material="mesh_base">
+	<texture name="albedo">../worlds/mmrbem/graphics/stations/texture/shed_02.dds</texture>
+</material>
